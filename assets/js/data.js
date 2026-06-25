@@ -1,4 +1,4 @@
-/* PaceLand — assets/js/data.js (xuất từ trang quản trị 14:23:20 25/6/2026) */
+/* PaceLand — assets/js/data.js (xuất từ trang quản trị 21:33:54 25/6/2026) */
 
 const SITE = {
   "name": "PaceLand",
@@ -979,20 +979,24 @@ const PAGES = {
 
 const HERO_SLIDES = [
   {
-    "img": "assets/img/media/eaton-park-1.jpg",
-    "caption": "Eaton Park · Tân Cảng"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397963/gtwthbx61lhowu5hsopp.png",
+    "caption": "Paceland 1"
   },
   {
-    "img": "assets/img/media/one-central-saigon-1.jpg",
-    "caption": "One Central Saigon · Quận 1"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397982/qccww2lkapjlvtvfms5e.png",
+    "caption": "Red dot"
   },
   {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782372190/revxvfcv8mlkofeebrld.jpg",
-    "caption": "Metropole · Thủ Thiêm"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398000/zgeedkvnbfrr1gooep5q.png",
+    "caption": "Thị trường CBD"
   },
   {
-    "img": "",
-    "caption": ""
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398016/zdmmmmsewjzimghxjioo.png",
+    "caption": "Cao cấp"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398026/fkvt3vbxkgoino5ccyd0.png",
+    "caption": "Căn hộ"
   }
 ];
 
