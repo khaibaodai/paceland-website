@@ -1,18 +1,22 @@
 [
   {
-    "img": "assets/img/media/the-prive-1.jpg",
-    "caption": "The Privé · Thủ Thiêm"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397963/gtwthbx61lhowu5hsopp.png",
+    "caption": "Paceland 1"
   },
   {
-    "img": "assets/img/media/eaton-park-1.jpg",
-    "caption": "Eaton Park · Tân Cảng"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397982/qccww2lkapjlvtvfms5e.png",
+    "caption": "Red dot"
   },
   {
-    "img": "assets/img/media/one-central-saigon-1.jpg",
-    "caption": "One Central Saigon · Quận 1"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398000/zgeedkvnbfrr1gooep5q.png",
+    "caption": "Thị trường CBD"
   },
   {
-    "img": "assets/img/media/metropole-1.jpg",
-    "caption": "Metropole · Thủ Thiêm"
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398016/zdmmmmsewjzimghxjioo.png",
+    "caption": "Cao cấp"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398026/fkvt3vbxkgoino5ccyd0.png",
+    "caption": "Căn hộ"
   }
 ]
