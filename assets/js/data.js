@@ -1,4 +1,4 @@
-/* PaceLand — assets/js/data.js (xuất từ trang quản trị 14:53:42 22/6/2026) */
+/* PaceLand — assets/js/data.js (xuất từ trang quản trị 13:58:13 1/7/2026) */
 
 const SITE = {
   "name": "PaceLand",
@@ -98,7 +98,7 @@ const PROJECTS = [
     "beds": "1–3 PN",
     "size": "50 – 121 m²",
     "handover": "2027",
-    "cover": "assets/img/media/the-prive-1.jpg",
+    "cover": "assets/img/media/the-prive-2.jpg",
     "gallery": [
       "assets/img/media/the-prive-1.jpg",
       "assets/img/media/the-prive-2.jpg",
@@ -201,11 +201,11 @@ const PROJECTS = [
     "status": "Đang mở bán",
     "offmarket": false,
     "badge": "Tiềm năng tăng giá",
-    "priceText": "Từ 8,9 tỉ",
-    "priceValue": 8.9,
+    "priceText": "Từ 4,4 tỉ",
+    "priceValue": 4.4,
     "beds": "1–3 PN",
     "size": "48 – 110 m²",
-    "handover": "2028",
+    "handover": "2027",
     "cover": "assets/img/media/gladia-heights-1.jpg",
     "gallery": [
       "assets/img/media/gladia-heights-1.jpg",
@@ -697,8 +697,8 @@ const JOBS = [
     ]
   },
   {
-    "id": "chuyen-vien-tiep-thi",
-    "title": "Chuyên viên Tiếp thị số",
+    "id": "digital-marketing",
+    "title": "Digital Marketing",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
     "location": "TP. Thủ Đức, TP.HCM",
@@ -977,15 +977,31 @@ const PAGES = {
   }
 };
 
+const HERO_SLIDES = [
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397963/gtwthbx61lhowu5hsopp.png",
+    "caption": "Paceland 1"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397982/qccww2lkapjlvtvfms5e.png",
+    "caption": "Red dot"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398000/zgeedkvnbfrr1gooep5q.png",
+    "caption": "Thị trường CBD"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398016/zdmmmmsewjzimghxjioo.png",
+    "caption": "Cao cấp"
+  },
+  {
+    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398026/fkvt3vbxkgoino5ccyd0.png",
+    "caption": "Căn hộ"
+  }
+];
+
 const HERO_SLIDES_REPO = "khaibaodai/paceland-website";
 const HERO_SLIDES_BRANCH = "main";
-
-const HERO_SLIDES = [
-  { "img": "assets/img/media/the-prive-1.jpg", "caption": "The Privé · Thủ Thiêm" },
-  { "img": "assets/img/media/eaton-park-1.jpg", "caption": "Eaton Park · Tân Cảng" },
-  { "img": "assets/img/media/one-central-saigon-1.jpg", "caption": "One Central Saigon · Quận 1" },
-  { "img": "assets/img/media/metropole-1.jpg", "caption": "Metropole · Thủ Thiêm" }
-];
 
 if (typeof window !== "undefined") {
   window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
@@ -999,7 +1015,6 @@ if (typeof window !== "undefined") {
     if (!cms) return;
     if (cms.site) Object.assign(SITE, cms.site);
     function r(a, d) { if (Array.isArray(d)) { a.length = 0; d.forEach(function (x) { a.push(x); }); } }
-    /* Bỏ qua override projects/posts nếu localStorage vẫn còn Unsplash ID cũ */
     var hasOldCovers = Array.isArray(cms.projects) && cms.projects.some(function (p) {
       return p.cover && /^\d{8,}-[0-9a-f]{8,}$/i.test(p.cover);
     });
