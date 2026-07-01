@@ -1,4 +1,4 @@
-/* PaceLand — assets/js/data.js (xuất từ trang quản trị 13:20:22 1/7/2026) */
+/* PaceLand — assets/js/data.js (xuất từ trang quản trị 13:39:25 1/7/2026) */
 
 const SITE = {
   "name": "PaceLand",
