@@ -1,4 +1,4 @@
-/* PaceLand — assets/js/data.js (xuất từ trang quản trị 13:58:13 1/7/2026) */
+/* PaceLand — assets/js/data.js (xuất từ trang quản trị 14:53:42 22/6/2026) */
 
 const SITE = {
   "name": "PaceLand",
@@ -38,10 +38,6 @@ const NAV = [
   {
     "href": "goc-nhin.html",
     "label": "Góc nhìn"
-  },
-  {
-    "href": "cong-cu.html",
-    "label": "Công cụ"
   },
   {
     "href": "tuyen-dung.html",
@@ -102,11 +98,13 @@ const PROJECTS = [
     "beds": "1–3 PN",
     "size": "50 – 121 m²",
     "handover": "2027",
-    "cover": "assets/img/media/the-prive-2.jpg",
+    "cover": "1545324418-cc1a3fa10c00",
     "gallery": [
-      "assets/img/media/the-prive-1.jpg",
-      "assets/img/media/the-prive-2.jpg",
-      "assets/img/media/the-prive-3.jpg"
+      "1545324418-cc1a3fa10c00",
+      "1600607687939-ce8a6c25118c",
+      "1600585154340-be6161a56a0c",
+      "1600210492486-724fe5c67fb0",
+      "1600566753086-00f18fb6b3ea"
     ],
     "short": "Bộ sưu tập căn hộ giới hạn nhìn thẳng lõi trung tâm Thủ Thiêm — quỹ căn đẹp được giữ riêng cho khách hàng PaceLand.",
     "description": [
@@ -138,11 +136,13 @@ const PROJECTS = [
     "beds": "1–4 PN",
     "size": "52 – 178 m²",
     "handover": "2027",
-    "cover": "assets/img/media/eaton-park-1.jpg",
+    "cover": "1512917774080-9991f1c4c750",
     "gallery": [
-      "assets/img/media/eaton-park-1.jpg",
-      "assets/img/media/eaton-park-2.jpg",
-      "assets/img/media/eaton-park-3.jpg"
+      "1512917774080-9991f1c4c750",
+      "1600047509807-ba8f99d2cdde",
+      "1600566753086-00f18fb6b3ea",
+      "1605276374104-dee2a0ed3cd6",
+      "1600210492486-724fe5c67fb0"
     ],
     "short": "Khu căn hộ resort phong cách Singapore ngay mặt tiền Mai Chí Thọ, kết nối tức thì về trung tâm và sân bay Long Thành.",
     "description": [
@@ -174,11 +174,13 @@ const PROJECTS = [
     "beds": "Nhà phố 5×20m",
     "size": "100 – 280 m²",
     "handover": "2026",
-    "cover": "assets/img/media/the-global-city-1.jpg",
+    "cover": "1486406146926-c627a92ad1ab",
     "gallery": [
-      "assets/img/media/the-global-city-1.jpg",
-      "assets/img/media/the-global-city-2.jpg",
-      "assets/img/media/the-global-city-3.jpg"
+      "1486406146926-c627a92ad1ab",
+      "1512453979798-5ea266f8880c",
+      "1493809842364-78817add7ffb",
+      "1564013799919-ab600027ffc6",
+      "1518780664697-55e3ad937233"
     ],
     "short": "\"Downtown\" mới của Sài Gòn — quần thể nhà phố, nhà phố thương mại và đại lộ trung tâm do Masterise Homes kiến tạo.",
     "description": [
@@ -205,16 +207,18 @@ const PROJECTS = [
     "status": "Đang mở bán",
     "offmarket": false,
     "badge": "Tiềm năng tăng giá",
-    "priceText": "Từ 4,4 tỉ",
-    "priceValue": 4.4,
+    "priceText": "Từ 8,9 tỉ",
+    "priceValue": 8.9,
     "beds": "1–3 PN",
     "size": "48 – 110 m²",
-    "handover": "2027",
-    "cover": "assets/img/media/gladia-heights-1.jpg",
+    "handover": "2028",
+    "cover": "1600596542815-ffad4c1539a9",
     "gallery": [
-      "assets/img/media/gladia-heights-1.jpg",
-      "assets/img/media/gladia-heights-2.jpg",
-      "assets/img/media/gladia-heights-3.jpg"
+      "1600596542815-ffad4c1539a9",
+      "1600585154340-be6161a56a0c",
+      "1600607687939-ce8a6c25118c",
+      "1583608205776-bfd35f0d9f83",
+      "1600047509807-ba8f99d2cdde"
     ],
     "short": "Tổ hợp căn hộ cao tầng đón đầu hạ tầng vành đai và metro mở rộng — cơ hội vào sớm với mức giá gốc.",
     "description": [
@@ -246,11 +250,13 @@ const PROJECTS = [
     "beds": "2–4 PN",
     "size": "90 – 320 m²",
     "handover": "2027",
-    "cover": "assets/img/media/one-central-saigon-1.jpg",
+    "cover": "1502672260266-1c1ef2d93688",
     "gallery": [
-      "assets/img/media/one-central-saigon-1.jpg",
-      "assets/img/media/one-central-saigon-2.jpg",
-      "assets/img/media/one-central-saigon-3.jpg"
+      "1502672260266-1c1ef2d93688",
+      "1493809842364-78817add7ffb",
+      "1512453979798-5ea266f8880c",
+      "1600566753086-00f18fb6b3ea",
+      "1605276374104-dee2a0ed3cd6"
     ],
     "short": "Tài sản siêu sang ngay tứ giác vàng Quận 1 — một trong những quỹ căn khan hiếm nhất thị trường.",
     "description": [
@@ -282,11 +288,13 @@ const PROJECTS = [
     "beds": "Studio – 3 PN",
     "size": "30 – 95 m²",
     "handover": "Bàn giao",
-    "cover": "assets/img/media/vinhomes-grand-park-1.jpg",
+    "cover": "1580587771525-78b9dba3b914",
     "gallery": [
-      "assets/img/media/vinhomes-grand-park-1.jpg",
-      "assets/img/media/vinhomes-grand-park-2.jpg",
-      "assets/img/media/vinhomes-grand-park-3.jpg"
+      "1580587771525-78b9dba3b914",
+      "1600210492486-724fe5c67fb0",
+      "1600047509807-ba8f99d2cdde",
+      "1600585154340-be6161a56a0c",
+      "1564013799919-ab600027ffc6"
     ],
     "short": "Đại đô thị công viên với cộng đồng cư dân lớn — lựa chọn an toàn cho dòng tiền cho thuê ổn định.",
     "description": [
@@ -318,11 +326,13 @@ const PROJECTS = [
     "beds": "Biệt thự đơn lập",
     "size": "180 – 360 m²",
     "handover": "2027",
-    "cover": "assets/img/media/eco-retreat-1.jpg",
+    "cover": "1518780664697-55e3ad937233",
     "gallery": [
-      "assets/img/media/eco-retreat-1.jpg",
-      "assets/img/media/eco-retreat-2.jpg",
-      "assets/img/media/eco-retreat-3.jpg"
+      "1518780664697-55e3ad937233",
+      "1449844908441-8829872d2607",
+      "1564013799919-ab600027ffc6",
+      "1583608205776-bfd35f0d9f83",
+      "1600596542815-ffad4c1539a9"
     ],
     "short": "Đô thị xanh ven sông phong cách Ecopark, chỉ 30 phút về trung tâm — ngôi nhà thứ hai bên thiên nhiên.",
     "description": [
@@ -354,11 +364,13 @@ const PROJECTS = [
     "beds": "1–4 PN",
     "size": "55 – 220 m²",
     "handover": "Bàn giao",
-    "cover": "assets/img/media/metropole-1.jpg",
+    "cover": "1493809842364-78817add7ffb",
     "gallery": [
-      "assets/img/media/metropole-1.jpg",
-      "assets/img/media/metropole-2.jpg",
-      "assets/img/media/metropole-3.jpg"
+      "1493809842364-78817add7ffb",
+      "1502672260266-1c1ef2d93688",
+      "1512453979798-5ea266f8880c",
+      "1605276374104-dee2a0ed3cd6",
+      "1600566753086-00f18fb6b3ea"
     ],
     "short": "Chuẩn mực sống tinh hoa tại Thủ Thiêm — thiết kế tinh xảo, dịch vụ khách sạn, quỹ căn chuyển nhượng chọn lọc.",
     "description": [
@@ -390,10 +402,13 @@ const PROJECTS = [
     "beds": "Biệt thự song lập",
     "size": "200 – 420 m²",
     "handover": "2028",
-    "cover": "assets/img/media/palm-river-1.jpg",
+    "cover": "1449844908441-8829872d2607",
     "gallery": [
-      "assets/img/media/palm-river-1.jpg",
-      "assets/img/media/palm-river-2.jpg"
+      "1449844908441-8829872d2607",
+      "1518780664697-55e3ad937233",
+      "1583608205776-bfd35f0d9f83",
+      "1600596542815-ffad4c1539a9",
+      "1580587771525-78b9dba3b914"
     ],
     "short": "Compound biệt thự ven sông Khu Nam — không gian riêng tư, mật độ thấp, giá trị tích sản dài hạn.",
     "description": [
@@ -418,7 +433,7 @@ const POSTS = [
     "category": "Góc nhìn PaceLand",
     "date": "12/06/2026",
     "readtime": "6 phút đọc",
-    "cover": "assets/img/media/post-gia-co-hoi.png",
+    "cover": "assets/img/media/9.jpg",
     "excerpt": "Khi một bất động sản xuất hiện trên báo mạng hay nền tảng đại chúng, biên lợi nhuận tốt nhất thường đã không còn. Vì sao quyền truy cập sớm lại quyết định lợi nhuận?",
     "body": [
       {
@@ -461,7 +476,7 @@ const POSTS = [
     "category": "Thị trường",
     "date": "05/06/2026",
     "readtime": "5 phút đọc",
-    "cover": "assets/img/media/post-10-percent.png",
+    "cover": "1460472178825-e5240623afd5",
     "excerpt": "90% sản phẩm trên thị trường là cạm bẫy thanh khoản. PaceLand chọn lọc 10% còn lại bằng một hệ tiêu chí khắt khe.",
     "body": [
       {
@@ -501,7 +516,7 @@ const POSTS = [
     "category": "Hạ tầng",
     "date": "28/05/2026",
     "readtime": "7 phút đọc",
-    "cover": "assets/img/media/post-ha-tang-khu-dong.png",
+    "cover": "1477959858617-67f85cf4f1df",
     "excerpt": "Vành đai 3, cao tốc Long Thành và metro mở rộng đang định hình lại bản đồ giá trị bất động sản phía Đông.",
     "body": [
       {
@@ -536,7 +551,7 @@ const POSTS = [
     "category": "Công nghệ BĐS",
     "date": "20/05/2026",
     "readtime": "5 phút đọc",
-    "cover": "assets/img/media/post-co-van-tai-san.png",
+    "cover": "1556761175-5973dc0f32e7",
     "excerpt": "PaceLand không tuyển 'cò đất'. Đội ngũ là những cố vấn tài sản kết hợp công nghệ AI với chuyên môn con người.",
     "body": [
       {
@@ -567,7 +582,7 @@ const POSTS = [
     "category": "Góc nhìn PaceLand",
     "date": "14/05/2026",
     "readtime": "6 phút đọc",
-    "cover": "assets/img/media/post-tu-duy-doi-tac.png",
+    "cover": "1521737711867-e3b97375f902",
     "excerpt": "Lộ trình 3 năm chuyển hoá từ cộng tác viên thành Đối tác cổ phần với cổ phần ưu đãi — khi thành công được chia sẻ.",
     "body": [
       {
@@ -602,7 +617,7 @@ const POSTS = [
     "category": "Quy hoạch",
     "date": "02/05/2026",
     "readtime": "8 phút đọc",
-    "cover": "assets/img/media/post-chu-ky-gia.png",
+    "cover": "1515263487990-61b07816b324",
     "excerpt": "Phân tích chu kỳ giúp xác định thời điểm và khu vực có 'giá cơ hội' tốt nhất trong năm 2026.",
     "body": [
       {
@@ -701,8 +716,8 @@ const JOBS = [
     ]
   },
   {
-    "id": "digital-marketing",
-    "title": "Digital Marketing",
+    "id": "chuyen-vien-tiep-thi",
+    "title": "Chuyên viên Tiếp thị số",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
     "location": "TP. Thủ Đức, TP.HCM",
@@ -981,51 +996,9 @@ const PAGES = {
   }
 };
 
-const HERO_SLIDES = [
-  {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397963/gtwthbx61lhowu5hsopp.png",
-    "caption": "Paceland 1"
-  },
-  {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782397982/qccww2lkapjlvtvfms5e.png",
-    "caption": "Red dot"
-  },
-  {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398000/zgeedkvnbfrr1gooep5q.png",
-    "caption": "Thị trường CBD"
-  },
-  {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398016/zdmmmmsewjzimghxjioo.png",
-    "caption": "Cao cấp"
-  },
-  {
-    "img": "https://res.cloudinary.com/dtrwtahme/image/upload/v1782398026/fkvt3vbxkgoino5ccyd0.png",
-    "caption": "Căn hộ"
-  }
-];
-
-const HERO_SLIDES_REPO = "khaibaodai/paceland-website";
-const HERO_SLIDES_BRANCH = "main";
-
 if (typeof window !== "undefined") {
-  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
+  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.ph = ph;
 }
 
 /* CMS override */
-(function () {
-  if (typeof window === 'undefined') return;
-  try {
-    var cms = JSON.parse(localStorage.getItem('pl_cms') || 'null');
-    if (!cms) return;
-    if (cms.site) Object.assign(SITE, cms.site);
-    function r(a, d) { if (Array.isArray(d)) { a.length = 0; d.forEach(function (x) { a.push(x); }); } }
-    var hasOldCovers = Array.isArray(cms.projects) && cms.projects.some(function (p) {
-      return p.cover && /^\d{8,}-[0-9a-f]{8,}$/i.test(p.cover);
-    });
-    if (!hasOldCovers) { r(PROJECTS, cms.projects); r(POSTS, cms.posts); }
-    r(JOBS, cms.jobs); r(FAQS, cms.faqs);
-    if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } }
-    if (cms.heroSlides) r(HERO_SLIDES, cms.heroSlides);
-    window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;
-  } catch (e) {}
-})();
+(function () { if (typeof window === 'undefined') return; try { var cms = JSON.parse(localStorage.getItem('pl_cms') || 'null'); if (!cms) return; if (cms.site) Object.assign(SITE, cms.site); function r(a, d) { if (Array.isArray(d)) { a.length = 0; d.forEach(function (x) { a.push(x); }); } } r(PROJECTS, cms.projects); r(POSTS, cms.posts); r(JOBS, cms.jobs); r(FAQS, cms.faqs); if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } } window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; } catch (e) {} })();

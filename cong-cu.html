@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Công cụ tài sản — Tính lãi vay, phong thuỷ, dòng tiền, định giá | PaceLand</title>
+<meta name="description" content="Bộ công cụ tài sản miễn phí của PaceLand: tính lãi vay ngân hàng, xem phong thuỷ nhà theo tuổi, phân bổ tài sản, dòng tiền cho thuê và định giá bất động sản.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=8">
+<link rel="stylesheet" href="assets/css/tools.css?v=1">
+<link rel="canonical" href="https://paceland.vn/cong-cu.html">
+<meta name="keywords" content="tính lãi vay ngân hàng, công cụ tính lãi vay mua nhà, xem phong thuỷ nhà theo tuổi, hướng nhà hợp tuổi, phân bổ tài sản, dòng tiền cho thuê, định giá bất động sản, PaceLand">
+<meta name="author" content="PaceLand">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#C70018">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PaceLand">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Công cụ tài sản — PaceLand">
+<meta property="og:description" content="Tính lãi vay ngân hàng, xem phong thuỷ nhà theo tuổi, phân bổ tài sản, dòng tiền cho thuê và định giá bất động sản — miễn phí, tính ngay trên trình duyệt.">
+<meta property="og:url" content="https://paceland.vn/cong-cu.html">
+<meta property="og:image" content="https://paceland.vn/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PaceLand — Công cụ tài sản">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Công cụ tài sản — PaceLand">
+<meta name="twitter:description" content="Tính lãi vay, phong thuỷ nhà, phân bổ tài sản, dòng tiền và định giá BĐS — miễn phí.">
+<meta name="twitter:image" content="https://paceland.vn/assets/img/og-image.jpg">
+</head>
+<body id="toolsPage">
+<div id="header-root"></div>
+
+<main>
+  <section class="page-hero section--ivory">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Công cụ</span>
+      </nav>
+      <span class="eyebrow reveal">Bộ công cụ tài sản</span>
+      <h1 class="reveal" data-d="1">Tính toán trước, <span class="display">quyết định đúng.</span></h1>
+      <p class="lead mt-2 reveal" data-d="2" style="max-width:62ch">Năm công cụ miễn phí giúp bạn nhìn rõ bức tranh tài chính trước mỗi quyết định bất động sản — từ khoản vay, dòng tiền cho đến phong thuỷ và định giá.</p>
+    </div>
+  </section>
+
+  <section class="section section--ivory" style="padding-top:clamp(6px,1.5vw,20px)">
+    <div class="container">
+
+      <div class="tool-switch reveal" role="tablist" aria-label="Chọn công cụ" id="toolSwitch"></div>
+
+      <!-- ============ 1. TÍNH LÃI VAY ============ -->
+      <div class="tool-panel" id="panel-lai-vay" role="tabpanel" aria-labelledby="tab-lai-vay">
+        <div class="tool-layout mt-3">
+          <div class="tool-form">
+            <h3>Tính lãi vay ngân hàng</h3>
+            <p class="tool-desc">Ước tính số tiền phải trả hằng tháng và tổng lãi cho khoản vay mua nhà.</p>
+
+            <div class="form-field">
+              <label for="lvAmount">Số tiền vay</label>
+              <div class="in-suffix">
+                <input id="lvAmount" inputmode="numeric" autocomplete="off" value="2.000.000.000">
+                <span class="sfx">VND</span>
+              </div>
+              <div class="money-hint" id="lvAmountHint"></div>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="lvYears">Thời hạn vay</label>
+                <div class="in-suffix">
+                  <input id="lvYears" type="number" min="1" max="35" value="20">
+                  <span class="sfx">năm</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="lvPromoMonths">Ưu đãi trong</label>
+                <div class="in-suffix">
+                  <input id="lvPromoMonths" type="number" min="0" max="60" value="24">
+                  <span class="sfx">tháng</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="lvRate1">Lãi suất ưu đãi</label>
+                <div class="in-suffix">
+                  <input id="lvRate1" type="number" min="0" max="30" step="0.1" value="6.5">
+                  <span class="sfx">%/năm</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="lvRate2">Lãi suất sau ưu đãi</label>
+                <div class="in-suffix">
+                  <input id="lvRate2" type="number" min="0" max="30" step="0.1" value="10.5">
+                  <span class="sfx">%/năm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Phương thức trả nợ</label>
+              <div class="seg" id="lvMethod">
+                <button type="button" class="active" data-v="declining">Dư nợ giảm dần</button>
+                <button type="button" data-v="annuity">Trả đều hằng tháng</button>
+              </div>
+            </div>
+
+            <button class="btn btn--block" id="lvCalc">Tính khoản vay
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+
+            <p class="tool-note">Dư nợ giảm dần: trả gốc đều, lãi tính trên dư nợ còn lại — tháng đầu cao, giảm dần. Trả đều: cùng một số tiền mỗi tháng trong từng giai đoạn lãi suất.</p>
+          </div>
+
+          <div class="tool-result" id="lvResult">
+            <div class="placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+              Nhập thông tin khoản vay và bấm <b>Tính khoản vay</b> để xem kết quả.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 2. PHONG THUỶ ============ -->
+      <div class="tool-panel" id="panel-phong-thuy" role="tabpanel" aria-labelledby="tab-phong-thuy">
+        <div class="tool-layout mt-3">
+          <div class="tool-form">
+            <h3>Xem phong thuỷ nhà theo tuổi</h3>
+            <p class="tool-desc">Tra cứu mệnh, cung mệnh, hướng nhà hợp – kỵ và những năm đẹp để mua hoặc xây nhà.</p>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="fsYear">Năm sinh (âm lịch)</label>
+                <input id="fsYear" type="number" min="1930" max="2015" value="1985" inputmode="numeric">
+              </div>
+              <div class="form-field">
+                <label>Giới tính</label>
+                <div class="seg" id="fsGender">
+                  <button type="button" class="active" data-v="nam">Nam</button>
+                  <button type="button" data-v="nu">Nữ</button>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn--block" id="fsCalc">Xem phong thuỷ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+
+            <p class="tool-note">Nếu bạn sinh tháng 1–2 dương lịch trước Tết Nguyên đán, hãy chọn năm âm lịch liền trước. Kết quả theo phái Bát trạch, mang tính tham khảo văn hoá truyền thống.</p>
+          </div>
+
+          <div class="tool-result" id="fsResult">
+            <div class="placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              Nhập năm sinh và giới tính để tra cứu hướng nhà hợp tuổi.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 3. PHÂN BỔ TÀI SẢN ============ -->
+      <div class="tool-panel" id="panel-phan-bo" role="tabpanel" aria-labelledby="tab-phan-bo">
+        <div class="tool-layout mt-3">
+          <div class="tool-form">
+            <h3>Phân bổ tài sản</h3>
+            <p class="tool-desc">Gợi ý cơ cấu danh mục theo khẩu vị rủi ro và độ tuổi của bạn.</p>
+
+            <div class="form-field">
+              <label for="alTotal">Tổng tài sản dự kiến phân bổ</label>
+              <div class="in-suffix">
+                <input id="alTotal" inputmode="numeric" autocomplete="off" value="10.000.000.000">
+                <span class="sfx">VND</span>
+              </div>
+              <div class="money-hint" id="alTotalHint"></div>
+            </div>
+
+            <div class="form-field">
+              <label>Độ tuổi</label>
+              <div class="seg seg-3" id="alAge">
+                <button type="button" data-v="young">Dưới 36</button>
+                <button type="button" class="active" data-v="mid">36 – 49</button>
+                <button type="button" data-v="senior">Từ 50</button>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Khẩu vị rủi ro</label>
+              <div class="seg seg-3" id="alRisk">
+                <button type="button" data-v="safe">An toàn</button>
+                <button type="button" class="active" data-v="balanced">Cân bằng</button>
+                <button type="button" data-v="growth">Tăng trưởng</button>
+              </div>
+            </div>
+
+            <button class="btn btn--block" id="alCalc">Xem gợi ý phân bổ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+          <div class="tool-result" id="alResult">
+            <div class="placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/></svg>
+              Nhập tổng tài sản và chọn khẩu vị để xem cơ cấu gợi ý.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 4. DÒNG TIỀN CHO THUÊ ============ -->
+      <div class="tool-panel" id="panel-dong-tien" role="tabpanel" aria-labelledby="tab-dong-tien">
+        <div class="tool-layout mt-3">
+          <div class="tool-form">
+            <h3>Dòng tiền cho thuê</h3>
+            <p class="tool-desc">Kiểm tra một bất động sản cho thuê tạo ra dòng tiền dương hay âm mỗi tháng.</p>
+
+            <div class="form-field">
+              <label for="cfPrice">Giá mua bất động sản</label>
+              <div class="in-suffix">
+                <input id="cfPrice" inputmode="numeric" autocomplete="off" value="5.000.000.000">
+                <span class="sfx">VND</span>
+              </div>
+              <div class="money-hint" id="cfPriceHint"></div>
+            </div>
+
+            <div class="form-field">
+              <label for="cfEquity">Vốn tự có</label>
+              <div class="in-suffix">
+                <input id="cfEquity" inputmode="numeric" autocomplete="off" value="2.500.000.000">
+                <span class="sfx">VND</span>
+              </div>
+              <div class="money-hint" id="cfEquityHint"></div>
+            </div>
+
+            <div class="form-field">
+              <label for="cfRent">Tiền thuê mỗi tháng</label>
+              <div class="in-suffix">
+                <input id="cfRent" inputmode="numeric" autocomplete="off" value="25.000.000">
+                <span class="sfx">VND</span>
+              </div>
+              <div class="money-hint" id="cfRentHint"></div>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="cfOcc">Tỷ lệ lấp đầy</label>
+                <div class="in-suffix">
+                  <input id="cfOcc" type="number" min="10" max="100" value="90">
+                  <span class="sfx">%</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="cfOpex">Chi phí vận hành</label>
+                <div class="in-suffix">
+                  <input id="cfOpex" type="number" min="0" max="60" value="10">
+                  <span class="sfx">% thuê</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="cfRate">Lãi vay</label>
+                <div class="in-suffix">
+                  <input id="cfRate" type="number" min="0" max="30" step="0.1" value="10">
+                  <span class="sfx">%/năm</span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="cfYears">Thời hạn vay</label>
+                <div class="in-suffix">
+                  <input id="cfYears" type="number" min="1" max="35" value="20">
+                  <span class="sfx">năm</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn--block" id="cfCalc">Tính dòng tiền
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+
+            <p class="tool-note">Khoản vay = giá mua trừ vốn tự có, trả đều hằng tháng. Nếu vốn tự có bằng hoặc lớn hơn giá mua thì không vay.</p>
+          </div>
+
+          <div class="tool-result" id="cfResult">
+            <div class="placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Nhập thông tin để xem dòng tiền ròng, lợi suất và thời gian hoàn vốn.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 5. ĐỊNH GIÁ BĐS ============ -->
+      <div class="tool-panel" id="panel-dinh-gia" role="tabpanel" aria-labelledby="tab-dinh-gia">
+        <div class="tool-layout mt-3">
+          <div class="tool-form">
+            <h3>Định giá bất động sản</h3>
+            <p class="tool-desc">Ước tính nhanh khoảng giá theo đơn giá tham chiếu từng khu vực TP.HCM.</p>
+
+            <div class="form-field">
+              <label for="vaArea">Khu vực</label>
+              <select id="vaArea"></select>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label for="vaType">Loại hình</label>
+                <select id="vaType">
+                  <option value="canho">Căn hộ</option>
+                  <option value="nhapho">Nhà phố</option>
+                  <option value="bietthu">Biệt thự</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="vaSize">Diện tích</label>
+                <div class="in-suffix">
+                  <input id="vaSize" type="number" min="20" max="1000" value="75">
+                  <span class="sfx">m²</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Pháp lý</label>
+              <div class="seg" id="vaLegal">
+                <button type="button" class="active" data-v="so">Đã có sổ</button>
+                <button type="button" data-v="hdmb">Hợp đồng mua bán</button>
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div class="form-field">
+                <label>Tình trạng</label>
+                <div class="seg" id="vaCond">
+                  <button type="button" class="active" data-v="new">Mới</button>
+                  <button type="button" data-v="used">Đã sử dụng</button>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Vị trí / tầng / view đẹp</label>
+                <div class="seg" id="vaView">
+                  <button type="button" data-v="yes">Có</button>
+                  <button type="button" class="active" data-v="no">Bình thường</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Nội thất đầy đủ</label>
+              <div class="seg" id="vaFurn">
+                <button type="button" data-v="yes">Có</button>
+                <button type="button" class="active" data-v="no">Không / cơ bản</button>
+              </div>
+            </div>
+
+            <button class="btn btn--block" id="vaCalc">Ước tính giá trị
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+          <div class="tool-result" id="vaResult">
+            <div class="placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              Chọn khu vực, loại hình và diện tích để xem khoảng giá ước tính.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="inner">
+          <div>
+            <span class="eyebrow gold">Cần lời khuyên chính xác hơn?</span>
+            <h2 class="mt-1">Con số chỉ là điểm bắt đầu</h2>
+            <p>Cố vấn tài sản PaceLand sẽ thẩm định thực tế từng cơ hội — pháp lý, chu kỳ giá, dòng tiền — trước khi bạn xuống tiền.</p>
+          </div>
+          <div class="flex" style="flex-direction:column;gap:.8rem">
+            <a class="btn btn--light btn--lg" href="lien-he.html">Nhận tư vấn riêng
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a class="btn btn--gold btn--lg" href="tel:0903983737">Gọi 0903 983 737</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="assets/js/data.js?v=12"></script>
+<script src="assets/js/components.js?v=5"></script>
+<script src="assets/js/main.js?v=9"></script>
+<script src="assets/js/tools.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết dự án — PaceLand</title>
+<meta name="description" content="Thông tin chi tiết dự án bất động sản tại PaceLand: vị trí, mức giá, tiện ích và tư vấn riêng từ Cố vấn tài sản.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=8">
+<link rel="canonical" href="https://paceland.vn/du-an-chi-tiet.html">
+<meta name="keywords" content="PaceLand, bất động sản cao cấp, bất động sản hạng sang, giao dịch kín, off-market, căn hộ hạng sang TP.HCM, biệt thự, nhà phố thương mại, đầu tư bất động sản, The Privé, Eaton Park, The Global City, Gladia Heights, cố vấn tài sản, mạng lưới bất động sản kín">
+<meta name="author" content="PaceLand">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#C70018">
+<link rel="apple-touch-icon" href="assets/img/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PaceLand">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Chi tiết dự án — PaceLand">
+<meta property="og:description" content="Thông tin chi tiết dự án bất động sản tại PaceLand: vị trí, mức giá, tiện ích và tư vấn riêng từ Cố vấn tài sản.">
+<meta property="og:url" content="https://paceland.vn/du-an-chi-tiet.html">
+<meta property="og:image" content="https://paceland.vn/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PaceLand — Kiến tạo giá trị thịnh vượng">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chi tiết dự án — PaceLand">
+<meta name="twitter:description" content="Thông tin chi tiết dự án bất động sản tại PaceLand: vị trí, mức giá, tiện ích và tư vấn riêng từ Cố vấn tài sản.">
+<meta name="twitter:image" content="https://paceland.vn/assets/img/og-image.jpg">
+</head>
+<body>
+<div id="header-root"></div>
+
+<main id="projectDetail">
+  <section class="page-hero section--ivory" style="padding-bottom:0">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="du-an.html">Dự án</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span id="pdBreadcrumb">Dự án</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section--tight section--ivory" style="padding-top:clamp(20px,3vw,32px)">
+    <div class="container">
+      <div class="gallery reveal" id="pdGallery"></div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="flex wrap reveal" style="gap:.5rem;margin-bottom:1rem" id="pdTags"></div>
+          <h1 class="reveal" id="pdTitle" style="font-size:clamp(2rem,4vw,3rem)">Dự án</h1>
+          <div class="pcard__loc reveal" id="pdLoc" style="margin-top:.8rem;font-size:.95rem"></div>
+          <p class="lead reveal mt-2" id="pdShort"></p>
+
+          <div class="spec-grid reveal" id="pdSpecs"></div>
+
+          <div class="reveal">
+            <span class="eyebrow">Tổng quan</span>
+            <div class="mt-1" id="pdDesc" style="color:var(--ink-soft)"></div>
+          </div>
+
+          <div class="reveal mt-3">
+            <span class="eyebrow gold">Tiện ích nổi bật</span>
+            <ul class="amenities mt-1" id="pdAmenities"></ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="sticky-cta reveal">
+            <div class="eyebrow">Mức giá tham khảo</div>
+            <div class="price mt-1" id="pdPrice"></div>
+            <hr class="divider" style="margin-block:1.2rem">
+            <p class="text-muted" style="font-size:.86rem;margin-bottom:1rem">Để lại thông tin, Cố vấn tài sản sẽ liên hệ tư vấn riêng &amp; gửi bảng giá chi tiết, chính sách và quỹ căn đẹp.</p>
+            <form data-pace-form>
+              <input type="hidden" name="project" id="pdProjectField">
+              <div class="field-row">
+                <div class="form-field"><label>Họ và tên</label><input name="name" required placeholder="Nguyễn Văn A"></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><label>Số điện thoại</label><input name="phone" type="tel" required placeholder="09xx xxx xxx"></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><label>Nhu cầu</label><textarea name="message" placeholder="Tôi quan tâm căn 2PN view sông…"></textarea></div>
+              </div>
+              <button class="btn btn--block" type="submit">Nhận tư vấn riêng
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+              <div class="form-success mt-2">Cảm ơn bạn! Cố vấn tài sản của PaceLand sẽ liên hệ trong thời gian sớm nhất.</div>
+            </form>
+            <div class="flex items-center" style="gap:.6rem;margin-top:1rem;justify-content:center">
+              <a class="link-arrow" href="tel:0903983737" style="font-size:.74rem">Gọi ngay 0903 983 737</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Gợi ý cho bạn</span>
+        <h2 class="section-title">Dự án liên quan</h2>
+      </div>
+      <div class="card-grid" id="pdRelated"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="assets/js/data.js?v=12"></script>
+<script src="assets/js/components.js?v=5"></script>
+<script src="assets/js/main.js?v=9"></script>
+</body>
+</html>

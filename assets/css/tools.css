@@ -1,0 +1,423 @@
+/* ============================================================
+   PACELAND — Trang Công cụ tài sản (cong-cu.html)
+   ============================================================ */
+
+/* ---------- Switcher ---------- */
+.tool-switch {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tool-switch::-webkit-scrollbar { display: none; }
+
+.tool-switch button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  transition: all 0.3s var(--ease);
+  white-space: nowrap;
+}
+.tool-switch button svg { width: 17px; height: 17px; color: var(--gold); transition: color 0.3s; }
+.tool-switch button:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
+.tool-switch button.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 14px 30px rgba(27, 21, 16, 0.18);
+}
+.tool-switch button.active svg { color: var(--gold-soft); }
+
+/* ---------- Panels ---------- */
+.tool-panel { display: none; }
+.tool-panel.active { display: block; animation: toolIn 0.5s var(--ease-out) both; }
+@keyframes toolIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .tool-panel.active { animation: none; }
+}
+
+.tool-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 5fr) 7fr;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: start;
+}
+.tool-layout > * { min-width: 0; }
+
+/* ---------- Form card ---------- */
+.tool-form {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: clamp(1.4rem, 2.6vw, 2.1rem);
+  box-shadow: var(--shadow-sm);
+}
+.tool-form h3 {
+  font-size: 1.12rem;
+  margin-bottom: 0.35rem;
+}
+.tool-form .tool-desc {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin-bottom: 1.3rem;
+  line-height: 1.55;
+}
+
+.tool-form .form-field { margin-bottom: 0.95rem; }
+.tool-form label {
+  display: block;
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+}
+.tool-form input,
+.tool-form select {
+  width: 100%;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  font-size: 0.95rem;
+  transition: border-color 0.25s;
+}
+.tool-form input:focus,
+.tool-form select:focus { border-color: var(--red); outline: none; }
+
+.tool-form .in-suffix { position: relative; }
+.tool-form .in-suffix input { padding-right: 4.4rem; }
+.tool-form .in-suffix .sfx {
+  position: absolute;
+  right: 0.9rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: var(--muted);
+  pointer-events: none;
+  font-family: var(--head);
+  font-weight: 600;
+}
+.money-hint {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-family: var(--head);
+  font-weight: 600;
+  min-height: 1.1em;
+}
+
+.tool-form .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+
+.tool-form .seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tool-form .seg.seg-3 { grid-template-columns: 1fr 1fr 1fr; }
+.tool-form .seg button {
+  padding: 0.68rem 0.5rem;
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: var(--white);
+  transition: all 0.25s;
+}
+.tool-form .seg button + button { border-left: 1px solid var(--line); }
+.tool-form .seg button.active { background: var(--ink); color: var(--paper); }
+
+.tool-form .btn { margin-top: 0.4rem; }
+
+.tool-note {
+  margin-top: 1rem;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.55;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--line);
+}
+
+/* ---------- Results ---------- */
+.tool-result { min-width: 0; }
+.tool-result .placeholder {
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: clamp(2.4rem, 5vw, 4rem) 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+  background: rgba(255, 255, 255, 0.45);
+}
+.tool-result .placeholder svg { width: 34px; height: 34px; margin: 0 auto 0.8rem; color: var(--gold); opacity: 0.75; }
+
+.kq-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.kq-cards .kq {
+  background: var(--paper);
+  padding: 1.15rem 1.2rem;
+}
+.kq-cards .kq .l { font-size: 0.74rem; color: var(--muted); letter-spacing: 0.03em; margin-bottom: 0.35rem; }
+.kq-cards .kq .v {
+  font-family: var(--head);
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.kq-cards .kq .v.neg { color: var(--red); }
+.kq-cards .kq .v.pos { color: #1E7A3C; }
+.kq-cards .kq .u { font-size: 0.72rem; color: var(--muted); font-weight: 500; margin-left: 2px; }
+.kq-cards .kq.hi { background: var(--ink); }
+.kq-cards .kq.hi .l { color: var(--muted-2); }
+.kq-cards .kq.hi .v { color: var(--gold-soft); }
+
+/* Stacked bar gốc / lãi */
+.split-bar { margin-top: 1.2rem; }
+.split-bar .bar {
+  display: flex;
+  height: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.split-bar .bar i { display: block; height: 100%; }
+.split-bar .bar .b-goc { background: var(--ink); }
+.split-bar .bar .b-lai { background: var(--red); }
+.split-bar .legend { display: flex; gap: 1.4rem; margin-top: 0.55rem; font-size: 0.78rem; color: var(--muted); flex-wrap: wrap; }
+.split-bar .legend b { color: var(--ink); font-family: var(--head); }
+.split-bar .legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+
+/* Bảng lịch trả nợ / bảng năm */
+.tool-table-wrap {
+  margin-top: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--paper);
+}
+.tool-table-wrap .tt-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.tool-table-scroll { max-height: 340px; overflow: auto; }
+.tool-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+.tool-table th {
+  position: sticky; top: 0;
+  background: var(--cloud);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-align: right;
+  padding: 0.6rem 0.9rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.tool-table th:first-child, .tool-table td:first-child { text-align: left; }
+.tool-table td { padding: 0.55rem 0.9rem; border-top: 1px solid var(--line-soft); text-align: right; white-space: nowrap; color: var(--ink-soft); }
+.tool-table td:first-child { font-family: var(--head); font-weight: 600; color: var(--ink); }
+.tool-table tr.good td { background: rgba(176, 137, 74, 0.07); }
+.tool-table tr.bad td { background: rgba(199, 0, 24, 0.045); }
+
+.badge-ok, .badge-no {
+  display: inline-block;
+  padding: 0.14rem 0.55rem;
+  border-radius: 999px;
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.badge-ok { background: rgba(30, 122, 60, 0.1); color: #1E7A3C; }
+.badge-no { background: var(--red-tint); color: var(--red); }
+
+/* ---------- Donut phân bổ ---------- */
+.alloc-wrap {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+}
+.donut {
+  width: clamp(170px, 20vw, 220px);
+  height: clamp(170px, 20vw, 220px);
+  border-radius: 50%;
+  position: relative;
+  flex: none;
+}
+.donut::after {
+  content: "";
+  position: absolute; inset: 22%;
+  background: var(--paper);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 8px rgba(27, 21, 16, 0.07);
+}
+.donut .center {
+  position: absolute; inset: 22%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 1; text-align: center;
+}
+.donut .center b { font-family: var(--head); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+.donut .center span { font-size: 0.68rem; color: var(--muted); }
+
+.alloc-legend { display: flex; flex-direction: column; gap: 0.65rem; min-width: 0; }
+.alloc-legend .row {
+  display: grid;
+  grid-template-columns: 14px 1fr auto auto;
+  gap: 0.7rem;
+  align-items: center;
+  font-size: 0.88rem;
+}
+.alloc-legend .sw { width: 13px; height: 13px; border-radius: 4px; }
+.alloc-legend .nm { color: var(--ink); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.alloc-legend .pc { font-family: var(--head); font-weight: 800; color: var(--ink); }
+.alloc-legend .amt { font-size: 0.8rem; color: var(--muted); text-align: right; min-width: 90px; }
+
+/* ---------- La bàn phong thuỷ ---------- */
+.fs-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.2rem, 3vw, 2.2rem);
+  align-items: start;
+}
+.fs-layout > * { min-width: 0; }
+
+.fs-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+.fs-summary .cell { background: var(--paper); padding: 1.05rem 1.15rem; }
+.fs-summary .cell .l { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.3rem; }
+.fs-summary .cell .v { font-family: var(--head); font-weight: 800; font-size: 1.02rem; color: var(--ink); line-height: 1.3; }
+.fs-summary .cell .v em { font-style: normal; color: var(--red); }
+
+.compass {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  max-width: 460px;
+}
+.compass .c-cell {
+  aspect-ratio: 1.35;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
+  padding: 0.4rem;
+  background: var(--paper);
+}
+.compass .c-cell .d { font-family: var(--head); font-weight: 800; font-size: 0.88rem; }
+.compass .c-cell .t { font-size: 0.68rem; line-height: 1.25; }
+.compass .c-cell.good { background: var(--gold-tint); border-color: var(--line-gold); }
+.compass .c-cell.good .d { color: var(--gold); }
+.compass .c-cell.good .t { color: var(--ink-soft); }
+.compass .c-cell.bad { background: rgba(27, 21, 16, 0.03); }
+.compass .c-cell.bad .d { color: var(--muted-2); }
+.compass .c-cell.bad .t { color: var(--muted-2); }
+.compass .c-center {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.compass .c-center .d { color: var(--gold-soft); font-size: 1rem; }
+.compass .c-center .t { color: var(--muted-2); }
+
+/* ---------- Thanh khoảng giá định giá ---------- */
+.val-range { margin: 1.4rem 0 0.4rem; }
+.val-range .track {
+  position: relative;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--cloud), var(--gold-soft), var(--red));
+  border: 1px solid var(--line);
+}
+.val-range .mark {
+  position: absolute;
+  top: 50%;
+  width: 3px; height: 22px;
+  background: var(--ink);
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+.val-range .labels { display: flex; justify-content: space-between; margin-top: 0.6rem; font-size: 0.78rem; color: var(--muted); }
+.val-range .labels b { display: block; font-family: var(--head); font-size: 0.95rem; color: var(--ink); }
+.val-range .labels .mid { text-align: center; }
+.val-range .labels .mid b { color: var(--red); font-size: 1.1rem; }
+.val-range .labels .hi { text-align: right; }
+
+/* ---------- CTA lead ---------- */
+.tool-cta {
+  margin-top: 1.4rem;
+  background: var(--ink);
+  border-radius: 10px;
+  padding: clamp(1.3rem, 2.6vw, 1.8rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.tool-cta p { color: var(--paper); font-size: 0.95rem; margin: 0; max-width: 46ch; }
+.tool-cta p b { color: var(--gold-soft); }
+.tool-cta .acts { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+
+/* ---------- Disclaimer ---------- */
+.tool-disclaimer {
+  margin-top: 1rem;
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .tool-layout, .fs-layout { grid-template-columns: 1fr; }
+  .alloc-wrap { grid-template-columns: 1fr; justify-items: center; }
+  .alloc-legend { width: 100%; }
+  .compass { max-width: 100%; }
+}
