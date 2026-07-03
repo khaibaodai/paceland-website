@@ -869,3 +869,11 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .founder-photo.noimg { border: 1px dashed rgba(255, 255, 255, 0.22); }
 .founder-photo.noimg img { display: none; }
 .founder-photo.noimg::after { content: "Lưu ảnh nhà sáng lập vào assets/img/founder.jpg"; position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 2rem; color: rgba(255, 255, 255, 0.5); font-size: 0.88rem; line-height: 1.6; }
+
+/* ---------- Bảng trong bài viết (post table) ---------- */
+.post-table-wrap { overflow-x: auto; margin: 1.6rem 0; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+.post-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.post-table th { background: var(--cloud); font-family: var(--head); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); text-align: left; padding: 0.7rem 0.95rem; white-space: nowrap; }
+.post-table td { padding: 0.68rem 0.95rem; border-top: 1px solid var(--line-soft); color: var(--ink-soft); vertical-align: top; line-height: 1.55; }
+.post-table td:first-child { font-family: var(--head); font-weight: 600; color: var(--ink); }
+.post-table a { color: var(--red); }

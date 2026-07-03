@@ -58,7 +58,7 @@ function statusPill(p) {
 function renderProjectCard(p) {
   return '' +
   '<article class="pcard reveal">' +
-    '<a class="pcard__media" href="du-an-chi-tiet.html?id=' + p.id + '" aria-label="' + p.name + '">' +
+    '<a class="pcard__media" href="/du-an/' + p.id + '.html" aria-label="' + p.name + '">' +
       unsplashImg(p.cover, 800, p.name) +
       '<div class="pcard__tags">' + statusPill(p) + (p.badge ? '<span class="pill pill--ghost">' + p.badge + "</span>" : "") + "</div>" +
       '<button class="pcard__fav" aria-label="Lưu dự án" data-fav>' + ICONS.heart + "</button>" +
@@ -66,7 +66,7 @@ function renderProjectCard(p) {
     "</a>" +
     '<div class="pcard__body">' +
       '<div class="pcard__loc">' + ICONS.pin + "<span>" + p.location + "</span></div>" +
-      '<h3><a href="du-an-chi-tiet.html?id=' + p.id + '">' + p.name + "</a></h3>" +
+      '<h3><a href="/du-an/' + p.id + '.html">' + p.name + "</a></h3>" +
       '<div class="pcard__dev">Chủ đầu tư · ' + p.developer + "</div>" +
       '<div class="pcard__specs">' +
         '<span class="s">' + ICONS.bed + p.beds + "</span>" +
@@ -80,7 +80,7 @@ function renderProjectCard(p) {
 function renderPostCard(post, big) {
   if (big) {
     return '' +
-    '<a class="ifeature reveal" href="bai-viet.html?id=' + post.id + '">' +
+    '<a class="ifeature reveal" href="/bai-viet/' + post.id + '.html">' +
       '<div class="ifeature__media">' + unsplashImg(post.cover, 1000, post.title) + "</div>" +
       '<div class="ifeature__body">' +
         '<span class="cat" style="color:var(--red);font-family:var(--head);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase">' + post.category + "</span>" +
@@ -91,7 +91,7 @@ function renderPostCard(post, big) {
     "</a>";
   }
   return '' +
-  '<a class="icard reveal" href="bai-viet.html?id=' + post.id + '">' +
+  '<a class="icard reveal" href="/bai-viet/' + post.id + '.html">' +
     '<div class="icard__media">' + unsplashImg(post.cover, 700, post.title) + "</div>" +
     '<span class="cat">' + post.category + "</span>" +
     "<h3>" + post.title + "</h3>" +
@@ -109,20 +109,20 @@ function buildHeader() {
   var cur = currentPage();
   var links = NAV.map(function (n) {
     var active = n.href === cur ? " active" : "";
-    return '<a class="' + active.trim() + '" href="' + n.href + '">' + n.label + "</a>";
+    return '<a class="' + active.trim() + '" href="/' + n.href + '">' + n.label + "</a>";
   }).join("");
   var mlinks = NAV.map(function (n) {
-    return '<a href="' + n.href + '">' + n.label + " <span>" + ICONS.arrowUpRight + "</span></a>";
+    return '<a href="/' + n.href + '">' + n.label + " <span>" + ICONS.arrowUpRight + "</span></a>";
   }).join("");
 
   return '' +
   '<header class="site-header" id="siteHeader">' +
     '<div class="container">' +
-      '<a class="brand" href="index.html"><img src="assets/img/logo.png" alt="PaceLand — Kiến tạo giá trị thịnh vượng"></a>' +
+      '<a class="brand" href="/index.html"><img src="/assets/img/logo.png" alt="PaceLand — Kiến tạo giá trị thịnh vượng"></a>' +
       '<nav class="nav" aria-label="Điều hướng chính">' + links + "</nav>" +
       '<div class="header-cta">' +
         '<a class="header-phone" href="tel:' + SITE.hotlineRaw + '">' + ICONS.phone + SITE.hotline + "</a>" +
-        '<a class="btn" href="lien-he.html">Tư vấn riêng ' + ICONS.arrow + "</a>" +
+        '<a class="btn" href="/lien-he.html">Tư vấn riêng ' + ICONS.arrow + "</a>" +
       "</div>" +
       '<button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
     "</div>" +
@@ -133,13 +133,13 @@ function buildHeader() {
 }
 
 function buildFooter() {
-  var nav = NAV.map(function (n) { return '<li><a href="' + n.href + '">' + n.label + "</a></li>"; }).join("");
+  var nav = NAV.map(function (n) { return '<li><a href="/' + n.href + '">' + n.label + "</a></li>"; }).join("");
   return '' +
   '<footer class="site-footer">' +
     '<div class="container">' +
       '<div class="footer-top">' +
         '<div class="footer-brand">' +
-          '<img src="assets/img/logo-white.png" alt="PaceLand">' +
+          '<img src="/assets/img/logo-white.png" alt="PaceLand">' +
           "<p>" + SITE.legalName + " — mạng lưới bất động sản kín, kết nối khách hàng tinh hoa với những cơ hội tài sản tốt nhất bằng dữ liệu và tốc độ.</p>" +
           '<div class="footer-soc">' +
             '<a href="' + SITE.facebook + '" aria-label="Facebook">' + ICONS.facebook + "</a>" +
@@ -148,12 +148,12 @@ function buildFooter() {
             '<a href="' + SITE.zalo + '" aria-label="Zalo">' + ICONS.zalo + "</a>" +
           "</div>" +
         "</div>" +
-        '<div class="footer-col"><h4>Khám phá</h4><ul>' + nav + '<li><a href="faq.html">Câu hỏi thường gặp</a></li></ul></div>' +
+        '<div class="footer-col"><h4>Khám phá</h4><ul>' + nav + '<li><a href="/faq.html">Câu hỏi thường gặp</a></li></ul></div>' +
         '<div class="footer-col"><h4>Phân khúc</h4><ul>' +
-          '<li><a href="du-an.html">Căn hộ hạng sang</a></li>' +
-          '<li><a href="du-an.html">Biệt thự &amp; nhà phố</a></li>' +
-          '<li><a href="du-an.html">Bất động sản nghỉ dưỡng</a></li>' +
-          '<li><a href="du-an.html">Sản phẩm giao dịch kín</a></li>' +
+          '<li><a href="/du-an.html">Căn hộ hạng sang</a></li>' +
+          '<li><a href="/du-an.html">Biệt thự &amp; nhà phố</a></li>' +
+          '<li><a href="/du-an.html">Bất động sản nghỉ dưỡng</a></li>' +
+          '<li><a href="/du-an.html">Sản phẩm giao dịch kín</a></li>' +
         "</ul></div>" +
         '<div class="footer-col footer-contact"><h4>Liên hệ</h4><ul>' +
           "<li>" + ICONS.pin + "<span>" + SITE.address + "</span></li>" +
@@ -163,7 +163,7 @@ function buildFooter() {
       "</div>" +
       '<div class="footer-bottom">' +
         "<span>© " + new Date().getFullYear() + " " + SITE.legalName + ". Bảo lưu mọi quyền.</span>" +
-        '<span>Kiến tạo giá trị thịnh vượng · <a href="admin.html" style="opacity:.65">Quản trị</a></span>' +
+        '<span>Kiến tạo giá trị thịnh vượng · <a href="/admin.html" style="opacity:.65">Quản trị</a></span>' +
       "</div>" +
     "</div>" +
   "</footer>";

@@ -1,4 +1,62 @@
+# PaceLand — paceland.vn
+# Moi bot tim kiem va bot AI deu duoc chao don (tru trang quan tri)
+
 User-agent: *
+Allow: /
+Disallow: /admin.html
+
+# AI assistants & answer engines — explicitly allowed
+User-agent: GPTBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin.html
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin.html
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin.html
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin.html
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin.html
+
+User-agent: meta-externalagent
 Allow: /
 Disallow: /admin.html
 

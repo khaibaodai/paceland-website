@@ -447,8 +447,14 @@
     if (b.t === "h") return "<h2>" + b.c + "</h2>";
     if (b.t === "q") return "<blockquote>" + b.c + "</blockquote>";
     if (b.t === "ul") return '<ul class="bullets">' + b.c.map(function (i) { return "<li>" + i + "</li>"; }).join("") + "</ul>";
+    if (b.t === "table" && b.c && b.c.rows) {
+      var thead = (b.c.head || []).map(function (h) { return "<th>" + h + "</th>"; }).join("");
+      var trows = b.c.rows.map(function (r) { return "<tr>" + r.map(function (c) { return "<td>" + c + "</td>"; }).join("") + "</tr>"; }).join("");
+      return '<div class="post-table-wrap"><table class="post-table">' + (thead ? "<thead><tr>" + thead + "</tr></thead>" : "") + "<tbody>" + trows + "</tbody></table></div>";
+    }
     return "";
   }
+  if (typeof window !== "undefined") window.__plRenderBlock = renderBlock;
 
   /* ---------- CAREERS ---------- */
   function initCareers() {

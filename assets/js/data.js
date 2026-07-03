@@ -413,6 +413,95 @@ const PROJECTS = [
 
 const POSTS = [
   {
+    "id": "top-du-an-can-ho-cao-cap-tphcm-2026",
+    "title": "Top dự án căn hộ cao cấp TP.HCM 2026: bảng so sánh theo khu vực",
+    "category": "Thị trường",
+    "date": "03/07/2026",
+    "readtime": "9 phút đọc",
+    "cover": "assets/img/media/the-prive-1.jpg",
+    "excerpt": "Bảng so sánh 7 dự án căn hộ cao cấp đáng chú ý nhất TP.HCM 2026 theo giá, diện tích, thời điểm bàn giao — kèm gợi ý chọn theo từng mục tiêu: ở, tích sản hay dòng tiền.",
+    "body": [
+      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Thủ Thiêm, từ 8,5 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,2 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> và <b>The Metropole Thủ Thiêm</b> là lựa chọn siêu sang lõi trung tâm; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào tầm giá tốt nhất cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
+      { "t": "p", "c": "Danh sách này dựa trên 4 tiêu chí PaceLand dùng khi thẩm định mọi dự án: vị trí và hạ tầng kết nối, năng lực chủ đầu tư, pháp lý, và dư địa chu kỳ giá. Phạm vi gồm các dự án PaceLand trực tiếp phân phối hoặc theo dõi dữ liệu giao dịch — cập nhật tháng 7/2026." },
+      { "t": "h", "c": "Bảng so sánh nhanh 7 dự án tiêu biểu" },
+      { "t": "table", "c": {
+        "head": ["Dự án", "Khu vực", "Phân khúc", "Giá tham khảo", "Diện tích", "Bàn giao"],
+        "rows": [
+          ["<a href='/du-an/the-prive.html'>The Privé</a>", "Thủ Thiêm", "Hạng sang", "Từ 8,5 tỉ", "50–121 m²", "2027"],
+          ["<a href='/du-an/eaton-park.html'>Eaton Park</a>", "An Phú, Khu Đông", "Hạng sang", "Từ 9,2 tỉ", "52–178 m²", "2027"],
+          ["<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>", "Quận 1", "Siêu sang", "Liên hệ", "90–320 m²", "2027"],
+          ["<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>", "Thủ Thiêm", "Siêu sang · chuyển nhượng", "Từ 18 tỉ", "55–220 m²", "Đã bàn giao"],
+          ["<a href='/du-an/the-global-city.html'>The Global City</a>", "An Phú, Khu Đông", "Siêu sang · nhà phố TM", "Từ 42 tỉ", "100–280 m²", "2026"],
+          ["<a href='/du-an/gladia-heights.html'>Gladia Heights</a>", "Cửa ngõ Đông Bắc", "Cao cấp", "Từ 4,4 tỉ", "48–110 m²", "2027"],
+          ["<a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>", "TP. Thủ Đức", "Cao cấp", "Từ 8,0 tỉ", "30–95 m²", "Đã bàn giao"]
+        ]
+      } },
+      { "t": "h", "c": "Chọn theo mục tiêu của bạn" },
+      { "t": "ul", "c": [
+        "<b>Ở sang trọng, giữ giá bền:</b> The Privé hoặc Eaton Park — hai dự án hạng sang đang mở bán với chủ đầu tư mạnh và vị trí lõi Khu Đông",
+        "<b>Tích sản biểu tượng, ngân sách lớn:</b> One Central Saigon (Quận 1) hoặc quỹ căn chuyển nhượng The Metropole — nguồn cung hiếm, giá trị sưu tầm",
+        "<b>Ngân sách quanh 5 tỉ, đón hạ tầng:</b> Gladia Heights — giá vào thấp nhất danh sách, hưởng lợi trực tiếp Vành đai 3 và metro mở rộng",
+        "<b>Dòng tiền cho thuê ổn định:</b> Vinhomes Grand Park — cộng đồng cư dân đông, tỉ lệ lấp đầy thuê cao, đã bàn giao"
+      ] },
+      { "t": "h", "c": "Ba lưu ý trước khi chốt" },
+      { "t": "ul", "c": [
+        "So sánh bằng đơn giá/m² giữa các dự án cùng khu vực, đừng so bằng tổng giá căn",
+        "Pháp lý xét theo từng đợt mở bán, không theo danh tiếng dự án — luôn kiểm tra văn bản đủ điều kiện bán mới nhất",
+        "Chính sách thanh toán và chiết khấu làm giá thực tế chênh nhau đáng kể giữa các đợt — hỏi giá thực thanh toán, không chỉ giá niêm yết"
+      ] },
+      { "t": "q", "c": "Dự án tốt nhất không phải dự án nổi tiếng nhất — mà là dự án đúng mục tiêu của bạn, mua ở mức giá đúng." },
+      { "t": "h", "c": "Hỏi nhanh" },
+      { "t": "ul", "c": [
+        "<b>Giá trên đã là giá cuối chưa?</b> — Chưa; giá thực còn phụ thuộc chính sách từng đợt và vị trí căn. Để lại thông tin để nhận bảng giá chính xác tại thời điểm hỏi.",
+        "<b>Mua trực tiếp chủ đầu tư có rẻ hơn qua PaceLand?</b> — Không; giá do chủ đầu tư niêm yết thống nhất, PaceLand không thu phí người mua và còn giữ suất ưu tiên giai đoạn sớm.",
+        "<b>Danh sách này có được trả tiền để xếp hạng?</b> — Không; đây là danh mục thẩm định của PaceLand, tiêu chí công khai ở đầu bài."
+      ] },
+      { "t": "p", "c": "Số liệu trong bài là khoảng tham khảo tại tháng 7/2026 và có thể thay đổi theo giỏ hàng từng đợt. Để nhận bảng giá và quỹ căn chính xác hôm nay, gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — tư vấn miễn phí, bảo mật." }
+    ]
+  },
+  {
+    "id": "bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc",
+    "title": "Bảng giá căn hộ cao cấp TP.HCM theo khu vực (tham khảo 2026)",
+    "category": "Thị trường",
+    "date": "03/07/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/one-central-saigon-1.jpg",
+    "excerpt": "Đơn giá căn hộ cao cấp TP.HCM 2026 trải từ ~30 đến ~350 triệu/m² tuỳ khu vực. Bảng tổng hợp 7 khu vực chính kèm ước tính giá căn 2 phòng ngủ và cách đọc bảng cho đúng.",
+    "body": [
+      { "t": "p", "c": "Câu trả lời ngắn: đơn giá căn hộ cao cấp TP.HCM năm 2026 nằm trong khoảng <b>30–350 triệu đồng/m²</b> tuỳ khu vực. Cao nhất là lõi Quận 1 (150–350 triệu/m²), kế đến Thủ Thiêm (120–220), Thảo Điền – An Phú (85–140); vùng giá dễ tiếp cận nhất của phân khúc cao cấp là Khu Đông mở rộng (55–90) và vùng ven (30–55)." },
+      { "t": "table", "c": {
+        "head": ["Khu vực", "Đơn giá (triệu/m²)", "Căn 2PN ~70m² ước tính", "Đặc điểm"],
+        "rows": [
+          ["Quận 1 (lõi trung tâm)", "150–350", "10,5 – 24,5 tỉ", "Siêu sang, nguồn cung rất hiếm"],
+          ["Thủ Thiêm", "120–220", "8,4 – 15,4 tỉ", "CBD mới, quỹ đất hữu hạn"],
+          ["Thảo Điền – An Phú", "85–140", "6,0 – 9,8 tỉ", "Cộng đồng quốc tế, cầu thuê mạnh"],
+          ["Trung tâm mở rộng (Bình Thạnh, Q3, Q10)", "75–130", "5,3 – 9,1 tỉ", "Gần lõi, nguồn cung đa dạng"],
+          ["Khu Nam (Q7, Nhà Bè)", "60–110", "4,2 – 7,7 tỉ", "Phú Mỹ Hưng và dải ven sông"],
+          ["Khu Đông khác (TP. Thủ Đức)", "55–90", "3,9 – 6,3 tỉ", "Đón metro và vành đai"],
+          ["Vùng ven & tỉnh lân cận", "30–55", "2,1 – 3,9 tỉ", "Đô thị vệ tinh, nghỉ dưỡng"]
+        ]
+      } },
+      { "t": "h", "c": "Cách đọc bảng giá cho đúng" },
+      { "t": "p", "c": "Dải giá mỗi khu vực rộng vì ba lý do: vị trí lô đất trong khu (mặt sông, mặt công viên chênh hẳn phía trong), giai đoạn dự án (mở bán sớm rẻ hơn cận bàn giao), và chính sách bán từng đợt (chiết khấu thanh toán nhanh có thể tương đương giảm 5–10%). Vì vậy hãy dùng bảng này để định vị khu vực, còn quyết định mua bán cần con số của đúng toà, đúng căn." },
+      { "t": "h", "c": "Yếu tố khiến căn của bạn lệch khỏi khoảng chung" },
+      { "t": "ul", "c": [
+        "Tầng cao, view đẹp: cộng khoảng 5–10% so với căn cùng loại",
+        "Nội thất hoàn thiện đầy đủ: cộng khoảng 5%",
+        "Pháp lý mới ở dạng hợp đồng mua bán (chưa sổ): trừ khoảng 5–10%",
+        "Căn đã qua sử dụng: trừ khoảng 5–10% tuỳ hiện trạng"
+      ] },
+      { "t": "p", "c": "Bạn có thể tự ước tính giá trị một căn cụ thể theo đúng các hệ số trên bằng <a href='/cong-cu.html#dinh-gia'>công cụ định giá miễn phí</a> của PaceLand — chọn khu vực, loại hình, diện tích là có ngay khoảng giá." },
+      { "t": "q", "c": "Bảng giá cho bạn biết mình đang đứng ở đâu. Giao dịch thực tế cho bạn biết mình nên trả bao nhiêu." },
+      { "t": "h", "c": "Hỏi nhanh" },
+      { "t": "ul", "c": [
+        "<b>Số liệu này lấy từ đâu?</b> — Tổng hợp từ giỏ hàng các dự án PaceLand phân phối và dữ liệu giao dịch thị trường mà đội ngũ theo dõi; là khoảng tham khảo, không phải giá niêm yết của bất kỳ dự án cụ thể nào.",
+        "<b>Bao lâu cập nhật một lần?</b> — PaceLand xem lại định kỳ; bản này phản ánh mặt bằng năm 2026. Giá điểm của từng dự án thay đổi theo đợt mở bán.",
+        "<b>Muốn định giá chính xác căn đang có?</b> — Chuyên gia PaceLand thẩm định miễn phí dựa trên giao dịch thực tế cùng khu vực: gọi 0903 983 737."
+      ] },
+      { "t": "p", "c": "Cần bảng giá chi tiết của một dự án cụ thể? Để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> hoặc gọi <b>0903 983 737</b> — cố vấn PaceLand gửi giỏ hàng và chính sách mới nhất trong ngày." }
+    ]
+  },
+  {
     "id": "thu-thiem-2026-nguon-cung",
     "title": "Thủ Thiêm 2026: cuộc đua nguồn cung của những tên tuổi lớn",
     "category": "Thị trường",
@@ -993,6 +1082,144 @@ const FAQS = [
     ]
   },
   {
+    "group": "Mua căn hộ cao cấp TP.HCM",
+    "items": [
+      {
+        "q": "Nên mua căn hộ cao cấp ở khu nào TP.HCM năm 2026?",
+        "a": "Ba lựa chọn tiêu biểu theo mục tiêu: <b>Thủ Thiêm</b> cho tài sản dài hạn, giá trị biểu tượng (120–220 triệu/m²); <b>Thảo Điền – An Phú</b> cho ở thực và cho thuê nhờ cộng đồng quốc tế (85–140 triệu/m²); <b>cửa ngõ Đông Bắc Khu Đông</b> cho nhà đầu tư đón hạ tầng với giá vào từ khoảng 4,4 tỉ/căn. Xem phân tích đầy đủ trong bài <a href='/bai-viet/ban-do-5-cuc-tang-truong-khu-dong.html'>Bản đồ 5 cực tăng trưởng của Khu Đông</a>."
+      },
+      {
+        "q": "Có khoảng 5 tỉ thì mua được căn hộ cao cấp nào?",
+        "a": "Trong tầm 5 tỉ, lựa chọn tiêu biểu là căn 1 phòng ngủ tại Gladia Heights (từ 4,4 tỉ, bàn giao 2027, cửa ngõ Đông Bắc) hoặc căn studio–1PN chuyển nhượng tại các đại đô thị Khu Đông. Phân khúc lõi như Thủ Thiêm, Quận 1 thường bắt đầu từ 8–9 tỉ cho căn nhỏ nhất."
+      },
+      {
+        "q": "Ngân sách 8–10 tỉ mua được gì ở phân khúc hạng sang?",
+        "a": "Đây là tầm giá vào của căn 1–2 phòng ngủ tại các dự án hạng sang Khu Đông: The Privé Thủ Thiêm (từ 8,5 tỉ) và Eaton Park An Phú (từ 9,2 tỉ) — đủ để sở hữu địa chỉ đẳng cấp với khả năng giữ giá tốt."
+      },
+      {
+        "q": "Nên mua căn hộ mới từ chủ đầu tư hay căn chuyển nhượng?",
+        "a": "Mua mới: giá gốc, thanh toán giãn theo tiến độ, được chọn căn sớm. Chuyển nhượng: nhận nhà ngay, thấy thực tế vận hành toà nhà, và đôi khi mua được dưới giá thị trường từ người cần bán nhanh — nhóm hàng PaceLand theo dõi liên tục trong mạng lưới kín."
+      },
+      {
+        "q": "Thời điểm nào là tốt để mua căn hộ cao cấp?",
+        "a": "Theo khung chu kỳ: giá tăng bền nhất khi hạ tầng đang thi công, không phải khi mới công bố hay đã khánh thành. Năm 2026, Vành đai 3 và các tuyến metro mở rộng đang triển khai — điểm giữa chu kỳ của Khu Đông. Quan trọng hơn thời điểm là mua đúng dự án, đúng giá."
+      },
+      {
+        "q": "Dự án căn hộ nào đáng chú ý nhất TP.HCM hiện nay?",
+        "a": "Danh mục chọn lọc của PaceLand hiện gồm: The Privé (Thủ Thiêm), Eaton Park (An Phú), One Central Saigon (Quận 1), The Metropole Thủ Thiêm (chuyển nhượng), The Global City, Gladia Heights (Đông Bắc) và Vinhomes Grand Park. Xem bảng so sánh chi tiết trong bài <a href='/bai-viet/top-du-an-can-ho-cao-cap-tphcm-2026.html'>Top dự án căn hộ cao cấp TP.HCM 2026</a>."
+      }
+    ]
+  },
+  {
+    "group": "Giá căn hộ theo khu vực",
+    "items": [
+      {
+        "q": "Giá căn hộ Thủ Thiêm hiện bao nhiêu?",
+        "a": "Khoảng tham khảo 2026: 120–220 triệu/m² tuỳ dự án, vị trí lô đất và giai đoạn bàn giao. Căn 1PN khoảng 50m² bắt đầu từ ~8,5 tỉ. Dải giá rộng vì tầm nhìn và pháp lý từng lô quyết định rất lớn."
+      },
+      {
+        "q": "Giá căn hộ Quận 1 bao nhiêu 1m²?",
+        "a": "Phân khúc siêu sang lõi trung tâm: 150–350 triệu/m². Nguồn cung rất hiếm — tiêu biểu là One Central Saigon; nhiều giao dịch diễn ra kín, không niêm yết công khai."
+      },
+      {
+        "q": "Giá căn hộ Thảo Điền – An Phú?",
+        "a": "Khoảng 85–140 triệu/m² (2026). Dự án mới tiêu biểu là Eaton Park từ ~9,2 tỉ/căn. Khu này giữ giá bền nhờ cộng đồng quốc tế và nguồn cầu thuê ổn định."
+      },
+      {
+        "q": "Khu Đông còn chỗ nào giá mềm không?",
+        "a": "Có — vành đai Grand Park và cửa ngõ Đông Bắc: 55–90 triệu/m², căn hộ mới từ 4,4 tỉ (Gladia Heights). Đây là vùng giá vào thấp nhất Khu Đông và có câu chuyện hạ tầng rõ ràng nhất (Vành đai 3, metro mở rộng)."
+      },
+      {
+        "q": "Xem bảng giá đầy đủ các khu vực ở đâu?",
+        "a": "Bài <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>Bảng giá căn hộ cao cấp TP.HCM theo khu vực</a> tổng hợp đơn giá 7 khu vực chính. Muốn ước tính cho một căn cụ thể, dùng <a href='/cong-cu.html#dinh-gia'>công cụ định giá</a> miễn phí của PaceLand."
+      }
+    ]
+  },
+  {
+    "group": "Đầu tư & cho thuê",
+    "items": [
+      {
+        "q": "Lợi suất cho thuê căn hộ TP.HCM được bao nhiêu?",
+        "a": "Phổ biến 3–5%/năm (lợi suất gộp) trên giá trị căn hộ. Khu có cầu thuê mạnh từ chuyên gia nước ngoài như Thảo Điền – An Phú thường ở cận trên. Tổng lợi nhuận thực tế = dòng tiền thuê + mức tăng giá của tài sản."
+      },
+      {
+        "q": "Nên mua căn hộ nào để cho thuê tốt?",
+        "a": "Căn 1–2 phòng ngủ gần cụm việc làm: Thảo Điền – An Phú (chuyên gia nước ngoài), quanh khu Công nghệ cao và Đại học Quốc gia, hoặc các đại đô thị đông dân như Vinhomes Grand Park. Ưu tiên căn đã có sẵn hợp đồng thuê — dòng tiền chạy ngay từ ngày nhận nhà."
+      },
+      {
+        "q": "Dòng tiền âm có nên mua không?",
+        "a": "Chấp nhận được với 2 điều kiện: bạn biết trước và chịu được khoản bù hằng tháng, và kỳ vọng tăng giá dựa trên hạ tầng thật đang thi công. Kiểm tra con số của bạn trước khi quyết định bằng <a href='/cong-cu.html#dong-tien'>công cụ dòng tiền cho thuê</a>."
+      },
+      {
+        "q": "Khu vực nào tiềm năng tăng giá nhất?",
+        "a": "Theo khung chu kỳ của PaceLand: vùng đang hưởng hạ tầng thi công — cửa ngõ Đông Bắc (Vành đai 3) và dải giữa tuyến metro — có dư địa tăng theo hạ tầng rõ nhất; Thủ Thiêm tăng chậm hơn nhưng bền hơn nhờ nguồn cung hữu hạn."
+      },
+      {
+        "q": "Đầu tư lướt sóng ngắn hạn căn hộ được không?",
+        "a": "PaceLand không khuyến khích với phần lớn khách hàng: chi phí giao dịch, thuế và thời gian chờ pháp lý ăn mòn biên lợi nhuận ngắn hạn. Giá trị của căn hộ cao cấp nằm ở chu kỳ 3–7 năm; ngoại lệ là các suất mua sớm giá tốt trong mạng lưới."
+      }
+    ]
+  },
+  {
+    "group": "Vay & tài chính",
+    "items": [
+      {
+        "q": "Lãi suất vay mua nhà hiện nay bao nhiêu?",
+        "a": "Tham khảo 2026: khoảng 6–8%/năm ưu đãi trong 1–2 năm đầu, sau đó thả nổi 10–12%/năm tuỳ ngân hàng. Khác biệt lớn nằm ở biên độ thả nổi và phí trả nợ trước hạn — PaceLand hỗ trợ so sánh gói vay phù hợp hồ sơ của bạn."
+      },
+      {
+        "q": "Vay được tối đa bao nhiêu % giá trị căn hộ?",
+        "a": "Thông thường tới 70% giá trị (một số dự án liên kết ngân hàng cho vay 80–85% giá trị hợp đồng). Khuyến nghị an toàn của PaceLand: vay không quá 50% nếu mua đầu tư, không quá 60–70% nếu mua ở với thu nhập ổn định."
+      },
+      {
+        "q": "Thu nhập bao nhiêu thì mua được căn hộ 5 tỉ?",
+        "a": "Quy tắc nhanh: khoản trả ngân hàng không nên vượt 40% thu nhập. Ví dụ vay 2,5 tỉ trong 20 năm, lãi trung bình ~10%/năm: trả ~24–25 triệu/tháng → thu nhập hộ gia đình nên từ ~60 triệu/tháng. Tự tính chính xác bằng <a href='/cong-cu.html#lai-vay'>công cụ tính lãi vay</a>."
+      },
+      {
+        "q": "Nên trả nợ kiểu dư nợ giảm dần hay trả đều hằng tháng?",
+        "a": "Dư nợ giảm dần: tổng lãi thấp hơn nhưng các tháng đầu nặng. Trả đều: dễ dự trù, nhẹ giai đoạn đầu, tổng lãi cao hơn. Người mua cho thuê thường chọn trả đều để cân dòng tiền; người mua ở thu nhập cao chọn giảm dần để tiết kiệm lãi."
+      }
+    ]
+  },
+  {
+    "group": "Pháp lý & quy trình",
+    "items": [
+      {
+        "q": "Trước khi đặt cọc cần kiểm tra giấy tờ gì?",
+        "a": "7 điểm cốt lõi: quy hoạch 1/500 và giấy phép xây dựng; văn bản đủ điều kiện bán của Sở Xây dựng; bảo lãnh ngân hàng; tiến độ thanh toán so với tiến độ xây; điều khoản bàn giao và chế tài; kinh phí bảo trì 2%; lộ trình sổ hồng. Chi tiết trong bài <a href='/bai-viet/7-diem-phap-ly-mua-can-ho-khu-dong.html'>7 điểm pháp lý phải kiểm tra</a> — PaceLand thẩm định miễn phí thay khách hàng."
+      },
+      {
+        "q": "Người nước ngoài mua căn hộ tại Việt Nam được không?",
+        "a": "Được — với các dự án thương mại được phép bán cho người nước ngoài, hạn mức 30% số căn mỗi toà nhà, thời hạn sở hữu 50 năm (có thể gia hạn). Trước khi cọc cần kiểm tra hạn mức (quota) còn lại của toà đó."
+      },
+      {
+        "q": "Bao lâu sau khi nhận nhà thì có sổ hồng?",
+        "a": "Thông thường 1–3 năm sau bàn giao, tuỳ tiến độ hoàn công và việc chủ đầu tư hoàn thành nghĩa vụ tài chính về đất. Đây là mục phải hỏi rõ và giữ bằng chứng văn bản trước khi mua."
+      },
+      {
+        "q": "Quy trình mua qua PaceLand diễn ra thế nào?",
+        "a": "4 bước: (1) nghe nhu cầu và ngân sách; (2) đề xuất 2–3 phương án kèm dữ liệu thẩm định; (3) xem thực tế và đàm phán giá; (4) đồng hành ký kết, thu xếp vay vốn, nhận nhà. Khách hàng không trả phí tư vấn."
+      }
+    ]
+  },
+  {
+    "group": "Phong thuỷ & tuổi mua nhà",
+    "items": [
+      {
+        "q": "Năm 2027 tuổi nào mua nhà đẹp?",
+        "a": "Không có năm đẹp chung cho mọi người — năm đẹp là năm không phạm Kim Lâu, Hoang Ốc, Tam Tai theo tuổi mụ từng người. Tra miễn phí 8 năm tới cho đúng tuổi của bạn bằng <a href='/cong-cu.html#phong-thuy'>công cụ phong thuỷ</a> của PaceLand."
+      },
+      {
+        "q": "Mua nhà hướng nào hợp tuổi?",
+        "a": "Theo phái Bát trạch: người Đông tứ mệnh hợp hướng Bắc, Nam, Đông, Đông Nam; người Tây tứ mệnh hợp Tây, Tây Bắc, Tây Nam, Đông Bắc. Cung mệnh tính từ năm sinh và giới tính — <a href='/cong-cu.html#phong-thuy'>công cụ phong thuỷ</a> hiển thị la bàn 8 hướng tốt xấu cho tuổi của bạn."
+      },
+      {
+        "q": "Phạm năm Kim Lâu có mua nhà được không?",
+        "a": "Dân gian có cách “mượn tuổi” người hợp tuổi để đứng cọc và ký kết, hoặc dời thời điểm nhận nhà sang năm đẹp. Lưu ý: phong thuỷ là yếu tố văn hoá tham khảo — pháp lý và giá trị tài sản vẫn là gốc của quyết định."
+      }
+    ]
+  },
+  {
     "group": "Dành cho khách hàng",
     "items": [
       {
@@ -1274,7 +1501,17 @@ if (typeof window !== "undefined") {
         });
       }
     }
-    r(JOBS, cms.jobs); r(FAQS, cms.faqs);
+    r(JOBS, cms.jobs);
+    /* FAQ: gộp theo tên nhóm — nhóm mới trong data.js không bị bản lưu cũ đè */
+    if (Array.isArray(cms.faqs)) {
+      var seedFaqs = FAQS.slice();
+      r(FAQS, cms.faqs);
+      seedFaqs.forEach(function (sg) {
+        var dup = false;
+        for (var j = 0; j < FAQS.length; j++) { if (FAQS[j].group === sg.group) { dup = true; break; } }
+        if (!dup) FAQS.push(sg);
+      });
+    }
     if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } }
     if (cms.heroSlides) r(HERO_SLIDES, cms.heroSlides);
     window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;
