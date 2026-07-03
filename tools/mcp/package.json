@@ -1,0 +1,9 @@
+{
+  "name": "paceland-mcp",
+  "version": "1.0.0",
+  "description": "MCP server quản lý website PaceLand — dùng với Claude Code/Desktop",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  }
+}

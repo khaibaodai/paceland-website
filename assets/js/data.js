@@ -15,6 +15,13 @@ const SITE = {
   "youtube": "#",
   "tiktok": "#",
   "formEndpoint": "https://formspree.io/f/your-form-id",
+  "leadEndpoint": "",
+  "tracking": {
+    "ga4": "",
+    "adsId": "",
+    "adsLabel": "",
+    "metaPixel": ""
+  },
   "mapEmbed": "https://www.google.com/maps?q=Th%E1%BB%A7%20Thi%C3%AAm%2C%20TP.%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c&output=embed"
 };
 

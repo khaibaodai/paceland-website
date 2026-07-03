@@ -1,0 +1,39 @@
+name: Auto prerender
+
+# Tự chạy prerender khi nội dung thay đổi (admin đẩy data.js lên GitHub)
+# -> sinh lại trang tĩnh bài viết/dự án + sitemap, commit ngược vào repo.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/js/data.js"
+      - "assets/js/components.js"
+      - "tools/prerender.mjs"
+
+permissions:
+  contents: write
+
+jobs:
+  prerender:
+    runs-on: ubuntu-latest
+    # Không tự kích hoạt lại chính nó
+    if: "!contains(github.event.head_commit.message, '[prerender]')"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Chạy prerender
+        run: node tools/prerender.mjs
+      - name: Commit kết quả
+        run: |
+          git config user.name "paceland-bot"
+          git config user.email "bot@paceland.vn"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Không có gì thay đổi"
+          else
+            git commit -m "[prerender] Tự động sinh trang tĩnh + sitemap"
+            git push
+          fi

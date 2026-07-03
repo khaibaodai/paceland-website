@@ -187,6 +187,211 @@ function mountChrome() {
     fc.innerHTML = buildFloatContact();
     document.body.appendChild(fc);
   }
+  mountChat();
+}
+
+/* ============================================================
+   TRỢ LÝ CHAT PACELAND
+   - Trả lời từ kho FAQ (khớp từ khoá, không cần server/API key)
+   - Luồng thu lead 3 bước: nhu cầu -> ngân sách -> tên + SĐT
+   - Lead gửi qua window.__plSubmitLead (main.js) -> Sheet/email
+   ============================================================ */
+
+function plNorm(s) {
+  s = String(s || "").toLowerCase();
+  try { s = s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d"); } catch (e) {}
+  return s.replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+}
+
+/* Lối tắt: từ khoá -> trả lời nhanh + link công cụ/trang */
+var CHAT_SHORTCUTS = [
+  { k: "lai suat|vay|tra gop|ngan hang|tra no", a: "Lãi vay mua nhà tham khảo 2026: khoảng <b>6–8%/năm ưu đãi</b> 1–2 năm đầu, sau đó thả nổi 10–12%/năm. Anh/chị có thể tự tính số tiền trả mỗi tháng bằng <a href='/cong-cu.html#lai-vay'>công cụ tính lãi vay</a> của PaceLand." },
+  { k: "phong thuy|huong nha|kim lau|hoang oc|tam tai|menh gi|hop tuoi", a: "PaceLand có <a href='/cong-cu.html#phong-thuy'>công cụ phong thuỷ miễn phí</a>: nhập năm sinh là ra mệnh, hướng nhà hợp – kỵ và các năm đẹp mua nhà (tránh Kim Lâu – Hoang Ốc – Tam Tai)." },
+  { k: "dong tien|cho thue|loi suat thue|thue can ho", a: "Lợi suất cho thuê căn hộ TP.HCM phổ biến <b>3–5%/năm</b>. Muốn biết một căn cụ thể dòng tiền dương hay âm, dùng thử <a href='/cong-cu.html#dong-tien'>công cụ dòng tiền cho thuê</a> nhé." },
+  { k: "dinh gia|gia tri can|ban duoc bao nhieu", a: "Anh/chị có thể ước tính nhanh bằng <a href='/cong-cu.html#dinh-gia'>công cụ định giá</a> (chọn khu vực + diện tích là ra khoảng giá), hoặc để lại SĐT để chuyên gia PaceLand thẩm định miễn phí theo giao dịch thực tế." },
+  { k: "gia thu thiem", a: "Giá căn hộ Thủ Thiêm tham khảo 2026: <b>120–220 triệu/m²</b>; căn 1PN từ ~8,5 tỉ. Xem đầy đủ 7 khu vực trong <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>bảng giá theo khu vực</a>." },
+  { k: "bang gia|gia theo khu|bao nhieu 1m2|bao nhieu mot met|gia can ho", a: "Đơn giá căn hộ cao cấp TP.HCM 2026 trải từ <b>30–350 triệu/m²</b> tuỳ khu vực (Quận 1 cao nhất, vùng ven mềm nhất). Xem <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>bảng giá 7 khu vực</a> hoặc cho em biết khu anh/chị quan tâm nhé." },
+  { k: "du an nao|nen mua|goi y|de xuat|top du an", a: "Tuỳ mục tiêu: ở sang trọng → <a href='/du-an/the-prive.html'>The Privé</a>, <a href='/du-an/eaton-park.html'>Eaton Park</a>; ngân sách ~5 tỉ đón hạ tầng → <a href='/du-an/gladia-heights.html'>Gladia Heights</a>; dòng tiền thuê → <a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>. Xem <a href='/bai-viet/top-du-an-can-ho-cao-cap-tphcm-2026.html'>bảng so sánh đầy đủ</a>." },
+  { k: "gladia", a: "<b>Gladia Heights</b> — căn hộ cao cấp cửa ngõ Đông Bắc TP.HCM: từ 4,4 tỉ, 1–3PN, 48–110m², bàn giao 2027, đón Vành đai 3 + metro mở rộng. Xem chi tiết tại <a href='/du-an/gladia-heights.html'>trang dự án</a> hoặc để lại SĐT nhận bảng giá." },
+  { k: "prive", a: "<b>The Privé</b> — căn hộ hạng sang Thủ Thiêm, từ 8,5 tỉ, 50–121m², bàn giao 2027. PaceLand giữ một số căn vị trí đẹp giá ưu tiên. Chi tiết: <a href='/du-an/the-prive.html'>trang dự án</a>." },
+  { k: "eaton", a: "<b>Eaton Park</b> (Gamuda Land) — mặt tiền Mai Chí Thọ, An Phú: từ 9,2 tỉ, 1–4PN, bàn giao 2027, chuẩn resort. Chi tiết: <a href='/du-an/eaton-park.html'>trang dự án</a>." },
+  { k: "phap ly|dat coc|so hong|hop dong|giay to", a: "Trước khi đặt cọc cần soi 7 loại giấy tờ (quy hoạch 1/500, văn bản đủ điều kiện bán, bảo lãnh ngân hàng…). Xem <a href='/bai-viet/7-diem-phap-ly-mua-can-ho-khu-dong.html'>danh sách 7 điểm pháp lý</a> — PaceLand thẩm định miễn phí thay anh/chị." },
+  { k: "lien he|hotline|so dien thoai|goi dien|tu van vien|gap nguoi", a: "Anh/chị gọi ngay <a href='tel:0903983737'><b>0903 983 737</b></a> hoặc <a href='https://zalo.me/0903983737' target='_blank' rel='noopener'>chat Zalo</a> — cố vấn PaceLand trực máy. Hoặc bấm <i>Nhận tư vấn</i> bên dưới để em xin thông tin, PaceLand gọi lại ngay." }
+];
+
+var plChat = { open: false, step: null, lead: {} };
+
+function plChatFindAnswer(text) {
+  var q = plNorm(text);
+  if (!q) return null;
+  for (var i = 0; i < CHAT_SHORTCUTS.length; i++) {
+    var keys = CHAT_SHORTCUTS[i].k.split("|");
+    for (var j = 0; j < keys.length; j++) {
+      if (q.indexOf(keys[j]) !== -1) return { a: CHAT_SHORTCUTS[i].a };
+    }
+  }
+  /* Khớp với kho FAQ: chấm điểm theo số từ trùng */
+  var qWords = q.split(" ").filter(function (w) { return w.length > 2; });
+  var best = null, bestScore = 0;
+  (window.FAQS || []).forEach(function (g) {
+    (g.items || []).forEach(function (it) {
+      var t = plNorm(it.q + " " + it.a);
+      var score = 0;
+      qWords.forEach(function (w) { if (t.indexOf(w) !== -1) score++; });
+      if (score > bestScore) { bestScore = score; best = it; }
+    });
+  });
+  if (best && bestScore >= 2) return { a: best.a };
+  return null;
+}
+
+function plChatMsg(html, who) {
+  var box = document.getElementById("plcMsgs");
+  if (!box) return;
+  var d = document.createElement("div");
+  d.className = "plc-msg " + (who === "me" ? "me" : "bot");
+  d.innerHTML = html;
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function plChatChips(list) {
+  var box = document.getElementById("plcMsgs");
+  if (!box) return;
+  var d = document.createElement("div");
+  d.className = "plc-chips";
+  d.innerHTML = list.map(function (c) { return '<button type="button" data-chip="' + c.v + '">' + c.t + "</button>"; }).join("");
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function plChatGreet() {
+  plChatMsg("Chào anh/chị 👋 Em là trợ lý PaceLand. Em có thể giúp gì hôm nay?");
+  plChatChips([
+    { t: "🏙 Tìm căn hộ phù hợp", v: "lead" },
+    { t: "💰 Giá theo khu vực", v: "q:bảng giá căn hộ" },
+    { t: "🏦 Tính lãi vay", v: "q:lãi suất vay" },
+    { t: "🧭 Phong thuỷ theo tuổi", v: "q:phong thuỷ hướng nhà" },
+    { t: "📞 Nhận tư vấn ngay", v: "lead" }
+  ]);
+}
+
+function plChatLeadFlow(stage, value) {
+  if (stage === "start") {
+    plChat.step = "need";
+    plChatMsg("Tuyệt! Để cố vấn tư vấn đúng, anh/chị đang quan tâm điều gì nhất?");
+    plChatChips([
+      { t: "Mua để ở", v: "need:Mua để ở" },
+      { t: "Đầu tư", v: "need:Đầu tư" },
+      { t: "Cho thuê / dòng tiền", v: "need:Dòng tiền cho thuê" },
+      { t: "Bán / định giá căn đang có", v: "need:Bán - định giá" }
+    ]);
+  } else if (stage === "need") {
+    plChat.lead.need = value;
+    plChat.step = "budget";
+    plChatMsg("<b>" + value + "</b> — ghi nhận ạ. Ngân sách dự kiến của anh/chị?");
+    plChatChips([
+      { t: "Dưới 5 tỉ", v: "budget:Dưới 5 tỉ" },
+      { t: "5 – 10 tỉ", v: "budget:5-10 tỉ" },
+      { t: "10 – 30 tỉ", v: "budget:10-30 tỉ" },
+      { t: "Trên 30 tỉ", v: "budget:Trên 30 tỉ" }
+    ]);
+  } else if (stage === "budget") {
+    plChat.lead.budget = value;
+    plChat.step = "contact";
+    plChatMsg("Cảm ơn anh/chị. Cho em xin <b>tên + số điện thoại</b> để cố vấn gọi lại trong ít phút (miễn phí, bảo mật):");
+    var box = document.getElementById("plcMsgs");
+    var f = document.createElement("div");
+    f.className = "plc-leadform";
+    f.innerHTML = '<input id="plcName" placeholder="Tên của anh/chị">' +
+      '<input id="plcPhone" inputmode="tel" placeholder="Số điện thoại *">' +
+      '<button type="button" id="plcSend">Gửi — nhận tư vấn ngay</button>';
+    box.appendChild(f);
+    box.scrollTop = box.scrollHeight;
+    document.getElementById("plcSend").addEventListener("click", function () {
+      var name = document.getElementById("plcName").value.trim();
+      var phone = document.getElementById("plcPhone").value.trim();
+      var btn = this;
+      if (!/^0\d{8,10}$/.test(phone.replace(/[\s.]/g, ""))) {
+        plChatMsg("Số điện thoại chưa đúng — anh/chị kiểm tra giúp em (bắt đầu bằng 0, đủ 9–11 số) 🙏");
+        return;
+      }
+      btn.disabled = true; btn.textContent = "Đang gửi…";
+      var payload = { source: "chat", name: name || "Khách chat", phone: phone, need: plChat.lead.need || "", loai_can: plChat.lead.budget || "", ua: navigator.userAgent.slice(0, 80) };
+      var send = window.__plSubmitLead ? window.__plSubmitLead(payload) : Promise.resolve(true);
+      send.then(function () {
+        f.remove();
+        plChat.step = null;
+        plChatMsg("Đã gửi thành công ✅ Cố vấn PaceLand sẽ gọi <b>" + phone + "</b> trong ít phút. Cần ngay bây giờ: <a href='tel:0903983737'><b>0903 983 737</b></a> · <a href='https://zalo.me/0903983737' target='_blank' rel='noopener'>Zalo</a>");
+      });
+    });
+  }
+}
+
+function plChatHandle(text) {
+  plChatMsg(String(text).replace(/</g, "&lt;"), "me");
+  if (plChat.step === "contact") {
+    plChatMsg("Anh/chị điền vào ô tên + SĐT phía trên giúp em nhé 👆");
+    return;
+  }
+  var hit = plChatFindAnswer(text);
+  if (hit) {
+    plChatMsg(hit.a);
+    plChatChips([{ t: "📞 Nhận tư vấn từ chuyên gia", v: "lead" }]);
+  } else {
+    plChatMsg("Câu này em xin phép chuyển cho cố vấn trả lời trực tiếp cho chuẩn ạ. Anh/chị để lại SĐT nhé — hoặc gọi ngay <a href='tel:0903983737'><b>0903 983 737</b></a>.");
+    plChatChips([{ t: "Để lại SĐT — nhận tư vấn", v: "lead" }]);
+  }
+}
+
+function mountChat() {
+  if (document.getElementById("plChat") || document.body.classList.contains("no-chat")) return;
+  var w = document.createElement("div");
+  w.id = "plChat";
+  w.innerHTML =
+    '<button id="plcToggle" aria-label="Chat với PaceLand">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>' +
+      "<span>Hỏi PaceLand</span>" +
+    "</button>" +
+    '<div id="plcPanel" role="dialog" aria-label="Trợ lý PaceLand">' +
+      '<div class="plc-head"><div><b>Trợ lý PaceLand</b><span>Thường trả lời ngay</span></div><button id="plcClose" aria-label="Đóng">✕</button></div>' +
+      '<div id="plcMsgs"></div>' +
+      '<div class="plc-input"><input id="plcText" placeholder="Nhập câu hỏi…" maxlength="300"><button id="plcGo" aria-label="Gửi">➤</button></div>' +
+      '<div class="plc-foot"><a href="tel:0903983737">Gọi 0903 983 737</a> · <a href="https://zalo.me/0903983737" target="_blank" rel="noopener">Zalo</a></div>' +
+    "</div>";
+  document.body.appendChild(w);
+
+  var greeted = false;
+  document.getElementById("plcToggle").addEventListener("click", function () {
+    plChat.open = !plChat.open;
+    w.classList.toggle("open", plChat.open);
+    if (plChat.open && !greeted) { greeted = true; plChatGreet(); }
+    if (plChat.open) setTimeout(function () { var t = document.getElementById("plcText"); if (t) t.focus(); }, 150);
+  });
+  document.getElementById("plcClose").addEventListener("click", function () {
+    plChat.open = false; w.classList.remove("open");
+  });
+  document.getElementById("plcMsgs").addEventListener("click", function (e) {
+    var chip = e.target.closest("[data-chip]");
+    if (!chip) return;
+    var v = chip.getAttribute("data-chip");
+    chip.parentElement.remove();
+    if (v === "lead") { plChatMsg("Nhận tư vấn ngay", "me"); plChatLeadFlow("start"); }
+    else if (v.indexOf("need:") === 0) plChatLeadFlow("need", v.slice(5));
+    else if (v.indexOf("budget:") === 0) plChatLeadFlow("budget", v.slice(7));
+    else if (v.indexOf("q:") === 0) plChatHandle(v.slice(2));
+  });
+  function sendText() {
+    var t = document.getElementById("plcText");
+    var val = (t.value || "").trim();
+    if (!val) return;
+    t.value = "";
+    plChatHandle(val);
+  }
+  document.getElementById("plcGo").addEventListener("click", sendText);
+  document.getElementById("plcText").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); sendText(); }
+  });
 }
 
 if (typeof window !== "undefined") {

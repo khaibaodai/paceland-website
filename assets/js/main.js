@@ -213,25 +213,146 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---------- Forms (Formspree-ready) ---------- */
+  /* ================================================================
+     TRACKING & LEAD PIPELINE
+     - UTM first-touch lưu localStorage (biết lead đến từ quảng cáo nào)
+     - GA4 / Google Ads / Meta Pixel nạp khi có ID trong SITE.tracking
+     - Lead gửi tới SITE.leadEndpoint (Google Apps Script -> Sheet + email)
+       và/hoặc SITE.formEndpoint (Formspree); có honeypot + chặn gửi quá nhanh
+     ================================================================ */
+
+  var PAGE_LOADED_AT = Date.now();
+
+  function captureUtm() {
+    try {
+      var qs = new URLSearchParams(location.search);
+      var keys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"];
+      var found = {};
+      var has = false;
+      keys.forEach(function (k) { var v = qs.get(k); if (v) { found[k] = v; has = true; } });
+      if (has && !localStorage.getItem("pl_utm")) {
+        found.landing = location.pathname;
+        found.ts = new Date().toISOString();
+        localStorage.setItem("pl_utm", JSON.stringify(found));
+      }
+    } catch (e) {}
+  }
+  function getUtm() {
+    try { return JSON.parse(localStorage.getItem("pl_utm") || "null") || {}; } catch (e) { return {}; }
+  }
+
+  var TR = (SITE.tracking || {});
+  function initTracking() {
+    /* Google Analytics 4 + Google Ads (chung gtag.js) */
+    var gid = TR.ga4 || TR.adsId;
+    if (gid) {
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(gid);
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date());
+      if (TR.ga4) gtag("config", TR.ga4);
+      if (TR.adsId) gtag("config", TR.adsId);
+    }
+    /* Meta Pixel */
+    if (TR.metaPixel) {
+      !(function (f, b, e, v, n, t) {
+        if (f.fbq) return;
+        n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+        if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = true; n.version = "2.0"; n.queue = [];
+        t = b.createElement(e); t.async = true; t.src = v;
+        b.getElementsByTagName(e)[0].parentNode.insertBefore(t, b.getElementsByTagName(e)[0]);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", TR.metaPixel);
+      fbq("track", "PageView");
+    }
+  }
+
+  function track(evt, params) {
+    try { if (window.gtag) gtag("event", evt, params || {}); } catch (e) {}
+    try { if (window.fbq) fbq("trackCustom", evt, params || {}); } catch (e) {}
+  }
+
+  function trackLead(params) {
+    try {
+      if (window.gtag) {
+        gtag("event", "generate_lead", params || {});
+        if (TR.adsId && TR.adsLabel) gtag("event", "conversion", { send_to: TR.adsId + "/" + TR.adsLabel });
+      }
+    } catch (e) {}
+    try { if (window.fbq) fbq("track", "Lead", params || {}); } catch (e) {}
+  }
+
+  function initClickTracking() {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a[href]") : null;
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      if (href.indexOf("tel:") === 0) track("tel_click", { page: location.pathname });
+      else if (href.indexOf("zalo.me") !== -1) track("zalo_click", { page: location.pathname });
+    }, true);
+  }
+
+  /* Gửi lead về mọi kênh đã cấu hình. Trả Promise<boolean>. */
+  function submitLead(payload) {
+    payload = payload || {};
+    payload.page = payload.page || location.pathname;
+    payload.utm = getUtm();
+    payload.sentAt = new Date().toISOString();
+    var jobs = [];
+    var lep = SITE.leadEndpoint || "";
+    if (lep && /^https:\/\//.test(lep)) {
+      jobs.push(fetch(lep, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" }, /* tránh preflight với Apps Script */
+        body: JSON.stringify(payload)
+      }).then(function (r) { return r.ok; }).catch(function () { return false; }));
+    }
+    var fep = SITE.formEndpoint || "";
+    if (fep && fep.indexOf("your-form-id") === -1) {
+      var fd = new FormData();
+      Object.keys(payload).forEach(function (k) {
+        fd.append(k, typeof payload[k] === "object" ? JSON.stringify(payload[k]) : payload[k]);
+      });
+      jobs.push(fetch(fep, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+        .then(function (r) { return r.ok; }).catch(function () { return false; }));
+    }
+    trackLead({ source: payload.source || "form" });
+    if (!jobs.length) return Promise.resolve(true); /* demo mode — chưa cấu hình kênh nhận */
+    return Promise.all(jobs).then(function (rs) {
+      return rs.some(function (x) { return x; });
+    });
+  }
+  if (typeof window !== "undefined") window.__plSubmitLead = submitLead;
+
   function initForms() {
     document.querySelectorAll("form[data-pace-form]").forEach(function (form) {
+      /* Honeypot chống bot: field ẩn, bot điền -> loại */
+      if (!form.querySelector("[name=website]")) {
+        var hp = document.createElement("input");
+        hp.type = "text"; hp.name = "website"; hp.tabIndex = -1; hp.autocomplete = "off";
+        hp.setAttribute("aria-hidden", "true");
+        hp.style.cssText = "position:absolute;left:-5000px;opacity:0;height:0;width:0;pointer-events:none";
+        form.appendChild(hp);
+      }
       form.addEventListener("submit", function (e) {
         e.preventDefault();
+        var hpv = form.querySelector("[name=website]");
+        if ((hpv && hpv.value) || Date.now() - PAGE_LOADED_AT < 3000) return; /* bot */
         var btn = form.querySelector("[type=submit]");
         var ok = form.querySelector(".form-success");
-        var endpoint = SITE.formEndpoint || "";
         var done = function () {
           if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
           form.reset();
           if (btn) { btn.disabled = false; btn.innerHTML = btn.getAttribute("data-label") || "Gửi"; }
         };
         if (btn) { btn.setAttribute("data-label", btn.innerHTML); btn.disabled = true; btn.textContent = "Đang gửi…"; }
-        // Demo mode nếu chưa cấu hình Formspree
-        if (!endpoint || endpoint.indexOf("your-form-id") !== -1) { setTimeout(done, 700); return; }
-        fetch(endpoint, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
-          .then(function () { done(); })
-          .catch(function () { done(); });
+        var payload = { source: "form" };
+        new FormData(form).forEach(function (v, k) { if (k !== "website" && v) payload[k] = v; });
+        submitLead(payload).then(done);
       });
     });
   }
@@ -524,6 +645,9 @@
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     if (typeof mountChrome === "function") mountChrome();
+    captureUtm();
+    initTracking();
+    initClickTracking();
     applyPageContent();
     initHeroSlider();
     initHeaderScroll();

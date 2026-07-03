@@ -522,6 +522,19 @@
       field("Form endpoint (Formspree)", "s_formEndpoint", s.formEndpoint, { full: true, hint: "VD: https://formspree.io/f/abcxyz" }) +
       field("Mã nhúng bản đồ (src)", "s_mapEmbed", s.mapEmbed, { full: true }) +
       '</div><button class="btn mt-2" id="saveSettings" style="margin-top:1.2rem">Lưu cài đặt</button></div>' +
+      (function () {
+        var tr = s.tracking || {};
+        return '<div style="background:var(--white);border:1px solid var(--line-soft);border-radius:12px;padding:1.4rem 1.5rem;max-width:760px;margin-top:1.2rem">' +
+          '<h3 style="font-family:var(--head);font-size:1.1rem;margin-bottom:.3rem">📈 Tracking & Nhận Lead</h3>' +
+          '<p style="color:var(--muted);font-size:.84rem;margin-bottom:.9rem">Dán ID vào là chạy — để trống thì website không nạp mã theo dõi nào. Hướng dẫn lấy từng ID: xem <b>docs/tich-hop-huong-dan.md</b> hoặc hỏi Claude.</p>' +
+          '<div class="fgrid">' +
+          field("Google Analytics 4 (G-XXXX)", "s_tr_ga4", tr.ga4 || "", { hint: "analytics.google.com → Quản trị → Luồng dữ liệu" }) +
+          field("Google Ads ID (AW-XXXX)", "s_tr_adsId", tr.adsId || "", { hint: "Chỉ cần khi chạy Google Ads" }) +
+          field("Google Ads Conversion Label", "s_tr_adsLabel", tr.adsLabel || "", { hint: "Trong phần Chuyển đổi của Google Ads" }) +
+          field("Meta Pixel ID", "s_tr_metaPixel", tr.metaPixel || "", { hint: "business.facebook.com → Trình quản lý sự kiện" }) +
+          field("Link nhận Lead (Apps Script)", "s_leadEndpoint", s.leadEndpoint || "", { full: true, hint: "Dán link /exec sau khi cài Google Sheet theo tools/google-apps-script-lead.gs — lead đổ vào Sheet + email báo" }) +
+          '</div><button class="btn mt-2" id="saveTracking" style="margin-top:1.2rem">Lưu Tracking & Lead</button></div>';
+      })() +
       '<div style="background:var(--white);border:1px solid var(--line-soft);border-radius:12px;padding:1.4rem 1.5rem;max-width:760px;margin-top:1.2rem">' +
         '<h3 style="font-family:var(--head);font-size:1.1rem;margin-bottom:.3rem">🖼 Hero Slideshow</h3>' +
         '<p style="color:var(--muted);font-size:.84rem;margin-bottom:.9rem">Ảnh nền trang chủ. Mỗi slide cần ảnh + chú thích ngắn. Thứ tự từ trên → xuống = thứ tự hiển thị. Sau khi lưu, nhớ <b>Xuất data.js</b> để cập nhật website.</p>' +
@@ -595,6 +608,16 @@
         var el = $("s_" + k); if (el) state.site[k] = el.value.trim();
       });
       persist(); toast("Đã lưu cài đặt");
+    };
+    $("saveTracking").onclick = function () {
+      state.site.tracking = {
+        ga4: ($("s_tr_ga4") || { value: "" }).value.trim(),
+        adsId: ($("s_tr_adsId") || { value: "" }).value.trim(),
+        adsLabel: ($("s_tr_adsLabel") || { value: "" }).value.trim(),
+        metaPixel: ($("s_tr_metaPixel") || { value: "" }).value.trim()
+      };
+      state.site.leadEndpoint = ($("s_leadEndpoint") || { value: "" }).value.trim();
+      persist(); toast("Đã lưu Tracking & Lead — nhớ Xuất bản để áp dụng lên website");
     };
     $("savePw").onclick = function () {
       var v = $("s_pw").value.trim();
