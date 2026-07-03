@@ -413,6 +413,240 @@ const PROJECTS = [
 
 const POSTS = [
   {
+    "id": "thu-thiem-2026-nguon-cung",
+    "title": "Thủ Thiêm 2026: cuộc đua nguồn cung của những tên tuổi lớn",
+    "category": "Thị trường",
+    "date": "02/07/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/metropole-2.jpg",
+    "excerpt": "Quỹ đất Thủ Thiêm ngày càng khan hiếm trong khi các chủ đầu tư lớn đồng loạt ra hàng. Ai đang bán gì, và người mua nên đứng ở đâu trong cuộc đua này?",
+    "body": [
+      { "t": "p", "c": "Sau nhiều năm chờ đợi, Thủ Thiêm đang bước vào giai đoạn sôi động nhất kể từ khi quy hoạch bán đảo được phê duyệt. Hạ tầng kết nối về trung tâm đã hoàn thiện, các cây cầu và trục chính hoạt động ổn định, và quan trọng nhất: những chủ đầu tư uy tín nhất thị trường đều đã có mặt." },
+      { "t": "p", "c": "Đại Quang Minh tiếp tục hoàn thiện khu đô thị Sala và ra mắt The Privé — bộ sưu tập căn hộ nhìn thẳng lõi trung tâm. SonKim Land đã bàn giao The Metropole và quỹ căn chuyển nhượng tại đây trở thành hàng hiếm được săn đón. Các lô đất ven sông còn lại đều đã có chủ với kế hoạch triển khai trong 2–3 năm tới." },
+      { "t": "h", "c": "Vì sao nguồn cung Thủ Thiêm luôn khan" },
+      { "t": "p", "c": "Khác với phần lớn khu vực, Thủ Thiêm có ranh giới quy hoạch cứng: tổng quỹ đất ở là hữu hạn và không thể mở rộng. Mỗi dự án mới ra mắt đồng nghĩa quỹ đất còn lại ít đi — đây là nền tảng của câu chuyện tăng giá dài hạn, thứ mà rất ít khu vực tại Việt Nam có được." },
+      { "t": "q", "c": "Ở Thủ Thiêm, thứ khan hiếm không phải là căn hộ — mà là đất để xây căn hộ." },
+      { "t": "p", "c": "Mặt bằng đơn giá căn hộ khu vực này hiện dao động quanh 120–220 triệu/m² tuỳ vị trí và giai đoạn bàn giao. Khoảng cách lớn giữa các dự án phản ánh đúng bản chất: vị trí lô đất, tầm nhìn và pháp lý từng dự án quyết định giá trị, không phải cái mác “Thủ Thiêm” chung chung." },
+      { "t": "h", "c": "Người mua nên đứng ở đâu" },
+      { "t": "ul", "c": [
+        "Mua để ở dài hạn: ưu tiên dự án đã bàn giao, cộng đồng hình thành, pháp lý sạch",
+        "Đầu tư tăng trưởng: theo dõi các đợt ra hàng sớm của dự án mới — biên lợi nhuận nằm ở quyền tiếp cận trước",
+        "Dòng tiền cho thuê: nhắm tệp chuyên gia nước ngoài làm việc tại trung tâm, ưu tiên căn 1–2 phòng ngủ"
+      ] },
+      { "t": "p", "c": "PaceLand đang giữ một số căn vị trí đẹp tại Thủ Thiêm trong quỹ hàng giao dịch kín — được chia sẻ trực tiếp cho khách hàng trong mạng lưới trước khi công bố rộng rãi." }
+    ]
+  },
+  {
+    "id": "metro-so-1-sau-mot-nam-van-hanh",
+    "title": "Metro số 1 sau hơn một năm vận hành: bất động sản dọc tuyến thay đổi thế nào?",
+    "category": "Hạ tầng",
+    "date": "30/06/2026",
+    "readtime": "6 phút đọc",
+    "cover": "assets/img/media/vinhomes-grand-park-2.jpg",
+    "excerpt": "Tuyến Bến Thành – Suối Tiên đã chạy hơn một năm. Thói quen di chuyển thay đổi thật, nhưng không phải cứ gần ga là bất động sản tăng giá.",
+    "body": [
+      { "t": "p", "c": "Từ khi vận hành thương mại cuối năm 2024, Metro số 1 đã làm được điều quan trọng nhất: thay đổi thói quen di chuyển của một bộ phận cư dân phía Đông. Tuyến đường sắt đô thị đầu tiên của thành phố kết nối Bến Thành với Suối Tiên, chạy dọc trục xương sống của TP. Thủ Đức." },
+      { "t": "p", "c": "Kinh nghiệm từ các đô thị châu Á cho thấy bất động sản trong bán kính đi bộ đến nhà ga thường thiết lập mặt bằng giá cao hơn khu vực lân cận từ 10–20% sau vài năm vận hành. TP.HCM đang đi đúng quỹ đạo đó, nhưng với một điều kiện quan trọng." },
+      { "t": "h", "c": "Bán kính 800 mét — thước đo thực tế" },
+      { "t": "p", "c": "Giá trị “gần metro” chỉ có nghĩa khi cư dân thực sự đi bộ được đến ga: khoảng 800 mét, tương đương 10 phút đi bộ. Xa hơn khoảng cách đó, metro chỉ còn là câu chuyện quảng cáo. Khi thẩm định một dự án “cạnh metro”, câu hỏi đầu tiên của PaceLand luôn là: từ sảnh toà nhà đến cửa soát vé mất bao nhiêu phút thật?" },
+      { "t": "ul", "c": [
+        "Cụm Thảo Điền – An Phú: hưởng lợi kép từ metro và cộng đồng quốc tế sẵn có",
+        "Cụm Rạch Chiếc – Bình Thái: quỹ đất chuyển mình, nhiều dự án mới bám các nhà ga giữa tuyến",
+        "Cụm Suối Tiên – khu Công nghệ cao: cầu thuê từ kỹ sư, chuyên gia và sinh viên Đại học Quốc gia"
+      ] },
+      { "t": "q", "c": "Metro không làm mọi dự án tăng giá — nó chỉ khuếch đại giá trị của những dự án vốn đã tốt." },
+      { "t": "p", "c": "Bài học sau hơn một năm: các dự án chất lượng gần ga giữ giá và cho thuê tốt hơn rõ rệt, trong khi các dự án trung bình dù gần ga vẫn ì ạch. Hạ tầng là chất xúc tác, không phải phép màu. Sản phẩm, pháp lý và cộng đồng cư dân vẫn là gốc rễ của giá trị." }
+    ]
+  },
+  {
+    "id": "ban-do-5-cuc-tang-truong-khu-dong",
+    "title": "Bản đồ 5 cực tăng trưởng của Khu Đông TP.HCM",
+    "category": "Quy hoạch",
+    "date": "28/06/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/the-global-city-1.jpg",
+    "excerpt": "Khu Đông không phải một thị trường đồng nhất. Năm cực tăng trưởng với động lực khác nhau đòi hỏi chiến lược xuống tiền khác nhau.",
+    "body": [
+      { "t": "p", "c": "“Khu Đông” là cách gọi tiện lợi nhưng dễ gây ngộ nhận: bên trong TP. Thủ Đức tồn tại ít nhất năm tiểu thị trường với động lực, mặt bằng giá và tệp khách khác hẳn nhau. Đặt sai sản phẩm vào sai cực, nhà đầu tư có thể chờ rất lâu mà không thấy thành quả." },
+      { "t": "h", "c": "1. Thủ Thiêm — cực tài chính, giá trị biểu tượng" },
+      { "t": "p", "c": "Quỹ đất hữu hạn, quy hoạch cứng, các chủ đầu tư hàng đầu. Đây là nơi dành cho tài sản tích luỹ dài hạn và những sản phẩm mang tính sưu tầm. Mặt bằng giá cao nhất Khu Đông và ít biến động theo sóng ngắn hạn." },
+      { "t": "h", "c": "2. An Phú – Thảo Điền — cực lifestyle quốc tế" },
+      { "t": "p", "c": "Cộng đồng nước ngoài, trường quốc tế, hệ sinh thái ẩm thực ven sông. The Global City đang định hình vai trò “downtown mới” với quảng trường và đại lộ thương mại. Cầu thuê bền là điểm mạnh nhất của cực này." },
+      { "t": "h", "c": "3. Rạch Chiếc – Bình Thái — cực chuyển mình giữa tuyến" },
+      { "t": "p", "c": "Bám metro và các trục mới mở, quỹ đất còn dư địa, nhiều dự án trung – cao cấp ra hàng. Phù hợp nhà đầu tư đi theo tiến độ hạ tầng với tầm nhìn 3–5 năm." },
+      { "t": "h", "c": "4. Trường Thọ — cực đô thị sáng tạo" },
+      { "t": "p", "c": "Khu cảng cũ được quy hoạch chuyển đổi thành đô thị mới ven sông. Câu chuyện dài hơi, biến số quy hoạch còn nhiều — biên an toàn nằm ở giá vốn thấp và sự kiên nhẫn." },
+      { "t": "h", "c": "5. Vành đai Grand Park – cửa ngõ Đông Bắc — cực đại đô thị vệ tinh" },
+      { "t": "p", "c": "Các đại đô thị như Vinhomes Grand Park đã tạo cộng đồng cư dân đông đúc thật; các dự án mới như Gladia Heights đón đầu vành đai và metro mở rộng với mức giá còn mềm. Đây là cực có mức giá vào thấp nhất và dư địa tăng theo hạ tầng rõ nhất." },
+      { "t": "q", "c": "Không có “giá Khu Đông” — chỉ có giá của từng cực, từng dự án, từng thời điểm." },
+      { "t": "p", "c": "Nguyên tắc của PaceLand: xác định cực phù hợp với mục tiêu (tích sản, dòng tiền hay tăng trưởng) trước, rồi mới chọn dự án. Đi ngược thứ tự đó là nguồn gốc của phần lớn quyết định sai." }
+    ]
+  },
+  {
+    "id": "chu-ky-gia-khu-dong-doc-dung-nhip",
+    "title": "Chu kỳ giá Khu Đông: đọc đúng nhịp để không mua đỉnh",
+    "category": "Góc nhìn PaceLand",
+    "date": "26/06/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/the-prive-2.jpg",
+    "excerpt": "Giá bất động sản không đi theo đường thẳng mà theo nhịp của hạ tầng: công bố, khởi công, vận hành. Mua ở pha nào quyết định bạn lời hay kẹt.",
+    "body": [
+      { "t": "p", "c": "Mỗi công trình hạ tầng lớn tạo ra ba đợt sóng giá: khi quy hoạch được công bố, khi công trường khởi công, và khi công trình đi vào vận hành. Điều ít người để ý: phần tăng giá lớn nhất thường diễn ra ở pha giữa — khi máy móc đang chạy ngoài công trường — chứ không phải khi cắt băng khánh thành." },
+      { "t": "h", "c": "Ba pha của một con sóng hạ tầng" },
+      { "t": "ul", "c": [
+        "Pha công bố: giá chạy theo tin, rủi ro cao nhất vì quy hoạch có thể điều chỉnh hoặc kéo dài",
+        "Pha thi công: kỳ vọng chuyển thành hiện thực nhìn thấy được — dòng tiền lớn bắt đầu vào, giá tăng bền hơn",
+        "Pha vận hành: mặt bằng giá mới được thiết lập; người mua cuối và người thuê trả tiền cho giá trị thật"
+      ] },
+      { "t": "p", "c": "Khu Đông hiện có đủ cả ba pha cùng lúc: metro số 1 đã vận hành (pha 3), Vành đai 3 đang thi công (pha 2), và các tuyến metro mở rộng còn ở giai đoạn quy hoạch (pha 1). Nghĩa là cùng một số tiền, bạn có thể chọn khẩu vị rủi ro rất khác nhau ngay trong một khu vực." },
+      { "t": "q", "c": "Mua khi công trường đang chạy. Chốt lời khi mặt bằng giá mới được cả thị trường công nhận." },
+      { "t": "h", "c": "Dấu hiệu một vùng giá đã nóng" },
+      { "t": "ul", "c": [
+        "Giao dịch thứ cấp chững lại nhưng giá chào vẫn tăng — người bán neo kỳ vọng, người mua không theo",
+        "Tiền chênh giữ chỗ cao bất thường so với giá trị hợp đồng",
+        "Câu chuyện tăng giá chỉ còn dựa vào một tin quy hoạch duy nhất"
+      ] },
+      { "t": "p", "c": "Khi cả ba dấu hiệu cùng xuất hiện, PaceLand thường khuyên khách dừng lại quan sát — cơ hội tốt tiếp theo luôn xuất hiện với người còn tiền trong tay. Kỷ luật với chu kỳ quan trọng hơn dự đoán chính xác đỉnh đáy." }
+    ]
+  },
+  {
+    "id": "thao-dien-an-phu-khu-lifestyle-giu-gia",
+    "title": "Thảo Điền – An Phú: vì sao khu “lifestyle” giữ giá bền nhất Khu Đông?",
+    "category": "Thị trường",
+    "date": "24/06/2026",
+    "readtime": "6 phút đọc",
+    "cover": "assets/img/media/eaton-park-3.jpg",
+    "excerpt": "Không phải hạ tầng hay quy hoạch — thứ giữ giá cho Thảo Điền – An Phú là một cộng đồng không dễ rời đi và nguồn cầu thuê gần như không bao giờ cạn.",
+    "body": [
+      { "t": "p", "c": "Trong các đợt thị trường điều chỉnh, Thảo Điền – An Phú luôn nằm trong nhóm giảm ít nhất và phục hồi sớm nhất Khu Đông. Lý do không nằm ở bản đồ quy hoạch, mà ở thứ khó sao chép hơn nhiều: một hệ sinh thái sống đã hoàn chỉnh." },
+      { "t": "h", "c": "Cộng đồng là hào kinh tế" },
+      { "t": "p", "c": "Trường quốc tế, phòng khám chuẩn quốc tế, chuỗi ẩm thực ven sông và một cộng đồng cư dân nước ngoài đông đảo tạo thành vòng xoáy tự củng cố: người nước ngoài mới đến chọn nơi có sẵn cộng đồng, dịch vụ mở thêm để phục vụ họ, và giá trị khu vực tiếp tục được bồi đắp. Vòng xoáy này cần cả thập kỷ để hình thành — đối thủ không thể xây bằng tiền trong vài năm." },
+      { "t": "p", "c": "Nguồn cầu thuê từ chuyên gia nước ngoài giúp căn hộ khu này duy trì tỷ lệ lấp đầy cao và giá thuê ổn định ngay cả khi thị trường mua bán trầm lắng — tấm đệm dòng tiền mà ít khu vực nào có." },
+      { "t": "h", "c": "Nguồn cung mới: ít và đắt" },
+      { "t": "p", "c": "Quỹ đất trống gần như cạn. Số dự án mới đếm trên đầu ngón tay — Eaton Park trên mặt tiền Mai Chí Thọ là một trong số hiếm hoi — và đều định vị ở phân khúc cao. Nguồn cung khan trong khi cầu ở thực bền là công thức giữ giá kinh điển." },
+      { "t": "q", "c": "Người ta có thể sao chép một toà nhà, nhưng không thể sao chép một cộng đồng." },
+      { "t": "p", "c": "Điểm cần thẩm định kỹ khi mua tại đây: hiện trạng ngập cục bộ ở một số tuyến nội khu, chất lượng vận hành từng toà và mức chênh giá giữa các dự án cùng vị trí. Trả đúng giá cho đúng toà — đó là lúc dữ liệu giao dịch thực tế của PaceLand phát huy tác dụng." }
+    ]
+  },
+  {
+    "id": "vanh-dai-3-keo-gian-do-thi-phia-dong",
+    "title": "Vành đai 3 và hiệu ứng kéo giãn đô thị về phía Đông",
+    "category": "Hạ tầng",
+    "date": "22/06/2026",
+    "readtime": "6 phút đọc",
+    "cover": "assets/img/media/gladia-heights-1.jpg",
+    "excerpt": "Khi Vành đai 3 dần thành hình, ranh giới “nội đô – vùng ven” đang được vẽ lại. Cửa ngõ Đông Bắc là nơi hưởng hiệu ứng này rõ nhất.",
+    "body": [
+      { "t": "p", "c": "Vành đai 3 — khởi công giữa năm 2023 và đang dần hoàn thiện từng đoạn — không đơn thuần là một con đường. Nó là công cụ tái phân bố dân cư và việc làm của cả vùng TP.HCM mở rộng: kết nối Bình Dương, Đồng Nai, Long An vào một vòng tròn giao thương liền mạch." },
+      { "t": "h", "c": "Hiệu ứng kéo giãn" },
+      { "t": "p", "c": "Mỗi vành đai hoàn thành đều tạo ra một đợt “kéo giãn” đô thị: cư dân chấp nhận ở xa trung tâm hơn khi thời gian di chuyển giảm. Quỹ đất quanh các nút giao trở thành điểm rơi của dòng tiền — nơi đô thị mới, kho vận và thương mại dịch vụ mọc lên trước tiên." },
+      { "t": "p", "c": "Tại phía Đông, hành lang hưởng lợi trực tiếp là dải cửa ngõ Đông Bắc — nơi Vành đai 3 giao cắt các trục hướng tâm. Các dự án đón đầu như Gladia Heights nằm trong nhóm này: mặt bằng giá còn mềm so với lõi Khu Đông, trong khi khoảng cách thời gian về trung tâm đang được rút ngắn từng quý." },
+      { "t": "q", "c": "Hạ tầng không làm đất đẻ ra tiền — nó làm khoảng cách ngắn lại, và giá trị dịch chuyển theo." },
+      { "t": "h", "c": "Ba câu hỏi trước khi mua theo vành đai" },
+      { "t": "ul", "c": [
+        "Đoạn tuyến đi qua khu vực đã thi công đến đâu — kỳ vọng phải bám tiến độ thật, không bám bản vẽ",
+        "Pháp lý khu đất có sạch không, có nằm trong ranh dự án hạ tầng hay hành lang an toàn không",
+        "Nếu tiến độ chậm 2–3 năm, phương án của bạn là gì — cho thuê được không, dòng tiền chịu được không"
+      ] },
+      { "t": "p", "c": "Mua theo hạ tầng là chiến lược đúng — với điều kiện có biên an toàn. PaceLand thẩm định tiến độ thực địa và pháp lý từng khu đất trước khi khuyến nghị, vì bản đồ quy hoạch và công trường ngoài đời không phải lúc nào cũng trùng nhau." }
+    ]
+  },
+  {
+    "id": "dong-tien-cho-thue-can-ho-khu-dong",
+    "title": "Căn hộ Khu Đông cho thuê: bài toán dòng tiền không màu hồng nhưng có lời giải",
+    "category": "Thị trường",
+    "date": "20/06/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/vinhomes-grand-park-1.jpg",
+    "excerpt": "Lợi suất cho thuê căn hộ TP.HCM chỉ quanh 3–5%/năm. Vay càng nhiều, dòng tiền càng âm. Vậy nhà đầu tư dòng tiền nên chơi thế nào ở Khu Đông?",
+    "body": [
+      { "t": "p", "c": "Hãy bắt đầu bằng sự thật ít người quảng cáo nói ra: với mặt bằng giá hiện tại, lợi suất cho thuê gộp của căn hộ TP.HCM phổ biến ở mức 3–5%/năm — thấp hơn lãi suất vay. Nghĩa là nếu vay quá nửa giá trị căn hộ, dòng tiền hằng tháng của bạn gần như chắc chắn âm." },
+      { "t": "p", "c": "Ví dụ minh hoạ: căn hộ 5 tỉ, cho thuê 25 triệu/tháng, vay 2,5 tỉ trong 20 năm — sau khi trừ tiền trả ngân hàng và chi phí vận hành, dòng tiền ròng âm khoảng vài triệu mỗi tháng. Bạn có thể tự kiểm tra con số của riêng mình bằng <a href='cong-cu.html#dong-tien'>công cụ dòng tiền cho thuê</a> của PaceLand." },
+      { "t": "h", "c": "Vậy tại sao người ta vẫn mua?" },
+      { "t": "p", "c": "Vì tổng lợi nhuận của bất động sản cho thuê = dòng tiền + tăng giá. Dòng tiền âm nhẹ có thể chấp nhận được nếu kỳ vọng tăng giá đủ lớn và chắc chắn. Vấn đề chỉ nảy sinh khi người mua nhầm một tài sản tăng trưởng thành tài sản dòng tiền — và vỡ kế hoạch tài chính vì khoản bù hằng tháng." },
+      { "t": "h", "c": "Lời giải thực tế ở Khu Đông" },
+      { "t": "ul", "c": [
+        "Chọn nơi có cầu thuê thật: quanh khu Công nghệ cao, Đại học Quốc gia và các đại đô thị đã đông dân như Vinhomes Grand Park",
+        "Giữ tỷ lệ vay dưới 40–50% nếu mục tiêu là dòng tiền dương",
+        "Ưu tiên căn 1–2 phòng ngủ, nội thất chuẩn cho thuê — tối ưu lợi suất trên mỗi đồng vốn",
+        "Tính đủ chi phí: phí quản lý, bảo trì, thời gian trống giữa hai đợt khách"
+      ] },
+      { "t": "q", "c": "Dòng tiền âm không phải sai lầm — không biết trước nó sẽ âm mới là sai lầm." },
+      { "t": "p", "c": "PaceLand đang giữ một số căn có sẵn hợp đồng thuê tại Khu Đông — dòng tiền chạy ngay từ ngày nhận nhà. Đó là điểm khởi đầu an toàn cho nhà đầu tư ưu tiên sự chắc chắn." }
+    ]
+  },
+  {
+    "id": "7-diem-phap-ly-mua-can-ho-khu-dong",
+    "title": "Mua căn hộ Khu Đông lần đầu: 7 điểm pháp lý phải kiểm tra trước khi đặt cọc",
+    "category": "Góc nhìn PaceLand",
+    "date": "18/06/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/the-prive-3.jpg",
+    "excerpt": "Giấy tờ nói thật hơn lời quảng cáo. Danh sách 7 điểm pháp lý PaceLand luôn kiểm tra thay khách hàng trước khi một đồng cọc được chuyển đi.",
+    "body": [
+      { "t": "p", "c": "Phần lớn rủi ro khi mua căn hộ hình thành trong tương lai không nằm ở giá, mà nằm ở pháp lý. Tin tốt: gần như mọi rủi ro pháp lý đều kiểm tra được trước khi đặt cọc — nếu bạn biết phải hỏi đúng giấy tờ nào." },
+      { "t": "h", "c": "Danh sách kiểm tra của PaceLand" },
+      { "t": "ul", "c": [
+        "1. Quy hoạch chi tiết 1/500 và giấy phép xây dựng: dự án được duyệt xây đúng cái đang quảng cáo không",
+        "2. Văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của Sở Xây dựng: thiếu văn bản này, mọi “hợp đồng” chỉ là thoả thuận giữ chỗ",
+        "3. Bảo lãnh ngân hàng cho nghĩa vụ bàn giao: ngân hàng nào bảo lãnh, phạm vi đến đâu",
+        "4. Tiến độ thanh toán so với tiến độ xây dựng: tiền đi trước công trình quá xa là rủi ro của bạn",
+        "5. Điều khoản bàn giao và chế tài chậm bàn giao: mức phạt, thời hạn, quyền chấm dứt hợp đồng",
+        "6. Kinh phí bảo trì 2% và phí quản lý dự kiến: ai giữ, chuyển giao thế nào khi có ban quản trị",
+        "7. Lộ trình cấp sổ hồng: nghĩa vụ tài chính về đất của chủ đầu tư đã hoàn thành chưa"
+      ] },
+      { "t": "q", "c": "Chủ đầu tư uy tín không ngại đưa giấy tờ. Sự né tránh chính là câu trả lời." },
+      { "t": "p", "c": "Ở Khu Đông, mặt bằng pháp lý nhìn chung tốt hơn nhiều khu vực nhờ sự hiện diện của các chủ đầu tư lớn — nhưng “nhìn chung” không bảo vệ được giao dịch cụ thể của bạn. Từng dự án, từng đợt mở bán vẫn phải soi từng văn bản." },
+      { "t": "p", "c": "Toàn bộ 7 điểm trên nằm trong quy trình thẩm định tiêu chuẩn mà cố vấn PaceLand thực hiện thay khách hàng trước mọi khuyến nghị. Bạn không cần trở thành luật sư — bạn chỉ cần một đội ngũ coi việc đọc giấy tờ là công việc hằng ngày." }
+    ]
+  },
+  {
+    "id": "san-bay-long-thanh-truc-dong-luc-phia-dong",
+    "title": "Sân bay Long Thành cất cánh: Khu Đông là cửa ngõ hưởng lợi đầu tiên",
+    "category": "Quy hoạch",
+    "date": "16/06/2026",
+    "readtime": "6 phút đọc",
+    "cover": "assets/img/media/the-global-city-2.jpg",
+    "excerpt": "Khi sân bay lớn nhất nước đi vào khai thác, dòng người và hàng hoá sẽ chảy qua đâu? Câu trả lời nằm ở trục cao tốc phía Đông — và Khu Đông đứng ngay đầu trục.",
+    "body": [
+      { "t": "p", "c": "Sân bay quốc tế Long Thành giai đoạn 1 đang về đích với mục tiêu khai thác từ năm 2026. Với công suất thiết kế giai đoạn đầu 25 triệu lượt khách mỗi năm, đây là công trình hạ tầng có sức ảnh hưởng lớn nhất tới bản đồ bất động sản phía Nam trong thập kỷ này." },
+      { "t": "h", "c": "Giá trị nằm ở trục, không nằm ở cạnh hàng rào" },
+      { "t": "p", "c": "Ngộ nhận phổ biến nhất: “gần sân bay là tăng giá”. Thực tế các đô thị lớn cho thấy điều ngược lại — giá trị ở cạnh sân bay bị giới hạn bởi tiếng ồn và quy hoạch tĩnh không. Giá trị thật nằm dọc trục kết nối giữa sân bay và trung tâm kinh tế: nơi chuyên gia hàng không, logistics và dịch vụ chọn để sống." },
+      { "t": "p", "c": "Trục đó chính là hành lang cao tốc TP.HCM – Long Thành – Dầu Giây đang được mở rộng, cộng hưởng với Vành đai 3 và trong tương lai là tuyến đường sắt kết nối. Khu Đông TP.HCM đứng ở đầu trục: mọi chuyến đi từ trung tâm ra sân bay đều đi xuyên qua nó." },
+      { "t": "ul", "c": [
+        "Căn hộ dọc trục Mai Chí Thọ – cao tốc: tệp thuê mới từ chuyên gia làm việc tại sân bay và các khu công nghiệp vệ tinh",
+        "Khu Đông Bắc quanh nút giao vành đai: điểm rơi của kho vận, thương mại và nhà ở cho lực lượng lao động mới",
+        "Bất động sản nghỉ dưỡng ven đô: hưởng lợi từ khách quốc tế trung chuyển qua Long Thành"
+      ] },
+      { "t": "q", "c": "Sân bay là nhà máy tạo việc làm — và việc làm là thứ nuôi giá bất động sản." },
+      { "t": "p", "c": "Kịch bản đáng theo dõi nhất với nhà đầu tư Khu Đông không phải là ngày khánh thành, mà là nhịp tăng tần suất khai thác trong 2–3 năm sau đó. Dòng tiền thông minh đi trước dòng người — nhưng chỉ đi trước một bước, không đi trước một thập kỷ." }
+    ]
+  },
+  {
+    "id": "tp-thu-duc-5-nam-nhin-lai",
+    "title": "TP. Thủ Đức sau 5 năm: kỳ vọng, thực tế và cơ hội cho người đi dài hạn",
+    "category": "Quy hoạch",
+    "date": "14/06/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/metropole-3.jpg",
+    "excerpt": "Nửa thập kỷ sau ngày thành lập, “thành phố trong thành phố” đầu tiên của Việt Nam đã làm được gì — và bài học nào cho người cầm tiền hôm nay?",
+    "body": [
+      { "t": "p", "c": "Đầu năm 2021, TP. Thủ Đức ra đời từ việc sáp nhập ba quận phía Đông với kỳ vọng trở thành “đô thị sáng tạo tương tác cao” — cực tăng trưởng đóng góp lớn cho kinh tế thành phố, dựa trên ba trụ: khu Công nghệ cao, Đại học Quốc gia và trung tâm tài chính Thủ Thiêm." },
+      { "t": "h", "c": "5 năm nhìn lại: cái gì chạy, cái gì chậm" },
+      { "t": "p", "c": "Phần “cứng” đã chuyển động thật sự: metro số 1 vận hành, Vành đai 3 thành hình, nút giao An Phú và các trục chính dần hoàn thiện, các đại đô thị đông dân lên từng năm. Bộ mặt đô thị phía Đông hôm nay khác hẳn năm 2021." },
+      { "t": "p", "c": "Phần “mềm” đi chậm hơn: bộ máy hành chính, phân cấp ngân sách và các cơ chế đặc thù cần nhiều thời gian hơn kỳ vọng ban đầu. Trung tâm tài chính Thủ Thiêm vẫn đang trong giai đoạn xây nền móng thể chế. Đây là điều bình thường — không đô thị lớn nào trên thế giới hoàn thiện trong 5 năm." },
+      { "t": "q", "c": "Đô thị lớn không được xây trong một nhiệm kỳ. Tài sản lớn cũng vậy." },
+      { "t": "h", "c": "Bài học cho người cầm tiền" },
+      { "t": "ul", "c": [
+        "Đặt cược vào cụm việc làm hiện hữu (khu Công nghệ cao, Đại học Quốc gia, Thủ Thiêm) thay vì lời hứa quy hoạch",
+        "Ưu tiên khu vực hạ tầng đã vận hành hoặc đang thi công — kỳ vọng xa hơn cần biên giá an toàn tương xứng",
+        "Chọn chủ đầu tư đủ sức đi đường dài: dự án dở dang là rủi ro lớn nhất ở các vùng đô thị hoá nhanh",
+        "Kiên nhẫn với chu kỳ 5–10 năm: phần thưởng của Thủ Đức dành cho người đi dài hạn"
+      ] },
+      { "t": "p", "c": "PaceLand tin rằng chương hay nhất của TP. Thủ Đức vẫn ở phía trước — và như mọi câu chuyện tăng trưởng, phần lợi nhuận tốt nhất thuộc về những người vào vị trí trước khi câu chuyện trở nên hiển nhiên với tất cả mọi người." }
+    ]
+  },
+  {
     "id": "ban-dang-mua-o-gia-ban-le-hay-gia-co-hoi",
     "title": "Bạn đang mua ở giá bán lẻ hay giá cơ hội?",
     "category": "Góc nhìn PaceLand",
@@ -1022,7 +1256,24 @@ if (typeof window !== "undefined") {
     var hasOldCovers = Array.isArray(cms.projects) && cms.projects.some(function (p) {
       return p.cover && /^\d{8,}-[0-9a-f]{8,}$/i.test(p.cover);
     });
-    if (!hasOldCovers) { r(PROJECTS, cms.projects); r(POSTS, cms.posts); }
+    if (!hasOldCovers) {
+      r(PROJECTS, cms.projects);
+      /* Bài viết: gộp theo id — bài mới trong data.js không bị bản lưu cũ đè mất */
+      if (Array.isArray(cms.posts)) {
+        var seedPosts = POSTS.slice();
+        r(POSTS, cms.posts);
+        var addedPost = false;
+        seedPosts.forEach(function (sp) {
+          var dup = false;
+          for (var i = 0; i < POSTS.length; i++) { if (POSTS[i].id === sp.id) { dup = true; break; } }
+          if (!dup) { POSTS.push(sp); addedPost = true; }
+        });
+        if (addedPost) POSTS.sort(function (a, b) {
+          function ts(d) { var m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d || ""); return m ? +(m[3] + m[2] + m[1]) : 0; }
+          return ts(b.date) - ts(a.date);
+        });
+      }
+    }
     r(JOBS, cms.jobs); r(FAQS, cms.faqs);
     if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } }
     if (cms.heroSlides) r(HERO_SLIDES, cms.heroSlides);
