@@ -6,6 +6,9 @@
 
   var PW_KEY = "pl_admin_pw", DEFAULT_PW = "paceland2026", STORE = "pl_cms";
   var STATUS = ["Giao dịch kín", "Đang mở bán", "Sắp ra mắt"];
+  var PARTNER_LEVELS = ["Cộng tác viên", "Chuyên viên tư vấn", "Trưởng nhóm kinh doanh", "Đối tác đại lý", "Đối tác cổ phần", "Ban lãnh đạo"];
+  var PARTNER_STATUSES = ["active", "inactive"];
+  var PARTNER_STATUS_LABEL = { active: "Đang hợp tác", inactive: "Đã ngừng hợp tác" };
   var MEDIA_REG_KEY = "pl_media_reg";
   var CL_NAME_KEY = "pl_cl_name", CL_PRESET_KEY = "pl_cl_preset";
   var GH_REPO_KEY = "pl_gh_repo", GH_TOKEN_KEY = "pl_gh_token", GH_BRANCH_KEY = "pl_gh_branch";
@@ -32,6 +35,7 @@
     projects: clone(window.PROJECTS || []),
     posts: clone(window.POSTS || []),
     jobs: clone(window.JOBS || []),
+    partners: clone(window.PARTNERS || []),
     faqs: [],
   };
   (window.FAQS || []).forEach(function (g) { (g.items || []).forEach(function (it) { state.faqs.push({ group: g.group, q: it.q, a: it.a }); }); });
@@ -62,7 +66,7 @@
       pagesObj[pg] = {}; state.pages[pg].fields.forEach(function (f) { pagesObj[pg][f.k] = f.value; });
     });
     localStorage.setItem(STORE, JSON.stringify({
-      site: state.site, heroSlides: state.heroSlides, projects: state.projects, posts: state.posts, jobs: state.jobs, faqs: groupFaqs(state.faqs), pages: pagesObj,
+      site: state.site, heroSlides: state.heroSlides, projects: state.projects, posts: state.posts, jobs: state.jobs, partners: state.partners, faqs: groupFaqs(state.faqs), pages: pagesObj,
     }));
   }
 
@@ -154,7 +158,7 @@
   function showApp() { $("login").hidden = true; $("app").hidden = false; bindShell(); loadMedia().then(render); }
 
   /* ---------- Render list ---------- */
-  var TITLES = { projects: "Dự án", posts: "Bài viết", jobs: "Tuyển dụng", faqs: "Câu hỏi thường gặp", media: "Thư viện ảnh / video", pages: "Trang (Nội dung)", settings: "Cài đặt" };
+  var TITLES = { projects: "Dự án", posts: "Bài viết", jobs: "Tuyển dụng", partners: "Chứng nhận Đối tác", faqs: "Câu hỏi thường gặp", media: "Thư viện ảnh / video", pages: "Trang (Nội dung)", settings: "Cài đặt" };
   function render() {
     document.querySelectorAll("#adminNav button").forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-tab") === current); });
     $("tabTitle").textContent = TITLES[current];
@@ -178,6 +182,7 @@
     if (tab === "projects") return '<div class="admin-row">' + thumb(it.cover) + '<div class="info"><b>' + esc(it.name) + "</b><span>" + esc(it.location) + " · " + esc(it.priceText) + "</span></div><span class=\"tag\">" + esc(it.status) + "</span>" + ops(i) + "</div>";
     if (tab === "posts") return '<div class="admin-row">' + thumb(it.cover) + '<div class="info"><b>' + esc(it.title) + "</b><span>" + esc(it.category) + " · " + esc(it.date) + "</span></div>" + ops(i) + "</div>";
     if (tab === "jobs") return '<div class="admin-row"><div class="info"><b>' + esc(it.title) + "</b><span>" + esc(it.dept) + " · " + esc(it.location) + "</span></div>" + ops(i) + "</div>";
+    if (tab === "partners") return '<div class="admin-row">' + thumb(it.photo) + '<div class="info"><b>' + esc(it.name) + "</b><span>" + esc(it.role) + " · Mã " + esc(it.code) + "</span></div><span class=\"tag\">" + esc(PARTNER_STATUS_LABEL[it.status] || it.status) + "</span>" + ops(i) + "</div>";
     if (tab === "faqs") return '<div class="admin-row"><div class="info"><b>' + esc(it.q) + '</b><span>' + esc((it.a || "").slice(0, 70)) + "…</span></div><span class=\"tag\">" + esc(it.group) + "</span>" + ops(i) + "</div>";
     return "";
   }
@@ -351,6 +356,18 @@
       field("Yêu cầu", "f_reqs", (it.reqs || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
       field("Quyền lợi", "f_benefits", (it.benefits || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
       "</div>";
+    if (tab === "partners") return '<div class="fgrid">' +
+      field("Họ và tên", "f_name", it.name, { full: true, ph: "VD: Nguyễn Văn A" }) +
+      field("Mã chứng nhận", "f_code", it.code || nextPartnerCode(), { ph: "VD: PL-0002", hint: "Mã để khách hàng tra cứu — không trùng người khác" }) +
+      field("Chức danh", "f_role", it.role, { ph: "VD: Cố vấn tài sản" }) +
+      field("Cấp bậc", "f_level", it.level || PARTNER_LEVELS[0], { type: "select", options: PARTNER_LEVELS }) +
+      field("Trạng thái", "f_status", PARTNER_STATUS_LABEL[it.status] || PARTNER_STATUS_LABEL.active, { type: "select", options: [PARTNER_STATUS_LABEL.active, PARTNER_STATUS_LABEL.inactive], hint: "Đặt \"Đã ngừng hợp tác\" ngay khi một người rời PaceLand — trang tra cứu sẽ cảnh báo khách hàng" }) +
+      field("Hợp tác từ (năm)", "f_since", it.since, { ph: "VD: 2024" }) +
+      field("Điện thoại (không bắt buộc)", "f_phone", it.phone, { ph: "VD: 09xx xxx xxx" }) +
+      imgField("Ảnh chân dung", "f_photo", it.photo) +
+      field("Giới thiệu ngắn", "f_bio", it.bio, { full: true, type: "textarea", rows: 70 }) +
+      field("Thành tích nổi bật", "f_achievements", (it.achievements || []).join("\n"), { full: true, type: "textarea", rows: 70, hint: "Mỗi thành tích 1 dòng, VD: Top 1 Quý 2/2026" }) +
+      "</div>";
     if (tab === "faqs") return '<div class="fgrid">' +
       field("Nhóm", "f_group", it.group, { full: true, ph: "VD: Dành cho khách hàng" }) +
       field("Câu hỏi", "f_q", it.q, { full: true }) +
@@ -374,10 +391,25 @@
     }
     if (tab === "posts") return { id: slug(g("f_title")), title: g("f_title"), category: g("f_category"), date: g("f_date"), readtime: g("f_readtime"), cover: g("f_cover"), excerpt: g("f_excerpt"), body: textToBlocks(g("f_body")) };
     if (tab === "jobs") return { id: slug(g("f_title")), title: g("f_title"), dept: g("f_dept"), type: g("f_type"), location: g("f_location"), salary: g("f_salary"), desc: g("f_desc"), reqs: lines(g("f_reqs")), benefits: lines(g("f_benefits")) };
+    if (tab === "partners") return {
+      id: slug(g("f_name")), code: g("f_code") || nextPartnerCode(), name: g("f_name"), role: g("f_role"),
+      level: g("f_level") || PARTNER_LEVELS[0],
+      status: g("f_status") === PARTNER_STATUS_LABEL.inactive ? "inactive" : "active",
+      since: g("f_since"), phone: g("f_phone"), photo: g("f_photo"), bio: g("f_bio"),
+      achievements: lines(g("f_achievements")),
+    };
     if (tab === "faqs") return { group: g("f_group") || "Khác", q: g("f_q"), a: g("f_a") };
     return {};
   }
-  function nameField(tab) { return tab === "projects" ? "name" : tab === "faqs" ? "q" : "title"; }
+  function nextPartnerCode() {
+    var max = 0;
+    (state.partners || []).forEach(function (p) {
+      var m = /^PL-(\d+)$/.exec(String(p.code || "").trim());
+      if (m) max = Math.max(max, parseInt(m[1], 10));
+    });
+    return "PL-" + String(max + 1).padStart(4, "0");
+  }
+  function nameField(tab) { return tab === "projects" ? "name" : tab === "faqs" ? "q" : tab === "partners" ? "name" : "title"; }
 
   function openForm(tab, idx) {
     var editing = idx != null;
@@ -690,12 +722,13 @@
     out += "const POSTS = " + jslit(s.posts) + ";" + NL + NL;
     out += "const VALUES = " + jslit(window.VALUES) + ";" + NL + NL;
     out += "const JOBS = " + jslit(s.jobs) + ";" + NL + NL;
+    out += "const PARTNERS = " + jslit(s.partners) + ";" + NL + NL;
     out += "const FAQS = " + jslit(groupFaqs(s.faqs)) + ";" + NL + NL;
     out += "const PAGES = " + jslit(s.pages) + ";" + NL + NL;
     out += "const HERO_SLIDES = " + jslit(s.heroSlides) + ";" + NL + NL;
     out += 'const HERO_SLIDES_REPO = "' + (localStorage.getItem(GH_REPO_KEY) || "") + '";\n';
     out += 'const HERO_SLIDES_BRANCH = "' + (localStorage.getItem(GH_BRANCH_KEY) || "main") + '";\n\n';
-    out += 'if (typeof window !== "undefined") {' + NL + "  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;" + NL + "}" + NL + NL;
+    out += 'if (typeof window !== "undefined") {' + NL + "  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;" + NL + "}" + NL + NL;
     out += "/* CMS override */" + NL +
 "(function () {" + NL +
 "  if (typeof window === 'undefined') return;" + NL +
@@ -707,11 +740,37 @@
 "    var hasOldCovers = Array.isArray(cms.projects) && cms.projects.some(function (p) {" + NL +
 "      return p.cover && /^\\d{8,}-[0-9a-f]{8,}$/i.test(p.cover);" + NL +
 "    });" + NL +
-"    if (!hasOldCovers) { r(PROJECTS, cms.projects); r(POSTS, cms.posts); }" + NL +
-"    r(JOBS, cms.jobs); r(FAQS, cms.faqs);" + NL +
+"    if (!hasOldCovers) {" + NL +
+"      r(PROJECTS, cms.projects);" + NL +
+"      if (Array.isArray(cms.posts)) {" + NL +
+"        var seedPosts = POSTS.slice();" + NL +
+"        r(POSTS, cms.posts);" + NL +
+"        var addedPost = false;" + NL +
+"        seedPosts.forEach(function (sp) {" + NL +
+"          var dup = false;" + NL +
+"          for (var i = 0; i < POSTS.length; i++) { if (POSTS[i].id === sp.id) { dup = true; break; } }" + NL +
+"          if (!dup) { POSTS.push(sp); addedPost = true; }" + NL +
+"        });" + NL +
+"        if (addedPost) POSTS.sort(function (a, b) {" + NL +
+'          function ts(d) { var m = /^(\\d{2})\\/(\\d{2})\\/(\\d{4})$/.exec(d || ""); return m ? +(m[3] + m[2] + m[1]) : 0; }' + NL +
+"          return ts(b.date) - ts(a.date);" + NL +
+"        });" + NL +
+"      }" + NL +
+"    }" + NL +
+"    r(JOBS, cms.jobs);" + NL +
+"    r(PARTNERS, cms.partners);" + NL +
+"    if (Array.isArray(cms.faqs)) {" + NL +
+"      var seedFaqs = FAQS.slice();" + NL +
+"      r(FAQS, cms.faqs);" + NL +
+"      seedFaqs.forEach(function (sg) {" + NL +
+"        var dup = false;" + NL +
+"        for (var j = 0; j < FAQS.length; j++) { if (FAQS[j].group === sg.group) { dup = true; break; } }" + NL +
+"        if (!dup) FAQS.push(sg);" + NL +
+"      });" + NL +
+"    }" + NL +
 "    if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } }" + NL +
 "    if (cms.heroSlides) r(HERO_SLIDES, cms.heroSlides);" + NL +
-"    window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;" + NL +
+"    window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;" + NL +
 "  } catch (e) {}" + NL +
 "})();" + NL;
     return out;
@@ -770,7 +829,7 @@
   function backup() {
     var bpages = {}; Object.keys(state.pages || {}).forEach(function (pg) { bpages[pg] = {}; state.pages[pg].fields.forEach(function (f) { bpages[pg][f.k] = f.value; }); });
     download("paceland-noi-dung-" + new Date().toISOString().slice(0, 10) + ".json",
-      JSON.stringify({ site: state.site, projects: state.projects, posts: state.posts, jobs: state.jobs, faqs: groupFaqs(state.faqs), pages: bpages }, null, 2),
+      JSON.stringify({ site: state.site, projects: state.projects, posts: state.posts, jobs: state.jobs, partners: state.partners, faqs: groupFaqs(state.faqs), pages: bpages }, null, 2),
       "application/json");
     toast("Đã tải bản sao lưu");
   }
@@ -783,6 +842,7 @@
         if (d.projects) state.projects = d.projects;
         if (d.posts) state.posts = d.posts;
         if (d.jobs) state.jobs = d.jobs;
+        if (d.partners) state.partners = d.partners;
         if (d.pages) Object.keys(d.pages).forEach(function (pg) { if (state.pages[pg]) state.pages[pg].fields.forEach(function (f) { if (d.pages[pg][f.k] != null) f.value = d.pages[pg][f.k]; }); });
         state.faqs = []; (d.faqs || []).forEach(function (g) { (g.items || []).forEach(function (it) { state.faqs.push({ group: g.group, q: it.q, a: it.a }); }); });
         persist(); render(); toast("Đã khôi phục nội dung");

@@ -11,8 +11,8 @@ const SITE = {
   "email": "contact@paceland.vn",
   "address": "35 Đường số 36, Khu phố 2, P. Bình Trưng, TP. Thủ Đức, TP. Hồ Chí Minh",
   "zalo": "https://zalo.me/0903983737",
-  "facebook": "#",
-  "youtube": "#",
+  "facebook": "https://www.facebook.com/paceland.vn/",
+  "youtube": "https://www.youtube.com/@paceland-vn",
   "tiktok": "#",
   "formEndpoint": "https://formspree.io/f/your-form-id",
   "leadEndpoint": "",
@@ -22,7 +22,7 @@ const SITE = {
     "adsLabel": "",
     "metaPixel": ""
   },
-  "mapEmbed": "https://www.google.com/maps?q=Th%E1%BB%A7%20Thi%C3%AAm%2C%20TP.%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c&output=embed"
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7810.390221473243!2d106.74871418169498!3d10.793580615497275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752738634e8dbd%3A0x64048b0ca1ccaa18!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gxJDhuqZVIFTGryBQQUNFIExBTkQ!5e1!3m2!1svi!2s!4v1783093230682!5m2!1svi!2s"
 };
 
 const NAV = [
@@ -1070,6 +1070,24 @@ const JOBS = [
   }
 ];
 
+/* Chứng nhận Đối tác — danh bạ cố vấn/đối tác chính thức để khách hàng tra cứu xác minh.
+   Quản lý trong Admin → Chứng nhận Đối tác. status: "active" (đang hợp tác) | "inactive" (đã ngừng). */
+const PARTNERS = [
+  {
+    "id": "vo-van-phuoc",
+    "code": "PL-0001",
+    "name": "Võ Văn Phước",
+    "role": "Nhà sáng lập & Chủ tịch",
+    "level": "Ban lãnh đạo",
+    "status": "active",
+    "photo": "assets/img/founder.jpg",
+    "since": "2021",
+    "phone": "",
+    "bio": "Nhà sáng lập PaceLand — người đặt nền móng cho mạng lưới bất động sản kín dựa trên dữ liệu và tốc độ.",
+    "achievements": []
+  }
+];
+
 const FAQS = [
   {
     "group": "Về PaceLand",
@@ -1476,7 +1494,7 @@ const HERO_SLIDES_REPO = "khaibaodai/paceland-website";
 const HERO_SLIDES_BRANCH = "main";
 
 if (typeof window !== "undefined") {
-  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
+  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
 }
 
 /* CMS override */
@@ -1509,6 +1527,7 @@ if (typeof window !== "undefined") {
       }
     }
     r(JOBS, cms.jobs);
+    r(PARTNERS, cms.partners);
     /* FAQ: gộp theo tên nhóm — nhóm mới trong data.js không bị bản lưu cũ đè */
     if (Array.isArray(cms.faqs)) {
       var seedFaqs = FAQS.slice();
@@ -1521,6 +1540,6 @@ if (typeof window !== "undefined") {
     }
     if (cms.pages) { for (var pg in cms.pages) { if (PAGES[pg]) PAGES[pg].fields.forEach(function (f) { if (cms.pages[pg][f.k] != null) f.value = cms.pages[pg][f.k]; }); } }
     if (cms.heroSlides) r(HERO_SLIDES, cms.heroSlides);
-    window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;
+    window.SITE = SITE; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES;
   } catch (e) {}
 })();

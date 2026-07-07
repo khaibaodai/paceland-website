@@ -945,3 +945,52 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
   #plcToggle span { display: none; }
   #plcToggle { padding: 0.85rem; }
 }
+
+/* ---------- Chứng nhận Đối tác ---------- */
+.partner-lookup {
+  background: var(--ink); border-radius: 14px;
+  padding: clamp(1.6rem, 3vw, 2.4rem); color: var(--paper);
+}
+.partner-lookup h2 { color: #fff; font-size: clamp(1.3rem, 2.4vw, 1.7rem); }
+.partner-lookup p { color: rgba(255,255,255,0.62); font-size: 0.9rem; margin-top: 0.5rem; max-width: 60ch; }
+.partner-lookup-form { display: flex; gap: 0.7rem; margin-top: 1.3rem; flex-wrap: wrap; }
+.partner-lookup-form input {
+  flex: 1; min-width: 220px; padding: 0.85rem 1.1rem; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: #fff; font-size: 0.95rem;
+}
+.partner-lookup-form input::placeholder { color: rgba(255,255,255,0.4); }
+.partner-lookup-form input:focus { outline: none; border-color: var(--gold-soft); background: rgba(255,255,255,0.1); }
+.partner-lookup-form button { flex: none; }
+
+.lookup-result { margin-top: 1.3rem; border-radius: 10px; padding: 1.2rem 1.4rem; display: none; }
+.lookup-result.show { display: flex; gap: 1rem; align-items: flex-start; }
+.lookup-result .ic { flex: none; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; }
+.lookup-result .ic svg { width: 19px; height: 19px; }
+.lookup-result .body b { display: block; font-family: var(--head); font-size: 1.02rem; margin-bottom: 0.3rem; }
+.lookup-result .body p { margin: 0; font-size: 0.88rem; line-height: 1.6; color: rgba(255,255,255,0.78); }
+.lookup-result.ok { background: rgba(30,122,60,0.14); border: 1px solid rgba(30,122,60,0.35); }
+.lookup-result.ok .ic { background: #1E7A3C; color: #fff; }
+.lookup-result.warn { background: rgba(176,137,74,0.14); border: 1px solid rgba(176,137,74,0.4); }
+.lookup-result.warn .ic { background: var(--gold); color: #fff; }
+.lookup-result.err { background: rgba(199,0,24,0.14); border: 1px solid rgba(199,0,24,0.4); }
+.lookup-result.err .ic { background: var(--red); color: #fff; }
+
+.partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: clamp(16px, 2vw, 24px); }
+.partner-card {
+  background: var(--white); border: 1px solid var(--line-soft); border-radius: 12px;
+  padding: 1.5rem; text-align: left; cursor: pointer;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s, border-color 0.4s;
+}
+.partner-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--line); }
+.partner-card .pc-top { display: flex; gap: 1rem; align-items: center; }
+.partner-card .pc-photo { width: 62px; height: 62px; border-radius: 50%; object-fit: cover; flex: none; background: var(--cloud); }
+.partner-card .pc-photo.noimg { display: grid; place-items: center; color: var(--muted); font-family: var(--head); font-weight: 800; font-size: 1.3rem; }
+.partner-card h3 { font-size: 1.05rem; margin-bottom: 0.15rem; }
+.partner-card .pc-role { font-size: 0.8rem; color: var(--muted); }
+.partner-card .pc-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+.partner-card .pc-bio { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.6; margin-top: 0.9rem; }
+.partner-card .pc-code { margin-top: 0.9rem; font-size: 0.74rem; color: var(--muted); font-family: var(--head); letter-spacing: 0.03em; }
+.partner-card .pc-ach { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.8rem; }
+.partner-card .pc-ach span { font-size: 0.72rem; background: var(--gold-tint); color: var(--gold); padding: 0.2rem 0.55rem; border-radius: 999px; }
+
+.pill--level { background: var(--red-tint); color: var(--red); border-color: var(--red-line); }

@@ -24,6 +24,7 @@
       el.setAttribute("data-seen", "1"); revealObserver.observe(el);
     });
   }
+  if (typeof window !== "undefined") window.__plScanReveal = scanReveal;
 
   /* ---------- Hero Slider ---------- */
   function initHeroSlider() {

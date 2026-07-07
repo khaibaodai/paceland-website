@@ -99,6 +99,33 @@ function renderPostCard(post, big) {
   "</a>";
 }
 
+/* ---------- Partner card (chung-nhan-doi-tac.html) ---------- */
+function escHtml(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function partnerInitials(name) {
+  return (name || "").split(/\s+/).filter(Boolean).slice(-2).map(function (w) { return w[0]; }).join("").toUpperCase();
+}
+function partnerPhotoHtml(p) {
+  if (!p.photo) return '<div class="pc-photo noimg">' + partnerInitials(p.name) + "</div>";
+  var src = resolveImg(p.photo, 160);
+  return '<img class="pc-photo" src="' + escHtml(src) + '" alt="' + escHtml(p.name) + '" loading="lazy" onerror="this.outerHTML=\'<div class=&quot;pc-photo noimg&quot;>' + partnerInitials(p.name) + '</div>\'">';
+}
+function partnerStatusPill(status) {
+  return status === "active"
+    ? '<span class="pill" style="background:rgba(30,122,60,.1);color:#1E7A3C;border-color:rgba(30,122,60,.25)">Đang hợp tác</span>'
+    : '<span class="pill pill--ghost">Đã ngừng hợp tác</span>';
+}
+function renderPartnerCard(p) {
+  var ach = (p.achievements || []).filter(Boolean);
+  return '<button type="button" class="partner-card" data-code="' + escHtml(p.code) + '">' +
+    '<div class="pc-top">' + partnerPhotoHtml(p) +
+    "<div><h3>" + escHtml(p.name) + '</h3><div class="pc-role">' + escHtml(p.role) + "</div></div></div>" +
+    '<div class="pc-meta"><span class="pill pill--level">' + escHtml(p.level) + "</span>" + partnerStatusPill(p.status) + "</div>" +
+    (p.bio ? '<div class="pc-bio">' + escHtml(p.bio) + "</div>" : "") +
+    (ach.length ? '<div class="pc-ach">' + ach.map(function (a) { return "<span>" + escHtml(a) + "</span>"; }).join("") + "</div>" : "") +
+    '<div class="pc-code">Mã chứng nhận ' + escHtml(p.code) + (p.since ? " · Hợp tác từ " + escHtml(p.since) : "") + "</div>" +
+    "</button>";
+}
+
 /* ---------- Header / Footer ---------- */
 function currentPage() {
   var p = location.pathname.split("/").pop();
@@ -148,7 +175,7 @@ function buildFooter() {
             '<a href="' + SITE.zalo + '" aria-label="Zalo">' + ICONS.zalo + "</a>" +
           "</div>" +
         "</div>" +
-        '<div class="footer-col"><h4>Khám phá</h4><ul>' + nav + '<li><a href="/faq.html">Câu hỏi thường gặp</a></li></ul></div>' +
+        '<div class="footer-col"><h4>Khám phá</h4><ul>' + nav + '<li><a href="/faq.html">Câu hỏi thường gặp</a></li><li><a href="/chung-nhan-doi-tac.html">Chứng nhận Đối tác</a></li></ul></div>' +
         '<div class="footer-col"><h4>Phân khúc</h4><ul>' +
           '<li><a href="/du-an.html">Căn hộ hạng sang</a></li>' +
           '<li><a href="/du-an.html">Biệt thự &amp; nhà phố</a></li>' +
@@ -396,6 +423,6 @@ function mountChat() {
 
 if (typeof window !== "undefined") {
   window.ICONS = ICONS; window.unsplashImg = unsplashImg; window.resolveImg = resolveImg;
-  window.renderProjectCard = renderProjectCard; window.renderPostCard = renderPostCard;
+  window.renderProjectCard = renderProjectCard; window.renderPostCard = renderPostCard; window.renderPartnerCard = renderPartnerCard;
   window.mountChrome = mountChrome;
 }

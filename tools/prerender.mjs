@@ -28,9 +28,10 @@ const sandbox = { window: {}, console };
 vm.createContext(sandbox);
 vm.runInContext(dataSrc + "\n" + compSrc, sandbox);
 const W = sandbox.window;
-const { SITE, NAV, PROJECTS, POSTS, FAQS } = W;
+const { SITE, NAV, PROJECTS, POSTS, FAQS, PARTNERS } = W;
 const renderProjectCard = W.renderProjectCard;
 const renderPostCard = W.renderPostCard;
+const renderPartnerCard = W.renderPartnerCard;
 const resolveImg = W.resolveImg;
 
 /* ---------- Phiên bản script lấy từ index.html (tự đồng bộ) ---------- */
@@ -378,6 +379,33 @@ patchFile("faq.html", (h) => {
   return h;
 });
 
+patchFile("chung-nhan-doi-tac.html", (h) => {
+  const active = (PARTNERS || []).filter((p) => p.status === "active");
+  h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
+  const peopleLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Đối tác & Cố vấn được chứng nhận — PaceLand",
+    itemListElement: active.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Person",
+        name: p.name,
+        jobTitle: p.role,
+        identifier: p.code,
+        worksFor: { "@id": SITE_URL + "/#organization" },
+        ...(p.photo ? { image: absUrl(resolveImg(p.photo, 400)) } : {}),
+        ...(p.bio ? { description: stripTags(p.bio) } : {}),
+      },
+    })),
+  };
+  h = upsertLd(h, "pl-ld-partners", ldTag("pl-ld-partners", peopleLd));
+  h = inject(h, "partners", '<div class="partner-grid" id="partnerGrid"></div>',
+    active.length ? absolutize(active.map(renderPartnerCard).join("")) : '<p style="color:var(--muted);grid-column:1/-1">Danh sách đối tác đang được cập nhật.</p>');
+  return h;
+});
+
 /* Org schema cho các trang còn lại */
 for (const page of ["gioi-thieu.html", "doi-tac.html", "tuyen-dung.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
@@ -391,6 +419,7 @@ const urls = [
   { loc: "/faq.html", pri: "0.9", mod: today },
   { loc: "/cong-cu.html", pri: "0.9", mod: today },
   { loc: "/gladia-heights.html", pri: "0.9", mod: today },
+  { loc: "/chung-nhan-doi-tac.html", pri: "0.8", mod: today },
   { loc: "/gioi-thieu.html", pri: "0.7", mod: today },
   { loc: "/doi-tac.html", pri: "0.7", mod: today },
   { loc: "/tuyen-dung.html", pri: "0.6", mod: today },
