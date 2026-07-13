@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+.claude
+.impeccable
+.netlify
+.mcp.json
+
+docs
+tools
+node_modules
+
+*.md
+*.zip
+netlify.toml
