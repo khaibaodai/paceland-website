@@ -14,7 +14,8 @@ const SITE = {
   "facebook": "https://www.facebook.com/paceland.vn/",
   "youtube": "https://www.youtube.com/@paceland-vn",
   "tiktok": "#",
-"formEndpoint": "https://formspree.io/f/mjgnvwqk",  "leadEndpoint": "",
+  "formEndpoint": "https://formspree.io/f/mjgnvwqk",
+  "leadEndpoint": "",
   "tracking": {
     "ga4": "",
     "adsId": "",
@@ -747,7 +748,7 @@ const POSTS = [
     "category": "Góc nhìn PaceLand",
     "date": "12/06/2026",
     "readtime": "6 phút đọc",
-    "cover": "assets/img/media/post-gia-co-hoi.png",
+    "cover": "assets/img/media/post-gia-co-hoi.jpg",
     "excerpt": "Khi một bất động sản xuất hiện trên báo mạng hay nền tảng đại chúng, biên lợi nhuận tốt nhất thường đã không còn. Vì sao quyền truy cập sớm lại quyết định lợi nhuận?",
     "body": [
       {
@@ -790,7 +791,7 @@ const POSTS = [
     "category": "Thị trường",
     "date": "05/06/2026",
     "readtime": "5 phút đọc",
-    "cover": "assets/img/media/post-10-percent.png",
+    "cover": "assets/img/media/post-10-percent.jpg",
     "excerpt": "90% sản phẩm trên thị trường là cạm bẫy thanh khoản. PaceLand chọn lọc 10% còn lại bằng một hệ tiêu chí khắt khe.",
     "body": [
       {
@@ -830,7 +831,7 @@ const POSTS = [
     "category": "Hạ tầng",
     "date": "28/05/2026",
     "readtime": "7 phút đọc",
-    "cover": "assets/img/media/post-ha-tang-khu-dong.png",
+    "cover": "assets/img/media/post-ha-tang-khu-dong.jpg",
     "excerpt": "Vành đai 3, cao tốc Long Thành và metro mở rộng đang định hình lại bản đồ giá trị bất động sản phía Đông.",
     "body": [
       {
@@ -865,7 +866,7 @@ const POSTS = [
     "category": "Công nghệ BĐS",
     "date": "20/05/2026",
     "readtime": "5 phút đọc",
-    "cover": "assets/img/media/post-co-van-tai-san.png",
+    "cover": "assets/img/media/post-co-van-tai-san.jpg",
     "excerpt": "PaceLand không tuyển 'cò đất'. Đội ngũ là những cố vấn tài sản kết hợp công nghệ AI với chuyên môn con người.",
     "body": [
       {
@@ -896,7 +897,7 @@ const POSTS = [
     "category": "Góc nhìn PaceLand",
     "date": "14/05/2026",
     "readtime": "6 phút đọc",
-    "cover": "assets/img/media/post-tu-duy-doi-tac.png",
+    "cover": "assets/img/media/post-tu-duy-doi-tac.jpg",
     "excerpt": "Lộ trình 3 năm chuyển hoá từ cộng tác viên thành Đối tác cổ phần với cổ phần ưu đãi — khi thành công được chia sẻ.",
     "body": [
       {
@@ -931,7 +932,7 @@ const POSTS = [
     "category": "Quy hoạch",
     "date": "02/05/2026",
     "readtime": "8 phút đọc",
-    "cover": "assets/img/media/post-chu-ky-gia.png",
+    "cover": "assets/img/media/post-chu-ky-gia.jpg",
     "excerpt": "Phân tích chu kỳ giúp xác định thời điểm và khu vực có 'giá cơ hội' tốt nhất trong năm 2026.",
     "body": [
       {
