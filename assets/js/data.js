@@ -14,8 +14,7 @@ const SITE = {
   "facebook": "https://www.facebook.com/paceland.vn/",
   "youtube": "https://www.youtube.com/@paceland-vn",
   "tiktok": "#",
-  "formEndpoint": "https://formspree.io/f/your-form-id",
-  "leadEndpoint": "",
+"formEndpoint": "https://formspree.io/f/mjgnvwqk",  "leadEndpoint": "",
   "tracking": {
     "ga4": "",
     "adsId": "",
