@@ -301,6 +301,14 @@ for (const p of PROJECTS) {
       ${(p.amenities || []).map((a) => `<li style="display:flex;gap:.55rem;align-items:center"><span class="gem gem--sm"></span>${esc(a)}</li>`).join("")}
     </ul>
 
+    ${(p.zones || []).length ? `<h2 class="mt-4" style="font-size:1.3rem">Các phân khu ${esc(p.name)}</h2>
+    <div class="mt-2" style="display:grid;gap:.7rem">
+      ${p.zones.map((z) => `<div style="border:1px solid var(--line-soft);border-radius:10px;padding:.85rem 1rem;background:var(--white)">
+        <div><strong style="font-family:var(--head)">${esc(z.name)}</strong>${z.status ? ` <span class="pill" style="margin-left:.4rem">${esc(z.status)}</span>` : ""}</div>
+        ${z.type || z.note || z.link ? `<div style="margin-top:.3rem;color:var(--ink-soft);font-size:.92rem">${esc(z.type || "")}${z.note ? `${z.type ? " — " : ""}${esc(z.note)}` : ""}${z.link ? ` <a href="${esc(z.link)}"${z.link.startsWith("http") ? ' target="_blank" rel="noopener"' : ""} style="color:var(--red);font-weight:600;white-space:nowrap">Xem chi tiết →</a>` : ""}</div>` : ""}
+      </div>`).join("")}
+    </div>` : ""}
+
     ${(p.gallery || []).length > 1 ? `<div class="grid cols-3 mt-4">${p.gallery.slice(0, 3).map((g) => `<img src="/${esc(resolveImg(g, 900))}" alt="${esc(p.name)}" loading="lazy" style="border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%">`).join("")}</div>` : ""}
   </div>
 </article>

@@ -96,145 +96,164 @@ const PROJECTS = [
   {
     "id": "the-prive",
     "name": "The Privé",
-    "developer": "Đại Quang Minh",
-    "location": "Khu đô thị Thủ Thiêm, TP. Thủ Đức",
+    "developer": "Tập đoàn Đất Xanh",
+    "location": "Nam Rạch Chiếc, P. An Phú (cũ), TP. Thủ Đức",
     "area": "Khu Đông",
     "segment": "Hạng sang",
     "type": "Căn hộ",
     "status": "Đang mở bán",
     "offmarket": false,
-    "badge": "Biên lợi nhuận cao",
-    "priceText": "Từ 8,5 tỉ",
-    "priceValue": 8.5,
-    "beds": "1–3 PN",
-    "size": "50 – 121 m²",
-    "handover": "2027",
+    "badge": "2 mặt sông Giồng Ông Tố",
+    "priceText": "Từ ~6,6 tỉ",
+    "priceValue": 6.6,
+    "beds": "1–3 PN, Duplex & Penthouse",
+    "size": "49,8 – 98,5 m²",
+    "handover": "Đang cập nhật",
     "cover": "assets/img/media/the-prive-2.jpg",
     "gallery": [
       "assets/img/media/the-prive-1.jpg",
       "assets/img/media/the-prive-2.jpg",
       "assets/img/media/the-prive-3.jpg"
     ],
-    "short": "Bộ sưu tập căn hộ giới hạn nhìn thẳng lõi trung tâm Thủ Thiêm — quỹ căn đẹp được giữ riêng cho khách hàng PaceLand.",
+    "short": "Tổ hợp căn hộ hạng sang 6,7 ha của Tập đoàn Đất Xanh tại Nam Rạch Chiếc — 12 tháp, 3.175 căn, hai mặt giáp sông Giồng Ông Tố, thiết kế chuẩn resort.",
     "description": [
-      "The Privé là dự án căn hộ hạng sang toạ lạc tại vị trí kim cương của Khu đô thị mới Thủ Thiêm, đối diện trực tiếp trung tâm Quận 1 qua sông Sài Gòn. Đây là một trong số ít dự án sở hữu biên độ tăng giá vượt trội nhờ quỹ đất khan hiếm và hạ tầng kết nối hoàn thiện.",
-      "PaceLand giữ một số căn vị trí đẹp (view sông, view trung tâm) ở mức giá ưu tiên dành cho khách hàng trong mạng lưới — tiếp cận trước khi sản phẩm được công bố rộng rãi."
+      "The Privé là dự án căn hộ hạng sang quy mô 6,7 ha do Tập đoàn Đất Xanh phát triển tại khu Nam Rạch Chiếc, phường An Phú (cũ), TP. Thủ Đức — cạnh đường Song Hành cao tốc, hai mặt giáp sông Giồng Ông Tố. Dự án gồm 12 tháp cao 33–35 tầng với 3.175 căn hộ 1–3 phòng ngủ, duplex và penthouse, diện tích phổ biến 49,8–98,5 m², mật độ xây dựng chỉ 25%.",
+      "Đơn giá tham khảo từ khoảng 133 triệu/m² (chưa VAT, tính theo tim tường — 07/2026). Hệ tiện ích nội khu dày đặc theo phong cách resort: 3 hồ bơi, phòng gym & boxing, golf 3D, sân tennis và pickleball, rạp phim mini, khu co-working, trường mầm non và trạm sạc xe điện.",
+      "Với vị trí giữa tam giác Thủ Thiêm – An Phú – The Global City và nguồn cung căn hộ hạng sang khan hiếm tại Khu Đông, The Privé thuộc nhóm dự án được PaceLand theo sát giỏ hàng từng đợt mở bán — khách trong mạng lưới được ưu tiên căn tầng đẹp, view sông."
     ],
     "amenities": [
-      "Hồ bơi vô cực",
-      "Phòng chờ trên cao",
-      "Khu nghỉ dưỡng & spa",
-      "An ninh 3 lớp",
-      "Hầm đỗ xe thông minh",
-      "Quản gia 24/7"
+      "3 hồ bơi resort",
+      "Đường dạo ven sông Giồng Ông Tố",
+      "Gym, boxing & golf 3D",
+      "Sân tennis & pickleball",
+      "Rạp phim mini & co-working",
+      "Trường mầm non nội khu",
+      "Trạm sạc xe điện",
+      "Mật độ xây dựng 25%"
     ]
   },
   {
     "id": "eaton-park",
     "name": "Eaton Park",
     "developer": "Gamuda Land",
-    "location": "Mai Chí Thọ, An Phú, TP. Thủ Đức",
+    "location": "Mặt tiền Mai Chí Thọ, P. An Phú (cũ), TP. Thủ Đức",
     "area": "Khu Đông",
     "segment": "Hạng sang",
     "type": "Căn hộ",
     "status": "Đang mở bán",
     "offmarket": false,
-    "badge": "Dòng tiền ổn định",
-    "priceText": "Từ 9,2 tỉ",
-    "priceValue": 9.2,
-    "beds": "1–4 PN",
-    "size": "52 – 178 m²",
-    "handover": "2027",
+    "badge": "Bàn giao từ 2026",
+    "priceText": "Từ 9,5 tỉ",
+    "priceValue": 9.5,
+    "beds": "1–3 PN & Penthouse",
+    "size": "51,9 – 104,8 m²",
+    "handover": "Từ Q2/2026",
     "cover": "assets/img/media/eaton-park-1.jpg",
     "gallery": [
       "assets/img/media/eaton-park-1.jpg",
       "assets/img/media/eaton-park-2.jpg",
       "assets/img/media/eaton-park-3.jpg"
     ],
-    "short": "Khu căn hộ resort phong cách Singapore ngay mặt tiền Mai Chí Thọ, kết nối tức thì về trung tâm và sân bay Long Thành.",
+    "short": "Tổ hợp căn hộ hạng sang 3,76 ha của Gamuda Land (Malaysia) ngay mặt tiền Mai Chí Thọ — 6 tháp, 1.980 căn hộ, bàn giao từ Quý 2/2026.",
     "description": [
-      "Eaton Park do Gamuda Land phát triển trên trục Mai Chí Thọ — cửa ngõ Khu Đông, kết nối nhanh về Quận 1, Thủ Thiêm và cao tốc đi Long Thành. Dự án nổi bật với mật độ xây dựng thấp và hệ tiện ích resort.",
-      "Sản phẩm phù hợp cả nhu cầu ở thực lẫn dòng tiền cho thuê ổn định nhờ tệp chuyên gia nước ngoài trong khu vực."
+      "Eaton Park do Gamuda Land — nhà phát triển Malaysia hoạt động tại Việt Nam từ 2007 — xây dựng trên khu đất 3,76 ha mặt tiền đại lộ Mai Chí Thọ, phường An Phú (cũ), TP. Thủ Đức. Quy mô 6 tháp cao 29–39 tầng gồm 1.980 căn hộ cùng 72 shophouse; kết nối thẳng về Thủ Thiêm, Quận 1 và cao tốc đi sân bay Long Thành.",
+      "Cơ cấu căn: 1PN (51,9–55,8 m²), 2PN (71,7–79,5 m²), 3PN (103,7–104,8 m²) và penthouse. Giá tham khảo giai đoạn 3 (07/2026): 1PN từ 9,5–10,5 tỉ; 2PN 13,5–15 tỉ; 3PN 20,5–21,5 tỉ. Bàn giao dự kiến từ Quý 2/2026 — thuộc nhóm dự án hạng sang hiếm hoi tại Khu Đông nhận nhà ngay trong năm.",
+      "Hai phân khu với 6 tháp đặt tên theo cảnh quan (Alpine, Forest, Cove, Lagoon, Grove, Strait). Tệp khách thuê chuyên gia quanh trục Mai Chí Thọ giúp Eaton Park vừa phù hợp ở thực vừa cho dòng tiền cho thuê ổn định — PaceLand tư vấn chọn tháp, tầng và layout theo mục tiêu của từng khách hàng."
     ],
     "amenities": [
-      "Nhà câu lạc bộ 2.000 m²",
-      "Hồ bơi muối khoáng",
-      "Vườn thiền",
-      "Khu nướng ngoài trời",
-      "Phòng gym & yoga",
-      "Trường mầm non nội khu"
+      "Hồ bơi resort & gym, yoga",
+      "Sân golf 3D",
+      "Sân thể thao đa năng (Pickleball, Basketball)",
+      "Công viên thú cưng",
+      "Công viên ven sông & khu BBQ",
+      "Phố thương mại khối đế",
+      "Sân chơi trẻ em"
+    ],
+    "zones": [
+      { "name": "Phân khu 1", "type": "Tháp A1 Alpine · A2 Forest · A3 Cove · A4 Lagoon", "status": "Đang bàn giao" },
+      { "name": "Phân khu 2", "type": "Tháp A5 Grove · A6 Strait", "status": "Đang mở bán" }
     ]
   },
   {
     "id": "the-global-city",
     "name": "The Global City",
-    "developer": "Masterise Homes",
-    "location": "An Phú, TP. Thủ Đức",
+    "developer": "Masterise Homes (CĐT: SDI Corp)",
+    "location": "Đỗ Xuân Hợp, P. An Phú (cũ), TP. Thủ Đức",
     "area": "Khu Đông",
-    "segment": "Siêu sang",
-    "type": "Nhà phố thương mại",
-    "status": "Giao dịch kín",
-    "offmarket": true,
-    "badge": "Biểu tượng",
-    "priceText": "Từ 42 tỉ",
-    "priceValue": 42,
-    "beds": "Nhà phố 5×20m",
-    "size": "100 – 280 m²",
-    "handover": "2026",
+    "segment": "Hạng sang",
+    "type": "Căn hộ",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Khu đô thị 117,4 ha",
+    "priceText": "Theo phân khu",
+    "priceValue": 15,
+    "beds": "Căn hộ · Nhà phố · Biệt thự",
+    "size": "6 phân khu chính",
+    "handover": "Theo phân khu",
     "cover": "assets/img/media/the-global-city-1.jpg",
     "gallery": [
       "assets/img/media/the-global-city-1.jpg",
       "assets/img/media/the-global-city-2.jpg",
       "assets/img/media/the-global-city-3.jpg"
     ],
-    "short": "\"Downtown\" mới của Sài Gòn — quần thể nhà phố, nhà phố thương mại và đại lộ trung tâm do Masterise Homes kiến tạo.",
+    "short": "Khu đô thị 117,4 ha do Masterise Homes phát triển tại Đỗ Xuân Hợp, TP. Thủ Đức — trung tâm mới của TP.HCM với 6 phân khu từ nhà phố SOHO đến các tháp căn hộ Masteri, LUMIÈRE.",
     "description": [
-      "The Global City được định vị là trung tâm mới của TP.HCM với quảng trường, hồ cảnh quan và đại lộ thương mại sầm uất. Quỹ nhà phố – nhà phố thương mại có khả năng khai thác kinh doanh và tích sản dài hạn.",
-      "PaceLand tư vấn các căn góc, vị trí mặt tiền đại lộ — nhóm sản phẩm biểu tượng cho danh mục tài sản đẳng cấp."
+      "The Global City là khu đô thị quy mô 117,4 ha tại đường Đỗ Xuân Hợp, phường An Phú (cũ), TP. Thủ Đức, do Masterise Homes phát triển (chủ đầu tư: SDI Corp). Dự án được quy hoạch làm \"downtown mới\" của TP.HCM với đầy đủ căn hộ cao tầng, nhà phố, biệt thự, tòa văn phòng hạng A, trung tâm mua sắm và khu nhạc nước ngoài trời thuộc nhóm lớn nhất Đông Nam Á.",
+      "Sáu phân khu chính: nhà phố thương mại SOHO (đã vận hành, hình thành phố kinh doanh sầm uất), khu thấp tầng SOLA, cùng bốn dòng căn hộ cao tầng — Masteri Grand View (đang mở bán), LUMIÈRE Midtown, Masteri Park Place và Masteri Cosmo Central (các giai đoạn kế tiếp). Mỗi phân khu có chính sách giá và tiến độ riêng.",
+      "Với vị trí giữa An Phú – Rạch Chiếc và mặt bằng giá tăng theo từng giai đoạn mở bán, The Global City là danh mục PaceLand theo dõi liên tục: khách trong mạng lưới được cập nhật giỏ hàng sơ cấp lẫn quỹ căn chuyển nhượng chọn lọc theo từng phân khu."
     ],
     "amenities": [
-      "Quảng trường trung tâm",
-      "Hồ cảnh quan 3,2 ha",
-      "Phố thương mại",
-      "Công viên ánh sáng",
-      "An ninh tầng lớp",
-      "Hạ tầng đồng bộ"
+      "Khu nhạc nước ngoài trời quy mô hàng đầu ĐNÁ",
+      "Trung tâm mua sắm quy mô lớn",
+      "Tòa văn phòng hạng A",
+      "Quảng trường & hồ cảnh quan",
+      "Công viên ven kênh",
+      "Hạ tầng đồng bộ toàn khu"
+    ],
+    "zones": [
+      { "name": "SOHO", "type": "Nhà phố thương mại", "status": "Đã vận hành", "note": "Dãy phố kinh doanh đầu tiên của khu đô thị" },
+      { "name": "SOLA", "type": "Khu thấp tầng", "status": "Đang triển khai" },
+      { "name": "Masteri Grand View", "type": "Căn hộ cao tầng", "status": "Đang mở bán", "note": "Phân khu cao tầng đầu tiên, trục trung tâm" },
+      { "name": "LUMIÈRE Midtown", "type": "Căn hộ cao tầng", "status": "Đang triển khai" },
+      { "name": "Masteri Park Place", "type": "Căn hộ cao tầng", "status": "Giai đoạn kế tiếp" },
+      { "name": "Masteri Cosmo Central", "type": "Căn hộ cao tầng", "status": "Sắp ra mắt" }
     ]
   },
   {
     "id": "gladia-heights",
     "name": "Gladia Heights",
-    "developer": "Chủ đầu tư uy tín",
-    "location": "Cửa ngõ Đông Bắc TP.HCM",
+    "developer": "Khang Điền & Keppel Land",
+    "location": "Võ Chí Công, P. Bình Trưng Đông (cũ), TP. Thủ Đức",
     "area": "Khu Đông",
     "segment": "Cao cấp",
     "type": "Căn hộ",
     "status": "Đang mở bán",
     "offmarket": false,
-    "badge": "Tiềm năng tăng giá",
-    "priceText": "Từ 4,4 tỉ",
-    "priceValue": 4.4,
-    "beds": "1–3 PN",
-    "size": "48 – 110 m²",
-    "handover": "2027",
+    "badge": "Ba mặt sông Rạch Chiếc",
+    "priceText": "Liên hệ bảng giá",
+    "priceValue": 5.5,
+    "beds": "1–4 PN",
+    "size": "53 – 144 m²",
+    "handover": "Cuối 2027",
     "cover": "assets/img/media/gladia-heights-1.jpg",
     "gallery": [
       "assets/img/media/gladia-heights-1.jpg",
       "assets/img/media/gladia-heights-2.jpg",
       "assets/img/media/gladia-heights-3.jpg"
     ],
-    "short": "Tổ hợp căn hộ cao tầng đón đầu hạ tầng vành đai và metro mở rộng — cơ hội vào sớm với mức giá gốc.",
+    "short": "Dự án căn hộ hợp tác Khang Điền × Keppel Land tại Võ Chí Công, TP. Thủ Đức — 3 tháp 15 tầng, 639 căn, ba mặt giáp sông Rạch Chiếc, bàn giao cuối 2027.",
     "description": [
-      "Gladia Heights nằm tại cửa ngõ Đông Bắc, hưởng lợi trực tiếp từ các tuyến vành đai và quy hoạch metro mở rộng. Đây là dự án trọng điểm trong nhóm tăng trưởng của PaceLand.",
-      "Khách hàng trong mạng lưới được tiếp cận giai đoạn đặt giữ chỗ sớm — lợi thế về giá và quyền chọn căn."
+      "Gladia Heights là dự án căn hộ cao cấp do liên danh Khang Điền (Việt Nam) và Keppel Land (Singapore) phát triển tại đường Võ Chí Công, phường Bình Trưng Đông (cũ), TP. Thủ Đức — kế cận Thủ Thiêm, ba mặt giáp sông Rạch Chiếc. Giai đoạn 1 quy mô 1,29 ha nằm trong cụm đô thị tích hợp khoảng 60 ha của hai chủ đầu tư.",
+      "Dự án gồm 3 tháp cao 15 tầng — mật độ thấp hiếm có ở phân khúc này — với 639 căn hộ và 26 shophouse. Cơ cấu căn: 1PN ~53,5 m², 2PN 71,4–85,1 m², 3PN 115–124,7 m², 4PN ~144,2 m². Bàn giao dự kiến cuối 2027, cấp giấy chứng nhận dự kiến 2028.",
+      "Uy tín pháp lý của Khang Điền cộng chuẩn phát triển Singapore của Keppel Land là lý do Gladia Heights nằm trong nhóm dự án PaceLand khuyến nghị theo dõi sớm — bảng giá công bố theo từng đợt, khách trong mạng lưới được ưu tiên giữ chỗ căn tầng đẹp."
     ],
     "amenities": [
+      "Ba mặt giáp sông Rạch Chiếc",
+      "Mật độ thấp — 3 tháp 15 tầng",
+      "Hồ bơi & khu thể thao",
       "Công viên nội khu",
-      "Hồ bơi tràn bờ",
-      "Khu thể thao đa năng",
-      "Sảnh đón đôi",
-      "Khu vui chơi trẻ em",
-      "Không gian làm việc chung"
+      "Shophouse khối đế",
+      "Kế cận Thủ Thiêm & Võ Chí Công"
     ]
   },
   {
@@ -382,38 +401,83 @@ const PROJECTS = [
     ]
   },
   {
-    "id": "palm-river",
-    "name": "Palm River Residences",
-    "developer": "Chủ đầu tư uy tín",
-    "location": "Ven sông Khu Nam, TP.HCM",
-    "area": "Khu Nam",
-    "segment": "Cao cấp",
-    "type": "Biệt thự",
+    "id": "palm-city",
+    "name": "Palm City",
+    "developer": "Cty Nam Rạch Chiếc (Tiến Phước – Trần Thái – Gateway)",
+    "location": "Song Hành cao tốc, Nam Rạch Chiếc, TP. Thủ Đức",
+    "area": "Khu Đông",
+    "segment": "Hạng sang",
+    "type": "Căn hộ",
     "status": "Sắp ra mắt",
     "offmarket": false,
-    "badge": "Tiềm năng tăng giá",
-    "priceText": "Từ 22 tỉ",
-    "priceValue": 22,
-    "beds": "Biệt thự song lập",
-    "size": "200 – 420 m²",
-    "handover": "2028",
+    "badge": "2,7 km ven sông",
+    "priceText": "GĐ mới: sắp công bố",
+    "priceValue": 12,
+    "beds": "Căn hộ & thấp tầng",
+    "size": "30,2 ha · 4 phân khu",
+    "handover": "GĐ mới từ 2026",
     "cover": "assets/img/media/palm-river-1.jpg",
     "gallery": [
       "assets/img/media/palm-river-1.jpg",
       "assets/img/media/palm-river-2.jpg"
     ],
-    "short": "Compound biệt thự ven sông Khu Nam — không gian riêng tư, mật độ thấp, giá trị tích sản dài hạn.",
+    "short": "Khu đô thị ven sông 30,2 ha tại Nam Rạch Chiếc với 2,7 km bờ sông, trường và bệnh viện quốc tế Mỹ nội khu — giai đoạn mới Palm River (căn hộ hạng sang) triển khai từ 2026.",
     "description": [
-      "Palm River Residences là khu biệt thự compound ven sông tại Khu Nam, đề cao sự riêng tư và mật độ xây dựng thấp. Vị trí kết nối thuận tiện về Phú Mỹ Hưng và trung tâm.",
-      "Quỹ sản phẩm giới hạn, phù hợp khách hàng tìm kiếm không gian sống riêng tư và biên độ tăng giá."
+      "Palm City là khu đô thị 30,2 ha do Công ty TNHH Nam Rạch Chiếc (liên doanh Tiến Phước – Trần Thái – Gateway Thủ Thiêm) phát triển bên đường Song Hành cao tốc, TP. Thủ Đức. Điểm hiếm có: 2,7 km đường ven sông Giồng Ông Tố – Mương Kinh, mật độ xây dựng toàn khu 33%, cùng Trường Quốc tế Mỹ (TAS) và Bệnh viện Quốc tế Mỹ (AIH) ngay trong nội khu.",
+      "Các giai đoạn đã hình thành và có sổ hồng: Palm Residence (135 nhà phố – biệt thự), Palm Heights (3 tháp, 816 căn hộ) và Palm Garden. Cộng đồng cư dân hiện hữu đông đúc giúp Palm City là một trong những khu compound vận hành ổn định nhất Khu Đông.",
+      "Giai đoạn mới — Palm River — là quỹ đất cao tầng ven sông đẹp nhất còn lại của khu đô thị, định vị căn hộ hạng sang với tiêu chuẩn bàn giao nâng cấp, triển khai từ 2026. Pháp lý sở hữu lâu dài với người Việt. PaceLand là đơn vị tư vấn giỏ hàng Palm River — xem chi tiết tại trang riêng của phân khu."
     ],
     "amenities": [
-      "Bến thuyền riêng",
-      "Công viên ven sông",
-      "Cổng an ninh compound",
-      "Hồ bơi nội khu",
-      "Đường dạo bộ",
-      "Khu thể thao"
+      "2,7 km đường dạo ven sông",
+      "Trường Quốc tế Mỹ (TAS) nội khu",
+      "Bệnh viện Quốc tế Mỹ (AIH) nội khu",
+      "Hồ bơi resort 50 m & 25 m",
+      "Clubhouse, tennis, gym & yoga",
+      "Khu BBQ & sân chơi trẻ em",
+      "Mật độ xây dựng 33%"
+    ],
+    "zones": [
+      { "name": "Palm Residence", "type": "Nhà phố & biệt thự — 135 căn", "status": "Đã bàn giao, có sổ hồng" },
+      { "name": "Palm Heights", "type": "Căn hộ — 3 tháp, 816 căn", "status": "Đã bàn giao, có sổ hồng" },
+      { "name": "Palm Garden", "type": "Căn hộ — hồ bơi tràn bờ 25 m", "status": "Đã bàn giao" },
+      { "name": "Palm River", "type": "Căn hộ hạng sang ven sông", "status": "Triển khai từ 2026", "note": "Quỹ đất cao tầng view sông trực diện — giai đoạn được chờ đợi nhất Palm City", "link": "https://palmriver.paceland.vn/" }
+    ]
+  },
+  {
+    "id": "imperia-sensa-park",
+    "name": "Imperia Sensa Park",
+    "developer": "MIK Group",
+    "location": "Võ Chí Công, khu Phú Hữu, TP. Thủ Đức",
+    "area": "Khu Đông",
+    "segment": "Cao cấp",
+    "type": "Căn hộ",
+    "status": "Sắp ra mắt",
+    "offmarket": false,
+    "badge": "Nguồn cung mới Khu Đông",
+    "priceText": "Từ 88 tr/m²",
+    "priceValue": 5,
+    "beds": "1–3 PN & thấp tầng",
+    "size": "~4,9 ha · 922 căn hộ",
+    "handover": "Đang cập nhật",
+    "cover": "1545324418-cc1a3fa10c00",
+    "gallery": [
+      "1545324418-cc1a3fa10c00",
+      "1486406146926-c627a92ad1ab",
+      "1449824913935-59a10b8d2000"
+    ],
+    "short": "Dự án mới của MIK Group tại Võ Chí Công, TP. Thủ Đức — 2 tháp 25 tầng với 922 căn hộ và 93 sản phẩm thấp tầng ven sông, đơn giá từ 88 triệu/m² (tham khảo 07/2026).",
+    "description": [
+      "Imperia Sensa Park là dự án phức hợp của MIK Group trên khu đất 48.736 m² (~4,9 ha) tại đường Võ Chí Công, khu Phú Hữu, TP. Thủ Đức — liền kề cầu Phú Hữu, mật độ xây dựng chỉ 30,5%. Quy mô gồm 2 tháp căn hộ cao 25 tầng (922 căn, 1–3 phòng ngủ) cùng 93 sản phẩm thấp tầng: shophouse 1 trệt 2 lầu và biệt thự ven sông có sân vườn riêng.",
+      "Đơn giá tham khảo từ 88 triệu/m² (chưa VAT), chính sách chiết khấu từ chủ đầu tư lên tới 7,5% (07/2026) — mặt bằng giá dễ tiếp cận hơn đáng kể so với các dự án cùng trục Võ Chí Công về phía Thủ Thiêm, phù hợp cả gia đình trẻ lẫn nhà đầu tư dài hạn đón hạ tầng Khu Đông.",
+      "Hình ảnh hiển thị là ảnh minh hoạ — ảnh chính thức của dự án sẽ được PaceLand cập nhật theo tài liệu chủ đầu tư. Liên hệ PaceLand để nhận thông tin giỏ hàng, mặt bằng tầng và chính sách mới nhất ngay khi mở bán."
+    ],
+    "amenities": [
+      "Hồ bơi tràn bờ & clubhouse",
+      "Công viên trung tâm & ven sông",
+      "Gym, yoga & sân thể thao",
+      "Đường chạy bộ nội khu",
+      "Khu vui chơi trẻ em",
+      "Mật độ xây dựng 30,5%"
     ]
   }
 ];

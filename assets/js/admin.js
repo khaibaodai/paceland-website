@@ -336,6 +336,7 @@
       field("Mô tả ngắn", "f_short", it.short, { full: true, type: "textarea", rows: 70 }) +
       field("Mô tả chi tiết", "f_description", (it.description || []).join("\n\n"), { full: true, type: "textarea", rows: 120, hint: "Mỗi đoạn cách nhau 1 dòng trống" }) +
       field("Tiện ích", "f_amenities", (it.amenities || []).join("\n"), { full: true, type: "textarea", rows: 110, hint: "Mỗi tiện ích 1 dòng" }) +
+      field("Phân khu", "f_zones", (it.zones || []).map(function (z) { return [z.name, z.type, z.status, z.note, z.link].map(function (x) { return x || ""; }).join(" | ").replace(/( \| )+$/, ""); }).join("\n"), { full: true, type: "textarea", rows: 110, hint: "Mỗi phân khu 1 dòng: Tên | Loại hình | Trạng thái | Ghi chú | Link (các phần sau có thể bỏ trống)" }) +
       "</div>";
     if (tab === "posts") return '<div class="fgrid">' +
       field("Tiêu đề", "f_title", it.title, { full: true }) +
@@ -387,6 +388,16 @@
         gallery: g("f_gallery").split(",").map(function (x) { return x.trim(); }).filter(Boolean),
         short: g("f_short"), description: g("f_description").split(/\n\s*\n/).map(function (x) { return x.trim(); }).filter(Boolean),
         amenities: lines(g("f_amenities")),
+        zones: lines(g("f_zones")).map(function (ln) {
+          var parts = ln.split("|").map(function (x) { return x.trim(); });
+          if (!parts[0]) return null;
+          var z = { name: parts[0] };
+          if (parts[1]) z.type = parts[1];
+          if (parts[2]) z.status = parts[2];
+          if (parts[3]) z.note = parts[3];
+          if (parts[4]) z.link = parts[4];
+          return z;
+        }).filter(Boolean),
       };
     }
     if (tab === "posts") return { id: slug(g("f_title")), title: g("f_title"), category: g("f_category"), date: g("f_date"), readtime: g("f_readtime"), cover: g("f_cover"), excerpt: g("f_excerpt"), body: textToBlocks(g("f_body")) };

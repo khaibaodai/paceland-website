@@ -506,6 +506,20 @@
       specCell("Phân khúc", p.segment) + specCell("Bàn giao", p.handover) +
       specCell("Khu vực", p.area) + specCell("Chủ đầu tư", p.developer));
     fill("pdAmenities", p.amenities.map(function (a) { return "<li>" + ICONS.check + "<span>" + a + "</span></li>"; }).join(""));
+    var zw = document.getElementById("pdZonesWrap");
+    if (zw && p.zones && p.zones.length) {
+      zw.hidden = false;
+      fill("pdZones", p.zones.map(function (z) {
+        var head = '<strong style="font-family:var(--head)">' + z.name + "</strong>" +
+          (z.status ? ' <span class="pill" style="margin-left:.4rem">' + z.status + "</span>" : "");
+        var body = (z.type ? z.type : "") + (z.note ? (z.type ? " — " : "") + z.note : "");
+        var link = z.link ? ' <a href="' + z.link + '"' + (z.link.indexOf("http") === 0 ? ' target="_blank" rel="noopener"' : "") + ' style="color:var(--red);font-weight:600;white-space:nowrap">Xem chi tiết →</a>' : "";
+        return '<div style="border:1px solid var(--line-soft);border-radius:10px;padding:.85rem 1rem;background:var(--white)">' +
+          "<div>" + head + "</div>" +
+          (body || link ? '<div style="margin-top:.3rem;color:var(--ink-soft);font-size:.92rem">' + body + link + "</div>" : "") +
+          "</div>";
+      }).join(""));
+    }
     fill("pdPrice", p.priceText + "<small>" + p.size + " · " + p.beds + "</small>");
     var pf = document.getElementById("pdProjectField"); if (pf) pf.value = p.name;
 
