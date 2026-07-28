@@ -347,6 +347,29 @@ console.log("Bơm nội dung tĩnh:");
 patchFile("index.html", (h) => {
   let feat = PROJECTS.filter((p) => p.offmarket || p.badge === "Biên lợi nhuận cao").slice(0, 6);
   if (feat.length < 6) feat = PROJECTS.slice(0, 6);
+
+  /* Hero: đồng bộ slide tĩnh với HERO_SLIDES thật — tránh nháy ảnh cũ trước khi JS thay slide */
+  const HS = W.HERO_SLIDES || [];
+  if (HS.length) {
+    const su = (u) => esc(String(u).replace(/'/g, "%27"));
+    h = h.replace(/<!-- Background slides -->[\s\S]*?<!-- Content overlay -->/,
+      `<!-- Background slides -->\n    <div class="hs-slides" aria-hidden="true">\n` +
+      HS.map((s, i) => `      <div class="hs-slide${i === 0 ? " active" : ""}" style="background-image:url('${su(s.img)}')"></div>`).join("\n") +
+      `\n    </div>\n\n    <!-- Content overlay -->`);
+    h = h.replace(/(<div class="hs-captions"[^>]*>)[\s\S]*?(<\/div>)/,
+      `$1\n` + HS.map((s, i) => `          <span class="hs-cap${i === 0 ? " active" : ""}">${esc(s.caption || "")}</span>`).join("\n") + `\n        $2`);
+    h = h.replace(/(<div class="hs-progress"[^>]*>)[\s\S]*?(<\/div>)/,
+      `$1\n` + HS.map((_, i) => `          <button class="hs-prog${i === 0 ? " active" : ""}" role="tab" aria-label="Slide ${i + 1}"></button>`).join("\n") + `\n        $2`);
+    /* Preload slide đầu — hero hiện tức thì */
+    const preloadTag = `<link rel="preload" as="image" href="${su(HS[0].img)}" id="pl-hero-preload">`;
+    h = h.includes('id="pl-hero-preload"')
+      ? h.replace(/<link rel="preload" as="image"[^>]*id="pl-hero-preload">/, preloadTag)
+      : h.replace("</head>", `${preloadTag}\n</head>`);
+    /* Xuất hero-slides.json — runtime fetch có dữ liệu thật thay vì 404 */
+    fs.mkdirSync(path.join(ROOT, "assets", "data"), { recursive: true });
+    fs.writeFileSync(path.join(ROOT, "assets", "data", "hero-slides.json"), JSON.stringify(HS, null, 2));
+  }
+
   h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
   h = upsertLd(h, "pl-ld-website", ldTag("pl-ld-website", WEBSITE_LD));
   h = inject(h, "featured", '<div class="card-grid" id="featuredProjects"></div>', absolutize(feat.map(renderProjectCard).join("")));
