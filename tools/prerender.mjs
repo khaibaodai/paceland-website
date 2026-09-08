@@ -333,6 +333,83 @@ ${ctaBand(`Quan tâm ${esc(p.name)}? Nhận giỏ hàng & chính sách hôm nay`
   projectPages++;
 }
 
+/* ---------- 3b. Trang thương hiệu cá nhân CHUYÊN VIÊN ---------- */
+fs.mkdirSync(path.join(ROOT, "chuyen-vien"), { recursive: true });
+const activePartners = (PARTNERS || []).filter((p) => p.status === "active" && p.id);
+let profilePages = 0;
+for (const cv of activePartners) {
+  const url = `/chuyen-vien/${cv.id}.html`;
+  const canonical = SITE_URL + url;
+  const photo = cv.photo ? absUrl(resolveImg(cv.photo, 800)) : absUrl("assets/img/og-image.jpg");
+  const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Chứng nhận Đối tác", href: "/chung-nhan-doi-tac.html" }, { label: cv.name }];
+  const sameAs = [cv.facebook, cv.linkedin].filter(Boolean);
+  const tel = cv.phone || SITE.hotline;
+  const telRaw = String(tel).replace(/[^0-9+]/g, "");
+
+  const personLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: cv.name,
+    jobTitle: cv.role,
+    identifier: cv.code,
+    url: canonical,
+    worksFor: { "@type": "RealEstateAgent", name: "PaceLand", "@id": SITE_URL + "/#organization" },
+    ...(cv.photo ? { image: photo } : {}),
+    ...(cv.bio ? { description: stripTags(cv.bio) } : {}),
+    ...(cv.phone ? { telephone: cv.phone } : {}),
+    ...(cv.area ? { areaServed: cv.area } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+  };
+
+  const featured = PROJECTS.slice(0, 3);
+  const bodyMain = `
+<article class="section section--ivory" style="padding-top:calc(var(--header-h) + clamp(24px,4vw,48px))">
+  <div class="container">
+    ${breadcrumbNav(crumbs)}
+    <div class="mt-2" style="display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:start">
+      <figure style="border-radius:14px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4"><img src="/${esc(resolveImg(cv.photo || "assets/img/og-image.jpg", 700))}" alt="${esc(cv.name)} — ${esc(cv.role)} PaceLand" style="width:100%;height:100%;object-fit:cover"></figure>
+      <div>
+        <span class="eyebrow">${esc(cv.level || "Chuyên viên PaceLand")}</span>
+        <h1 class="mt-1" style="font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12">${esc(cv.name)}</h1>
+        <p class="lead" style="margin-top:.35rem">${esc(cv.role || "")}</p>
+        <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:.5rem">
+          <a class="pill" href="/chung-nhan-doi-tac.html" title="Tra cứu chứng nhận">✓ Chứng nhận ${esc(cv.code)}</a>
+          ${cv.since ? `<span class="pill">Đồng hành từ ${esc(cv.since)}</span>` : ""}
+          ${cv.area ? `<span class="pill pill--gold">${esc(cv.area)}</span>` : ""}
+        </div>
+        ${cv.bio ? `<p class="mt-3" style="max-width:62ch;line-height:1.85">${esc(cv.bio)}</p>` : ""}
+        ${(cv.achievements || []).length ? `<ul class="mt-2" style="list-style:none;display:grid;gap:.45rem">${cv.achievements.map((a) => `<li style="display:flex;gap:.5rem;align-items:baseline"><span class="gem gem--sm"></span>${esc(a)}</li>`).join("")}</ul>` : ""}
+        <div class="mt-3" style="display:flex;flex-wrap:wrap;gap:.7rem">
+          <a class="btn" href="tel:${esc(telRaw)}">Gọi ${esc(tel)}</a>
+          <a class="btn btn--ghost" href="${esc(cv.zalo || SITE.zalo)}" target="_blank" rel="noopener">Nhắn Zalo</a>
+          <a class="btn btn--ghost" href="/lien-he.html">Đặt lịch tư vấn</a>
+        </div>
+        <p class="mt-2" style="font-size:.82rem;color:var(--muted)">Xác minh người thật: nhập mã <b>${esc(cv.code)}</b> tại trang <a href="/chung-nhan-doi-tac.html" style="color:var(--red)">Chứng nhận Đối tác</a> — cơ chế chống mạo danh của PaceLand.</p>
+      </div>
+    </div>
+  </div>
+</article>
+${ctaBand(`Cần ${esc(cv.name)} tư vấn danh mục phù hợp? Kết nối ngay hôm nay`)}
+<section class="section section--tight section--paper">
+  <div class="container">
+    <div class="facet-rule" style="margin-bottom:clamp(20px,3vw,32px)">Giỏ hàng PaceLand đang phân phối</div>
+    <div class="card-grid">${absolutize(featured.map(renderProjectCard).join(""))}</div>
+  </div>
+</section>`;
+
+  const html = pageShell({
+    title: `${cv.name} — ${cv.role} | Chuyên viên PaceLand`,
+    desc: (cv.bio ? stripTags(cv.bio) + " " : "") + `${cv.name} — ${cv.role} tại PaceLand, mã chứng nhận ${cv.code}. Tư vấn bất động sản cao cấp TP.HCM.`,
+    canonical,
+    ogImage: photo,
+    ogType: "profile",
+    ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-person", personLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))],
+    bodyMain,
+  });
+  fs.writeFileSync(path.join(ROOT, "chuyen-vien", `${cv.id}.html`), html);
+  profilePages++;
+}
+
 /* ---------- 4. Bơm nội dung tĩnh vào các trang danh sách ---------- */
 function patchFile(rel, fn) {
   const f = path.join(ROOT, rel);
@@ -425,6 +502,7 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
         name: p.name,
         jobTitle: p.role,
         identifier: p.code,
+        ...(p.id ? { url: `${SITE_URL}/chuyen-vien/${p.id}.html` } : {}),
         worksFor: { "@id": SITE_URL + "/#organization" },
         ...(p.photo ? { image: absUrl(resolveImg(p.photo, 400)) } : {}),
         ...(p.bio ? { description: stripTags(p.bio) } : {}),
@@ -432,8 +510,10 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
     })),
   };
   h = upsertLd(h, "pl-ld-partners", ldTag("pl-ld-partners", peopleLd));
+  const profileLinks = active.filter((p) => p.id).map((p) => `<a href="/chuyen-vien/${p.id}.html" style="color:var(--red);font-weight:600;white-space:nowrap">${esc(p.name)} →</a>`).join(" · ");
   h = inject(h, "partners", '<div class="partner-grid" id="partnerGrid"></div>',
-    active.length ? absolutize(active.map(renderPartnerCard).join("")) : '<p style="color:var(--muted);grid-column:1/-1">Danh sách đối tác đang được cập nhật.</p>');
+    (active.length ? absolutize(active.map(renderPartnerCard).join("")) : '<p style="color:var(--muted);grid-column:1/-1">Danh sách đối tác đang được cập nhật.</p>') +
+    (profileLinks ? `<p style="grid-column:1/-1;margin-top:.6rem;font-size:.92rem;color:var(--ink-soft)">Hồ sơ chuyên viên: ${profileLinks}</p>` : ""));
   return h;
 });
 
@@ -457,6 +537,7 @@ const urls = [
   { loc: "/lien-he.html", pri: "0.8", mod: today },
   ...PROJECTS.map((p) => ({ loc: `/du-an/${p.id}.html`, pri: "0.8", mod: today })),
   ...POSTS.map((p) => ({ loc: `/bai-viet/${p.id}.html`, pri: "0.7", mod: isoDate(p.date) })),
+  ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -468,5 +549,6 @@ fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
 console.log(`\nHoàn tất:
   • ${postPages} trang bài viết  -> /bai-viet/
   • ${projectPages} trang dự án    -> /du-an/
+  • ${profilePages} trang chuyên viên -> /chuyen-vien/
   • 4 trang danh sách đã có nội dung tĩnh + schema
   • sitemap.xml: ${urls.length} URL`);

@@ -365,6 +365,10 @@
       field("Trạng thái", "f_status", PARTNER_STATUS_LABEL[it.status] || PARTNER_STATUS_LABEL.active, { type: "select", options: [PARTNER_STATUS_LABEL.active, PARTNER_STATUS_LABEL.inactive], hint: "Đặt \"Đã ngừng hợp tác\" ngay khi một người rời PaceLand — trang tra cứu sẽ cảnh báo khách hàng" }) +
       field("Hợp tác từ (năm)", "f_since", it.since, { ph: "VD: 2024" }) +
       field("Điện thoại (không bắt buộc)", "f_phone", it.phone, { ph: "VD: 09xx xxx xxx" }) +
+      field("Khu vực phụ trách", "f_pa_area", it.area, { ph: "VD: Thủ Thiêm · Khu Đông" }) +
+      field("Zalo (link)", "f_zalo", it.zalo, { ph: "VD: https://zalo.me/09xxxxxxxx" }) +
+      field("Facebook (link)", "f_facebook", it.facebook, { ph: "https://facebook.com/…" }) +
+      field("LinkedIn (link)", "f_linkedin", it.linkedin, { ph: "https://linkedin.com/in/…" }) +
       imgField("Ảnh chân dung", "f_photo", it.photo) +
       field("Giới thiệu ngắn", "f_bio", it.bio, { full: true, type: "textarea", rows: 70 }) +
       field("Thành tích nổi bật", "f_achievements", (it.achievements || []).join("\n"), { full: true, type: "textarea", rows: 70, hint: "Mỗi thành tích 1 dòng, VD: Top 1 Quý 2/2026" }) +
@@ -407,6 +411,7 @@
       level: g("f_level") || PARTNER_LEVELS[0],
       status: g("f_status") === PARTNER_STATUS_LABEL.inactive ? "inactive" : "active",
       since: g("f_since"), phone: g("f_phone"), photo: g("f_photo"), bio: g("f_bio"),
+      zalo: g("f_zalo"), facebook: g("f_facebook"), linkedin: g("f_linkedin"), area: g("f_pa_area"),
       achievements: lines(g("f_achievements")),
     };
     if (tab === "faqs") return { group: g("f_group") || "Khác", q: g("f_q"), a: g("f_a") };
