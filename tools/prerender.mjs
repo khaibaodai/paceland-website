@@ -513,7 +513,6 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
     })),
   };
   h = upsertLd(h, "pl-ld-partners", ldTag("pl-ld-partners", peopleLd));
-  const profileLinks = active.filter((p) => p.id).map((p) => `<a href="/chuyen-vien/${p.id}.html" style="color:var(--red);font-weight:600;white-space:nowrap">${esc(p.name)} →</a>`).join(" · ");
   /* 2 nhóm: Ban lãnh đạo (grid) · còn lại (slider) — phải khớp logic partners.js */
   const isBod = (p) => String(p.level || "").trim().toLowerCase() === "ban lãnh đạo";
   const bod = active.filter(isBod);
@@ -523,8 +522,6 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
     bod.length ? absolutize(bod.map(renderPartnerCard).join("")) : emptyMsg);
   h = inject(h, "partners-agents", '<div class="partner-slider" id="partnerSlider"></div>',
     agents.length ? absolutize(agents.map(renderPartnerCard).join("")) : emptyMsg);
-  h = inject(h, "partners-links", '<div id="partnerProfileLinks"></div>',
-    profileLinks ? `<p style="margin-top:.2rem;font-size:.92rem;color:var(--ink-soft);line-height:2">Hồ sơ chuyên viên: ${profileLinks}</p>` : "");
   return h;
 });
 

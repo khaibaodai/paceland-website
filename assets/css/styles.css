@@ -1015,6 +1015,5 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .partner-slider::-webkit-scrollbar { display: none; }
 .partner-slider > .partner-card { flex: 0 0 min(310px, 84vw); scroll-snap-align: start; }
 .partner-slider > p { flex: 0 0 100%; }
-#partnerProfileLinks p { margin-top: 0.2rem; font-size: 0.92rem; color: var(--ink-soft); line-height: 2; }
 
 .pill--level { background: var(--red-tint); color: var(--red); border-color: var(--red-line); }
