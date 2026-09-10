@@ -483,6 +483,110 @@ const PROJECTS = [
 ];
 
 const POSTS = [
+{
+  "id": "tam-8-ti-nen-mua-the-prive-hay-eaton-park",
+  "title": "Tầm 8 tỉ nên mua The Privé hay Eaton Park? So sánh chi tiết 09/2026",
+  "category": "So sánh dự án",
+  "date": "10/09/2026",
+  "readtime": "7 phút đọc",
+  "cover": "assets/img/media/eaton-park-2.jpg",
+  "excerpt": "Với ~8 tỉ: The Privé cho căn 1PN từ ~6,6 tỉ (đơn giá ~133 triệu/m²) và còn dư ngân sách; Eaton Park cần nhích lên ~9,5 tỉ nhưng nhận nhà ngay từ Quý 2/2026. Bảng so sánh 8 tiêu chí và gợi ý chọn theo từng mục tiêu.",
+  "body": [
+    {
+      "t": "p",
+      "c": "Trả lời nhanh: với đúng <b>8 tỉ</b>, <a href='/du-an/the-prive.html'>The Privé</a> là lựa chọn vừa vặn — căn 1PN từ ~6,6 tỉ (đơn giá tham khảo ~133 triệu/m² tim tường, chưa VAT — 07/2026), còn dư ngân sách cho nội thất và chi phí. <a href='/du-an/eaton-park.html'>Eaton Park</a> có 1PN từ ~9,5 tỉ — vượt tầm 8 tỉ khoảng 15–20%, đổi lại <b>nhận nhà ngay từ Quý 2/2026</b>."
+    },
+    {
+      "t": "p",
+      "c": "Điểm thú vị: cả hai dự án đều nằm tại phường An Phú (cũ), TP. Thủ Đức — cách nhau chỉ vài phút di chuyển, cùng phân khúc hạng sang, nên đây là cặp so sánh trực tiếp phổ biến nhất Khu Đông hiện nay."
+    },
+    {
+      "t": "h",
+      "c": "Bảng so sánh The Privé vs Eaton Park (09/2026)"
+    },
+    {
+      "t": "table",
+      "c": {
+        "head": [
+          "Tiêu chí",
+          "The Privé",
+          "Eaton Park"
+        ],
+        "rows": [
+          [
+            "Chủ đầu tư",
+            "Tập đoàn Đất Xanh",
+            "Gamuda Land (Malaysia)"
+          ],
+          [
+            "Vị trí",
+            "Nam Rạch Chiếc — 2 mặt sông Giồng Ông Tố",
+            "Mặt tiền đại lộ Mai Chí Thọ"
+          ],
+          [
+            "Quy mô",
+            "6,7 ha · 12 tháp 33–35 tầng · 3.175 căn",
+            "3,76 ha · 6 tháp 29–39 tầng · 1.980 căn + 72 shophouse"
+          ],
+          [
+            "Giá 1PN (tham khảo 07/2026)",
+            "Từ ~6,6 tỉ (≈49,8 m²)",
+            "9,5–10,5 tỉ (51,9–55,8 m²)"
+          ],
+          [
+            "Giá 2–3PN",
+            "Theo giỏ hàng từng đợt, đơn giá ~133 tr/m²",
+            "2PN 13,5–15 tỉ · 3PN 20,5–21,5 tỉ"
+          ],
+          [
+            "Bàn giao",
+            "Đang cập nhật",
+            "Từ Quý 2/2026 (PK1 đang bàn giao)"
+          ],
+          [
+            "Mật độ & tiện ích",
+            "25% — 3 hồ bơi, boxing & golf 3D, tennis, pickleball, rạp phim mini",
+            "Golf 3D, sân thể thao đa năng, pet park, công viên ven sông, phố thương mại"
+          ],
+          [
+            "Thế mạnh nổi bật",
+            "Giá vào thấp hơn, quỹ căn lớn, 2 mặt sông",
+            "Nhận nhà ngay, chuẩn bàn giao Gamuda, tệp khách thuê chuyên gia"
+          ]
+        ]
+      }
+    },
+    {
+      "t": "h",
+      "c": "Chọn theo mục tiêu của bạn"
+    },
+    {
+      "t": "ul",
+      "c": [
+        "<b>Ngân sách đúng 8 tỉ, ưu tiên vừa túi:</b> The Privé — vào 1PN từ ~6,6 tỉ, còn dư 1–1,5 tỉ dự phòng nội thất, thuế phí.",
+        "<b>Cần ở ngay hoặc cho thuê ngay trong 2026:</b> Eaton Park — bàn giao từ Q2/2026, trục Mai Chí Thọ có sẵn tệp khách thuê chuyên gia nước ngoài.",
+        "<b>Đầu tư đón chu kỳ giá:</b> The Privé mở bán nhiều đợt theo 12 tháp — cơ hội vào sớm ở các đợt giá đầu; Eaton Park mặt bằng giá đã qua 3 giai đoạn.",
+        "<b>Dùng đòn bẩy ngân hàng:</b> tính thử lãi vay và dòng tiền tại <a href='/cong-cu.html'>Công cụ tài sản PaceLand</a> trước khi quyết định."
+      ]
+    },
+    {
+      "t": "h",
+      "c": "Hỏi nhanh"
+    },
+    {
+      "t": "ul",
+      "c": [
+        "<b>8 tỉ mua được căn nào ở Eaton Park?</b> — Rất khó: 1PN đã từ ~9,5 tỉ (07/2026). Cần nhích ngân sách, hoặc chọn The Privé.",
+        "<b>The Privé bao giờ bàn giao?</b> — Chủ đầu tư chưa công bố mốc chính thức; PaceLand cập nhật theo từng đợt mở bán.",
+        "<b>Giá trên đã gồm VAT chưa?</b> — Chưa: đơn giá The Privé ~133 tr/m² là giá tim tường chưa VAT; số Eaton Park là giá giỏ hàng GĐ3 tham khảo 07/2026."
+      ]
+    },
+    {
+      "t": "p",
+      "c": "Muốn xem bảng giá chi tiết, mặt bằng tầng và quỹ căn đẹp của cả hai dự án? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — Cố vấn PaceLand phản hồi trong ngày. Đọc thêm: <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>bảng giá căn hộ cao cấp TP.HCM theo khu vực</a>."
+    }
+  ]
+},
   {
     "id": "top-du-an-can-ho-cao-cap-tphcm-2026",
     "title": "Top dự án căn hộ cao cấp TP.HCM 2026: bảng so sánh theo khu vực",
@@ -492,14 +596,14 @@ const POSTS = [
     "cover": "assets/img/media/the-prive-1.jpg",
     "excerpt": "Bảng so sánh 7 dự án căn hộ cao cấp đáng chú ý nhất TP.HCM 2026 theo giá, diện tích, thời điểm bàn giao — kèm gợi ý chọn theo từng mục tiêu: ở, tích sản hay dòng tiền.",
     "body": [
-      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Thủ Thiêm, từ 8,5 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,2 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> và <b>The Metropole Thủ Thiêm</b> là lựa chọn siêu sang lõi trung tâm; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào tầm giá tốt nhất cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
+      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Nam Rạch Chiếc – An Phú, từ ~6,6 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,5 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> và <b>The Metropole Thủ Thiêm</b> là lựa chọn siêu sang lõi trung tâm; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào tầm giá tốt nhất cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
       { "t": "p", "c": "Danh sách này dựa trên 4 tiêu chí PaceLand dùng khi thẩm định mọi dự án: vị trí và hạ tầng kết nối, năng lực chủ đầu tư, pháp lý, và dư địa chu kỳ giá. Phạm vi gồm các dự án PaceLand trực tiếp phân phối hoặc theo dõi dữ liệu giao dịch — cập nhật tháng 7/2026." },
       { "t": "h", "c": "Bảng so sánh nhanh 7 dự án tiêu biểu" },
       { "t": "table", "c": {
         "head": ["Dự án", "Khu vực", "Phân khúc", "Giá tham khảo", "Diện tích", "Bàn giao"],
         "rows": [
-          ["<a href='/du-an/the-prive.html'>The Privé</a>", "Thủ Thiêm", "Hạng sang", "Từ 8,5 tỉ", "50–121 m²", "2027"],
-          ["<a href='/du-an/eaton-park.html'>Eaton Park</a>", "An Phú, Khu Đông", "Hạng sang", "Từ 9,2 tỉ", "52–178 m²", "2027"],
+          ["<a href='/du-an/the-prive.html'>The Privé</a>", "Nam Rạch Chiếc, Khu Đông", "Hạng sang", "Từ ~6,6 tỉ", "49,8–98,5 m²", "Đang cập nhật"],
+          ["<a href='/du-an/eaton-park.html'>Eaton Park</a>", "An Phú, Khu Đông", "Hạng sang", "Từ 9,5 tỉ", "51,9–104,8 m²", "Từ Q2/2026"],
           ["<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>", "Quận 1", "Siêu sang", "Liên hệ", "90–320 m²", "2027"],
           ["<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>", "Thủ Thiêm", "Siêu sang · chuyển nhượng", "Từ 18 tỉ", "55–220 m²", "Đã bàn giao"],
           ["<a href='/du-an/the-global-city.html'>The Global City</a>", "An Phú, Khu Đông", "Siêu sang · nhà phố TM", "Từ 42 tỉ", "100–280 m²", "2026"],
