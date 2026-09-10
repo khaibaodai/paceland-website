@@ -1,22 +1,64 @@
 /* ============================================================
    PACELAND — Chứng nhận Đối tác (chung-nhan-doi-tac.html)
-   Tra cứu mã chứng nhận + danh bạ đối tác đang hoạt động.
+   Tra cứu mã chứng nhận + danh bạ 2 nhóm:
+   Ban Lãnh Đạo (grid) · Đối tác được chứng nhận (slider ngang).
    ============================================================ */
 
 (function () {
   if (typeof window === "undefined") return;
-  if (!document.getElementById("partnerGrid") && !document.getElementById("partnerLookupForm")) return;
+  if (!document.getElementById("partnerGridBod") && !document.getElementById("partnerGrid") && !document.getElementById("partnerLookupForm")) return;
 
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   function norm(s) { return String(s || "").toLowerCase().trim(); }
+  function isBod(p) { return norm(p.level) === "ban lãnh đạo"; }
+
+  var EMPTY = '<p style="color:var(--muted);grid-column:1/-1">Danh sách đối tác đang được cập nhật.</p>';
 
   function renderGrid() {
-    var grid = document.getElementById("partnerGrid");
-    if (!grid) return;
-    var list = (window.PARTNERS || []).filter(function (p) { return p.status === "active"; });
-    grid.innerHTML = list.length
-      ? list.map(window.renderPartnerCard).join("")
-      : '<p style="color:var(--muted);grid-column:1/-1">Danh sách đối tác đang được cập nhật.</p>';
+    var all = (window.PARTNERS || []).filter(function (p) { return p.status === "active"; });
+    var bodEl = document.getElementById("partnerGridBod");
+    var agEl = document.getElementById("partnerSlider");
+    if (bodEl) {
+      var bod = all.filter(isBod);
+      bodEl.innerHTML = bod.length ? bod.map(window.renderPartnerCard).join("") : EMPTY;
+    }
+    if (agEl) {
+      var ag = all.filter(function (p) { return !isBod(p); });
+      agEl.innerHTML = ag.length ? ag.map(window.renderPartnerCard).join("") : EMPTY;
+    }
+    /* HTML cũ còn cache (một grid duy nhất) */
+    var legacy = document.getElementById("partnerGrid");
+    if (legacy && !bodEl) {
+      legacy.innerHTML = all.length ? all.map(window.renderPartnerCard).join("") : EMPTY;
+    }
+  }
+
+  function initSlider() {
+    var track = document.getElementById("partnerSlider");
+    var prev = document.getElementById("partnerPrev");
+    var next = document.getElementById("partnerNext");
+    if (!track || !prev || !next) return;
+    function step() {
+      var card = track.querySelector(".partner-card");
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 20;
+      return (card ? card.getBoundingClientRect().width : 300) + gap;
+    }
+    function sync() {
+      var max = track.scrollWidth - track.clientWidth;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft >= max - 4;
+      var nav = prev.parentElement;
+      if (nav) nav.style.visibility = max > 4 ? "" : "hidden";
+    }
+    prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+    next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    var raf = null;
+    track.addEventListener("scroll", function () {
+      if (raf) return;
+      raf = requestAnimationFrame(function () { raf = null; sync(); });
+    });
+    window.addEventListener("resize", sync);
+    sync();
   }
 
   var ICO_OK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
@@ -60,6 +102,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     renderGrid();
+    initSlider();
     if (typeof window.__plScanReveal === "function") window.__plScanReveal();
 
     var form = document.getElementById("partnerLookupForm");
@@ -70,9 +113,10 @@
         doLookup(input ? input.value : "");
       });
     }
-    var grid = document.getElementById("partnerGrid");
-    if (grid) {
-      grid.addEventListener("click", function (e) {
+    ["partnerGridBod", "partnerSlider", "partnerGrid"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener("click", function (e) {
         var card = e.target.closest("[data-code]");
         if (!card) return;
         var code = card.getAttribute("data-code");
@@ -82,6 +126,6 @@
         var box = document.getElementById("partnerLookup");
         if (box) box.scrollIntoView({ behavior: "smooth", block: "start" });
       });
-    }
+    });
   });
 })();

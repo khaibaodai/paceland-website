@@ -993,4 +993,28 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .partner-card .pc-ach { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.8rem; }
 .partner-card .pc-ach span { font-size: 0.72rem; background: var(--gold-tint); color: var(--gold); padding: 0.2rem 0.55rem; border-radius: 999px; }
 
+/* Danh bạ nhóm "Đối tác": slider ngang scroll-snap + nút mũi tên */
+.section-head.slider-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.2rem; max-width: none; flex-wrap: wrap; }
+.slider-head > div { max-width: 720px; }
+.slider-nav { display: flex; gap: 0.55rem; flex: none; padding-bottom: 0.35rem; }
+.slider-btn {
+  width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+  border: 1px solid var(--line); background: var(--white); color: var(--ink);
+  display: grid; place-items: center;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}
+.slider-btn svg { width: 18px; height: 18px; }
+.slider-btn:hover { background: var(--red); border-color: var(--red); color: #fff; }
+.slider-btn:disabled { opacity: 0.3; pointer-events: none; }
+.partner-slider {
+  display: flex; gap: clamp(16px, 2vw, 24px);
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  padding: 8px 6px 26px; margin: 0 -6px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.partner-slider::-webkit-scrollbar { display: none; }
+.partner-slider > .partner-card { flex: 0 0 min(310px, 84vw); scroll-snap-align: start; }
+.partner-slider > p { flex: 0 0 100%; }
+#partnerProfileLinks p { margin-top: 0.2rem; font-size: 0.92rem; color: var(--ink-soft); line-height: 2; }
+
 .pill--level { background: var(--red-tint); color: var(--red); border-color: var(--red-line); }
