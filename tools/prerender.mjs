@@ -117,7 +117,7 @@ const ORG_LD = {
   email: SITE.email,
   address: { "@type": "PostalAddress", streetAddress: "35 Đường số 36, Khu phố 2, P. Bình Trưng", addressLocality: "TP. Thủ Đức", addressRegion: "TP. Hồ Chí Minh", addressCountry: "VN" },
   areaServed: ["TP. Hồ Chí Minh", "Thủ Thiêm", "TP. Thủ Đức", "Quận 1"],
-  sameAs: [SITE.zalo].filter((x) => x && x !== "#"),
+  sameAs: [SITE.zalo, SITE.facebook, SITE.youtube, SITE.tiktok].filter((x) => x && x !== "#"),
   priceRange: "$$$$",
 };
 const WEBSITE_LD = { "@context": "https://schema.org", "@type": "WebSite", "@id": SITE_URL + "/#website", url: SITE_URL + "/", name: "PaceLand", inLanguage: "vi-VN", publisher: { "@id": SITE_URL + "/#organization" } };

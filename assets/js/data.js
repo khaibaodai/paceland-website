@@ -13,7 +13,7 @@ const SITE = {
   "zalo": "https://zalo.me/0903983737",
   "facebook": "https://www.facebook.com/paceland.vn/",
   "youtube": "https://www.youtube.com/@paceland-vn",
-  "tiktok": "#",
+  "tiktok": "https://www.tiktok.com/@paceland.vn",
   "formEndpoint": "https://formspree.io/f/mjgnvwqk",
   "leadEndpoint": "",
   "tracking": {
