@@ -340,7 +340,9 @@ let profilePages = 0;
 for (const cv of activePartners) {
   const url = `/chuyen-vien/${cv.id}.html`;
   const canonical = SITE_URL + url;
-  const photo = cv.photo ? absUrl(resolveImg(cv.photo, 800)) : absUrl("assets/img/og-image.jpg");
+  const photoSrc = cv.photo || "assets/img/media/avatar-chuyen-vien.svg";
+  const photoIsVector = /\.svg$/i.test(photoSrc);
+  const photo = photoIsVector ? absUrl("assets/img/og-image.jpg") : absUrl(resolveImg(photoSrc, 800));
   const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Chứng nhận Đối tác", href: "/chung-nhan-doi-tac.html" }, { label: cv.name }];
   const sameAs = [cv.website, cv.facebook, cv.linkedin].filter(Boolean);
   const tel = cv.phone || SITE.hotline;
@@ -354,7 +356,7 @@ for (const cv of activePartners) {
     identifier: cv.code,
     url: canonical,
     worksFor: { "@type": "RealEstateAgent", name: "PaceLand", "@id": SITE_URL + "/#organization" },
-    ...(cv.photo ? { image: photo } : {}),
+    ...(cv.photo && !photoIsVector ? { image: photo } : {}),
     ...(cv.bio ? { description: stripTags(cv.bio) } : {}),
     ...(cv.phone ? { telephone: cv.phone } : {}),
     ...(cv.area ? { areaServed: cv.area } : {}),
@@ -367,7 +369,7 @@ for (const cv of activePartners) {
   <div class="container">
     ${breadcrumbNav(crumbs)}
     <div class="mt-2" style="display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:clamp(1.2rem,3vw,2.4rem);align-items:start">
-      <figure style="border-radius:14px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4"><img src="/${esc(resolveImg(cv.photo || "assets/img/og-image.jpg", 700))}" alt="${esc(cv.name)} — ${esc(cv.role)} PaceLand" style="width:100%;height:100%;object-fit:cover"></figure>
+      <figure style="border-radius:14px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4"><img src="/${esc(resolveImg(photoSrc, 700))}" alt="${esc(cv.name)} — ${esc(cv.role)} PaceLand" style="width:100%;height:100%;object-fit:cover"></figure>
       <div>
         <span class="eyebrow">${esc(cv.level || "Chuyên viên PaceLand")}</span>
         <h1 class="mt-1" style="font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12">${esc(cv.name)}</h1>
@@ -505,7 +507,7 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
         identifier: p.code,
         ...(p.id ? { url: `${SITE_URL}/chuyen-vien/${p.id}.html` } : {}),
         worksFor: { "@id": SITE_URL + "/#organization" },
-        ...(p.photo ? { image: absUrl(resolveImg(p.photo, 400)) } : {}),
+        ...(p.photo && !/.svg$/i.test(p.photo) ? { image: absUrl(resolveImg(p.photo, 400)) } : {}),
         ...(p.bio ? { description: stripTags(p.bio) } : {}),
       },
     })),

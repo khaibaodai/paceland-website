@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Chuyên viên PaceLand">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F2EA"/>
+      <stop offset="1" stop-color="#EFE8DB"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C70018"/>
+      <stop offset="1" stop-color="#8E0011"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#B0894A" stroke-width="2" opacity=".55"/>
+  <!-- silhouette -->
+  <circle cx="300" cy="330" r="108" fill="url(#ink)" opacity=".92"/>
+  <path d="M300 470c-118 0-196 66-208 170-2 18 10 30 28 30h360c18 0 30-12 28-30-12-104-90-170-208-170z" fill="url(#ink)" opacity=".92"/>
+  <!-- gold accent -->
+  <circle cx="300" cy="330" r="146" fill="none" stroke="#B0894A" stroke-width="2" opacity=".5"/>
+  <text x="300" y="748" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#8E0011" opacity=".85">PACELAND</text>
+</svg>

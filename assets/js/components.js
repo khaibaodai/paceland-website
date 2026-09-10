@@ -116,14 +116,18 @@ function partnerStatusPill(status) {
 }
 function renderPartnerCard(p) {
   var ach = (p.achievements || []).filter(Boolean);
-  return '<button type="button" class="partner-card" data-code="' + escHtml(p.code) + '">' +
+  return '<div role="button" tabindex="0" class="partner-card" data-code="' + escHtml(p.code) + '" title="Bấm để tra cứu mã ' + escHtml(p.code) + '">' +
     '<div class="pc-top">' + partnerPhotoHtml(p) +
     "<div><h3>" + escHtml(p.name) + '</h3><div class="pc-role">' + escHtml(p.role) + "</div></div></div>" +
     '<div class="pc-meta">' + (p.level ? '<span class="pill pill--level">' + escHtml(p.level) + "</span>" : "") + partnerStatusPill(p.status) + "</div>" +
     (p.bio ? '<div class="pc-bio">' + escHtml(p.bio) + "</div>" : "") +
     (ach.length ? '<div class="pc-ach">' + ach.map(function (a) { return "<span>" + escHtml(a) + "</span>"; }).join("") + "</div>" : "") +
     '<div class="pc-code">Mã chứng nhận ' + escHtml(p.code) + (p.since ? " · Hợp tác từ " + escHtml(p.since) : "") + "</div>" +
-    "</button>";
+    '<div class="pc-links" style="display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem">' +
+      (p.id ? '<a href="/chuyen-vien/' + escHtml(p.id) + '.html" onclick="event.stopPropagation()" style="font-size:.8rem;font-weight:700;color:var(--red);border:1px solid var(--line-soft);border-radius:99px;padding:.3rem .75rem;background:var(--white)">Hồ sơ chuyên viên</a>' : "") +
+      (p.website ? '<a href="' + escHtml(p.website) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:.8rem;font-weight:700;color:var(--ink-soft);border:1px solid var(--line-soft);border-radius:99px;padding:.3rem .75rem;background:var(--white)">Website cá nhân ↗</a>' : "") +
+    "</div>" +
+    "</div>";
 }
 
 /* ---------- Header / Footer ---------- */
