@@ -342,7 +342,7 @@ for (const cv of activePartners) {
   const canonical = SITE_URL + url;
   const photo = cv.photo ? absUrl(resolveImg(cv.photo, 800)) : absUrl("assets/img/og-image.jpg");
   const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Chứng nhận Đối tác", href: "/chung-nhan-doi-tac.html" }, { label: cv.name }];
-  const sameAs = [cv.facebook, cv.linkedin].filter(Boolean);
+  const sameAs = [cv.website, cv.facebook, cv.linkedin].filter(Boolean);
   const tel = cv.phone || SITE.hotline;
   const telRaw = String(tel).replace(/[^0-9+]/g, "");
 
@@ -382,6 +382,7 @@ for (const cv of activePartners) {
         <div class="mt-3" style="display:flex;flex-wrap:wrap;gap:.7rem">
           <a class="btn" href="tel:${esc(telRaw)}">Gọi ${esc(tel)}</a>
           <a class="btn btn--ghost" href="${esc(cv.zalo || SITE.zalo)}" target="_blank" rel="noopener">Nhắn Zalo</a>
+          ${cv.website ? `<a class="btn btn--ghost" href="${esc(cv.website)}" target="_blank" rel="noopener">Website cá nhân ↗</a>` : ""}
           <a class="btn btn--ghost" href="/lien-he.html">Đặt lịch tư vấn</a>
         </div>
         <p class="mt-2" style="font-size:.82rem;color:var(--muted)">Xác minh người thật: nhập mã <b>${esc(cv.code)}</b> tại trang <a href="/chung-nhan-doi-tac.html" style="color:var(--red)">Chứng nhận Đối tác</a> — cơ chế chống mạo danh của PaceLand.</p>

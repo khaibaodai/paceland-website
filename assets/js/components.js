@@ -119,7 +119,7 @@ function renderPartnerCard(p) {
   return '<button type="button" class="partner-card" data-code="' + escHtml(p.code) + '">' +
     '<div class="pc-top">' + partnerPhotoHtml(p) +
     "<div><h3>" + escHtml(p.name) + '</h3><div class="pc-role">' + escHtml(p.role) + "</div></div></div>" +
-    '<div class="pc-meta"><span class="pill pill--level">' + escHtml(p.level) + "</span>" + partnerStatusPill(p.status) + "</div>" +
+    '<div class="pc-meta">' + (p.level ? '<span class="pill pill--level">' + escHtml(p.level) + "</span>" : "") + partnerStatusPill(p.status) + "</div>" +
     (p.bio ? '<div class="pc-bio">' + escHtml(p.bio) + "</div>" : "") +
     (ach.length ? '<div class="pc-ach">' + ach.map(function (a) { return "<span>" + escHtml(a) + "</span>"; }).join("") + "</div>" : "") +
     '<div class="pc-code">Mã chứng nhận ' + escHtml(p.code) + (p.since ? " · Hợp tác từ " + escHtml(p.since) : "") + "</div>" +

@@ -366,6 +366,7 @@
       field("Hợp tác từ (năm)", "f_since", it.since, { ph: "VD: 2024" }) +
       field("Điện thoại (không bắt buộc)", "f_phone", it.phone, { ph: "VD: 09xx xxx xxx" }) +
       field("Khu vực phụ trách", "f_pa_area", it.area, { ph: "VD: Thủ Thiêm · Khu Đông" }) +
+      field("Website cá nhân (link)", "f_website", it.website, { ph: "VD: https://tencuaban.com" }) +
       field("Zalo (link)", "f_zalo", it.zalo, { ph: "VD: https://zalo.me/09xxxxxxxx" }) +
       field("Facebook (link)", "f_facebook", it.facebook, { ph: "https://facebook.com/…" }) +
       field("LinkedIn (link)", "f_linkedin", it.linkedin, { ph: "https://linkedin.com/in/…" }) +
@@ -411,7 +412,7 @@
       level: g("f_level") || PARTNER_LEVELS[0],
       status: g("f_status") === PARTNER_STATUS_LABEL.inactive ? "inactive" : "active",
       since: g("f_since"), phone: g("f_phone"), photo: g("f_photo"), bio: g("f_bio"),
-      zalo: g("f_zalo"), facebook: g("f_facebook"), linkedin: g("f_linkedin"), area: g("f_pa_area"),
+      zalo: g("f_zalo"), facebook: g("f_facebook"), linkedin: g("f_linkedin"), area: g("f_pa_area"), website: g("f_website"),
       achievements: lines(g("f_achievements")),
     };
     if (tab === "faqs") return { group: g("f_group") || "Khác", q: g("f_q"), a: g("f_a") };

@@ -1141,13 +1141,47 @@ const PARTNERS = [
     "id": "vo-van-phuoc",
     "code": "PL-0001",
     "name": "Võ Văn Phước",
-    "role": "Nhà sáng lập & Chủ tịch",
+    "role": "Nhà sáng lập & Chủ tịch · Cố vấn đầu tư BĐS hạng sang",
     "level": "Ban lãnh đạo",
     "status": "active",
     "photo": "assets/img/founder.jpg",
     "since": "2021",
     "phone": "",
-    "bio": "Nhà sáng lập PaceLand — người đặt nền móng cho mạng lưới bất động sản kín dựa trên dữ liệu và tốc độ.",
+    "website": "http://phuocvo.com/",
+    "bio": "Nhà sáng lập PaceLand — cố vấn đầu tư bất động sản hạng sang, đồng hành cùng doanh nhân và khách hàng có tài sản lớn trong hành trình lựa chọn bất động sản xứng tầm.",
+    "achievements": [
+      "12+ năm kinh nghiệm bất động sản hạng sang",
+      "800+ khách hàng đồng hành"
+    ]
+  },
+  {
+    "id": "vu-trong-khai",
+    "code": "PL-0002",
+    "name": "Vũ Trọng Khải",
+    "role": "Cố vấn & Quản lý tài sản cao cấp",
+    "level": "",
+    "status": "active",
+    "photo": "",
+    "since": "",
+    "phone": "",
+    "area": "TP.HCM · Nha Trang · Vũng Tàu",
+    "website": "https://www.vutrongkhai.com/",
+    "bio": "Cố vấn và quản lý tài sản bất động sản cao cấp tại TP.HCM, Nha Trang, Vũng Tàu — tư vấn đầu tư, căn hộ hạng sang, biệt thự và BĐS nghỉ dưỡng dựa trên dữ liệu.",
+    "achievements": []
+  },
+  {
+    "id": "nguyen-trung-tin",
+    "code": "PL-0003",
+    "name": "Nguyễn Trung Tín",
+    "role": "Luxury Real Estate Advisor",
+    "level": "",
+    "status": "active",
+    "photo": "",
+    "since": "",
+    "phone": "",
+    "area": "Thủ Thiêm · Ba Son · Quận 1 · Khu Đông",
+    "website": "https://trungtinproperty.com/",
+    "bio": "Tư vấn căn hộ hạng sang, branded residence và biệt thự tại Thủ Thiêm, Ba Son, Quận 1 và Khu Đông TP.HCM, phân khúc 8–40 tỉ — thẩm định pháp lý và chủ đầu tư trước khi tư vấn.",
     "achievements": []
   }
 ];
