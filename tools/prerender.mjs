@@ -525,6 +525,12 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
   return h;
 });
 
+patchFile("salehub.html", (h) => {
+  h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
+  h = inject(h, "salehub", '<div class="card-grid" id="salehubGrid"></div>', absolutize(PROJECTS.map(renderProjectCard).join("")));
+  return h;
+});
+
 /* Org schema cho các trang còn lại */
 for (const page of ["gioi-thieu.html", "doi-tac.html", "tuyen-dung.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
@@ -543,6 +549,7 @@ const urls = [
   { loc: "/doi-tac.html", pri: "0.7", mod: today },
   { loc: "/tuyen-dung.html", pri: "0.6", mod: today },
   { loc: "/lien-he.html", pri: "0.8", mod: today },
+  { loc: "/salehub.html", pri: "0.6", mod: today },
   ...PROJECTS.map((p) => ({ loc: `/du-an/${p.id}.html`, pri: "0.8", mod: today })),
   ...POSTS.map((p) => ({ loc: `/bai-viet/${p.id}.html`, pri: "0.7", mod: isoDate(p.date) })),
   ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
