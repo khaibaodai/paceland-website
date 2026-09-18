@@ -1,0 +1,391 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "Senturia An Phú là khu nhà ở thấp tầng của Tiến Phước; pháp nhân đứng tên dự án là Công ty TNHH Bất động sản Nguyên Phương, thành viên Công ty CP Bất động sản Tiến Phước. Tên pháp lý là Khu nhà ở thấp tầng OTM4 trong khu dân cư Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ). Khu đất 8,6 ha mặt tiền đường Song Hành cao tốc TP.HCM – Long Thành – Dầu Giây, 1 cạnh giáp rạch Mương Kênh, có **355 căn** gồm 202 nhà phố liên kế, 91 nhà phố thương mại và 62 biệt thự song lập; 1,29 ha dành cho công viên trung tâm, mặt nước và tiện ích. Khởi công tháng 12/2024, cất nóc ngày 29/12/2025, chủ đầu tư đặt mốc bàn giao từ quý IV/2026.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Senturia An Phú"
+   },
+   {
+    "label": "Tên pháp lý",
+    "value": "Khu nhà ở thấp tầng OTM4, khu dân cư Nam Rạch Chiếc"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Công ty TNHH Bất động sản Nguyên Phương — thành viên Công ty CP Bất động sản Tiến Phước"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Đường Song Hành cao tốc TP.HCM – Long Thành – Dầu Giây, khu dân cư Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ), TP.HCM"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Nhà phố liên kế, nhà phố thương mại, biệt thự song lập — sở hữu lâu dài"
+   },
+   {
+    "label": "Diện tích đất",
+    "value": "8,6 ha"
+   },
+   {
+    "label": "Số căn",
+    "value": "355 căn: 202 nhà phố liên kế · 91 nhà phố thương mại · 62 biệt thự song lập"
+   },
+   {
+    "label": "Diện tích đất mỗi căn",
+    "value": "Nhà phố liên kế 75–204 m² · nhà phố thương mại 116–216 m² · biệt thự song lập 189–338 m²"
+   },
+   {
+    "label": "Số tầng",
+    "value": "Nhà phố liên kế và biệt thự: 1 trệt, 2 lầu, sân thượng · nhà phố thương mại: 1 trệt, 3 lầu"
+   },
+   {
+    "label": "Cảnh quan, tiện ích",
+    "value": "1,29 ha; công viên trung tâm nằm giữa khu"
+   },
+   {
+    "label": "Thiết kế kiến trúc",
+    "value": "FDAT"
+   },
+   {
+    "label": "Thiết kế cảnh quan",
+    "value": "Ong&Ong (Singapore)"
+   },
+   {
+    "label": "Quản lý vận hành",
+    "value": "Savills"
+   },
+   {
+    "label": "Ngân hàng bảo lãnh",
+    "value": "OCB — cam kết cấp bảo lãnh số 1519/2025/TB-OCB ngày 6/11/2025"
+   },
+   {
+    "label": "Khởi công",
+    "value": "Tháng 12/2024"
+   },
+   {
+    "label": "Cất nóc",
+    "value": "29/12/2025"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Từ quý IV/2026 theo chủ đầu tư; lịch thanh toán ghi thông báo bàn giao không trễ hơn 25/6/2027"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích đất",
+    "value": "8,6 ha",
+    "note": "mặt tiền đường Song Hành"
+   },
+   {
+    "label": "Số căn",
+    "value": "355",
+    "note": "202 nhà phố · 91 nhà phố thương mại · 62 song lập"
+   },
+   {
+    "label": "Cảnh quan",
+    "value": "1,29 ha",
+    "note": "công viên trung tâm, mặt nước"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Quý IV/2026",
+    "note": "cất nóc 29/12/2025"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Nhà phố vườn — trả 30 % đến khi nhận nhà",
+  "subtitle": "Giỏ hàng đang bán gồm nhà phố liên kế dãy TH1–TH4, nhà phố thương mại SH1–SH3 và biệt thự song lập SD1, mở bán sau khi dự án có văn bản đủ điều kiện bán ngày 23/4/2026. Ngân hàng OCB bảo lãnh; khách trả 30 % đến khi nhận nhà, phần còn lại ngân hàng giải ngân theo chính sách của chủ đầu tư.",
+  "capNhat": "Chính sách bán hàng chủ đầu tư công bố tháng 6/2026, còn áp dụng trong tháng 9/2026",
+  "gioHang": [
+   "Nhà phố liên kế TH1–TH4: đất 75–204 m², 1 trệt, 2 lầu và sân thượng",
+   "Nhà phố thương mại SH1–SH3: đất 116–216 m², 1 trệt, 3 lầu, mặt tiền đường Song Hành hoặc đường số 1",
+   "Biệt thự song lập SD1: đất 189–338 m², 62 căn ở dải giữa khu và dọc rạch Mương Kênh",
+   "Bàn giao hoàn thiện mặt ngoài, thô bên trong theo tài liệu bán hàng — anh/chị đối chiếu danh mục bàn giao trong hợp đồng"
+  ],
+  "lyDo": [
+   {
+    "title": "Trả 30 % là nhận nhà",
+    "text": "Lịch thanh toán 48 tháng của chủ đầu tư: đặt cọc 500 triệu, ký hợp đồng mua bán 10 % (đã gồm cọc), 1 tháng sau 5 %, đến khi có thông báo bàn giao — dự kiến quý IV/2026 — trả thêm 15 %, và 5 % cuối khi nhận giấy chứng nhận. **65 %** còn lại ngân hàng giải ngân, chủ đầu tư hỗ trợ lãi suất 0 % trong 24 tháng đầu."
+   },
+   {
+    "title": "Ân hạn nợ gốc 48 tháng",
+    "text": "Từ tháng 25 đến tháng 48, khách trả lãi **tối đa 7,5 %/năm**; phần chênh lệch đến trần 14 % chủ đầu tư trả thay. Suốt 48 tháng không phải trả gốc. Ưu đãi kết thúc khoảng tháng 8/2030, sau đó trả gốc và lãi theo lãi suất thị trường — chúng tôi lập bảng dòng tiền cho đúng căn trước khi anh/chị quyết."
+   },
+   {
+    "title": "Chiết khấu 10 % nếu không dùng hỗ trợ lãi",
+    "text": "Chọn lịch thanh toán theo tiến độ — 15 % lúc ký, 6 đợt 5–15 % trong 11 tháng, 35 % khi bàn giao, 5 % khi nhận giấy chứng nhận — thì được chiết khấu **10 %** trừ thẳng vào giá, nhưng không kèm hỗ trợ lãi suất. Anh/chị sẵn vốn thì phương án này rẻ hơn."
+   },
+   {
+    "title": "Nhà đã có hình hài",
+    "text": "Cất nóc ngày 29/12/2025; cuối tháng 6/2026 xây thô **hơn 90 %**, đang tô mặt ngoài và lắp cửa kính. Anh/chị chạy xe trên đường Song Hành là thấy dãy nhà, không phải mua trên phối cảnh."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Đặt cọc",
+    "value": "500 triệu",
+    "note": "1 căn nhà phố liên kế, nhà phố thương mại"
+   },
+   {
+    "label": "Ký hợp đồng",
+    "value": "10 %",
+    "note": "đã gồm cọc, ký sau ngày cọc 14 ngày"
+   },
+   {
+    "label": "Đến khi nhận nhà",
+    "value": "30 %",
+    "note": "10 % + 5 % + 15 % khi có thông báo bàn giao"
+   },
+   {
+    "label": "Ngân hàng giải ngân",
+    "value": "65 %",
+    "note": "hỗ trợ lãi 0 % 24 tháng, ân hạn gốc 48 tháng"
+   },
+   {
+    "label": "Chiết khấu",
+    "value": "10 %",
+    "note": "lịch theo tiến độ, không dùng hỗ trợ lãi"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 6/2026",
+  "intro": "Theo bảng tiến độ trên website chủ đầu tư: khởi công đào móng, ép cọc toàn khu tháng 12/2024; tháng 6/2025 xong phần thô tầng trệt và tầng lửng các block đầu tiên; cất nóc ngày 29/12/2025. Đến cuối tháng 6/2026 **hơn 90 %** khối lượng xây thô đã xong, các dãy nhà phố vườn, nhà phố thương mại và biệt thự song lập đang tô mặt ngoài, lắp hệ cửa kính; quý III/2026 trải nhựa đường nội khu, bó vỉa hè và làm cảnh quan để bàn giao từ quý IV/2026. Tuổi Trẻ ngày 2/6/2026 ghi nhận công trường bằng flycam với cùng mốc bàn giao quý IV/2026.",
+  "moc": [
+   {
+    "label": "Khởi công",
+    "value": "Tháng 12/2024"
+   },
+   {
+    "label": "Cất nóc",
+    "value": "29/12/2025"
+   },
+   {
+    "label": "Xây thô",
+    "value": "Hơn 90 % (cuối tháng 6/2026)"
+   },
+   {
+    "label": "Đường nội khu, cảnh quan",
+    "value": "Quý III/2026 (kế hoạch của chủ đầu tư)"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Từ quý IV/2026"
+   },
+   {
+    "label": "Nhà mẫu",
+    "value": "Chưa công bố; xem nhà thật tại công trường, tham quan ảo 360° trên website chủ đầu tư"
+   }
+  ],
+  "note": "Anh/chị muốn xem công trường và đứng thử tại lô mình định mua, PaceLand hẹn lịch và đưa đón từ trung tâm; đi xem không mất phí.",
+  "image": "assets/img/du-an/senturia-an-phu-tien-do.jpg"
+ },
+ "viTri": {
+  "intro": "Dự án nằm ở mặt tiền đường Song Hành, ngay dưới cao tốc TP.HCM – Long Thành – Dầu Giây, trong khu dân cư Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ). 1 cạnh giáp rạch Mương Kênh; 2 dãy nhà phố thương mại quay mặt ra đường Song Hành. Cùng trục có Palm City, The Privé, The Global City và khu liên hợp thể thao Rạch Chiếc theo quy hoạch. Thời gian bên dưới chúng tôi đo bằng bản đồ vào giờ thường, cùng thước với hồ sơ The Privé và Palm River ngay cạnh; 3 mốc chợ Bến Thành, sân bay Long Thành, Vũng Tàu lấy theo chủ đầu tư công bố.",
+  "khoangCach": [
+   {
+    "label": "Nút giao An Phú",
+    "value": "3 phút"
+   },
+   {
+    "label": "Cao tốc TP.HCM – Long Thành – Dầu Giây",
+    "value": "Lên ngay từ đường Song Hành"
+   },
+   {
+    "label": "Khu liên hợp thể thao Rạch Chiếc (theo quy hoạch)",
+    "value": "5 phút"
+   },
+   {
+    "label": "Thủ Thiêm",
+    "value": "10 phút"
+   },
+   {
+    "label": "Chợ Bến Thành, Quận 1 cũ",
+    "value": "15 phút"
+   },
+   {
+    "label": "Bệnh viện Quốc tế Mỹ (AIH)",
+    "value": "8 phút"
+   },
+   {
+    "label": "Trường quốc tế TAS · AIS · BIS",
+    "value": "3 · 7 · 17 phút"
+   },
+   {
+    "label": "Thiso Mall",
+    "value": "10 phút"
+   },
+   {
+    "label": "Vincom Mega Mall, Estella Place",
+    "value": "12 phút"
+   },
+   {
+    "label": "Sân bay quốc tế Long Thành (dự kiến)",
+    "value": "30 phút"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Mặt tiền đường Song Hành, kề nút giao An Phú",
+    "text": "Đường Song Hành là đường gom của cao tốc TP.HCM – Long Thành – Dầu Giây, nối thẳng vào nút giao An Phú 3 tầng (hầm chui, cầu vượt, vòng xoay) để ra Mai Chí Thọ về Thủ Thiêm, Quận 1 cũ hoặc lên cao tốc đi Long Thành, Đồng Nai. Theo Vietnambiz, khu đất dự án là quỹ đất đối ứng hợp đồng BT mà Nguyên Phương xây 3,4 km đường Song Hành này."
+   },
+   {
+    "title": "Khu Nam Rạch Chiếc đã có quy hoạch và cư dân",
+    "text": "Nam Rạch Chiếc là khu dân cư 60,21 ha có quy hoạch 1/500. Palm City kế bên đã có người ở từ 2017 (Palm Residence) và 2019 (Palm Heights) với trường quốc tế, công viên ven sông; The Privé đang xây; bên kia cao tốc là The Global City 117 ha và khu liên hợp thể thao Rạch Chiếc 212 ha theo quy hoạch."
+   },
+   {
+    "title": "Đất giáp rạch, nhà không đối lưng",
+    "text": "Dãy biệt thự song lập SD1 chạy dọc rạch Mương Kênh phía đường số 3; các dãy nhà phố xếp song song quanh công viên trung tâm 1,29 ha. Chủ đầu tư thiết kế các căn không đối lưng nhau mà ngăn bằng lối đi chung có cây, mỗi căn có vườn trước và sau."
+   }
+  ],
+  "image": "assets/img/du-an/senturia-an-phu-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "**1,29 ha** trong 8,6 ha dành cho công viên trung tâm, mặt nước và tiện ích — chủ đầu tư nói lấy ý tưởng từ Central Park. Danh sách công bố: câu lạc bộ cộng đồng, hồ bơi, phòng gym, phòng xông hơi, phòng đa năng, sân đa năng ngoài trời, khu tập thể dục ngoài trời, hồ cảnh quan, khu vui chơi trẻ em, khu BBQ, công viên trung tâm và công viên nội khu. 6 hạng mục chính theo phối cảnh:",
+  "items": [
+   "Hồ bơi và câu lạc bộ cộng đồng",
+   "Công viên trung tâm 1,29 ha",
+   "Hồ cảnh quan và đường dạo",
+   "Khu vui chơi trẻ em",
+   "Phòng gym",
+   "Công viên nội khu giữa các dãy nhà"
+  ]
+ },
+ "giaBan": {
+  "intro": "Chủ đầu tư không đăng bảng giá trên website; giá từng căn nằm trong bảng giá có dấu gửi cho đơn vị phân phối. Các bảng chào phân phối tháng 9/2026 chúng chúng tôi có trong tay bắt đầu từ **khoảng 24 tỷ** cho nhà phố liên kế lô 5 × 15 m (75 m² đất) và khoảng 45 tỷ cho biệt thự song lập — tương đương trên 300 triệu/m² đất, tuỳ dãy, hướng và vị trí lô. Giá từ ghi ở từng loại là số của bảng chào phân phối; giá đúng căn PaceLand đối chiếu bảng giá gốc của chủ đầu tư rồi mới báo.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "Nhà phố liên kế",
+    "dienTich": "Đất 75–204 m² · 1 trệt, 2 lầu, sân thượng",
+    "gia": "từ ≈ 24 tỷ (bảng chào phân phối)",
+    "thanhToan": "30 % đến khi nhận nhà"
+   },
+   {
+    "name": "Nhà phố thương mại",
+    "dienTich": "Đất 116–216 m² · 1 trệt, 3 lầu",
+    "gia": "",
+    "thanhToan": "10 % lúc ký, 30 % đến khi nhận nhà"
+   },
+   {
+    "name": "Biệt thự song lập",
+    "dienTich": "Đất 189–338 m² · 1 trệt, 2 lầu, sân thượng",
+    "gia": "từ ≈ 45 tỷ (bảng chào phân phối)",
+    "thanhToan": "30 % đến khi nhận nhà"
+   }
+  ],
+  "note": "Giá bán nhà ở trong lịch thanh toán của chủ đầu tư ghi là **đã gồm thuế GTGT**; chưa gồm phí quản lý. Chiết khấu 10 % (lịch theo tiến độ, không dùng hỗ trợ lãi) trừ thẳng vào giá. Bảng chào phân phối có thể lệch so với bảng giá gốc theo từng đợt — anh/chị chỉ ký khi cầm bảng giá có dấu của chủ đầu tư."
+ },
+ "matBang": {
+  "intro": "Mặt bằng phân lô: 2 dãy nhà phố thương mại SH1–SH3 bám đường Song Hành và đường số 1; bên trong là các dãy nhà phố liên kế TH1–TH4 xếp song song; biệt thự song lập SD1 ở dải giữa quanh công viên và dọc rạch Mương Kênh phía đường số 3. Mặt bằng từng mẫu nhà (SD1, SH1–SH3, TH1–TH4, có kích thước từng phòng) chúng chúng tôi gửi bản PDF khi anh/chị chọn dãy.",
+  "diem": [
+   "Nhà phố liên kế TH1–TH4: 1 trệt, 2 lầu, sân thượng; lô nhỏ nhất 5 × 15 m",
+   "Nhà phố thương mại SH1–SH3: 1 trệt, 3 lầu, mặt tiền đường Song Hành hoặc đường số 1",
+   "Biệt thự song lập SD1: 62 căn, vườn trước và sau, 1 dãy chạy dọc rạch Mương Kênh",
+   "Các căn không đối lưng nhau, ngăn bằng lối đi chung có cây xanh"
+  ],
+  "image": "assets/img/du-an/senturia-an-phu-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "Nhà phố liên kế",
+   "dienTich": "Đất 75–204 m², 1 trệt, 2 lầu, sân thượng",
+   "text": "**202 căn**, nhiều nhất trong giỏ hàng, xếp thành các dãy TH1–TH4 quanh công viên trung tâm. Mỗi căn có vườn trước và sau, mặt tiền đường nội khu; sân thượng là tầng thứ 4 để làm vườn hoặc phòng đa năng. Hợp gia đình 4–6 người mua để ở lâu dài."
+  },
+  {
+   "name": "Nhà phố thương mại",
+   "dienTich": "Đất 116–216 m², 1 trệt, 3 lầu",
+   "text": "**91 căn** ở các dãy SH1–SH3 quay mặt ra đường Song Hành và đường số 1; tầng trệt mở mặt kính để kinh doanh, các tầng trên để ở hoặc cho thuê văn phòng. Hợp người mua vừa ở vừa mở showroom, văn phòng, quán ăn."
+  },
+  {
+   "name": "Biệt thự song lập",
+   "dienTich": "Đất 189–338 m², 1 trệt, 2 lầu, sân thượng",
+   "text": "**62 căn** ở dải giữa khu và dọc rạch Mương Kênh, 2 căn chung một vách, 3 mặt thoáng, vườn trước và sau rộng hơn nhà phố. Số lượng ít nên chúng tôi báo giỏ hàng theo từng đợt."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Những điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Pháp lý đã đi hết các bước để bán",
+    "text": "Quyết định giao đất 5452/QĐ-UBND (13/10/2017), quy hoạch 1/500 số 895/QĐ-UBND (17/4/2018), chấp thuận chủ trương đầu tư 7348/QĐ-UBND (27/5/2025), giấy phép xây dựng 05/GPXD (8/8/2025), cam kết bảo lãnh của OCB (6/11/2025) và văn bản đủ điều kiện bán 13775/SXD-PTĐT (23/4/2026) — chủ đầu tư công bố đủ số văn bản trên website. Tuổi Trẻ 27/5/2026 ghi dự án đã đủ điều kiện ký hợp đồng mua bán sau khi được thành phố gỡ vướng thủ tục."
+   },
+   {
+    "title": "Nhận nhà cuối 2026, không chờ 3 năm",
+    "text": "Cất nóc 29/12/2025, xây thô hơn 90 % vào cuối tháng 6/2026, bàn giao từ quý IV/2026 theo chủ đầu tư. Nhà thấp tầng đã có hình hài, anh/chị đến công trường là đối chiếu được tiến độ với lời chào bán."
+   },
+   {
+    "title": "Trả 30 % đến khi nhận nhà, ân hạn gốc 48 tháng",
+    "text": "Chính sách 48 tháng của chủ đầu tư: khách trả **30 %**, ngân hàng giải ngân 65 %, hỗ trợ lãi 0 % trong 24 tháng đầu, tháng 25–48 trần lãi 7,5 %/năm, không trả gốc suốt 48 tháng. Hoặc chọn chiết khấu 10 % nếu trả theo tiến độ bằng vốn tự có."
+   },
+   {
+    "title": "Khu đã có cư dân, không phải chờ khu hình thành",
+    "text": "Palm City kế bên có người ở từ 2017, trường quốc tế và công viên ven sông đang hoạt động; Bệnh viện Quốc tế Mỹ do chính Tiến Phước xây cách 8 phút; Thiso Mall, Vincom Mega Mall trong 10–12 phút. Mua để ở là dọn về được ngay sau bàn giao."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Vườn trước, vườn sau",
+    "text": "Mỗi căn có 2 khoảng vườn trước và sau; các dãy không đối lưng mà ngăn bằng lối đi chung có cây. Công viên trung tâm 1,29 ha nằm giữa khu, hồ bơi và câu lạc bộ ngay cạnh."
+   },
+   {
+    "title": "Trường, bệnh viện, siêu thị trong 10 phút",
+    "text": "Trường quốc tế TAS 3 phút, AIS 7 phút; Bệnh viện Quốc tế Mỹ (Tiến Phước đầu tư, hoạt động từ tháng 10/2018) 8 phút; Thiso Mall 10 phút, Vincom Mega Mall và Estella Place 12 phút."
+   },
+   {
+    "title": "Đi lại và chọn lô",
+    "text": "Ra nút giao An Phú 3 phút để vào Mai Chí Thọ – hầm Thủ Thiêm về Quận 1 cũ, hoặc lên cao tốc đi Long Thành. Dự án nằm cạnh cao tốc: dãy SH2 gần đường Song Hành nhất, dãy SD1 ven rạch xa nhất — anh/chị chọn lô theo mức yên tĩnh mình cần, chúng tôi đưa đi đứng thử tại lô."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý chủ đầu tư công bố tại mục Pháp lý dự án trên website senturia.com.vn, tên pháp lý Khu nhà ở thấp tầng OTM4, tổng diện tích 8,6 ha:",
+  "items": [
+   "Quyết định giao đất số 5452/QĐ-UBND ngày 13/10/2017",
+   "Quyết định phê duyệt quy hoạch chi tiết 1/500 số 895/QĐ-UBND ngày 17/4/2018",
+   "Thông báo thẩm định thiết kế cơ sở hạ tầng kỹ thuật số 324/HĐXD-QLDA (15/6/2018) và thiết kế cơ sở dự án số 487/HĐXD-QLDA (28/8/2018)",
+   "Quyết định chấp thuận chủ trương đầu tư số 7348/QĐ-UBND ngày 27/5/2025",
+   "Giấy phép xây dựng số 05/GPXD ngày 8/8/2025 của Sở Xây dựng TP.HCM",
+   "Biên bản nghiệm thu hoàn thành giai đoạn xây dựng hạ tầng kỹ thuật giai đoạn 1 ngày 6/11/2025",
+   "Cam kết cấp bảo lãnh bán nhà ở hình thành trong tương lai của Ngân hàng Phương Đông (OCB) số 1519/2025/TB-OCB ngày 6/11/2025",
+   "Thông báo thẩm định báo cáo nghiên cứu khả thi điều chỉnh số 16157/SXD-QL-XDCT ngày 17/11/2025",
+   "Văn bản thông báo đủ điều kiện mua bán số 13775/SXD-PTĐT ngày 23/4/2026 của Sở Xây dựng TP.HCM",
+   "Chủ đầu tư công bố: quyền tài sản phát sinh từ dự án đang bảo đảm tại OCB, ngân hàng đã đồng ý giải chấp từng sản phẩm khi ký hợp đồng mua bán; hợp đồng mua bán mẫu có đăng kèm"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc 3 giấy: văn bản đủ điều kiện bán 13775/SXD-PTĐT, chứng thư bảo lãnh của OCB cho đúng căn mình mua (cam kết cấp bảo lãnh là bước trước, chứng thư từng căn là bước sau) và văn bản giải chấp cho lô đó. PaceLand đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Tiến Phước",
+  "text": "Công ty CP Bất động sản Tiến Phước thành lập ngày 10/10/1992 (tiền thân là Công ty Nông sản Tinh dầu Tiến Phước), trụ sở 542 Trần Hưng Đạo, Quận 5 cũ; làm bất động sản từ năm 1997 với khu biệt thự Green Field ở Quận 2 cũ. Ở khu Đông, Tiến Phước là bên Việt Nam trong các liên doanh với Keppel Land: The Estella (liên doanh từ 2007), Estella Heights, Palm City ở Nam Rạch Chiếc (Palm Residence bàn giao 2017, Palm Heights 2019) và Empire City ở Thủ Thiêm. Tự phát triển có Bệnh viện Quốc tế Mỹ (AIH) hoạt động từ 19/10/2018, khách sạn Le Meridien Saigon, chuỗi Senturia gồm Senturia Vườn Lài ở Quận 12 cũ (194 căn, trao sổ hồng cho cư dân từ tháng 4/2019) và Senturia Nam Sài Gòn ở Bình Chánh. Senturia An Phú do công ty thành viên Nguyên Phương (thành lập 27/4/2017) đứng tên chủ đầu tư; thiết kế kiến trúc FDAT, cảnh quan Ong&Ong, vận hành Savills.",
+  "daBanGiao": [
+   "Senturia Vườn Lài — sổ hồng 2019",
+   "Senturia Vườn Lài — dãy nhà phố",
+   "Bệnh viện Quốc tế Mỹ — hoạt động từ 2018",
+   "Palm Residence (Palm City, liên doanh) — bàn giao 2017"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Senturia An Phú giá bao nhiêu?",
+   "a": "Chủ đầu tư Senturia An Phú không đăng bảng giá công khai; theo bảng chào của các đơn vị phân phối tháng 9/2026, nhà phố liên kế lô 5 × 15 m (75 m² đất) bắt đầu từ khoảng 24 tỷ, biệt thự song lập từ khoảng 45 tỷ — tương đương trên 300 triệu/m² đất, đã gồm VAT theo cách chủ đầu tư ghi trong lịch thanh toán. Giá từng căn phụ thuộc dãy, hướng và vị trí lô; PaceLand đối chiếu bảng giá có dấu của chủ đầu tư trước khi báo."
+  },
+  {
+   "q": "Senturia An Phú khi nào bàn giao?",
+   "a": "Senturia An Phú cất nóc ngày 29/12/2025, đến cuối tháng 6/2026 xây thô hơn 90 %; chủ đầu tư đặt mốc bàn giao từ quý IV/2026 và lịch thanh toán ghi thông báo bàn giao không trễ hơn ngày 25/6/2027. Tuổi Trẻ ngày 27/5 và 2/6/2026 cũng ghi mốc bàn giao quý IV/2026."
+  },
+  {
+   "q": "Senturia An Phú đã đủ điều kiện bán chưa, pháp lý thế nào?",
+   "a": "Chủ đầu tư Senturia An Phú công bố văn bản đủ điều kiện mua bán nhà ở hình thành trong tương lai số 13775/SXD-PTĐT ngày 23/4/2026 của Sở Xây dựng TP.HCM, giấy phép xây dựng 05/GPXD ngày 8/8/2025, quyết định chấp thuận chủ trương đầu tư 7348/QĐ-UBND ngày 27/5/2025 và cam kết cấp bảo lãnh của OCB ngày 6/11/2025; nhà đất sở hữu lâu dài. Anh/chị yêu cầu xem bản gốc và văn bản giải chấp cho đúng lô mình mua trước khi đặt cọc."
+  },
+  {
+   "q": "Mua Senturia An Phú cần bao nhiêu tiền ban đầu?",
+   "a": "Đặt cọc Senturia An Phú là 500 triệu/căn nhà phố; ký hợp đồng mua bán trả 10 % giá bán (đã gồm cọc), 1 tháng sau 5 %, khi có thông báo bàn giao 15 % — tổng 30 % đến khi nhận nhà. 65 % còn lại ngân hàng giải ngân, chủ đầu tư hỗ trợ lãi suất 0 % trong 24 tháng và ân hạn nợ gốc 48 tháng; 5 % cuối trả khi nhận giấy chứng nhận."
+  }
+ ]
+}

@@ -1,0 +1,400 @@
+{
+ "capNhat": "2026-09-18",
+ "tongQuan": {
+  "intro": "The Privé là dự án căn hộ của Bluemarq Group — tên mới của Tập đoàn Đất Xanh từ ngày 20/5/2026 — trong khu dân cư Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ). Khu đất 6,7 ha có 3 mặt giáp sông Giồng Ông Tố, xây 12 tháp cao 33–35 tầng với **3.175 căn**; mật độ xây dựng 25 %, mỗi tầng điển hình 9 căn. Dự án khởi công tháng 1/2025; đến tháng 8/2026 tháp 8 đã lên tầng 27, 3 tháp 5–7 xong sàn tầng 20.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "The Privé"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Bluemarq Group (tiền thân Tập đoàn Đất Xanh, mã chứng khoán DXG)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Đường Song Hành, khu dân cư Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ), TP.HCM"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Căn hộ 1–3 phòng ngủ, duplex, penthouse"
+   },
+   {
+    "label": "Diện tích đất",
+    "value": "6,7 ha, 3 mặt giáp sông Giồng Ông Tố"
+   },
+   {
+    "label": "Quy mô",
+    "value": "12 tháp, 33–35 tầng nổi"
+   },
+   {
+    "label": "Số căn",
+    "value": "3.175 căn"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "25 %"
+   },
+   {
+    "label": "Căn mỗi tầng",
+    "value": "9 căn một tầng điển hình"
+   },
+   {
+    "label": "Hầm để xe",
+    "value": "Khoảng 4,2 ha, 959 chỗ ô tô"
+   },
+   {
+    "label": "Thiết kế kiến trúc",
+    "value": "CPG Corporation (Singapore)"
+   },
+   {
+    "label": "Thiết kế nội thất",
+    "value": "Ong&Ong (Singapore)"
+   },
+   {
+    "label": "Thi công móng và hầm",
+    "value": "Tập đoàn Xây dựng Hoà Bình"
+   },
+   {
+    "label": "Giám sát",
+    "value": "Kiểm định Xây dựng Sài Gòn (SCQC)"
+   },
+   {
+    "label": "Ngân hàng bảo lãnh",
+    "value": "MB (hợp đồng bảo lãnh 1305/2025/TTCBL/MB-DXG)"
+   },
+   {
+    "label": "Khởi công",
+    "value": "Tháng 1/2025"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "26 tháng kể từ ngày ký hợp đồng (chính sách bán hàng tháng 9/2026); căn đầu tiên dự kiến khoảng tháng 6/2027"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích đất",
+    "value": "6,7 ha",
+    "note": "3 mặt giáp sông"
+   },
+   {
+    "label": "Quy mô",
+    "value": "12 tháp",
+    "note": "33–35 tầng nổi"
+   },
+   {
+    "label": "Số căn",
+    "value": "3.175",
+    "note": "từ 1 phòng ngủ đến penthouse"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "25 %",
+    "note": "phần còn lại là công viên, hồ bơi"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Tháp 9 — toà nhìn thẳng ra sông",
+  "subtitle": "Tháp 9 đứng ở mép sông Giồng Ông Tố, mỗi tầng 9 căn, trong đó 3 căn nhìn thẳng mặt sông không có tháp nào che phía trước.",
+  "capNhat": "Chính sách bán hàng tháng 9/2026",
+  "gioHang": [
+   "1 phòng ngủ: 49,8–54,8 m² tim tường",
+   "2 phòng ngủ: 71,5–88,7 m²",
+   "3 phòng ngủ: 98,5 m²",
+   "Giá dự kiến 99–118 triệu/m² chưa VAT, tuỳ tầng và hướng nhìn"
+  ],
+  "lyDo": [
+   {
+    "title": "3 căn mỗi tầng nhìn thẳng sông",
+    "text": "Tháp 9 xếp 9 căn một tầng theo hình chữ U mở về phía sông. **3 căn** ở cạnh sông không có tháp nào đứng chắn phía trước; 6 căn còn lại nhìn chéo sông hoặc nhìn về Thủ Thiêm."
+   },
+   {
+    "title": "Vào ở bằng 10 % giá trị căn",
+    "text": "Lịch thanh toán tháng 9/2026: **10 %** giá trị căn trải trong 2 năm đến ngày nhận nhà. Phần còn lại trả khi nhận nhà; ngân hàng MB là đơn vị bảo lãnh và cho vay của dự án — anh/chị hỏi chúng chúng tôi bản chính sách để xem mức lãi suất ưu đãi đang áp dụng."
+   },
+   {
+    "title": "Chiết khấu trừ thẳng vào giá",
+    "text": "Thanh toán sớm được chiết khấu đến 12 % với tháp 9–10–11; cộng các điều kiện khác trong chính sách, mức tối đa là **23,5 %**. PaceLand tính con số cuối cho đúng căn anh/chị chọn trước khi anh/chị quyết định."
+   },
+   {
+    "title": "Bàn giao nội thất đủ dùng",
+    "text": "Thiết bị theo danh mục bàn giao đang lưu hành: khoá và phụ kiện Hafele, thiết bị vệ sinh Kohler, điều hoà Daikin, cửa Eurowindow. Danh mục đầy đủ theo từng phòng chúng chúng tôi gửi khi anh/chị cần."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Booking",
+    "value": "100 triệu",
+    "note": "hoàn lại nếu không chọn được căn; duplex 200 triệu"
+   },
+   {
+    "label": "Vốn đến khi nhận nhà",
+    "value": "10 %",
+    "note": "trải trong 2 năm"
+   },
+   {
+    "label": "Chiết khấu thanh toán sớm",
+    "value": "đến 12 %",
+    "note": "tháp 9–10–11; tối đa 23,5 % khi đủ điều kiện"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "26 tháng",
+    "note": "kể từ ngày ký hợp đồng"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 8/2026",
+  "intro": "Theo cập nhật tháng 8/2026 của chủ đầu tư: tháp 8 đã lên tầng 27, 3 tháp 5, 6, 7 xong sàn tầng 20, các tháp 9–12 đang ở tầng 6–10. Chủ đầu tư đặt mục tiêu giao những căn đầu tiên vào khoảng tháng **6/2027** và hoàn thiện toàn dự án trong năm 2028. Nhà mẫu căn 1, 2 và 3 phòng ngủ mở cửa tại công trường đường Song Hành.",
+  "moc": [
+   {
+    "label": "Tháp 5, 6, 7",
+    "value": "Xong sàn tầng 20"
+   },
+   {
+    "label": "Tháp 8",
+    "value": "Lên tầng 27"
+   },
+   {
+    "label": "Tháp 9",
+    "value": "Lên tầng 9"
+   },
+   {
+    "label": "Tháp 10, 11, 12",
+    "value": "Tầng 8, tầng 6, tầng 10"
+   },
+   {
+    "label": "Căn đầu tiên",
+    "value": "Dự kiến giao khoảng tháng 6/2027 (theo chủ đầu tư)"
+   },
+   {
+    "label": "Nhà mẫu",
+    "value": "Đã mở, xem thực tế căn 1PN, 2PN, 3PN"
+   }
+  ],
+  "note": "Anh/chị muốn xem thực tế công trường và nhà mẫu, PaceLand hẹn lịch và đưa đón từ trung tâm; đi xem không mất phí.",
+  "image": "assets/img/du-an/the-prive-tien-do.jpg"
+ },
+ "viTri": {
+  "intro": "Dự án nằm trong khu dân cư Nam Rạch Chiếc, mặt tiền đường Song Hành chạy dọc cao tốc TP.HCM – Long Thành, 3 mặt giáp sông Giồng Ông Tố. Từ cổng dự án ra nút giao An Phú **chừng 1 km**; qua nút giao là Mai Chí Thọ vào Thủ Thiêm và hầm Thủ Thiêm về Quận 1 cũ. Thời gian bên dưới chúng tôi đo bằng bản đồ vào giờ thường, cùng thước với hồ sơ Palm City ngay cạnh.",
+  "khoangCach": [
+   {
+    "label": "Nút giao An Phú",
+    "value": "3 phút"
+   },
+   {
+    "label": "Cao tốc TP.HCM – Long Thành – Dầu Giây",
+    "value": "3 phút"
+   },
+   {
+    "label": "Khu liên hợp thể thao Rạch Chiếc (theo quy hoạch)",
+    "value": "5 phút"
+   },
+   {
+    "label": "Trung tâm Tài chính Quốc tế Thủ Thiêm (theo quy hoạch)",
+    "value": "10 phút"
+   },
+   {
+    "label": "Khu trung tâm Quận 1 cũ",
+    "value": "12 phút"
+   },
+   {
+    "label": "Thiso Mall",
+    "value": "10 phút"
+   },
+   {
+    "label": "Vincom Mega Mall, Estella Place",
+    "value": "12 phút"
+   },
+   {
+    "label": "Bệnh viện Quốc tế Mỹ (AIH)",
+    "value": "8 phút"
+   },
+   {
+    "label": "Trường quốc tế TAS · AIS · BIS",
+    "value": "3 · 7 · 17 phút"
+   },
+   {
+    "label": "Sân bay quốc tế Long Thành (dự kiến)",
+    "value": "30 phút"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Nút giao An Phú 3 tầng",
+    "text": "Nút giao An Phú nối cao tốc TP.HCM – Long Thành với Mai Chí Thọ và Lương Định Của, đang xây theo mô hình 3 tầng gồm hầm chui, cầu vượt và vòng xoay. Đi làm ở Quận 1 cũ, ra sân bay Long Thành hay về Đồng Nai, anh/chị đều đi qua đầu mối này."
+   },
+   {
+    "title": "Khu đô thị Rạch Chiếc đã có quy hoạch",
+    "text": "Nam Rạch Chiếc là khu dân cư và tái định cư **60,21 ha** có quy hoạch 1/500. Cạnh đó là The Global City 117 ha, Lakeview City, Palm City và khu liên hợp thể thao Rạch Chiếc 222 ha trong quy hoạch của thành phố."
+   },
+   {
+    "title": "3 mặt sông",
+    "text": "Khu đất giáp sông Giồng Ông Tố ở 3 phía. Tháp ven sông có căn nhìn thẳng mặt nước; công viên ven sông là tiện ích chung, không tháp nào bị chắn tầm nhìn bởi công trình bên ngoài khu."
+   }
+  ],
+  "image": "assets/img/du-an/the-prive-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Mật độ xây dựng **25 %** — phần đất còn lại dành cho công viên ven sông, hồ bơi và sân chơi. 6 tiện ích chính theo tài liệu dự án:",
+  "items": [
+   "Công viên ven sông",
+   "Hồ bơi tràn bờ",
+   "Phòng gym",
+   "Sân chơi trẻ em",
+   "Trung tâm thương mại nội khu",
+   "Vườn nướng BBQ"
+  ]
+ },
+ "giaBan": {
+  "intro": "Bảng giá tháng 9/2026: **từ 99 đến 118 triệu/m²** chưa VAT, tuỳ tháp, tầng và hướng nhìn. Con số dưới đây là **giá từ** của mỗi loại căn theo tài liệu bán hàng; giá từng căn cụ thể chúng chúng tôi gửi trực tiếp kèm sơ đồ vị trí.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "1 phòng ngủ",
+    "dienTich": "49,8–54,8 m²",
+    "gia": "từ 5,9 tỷ",
+    "thanhToan": "≈ 590 triệu đến khi nhận nhà"
+   },
+   {
+    "name": "2 phòng ngủ",
+    "dienTich": "71,5–88,7 m²",
+    "gia": "từ 7,5 tỷ",
+    "thanhToan": "≈ 750 triệu đến khi nhận nhà"
+   },
+   {
+    "name": "3 phòng ngủ",
+    "dienTich": "98,5 m²",
+    "gia": "từ 10,4 tỷ",
+    "thanhToan": "≈ 1,04 tỷ đến khi nhận nhà"
+   },
+   {
+    "name": "Duplex · Penthouse",
+    "dienTich": "107–151 m²",
+    "gia": "từ 11,7 tỷ",
+    "thanhToan": "≈ 1,17 tỷ đến khi nhận nhà"
+   }
+  ],
+  "note": "Giá chưa gồm VAT và 2 % phí bảo trì. Chiết khấu thanh toán sớm trừ thẳng vào giá, nên con số cuối của một căn thấp hơn bảng trên nếu anh/chị chọn lịch trả nhanh."
+ },
+ "matBang": {
+  "intro": "Mỗi tháp một tầng điển hình **9 căn** xếp chữ U mở về phía sông, 4 thang máy chia đều 2 trục, hành lang rộng 1,8 m. Mặt bằng tầng điển hình và mặt bằng từng căn chúng chúng tôi gửi bản PDF khi anh/chị chọn tháp.",
+  "diem": [
+   "9 căn một tầng, hành lang chữ U hở 2 đầu để thông gió",
+   "4 thang máy một tháp, chia đều 2 trục",
+   "Hành lang rộng 1,8 m",
+   "Căn 3 phòng ngủ đặt ở góc tháp, 2 mặt thoáng"
+  ],
+  "image": "assets/img/du-an/the-prive-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "1 phòng ngủ",
+   "dienTich": "49,8–54,8 m² tim tường",
+   "text": "Phòng ngủ tách hẳn phòng khách, bếp thẳng hàng, ban công ở các căn mép hướng ra sông. Hợp người ở một mình, vợ chồng trẻ, hoặc mua để cho chuyên gia làm việc ở Thủ Thiêm thuê."
+  },
+  {
+   "name": "2 phòng ngủ",
+   "dienTich": "71,5–88,7 m²",
+   "text": "Loại căn nhiều nhất trong giỏ hàng. 2 phòng ngủ ở 2 phía, phòng khách liền bếp mở ra ban công; gia đình 3–4 người ở vừa."
+  },
+  {
+   "name": "3 phòng ngủ",
+   "dienTich": "98,5 m²",
+   "text": "Đặt ở góc tháp nên có 2 mặt thoáng; cả 3 phòng ngủ đều có cửa sổ. Hợp gia đình nhiều thế hệ hoặc nhà cần một phòng làm việc riêng."
+  },
+  {
+   "name": "Duplex",
+   "dienTich": "107–151 m²",
+   "text": "Căn 2 tầng, có bản ở tầng thấp kèm sân vườn (garden duplex) và bản ở tầng cao (sky duplex). Booking 200 triệu một căn; số lượng ít nên chúng tôi báo giỏ hàng theo từng đợt."
+  },
+  {
+   "name": "Penthouse",
+   "dienTich": "trên 150 m²",
+   "text": "Tầng trên cùng của tháp, nhìn toàn cảnh sông Giồng Ông Tố và Thủ Thiêm. Mở bán theo từng tháp, không có trong giỏ hàng thường xuyên."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Những điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Đất 3 mặt sông trong khu đã có quy hoạch",
+    "text": "Nam Rạch Chiếc là khu dân cư có quy hoạch 1/500 được duyệt, không phải đất xen kẹt. 3 mặt giáp sông là điều kiện tự nhiên, không dự án nào dựng thêm được."
+   },
+   {
+    "title": "Giá chào thấp hơn 2 dự án cùng trục",
+    "text": "Cùng trục An Phú – Rạch Chiếc, The Privé chào **99–118 triệu/m²** (tháng 9/2026). PaceLand đang cầm bảng giá Eaton Park, The Global City và Palm River để so cùng lúc cho anh/chị — so bằng giá trên hợp đồng, không so bằng tin đồn."
+   },
+   {
+    "title": "Tháp 5–12 đủ điều kiện bán, MB bảo lãnh",
+    "text": "Sở Xây dựng TP.HCM xác nhận **2.093 căn** ở tháp 5–12 đủ điều kiện bán (văn bản 3126/SXD-PTĐT ngày 7/8/2025); ngân hàng MB bảo lãnh theo hợp đồng 1305/2025/TTCBL/MB-DXG. Anh/chị yêu cầu xem chứng thư bảo lãnh cho đúng căn mình mua trước khi đặt cọc."
+   },
+   {
+    "title": "Tiến độ nhìn thấy được",
+    "text": "Tháng 8/2026 tháp 8 đã lên tầng 27, 3 tháp 5–7 xong sàn tầng 20; nhà mẫu mở tại công trường. Anh/chị đến xem là thấy, không phải tin phối cảnh."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Sông ở ngay dưới ban công",
+    "text": "3 mặt sông và công viên ven bờ chạy dọc khu; hành lang chữ U hở 2 đầu nên gió sông đi xuyên tầng."
+   },
+   {
+    "title": "Tiện ích cho cả nhà trong khu",
+    "text": "Hồ bơi, gym, sân chơi trẻ em, BBQ và khối thương mại nằm trong khu. Trường quốc tế TAS cách 3 phút, AIS 7 phút; Bệnh viện Quốc tế Mỹ 8 phút."
+   },
+   {
+    "title": "Đi lại",
+    "text": "Ra nút giao An Phú 3 phút, lên cao tốc Long Thành hoặc theo Mai Chí Thọ vào Thủ Thiêm và Quận 1 cũ. Giờ cao điểm Mai Chí Thọ đông, anh/chị nên đi thử một buổi sáng trước khi quyết."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý chủ đầu tư đã công bố:",
+  "items": [
+   "Quy hoạch chi tiết 1/500: Quyết định 1395/QĐ-UBND ngày 31/5/2018 của UBND Quận 2",
+   "Quyết định chấp thuận chủ trương đầu tư số 3141/QĐ-UBND ngày 16/6/2017 và quyết định điều chỉnh chủ trương, chấp thuận nhà đầu tư số 335/QĐ-UBND ngày 25/01/2022 của UBND TP.HCM",
+   "Giấy chứng nhận quyền sử dụng đất số BK 380114 và BK 380115 (cấp ngày 4/5/2013 cho Công ty TNHH Nam Rạch Chiếc)",
+   "Quyết định 4068/QĐ-UBND ngày 31/7/2017 của UBND TP.HCM chấp thuận chuyển nhượng phần dự án 42.903,8 m² sang Đất Xanh",
+   "Giấy phép xây dựng số 37/GPXD ngày 12/9/2024 của Sở Xây dựng TP.HCM cho khu chung cư cao tầng CC1 và CC5",
+   "Văn bản 3126/SXD-PTĐT ngày 7/8/2025 của Sở Xây dựng TP.HCM: 2.093 căn hộ tại tháp 5–12 đủ điều kiện bán nhà ở hình thành trong tương lai",
+   "Hợp đồng bảo lãnh số 1305/2025/TTCBL/MB-DXG ngày 13/5/2025 của ngân hàng MB",
+   "Văn bản 1164/UBND-ĐT ngày 18/8/2025 của UBND TP.HCM về việc người nước ngoài được sở hữu nhà ở tại dự án"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc 3 giấy: giấy phép xây dựng, chứng thư bảo lãnh của MB và văn bản đủ điều kiện bán của Sở Xây dựng cho đúng tháp mình mua. PaceLand đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Bluemarq Group (tiền thân Tập đoàn Đất Xanh)",
+  "text": "Tập đoàn Đất Xanh (mã chứng khoán DXG) đổi tên thành Bluemarq Group từ ngày 20/5/2026 sau khi cổ đông thông qua tại đại hội thường niên; công ty phát triển dự án Hà An đổi thành Bluemarq Development, còn thương hiệu Đất Xanh giữ lại cho mảng dịch vụ. Từ 2003 đến nay tập đoàn đã bàn giao Opal Boulevard, Opal Riverside, Opal Garden, Lux Garden và khu đô thị Gem Sky World ở Đồng Nai. The Privé nằm trên 2 khu chung cư cao tầng CC1 và CC5 của khu dân cư Nam Rạch Chiếc.",
+  "daBanGiao": [
+   "Opal Boulevard",
+   "Lux Garden",
+   "Opal Riverside",
+   "Opal Garden"
+  ]
+ },
+ "faq": [
+  {
+   "q": "The Privé giá bao nhiêu?",
+   "a": "Theo bảng giá tháng 9/2026, The Privé chào từ 99 đến 118 triệu/m² chưa VAT. Căn 1 phòng ngủ 49,8 m² từ khoảng 5,9 tỷ, căn 2 phòng ngủ 71,5 m² từ khoảng 7,5 tỷ, căn 3 phòng ngủ 98,5 m² từ khoảng 10,4 tỷ; giá từng căn phụ thuộc tháp, tầng và hướng nhìn sông."
+  },
+  {
+   "q": "The Privé khi nào bàn giao?",
+   "a": "Chủ đầu tư The Privé đặt mục tiêu giao những căn đầu tiên vào khoảng tháng 6/2027 và hoàn thiện toàn dự án trong năm 2028. Với căn ký bây giờ, chính sách bán hàng tháng 9/2026 tính thời hạn bàn giao 26 tháng kể từ ngày ký; hợp đồng mua bán mẫu của chủ đầu tư cho phép giao sớm hoặc muộn không quá 180 ngày so với ngày đến hạn. Mốc chính xác nằm trong hợp đồng của từng căn."
+  },
+  {
+   "q": "The Privé đã đủ điều kiện bán chưa?",
+   "a": "Có, với tháp 5–12. Văn bản 3126/SXD-PTĐT ngày 7/8/2025 của Sở Xây dựng TP.HCM xác nhận 2.093 căn hộ tại tháp 5–12 của The Privé đủ điều kiện bán nhà ở hình thành trong tương lai. Dự án có giấy phép xây dựng 37/GPXD ngày 12/9/2024 và hợp đồng bảo lãnh 1305/2025/TTCBL/MB-DXG của ngân hàng MB. Anh/chị xem bản chụp cho đúng tháp mình mua trước khi đặt cọc; chúng tôi kiểm tra cùng."
+  },
+  {
+   "q": "Mua The Privé cần bao nhiêu tiền ban đầu?",
+   "a": "Booking giữ chỗ The Privé là 100 triệu một căn (duplex 200 triệu), hoàn lại nếu không chọn được căn. Sau khi ký hợp đồng, lịch thanh toán tháng 9/2026 chỉ yêu cầu 10 % giá trị căn trải trong 2 năm đến khi nhận nhà; phần còn lại trả khi nhận nhà hoặc vay ngân hàng MB."
+  }
+ ]
+}

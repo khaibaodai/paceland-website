@@ -1,0 +1,384 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "Vinhomes Saigon Park (Vinhomes Sài Gòn Park) là tên thương mại của dự án Khu đô thị Đại học Quốc tế tại xã Xuân Thới Sơn — xã mới gộp Tân Thới Nhì, Xuân Thới Đông và Xuân Thới Sơn cũ của huyện Hóc Môn. Chủ đầu tư đứng tên là Công ty Cổ phần Đô thị Đại học Quốc tế Berjaya Việt Nam, công ty con của Vinhomes từ tháng 5/2026. Phần đô thị đại học rộng **880 ha**, tổng vốn khoảng 59.000 tỷ đồng theo Quyết định 80/QĐ-TTg ngày 13/1/2025; cộng sân golf 36 hố 200 ha thành 1.080 ha như tài liệu bán hàng. Quy hoạch cho 135.000 người, trong đó khoảng 60.000 sinh viên. Khởi công 29/4/2026, mở văn phòng bán hàng và công bố giá 31/5/2026.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Vinhomes Saigon Park (Vinhomes Sài Gòn Park)"
+   },
+   {
+    "label": "Tên trong hồ sơ pháp lý",
+    "value": "Khu đô thị Đại học Quốc tế (trước đây: Khu đô thị Đại học Quốc tế Việt Nam – VIUT)"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Công ty Cổ phần Đô thị Đại học Quốc tế Berjaya Việt Nam — Vinhomes (mã chứng khoán VHM) nắm trên 97 % vốn"
+   },
+   {
+    "label": "Phát triển dự án",
+    "value": "VinCons (Công ty CP Phát triển và Đầu tư Xây dựng VinCons)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Mặt tiền Quốc lộ 22 và đường Tam Tân, xã Xuân Thới Sơn (Tân Thới Nhì, Hóc Môn cũ), TP.HCM; giáp kênh An Hạ, kênh Xáng và kênh ranh Tây Ninh"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Đô thị đại học: liền kề, shophouse, biệt thự song lập và đơn lập, chung cư 12–22 tầng, nhà tái định cư, nhà ở xã hội"
+   },
+   {
+    "label": "Tổng diện tích",
+    "value": "1.080 ha = 880 ha đô thị đại học + 200 ha sân golf"
+   },
+   {
+    "label": "Cơ cấu đất 880 ha",
+    "value": "Đất ở ≈ 436 ha · giáo dục, nghiên cứu, dịch vụ ≈ 150 ha · cây xanh, mặt nước ≈ 117 ha · phần còn lại là hạ tầng, công trình công cộng"
+   },
+   {
+    "label": "Nhà thấp tầng theo quy hoạch",
+    "value": "≈ 552 biệt thự, 2.491 nhà phố, 815 căn tái định cư"
+   },
+   {
+    "label": "Dân số quy hoạch",
+    "value": "135.000 người, gồm khoảng 60.000 sinh viên"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "≈ 30 %"
+   },
+   {
+    "label": "Phân khu",
+    "value": "5 khu: Ivy Park, Global Park, Laguna Park, Zen Park, Golf Park"
+   },
+   {
+    "label": "Tổng vốn",
+    "value": "≈ 59.000 tỷ đồng (khoảng 2,2–2,3 tỷ USD)"
+   },
+   {
+    "label": "Khởi công",
+    "value": "29/4/2026"
+   },
+   {
+    "label": "Đang bán (tháng 9/2026)",
+    "value": "Liền kề xây thô và hoàn thiện ở Global Park; liền kề giãn xây ở Ivy Park"
+   },
+   {
+    "label": "Vận hành toàn khu",
+    "value": "Đầu năm 2035 — tiến độ 120 tháng theo Quyết định 80/QĐ-TTg"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Tổng diện tích",
+    "value": "1.080 ha",
+    "note": "880 ha đô thị đại học + 200 ha sân golf"
+   },
+   {
+    "label": "Khu đại học",
+    "value": "150 ha",
+    "note": "trường trong nước và quốc tế"
+   },
+   {
+    "label": "Dân số quy hoạch",
+    "value": "135.000",
+    "note": "gồm khoảng 60.000 sinh viên"
+   },
+   {
+    "label": "Trường học",
+    "value": "36",
+    "note": "Vinschool, công lập và tư thục"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Liền kề Global Park và Ivy Park — 2 khu mở bán đầu tiên",
+  "subtitle": "Global Park (Công viên Quốc Tế) là khu thương mại – dịch vụ ở giữa đô thị, bán liền kề xây thô và hoàn thiện. Ivy Park (Công viên Tri Thức) ở cửa ngõ phía đông, cạnh kênh Xáng và quần thể đại học, bán liền kề giãn xây: trả giá trị đất và thương mại trước, giá trị xây dựng chốt sẵn và trả sau.",
+  "capNhat": "Chính sách bán hàng áp dụng từ 11/9/2026",
+  "gioHang": [
+   "Global Park, liền kề xây thô: từ 5,83 tỷ (dãy TL10, 50 m² đất, 145,3 m² sàn) đến 11,92 tỷ (dãy TL11, đất đến 112 m²)",
+   "Global Park, liền kề hoàn thiện: từ 8,41 tỷ (dãy TL38, 60 m² đất, 186,7 m² sàn)",
+   "Ivy Park, liền kề giãn xây: từ 6,03 tỷ (dãy AS50, 50 m² đất, 150,2 m² sàn) đến 12,04 tỷ (dãy AS82, 86,7 m² đất, 271,6 m² sàn)",
+   "Giá gốc chưa gồm VAT và kinh phí bảo trì; giá từng căn theo dãy chúng chúng tôi gửi kèm sơ đồ"
+  ],
+  "lyDo": [
+   {
+    "title": "1 căn, 3 cách mua",
+    "text": "**Xây thô**: nhận nhà xong phần ngoài, trong tự làm theo ý mình. **Hoàn thiện**: chủ đầu tư bàn giao theo bảng tiêu chuẩn hoàn thiện, về ở hoặc cho thuê ngay. **Giãn xây** (Ivy Park): tổng giá trị = giá trị quyền sử dụng đất + giá trị thương mại + giá trị xây dựng; anh/chị trả 2 phần đầu trước, phần xây dựng chốt sẵn trong hợp đồng và trả sau."
+   },
+   {
+    "title": "Voucher đến 30 % và lãi suất 0 % tới 36 tháng",
+    "text": "Voucher \"Đặc quyền sở hữu nhà Vinhomes\" trừ **tới 30 %** giá trị nhà, áp dụng đến 31/12/2026 theo quỹ căn. Vay ngân hàng tối đa 70 %, chủ đầu tư hỗ trợ lãi suất 0 % tối đa 36 tháng — nhưng chọn hỗ trợ lãi suất thì phải trả thêm so với giá gốc theo mục V.2 của chính sách. PaceLand tính 2 phương án song song cho đúng căn anh/chị chọn rồi mới quyết."
+   },
+   {
+    "title": "Trả sớm được trừ thẳng vào giá",
+    "text": "Không vay và thanh toán sớm trong 15 ngày kể từ ngày ký hợp đồng: chiết khấu **7,5 %** trên giá trị quyền sử dụng đất và thương mại. Theo bảng tính của Vinhomes Market, gộp các ưu đãi thì căn xây thô được trừ tới 18 %, căn hoàn thiện 22,5 % giá gốc. Trả sớm từng đợt được chiết khấu 11 %/năm tính trên số tiền và số ngày trả trước."
+   },
+   {
+    "title": "Ký quỹ Ivy Park 300 triệu",
+    "text": "Chính sách ký quỹ từ 1/8/2026: lần 1 nộp 300 triệu/nhà khi ký thoả thuận ký quỹ; lần 2 trong 10 ngày nộp đủ 10 % giá trị quyền sử dụng đất và thương mại (chưa VAT, đã gồm lần 1). Anh/chị đọc kỹ điều khoản hoàn tiền trước khi ký; chúng tôi đọc cùng."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Voucher trừ vào giá",
+    "value": "đến 30 %",
+    "note": "đến 31/12/2026, theo quỹ căn"
+   },
+   {
+    "label": "Hỗ trợ lãi suất 0 %",
+    "value": "36 tháng",
+    "note": "vay tối đa 70 %"
+   },
+   {
+    "label": "Không vay, trả sớm 15 ngày",
+    "value": "7,5 %",
+    "note": "chiết khấu trên giá trị đất và thương mại"
+   },
+   {
+    "label": "Ký quỹ Ivy Park",
+    "value": "300 triệu",
+    "note": "rồi đủ 10 % trong 10 ngày"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Lễ khởi công ngày 29/4/2026 tại xã Xuân Thới Sơn, trong nhóm công trình thành phố chọn khởi công dịp 30/4. Đầu tháng 5/2026, báo Thanh Niên ghi nhận công trường đã có xe chở vật liệu và trạm nghiền đá. Đến tháng 9/2026, trang bán hàng của chủ đầu tư ghi trạng thái **đang xây dựng**; mốc bàn giao cho 2 khu đang bán chưa được chủ đầu tư công bố — con số chúng tôi chưa có nguồn thì không ghi lên đây.",
+  "moc": [
+   {
+    "label": "Giao đất giai đoạn 1",
+    "value": "Quyết định 1426/QĐ-UBND ngày 12/3/2026, khoảng 826,7 ha"
+   },
+   {
+    "label": "Khởi công",
+    "value": "29/4/2026"
+   },
+   {
+    "label": "Văn phòng bán hàng, sa bàn",
+    "value": "Mở ngày 31/5/2026, cùng ngày công bố giá"
+   },
+   {
+    "label": "Chính sách đang áp dụng",
+    "value": "Từ 11/9/2026 đến khi có bản mới"
+   },
+   {
+    "label": "Bàn giao khu đang bán",
+    "value": "Chủ đầu tư chưa công bố; xem thời hạn ghi trong hợp đồng mẫu"
+   },
+   {
+    "label": "Vận hành toàn khu",
+    "value": "Đầu 2035 theo tiến độ 120 tháng của Quyết định 80/QĐ-TTg"
+   }
+  ],
+  "note": "Anh/chị muốn xem sa bàn và công trường, PaceLand hẹn lịch và đưa đón từ trung tâm; đi Quốc lộ 22 đúng giờ anh/chị hay đi làm để tự cảm nhận đường.",
+  "image": null
+ },
+ "viTri": {
+  "intro": "Dự án nằm ở góc tây bắc thành phố, mặt tiền Quốc lộ 22 (Xuyên Á), đường Tam Tân cắt ngang khu; phía đông nam là kênh An Hạ, phía tây là kênh ranh Tây Ninh. Vành đai 3 chạy cách ranh dự án **chừng 600 m** và cắt Quốc lộ 22 ngay tại Xuân Thới Sơn. Khoảng cách dưới đây chúng tôi đo bằng bản đồ đường bộ (OSRM) từ nút giao Quốc lộ 22 – Vành đai 3; thời gian đi phụ thuộc giờ — chủ đầu tư nêu 30–70 phút vào Quận 1 cũ tuỳ giờ.",
+  "khoangCach": [
+   {
+    "label": "Nút giao Quốc lộ 22 – Vành đai 3",
+    "value": "≈ 600 m"
+   },
+   {
+    "label": "Quốc lộ 22 (Xuyên Á)",
+    "value": "Mặt tiền"
+   },
+   {
+    "label": "Trung tâm thị trấn Hóc Môn cũ",
+    "value": "≈ 3,7 km"
+   },
+   {
+    "label": "Bệnh viện Đa khoa khu vực Hóc Môn",
+    "value": "≈ 4,6 km"
+   },
+   {
+    "label": "Khu công nghiệp Tân Phú Trung",
+    "value": "≈ 7 km"
+   },
+   {
+    "label": "Bến xe An Sương",
+    "value": "≈ 8,6 km theo Quốc lộ 22"
+   },
+   {
+    "label": "Depot Tham Lương — ga cuối metro số 2 giai đoạn 1 (dự kiến 2030)",
+    "value": "≈ 12 km"
+   },
+   {
+    "label": "Sân bay Tân Sơn Nhất (nhà ga T3)",
+    "value": "≈ 16 km · 30–40 phút theo chủ đầu tư"
+   },
+   {
+    "label": "Chợ Bến Thành, Quận 1 cũ",
+    "value": "≈ 22 km · 30–70 phút tuỳ giờ"
+   },
+   {
+    "label": "Cửa khẩu Mộc Bài",
+    "value": "≈ 52 km theo Quốc lộ 22"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Vành đai 3 cách 600 m, mốc mới cuối 2026",
+    "text": "Ban Giao thông TP.HCM đặt lộ trình: đến 30/9/2026 xong khoảng 30,5 km tuyến chính, đến 30/12/2026 xong khoảng 70,4 km tuyến chính và 75,5 km đường song hành. Đoạn Củ Chi – Hóc Môn – Bình Chánh đi chậm hơn đoạn Thủ Đức (tháng 4/2026 đạt khoảng 67 %). Anh/chị muốn kiểm tra thì đọc báo cáo tiến độ hằng tháng của Ban Giao thông, hoặc chúng chúng tôi gửi bài mới nhất."
+   },
+   {
+    "title": "Quốc lộ 22 mở 10 làn và cao tốc Mộc Bài",
+    "text": "Quốc lộ 22 đoạn An Sương – Vành đai 3 dài 8,7 km sẽ mở rộng 60 m, 10 làn, 7 cầu vượt, vốn khoảng 10.424 tỷ theo hợp đồng BOT, dự kiến khởi công quý III/2026 và xong năm 2028. Cao tốc TP.HCM – Mộc Bài 51 km, 4 làn, 120 km/h, điểm đầu nối Vành đai 3 ngay khu này; gói cầu vượt Tỉnh lộ 8 khởi công 19/12/2025, tuyến chính theo kế hoạch công bố tháng 5/2026 là khởi công tháng 7/2026, mặt bằng đến đầu tháng 9/2026 đạt 97,3 %. 2 mốc này còn đang chạy — PaceLand cập nhật khi có tin khởi công."
+   },
+   {
+    "title": "Metro số 2: ga trên bản vẽ là tuyến kéo dài",
+    "text": "Metro số 2 giai đoạn 1 Bến Thành – Tham Lương dài 11,3 km khởi công 15/1/2026, hoàn thành quý IV/2030, ga cuối ở Tân Bình – depot Tham Lương cách dự án khoảng 12 km. Ga metro vẽ trên tổng mặt bằng thuộc đoạn kéo dài Tham Lương – Củ Chi, mới có trong quy hoạch, chưa được đầu tư. Anh/chị tính chuyện đi metro thì tính từ năm 2030 và từ Tham Lương."
+   }
+  ],
+  "image": "assets/img/du-an/vinhomes-saigon-park-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Theo tổng mặt bằng tiện ích tháng 9/2026: quần thể đại học **150 ha** và 36 trường học các cấp; Vinmec 6,9 ha; Vincom Mega Mall 4,6 ha; Global Village 19,3 ha; Little Hong Kong 7,5 ha; VinWonders 22,7 ha; Botanica Park 27 ha; sân golf 36 hố 200 ha; hơn 70 công viên và 21 km đường dạo ven nước. Bản vẽ ghi rõ thông tin mang tính tương đối, có thể điều chỉnh theo quy hoạch — hạng mục nào đã xây PaceLand cập nhật khi thấy tận mắt.",
+  "items": [
+   "Quần thể đại học 150 ha",
+   "Quần thể đại học — góc nhìn từ kênh",
+   "Vườn hoa nhà kính 1,5 ha",
+   "Công viên rừng bách thảo Botanica Park 27 ha",
+   "Công viên nước VinWonders 22,7 ha",
+   "Khu trò chơi trẻ em trong VinWonders",
+   "Công viên Nhật Bản Kiyomi Park 10 ha",
+   "Công viên hồ sinh thái, đường dạo 21 km"
+  ]
+ },
+ "giaBan": {
+  "intro": "Giá tháng 9/2026 theo Vinhomes Market — kênh bán của chủ đầu tư: liền kề xây thô Global Park **từ 5,83 tỷ**, liền kề hoàn thiện từ 8,41 tỷ, liền kề giãn xây Ivy Park từ 6,03 tỷ; dãy đất 86,7–112 m² trên 12 tỷ. Giá gốc chưa gồm VAT và kinh phí bảo trì; giá theo từng dãy chúng chúng tôi gửi kèm sơ đồ.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "Liền kề xây thô · Global Park",
+    "dienTich": "50–112 m² đất, 145–247 m² sàn, 4 tầng",
+    "gia": "từ 5,83 tỷ",
+    "thanhToan": "30 % vốn tự có nếu vay 70 %, lãi 0 % tới 36 tháng"
+   },
+   {
+    "name": "Liền kề hoàn thiện · Global Park",
+    "dienTich": "60 m² đất, 186,7 m² sàn (dãy TL38)",
+    "gia": "từ 8,41 tỷ",
+    "thanhToan": "30 % vốn tự có nếu vay 70 %; trừ tới 22,5 % nếu không vay và trả sớm"
+   },
+   {
+    "name": "Liền kề giãn xây · Ivy Park",
+    "dienTich": "50–86,7 m² đất, 144–272 m² sàn",
+    "gia": "từ 6,03 tỷ",
+    "thanhToan": "ký quỹ 300 triệu, rồi trả phần đất và thương mại; phần xây trả sau"
+   }
+  ],
+  "note": "Giá gốc = giá trị quyền sử dụng đất + giá trị thương mại + giá trị xây dựng, chưa gồm VAT và kinh phí bảo trì. Chọn hỗ trợ lãi suất thì phải trả thêm theo mục V.2 của chính sách; không vay và trả sớm trong 15 ngày thì được chiết khấu 7,5 % trên giá trị đất và thương mại. Voucher đến 30 % trừ vào giá nhà theo quỹ căn. PaceLand tính con số cuối cho đúng căn anh/chị chọn trước khi anh/chị đặt ký quỹ."
+ },
+ "matBang": {
+  "intro": "Tổng mặt bằng tháng 9/2026 chia 5 khu, mỗi khu lấy cảm hứng 1 thành phố: **Ivy Park – Công viên Tri Thức** (Boston – Cambridge) ở cửa ngõ phía đông, có quần thể đại học 150 ha, 60 toà chung cư và ga metro số 2 quy hoạch; **Global Park – Công viên Quốc Tế** (Canary Wharf, London) ở giữa với Global Village, Little Hong Kong, Vincom Collection; **Laguna Park – Công viên Biển Xanh** (Barcelona) có VinWonders và Botanica Park; **Zen Park – Công viên Thiền** (Karuizawa) có Kiyomi Park 10 ha; **Golf Park** (Palm Beach) quanh sân golf 200 ha. Đường Tam Tân cắt ngang khu. Chủ đầu tư ghi bản vẽ mang tính tương đối.",
+  "diem": [
+   "5 khu, mỗi khu 1 chủ đề; 2 khu đang bán là Ivy Park và Global Park",
+   "Quần thể đại học 150 ha và 60 toà chung cư cao tầng đặt ở Ivy Park, cạnh nút giao Vành đai 3",
+   "Global Village 19,3 ha, Little Hong Kong 7,5 ha, Vincom Collection 6,5 ha, Saigon Fashion Town 2,3 ha nằm ở Global Park",
+   "Sân golf 36 hố 200 ha ở Golf Park; hơn 70 công viên và hơn 150 sân tennis, padel, pickleball rải khắp khu"
+  ],
+  "image": "assets/img/du-an/vinhomes-saigon-park-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "Liền kề 4 tầng",
+   "dienTich": "50–75 m² đất, sàn 145–247 m²",
+   "text": "Loại nhiều nhất trong 2 khu đang bán, có 3 cách mua: xây thô, hoàn thiện (Global Park) hoặc giãn xây (Ivy Park). Tầng trệt để ở hoặc mở cửa hàng; dãy mặt đường lớn thường được hỏi trước. Tài liệu bàn giao có bảng tiêu chuẩn hoàn thiện tối thiểu và danh mục đồ rời — chúng chúng tôi gửi bản PDF khi anh/chị chọn dãy."
+  },
+  {
+   "name": "Shophouse",
+   "dienTich": "Theo dãy mặt tiền trục thương mại",
+   "text": "Nhà phố ở các trục thương mại của Global Park — quanh Global Village, Little Hong Kong, Saigon Fashion Town — thiết kế để tầng trệt kinh doanh. Giỏ hàng shophouse mở theo đợt; diện tích và giá chúng tôi báo theo đợt đang có."
+  },
+  {
+   "name": "Biệt thự song lập và đơn lập",
+   "dienTich": "Song lập 144–180 m² đất, mặt tiền 8–9 m · đơn lập 216–240 m², mặt tiền 12 m",
+   "text": "Song lập 2 căn chung một vách, 4 tầng; đơn lập 4 mặt thoáng, 3–4 tầng. Quy hoạch có khoảng 552 biệt thự. Tháng 9/2026 chưa có trong giỏ hàng; thông số theo tài liệu loại hình của Vinhomes Market. Anh/chị cần thì chúng tôi ghi tên nhận thông tin khi mở bán."
+  },
+  {
+   "name": "Căn hộ chung cư",
+   "dienTich": "Quy hoạch 60 toà cao 12–22 tầng",
+   "text": "Đặt ở Ivy Park cạnh quần thể đại học, theo tổng mặt bằng. Chưa mở bán, chưa có giá; các con số giá căn hộ đang lan trên mạng chưa có trong tài liệu nào của chủ đầu tư, anh/chị đừng lấy làm căn cứ."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Những điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật có văn bản hoặc có nguồn, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Pháp lý đi từ Thủ tướng xuống tới giao đất",
+    "text": "Quyết định 80/QĐ-TTg ngày 13/1/2025 điều chỉnh chủ trương đầu tư; quy hoạch 1/500 duyệt ngày 31/1/2026 (Quyết định 273/QĐ-UBND); giao đất giai đoạn 1 khoảng 826,7 ha ngày 12/3/2026 (Quyết định 1426/QĐ-UBND). 3 văn bản này anh/chị yêu cầu xem bản chụp có số tại văn phòng bán hàng."
+   },
+   {
+    "title": "880 ha có gần một nửa là đất ở, 150 ha giáo dục",
+    "text": "Cơ cấu đất theo quy hoạch: đất ở **khoảng 436 ha**, giáo dục – nghiên cứu – dịch vụ khoảng 150 ha, cây xanh và mặt nước khoảng 117 ha. Nhà ở gồm cả 815 căn tái định cư và nhà ở xã hội, nên khu này sẽ có đủ tầng dân cư chứ không phải chỉ có nhà giá cao."
+   },
+   {
+    "title": "Liền kề 50 m² đất từ 5,83 tỷ trong một đô thị Vinhomes",
+    "text": "Con số này anh/chị sẽ muốn đặt cạnh Vinhomes Grand Park và các dự án khác ở Tây Bắc. So bằng giá trên hợp đồng sau khi trừ voucher và chiết khấu, không so bằng tin đồn; chúng tôi cầm bảng giá theo dãy của cả 2 khu để so cùng lúc cho anh/chị."
+   },
+   {
+    "title": "Hạ tầng có mốc rõ, kiểm chứng được",
+    "text": "Vành đai 3: mục tiêu 30/12/2026 xong 70,4 km tuyến chính. Quốc lộ 22 mở rộng: khởi công quý III/2026, xong 2028. Metro số 2 giai đoạn 1: quý IV/2030. Mốc nào trượt, chúng tôi ghi lại ở khối Vị trí — anh/chị đọc trang này là biết mốc nào còn đúng."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Trường học trong khu",
+    "text": "Quy hoạch **36 trường** các cấp gồm Vinschool, công lập và tư thục, cộng quần thể đại học 150 ha. Đến tháng 9/2026 chúng tôi chưa thấy trường nào trong khu vận hành; anh/chị hỏi mốc xây dựng cụ thể của trường và Vinmec trước khi tính chuyện chuyển trường cho con."
+   },
+   {
+    "title": "Công viên, golf, VinWonders",
+    "text": "Hơn 70 công viên, 21 km đường dạo ven nước, VinWonders 22,7 ha, Botanica Park 27 ha và sân golf 36 hố theo tổng mặt bằng. Đô thị 880 ha xây tới năm 2035, nên cư dân về sớm sẽ sống cạnh công trường một thời gian — anh/chị tính trước chuyện bụi và xe tải."
+   },
+   {
+    "title": "Đi lại",
+    "text": "Đường về trung tâm hiện đi Quốc lộ 22 – Trường Chinh, 30–70 phút tuỳ giờ theo chủ đầu tư. Anh/chị đi thử một buổi sáng giờ cao điểm trước khi quyết; Vành đai 3 và Quốc lộ 22 mở rộng là 2 mốc thay đổi cách đi lại từ cuối 2026 trở đi."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý của Khu đô thị Đại học Quốc tế theo các văn bản đã được công bố trên báo và cổng thông tin thành phố:",
+  "items": [
+   "Giấy chứng nhận đầu tư tháng 7/2008 do UBND TP.HCM cấp cho Berjaya Việt Nam (khi đó khoảng 925 ha, xã Tân Thới Nhì)",
+   "Quyết định 1927/QĐ-UBND ngày 12/4/2012 của UBND TP.HCM duyệt quy hoạch chi tiết 1/2000 Khu đô thị Đại học Quốc tế Việt Nam",
+   "Quyết định 80/QĐ-TTg ngày 13/1/2025 của Thủ tướng chấp thuận điều chỉnh chủ trương đầu tư: 880 ha, tổng vốn khoảng 59.000 tỷ đồng, hoàn thành trong 120 tháng",
+   "UBND TP.HCM duyệt nhiệm vụ quy hoạch phân khu 1/2000 ngày 12/12/2025 (880 ha, 135.000 dân, 60.000 sinh viên)",
+   "Quyết định 273/QĐ-UBND ngày 31/1/2026 của UBND xã Xuân Thới Sơn phê duyệt quy hoạch chi tiết 1/500",
+   "Quyết định 1426/QĐ-UBND ngày 12/3/2026 của UBND TP.HCM giao đất giai đoạn 1 (khoảng 826,7 ha) cho chủ đầu tư",
+   "Vinhomes nhận chuyển nhượng cổ phần, đưa Công ty CP Đô thị Đại học Quốc tế Berjaya Việt Nam thành công ty con — công bố ngày 29/5/2026"
+  ],
+  "note": "Trước khi ký quỹ hay đặt cọc, anh/chị yêu cầu xem bản chụp có số của: quyết định giao đất 1426/QĐ-UBND; văn bản của Sở Xây dựng xác nhận đủ điều kiện huy động vốn hoặc bán nhà ở hình thành trong tương lai cho đúng khu mình mua; chứng thư bảo lãnh ngân hàng nếu ký hợp đồng mua bán. Đọc kỹ tên tài liệu mình ký — thoả thuận ký quỹ, thoả thuận đặt cọc hay hợp đồng mua bán có quyền và nghĩa vụ khác nhau. Người nước ngoài chỉ được ký hợp đồng thuê tại dự án này, theo chính sách bán hàng. PaceLand đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Vinhomes",
+  "text": "Vinhomes (mã chứng khoán VHM) là công ty phát triển nhà ở của Vingroup; quý I/2026 doanh thu 65.114 tỷ đồng, lãi sau thuế 25.625 tỷ đồng, tổng tài sản **869.975 tỷ đồng**. Pháp nhân đứng tên dự án là Công ty CP Đô thị Đại học Quốc tế Berjaya Việt Nam — Vinhomes mua lại từ Tập đoàn Berjaya (Malaysia) năm 2018 và đưa thành công ty con từ tháng 5/2026; VinCons là đơn vị phát triển và thi công. Ở TP.HCM, Vinhomes đã bàn giao Vinhomes Central Park (Bình Thạnh cũ), Vinhomes Golden River (Quận 1 cũ) và Vinhomes Grand Park (Thủ Đức); ở Hà Nội có Vinhomes Ocean Park — nơi đặt trường VinUni, mô hình đô thị đại học mà Saigon Park nhắc tới. Trường, bệnh viện, trung tâm thương mại trong khu do Vinschool, Vinmec, Vincom cùng tập đoàn vận hành.",
+  "daBanGiao": [
+   "Vinhomes Grand Park (Thủ Đức)",
+   "Vinhomes Ocean Park (Hà Nội)"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Vinhomes Saigon Park giá bao nhiêu?",
+   "a": "Theo Vinhomes Market tháng 9/2026, liền kề Vinhomes Saigon Park có giá từ 5,83 tỷ với căn xây thô 50 m² đất ở Global Park, từ 8,41 tỷ với căn hoàn thiện 60 m² đất, và từ 6,03 tỷ với căn giãn xây 50 m² đất ở Ivy Park; dãy đất 86,7–112 m² trên 12 tỷ. Giá gốc chưa gồm VAT và kinh phí bảo trì; voucher đến 30 % và chiết khấu trả sớm trừ thẳng vào giá."
+  },
+  {
+   "q": "Vinhomes Saigon Park ở đâu, thuộc xã nào?",
+   "a": "Vinhomes Saigon Park nằm ở xã Xuân Thới Sơn, TP.HCM — xã mới gộp Tân Thới Nhì, Xuân Thới Đông và Xuân Thới Sơn của huyện Hóc Môn cũ — mặt tiền Quốc lộ 22, cách nút giao Vành đai 3 khoảng 600 m, cách chợ Bến Thành khoảng 22 km đường bộ và sân bay Tân Sơn Nhất khoảng 16 km."
+  },
+  {
+   "q": "Vinhomes Saigon Park đã có pháp lý gì?",
+   "a": "Dự án Vinhomes Saigon Park (tên pháp lý Khu đô thị Đại học Quốc tế) có Quyết định 80/QĐ-TTg ngày 13/1/2025 điều chỉnh chủ trương đầu tư, quy hoạch chi tiết 1/500 duyệt ngày 31/1/2026 và quyết định giao đất giai đoạn 1 ngày 12/3/2026; chủ đầu tư là Công ty CP Đô thị Đại học Quốc tế Berjaya Việt Nam, công ty con của Vinhomes. Văn bản đủ điều kiện bán của Sở Xây dựng cho khu đang bán anh/chị yêu cầu xem bản chụp trước khi đặt cọc."
+  },
+  {
+   "q": "Mua Vinhomes Saigon Park cần bao nhiêu tiền ban đầu?",
+   "a": "Với liền kề giãn xây Ivy Park của Vinhomes Saigon Park, ký quỹ lần 1 là 300 triệu/nhà, trong 10 ngày nộp đủ 10 % giá trị quyền sử dụng đất và thương mại. Sau đó anh/chị vay ngân hàng tối đa 70 % với chủ đầu tư hỗ trợ lãi suất 0 % tối đa 36 tháng, hoặc không vay và trả sớm trong 15 ngày để được chiết khấu 7,5 %; voucher đến 30 % giá trị nhà áp dụng đến 31/12/2026."
+  }
+ ]
+}

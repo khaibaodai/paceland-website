@@ -1,0 +1,417 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "Palm River là phân khu căn hộ ven sông của khu đô thị Palm City — khoảng 30 ha, gần 3 km mặt sông Giồng Ông Tố — tại Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ). Pháp nhân chủ đầu tư là Công ty TNHH Nam Rạch Chiếc; đơn vị phát triển là Hướng Việt Properties thuộc Hướng Việt Holdings. Trên quỹ đất 1,9 ha dựng 4 tháp 36 tầng nổi với 2 tầng hầm liên thông, **khoảng 620 căn** từ studio tới penthouse; mỗi tầng 4–6 căn, căn nào cũng 2 mặt thoáng và khoảng 80 % là căn góc. Khởi công 16/6/2026, ra mắt 12/8/2026, bàn giao dự kiến quý I/2029.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Palm River — Khu nhà ở chung cư cao tầng kết hợp thương mại – dịch vụ 3, Palm City"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Công ty TNHH Nam Rạch Chiếc (pháp nhân) · Hướng Việt Properties thuộc Hướng Việt Holdings (đơn vị phát triển)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Nam Rạch Chiếc, phường Bình Trưng, TP.HCM — mặt tiền đường Song Hành, An Phú, Quận 2 cũ"
+   },
+   {
+    "label": "Khu đô thị",
+    "value": "Palm City, khoảng 30 ha, gần 3 km mặt sông Giồng Ông Tố"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Căn hộ studio, 1–3 phòng ngủ, duplex, penthouse; shophouse và officetel ở khối đế"
+   },
+   {
+    "label": "Quỹ đất",
+    "value": "1,9 ha (18.909,8 m²)"
+   },
+   {
+    "label": "Quy mô",
+    "value": "4 tháp T1–T4, 36 tầng nổi, 2 tầng hầm liên thông"
+   },
+   {
+    "label": "Số căn",
+    "value": "Khoảng 620 căn hộ"
+   },
+   {
+    "label": "Diện tích căn",
+    "value": "Từ 34,86 m² tới hơn 300 m²"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "Khoảng 40 % (khối đế 40 %, khối tháp 25 %); khoảng 60 % diện tích cho cây xanh, mặt nước và không gian chung"
+   },
+   {
+    "label": "Tổng diện tích sàn",
+    "value": "Khoảng 152.817,9 m², gồm 2 tầng hầm"
+   },
+   {
+    "label": "Bố trí tầng",
+    "value": "4–6 căn mỗi tầng, 4–5 thang máy mỗi tháp"
+   },
+   {
+    "label": "Đỗ xe",
+    "value": "1 ô tô mỗi căn hộ, 2 tầng hầm liên thông"
+   },
+   {
+    "label": "Dân số dự kiến",
+    "value": "2.479 người"
+   },
+   {
+    "label": "Tiện ích",
+    "value": "Hơn 68 tiện ích trong phân khu, hơn 100 tiện ích của Palm City"
+   },
+   {
+    "label": "Đơn vị tư vấn",
+    "value": "DPA, Dark Horse, LJ-Group, Ardor Green, Core"
+   },
+   {
+    "label": "Khởi công",
+    "value": "16/6/2026"
+   },
+   {
+    "label": "Ra mắt",
+    "value": "12/8/2026"
+   },
+   {
+    "label": "Bàn giao dự kiến",
+    "value": "Quý I/2029"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Quỹ đất",
+    "value": "1,9 ha",
+    "note": "dải tiếp giáp sông dài nhất Palm City"
+   },
+   {
+    "label": "Quy mô",
+    "value": "4 tháp",
+    "note": "36 tầng nổi, 2 tầng hầm liên thông"
+   },
+   {
+    "label": "Số căn",
+    "value": "≈ 620",
+    "note": "4–6 căn một tầng, khoảng 80 % căn góc"
+   },
+   {
+    "label": "Tiện ích",
+    "value": "68+",
+    "note": "tầng trệt, tầng 1, tầng 2 và tầng 20"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Đợt bán sau lễ ra mắt 12/8/2026 — giá từ 168 triệu/m² thông thuỷ",
+  "subtitle": "4 phương án thanh toán, chiết khấu 6,5–13 % tuỳ phương án; 3 phương án đầu chỉ cần 10 % để ký hợp đồng. Early Birds giai đoạn 2 còn hạn tới 30/9/2026.",
+  "capNhat": "Chính sách bán hàng tháng 9/2026",
+  "gioHang": [
+   "Studio: 35–45,8 m², giá từ 5,8 tỷ",
+   "1 phòng ngủ: 55,8–65,9 m², từ 9,3 tỷ",
+   "2 phòng ngủ: 75,8–120,2 m², từ 12,7 tỷ",
+   "3 phòng ngủ: 115,2–157,0 m², từ 19,3 tỷ",
+   "Duplex, penthouse tới hơn 300 m²; shophouse và officetel ở khối đế — báo giá theo từng căn"
+  ],
+  "lyDo": [
+   {
+    "title": "Mỗi tầng 4–6 căn, căn nào cũng 2 mặt thoáng",
+    "text": "4 tháp xếp 4–6 căn quanh lõi thang nên mọi căn đều có 2 mặt thoáng; **khoảng 80 %** là căn góc với dải kính cong liền mạch dài khoảng 2,8 m. Trần thông thuỷ 3 m, tường ngăn giữa 2 căn dày khoảng 200 mm, cửa chính 2 cánh rộng 1,6 m chống cháy 60 phút."
+   },
+   {
+    "title": "4 phương án thanh toán, chọn theo túi tiền",
+    "text": "- **Chuẩn**: 10 % lúc ký, đủ 70 % giãn theo tiến độ trong 26 tháng, 25 % khi bàn giao, 5 % khi nhận giấy chứng nhận; chiết khấu đến 11 %.\n- **Đặc biệt**: 10 % lúc ký, 15 tháng đầu không trả thêm, đủ 30 % trước khi nhận nhà, 65 % khi bàn giao; chiết khấu đến 6,5 %.\n- **Vay ngân hàng**: 10 % vốn tự có, vay tới 75 %, hỗ trợ lãi suất 24 tháng, ân hạn nợ gốc 36–60 tháng.\n- **Nhanh**: 70 % ở đợt ký hợp đồng, 25 % khi bàn giao; chiết khấu 13 %.\n\nPaceLand lập bảng dòng tiền cho đúng căn anh/chị chọn trước khi anh/chị quyết."
+   },
+   {
+    "title": "Chiết khấu cộng thêm có hạn ngày",
+    "text": "Early Birds giai đoạn 2 từ 1/9 đến 30/9/2026: **0,5 %**; khách hàng thân thiết theo danh sách của chủ đầu tư (Palm City, TAS, OCB, Hướng Việt) thêm 1 %. Mua từ 2 căn thêm 0,5 %, từ 3 căn 1 %, từ 5 căn 1,5 %. Giá từ 168 triệu/m² là giá chưa trừ các khoản này; điều kiện từng khoản chúng tôi đọc cùng anh/chị trên bản chính sách."
+   },
+   {
+    "title": "Giá đã gồm VAT và phí bảo trì, tính trên thông thuỷ",
+    "text": "**168 triệu/m²** là giá trên diện tích thông thuỷ, đã gồm VAT và phí bảo trì. Khi so với dự án khác — nhiều nơi báo giá tim tường, chưa VAT — anh/chị quy về cùng một cách tính rồi mới so; chúng tôi làm sẵn bảng quy đổi cho từng căn."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Ký hợp đồng",
+    "value": "10 %",
+    "note": "phương án chuẩn, đặc biệt và vay; thanh toán nhanh 70 %"
+   },
+   {
+    "label": "Trước khi nhận nhà",
+    "value": "30 %",
+    "note": "phương án đặc biệt, 15 tháng đầu không trả thêm"
+   },
+   {
+    "label": "Chiết khấu",
+    "value": "6,5–13 %",
+    "note": "tuỳ phương án; Early Birds giai đoạn 2 thêm 0,5 % đến 30/9/2026"
+   },
+   {
+    "label": "Vay ngân hàng",
+    "value": "đến 75 %",
+    "note": "hỗ trợ lãi suất 24 tháng, ân hạn nợ gốc 36–60 tháng"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Palm River khởi công ngày 16/6/2026; ngày 12/8/2026 chủ đầu tư làm lễ ra mắt và công bố 32 đối tác phân phối. Chủ đầu tư đặt mốc hoàn thành và bàn giao trong **quý I/2029**. Đến giữa tháng 9/2026 chúng tôi chưa có ảnh công trường mới hơn lễ khởi công — anh/chị muốn xem thực tế thì chúng tôi đưa đi. Nhà mẫu căn 2 và 3 phòng ngủ: phòng khách, phòng ăn và phòng ngủ cao thông thuỷ 3 m, cửa chính 2 cánh rộng 1,6 m, hệ kính góc cong ở căn góc.",
+  "moc": [
+   {
+    "label": "Hướng Việt tiếp nhận Palm City",
+    "value": "Tháng 3/2025"
+   },
+   {
+    "label": "Khởi công",
+    "value": "16/6/2026"
+   },
+   {
+    "label": "Lễ ra mắt, công bố 32 đối tác phân phối",
+    "value": "12/8/2026"
+   },
+   {
+    "label": "Early Birds giai đoạn 2",
+    "value": "Đến 30/9/2026"
+   },
+   {
+    "label": "Nhà mẫu",
+    "value": "Căn 2 và 3 phòng ngủ, xem theo lịch hẹn"
+   },
+   {
+    "label": "Bàn giao dự kiến",
+    "value": "Quý I/2029 (theo chủ đầu tư)"
+   }
+  ],
+  "note": "Anh/chị muốn xem nhà mẫu và công trường, PaceLand hẹn lịch và đưa đón từ trung tâm; đi xem không mất phí.",
+  "image": "assets/img/du-an/palm-city-tien-do.jpg"
+ },
+ "viTri": {
+  "intro": "Palm River nằm ở dải ven sông của Palm City, khu Nam Rạch Chiếc, phường Bình Trưng: một phía là khúc cong sông Giồng Ông Tố, phía kia là đường Song Hành và cao tốc TP.HCM – Long Thành – Dầu Giây, cách vòng xoay An Phú vài phút. Khu đô thị đã có cư dân từ năm 2017, có trường quốc tế và công viên ven sông đang hoạt động; sát bên là The Global City và nút giao An Phú. Thời gian dưới đây là ước tính vào giờ thường; công trình đang trong quy hoạch ghi kèm.",
+  "khoangCach": [
+   {
+    "label": "Nút giao An Phú",
+    "value": "3 phút"
+   },
+   {
+    "label": "Cao tốc TP.HCM – Long Thành – Dầu Giây",
+    "value": "3 phút"
+   },
+   {
+    "label": "Ga Bình Trưng, metro Thủ Thiêm – Long Thành (theo quy hoạch)",
+    "value": "1–3 phút"
+   },
+   {
+    "label": "Ga metro Thủ Thiêm (theo quy hoạch)",
+    "value": "5 phút"
+   },
+   {
+    "label": "Khu liên hợp thể thao Rạch Chiếc (theo quy hoạch)",
+    "value": "5 phút"
+   },
+   {
+    "label": "Trung tâm Tài chính Quốc tế Thủ Thiêm (theo quy hoạch)",
+    "value": "10 phút"
+   },
+   {
+    "label": "Trung tâm hành chính mới TP.HCM (đang xây)",
+    "value": "10 phút"
+   },
+   {
+    "label": "Khu trung tâm Quận 1 cũ",
+    "value": "12 phút"
+   },
+   {
+    "label": "Thiso Mall",
+    "value": "10 phút"
+   },
+   {
+    "label": "Vincom Mega Mall, Estella Place",
+    "value": "12 phút"
+   },
+   {
+    "label": "Trường quốc tế TAS · AIS · BIS",
+    "value": "3 · 7 · 17 phút"
+   },
+   {
+    "label": "Bệnh viện Quốc tế Mỹ (AIH)",
+    "value": "8 phút"
+   },
+   {
+    "label": "Sân bay quốc tế Long Thành (dự kiến)",
+    "value": "30 phút"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Sát nút giao An Phú và cao tốc Long Thành",
+    "text": "Từ đường Song Hành ra vòng xoay An Phú **khoảng 3 phút**; qua nút giao là Mai Chí Thọ vào Thủ Thiêm và hầm Thủ Thiêm về Quận 1 cũ, hoặc lên cao tốc đi Long Thành, Đồng Nai. Nút giao 3 tầng đang xây; chúng tôi viết riêng về hạ tầng khu này ở [bài về nút giao An Phú](/blog/nut-giao-an-phu-thay-doi-gi-cho-khu-dong)."
+   },
+   {
+    "title": "2 ga metro theo quy hoạch ngay cạnh",
+    "text": "Tuyến đường sắt Thủ Thiêm – Long Thành theo quy hoạch có ga Bình Trưng cách dự án 1–3 phút và ga Thủ Thiêm 5 phút. Cả 2 đang ở bước quy hoạch; anh/chị tính chuyện đi lại theo hiện trạng đường bộ, phần metro coi là cộng thêm khi thành hình."
+   },
+   {
+    "title": "Khu đô thị đã có người ở từ năm 2017",
+    "text": "Palm City không phải khu đất trống: Palm Residence bàn giao năm 2017, Palm Heights năm 2019, trường quốc tế và công viên ven sông đã hoạt động. Palm River là phân khu có mặt tiếp giáp sông dài nhất trong gần 3 km mặt sông của khu."
+   }
+  ],
+  "image": "assets/img/du-an/palm-city-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "**Hơn 68 tiện ích** trong phân khu theo định hướng chăm sóc sức khoẻ, đặt ở tầng trệt, tầng 1, tầng 2 và tầng 20 liên thông cả 4 tháp; cộng hơn 100 tiện ích của Palm City gồm trung tâm thương mại 1,8 ha, trường quốc tế 3 ha, bệnh viện quốc tế 1 ha (theo quy hoạch) và công viên ven sông. 6 tiện ích chúng tôi chọn từ tài liệu dự án:",
+  "items": [
+   "Hồ bơi vô cực tầng 20",
+   "Sảnh đón với thang xoắn quanh cây xanh",
+   "Vườn trên cao và khu BBQ tầng 20",
+   "Sân chơi trẻ em",
+   "Hồ bơi lớn của Palm City",
+   "Đường dạo ven sông Giồng Ông Tố"
+  ]
+ },
+ "giaBan": {
+  "intro": "Bảng giá tháng 9/2026: **từ 168 triệu/m² thông thuỷ**, đã gồm VAT và phí bảo trì, chưa trừ chiết khấu. Con số dưới đây là giá từ của mỗi loại căn theo tài liệu bán hàng; giá từng căn theo tầng, hướng và vị trí chúng chúng tôi gửi kèm sơ đồ căn còn trống.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "Studio",
+    "dienTich": "35–45,8 m²",
+    "gia": "từ 5,8 tỷ",
+    "thanhToan": "≈ 1,74 tỷ (30 %) theo phương án đặc biệt"
+   },
+   {
+    "name": "1 phòng ngủ",
+    "dienTich": "55,8–65,9 m²",
+    "gia": "từ 9,3 tỷ",
+    "thanhToan": "≈ 2,79 tỷ (30 %) theo phương án đặc biệt"
+   },
+   {
+    "name": "2 phòng ngủ",
+    "dienTich": "75,8–120,2 m²",
+    "gia": "từ 12,7 tỷ",
+    "thanhToan": "≈ 3,81 tỷ (30 %) theo phương án đặc biệt"
+   },
+   {
+    "name": "3 phòng ngủ",
+    "dienTich": "115,2–157,0 m²",
+    "gia": "từ 19,3 tỷ",
+    "thanhToan": "≈ 5,79 tỷ (30 %) theo phương án đặc biệt"
+   }
+  ],
+  "note": "Giá đã gồm VAT và phí bảo trì, tính trên diện tích thông thuỷ. Chiết khấu theo phương án thanh toán (6,5–13 %) và Early Birds trừ thẳng vào giá, nên số cuối của một căn thấp hơn bảng trên. Khoản \"đến khi nhận nhà\" ghi theo phương án đặc biệt (10 % lúc ký, đủ 30 % trước bàn giao); phương án chuẩn trả 70 % theo tiến độ. Số tiền từng đợt, vốn cần có trước khi nhận nhà và khoản vay cho đúng căn anh/chị chọn: dùng [công cụ tính dòng tiền](#tinh-dong-tien) ngay bên dưới."
+ },
+ "matBang": {
+  "intro": "Tổng mặt bằng Palm River mở về phía sông: 4 tháp bố trí giãn cách để giữ tầm nhìn sông và giảm che chắn giữa các tháp; khối đế gom shophouse, sảnh đón và tiện ích; 2 tầng hầm liên thông đỗ xe theo tỷ lệ **1 ô tô mỗi căn**; giao thông nội khu tách luồng xe và người đi bộ. Mặt bằng chi tiết từng tầng của cả 4 tháp chúng chúng tôi gửi bản PDF khi anh/chị chọn tháp.",
+  "diem": [
+   "4–6 căn một tầng quanh lõi thang, mọi căn 2 mặt thoáng",
+   "4–5 thang máy mỗi tháp",
+   "Tầng 20 là tầng tiện ích chung của cả 4 tháp",
+   "Mỗi căn trên mặt bằng ghi 2 con số: diện tích tim tường và diện tích thông thuỷ",
+   "Tháp 1 có thêm phòng kho trong căn hộ"
+  ],
+  "image": "assets/img/du-an/palm-city-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "Studio",
+   "dienTich": "35–41,3 m² thông thuỷ · tới 45,8 m² tim tường",
+   "text": "1 phòng liền có giường, sofa, bếp nhỏ dọc tường, phòng tắm ở góc. Loại nhỏ nhất dự án, từ 34,86 m²; hợp người ở một mình hoặc mua cho chuyên gia làm việc ở Thủ Thiêm thuê. Giá **từ 5,8 tỷ**."
+  },
+  {
+   "name": "1 phòng ngủ",
+   "dienTich": "55,8 m² thông thuỷ · 65,9 m² tim tường",
+   "text": "Phòng ngủ tách riêng, phòng khách liền bếp, 1 phòng tắm, ban công cong ở góc. Giá **từ 9,3 tỷ**; giá dự kiến căn 65,9 m² tim tường khoảng 11,07 tỷ."
+  },
+  {
+   "name": "2 phòng ngủ",
+   "dienTich": "75,8–111,7 m² thông thuỷ · 84,9–121,9 m² tim tường",
+   "text": "3 bản: 2PN góc 75,8 m², 2PN 76,9 m² và 2PN đặc biệt 110,9–111,7 m² thông thuỷ. 2 phòng ngủ, 2 phòng tắm, phòng khách liền bếp và bàn ăn, cửa kính cong ở góc; gia đình 3–4 người ở vừa. Giá **từ 12,7 tỷ**; bản đặc biệt dự kiến 18,63–20,19 tỷ."
+  },
+  {
+   "name": "3 phòng ngủ",
+   "dienTich": "115,0–146,3 m² thông thuỷ · 125,3–157,0 m² tim tường",
+   "text": "3 bản: 3PN 115,0–115,2 m², 3PN góc 115,3 m² và 3PN đặc biệt 146,3 m² thông thuỷ. 3 phòng ngủ xếp dọc 1 cạnh, phòng khách rộng liền bếp, mặt kính dài; hợp gia đình nhiều thế hệ hoặc nhà cần một phòng làm việc riêng. Giá **từ 19,3 tỷ**; bản đặc biệt dự kiến khoảng 26,38 tỷ."
+  },
+  {
+   "name": "Duplex · Penthouse",
+   "dienTich": "tới hơn 300 m²",
+   "text": "Căn 2 tầng và căn tầng trên cùng, diện tích tới **hơn 300 m²**. Số lượng ít, mở theo từng đợt, không có trong giỏ hàng thường xuyên; giá báo theo từng căn. Tháp 1 có thêm phòng kho trong căn hộ."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Những điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Khu đô thị đã vận hành gần 10 năm",
+    "text": "Palm City có cư dân từ năm 2017 (Palm Residence, 135 nhà phố) và 2019 (Palm Heights, 816 căn hộ); trường quốc tế và công viên ven sông đang hoạt động. Anh/chị đến xem là thấy khu đang sống thế nào, không phải hình dung từ phối cảnh."
+   },
+   {
+    "title": "Dải tiếp giáp sông dài nhất trong gần 3 km mặt sông",
+    "text": "Palm City có **gần 3 km** mặt sông Giồng Ông Tố; Palm River là phân khu có mặt tiếp giáp sông dài nhất, theo Tuổi Trẻ ngày 13/8/2026. 4 tháp bố trí giãn cách để giữ tầm nhìn sông, tầng 2 và tầng 20 có đài ngắm sông."
+   },
+   {
+    "title": "Mỗi tầng 4–6 căn, khoảng 80 % căn góc",
+    "text": "4–6 căn một tầng với 4–5 thang máy mỗi tháp; mọi căn 2 mặt thoáng, **khoảng 80 %** là căn góc có dải kính cong dài khoảng 2,8 m, trần thông thuỷ 3 m. Anh/chị kiểm số căn một tầng ngay trên mặt bằng tầng điển hình ở trên."
+   },
+   {
+    "title": "Quy hoạch 1/500 đã duyệt, miễn giấy phép xây dựng",
+    "text": "Theo đại diện Công ty Nam Rạch Chiếc trả lời VnExpress ngày 28/6/2026, phân khu Palm River thuộc trường hợp miễn giấy phép xây dựng theo quy định và đã có quy hoạch chi tiết 1/500 được duyệt. Đến 15/9/2026 chúng tôi chưa thấy chủ đầu tư công bố chứng thư bảo lãnh ngân hàng và văn bản đủ điều kiện bán của Sở Xây dựng — anh/chị yêu cầu xem 2 giấy này trước khi đặt cọc, chúng tôi hỏi cùng."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Sông và công viên ngay dưới nhà",
+    "text": "Công viên và đường dạo ven sông Giồng Ông Tố của Palm City đã hoạt động. Trong phân khu, tầng 1 có hồ bơi **70 m** và vườn thác nước; tầng 20 có hồ bơi vô cực, onsen, vườn trên cao và khu BBQ nhìn ra sông."
+   },
+   {
+    "title": "Trường, bệnh viện, mua sắm",
+    "text": "Trong Palm City có trường quốc tế đang hoạt động và quỹ đất 3 ha cho giáo dục, 1 ha cho bệnh viện (theo quy hoạch). Ngoài khu: TAS 3 phút, AIS 7 phút, Bệnh viện Quốc tế Mỹ 8 phút, Thiso Mall 10 phút."
+   },
+   {
+    "title": "Đi lại",
+    "text": "Ra nút giao An Phú 3 phút để lên cao tốc Long Thành hoặc theo Mai Chí Thọ vào Thủ Thiêm và Quận 1 cũ. Giờ cao điểm Mai Chí Thọ và đường Song Hành đông; anh/chị đi thử một buổi sáng trước khi quyết."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý theo công bố của chủ đầu tư trên báo chí, đến ngày 15/9/2026:",
+  "items": [
+   "Quy hoạch chi tiết tỷ lệ 1/500 của phân khu đã được cơ quan có thẩm quyền phê duyệt (đại diện Công ty Nam Rạch Chiếc trả lời VnExpress ngày 28/6/2026)",
+   "Phân khu thuộc trường hợp được miễn giấy phép xây dựng theo quy định (cùng nguồn)",
+   "Pháp nhân chủ đầu tư: Công ty TNHH Nam Rạch Chiếc; đơn vị phát triển: Hướng Việt Properties thuộc Hướng Việt Holdings",
+   "Hình thức sở hữu: lâu dài với người Việt, 50 năm với người nước ngoài",
+   "Khởi công 16/6/2026; lễ ra mắt và công bố đối tác phân phối 12/8/2026"
+  ],
+  "note": "Anh/chị yêu cầu xem bản gốc: quyết định duyệt quy hoạch 1/500, giấy tờ đất, hợp đồng mua bán mẫu, chứng thư bảo lãnh ngân hàng và văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của Sở Xây dựng cho đúng tháp mình mua. 2 văn bản sau cùng PaceLand chưa thấy chủ đầu tư công bố đến 15/9/2026 — chúng tôi hỏi và đọc cùng anh/chị khi làm việc trực tiếp."
+ },
+ "chuDauTu": {
+  "ten": "Hướng Việt Properties",
+  "text": "Pháp nhân chủ đầu tư Palm City là Công ty TNHH Nam Rạch Chiếc. Đơn vị phát triển từ năm 2025 là **Hướng Việt Properties** thuộc Hướng Việt Holdings, ra mắt thương hiệu ngày 28/3/2026; các công trình đã tham gia gồm tháp văn phòng The Hallmark tại Thủ Thiêm (chuẩn xanh BCA Green Mark, WiredScore Platinum), toà nhà The West tại Hà Nội, khu đô thị LA Home 100 ha tại Long An, cùng hợp tác tại The Metropole Thủ Thiêm và Serenity Sky Villas.\n\nPalm City được Keppel Land phát triển 2 giai đoạn đầu: Palm Residence bàn giao năm 2017, Palm Heights năm 2019 — 2 phân khu trong ảnh dưới. Cuối tháng 3/2025, CTCP Gateway Thủ Thiêm thuộc nhóm Hướng Việt mua lại phần vốn của Keppel tại Nam Rạch Chiếc (TheLeader ngày 9/4/2025); Palm River là phân khu đầu tiên của giai đoạn mới, sau đó là Palm Era và Palm Eden.",
+  "daBanGiao": [
+   "Palm Residence — Keppel Land bàn giao 2017",
+   "Palm Heights — Keppel Land bàn giao 2019"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Palm River ở đâu, quy mô bao nhiêu và khi nào bàn giao?",
+   "a": "Palm River là phân khu căn hộ ven sông trong khu đô thị Palm City tại Nam Rạch Chiếc, phường Bình Trưng (An Phú, Quận 2 cũ), TP.HCM. Dự án xây trên quỹ đất 1,9 ha, gồm 4 tháp cao 36 tầng nổi và 2 tầng hầm, khoảng 620 căn hộ diện tích từ 34,86 m² tới hơn 300 m², mỗi tầng 4–6 căn. Khởi công ngày 16/6/2026, ra mắt ngày 12/8/2026, dự kiến bàn giao quý I/2029."
+  },
+  {
+   "q": "Palm River giá bao nhiêu?",
+   "a": "Palm River chào giá đợt tháng 9/2026 từ 168 triệu đồng mỗi m² thông thuỷ, đã gồm VAT và phí bảo trì, chưa trừ chiết khấu: studio từ 5,8 tỷ, 1 phòng ngủ từ 9,3 tỷ, 2 phòng ngủ từ 12,7 tỷ, 3 phòng ngủ từ 19,3 tỷ. Chiết khấu theo phương án thanh toán 6,5–13 %, cộng Early Birds 0,5 % đến 30/9/2026, khách hàng thân thiết thêm 1 % và ưu đãi mua nhiều căn. Bảng giá gốc theo từng căn và chính sách đợt mới nhất chúng chúng tôi gửi khi anh/chị liên hệ."
+  },
+  {
+   "q": "Pháp lý và tiến độ Palm River đang thế nào?",
+   "a": "Theo đại diện Công ty Nam Rạch Chiếc trả lời VnExpress ngày 28/6/2026, phân khu Palm River được miễn giấy phép xây dựng và đã có quy hoạch chi tiết tỷ lệ 1/500 được duyệt. Dự án khởi công ngày 16/6/2026, làm lễ ra mắt ngày 12/8/2026 và dự kiến hoàn thành, bàn giao trong quý I/2029. Chứng thư bảo lãnh ngân hàng và văn bản đủ điều kiện bán của Sở Xây dựng anh/chị yêu cầu xem bản gốc trước khi đặt cọc; chúng tôi đi cùng và đọc giúp."
+  },
+  {
+   "q": "Chủ đầu tư Palm River là ai?",
+   "a": "Pháp nhân chủ đầu tư Palm River là Công ty TNHH Nam Rạch Chiếc; đơn vị phát triển là Hướng Việt Properties thuộc Hướng Việt Holdings. Palm City được Keppel Land phát triển 2 giai đoạn đầu với Palm Residence bàn giao năm 2017 và Palm Heights năm 2019; từ tháng 3/2025 nhóm Hướng Việt tiếp nhận, và Palm River là phân khu đầu tiên của giai đoạn phát triển mới."
+  }
+ ]
+}

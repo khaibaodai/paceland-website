@@ -1,0 +1,401 @@
+{
+ "capNhat": "2026-09-17",
+ "tongQuan": {
+  "intro": "Blanca City là tên thương mại của **Dự án Khu đô thị Đường 3 Tháng 2**, TP Vũng Tàu cũ, do Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu — công ty thành viên Sun Group — làm chủ đầu tư và Sun Property phát triển. Khu đất **96,6 ha** nằm giữa đường 3 Tháng 2 và bãi biển Bãi Sau, nay thuộc phường Rạch Dừa và phường Phước Thắng, TP.HCM. Quy hoạch có 8 toà Beacon, 6 toà Blanca, 939 căn nhà phố – biệt thự Casa, công viên nước Sun World 15 ha, trung tâm thương mại mặt biển và bãi biển riêng gần 1 km; mật độ xây dựng 27,9 %. Khởi công 16/5/2025; Sun World mở cửa 12/2/2026; tháng 9/2026 nhà phố Casa đã lên mái hơn 96 % số căn, các toà Beacon và Beachtro đang làm móng.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Blanca City"
+   },
+   {
+    "label": "Tên pháp lý",
+    "value": "Dự án Khu đô thị Đường 3 Tháng 2, TP Vũng Tàu (cũ)"
+   },
+   {
+    "label": "Chủ đầu tư (pháp nhân)",
+    "value": "Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu — công ty thành viên Sun Group; mã số doanh nghiệp 3502534748, Tổng Giám đốc Đàm Minh Hải (theo giấy phép xây dựng 30/GPXD)"
+   },
+   {
+    "label": "Đơn vị phát triển",
+    "value": "Sun Property (Tập đoàn Sun Group)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Đường 3 Tháng 2, phường Rạch Dừa và phường Phước Thắng, TP.HCM (phường 10 và 11, TP Vũng Tàu cũ); 2 mặt tiền đường 3 Tháng 2 và Bãi Sau"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Đô thị biển: căn hộ sở hữu lâu dài (Beacon, Beachtro), căn hộ nghỉ dưỡng (Blanca), nhà phố, biệt thự song lập, đơn lập, grand villa (Casa), khách sạn, trung tâm thương mại"
+   },
+   {
+    "label": "Diện tích",
+    "value": "96,6 ha (966.393,2 m²)"
+   },
+   {
+    "label": "Tổng vốn",
+    "value": "Gần 37.000 tỷ đồng (theo công bố khi khởi công)"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "27,9 %; hơn 70 % diện tích cho cây xanh, mặt nước và tiện ích (theo Sun Property)"
+   },
+   {
+    "label": "Cao tầng",
+    "value": "8 toà Beacon sở hữu lâu dài (trong đó cụm Beachtro 4 toà E6–E9) và 6 toà Blanca 34–40 tầng (B1–B3 kiến trúc Bồ Đào Nha, B5–B7 kiến trúc Pháp)"
+   },
+   {
+    "label": "Thấp tầng",
+    "value": "939 căn Casa: 171 nhà phố, 460 biệt thự song lập, 176 biệt thự đơn lập, 132 biệt thự nghỉ dưỡng (theo CafeLand)"
+   },
+   {
+    "label": "Quy mô dân số",
+    "value": "13.000 cư dân và 11.000 khách lưu trú (theo công bố khi khởi công)"
+   },
+   {
+    "label": "Thiết kế kiến trúc",
+    "value": "Aedas"
+   },
+   {
+    "label": "Thiết kế nội thất",
+    "value": "Ong&Ong (Singapore)"
+   },
+   {
+    "label": "Khách sạn",
+    "value": "Marriott International phát triển khách sạn trong khu (công bố tháng 4/2026)"
+   },
+   {
+    "label": "Khởi công",
+    "value": "16/5/2025"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Casa thấp tầng dự kiến từ quý IV/2026; Beacon và Beachtro dự kiến 2028 (theo đơn vị phân phối — chưa có mốc do chủ đầu tư công bố)"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích",
+    "value": "96,6 ha",
+    "note": "mật độ xây dựng 27,9 %"
+   },
+   {
+    "label": "Cao tầng",
+    "value": "14 toà",
+    "note": "8 Beacon · 6 Blanca"
+   },
+   {
+    "label": "Thấp tầng",
+    "value": "939 căn",
+    "note": "nhà phố và biệt thự Casa"
+   },
+   {
+    "label": "Sun World",
+    "value": "15 ha",
+    "note": "mở cửa 12/2/2026"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Beachtro Tower — 4 toà căn hộ sở hữu lâu dài cuối cùng, ra mắt tháng 9/2026",
+  "subtitle": "Beachtro gồm 4 toà E6–E9 với hơn 1.700 căn, đứng ở mặt tiền đường 3 Tháng 2, kề công viên nước Sun World 15 ha và Whale Park 2,3 ha. Sun Property gọi đây là nguồn cung căn hộ sở hữu lâu dài cuối cùng của Blanca City; toà E6 bàn giao hoàn thiện, 3 toà E7–E9 bàn giao thô kèm gói hoàn thiện DyHome tuỳ chọn. Cùng lúc, toà Beacon (ra mắt tháng 4/2026) và nhà phố, biệt thự Casa vẫn còn giỏ hàng.",
+  "capNhat": "Giỏ hàng tháng 9/2026; chính sách tham chiếu theo chính sách Beacon tháng 4/2026 và bảng giá qua đơn vị phân phối tháng 8/2026",
+  "gioHang": [
+   "Beachtro E6: 506 căn, 34 tầng, bàn giao hoàn thiện (theo đơn vị phân phối)",
+   "Beachtro E7, E8, E9: 1.279 căn, 36–40 tầng, bàn giao thô kèm gói DyHome tuỳ chọn",
+   "Studio 35,7–37,9 m², 1 phòng ngủ 55–56 m², 2 phòng ngủ 81–82 m², 3 phòng ngủ — studio tham chiếu 2,0–3,4 tỷ/căn (bảng giá qua đơn vị phân phối tháng 8/2026)",
+   "Beacon: studio, 1–3 phòng ngủ, duplex tầng đỉnh, trần 3,6 m, bàn giao hoàn thiện nội thất liền tường — tham chiếu từ 2,88 tỷ chưa VAT",
+   "Casa: nhà phố 131–150 m², biệt thự song lập 160–200 m², đơn lập 266–280 m² — nhà phố tham chiếu từ 12 tỷ, biệt thự từ 24 tỷ"
+  ],
+  "lyDo": [
+   {
+    "title": "Sở hữu lâu dài ngay cạnh Bãi Sau",
+    "text": "Beacon và Beachtro nằm trên đất ở trong khu đô thị; Sun Property công bố đây là quỹ căn hộ sở hữu lâu dài đầu tiên trên trục Chí Linh – Cửa Lấp. Các toà Blanca phía trong là căn hộ nghỉ dưỡng do thương hiệu khách sạn quốc tế vận hành, sở hữu có thời hạn theo đất thương mại dịch vụ — 2 loại này giá và giấy tờ khác nhau, anh/chị hỏi rõ trước khi so giá."
+   },
+   {
+    "title": "Vay 70 %, hỗ trợ lãi suất 30 tháng",
+    "text": "Chính sách công bố khi ra mắt Beacon tháng 4/2026: chiết khấu Early Bird 3 %, ngân hàng cho vay **tới 70 %** giá trị căn với hỗ trợ lãi suất 30 tháng, hoặc trả 70 % khi nhận nhà theo lịch giãn 48 tháng. Bảng giá qua đơn vị phân phối tháng 8/2026 ghi thêm chiết khấu thanh toán sớm 6–9,5 %. Chính sách tháng 9/2026 cho Beachtro chủ đầu tư chưa phát hành bản có dấu — chúng chúng tôi gửi ngay khi có."
+   },
+   {
+    "title": "Tiện ích đã chạy, không phải phối cảnh",
+    "text": "Sun World Vũng Tàu 15 ha mở cửa 12/2/2026, hơn 20 trò chơi nước, sức chứa **25.000 khách/ngày**, vé từ 199.000 đồng. Beachtro và Beacon nối thẳng sang công viên này. Trung tâm thương mại mặt biển 5 ha và khách sạn Marriott còn đang xây."
+   },
+   {
+    "title": "2 cách bàn giao: hoàn thiện hoặc thô kèm DyHome",
+    "text": "Toà E6 bàn giao hoàn thiện; E7–E9 bàn giao thô, chủ nhà chọn gói hoàn thiện DyHome theo giá cố định hoặc tự làm. Mua để ở lâu dài thì E6 đỡ việc; mua để cho thuê hoặc muốn tự thiết kế thì E7–E9 có giá gốc thấp hơn. PaceLand so 2 phương án trên đúng căn anh/chị chọn."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Chiết khấu Early Bird",
+    "value": "3 %",
+    "note": "chính sách Beacon tháng 4/2026"
+   },
+   {
+    "label": "Vay ngân hàng",
+    "value": "70 %",
+    "note": "hỗ trợ lãi suất 30 tháng"
+   },
+   {
+    "label": "Thanh toán",
+    "value": "70 % khi nhận nhà",
+    "note": "lịch giãn 48 tháng (Beacon)"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Dự kiến 8/2028",
+    "note": "Beachtro, theo đơn vị phân phối; Beacon dự kiến 5/2028"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Khởi công 16/5/2025. Theo chủ đầu tư (CafeF, 8/9/2026): nhà phố Casa Townhouse **hơn 96 %** số căn đã lên mái, hơn một nửa xong mặt ngoài; biệt thự song lập và đơn lập dự kiến phủ hơn 85 % mái và xong 100 % tường trong tháng 9; dãy Beachfront Boutique Villa xong gần nửa phần móng. Beachtro và Beacon dự kiến hoàn thành 100 % đài móng và sàn hầm B3 trong tháng 9; các toà Blanca đang đào đất, thi công đài móng. Đường Hàng Điều mở rộng đạt 95 %, hệ thống thoát nước gần xong. Sun World 15 ha đã đón khách từ 12/2/2026.",
+  "moc": [
+   {
+    "label": "Khởi công",
+    "value": "16/5/2025"
+   },
+   {
+    "label": "Sun World Vũng Tàu",
+    "value": "Mở cửa 12/2/2026, hơn 20 trò chơi nước"
+   },
+   {
+    "label": "Nhà phố Casa",
+    "value": "Hơn 96 % số căn lên mái, hơn nửa xong mặt ngoài (9/2026)"
+   },
+   {
+    "label": "Biệt thự song lập, đơn lập",
+    "value": "Dự kiến hơn 85 % mái, 100 % tường trong tháng 9/2026"
+   },
+   {
+    "label": "Beachfront Boutique Villa",
+    "value": "Gần nửa phần móng (9/2026)"
+   },
+   {
+    "label": "Beacon, Beachtro",
+    "value": "Dự kiến xong 100 % đài móng và sàn hầm B3 trong tháng 9/2026"
+   },
+   {
+    "label": "Các toà Blanca",
+    "value": "Đang đào đất, thi công đài móng (9/2026)"
+   },
+   {
+    "label": "Hạ tầng",
+    "value": "Đường Hàng Điều mở rộng 95 %, thoát nước gần hoàn thành"
+   },
+   {
+    "label": "Bàn giao Casa",
+    "value": "Dự kiến từ quý IV/2026 (theo đơn vị phân phối)"
+   }
+  ],
+  "note": "Anh/chị muốn xem công trường, nhà mẫu Casa và Sun World, PaceLand hẹn lịch và đi cùng từ TP.HCM theo cao tốc Biên Hoà – Vũng Tàu, khoảng 70–90 phút; đi xem không mất phí.",
+  "image": "assets/img/du-an/blanca-city-tien-do.jpg"
+ },
+ "viTri": {
+  "intro": "Dự án nằm trọn giữa đường 3 Tháng 2 và bãi biển Bãi Sau, trên trục Chí Linh – Cửa Lấp, phường 10 và 11 TP Vũng Tàu cũ — từ 1/7/2025 là phường Rạch Dừa và phường Phước Thắng, TP.HCM. Cổng chính mở ra đường 3 Tháng 2; mặt còn lại là **1 km** bãi cát. Các con số bên dưới chúng tôi lấy từ báo chí, tài liệu Sun Property và trang phân phối, chưa phải chúng tôi tự đo; anh/chị đi thử một lần trước khi quyết.",
+  "khoangCach": [
+   {
+    "label": "Bãi Sau",
+    "value": "Liền kề — 1 km bãi cát trước dự án"
+   },
+   {
+    "label": "Trung tâm TP Vũng Tàu cũ, Bãi Trước",
+    "value": "3–5 km (theo trang phân phối)"
+   },
+   {
+    "label": "Mũi Nghinh Phong, Tượng Chúa Kitô Vua",
+    "value": "vài phút xe (theo tài liệu dự án)"
+   },
+   {
+    "label": "Cao tốc Biên Hoà – Vũng Tàu",
+    "value": "Thông xe toàn tuyến 18/5/2026, dài 54 km"
+   },
+   {
+    "label": "Trung tâm TP.HCM (Quận 1 cũ)",
+    "value": "≈ 95–105 km · khoảng 70–90 phút qua cao tốc"
+   },
+   {
+    "label": "Sân bay quốc tế Long Thành",
+    "value": "≈ 60–70 km · bay thương mại dự kiến cuối 2026"
+   },
+   {
+    "label": "Sun World Vũng Tàu",
+    "value": "Trong khu, 15 ha, đã mở cửa"
+   },
+   {
+    "label": "Trung tâm thương mại mặt biển",
+    "value": "Trong khu, 5 ha, đang xây"
+   },
+   {
+    "label": "Cầu vượt biển Cần Giờ – Vũng Tàu (đề xuất)",
+    "value": "chủ đầu tư nêu dự kiến 2029; chưa có quyết định đầu tư chúng tôi kiểm được"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Cao tốc Biên Hoà – Vũng Tàu đã thông xe",
+    "text": "Tuyến dài 54 km, vốn khoảng 17.800 tỷ đồng, thông xe toàn tuyến chiều 18/5/2026. VnExpress ghi TP.HCM đi Vũng Tàu từ hơn 2 giờ còn **khoảng 70 phút**; giai đoạn đầu chỉ xe dưới 9 chỗ, tốc độ tối đa 80 km/h. Đây là tuyến khách TP.HCM về nghỉ cuối tuần sẽ dùng."
+   },
+   {
+    "title": "Sân bay Long Thành cách khoảng 60–70 km",
+    "text": "Sân bay đã bay kỹ thuật ngày 19/12/2025, khai thác thử nghiệm 3 đợt tháng 9–11/2026 và đặt mục tiêu bay thương mại cuối 2026. Sun Property tính bán kính từ dự án tới sân bay dưới 60 km; Wikipedia ghi 70 km tới phường Vũng Tàu."
+   },
+   {
+    "title": "Đất đấu giá, 2 mặt tiền",
+    "text": "Khu đất gần 60 ha của dự án được đấu giá quyền sử dụng đất ngày 26/4/2025, giá trúng **hơn 7.728 tỷ đồng**; phần còn lại là đất thương mại dịch vụ và công viên. Một mặt ôm đường 3 Tháng 2 — trục lớn nối Bãi Trước với Bãi Sau — mặt kia là bãi biển."
+   }
+  ],
+  "image": "assets/img/du-an/blanca-city-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Mật độ xây dựng **27,9 %**; phần lớn diện tích là công viên, mặt nước và tiện ích công cộng. 5 hạng mục lớn theo tài liệu Sun Property, trong đó Sun World đã vận hành:",
+  "items": [
+   "Công viên nước Sun World Vũng Tàu 15 ha — đã mở cửa, hơn 20 trò chơi, 25.000 khách/ngày",
+   "Trung tâm thương mại mặt biển 5 ha — đang xây",
+   "Bãi biển Bãi Sau 1 km trước dự án và Coastal Park",
+   "8 công viên chủ đề: Coastal Park, Whale Park 2,3 ha, Sea Soul Park, Central Park, Sport Park, Green Park 1–3",
+   "Tiện ích trong toà Beacon: hồ bơi 50 m, hồ trẻ em, jacuzzi, vườn trên cao, đài ngắm cảnh, 3 tầng hầm"
+  ]
+ },
+ "giaBan": {
+  "intro": "Giá bên dưới là **mức tham chiếu** theo bảng giá lưu hành qua đơn vị phân phối tháng 8/2026 và giá công bố khi ra mắt; Sun Property chưa đăng bảng giá công khai, các trang phân phối đang ghi lệch nhau vài trăm triệu một căn. Con số đúng theo căn chúng chúng tôi gửi bản có dấu kèm sơ đồ vị trí.",
+  "capNhat": "Tháng 8/2026 (bảng giá qua đơn vị phân phối)",
+  "loai": [
+   {
+    "name": "Căn hộ Beacon · Beachtro (sở hữu lâu dài)",
+    "dienTich": "Studio 35,7–37,9 m² · 1PN 55–56 m² · 2PN 81–82 m²",
+    "gia": "từ 2,88 tỷ (Beacon, chưa VAT); studio Beachtro 2,0–3,4 tỷ",
+    "thanhToan": "vay 70 %, hỗ trợ lãi suất 30 tháng"
+   },
+   {
+    "name": "Căn hộ Blanca (nghỉ dưỡng, vận hành khách sạn)",
+    "dienTich": "Studio 29,9–31,2 m² · 1PN 45,9–48,4 m² · 2PN 63,5–70,4 m² (toà B1)",
+    "gia": "2,8–6,5 tỷ (tham chiếu)",
+    "thanhToan": "sở hữu có thời hạn, chia sẻ doanh thu vận hành"
+   },
+   {
+    "name": "Nhà phố Casa Townhouse",
+    "dienTich": "131–150 m² đất · 4 tầng",
+    "gia": "từ 12 tỷ (tham chiếu; trang khác ghi 19,5–27 tỷ)",
+    "thanhToan": "hỏi chúng chúng tôi lịch thanh toán thấp tầng"
+   },
+   {
+    "name": "Biệt thự Casa Villa (song lập, đơn lập, grand villa)",
+    "dienTich": "160–200 m² · 266–280 m² · 300–600 m²",
+    "gia": "từ 24 tỷ (tham chiếu; trang khác ghi 25–51 tỷ)",
+    "thanhToan": "hỏi chúng chúng tôi lịch thanh toán thấp tầng"
+   }
+  ],
+  "note": "Giá chưa gồm VAT và phí bảo trì trừ khi trang phân phối ghi khác. Beacon và Beachtro là đất ở sở hữu lâu dài; Blanca là căn hộ nghỉ dưỡng sở hữu có thời hạn — đừng so đơn giá 2 loại với nhau. Chiết khấu Early Bird 3 % và chiết khấu thanh toán sớm trừ thẳng vào giá, nên con số cuối thấp hơn bảng trên nếu anh/chị trả nhanh."
+ },
+ "matBang": {
+  "intro": "Tổng mặt bằng xếp theo lớp từ đường 3 Tháng 2 ra biển: 2 toà Beacon E1–E2 và các dãy Casa Villa song lập (khu A) sát trục đường; Casa Townhouse (khu C) ở góc đông; Sun World 15 ha ở chính giữa, hai bên là các dãy Casa Grand Villa; sát biển là 3 toà Blanca Naus B1–B3 bên phải, 3 toà Blanca French B5–B7 bên trái, tổ hợp khách sạn – trung tâm hội nghị và trung tâm thương mại mặt biển. Cụm Beachtro E6–E9 đặt ở mặt tiền đường 3 Tháng 2 kề Sun World theo công bố tháng 8/2026. Mặt bằng lô từng dãy và mặt bằng căn chúng chúng tôi gửi bản lớn khi anh/chị chọn khu.",
+  "diem": [
+   "Cổng chính mở ra đường 3 Tháng 2; 3 đại lộ hoa An Nam – Gaulois – Lusitano chạy từ cổng xuống biển",
+   "Toà Blanca B1: 22 căn một tầng điển hình (tầng 21–37), studio 29,9–31,2 m², 1PN 45,9–48,4 m², 2PN 63,5–70,4 m², mặt nam nhìn Sun World",
+   "Tổ hợp trường học, công trình y tế và trung tâm văn hoá – thể thao đặt ở góc đông bắc khu, cạnh Casa Townhouse",
+   "Bãi biển và Coastal Park chạy suốt 1 km mặt biển; bãi xe ở 2 đầu"
+  ],
+  "image": "assets/img/du-an/blanca-city-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "Căn hộ Beacon",
+   "dienTich": "Studio, 1–3 phòng ngủ, duplex tầng đỉnh · trần 3,6 m",
+   "text": "Toà đứng ở mặt tiền đường 3 Tháng 2; Aedas lấy hình ngọn hải đăng Vũng Tàu năm 1862 làm cảm hứng. Sở hữu lâu dài, bàn giao hoàn thiện nội thất liền tường, tầm nhìn kép ra biển và thành phố; tiện ích riêng gồm hồ bơi 50 m, jacuzzi, vườn trên cao, đài ngắm cảnh và 3 tầng hầm. Ra mắt tháng 4/2026; Báo Đầu tư ghi hơn 2.000 căn đã bán."
+  },
+  {
+   "name": "Căn hộ Beachtro (E6–E9)",
+   "dienTich": "Studio 35,7–37,9 m² · 1PN 55–56 m² · 2PN 81–82 m² · 3PN",
+   "text": "4 toà, **hơn 1.700 căn** sở hữu lâu dài, kề Sun World và Whale Park. E6 bàn giao hoàn thiện; E7–E9 bàn giao thô kèm gói DyHome tuỳ chọn để chủ nhà tự chia không gian ở hay kinh doanh lưu trú. Đây là quỹ căn hộ sở hữu lâu dài cuối cùng theo công bố của Sun Property; ra mắt tháng 9/2026."
+  },
+  {
+   "name": "Căn hộ Blanca (B1–B3, B5–B7)",
+   "dienTich": "Studio 29,9–31,2 m² · 1PN 45,9–48,4 m² · 2PN 63,5–70,4 m² · duplex",
+   "text": "6 toà 34–40 tầng sát biển, 3 toà kiến trúc Bồ Đào Nha và 3 toà kiến trúc Pháp hình cánh buồm; Sun Group công bố **100 %** căn có tầm nhìn biển, nội thất Ong&Ong bàn giao đầy đủ. Đây là căn hộ nghỉ dưỡng do thương hiệu khách sạn quốc tế vận hành và chia sẻ doanh thu, sở hữu có thời hạn — hợp người mua để khai thác cho thuê hơn là để ở thường xuyên."
+  },
+  {
+   "name": "Nhà phố và biệt thự Casa",
+   "dienTich": "Nhà phố 131–150 m² · song lập 160–200 m² · đơn lập 266–280 m² · grand villa tới 600 m²",
+   "text": "**939 căn** thấp tầng, 200 mẫu thiết kế theo kiến trúc bán đảo Iberia pha chi tiết Nam Bộ, mỗi căn 3–4 tầng nổi và 1 tầng hầm đa năng. Nhà phố nằm dọc các trục đường lớn để kinh doanh; biệt thự chia 3 dải quanh Sun World; dãy Beachfront Boutique Villa nằm sát biển. Tháng 9/2026 nhà phố đã lên mái hơn 96 % số căn — anh/chị đến xem là thấy nhà thật."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "4 điều chúng tôi kiểm được bằng văn bản hoặc bằng công trình đang chạy — không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Sun World 15 ha đã đón khách",
+    "text": "Công viên nước mở cửa 12/2/2026 với hơn 20 trò chơi và sức chứa **25.000 khách/ngày**, vé từ 199.000 đồng. Với người mua căn hộ để cho thuê, đây là tiện ích duy nhất trong khu đã có khách thật để nhìn vào, thay vì chờ phối cảnh."
+   },
+   {
+    "title": "Đất đấu giá, có số quyết định",
+    "text": "Khu đất gần 60 ha trúng đấu giá ngày 26/4/2025 với giá **hơn 7.728 tỷ đồng**; quy hoạch 1/500 theo Quyết định 7179/QĐ-UBND ngày 26/8/2024; giấy phép xây dựng hạ tầng số 30/GPXD ngày 15/5/2025. Đất đấu giá nghĩa là tiền sử dụng đất nộp theo giá trúng — anh/chị hỏi xem xác nhận hoàn thành nghĩa vụ tài chính khi đọc hồ sơ."
+   },
+   {
+    "title": "2 loại sở hữu trong cùng một khu",
+    "text": "Beacon, Beachtro và Casa nằm trên đất ở sở hữu lâu dài; các toà Blanca là căn hộ nghỉ dưỡng trên đất thương mại dịch vụ, sở hữu có thời hạn. Cùng tên dự án nhưng 2 loại giấy tờ khác nhau — chọn loại nào tuỳ mục đích ở hay khai thác, và chúng tôi đọc điều khoản sở hữu trong hợp đồng cùng anh/chị."
+   },
+   {
+    "title": "Cao tốc đã thông, sân bay đang chạy thử",
+    "text": "Cao tốc Biên Hoà – Vũng Tàu thông xe toàn tuyến 18/5/2026, TP.HCM đi Vũng Tàu còn **khoảng 70 phút** theo VnExpress; sân bay Long Thành khai thác thử nghiệm từ tháng 9/2026. Cả 2 là công trình đã xây xong hoặc đang chạy thử, không phải quy hoạch trên giấy."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở hoặc nghỉ cuối tuần, 3 điều khách hỏi chúng chúng tôi nhiều nhất:",
+  "items": [
+   {
+    "title": "Biển ở trước cổng, công viên nước ở giữa khu",
+    "text": "1 km bãi cát Bãi Sau nằm ngay trước trung tâm thương mại; Sun World 15 ha ở chính giữa, các dãy Casa và tháp Beacon nối thẳng sang. Nhà ở đây nghe tiếng công viên nước và lễ hội cuối tuần — ai cần yên tĩnh nên chọn dãy Casa phía đường 3 Tháng 2 thay vì sát Sun World."
+   },
+   {
+    "title": "Dịch vụ trong khu còn đang xây",
+    "text": "Trung tâm thương mại mặt biển 5 ha, khách sạn Marriott, tổ hợp trường học và công trình y tế đã có vị trí trên tổng mặt bằng nhưng chưa vận hành. Trong 1–2 năm đầu, anh/chị dùng chợ, trường và bệnh viện của khu vực Rạch Dừa – Phước Thắng và trung tâm Vũng Tàu cách 3–5 km."
+   },
+   {
+    "title": "Đi lại từ TP.HCM",
+    "text": "Theo cao tốc Biên Hoà – Vũng Tàu khoảng 70–90 phút vào ngày thường; cuối tuần và ngày lễ xe về Vũng Tàu đông hơn hẳn. Anh/chị đi thử một chiều thứ Sáu và một sáng Chủ nhật trước khi quyết, vì đó là 2 khung giờ nhà nghỉ cuối tuần hay dùng."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ theo số hiệu chủ đầu tư công bố qua đơn vị phân phối và CafeLand ghi lại; chúng tôi mới xem bản chụp 2 văn bản bên dưới, chưa xem bản gốc:",
+  "items": [
+   "Quyết định 7179/QĐ-UBND ngày 26/8/2024 của UBND TP Vũng Tàu phê duyệt quy hoạch chi tiết 1/500 Khu đô thị đường 3 Tháng 2; điều chỉnh ngày 26/11/2024",
+   "Đấu giá quyền sử dụng đất khu đất 597.475,7 m² ngày 26/4/2025, giá trúng hơn 7.728 tỷ đồng; công nhận kết quả ngày 29/4/2025 — Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu trúng đấu giá",
+   "Quyết định giao đất 1295/QĐ-UBND ngày 12/5/2025: 191.000,6 m² đất ở và 406.475,1 m² đất thương mại dịch vụ; các quyết định 1328, 1331/QĐ-UBND tháng 5/2025",
+   "Giấy chứng nhận quyền sử dụng đất số AA 00619941 ngày 12/5/2025",
+   "Giấy phép xây dựng 30/GPXD ngày 15/5/2025 của Sở Xây dựng Bà Rịa – Vũng Tàu cấp cho Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu, hạng mục hạ tầng kỹ thuật (chúng chúng tôi đã xem bản chụp); 54/GPXD ngày 23/6/2025 (nhà ở thấp tầng); 64 và 65/GPXD ngày 30/6/2025",
+   "Nghiệm thu hạ tầng kỹ thuật giai đoạn 1 ngày 25/6/2025",
+   "Sở hữu: Beacon, Beachtro và Casa lâu dài (đất ở); các toà Blanca có thời hạn theo đất thương mại dịch vụ"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc 4 giấy cho đúng toà hoặc lô mình mua: giấy phép xây dựng phần nhà ở của toà đó, văn bản của Sở Xây dựng xác nhận đủ điều kiện bán nhà ở hình thành trong tương lai, chứng thư bảo lãnh ngân hàng, và với căn hộ Blanca thì điều khoản thời hạn sở hữu trong hợp đồng. 2 văn bản của Sở Xây dựng và ngân hàng chúng tôi chưa thấy được công bố công khai — chúng tôi đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Sun Property (Tập đoàn Sun Group) — pháp nhân dự án: Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu",
+  "text": "Sun Group thành lập năm 2007, làm 4 mảng lớn: du lịch nghỉ dưỡng, vui chơi giải trí (thương hiệu Sun World), bất động sản (Sun Property) và hạ tầng — sân bay quốc tế Vân Đồn, cảng Hạ Long. Công trình đã vận hành: Bà Nà Hills và InterContinental Danang ở Đà Nẵng, cáp treo Fansipan ở Sa Pa, Sunset Town và Sun Grand City Hillside Residence ở Phú Quốc, Sun Grand City Ancora Residence ở Hà Nội; Sun Symphony Residence bên sông Hàn bàn giao các toà S1–S3 tháng 5/2026, 2 năm sau ra mắt. Pháp nhân ký hợp đồng tại Blanca City là Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu, thành lập cuối năm 2024, Chủ tịch Hội đồng thành viên là ông Bùi Thanh Trung — Chủ tịch khu vực miền Nam của Sun Group.",
+  "daBanGiao": [
+   "Sun Grand City Hillside Residence (Phú Quốc)",
+   "Sun Symphony Residence (Đà Nẵng)",
+   "Sun Grand City Ancora Residence (Hà Nội)"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Blanca City giá bao nhiêu?",
+   "a": "Theo bảng giá lưu hành qua đơn vị phân phối tháng 8/2026, căn hộ Beacon tại Blanca City chào từ 2,88 tỷ một căn chưa VAT; studio Beachtro 35,7–37,9 m² khoảng 2,0–3,4 tỷ, căn 2 phòng ngủ 81–82 m² khoảng 4,9–7,2 tỷ; nhà phố Casa từ 12 tỷ và biệt thự từ 24 tỷ. Sun Property chưa công bố bảng giá công khai nên các trang phân phối ghi lệch nhau; giá từng căn chúng chúng tôi gửi bản có dấu qua Zalo."
+  },
+  {
+   "q": "Căn hộ Blanca City sở hữu lâu dài hay có thời hạn?",
+   "a": "Blanca City có 2 loại: căn hộ Beacon, Beachtro và nhà phố, biệt thự Casa nằm trên đất ở, Sun Property công bố sở hữu lâu dài; các toà Blanca là căn hộ nghỉ dưỡng do thương hiệu khách sạn quốc tế vận hành, nằm trên đất thương mại dịch vụ nên sở hữu có thời hạn. Anh/chị đọc điều khoản sở hữu và thời hạn ngay trong hợp đồng của đúng toà mình mua."
+  },
+  {
+   "q": "Blanca City khi nào bàn giao?",
+   "a": "Theo đơn vị phân phối, nhà phố và biệt thự Casa tại Blanca City dự kiến bàn giao từ quý IV/2026 — tháng 9/2026 nhà phố đã lên mái hơn 96 % số căn; căn hộ Beacon dự kiến tháng 5/2028 và Beachtro tháng 8/2028, tức khoảng 2 năm sau khi ký hợp đồng. Chủ đầu tư chưa công bố mốc bàn giao có dấu, nên thời hạn ghi trong hợp đồng mua bán mới là căn cứ."
+  },
+  {
+   "q": "Mua Blanca City cần bao nhiêu tiền ban đầu và vay được bao nhiêu?",
+   "a": "Chính sách công bố khi ra mắt Beacon tháng 4/2026 tại Blanca City: chiết khấu Early Bird 3 %, ngân hàng cho vay tới 70 % giá trị căn với hỗ trợ lãi suất 30 tháng, hoặc trả 70 % khi nhận nhà theo lịch giãn 48 tháng. PaceLand tính thử với căn studio 2,9 tỷ: phần vốn tự có trong thời gian xây khoảng 30 %, tức chừng 870 triệu. Chính sách tháng 9/2026 cho Beachtro chúng chúng tôi gửi bản có dấu khi chủ đầu tư phát hành."
+  }
+ ]
+}

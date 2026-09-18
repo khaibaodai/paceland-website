@@ -1,0 +1,397 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "The Global City là khu đô thị **117,4 ha** ở đường Đỗ Xuân Hợp, phường Bình Trưng (An Phú, Quận 2 cũ), do Masterise Homes phát triển trên khu đất của Công ty CP Đầu tư và Phát triển Sài Gòn (SDI Corp), Foster + Partners lập quy hoạch tổng thể. Phần thấp tầng SOHO 915 căn đã bàn giao từ tháng 1/2024 và có sổ hồng từ 30/11/2024. Phần cao tầng gồm 4 phân khu: **Masteri Grand View** (2 tháp, 616 căn, đã cất nóc), **LUMIÈRE Midtown** (2 tháp, 808 căn), **Masteri Park Place** (4 tháp, 1.728 căn, đang bán) và **Masteri Cosmo Central** (6 tháp, ra mắt tháng 1/2026). Khu đô thị được quy hoạch cho khoảng 40.000 cư dân và 20.400 người làm việc.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "The Global City (tên cũ: khu đô thị Sài Gòn Bình An)"
+   },
+   {
+    "label": "Đơn vị phát triển",
+    "value": "Masterise Homes — Công ty TNHH Phát triển Bất động sản Masterise Homes, thành viên Masterise Group"
+   },
+   {
+    "label": "Chủ đầu tư đứng tên dự án",
+    "value": "Công ty CP Đầu tư và Phát triển Sài Gòn (SDI Corp), được giao đất từ tháng 1/2001"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Đường Đỗ Xuân Hợp – Liên Phường, phường Bình Trưng (An Phú, Quận 2 cũ), TP.HCM; giáp cao tốc TP.HCM – Long Thành – Dầu Giây"
+   },
+   {
+    "label": "Quy mô khu đô thị",
+    "value": "117,4 ha; quy hoạch chi tiết 1/500 điều chỉnh duyệt tháng 11/2015"
+   },
+   {
+    "label": "Quy hoạch tổng thể",
+    "value": "Foster + Partners (Anh), ký hợp tác tại London ngày 22/2/2022"
+   },
+   {
+    "label": "Thiết kế cảnh quan",
+    "value": "WATG"
+   },
+   {
+    "label": "Loại hình cao tầng",
+    "value": "Căn hộ 1–4 phòng ngủ, duplex, penthouse; khối đế thương mại; tháp văn phòng"
+   },
+   {
+    "label": "Masteri Grand View",
+    "value": "2 tháp Spark và Glow, 25 tầng nổi (5 tầng đế), 1 hầm, 616 căn 57–181 m²; cất nóc 29/1/2026"
+   },
+   {
+    "label": "LUMIÈRE Midtown",
+    "value": "2 tháp, 2 hầm, 4 tầng đế, 23 tầng căn hộ, 808 căn; bàn giao dự kiến 2027"
+   },
+   {
+    "label": "Masteri Park Place",
+    "value": "3,12 ha; 4 tháp (A1, A2 cao 24 tầng; B1, B2 cao 27 tầng) trên 3 tầng đế, 1 tháp văn phòng; 1.728 căn; chủ đầu tư ghi bàn giao dự kiến năm 2028, đơn vị phân phối ghi quý I/2028"
+   },
+   {
+    "label": "Masteri Cosmo Central",
+    "value": "6 tháp 19–29 tầng, 3 tầng đế, 2 hầm, có tháp văn phòng; ra mắt 15/1/2026"
+   },
+   {
+    "label": "Thấp tầng đã bàn giao",
+    "value": "SOHO 915 căn nhà phố thương mại 5 tầng có thang máy, sổ hồng từ 30/11/2024"
+   },
+   {
+    "label": "Dân số quy hoạch",
+    "value": "Khoảng 40.000 cư dân và 20.400 người làm việc trong khu"
+   },
+   {
+    "label": "Tiện ích khu đô thị",
+    "value": "Kênh đào nhạc nước 2 km, City Park, công viên 13 ha, trung tâm thương mại 123.000 m² (quy hoạch), trường King's College Wimbledon HCMC (khai giảng tháng 8/2027)"
+   },
+   {
+    "label": "Tổng thầu Masteri Park Place",
+    "value": "Coteccons (theo tài liệu bán hàng tháng 11/2025)"
+   },
+   {
+    "label": "Hình thức sở hữu",
+    "value": "Lâu dài với người Việt; 50 năm với người nước ngoài"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích khu đô thị",
+    "value": "117,4 ha",
+    "note": "quy hoạch Foster + Partners"
+   },
+   {
+    "label": "Phân khu cao tầng",
+    "value": "4",
+    "note": "14 tháp căn hộ, 2 tháp văn phòng"
+   },
+   {
+    "label": "Căn hộ đã công bố",
+    "value": "3.152",
+    "note": "616 + 808 + 1.728, chưa tính Cosmo Central"
+   },
+   {
+    "label": "Đã có sổ hồng",
+    "value": "915 căn SOHO",
+    "note": "trao từ 30/11/2024"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Masteri Park Place — 4 tháp giữa công viên bờ sông và kênh đào",
+  "subtitle": "Ra mắt ngày 15/10/2025 trên khu đất 3,12 ha ở giữa khu đô thị: cụm A (A1, A2) cao 24 tầng, cụm B (B1, B2) cao 27 tầng trên 3 tầng đế thương mại, thêm 1 tháp văn phòng; 1.728 căn, chủ đầu tư ghi bàn giao dự kiến năm 2028 (đơn vị phân phối ghi quý I/2028). Phân khu Masteri Cosmo Central (6 tháp, ra mắt 15/1/2026) cũng đang nhận đặt chỗ — giỏ hàng chúng chúng tôi gửi riêng.",
+  "capNhat": "Chính sách bán hàng tháng 9/2026 (áp dụng từ 1/4/2026, theo đơn vị phân phối)",
+  "gioHang": [
+   "1 phòng ngủ: 51,9–56 m² tim tường",
+   "2 phòng ngủ: 76,8–81 m²",
+   "3 phòng ngủ: 98,6–110 m²",
+   "4 phòng ngủ: 128,9–135,3 m²; duplex và penthouse mở theo đợt",
+   "Giá tham khảo 120–150 triệu/m² tuỳ tầng và hướng nhìn (đơn vị phân phối, tháng 9/2026)"
+  ],
+  "lyDo": [
+   {
+    "title": "2 mặt nước, 1 mặt công viên",
+    "text": "Khu đất Park Place có một mặt hướng sông, một mặt nhìn kênh đào nhạc nước và công viên ven kênh (theo VnExpress ngày 17/10/2025). 4 tháp xếp so le nên phần lớn căn 2 và 3 phòng ngủ nhìn ra nước hoặc công viên chứ không nhìn vào lưng tháp bên cạnh."
+   },
+   {
+    "title": "Mặt bằng tầng công khai trên trang chủ đầu tư",
+    "text": "Trang Masteri Park Place đăng mặt bằng tầng điển hình tòa B1 lầu 12B với diện tích tim tường và thông thuỷ từng căn — căn 1 phòng ngủ 54,8 m² tim tường tương ứng 50,9 m² thông thuỷ. Anh/chị đối chiếu đúng bản này với căn trong hợp đồng trước khi ký."
+   },
+   {
+    "title": "Lịch thanh toán và khoản vay",
+    "text": "Theo chính sách áp dụng từ 1/4/2026: đặt chỗ 100 triệu; thanh toán chuẩn chiết khấu 6,5 %, thanh toán sớm chiết khấu 12 %; vay đến **70 %** giá bán với lãi suất 0 % tối đa đến 31/10/2028; miễn phí quản lý 24 tháng kể từ thông báo bàn giao. Con số cuối cho từng căn chúng tôi tính lại trên bảng giá có dấu."
+   },
+   {
+    "title": "Tổng thầu và mốc tiến độ",
+    "text": "Tổng thầu Coteccons theo tài liệu bán hàng; tháng 8/2026 công trường đang thi công móng và hầm; chủ đầu tư ghi bàn giao dự kiến năm 2028. Anh/chị đi cùng PaceLand ra công trường là thấy, không phải tin phối cảnh."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Đặt chỗ",
+    "value": "100 triệu",
+    "note": "1 suất, theo chính sách 1/4/2026"
+   },
+   {
+    "label": "Chiết khấu thanh toán chuẩn",
+    "value": "6,5 %",
+    "note": "thanh toán sớm đến 12 %"
+   },
+   {
+    "label": "Vay ngân hàng",
+    "value": "đến 70 %",
+    "note": "lãi 0 % tối đa đến 31/10/2028"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Quý I/2028",
+    "note": "miễn phí quản lý 24 tháng"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 8/2026",
+  "intro": "Trong khu, phần thấp tầng đã có người ở và cửa hàng hoạt động; phần cao tầng đang ở 4 giai đoạn khác nhau. Mốc dưới đây chúng tôi lấy từ báo chí (cất nóc, sổ hồng) và bản cập nhật tháng 8/2026 của đơn vị phân phối; ảnh công trường anh/chị đi cùng PaceLand để tự chụp.",
+  "moc": [
+   {
+    "label": "Masteri Grand View",
+    "value": "Cất nóc 29/1/2026, đang hoàn thiện; bàn giao dự kiến cuối 2026"
+   },
+   {
+    "label": "LUMIÈRE Midtown",
+    "value": "Đã đóng nắp hầm, đang lên tầng nổi; ký hợp đồng mua bán từ tháng 3/2026"
+   },
+   {
+    "label": "Masteri Park Place",
+    "value": "Đang thi công móng và hầm; chủ đầu tư ghi bàn giao dự kiến năm 2028"
+   },
+   {
+    "label": "Masteri Cosmo Central",
+    "value": "Đang ép cọc; ra mắt 15/1/2026"
+   },
+   {
+    "label": "SOHO",
+    "value": "915 căn bàn giao tháng 1/2024, sổ hồng 30/11/2024, khoảng 80 % cửa hàng đã hoạt động"
+   },
+   {
+    "label": "Hạ tầng trong khu",
+    "value": "City Park 13 ha mở từ tháng 3/2024; kênh đào nhạc nước vận hành từ tháng 9/2022; khoảng 30 tuyến đường nội khu đã trải nhựa"
+   }
+  ],
+  "note": "Anh/chị muốn xem thực tế, PaceLand hẹn lịch đi SOHO, City Park và công trường các tháp trong cùng một buổi; đi xem không mất phí.",
+  "image": "assets/img/du-an/the-global-city-tien-do.jpg"
+ },
+ "viTri": {
+  "intro": "The Global City nằm ở khu Rạch Chiếc, 3 mặt tiếp giáp đường Đỗ Xuân Hợp, đường Liên Phường và cao tốc TP.HCM – Long Thành – Dầu Giây (đường Song Hành). Từ cổng Đỗ Xuân Hợp, qua cầu Nam Lý (thông xe 2/10/2024) là ra Võ Nguyên Giáp và lên cao tốc; theo Liên Phường về Thảo Điền. Thời gian bên dưới lấy theo tài liệu chủ đầu tư, tính vào giờ thường.",
+  "khoangCach": [
+   {
+    "label": "Thảo Điền (qua đường Liên Phường)",
+    "value": "5 phút"
+   },
+   {
+    "label": "Thủ Thiêm",
+    "value": "5–10 phút"
+   },
+   {
+    "label": "Trung tâm Quận 1 cũ (Bến Thành)",
+    "value": "10–20 phút"
+   },
+   {
+    "label": "Cao tốc TP.HCM – Long Thành – Dầu Giây",
+    "value": "giáp ranh, lên qua cầu Nam Lý – Võ Nguyên Giáp"
+   },
+   {
+    "label": "Sân bay Tân Sơn Nhất",
+    "value": "30 phút"
+   },
+   {
+    "label": "Sân bay Long Thành (đang xây)",
+    "value": "30 phút"
+   },
+   {
+    "label": "Kênh đào nhạc nước, dãy SOHO",
+    "value": "1 phút đi bộ"
+   },
+   {
+    "label": "Trung tâm thương mại 123.000 m² (quy hoạch)",
+    "value": "trong khu, 5 phút đi bộ"
+   },
+   {
+    "label": "Trường King's College Wimbledon HCMC",
+    "value": "trong khu, khai giảng tháng 8/2027"
+   },
+   {
+    "label": "Bệnh viện quốc tế (quy hoạch)",
+    "value": "trong khu, 5 phút đi bộ"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Cầu Nam Lý và nút giao An Phú đã thông từng phần",
+    "text": "Cầu Nam Lý trên Đỗ Xuân Hợp dài 750 m thông xe ngày 2/10/2024, nối thẳng ra Võ Nguyên Giáp và cao tốc Long Thành. Nút giao An Phú 3 tầng (vốn hơn 3.400 tỷ) đã mở nhánh N3 tháng 5/2026 và nhánh N4 ngày 21/8/2026; các nhánh nối cao tốc và Lương Định Của còn thi công."
+   },
+   {
+    "title": "Vành đai 2 đoạn Phú Hữu – Võ Nguyên Giáp",
+    "text": "Đoạn gần 3,6 km, vốn hơn 9.300 tỷ, tái khởi động ngày 19/12/2025 và đặt mục tiêu hoàn thành tháng 6/2027. Đây là trục chạy sát phía đông khu đô thị, nối Đỗ Xuân Hợp với Võ Nguyên Giáp và cầu Phú Hữu."
+   },
+   {
+    "title": "Đường Liên Phường là trục chính của khu",
+    "text": "Đoạn Liên Phường trong khu đã hoàn thành; chủ đầu tư tính **5 phút** tới Thảo Điền theo đường này. Liên Phường cũng là mặt tiền của Masteri Grand View và hướng vào trung tâm thương mại, Masteri Park Place, Masteri Cosmo Central."
+   }
+  ],
+  "image": "assets/img/du-an/the-global-city-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Tiện ích ở đây là của cả khu đô thị, không phải riêng trong hàng rào từng tháp: kênh đào nhạc nước **2 km** vận hành từ tháng 9/2022, City Park mở từ tháng 3/2024, công viên 13 ha, trung tâm thương mại 123.000 m² và trường King's College Wimbledon HCMC (khai giảng tháng 8/2027) theo quy hoạch. 6 tiện ích nội khu tiêu biểu theo tài liệu các phân khu:",
+  "items": [
+   "Kênh đào nhạc nước",
+   "Hồ bơi vô cực",
+   "Hồ bơi và vườn trên khối đế",
+   "Phòng gym",
+   "Sân BBQ trên cao",
+   "Phòng chơi trẻ em"
+  ]
+ },
+ "giaBan": {
+  "intro": "Tháng 9/2026 chúng tôi chưa có bảng giá có dấu của chủ đầu tư, nên con số ở bảng này là **giá tham khảo do các đơn vị phân phối công bố** cho 2 phân khu đang nhận đặt chỗ: Masteri Park Place **120–150 triệu/m²**, Masteri Cosmo Central từ 120 triệu/m². Giá từng căn phụ thuộc tháp, tầng, hướng nhìn và lịch thanh toán; anh/chị dùng bảng này để ước lượng ngân sách, còn con số ký hợp đồng PaceLand đối chiếu trên bảng giá có dấu, có ngày.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "1 phòng ngủ",
+    "dienTich": "47–57 m²",
+    "gia": "từ 6,7 tỷ",
+    "thanhToan": "vốn tự có ≈ 30 %, từ 2 tỷ; phần còn lại vay"
+   },
+   {
+    "name": "2 phòng ngủ",
+    "dienTich": "73–86 m²",
+    "gia": "từ 9,1 tỷ",
+    "thanhToan": "vốn tự có ≈ 30 %, từ 2,7 tỷ; phần còn lại vay"
+   },
+   {
+    "name": "3 phòng ngủ",
+    "dienTich": "98–121 m²",
+    "gia": "từ 12,1 tỷ",
+    "thanhToan": "vốn tự có ≈ 30 %, từ 3,6 tỷ; phần còn lại vay"
+   },
+   {
+    "name": "4 phòng ngủ",
+    "dienTich": "119–139 m²",
+    "gia": "từ 17 tỷ",
+    "thanhToan": "vốn tự có ≈ 30 %, từ 5,1 tỷ; phần còn lại vay"
+   }
+  ],
+  "note": "Giá tham khảo trên là giá đơn vị phân phối đăng tháng 9/2026; có trang ghi đã gồm VAT và 2 % phí bảo trì, có trang ghi chưa — nên chênh nhau vài phần trăm. Chiết khấu thanh toán chuẩn 6,5 % và thanh toán sớm 12 % (Masteri Park Place) trừ thẳng vào giá niêm yết."
+ },
+ "matBang": {
+  "intro": "4 phân khu cao tầng xếp quanh kênh đào nhạc nước ở giữa khu: Masteri Grand View ở góc Đỗ Xuân Hợp – Liên Phường, LUMIÈRE Midtown và Masteri Cosmo Central cạnh kênh đào và dãy SOHO, Masteri Park Place phía công viên bờ sông. Mặt bằng tầng điển hình Park Place trên trang chủ đầu tư ghi cả diện tích tim tường (GSA) và thông thuỷ (NSA) từng căn; bản PDF chúng chúng tôi gửi khi anh/chị chọn tháp.",
+  "diem": [
+   "Tòa B1 Masteri Park Place, lầu 12B: 17 căn một tầng quanh 2 lõi thang, 3 căn duplex ở góc",
+   "Căn 1 phòng ngủ 54,8 m² tim tường tương ứng 50,9 m² thông thuỷ; căn 2 phòng ngủ 76,8–81 m² tim tường, 71–76 m² thông thuỷ",
+   "Mặt bằng ghi cả tim tường và thông thuỷ — anh/chị so giá theo diện tích thông thuỷ",
+   "LUMIÈRE Midtown: 100 % căn nhìn kênh đào nhạc nước theo trang chủ đầu tư"
+  ],
+  "image": "assets/img/du-an/the-global-city-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "1 phòng ngủ",
+   "dienTich": "47–57 m² tim tường",
+   "text": "Masteri Park Place có căn 1 phòng ngủ 54,8 m² tim tường (50,9 m² thông thuỷ); Masteri Cosmo Central có bản 1PN và 1PN+ từ 47,3 m². Phòng ngủ tách riêng, bếp thẳng hàng với phòng khách. Hợp người đi làm ở Thủ Thiêm, Thảo Điền, hoặc mua để cho thuê."
+  },
+  {
+   "name": "2 phòng ngủ",
+   "dienTich": "73–86 m²",
+   "text": "Loại căn nhiều nhất trên mặt bằng: tầng 12B tòa B1 Park Place có 8 căn 2 phòng ngủ trên 17 căn. 2 phòng ngủ ở 2 phía, phòng khách liền bếp mở ra ban công; gia đình 3–4 người ở vừa."
+  },
+  {
+   "name": "3 phòng ngủ",
+   "dienTich": "98–121 m²",
+   "text": "Đặt ở góc tháp nên có 2 mặt thoáng; Park Place 98,6–110 m², Cosmo Central đến 121,3 m². Hợp gia đình nhiều thế hệ hoặc nhà cần một phòng làm việc riêng."
+  },
+  {
+   "name": "4 phòng ngủ",
+   "dienTich": "119–139 m²",
+   "text": "Park Place 128,9–135,3 m² tim tường (126,3 m² thông thuỷ ở tòa B1), Cosmo Central 119,1–138,8 m². Mỗi tầng điển hình chỉ 1 căn, số lượng ít nên chúng tôi báo giỏ hàng theo từng đợt."
+  },
+  {
+   "name": "Duplex · Penthouse",
+   "dienTich": "từ 143 m²",
+   "text": "Duplex 2 tầng đặt ở góc tháp — tòa B1 Park Place có 3 căn mỗi tầng điển hình; penthouse ở tầng trên cùng, Masteri Grand View có penthouse **trên 300 m²**. Mở bán theo từng tháp, không có trong giỏ hàng thường xuyên."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "4 điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Khu đã có người ở thật, không còn là phối cảnh",
+    "text": "**915 căn** SOHO bàn giao từ tháng 1/2024 và có sổ hồng từ 30/11/2024; City Park và kênh đào nhạc nước đã vận hành. Anh/chị đến buổi tối là thấy phố có người, cửa hàng mở — thứ mà một khu đô thị mới thường chưa có lúc mở bán."
+   },
+   {
+    "title": "Quy hoạch tổng thể do Foster + Partners lập",
+    "text": "Foster + Partners (Anh) lập quy hoạch 117,4 ha từ tháng 2/2022: cao tầng, thấp tầng, biệt thự, trường học, y tế và trung tâm thương mại hạng A trong cùng một bản vẽ. Trường King's College Wimbledon HCMC đã công bố khai giảng tháng 8/2027 ngay trong khu."
+   },
+   {
+    "title": "Chủ đầu tư đã trao sổ hồng nhiều dự án",
+    "text": "Masterise Homes trao sổ hồng cho SOHO trong khu này, LUMIÈRE Riverside (tháng 8/2024), Grand Marina Saigon, Masteri Waterfront. Anh/chị yêu cầu xem văn bản đủ điều kiện bán của Sở Xây dựng cho đúng tháp mình mua — dự án đàng hoàng sẽ đưa ngay."
+   },
+   {
+    "title": "Tiến độ có mốc kiểm chứng được",
+    "text": "Masteri Grand View cất nóc 29/1/2026 sau **13 tháng** thi công; Park Place và Cosmo Central có ngày ra mắt và mặt bằng công khai trên trang chủ đầu tư. Bàn giao là mốc ghi trong hợp đồng — anh/chị đọc điều khoản phạt chậm bàn giao trước khi ký."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Đi bộ được tới tiện ích",
+    "text": "Từ Masteri Cosmo Central và LUMIÈRE Midtown ra kênh đào và dãy SOHO **1 phút** đi bộ; trung tâm thương mại, trường và bệnh viện trong bán kính 5 phút đi bộ theo quy hoạch của khu."
+   },
+   {
+    "title": "Trường học cho con",
+    "text": "King's College Wimbledon HCMC (2–18 tuổi, chương trình Anh) khai giảng tháng 8/2027 trong khu; ngoài khu có Trường Quốc tế TP.HCM trên Xa lộ Hà Nội và Trường Quốc tế TAS phía đường Song Hành."
+   },
+   {
+    "title": "Đi lại",
+    "text": "Về Thảo Điền 5 phút qua Liên Phường, Thủ Thiêm 5–10 phút, Quận 1 cũ 10–20 phút tuỳ giờ; ra cao tốc Long Thành qua cầu Nam Lý. Giờ cao điểm Đỗ Xuân Hợp và nút giao An Phú còn đông vì nút giao chưa xong — anh/chị nên đi thử một buổi sáng trước khi quyết."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý đã công bố trên báo và trang chủ đầu tư:",
+  "items": [
+   "Quy hoạch chi tiết 1/500 khu đô thị (tên cũ Sài Gòn Bình An) do UBND TP.HCM duyệt điều chỉnh tháng 11/2015, quy mô 117,4 ha",
+   "Chủ đầu tư đứng tên dự án: Công ty CP Đầu tư và Phát triển Sài Gòn (SDI Corp), được giao đất từ tháng 1/2001; Masterise Homes là đơn vị phát triển theo thoả thuận với SDI",
+   "Giấy phép xây dựng hạ tầng kỹ thuật khu đô thị số 155/GPXD ngày 18/12/2020 của Sở Xây dựng TP.HCM (theo tài liệu bán hàng — anh/chị xin bản chụp có số)",
+   "SOHO: sổ hồng trao cho cư dân từ 30/11/2024; cư dân The Global City được hướng dẫn hồ sơ làm sổ hồng từ tháng 9/2024 (VnExpress)",
+   "Hình thức sở hữu căn hộ: lâu dài với người Việt, 50 năm với người nước ngoài (trang chủ đầu tư)"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc 3 giấy cho đúng tháp mình mua: giấy phép xây dựng của tháp, văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của Sở Xây dựng TP.HCM và chứng thư bảo lãnh ngân hàng. Hợp đồng ký với pháp nhân SDI Corp, nên anh/chị tra thêm báo cáo tài chính gần nhất của công ty này trên Cổng thông tin quốc gia về đăng ký doanh nghiệp — mất 15 phút, chúng tôi chỉ cách."
+ },
+ "chuDauTu": {
+  "ten": "Masterise Homes (Masterise Group)",
+  "text": "Masterise Homes là thương hiệu phát triển bất động sản của Masterise Group — tiền thân là Công ty CP Đầu tư Thảo Điền lập năm 2007, đổi tên năm 2019, vốn điều lệ **35.227 tỷ đồng** từ ngày 19/8/2025. Dự án đầu tay là Masteri Thảo Điền trên Xa lộ Hà Nội; sau đó là Masteri An Phú, Millennium, Masteri Centre Point, LUMIÈRE Riverside, LUMIÈRE Boulevard, Grand Marina Saigon (căn hộ hàng hiệu Marriott), Masteri Waterfront và Masteri West Heights ở Hà Nội. Riêng năm 2024 họ trao sổ hồng cho 4 dự án, trong đó có SOHO ở The Global City.",
+  "daBanGiao": [
+   "LUMIÈRE Riverside",
+   "Masteri Centre Point",
+   "SOHO — The Global City"
+  ]
+ },
+ "faq": [
+  {
+   "q": "The Global City giá bao nhiêu?",
+   "a": "Tháng 9/2026, 2 phân khu cao tầng đang nhận đặt chỗ ở The Global City có giá tham khảo do đơn vị phân phối công bố: Masteri Park Place 120–150 triệu/m² (căn 1 phòng ngủ từ khoảng 6,7 tỷ, căn 2 phòng ngủ từ 9,1 tỷ), Masteri Cosmo Central từ 120 triệu/m². Đây chưa phải bảng giá có dấu của chủ đầu tư; giá từng căn phụ thuộc tháp, tầng, hướng nhìn và lịch thanh toán."
+  },
+  {
+   "q": "The Global City khi nào bàn giao?",
+   "a": "Phần cao tầng The Global City bàn giao theo từng phân khu: Masteri Grand View đã cất nóc 29/1/2026, dự kiến bàn giao cuối 2026; LUMIÈRE Midtown dự kiến 2027; Masteri Park Place dự kiến năm 2028 theo chủ đầu tư (đơn vị phân phối ghi quý I/2028); Masteri Cosmo Central ra mắt 15/1/2026, chưa công bố mốc. Khu thấp tầng SOHO 915 căn đã bàn giao từ tháng 1/2024 và có sổ hồng từ 30/11/2024."
+  },
+  {
+   "q": "Chủ đầu tư The Global City là ai?",
+   "a": "Masterise Homes là đơn vị phát triển và bán hàng The Global City; pháp nhân đứng tên dự án và ký hợp đồng là Công ty CP Đầu tư và Phát triển Sài Gòn (SDI Corp), được giao khu đất 117,4 ha từ tháng 1/2001. Quy hoạch tổng thể do Foster + Partners (Anh) lập từ tháng 2/2022. Anh/chị kiểm tra tên pháp nhân trên hợp đồng và văn bản đủ điều kiện bán của Sở Xây dựng trước khi đặt cọc."
+  },
+  {
+   "q": "Mua căn hộ The Global City cần bao nhiêu tiền ban đầu?",
+   "a": "Theo chính sách đang lưu hành cho Masteri Park Place ở The Global City (áp dụng từ 1/4/2026), khách đặt chỗ 100 triệu/suất, rồi chọn thanh toán chuẩn (chiết khấu 6,5 %) hoặc thanh toán sớm (chiết khấu 12 %); ngân hàng cho vay đến 70 % giá bán với lãi suất 0 % tối đa đến 31/10/2028, nghĩa là vốn tự có khoảng 30 % giá trị căn đến khi nhận nhà. Con số cuối chúng tôi tính trên bảng giá có dấu cho đúng căn anh/chị chọn."
+  }
+ ]
+}

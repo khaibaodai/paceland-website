@@ -1,0 +1,392 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "Gladia Heights là phân khu căn hộ của Gladia by the Waters — khu đô thị 11,8 ha do liên doanh Keppel (Singapore) và Khang Điền phát triển trên trục Võ Chí Công, phường Bình Trưng (Bình Trưng Đông cũ), TP. Thủ Đức. Khu đất 1,26 ha có 3 mặt hướng sông, xây 3 tháp 15 tầng với **616 căn hộ** và 23 căn thương mại dịch vụ; bên ký hợp đồng với người mua là Công ty TNHH Đầu tư Kinh doanh nhà Đoàn Nguyên, pháp nhân dự án của liên doanh. Khởi công tháng 1/2026, mở bán ngày 1/8/2026, dự kiến bàn giao quý IV/2027.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Gladia Heights"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Liên doanh Keppel (Singapore) × Khang Điền (mã chứng khoán KDH); pháp nhân dự án: Công ty TNHH Đầu tư Kinh doanh nhà Đoàn Nguyên"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Đường Võ Chí Công, phường Bình Trưng (Bình Trưng Đông, Quận 2 cũ), TP.HCM — lô B1 và B2N khu nhà ở Bình Trưng Đông"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Căn hộ 1–4 phòng ngủ và căn thương mại dịch vụ tầng trệt"
+   },
+   {
+    "label": "Diện tích đất",
+    "value": "1,26 ha (lô B1 2.618 m², lô B2N 9.994 m²), 3 mặt hướng sông"
+   },
+   {
+    "label": "Quy mô",
+    "value": "3 tháp — B1 The Future, B2 The First, B3 The Advanta — 15 tầng, 1 tầng hầm"
+   },
+   {
+    "label": "Số căn",
+    "value": "616 căn hộ và 23 căn thương mại dịch vụ"
+   },
+   {
+    "label": "Căn mỗi tầng",
+    "value": "B1 8 căn · B2 18 căn · B3 20 căn (tầng điển hình)"
+   },
+   {
+    "label": "Hướng nhìn",
+    "value": "Khoảng 70 % căn hướng sông, 30 % nhìn hồ bơi và cảnh quan nội khu"
+   },
+   {
+    "label": "Tiêu chuẩn bàn giao",
+    "value": "Tháp B2 bàn giao hoàn thiện; tháp B1 và B3 bàn giao tiêu chuẩn (theo tài liệu bán hàng)"
+   },
+   {
+    "label": "Chứng nhận xanh",
+    "value": "BCA Green Mark Gold cho cả 3 tháp; toàn khu Gladia by the Waters đạt BCA Green Mark for Districts (Provisional)"
+   },
+   {
+    "label": "Ngân hàng bảo lãnh",
+    "value": "VietinBank"
+   },
+   {
+    "label": "Ngân hàng cho vay",
+    "value": "VietinBank, BIDV, OCB, MB, Vietcombank, Standard Chartered"
+   },
+   {
+    "label": "Quản lý vận hành",
+    "value": "Savills (dự kiến, theo tài liệu bán hàng)"
+   },
+   {
+    "label": "Khởi công",
+    "value": "Tháng 1/2026 (lễ động thổ 25/1/2026)"
+   },
+   {
+    "label": "Mở bán",
+    "value": "1/8/2026 (ra mắt thị trường 12/6/2026)"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Dự kiến quý IV/2027"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích đất",
+    "value": "1,26 ha",
+    "note": "3 mặt hướng sông"
+   },
+   {
+    "label": "Quy mô",
+    "value": "3 tháp",
+    "note": "15 tầng, 1 hầm"
+   },
+   {
+    "label": "Số căn",
+    "value": "616",
+    "note": "cộng 23 căn thương mại tầng trệt"
+   },
+   {
+    "label": "Căn hướng sông",
+    "value": "≈ 70 %",
+    "note": "phần còn lại nhìn hồ bơi nội khu"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Tháp B2 The First và B3 The Advanta — chính sách từ 3/9/2026",
+  "subtitle": "Đợt 1 mở bán ngày 1/8/2026 với khoảng 500 căn của 2 tháp; chủ đầu tư công bố hơn 90 % được đặt mua trong ngày. Giỏ hàng còn lại PaceLand cập nhật theo tuần; bảng dưới là chính sách chủ đầu tư áp dụng từ 3/9/2026.",
+  "capNhat": "Chính sách bán hàng áp dụng từ 3/9/2026",
+  "gioHang": [
+   "Tháp B2 The First: 18 căn một tầng, bàn giao hoàn thiện — 1PN 50,3–51,2 m², 2PN 71,4–72,4 m², 3PN 124,7 m² tim tường",
+   "Tháp B3 The Advanta: 20 căn một tầng, bàn giao tiêu chuẩn — 2PN 71,4–85,2 m², 3PN 114,9–125,3 m², 4PN 144,2 m²",
+   "Giá tham khảo tháng 9/2026: từ 83 triệu/m² tim tường (bàn giao tiêu chuẩn), từ 91 triệu/m² (bàn giao hoàn thiện), chưa VAT",
+   "Tháp B1 The Future (8 căn một tầng, hồ bơi và clubhouse riêng) chưa có lịch mở bán — chúng tôi báo khi chủ đầu tư công bố"
+  ],
+  "lyDo": [
+   {
+    "title": "Ký hợp đồng 10 %, phần còn lại đến khi nhận nhà",
+    "text": "Chính sách công bố ngày mở bán: khách đóng **10 %** giá trị căn khi ký hợp đồng mua bán; ngân hàng cho vay đến 75 %, chủ đầu tư hỗ trợ lãi suất 0 % và ân hạn nợ gốc 24 tháng tính từ ngày giải ngân đầu tiên. Anh/chị hỏi chúng chúng tôi bảng tính kỳ trả nợ tháng thứ 25 trước khi quyết — con số đó nằm trong hợp đồng tín dụng, không nằm trong tờ rơi."
+   },
+   {
+    "title": "Chiết khấu 12 % nếu trả nhanh",
+    "text": "Thanh toán sớm được chiết khấu đến 12 % trừ thẳng vào giá bán, thay cho gói hỗ trợ lãi suất. Với căn 2 phòng ngủ 6,5 tỷ, chênh giữa 2 phương án **khoảng 780 triệu**; chúng tôi tính cho đúng căn anh/chị chọn."
+   },
+   {
+    "title": "Quà bàn giao cho căn 3 phòng ngủ tháp B3",
+    "text": "Căn 3 phòng ngủ tháp B3 được tặng gói nâng cấp bàn giao đến **500 triệu**; căn 3PN và 4PN ở một số tầng có khoản hoàn tiền thuê 12 tháng, 360–480 triệu khi nhận nhà. Điều kiện từng căn ghi trong chính sách đóng dấu, chúng chúng tôi gửi bản gốc."
+   },
+   {
+    "title": "Giấy tờ bán hàng có trước ngày mở bán",
+    "text": "Sở Xây dựng TP.HCM ra văn bản 26381/SXD-PTĐT ngày 23/7/2026 xác nhận đủ điều kiện bán 616 căn lô B1, B2, trước ngày mở bán 1/8; VietinBank cấp bảo lãnh nghĩa vụ bàn giao. Anh/chị yêu cầu xem bản gốc 2 giấy này cho đúng mã căn mình mua."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Đặt chỗ",
+    "value": "100 triệu",
+    "note": "một căn, theo tài liệu bán hàng"
+   },
+   {
+    "label": "Ký hợp đồng",
+    "value": "10 %",
+    "note": "giá trị căn; phần còn lại đến khi nhận nhà"
+   },
+   {
+    "label": "Hỗ trợ lãi suất",
+    "value": "24 tháng",
+    "note": "0 %, ân hạn gốc; vay đến 75 %"
+   },
+   {
+    "label": "Phí quản lý",
+    "value": "Miễn 12 tháng",
+    "note": "theo chính sách đợt mở bán"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 7/2026",
+  "intro": "3 tháp động thổ ngày 25/1/2026. Đến giữa tháng 7/2026 công trường đã đóng cừ Larsen kín chu vi, đào đất tầng hầm được khoảng 80 %, đổ bê tông đài móng và sàn hầm theo từng phân đoạn với 4 cẩu tháp; cuối tháng 7 chủ đầu tư công bố phần móng hoàn thành đúng tiến độ. Nhà mẫu căn 2 và 3 phòng ngủ mở tại công trường Võ Chí Công từ 14/6/2026.",
+  "moc": [
+   {
+    "label": "Ép cọc đại trà",
+    "value": "Cơ bản xong quý I/2026"
+   },
+   {
+    "label": "Hầm và móng",
+    "value": "Phần móng hoàn thành tháng 7/2026 (theo chủ đầu tư)"
+   },
+   {
+    "label": "Nhà mẫu",
+    "value": "Đã mở — căn 2PN 85,2 m² và 3PN 125,3 m²"
+   },
+   {
+    "label": "Ký hợp đồng mua bán",
+    "value": "Từ tháng 8/2026"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Dự kiến quý IV/2027"
+   },
+   {
+    "label": "Sổ hồng",
+    "value": "Dự kiến 2028 (theo tài liệu bán hàng)"
+   }
+  ],
+  "note": "Anh/chị muốn xem công trường và nhà mẫu, PaceLand hẹn lịch và đưa đón từ trung tâm; ảnh công trường tháng gần nhất chúng chúng tôi gửi qua Zalo trước khi đi.",
+  "image": null
+ },
+ "viTri": {
+  "intro": "Khu đất có mặt tiền Võ Chí Công — đoạn Vành đai 2 đang khai thác — ở phía bắc; phía đông là khu biệt thự ven sông Gladia by the Waters đã có người ở, phía nam là công viên nội khu. Số phút bên dưới là của chủ đầu tư, đo vào giờ thường; đi làm ở trung tâm, anh/chị nên chạy thử một buổi sáng qua nút giao Mỹ Thuỷ và An Phú trước khi quyết.",
+  "khoangCach": [
+   {
+    "label": "Nút giao Mỹ Thuỷ",
+    "value": "Kề cận"
+   },
+   {
+    "label": "Nút giao cao tốc TP.HCM – Long Thành – Dầu Giây",
+    "value": "Dưới 2 km"
+   },
+   {
+    "label": "Trung tâm Tài chính Quốc tế Thủ Thiêm (theo quy hoạch)",
+    "value": "10 phút"
+   },
+   {
+    "label": "Cầu Ba Son",
+    "value": "15 phút"
+   },
+   {
+    "label": "Chợ Bến Thành, Quận 1 cũ",
+    "value": "20 phút"
+   },
+   {
+    "label": "Phú Mỹ Hưng",
+    "value": "10 phút"
+   },
+   {
+    "label": "Sân bay Tân Sơn Nhất",
+    "value": "30 phút"
+   },
+   {
+    "label": "Sân bay quốc tế Long Thành (dự kiến)",
+    "value": "30–45 phút"
+   },
+   {
+    "label": "Trạm metro gần nhất (theo quy hoạch)",
+    "value": "Vài phút"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Võ Chí Công là Vành đai 2",
+    "text": "Đoạn Võ Chí Công trước dự án là phần Vành đai 2 đã khai thác, có quy hoạch mở rộng lên 12 làn. Đây cũng là trục xe ra cảng Cát Lái, nên căn quay ra đường và căn quay vào sông là 2 trải nghiệm khác nhau — anh/chị đứng ở chân dự án lúc 7h30 sáng một ngày trong tuần để tự nghe rồi chọn hướng."
+   },
+   {
+    "title": "Nút giao Mỹ Thuỷ và các tuyến đến 2030",
+    "text": "Khu đất kề nút giao Mỹ Thuỷ, đầu mối nối Võ Chí Công với Đồng Văn Cống và Nguyễn Thị Định. Kế hoạch hạ tầng của khu vực đến 2030 có tuyến liên cảng Cát Lái – Phú Hữu, Metro số 6 và đường sắt Thủ Thiêm – Long Thành; mốc hạ tầng hay lùi, chúng tôi ghi để anh/chị theo dõi chứ không tính vào giá."
+   },
+   {
+    "title": "Trong cụm đô thị 60 ha",
+    "text": "Gladia by the Waters 11,8 ha nằm trong cụm đô thị **60 ha** đã có quy hoạch; phần thấp tầng 226 căn đã xây xong, cư dân nhận sổ hồng từ 25/1/2026. Cư dân căn hộ dùng chung 5 công viên chủ đề, 2 km đường đi bộ ven sông và các hạng mục trường học, y tế, thương mại của cụm đô thị theo quy hoạch."
+   }
+  ],
+  "image": "assets/img/du-an/gladia-heights-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Chủ đầu tư công bố **hơn 60 tiện ích** nội khu, chia theo cụm: tháp B1 có hồ bơi Ánh Sao và clubhouse riêng; tháp B2 và B3 dùng chung hồ bơi Ngân Hà dài 50 m và clubhouse lớn với gym, yoga, phòng chơi trẻ em. Danh mục trên website dự án còn có hồ bơi trẻ em, sân tennis, khu leo núi giả lập, lối dạo mát-xa chân, khu tiệc nướng có mái che và sảnh tiếp khách riêng từng tháp. 6 hạng mục chính theo thư viện ảnh của chủ đầu tư:",
+  "items": [
+   "Hồ bơi Ngân Hà 50 m và aqua gym",
+   "Hồ bơi Ánh Sao có âm nhạc dưới nước",
+   "Cầu bộ hành phun sương",
+   "Màn mưa hồ bơi",
+   "Jacuzzi nổi ngoài trời",
+   "Gym và yoga trong clubhouse"
+  ]
+ },
+ "giaBan": {
+  "intro": "Bảng giá tham khảo tháng 9/2026 từ tài liệu bán hàng: **từ 83 triệu/m² tim tường** với căn bàn giao tiêu chuẩn (tháp B1, B3) và từ 91 triệu/m² với căn bàn giao hoàn thiện (tháp B2), chưa gồm VAT. Các bài báo về dự án không nêu đơn giá, nên bảng bên dưới chỉ ghi **giá từ** theo loại căn ở đợt 1; giá từng mã căn chúng chúng tôi gửi bằng bảng giá đóng dấu của chủ đầu tư.",
+  "capNhat": "Tháng 9/2026",
+  "loai": [
+   {
+    "name": "1 phòng ngủ",
+    "dienTich": "50,3–53,5 m² tim tường",
+    "gia": "từ 4,4 tỷ",
+    "thanhToan": "≈ 440 triệu khi ký hợp đồng"
+   },
+   {
+    "name": "2 phòng ngủ",
+    "dienTich": "71,4–85,2 m²",
+    "gia": "từ 5,9 tỷ",
+    "thanhToan": "≈ 590 triệu khi ký hợp đồng"
+   },
+   {
+    "name": "3 phòng ngủ",
+    "dienTich": "114,8–125,8 m²",
+    "gia": "từ 9,5 tỷ",
+    "thanhToan": "≈ 950 triệu khi ký hợp đồng"
+   },
+   {
+    "name": "4 phòng ngủ",
+    "dienTich": "144,2 m²",
+    "gia": "từ 12 tỷ",
+    "thanhToan": "≈ 1,2 tỷ khi ký hợp đồng"
+   }
+  ],
+  "note": "Giá chưa gồm VAT và phí bảo trì 2 %. Chiết khấu thanh toán nhanh 12 % trừ thẳng vào giá, nên số cuối của một căn thấp hơn bảng trên nếu anh/chị chọn trả nhanh. Đơn giá tính trên diện tích tim tường — anh/chị hỏi chúng chúng tôi diện tích thông thuỷ của đúng mã căn để so cho đúng."
+ },
+ "matBang": {
+  "intro": "3 tháp xếp quanh cụm hồ bơi giữa khu: B1 The Future đứng riêng phía tây với 8 căn một tầng, B2 The First 18 căn, B3 The Advanta 20 căn; sân tennis nằm giữa B1 và B2, khu thấp tầng ven sông ở phía đông. Mã căn trên mặt bằng ghi cả diện tích tim tường và thông thuỷ — anh/chị chọn tháp, chúng chúng tôi gửi mặt bằng tầng và mặt bằng căn bản PDF.",
+  "diem": [
+   "B1: 8 căn một tầng, có hồ bơi Ánh Sao và clubhouse riêng",
+   "B2: 18 căn một tầng, xếp chữ L cạnh sân tennis và hồ bơi Ngân Hà",
+   "B3: 20 căn một tầng, hành lang chữ U mở về hồ bơi trung tâm",
+   "Căn 4 phòng ngủ đặt ở góc tháp (B1.06, B3.04); căn 3 phòng ngủ chiếm các góc còn lại",
+   "Mỗi mã căn ghi 2 diện tích: tim tường và thông thuỷ, chênh khoảng 9–10 %"
+  ],
+  "image": "assets/img/du-an/gladia-heights-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "1 phòng ngủ",
+   "dienTich": "50,3–53,5 m² tim tường (45,3–47,8 m² thông thuỷ)",
+   "text": "Chỉ có ở tháp B1 (mã 1BL) và tháp B2 (mã 1BS), mỗi tầng 1–3 căn. Phòng ngủ tách hẳn phòng khách, bếp thẳng hàng. Hợp người ở một mình hoặc mua cho chuyên gia làm việc ở Thủ Thiêm thuê."
+  },
+  {
+   "name": "2 phòng ngủ",
+   "dienTich": "71,4–85,2 m² (64,3–77,3 m² thông thuỷ)",
+   "text": "Loại căn nhiều nhất trong giỏ hàng, có ở cả 3 tháp. Bản 2BS 71–72 m² phòng khách liền bếp; bản 2BL 85 m² ở tháp B1 và B3 rộng hơn ở phần khách – bếp. Nhà mẫu 2 phòng ngủ 85,22 m² đang mở ở công trường."
+  },
+  {
+   "name": "3 phòng ngủ",
+   "dienTich": "114,8–125,8 m² (105,3–114,4 m² thông thuỷ)",
+   "text": "Đặt ở góc tháp nên 2 mặt thoáng, cả 3 phòng ngủ đều có cửa sổ. Căn 3 phòng ngủ tháp B3 được tặng gói nâng cấp bàn giao theo chính sách từ 3/9/2026. Nhà mẫu 3 phòng ngủ 125,30 m², trần cao 2,975 m."
+  },
+  {
+   "name": "4 phòng ngủ",
+   "dienTich": "144,2–144,3 m² (130,8–130,9 m² thông thuỷ)",
+   "text": "Mỗi tầng chỉ 1 căn ở tháp B1 (B1.06) và 1 căn ở tháp B3 (B3.04), đều đặt ở góc tháp. Số lượng ít nên chúng tôi báo giỏ hàng theo từng đợt; căn 4PN ở tầng 2, 3, 4, 13, 14 có khoản hoàn tiền thuê theo chính sách từ 3/9/2026."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "4 điều chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Giấy tờ đủ trước ngày mở bán",
+    "text": "Giấy chứng nhận quyền sử dụng đất cấp ngày 7/11/2024, giấy phép xây dựng ngày 2/2/2026, văn bản đủ điều kiện bán số 26381/SXD-PTĐT của Sở Xây dựng ngày 23/7/2026 và bảo lãnh VietinBank — tất cả có trước ngày mở bán 1/8/2026. Dự án cũng nằm trong danh mục người nước ngoài được sở hữu theo văn bản 2864/UBND-ĐT ngày 9/4/2026."
+   },
+   {
+    "title": "Liên doanh đã có sản phẩm bàn giao ngay bên cạnh",
+    "text": "Khu thấp tầng Gladia by the Waters 226 căn của cùng liên doanh đã xây xong và trao sổ hồng cho cư dân ngày 25/1/2026, khoảng 3 tháng sau khi mở bán. Anh/chị đi xem khu thấp tầng là thấy chất lượng hoàn thiện thật, không phải xem phối cảnh."
+   },
+   {
+    "title": "Đất 3 mặt hướng sông, 70 % căn nhìn sông",
+    "text": "Khu đất 1,26 ha có 3 mặt hướng sông; theo chủ đầu tư **khoảng 70 %** căn hướng sông, 30 % nhìn hồ bơi nội khu. Số căn một tầng từ 8 (B1) đến 20 (B3) — anh/chị so với dự án khác bằng mặt bằng tầng, chúng chúng tôi gửi cả 2 bản."
+   },
+   {
+    "title": "Pháp nhân ký hợp đồng tra được trong 10 phút",
+    "text": "Khang Điền niêm yết mã KDH và công bố báo cáo tài chính theo quý, Keppel niêm yết ở Singapore; hai bên đều đứng tên trên thông cáo của dự án. Bên ký hợp đồng với anh/chị là Công ty TNHH Đầu tư Kinh doanh nhà Đoàn Nguyên — anh/chị đọc đúng tên này ở trang đầu hợp đồng rồi tra trên Cổng thông tin quốc gia về đăng ký doanh nghiệp."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Sông và công viên ở ngay dưới",
+    "text": "3 mặt khu đất hướng sông, phía đông là khu biệt thự ven sông đã có người ở, phía nam là công viên nội khu. Cụm đô thị có 5 công viên chủ đề và 2 km đường đi bộ ven sông dùng chung."
+   },
+   {
+    "title": "Tiện ích trong khu và quanh khu",
+    "text": "2 cụm hồ bơi, 2 clubhouse có gym, yoga, phòng chơi trẻ em, sân tennis và 23 căn thương mại tầng trệt. Trường học, y tế và trung tâm thương mại của cụm đô thị 60 ha còn theo quy hoạch — anh/chị hỏi chúng chúng tôi hạng mục nào đã có, hạng mục nào chưa."
+   },
+   {
+    "title": "Đi lại",
+    "text": "Ra Võ Chí Công là lên Vành đai 2, qua nút giao Mỹ Thuỷ về Thủ Thiêm và Quận 1 cũ khoảng 15–20 phút giờ thường; ra cao tốc Long Thành dưới 2 km. Giờ cao điểm trục này đông và có xe container ra cảng Cát Lái, anh/chị chạy thử một buổi sáng trước khi quyết."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý chủ đầu tư công bố trên trang Khang Điền và website dự án (có bản PDF tải về):",
+  "items": [
+   "Giấy chứng nhận quyền sử dụng đất số DQ 128066 và DQ 128067, cấp ngày 7/11/2024 cho lô B1 (2.618 m²) và lô B2N (9.994 m²)",
+   "Công văn 5646/UBND-ĐTMT ngày 3/11/2012 chấp thuận đầu tư khu nhà ở Bình Trưng Đông – Cát Lái; Quyết định 436/QĐ-UBND ngày 11/2/2022 và Công văn 5312/UBND-DA ngày 19/6/2026 của UBND TP.HCM điều chỉnh chủ trương đầu tư, chấp thuận nhà đầu tư",
+   "Quy hoạch chi tiết 1/500 khu nhà ở 60.732 m²: Quyết định 3952/QĐ-UBND ngày 29/3/2010, điều chỉnh cục bộ theo Quyết định 4183/QĐ-UBND ngày 6/11/2025",
+   "Công văn 2165/SXD-QLXDCT ngày 20/1/2026 thẩm định báo cáo nghiên cứu khả thi; Công văn 4151/SXD-QLXDCT ngày 2/2/2026 về giấy phép xây dựng chung cư cao tầng lô B1 và B2N",
+   "Văn bản số 26381/SXD-PTĐT ngày 23/7/2026 của Sở Xây dựng TP.HCM thông báo đủ điều kiện được bán nhà ở thương mại hình thành trong tương lai — 616 căn hộ lô B1 và B2",
+   "Hợp đồng mua bán mẫu đã đăng ký với Sở Công Thương: thông báo hoàn thành đăng ký và bản mẫu đóng dấu công bố trên website dự án",
+   "Chứng thư bảo lãnh nghĩa vụ bàn giao nhà của VietinBank",
+   "Văn bản 2864/UBND-ĐT ngày 9/4/2026: dự án thuộc danh mục nhà ở mà tổ chức, cá nhân nước ngoài được phép sở hữu"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc 3 giấy cho đúng mã căn mình mua: văn bản 26381/SXD-PTĐT ngày 23/7/2026 (căn của mình có nằm trong 616 căn không), chứng thư bảo lãnh VietinBank (hết hiệu lực ngày nào so với mốc bàn giao trong hợp đồng) và giấy phép xây dựng. PaceLand đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Liên doanh Keppel × Khang Điền",
+  "text": "Keppel (Singapore) mua 49 % của 2 dự án liền kề tổng 11,8 ha của Khang Điền tại Thủ Đức năm 2023 với giá **3.180 tỷ**, rồi hai bên cùng phát triển thành Gladia by the Waters. Khang Điền (mã KDH, 25 năm) đã bàn giao Jamila, Safira, Lovera Vista, The Classia, Verosa Park và The Privia; Keppel có hơn 30 năm ở Việt Nam với Saigon Centre, The Estella, Estella Heights, Riviera Point, Palm City. Sản phẩm chung đầu tiên của liên doanh là khu thấp tầng Gladia by the Waters 226 căn — xây xong và trao sổ hồng cho cư dân ngày 25/1/2026. Bên ký hợp đồng Gladia Heights là Công ty TNHH Đầu tư Kinh doanh nhà Đoàn Nguyên, pháp nhân dự án của liên doanh.",
+  "daBanGiao": [
+   "Gladia by the Waters (khu thấp tầng)",
+   "The Privia",
+   "The Classia",
+   "Jamila"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Gladia Heights giá bao nhiêu?",
+   "a": "Theo bảng giá tham khảo tháng 9/2026, Gladia Heights chào từ 83 triệu/m² tim tường với căn bàn giao tiêu chuẩn và từ 91 triệu/m² với căn bàn giao hoàn thiện, chưa VAT. Căn 1 phòng ngủ 53,46 m² từ khoảng 4,4 tỷ, 2 phòng ngủ 71–85 m² từ 5,9 tỷ, 3 phòng ngủ 115–125 m² từ 9,5 tỷ, 4 phòng ngủ 144 m² từ 12 tỷ; giá từng căn theo bảng giá đóng dấu của chủ đầu tư."
+  },
+  {
+   "q": "Gladia Heights khi nào bàn giao?",
+   "a": "Chủ đầu tư dự kiến bàn giao Gladia Heights quý IV/2027. Dự án khởi công tháng 1/2026, phần móng hoàn thành tháng 7/2026, mở bán ngày 1/8/2026; VietinBank bảo lãnh nghĩa vụ bàn giao, nên anh/chị hỏi ngày hết hiệu lực của chứng thư so với mốc bàn giao ghi trong hợp đồng."
+  },
+  {
+   "q": "Gladia Heights đã đủ điều kiện bán chưa?",
+   "a": "Rồi. Sở Xây dựng TP.HCM có văn bản số 26381/SXD-PTĐT ngày 23/7/2026 xác nhận Gladia Heights đủ điều kiện bán nhà ở hình thành trong tương lai cho 616 căn hộ tại lô B1 và B2, trước ngày mở bán 1/8/2026. Dự án đã có giấy chứng nhận quyền sử dụng đất (7/11/2024), giấy phép xây dựng (2/2/2026), hợp đồng mẫu đăng ký với Sở Công Thương và bảo lãnh VietinBank; bản PDF các văn bản có trên website dự án, anh/chị đối chiếu mã căn mình mua với danh sách trong văn bản 26381."
+  },
+  {
+   "q": "Mua Gladia Heights cần bao nhiêu tiền ban đầu?",
+   "a": "Theo chính sách từ 3/9/2026, khách ký hợp đồng mua bán Gladia Heights với 10 % giá trị căn — khoảng 590 triệu cho căn 2 phòng ngủ 5,9 tỷ — phần còn lại trả khi nhận nhà hoặc vay ngân hàng đến 75 % với hỗ trợ lãi suất 0 % và ân hạn gốc 24 tháng. Đặt chỗ theo tài liệu bán hàng là 100 triệu một căn; trả nhanh thì được chiết khấu đến 12 % thay cho gói hỗ trợ lãi suất."
+  }
+ ]
+}

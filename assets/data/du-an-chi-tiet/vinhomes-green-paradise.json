@@ -1,0 +1,407 @@
+{
+ "capNhat": "2026-09-15",
+ "tongQuan": {
+  "intro": "Vinhomes Green Paradise là tên thương mại của **Khu đô thị du lịch lấn biển Cần Giờ**, chủ đầu tư là Công ty Cổ phần Đô thị Du lịch Cần Giờ (thành viên Vingroup), bán hàng dưới thương hiệu Vinhomes. Dự án rộng **2.870 ha**, trong đó 1.357 ha lấn biển, nằm ở xã Long Hòa và thị trấn Cần Thạnh cũ — từ 1/7/2025 là xã Cần Giờ. Quy hoạch 1/500 duyệt ngày 24/1/2025 chia 4 phân khu với dân số tối đa 228.506 người; Vinhomes đặt tên thương mại là Vịnh Tiên, Vịnh Ngọc, Đảo Mặt Trời và Mũi Danh Vọng. Khởi công 19/4/2025; đến tháng 9/2026, 2 khu Vịnh Tiên và Vịnh Ngọc đang bán nhà phố và biệt thự.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Vinhomes Green Paradise"
+   },
+   {
+    "label": "Tên pháp lý",
+    "value": "Dự án đầu tư mở rộng Khu đô thị du lịch lấn biển Cần Giờ"
+   },
+   {
+    "label": "Chủ đầu tư (pháp nhân)",
+    "value": "Công ty Cổ phần Đô thị Du lịch Cần Giờ — thành viên Vingroup, MST 0303506451"
+   },
+   {
+    "label": "Thương hiệu phát triển",
+    "value": "Vinhomes (Công ty Cổ phần Vinhomes, mã chứng khoán VHM)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Xã Cần Giờ, TP.HCM (xã Long Hòa và thị trấn Cần Thạnh cũ), giáp Biển Đông và cửa vịnh Gành Rái"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Đô thị du lịch biển: nhà phố liền kề, shophouse, biệt thự song lập, đơn lập; căn hộ cao tầng, khách sạn theo quy hoạch"
+   },
+   {
+    "label": "Quy mô",
+    "value": "2.870 ha, trong đó 1.357 ha lấn biển; bờ biển dài 12 km"
+   },
+   {
+    "label": "Dân số quy hoạch",
+    "value": "Tối đa 228.506 người; khoảng 8,88 triệu lượt khách/năm theo quy hoạch, Vinhomes định hướng 40 triệu lượt"
+   },
+   {
+    "label": "Phân khu",
+    "value": "Vịnh Tiên 771,1 ha · Vịnh Ngọc 586,9 ha · Đảo Mặt Trời 449,8 ha · Mũi Danh Vọng 303,5 ha (theo tổng mặt bằng Vinhomes)"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "Khoảng 22 % tại Vịnh Tiên; toàn dự án khoảng 23 % (theo Vinhomes)"
+   },
+   {
+    "label": "Đang mở bán",
+    "value": "Vịnh Tiên (The Haven Bay) và Vịnh Ngọc (The Green Bay): nhà phố liền kề, biệt thự song lập, biệt thự đơn lập"
+   },
+   {
+    "label": "Tổng mức đầu tư",
+    "value": "217.054 tỷ đồng theo quyết định chủ trương 2020; 282.800 tỷ đồng theo công bố khi khởi công"
+   },
+   {
+    "label": "Hình thức sở hữu",
+    "value": "Lâu dài với người Việt Nam; tổ chức, cá nhân nước ngoài chỉ được ký hợp đồng thuê"
+   },
+   {
+    "label": "Thiết kế nhà hát Sóng Xanh",
+    "value": "Gensler"
+   },
+   {
+    "label": "Thiết kế sân golf",
+    "value": "Tiger Woods (sân West – Sunset) và Robert Trent Jones II (sân East – Sunrise)"
+   },
+   {
+    "label": "Khởi công",
+    "value": "19/4/2025"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Nhà phố đợt đầu dự kiến từ tháng 8/2026 (theo Vinhomes); quỹ căn đặc thù bàn giao 130 ngày sau ngày đặt cọc"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích",
+    "value": "2.870 ha",
+    "note": "1.357 ha lấn biển"
+   },
+   {
+    "label": "Dân số quy hoạch",
+    "value": "228.506",
+    "note": "người, theo quy hoạch 1/500"
+   },
+   {
+    "label": "Phân khu",
+    "value": "4 khu",
+    "note": "2 khu đang bán"
+   },
+   {
+    "label": "Khởi công",
+    "value": "19/4/2025",
+    "note": "cầu Cần Giờ khởi công 3/6/2026"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "Vịnh Tiên và Vịnh Ngọc — 2 khu thấp tầng đang bán",
+  "subtitle": "Vịnh Tiên (The Haven Bay, 771,1 ha) là khu cửa ngõ, có ga đường sắt Bến Thành – Cần Giờ, VinWonders, 2 sân golf và nhà hát Sóng Xanh. Vịnh Ngọc (The Green Bay, 586,9 ha) là khu ở sát Biển Đông, có bệnh viện Vinmec. Giỏ hàng cả 2 khu gồm nhà phố liền kề, biệt thự song lập và biệt thự đơn lập.",
+  "capNhat": "Chính sách bán hàng tháng 8/2026, hiệu lực từ 13/8/2026 đến khi có chính sách mới",
+  "gioHang": [
+   "Nhà phố liền kề: 90–120 m² đất, tổng sàn 334,5–413,6 m², 4 tầng, trên trục Đại lộ Ánh Sáng hoặc Đại lộ Tương Lai rộng 50 m",
+   "Biệt thự song lập: 150–580 m² đất, 3–4 tầng, giáp biển hồ, mặt biển hoặc trong compound",
+   "Biệt thự đơn lập: 180–590 m² đất, 3–4 tầng, 100 % có mặt nước sau nhà theo Vinhomes",
+   "Giá tham chiếu: thấp tầng Vịnh Tiên dự kiến từ 12,8 tỷ/căn; liền kề Vịnh Ngọc 100 m² đất niêm yết 17,65 tỷ đã gồm VAT và phí bảo trì"
+  ],
+  "lyDo": [
+   {
+    "title": "Chiết khấu 9 % nếu trả sớm, không vay",
+    "text": "Vịnh Tiên: ký tài liệu giao dịch đầu tiên từ 13/8 đến 30/9/2026 và thanh toán trong 15 ngày sau khi ký hợp đồng mua bán. Vịnh Ngọc: ký đến 10/9/2026 và trả đủ 100 % trong 30 ngày sau thoả thuận đặt cọc. Sau các mốc đó, mức chiết khấu còn 7,5 %. Trả sớm từng đợt được tính chiết khấu 11 %/năm trên số tiền và số ngày trả trước."
+   },
+   {
+    "title": "Vay tới 70 %, lãi suất 0 % đến 36 tháng",
+    "text": "Chọn gói hỗ trợ lãi suất thì giá gốc được cộng thêm theo thời gian hỗ trợ: 18 tháng 0 %, 24 tháng 4,5 %, 30 tháng 9 %, 36 tháng 14 %, 60 tháng 25 % (ký đến 30/9/2026; từ 1/10/2026 mức cộng cao hơn và bỏ gói 60 tháng). Hết thời gian hỗ trợ, chủ đầu tư giữ trần lãi suất 9 %/năm trong 24 tháng tiếp theo cho gói 18–36 tháng. PaceLand tính cả 2 phương án trên đúng căn anh/chị chọn để so tổng tiền thật."
+   },
+   {
+    "title": "Lịch thanh toán 7 đợt, 10 % khi ký hợp đồng",
+    "text": "Đặt cọc **300 triệu**; ký hợp đồng mua bán đóng 10 % giá bán và ký quỹ thêm 5 % đảm bảo hợp đồng, khoản này được chủ đầu tư trả lãi 9,5 %/năm tới khi có sổ; sau đó 15 % mỗi đợt ở các mốc 15, 90, 180 và 255 ngày; 25 % cộng phí bảo trì khi bàn giao; 5 % còn lại khấu trừ từ ký quỹ khi cấp giấy chứng nhận."
+   },
+   {
+    "title": "2 khu, 2 cách mua khác nhau",
+    "text": "Vịnh Tiên ký hợp đồng mua bán trực tiếp với Công ty Cổ phần Đô thị Du lịch Cần Giờ. Vịnh Ngọc thuộc dự án thành phần \"Khu phức hợp số 2\" do Công ty TNHH Capitaland Tower làm chủ đầu tư, khách mua bằng cách nhận chuyển nhượng hợp đồng mua bán từ nhà đầu tư thứ cấp — thủ tục và thuế phí khác với mua sơ cấp. Anh/chị yêu cầu xem hợp đồng gốc của nhà đầu tư thứ cấp và văn bản chấp thuận chuyển nhượng trước khi đặt cọc; chúng tôi đọc cùng."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Đặt cọc",
+    "value": "300 triệu",
+    "note": "1 căn; Vịnh Ngọc ký quỹ cũng 300 triệu"
+   },
+   {
+    "label": "Chiết khấu trả sớm",
+    "value": "9 %",
+    "note": "còn 7,5 % sau 30/9 (Vịnh Tiên) hoặc sau 10/9 (Vịnh Ngọc)"
+   },
+   {
+    "label": "Vay hỗ trợ lãi suất",
+    "value": "70 %",
+    "note": "0 % trong 18–36 tháng; gói 60 tháng có điều kiện"
+   },
+   {
+    "label": "Quà tặng đợt này",
+    "value": "đến 75 triệu",
+    "note": "vàng theo giá căn, ký đến 10/9/2026; voucher spa 20 triệu cho 100 căn đầu"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Khởi công 19/4/2025. Theo giám đốc dự án (Người Lao Động, 23/10/2025), giai đoạn 1 gồm đắp nền và chống xói lở hoàn thành tháng 11/2025; giai đoạn 2 làm hạ tầng đường từ giữa 2026. Tháng 7/2026, Đại lộ Thời Đại dài **khoảng 12 km**, rộng 120 m đã thành hình và đang trồng cây. Tháng 9/2026, Vinhomes ghi những căn nhà phố đầu tiên đang hoàn thiện cuối, dự kiến bàn giao từ tháng 8/2026 — chúng tôi chưa có xác nhận bàn giao thực tế, anh/chị đi xem là thấy.",
+  "moc": [
+   {
+    "label": "Khởi công",
+    "value": "19/4/2025"
+   },
+   {
+    "label": "Lấn biển giai đoạn 1",
+    "value": "Đắp nền, chống xói lở — hoàn thành tháng 11/2025 (theo chủ đầu tư)"
+   },
+   {
+    "label": "Đường nội khu Vịnh Tiên",
+    "value": "Đã thảm nhựa lớp đầu từ tháng 10/2025"
+   },
+   {
+    "label": "Đại lộ Thời Đại",
+    "value": "Khoảng 12 km, rộng 120 m, đang trồng cây (tháng 7/2026)"
+   },
+   {
+    "label": "Nhà phố đợt đầu",
+    "value": "Hoàn thiện cuối, dự kiến bàn giao từ tháng 8/2026 (theo Vinhomes)"
+   },
+   {
+    "label": "Quỹ căn đặc thù",
+    "value": "Bàn giao dự kiến 130 ngày sau ngày đặt cọc"
+   },
+   {
+    "label": "Cầu Cần Giờ",
+    "value": "Khởi công 3/6/2026, dự kiến khai thác giữa 2029"
+   },
+   {
+    "label": "Đường sắt Bến Thành – Cần Giờ",
+    "value": "Động thổ 19/12/2025, dự kiến vận hành 2028"
+   }
+  ],
+  "note": "Từ trung tâm ra Cần Giờ hiện gần 2 giờ qua phà Bình Khánh. Anh/chị muốn xem công trường và nhà mẫu, PaceLand hẹn lịch, đưa đón và đi cùng; đi xem không mất phí.",
+  "image": null
+ },
+ "viTri": {
+  "intro": "Dự án nằm trên phần biển lấn ra phía trước xã Long Hòa và thị trấn Cần Thạnh cũ, nay là xã Cần Giờ — đơn vị hành chính rộng 157 km², 27.130 dân, thành lập từ 1/7/2025. 3 phía là rừng ngập mặn Cần Giờ **hơn 75.000 ha**, Biển Đông và biển hồ nước mặn trong dự án. Đường bộ duy nhất hiện nay là đường Rừng Sác và phà Bình Khánh qua sông Soài Rạp, mất gần 2 giờ từ trung tâm. Các con số bên dưới chúng tôi lấy từ báo chí và tài liệu Vinhomes, chưa phải chúng tôi tự đo.",
+  "khoangCach": [
+   {
+    "label": "Trung tâm TP.HCM (Quận 1 cũ), hiện nay",
+    "value": "≈ 50 km · gần 2 giờ"
+   },
+   {
+    "label": "Trung tâm TP.HCM sau cầu Cần Giờ (dự kiến 2029)",
+    "value": "40–50 phút"
+   },
+   {
+    "label": "Bến Thành bằng đường sắt tốc độ cao (dự kiến 2028)",
+    "value": "≈ 20 phút"
+   },
+   {
+    "label": "Phú Mỹ Hưng bằng đường sắt (dự kiến 2028)",
+    "value": "≈ 12 phút"
+   },
+   {
+    "label": "Phà Bình Khánh – lối qua sông Soài Rạp hiện nay",
+    "value": "đường bộ duy nhất"
+   },
+   {
+    "label": "Vũng Tàu",
+    "value": "≈ 20 km đường biển"
+   },
+   {
+    "label": "Cảng Cái Mép – Thị Vải",
+    "value": "≈ 12 km"
+   },
+   {
+    "label": "Sân bay Long Thành",
+    "value": "qua cao tốc Bến Lức – Long Thành (chưa có số đo độc lập)"
+   },
+   {
+    "label": "Rừng ngập mặn Cần Giờ (khu dự trữ sinh quyển UNESCO)",
+    "value": "liền kề"
+   },
+   {
+    "label": "Bãi biển Cần Thạnh – Long Hòa",
+    "value": "liền kề"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Cầu Cần Giờ thay phà Bình Khánh",
+    "text": "Cầu dây văng dài 6,3 km, 6 làn xe, cầu chính vượt sông Soài Rạp gần 3 km, tổng vốn hơn 13.200 tỷ đồng, Masterise đề xuất đầu tư theo hợp đồng BT. Động thổ 15/1/2026, khởi công 3/6/2026, dự kiến hợp long cuối 2028 và khai thác giữa 2029. Khi có cầu, trung tâm TP.HCM đi Cần Giờ còn **40–50 phút** thay vì gần 2 giờ."
+   },
+   {
+    "title": "Đường sắt tốc độ cao Bến Thành – Cần Giờ",
+    "text": "TP.HCM giao VinSpeed (Vingroup) đầu tư theo hình thức BOO: 54 km từ Công viên 23/9 tới thẳng dự án, tốc độ thiết kế 350 km/h, tổng vốn hơn 102.430 tỷ đồng, đi toàn tuyến **khoảng 20 phút**. Động thổ 19/12/2025 tại xã Cần Giờ, mốc vận hành 2028. Ga Depot đặt ngay lối vào khu Vịnh Tiên, cạnh Vincom Mega Mall theo tổng mặt bằng."
+   },
+   {
+    "title": "Đất lấn biển cạnh khu dự trữ sinh quyển",
+    "text": "Quyết định 826/QĐ-TTg năm 2020 cho phép mở rộng dự án từ 600 ha lên 2.870 ha với điều kiện tuân thủ khung pháp lý UNESCO về rừng ngập mặn Cần Giờ và không thu hẹp nguồn nước biển cấp cho rừng. Phần lấn biển 1.357 ha dùng công nghệ bơm cát có tư vấn Hà Lan; chủ đầu tư công bố cam kết bảo trì lún trọn đời — anh/chị hỏi điều khoản này trong hợp đồng."
+   }
+  ],
+  "image": "assets/img/du-an/vinhomes-green-paradise-vi-tri.jpg"
+ },
+ "tienIch": {
+  "intro": "Tiện ích lớn theo tài liệu Vinhomes và tổng mặt bằng; phần lớn còn là phối cảnh, riêng hạ tầng đường và nhà phố đã thi công. 6 hạng mục chính:",
+  "items": [
+   "Biển hồ nước mặn Paradise Lagoon (443 ha; tổng mặt bằng ghi hơn 800 ha)",
+   "VinWonders Cần Giờ 122 ha: hơn 150 trò chơi, công viên nước, Safari, Winter Wonderland 30.000 m²",
+   "2 sân golf 18 lỗ, 155 ha — Tiger Woods và Robert Trent Jones II thiết kế",
+   "Nhà hát Sóng Xanh 7 ha, 5.000 chỗ, Gensler thiết kế",
+   "Bệnh viện Vinmec Cần Giờ 7,4 ha, hợp tác Cleveland Clinic",
+   "Tháp 108 tầng tại Mũi Danh Vọng, dự kiến 550 m"
+  ]
+ },
+ "giaBan": {
+  "intro": "Tháng 9/2026, Vinhomes niêm yết công khai 2 căn liền kề Vịnh Ngọc: 100 m² đất, 291,6 m² sàn giá **17,65 tỷ** và 270 m² đất, 448 m² sàn giá 31,34 tỷ — giá đã gồm VAT và phí bảo trì sau chiết khấu theo tiến độ. Thấp tầng Vịnh Tiên chủ đầu tư nêu dự kiến từ 12,8 tỷ/căn; liền kề giãn xây Vịnh Ngọc từ 15,9 tỷ; biệt thự song lập từ 100 triệu/m². Bảng bên dưới ghi mức tham chiếu theo loại sản phẩm; giá từng lô chúng chúng tôi gửi trực tiếp kèm vị trí trên mặt bằng.",
+  "capNhat": "Tháng 9/2026 (chính sách bán hàng tháng 8/2026)",
+  "loai": [
+   {
+    "name": "Nhà phố liền kề Vịnh Ngọc",
+    "dienTich": "100 m² đất · 291,6–322 m² sàn · 4 tầng",
+    "gia": "17,65 tỷ (niêm yết); giãn xây từ 15,9 tỷ",
+    "thanhToan": "≈ 1,77 tỷ khi ký hợp đồng (10 %)"
+   },
+   {
+    "name": "Nhà phố liền kề Vịnh Tiên",
+    "dienTich": "90–120 m² đất · 334,5–413,6 m² sàn · 4 tầng",
+    "gia": "từ 12,8 tỷ (dự kiến, theo Vinhomes)",
+    "thanhToan": "≈ 1,28 tỷ khi ký hợp đồng (10 %)"
+   },
+   {
+    "name": "Biệt thự song lập",
+    "dienTich": "150–580 m² đất · 3–4 tầng",
+    "gia": "từ 100 triệu/m² (theo Vinhomes)",
+    "thanhToan": "10 % giá bán khi ký hợp đồng"
+   },
+   {
+    "name": "Biệt thự đơn lập",
+    "dienTich": "180–590 m² đất · 3–4 tầng",
+    "gia": "bảng giá theo lô, chưa niêm yết công khai",
+    "thanhToan": "10 % giá bán khi ký hợp đồng"
+   }
+  ],
+  "note": "Giá gốc trong chính sách chưa gồm VAT và phí bảo trì; giá niêm yết trên Vinhomes Market đã gồm cả 2 sau chiết khấu. Chiết khấu trả sớm 9 % trừ thẳng vào giá gốc, còn gói vay lãi suất 0 % thì cộng thêm vào giá gốc theo thời gian hỗ trợ — 2 con số cuối của cùng một căn có thể chênh nhau vài trăm triệu, nên anh/chị hỏi chúng chúng tôi tính đúng căn trước khi quyết định. Người nước ngoài chỉ được ký hợp đồng thuê với giá và chính sách riêng."
+ },
+ "matBang": {
+  "intro": "Tổng mặt bằng chia 4 khu quanh biển hồ nước mặn: Vịnh Tiên 771,1 ha ở cửa ngõ phía tây, Vịnh Ngọc 586,9 ha chạy dọc bờ biển phía bắc, Đảo Mặt Trời 449,8 ha ở giữa và Mũi Danh Vọng 303,5 ha ở mũi đất phía đông. Mặt bằng lô từng dãy Vịnh Tiên, Vịnh Ngọc chúng chúng tôi gửi bản lớn khi anh/chị chọn khu.",
+  "diem": [
+   "Vịnh Tiên (khu A): ga Depot đường sắt, Vincom Mega Mall, VinWonders 122 ha, 2 sân golf 155 ha, nhà hát Sóng Xanh, Outlet 20 ha, cụm khách sạn",
+   "Vịnh Ngọc (khu B): sát Biển Đông, Vinmec 7,4 ha, Vincom Plaza – chợ đêm Bayside Market 2,7 ha, biển hồ nội khu hai bờ cách nhau 1 km",
+   "Mũi Danh Vọng (khu C): tháp 108 tầng, Vincom Center Luxury, nhà ở cao tầng, cảng du thuyền Landmark Harbour",
+   "Đảo Mặt Trời (khu D–E): quảng trường lễ hội biển, khách sạn 5 sao, biệt thự ven biển hồ"
+  ],
+  "image": "assets/img/du-an/vinhomes-green-paradise-mat-bang.jpg"
+ },
+ "loaiCan": [
+  {
+   "name": "Nhà phố liền kề",
+   "dienTich": "90–120 m² đất · 334,5–413,6 m² sàn · 4 tầng",
+   "text": "Đặt trên trục thương mại chính — Đại lộ Ánh Sáng ở Vịnh Ngọc, Đại lộ Tương Lai rộng 50 m ở Vịnh Tiên gần ga Depot. Kiến trúc Indochine Hội An hoặc châu Âu, tầng trệt để kinh doanh, 3 tầng trên để ở. Đây là loại nhiều căn nhất trong giỏ hàng và là loại có giá niêm yết công khai (17,65 tỷ cho căn 100 m² đất ở Vịnh Ngọc)."
+  },
+  {
+   "name": "Nhà phố thương mại dãy Vịnh Ngọc 48",
+   "dienTich": "100 m² đất · 300–322 m² sàn",
+   "text": "Dãy 48 căn nằm trên trục Tương Lai dẫn vào Vịnh Ngọc. Mỗi căn 100 m² đất nhưng **300–322 m²** sàn nên xếp được cửa hàng dưới, văn phòng hoặc lưu trú trên. Hợp người mua để khai thác khi lượng khách du lịch vào khu tăng lên; chúng chúng tôi khuyên hỏi rõ quy định kinh doanh của ban quản lý trước khi tính dòng tiền."
+  },
+  {
+   "name": "Biệt thự song lập",
+   "dienTich": "150–580 m² đất · 3–4 tầng",
+   "text": "2 căn chung một tường, giáp biển hồ, mặt biển hoặc trong compound có cổng riêng. Vinhomes nêu giá khởi điểm **từ 100 triệu/m²** ở cả Vịnh Tiên và Vịnh Ngọc; ở Vịnh Ngọc có 50 mẫu thiết kế theo 5 phong cách (Indochine, Đông Âu, Nhật Bản, Shanghai, Hội An)."
+  },
+  {
+   "name": "Biệt thự đơn lập",
+   "dienTich": "180–590 m² đất · 3–4 tầng",
+   "text": "Loại ít căn nhất, đặt ở các vị trí mặt nước; Vinhomes ghi **100 %** có mặt biển hoặc biển hồ sau nhà. Giá theo lô, chưa niêm yết công khai — chúng tôi báo giỏ hàng theo từng đợt mở."
+  },
+  {
+   "name": "Căn hộ cao tầng (theo quy hoạch, chưa mở bán)",
+   "dienTich": "Lô cao tầng A3-07, A3-06, C2-09 và C3-30.2 theo văn bản chuyển nhượng",
+   "text": "Quy hoạch 1/500 dành phân khu C cho nhà ở cao tầng với tối đa 41.364 dân, cùng tháp 108 tầng tích hợp khách sạn, văn phòng và căn hộ. Đến tháng 9/2026 chưa có giỏ hàng căn hộ; khi có, PaceLand cập nhật trang này."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "4 điều chúng tôi kiểm được bằng văn bản hoặc bằng công trình đang xây — không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Hồ sơ pháp lý có số văn bản từ cấp Thủ tướng đến giấy phép xây dựng",
+    "text": "Chủ trương đầu tư mở rộng theo Quyết định 826/QĐ-TTg ngày 12/6/2020; giao đất theo Quyết định 3086/QĐ-UBND năm 2007 và 1424/QĐ-UBND ngày 11/4/2025; quy hoạch 1/500 theo Quyết định 340/QĐ-UBND ngày 24/1/2025; giấy phép xây dựng hạ tầng lấn biển số 08/GPXD ngày 15/4/2025. Toàn bộ nằm trong báo cáo công khai của chủ đầu tư ngày 30/9/2025, chúng chúng tôi gửi bản chụp khi anh/chị cần."
+   },
+   {
+    "title": "Cầu và đường sắt đã động thổ, không còn là bản vẽ",
+    "text": "Đường sắt Bến Thành – Cần Giờ động thổ 19/12/2025, cầu Cần Giờ khởi công 3/6/2026. Cả 2 đều có chủ đầu tư, tổng vốn và mốc hoàn thành công bố trên VnExpress, Tuổi Trẻ. Mốc 2028–2029 là mốc kế hoạch; anh/chị nên tính phương án đi lại bằng phà cho ít nhất 2 năm đầu."
+   },
+   {
+    "title": "Đô thị đủ dịch vụ theo quy hoạch, không phải khu nghỉ dưỡng đơn lẻ",
+    "text": "Quy hoạch **228.506 dân** với bệnh viện Vinmec 7,4 ha, đất giáo dục trong từng khu, 3 trung tâm thương mại Vincom, nhà thi đấu và hơn 103 ha nhà ở xã hội tại các đơn vị B1–B3. Đây là điểm khác các dự án biệt thự biển chỉ có tiện ích nghỉ dưỡng."
+   },
+   {
+    "title": "Chính sách bán hàng công khai bản PDF",
+    "text": "Chính sách tháng 8/2026 của cả 2 khu đăng trên Vinhomes Market, ghi rõ pháp nhân ký hợp đồng, lịch thanh toán, mức chiết khấu và gói vay. Bất kỳ lời chào nào khác với bản PDF này — chiết khấu cao hơn, suất ưu tiên — anh/chị yêu cầu người chào đưa văn bản có dấu của chủ đầu tư."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở hoặc nghỉ cuối tuần, 3 điều khách hỏi chúng chúng tôi nhiều nhất:",
+  "items": [
+   {
+    "title": "Biển hồ và biển thật ở sau nhà",
+    "text": "Vịnh Ngọc là khu sát Biển Đông nhất, biển hồ nội khu hai bờ cách nhau 1 km; Vinhomes ghi mọi biệt thự ở đây có bãi riêng sau nhà. Vịnh Tiên quay vào biển hồ, gần sân golf và VinWonders hơn."
+   },
+   {
+    "title": "Dịch vụ trong khu",
+    "text": "Bệnh viện Vinmec 7,4 ha hợp tác Cleveland Clinic ở Vịnh Ngọc; đất giáo dục bố trí trong từng khu theo mặt bằng; Vincom Mega Mall ở ga Depot và Vincom Plaza kèm chợ đêm ở Vịnh Ngọc. Các hạng mục này mới ở giai đoạn quy hoạch và phối cảnh, thời điểm vận hành chúng chúng tôi sẽ cập nhật khi chủ đầu tư công bố."
+   },
+   {
+    "title": "Đi lại: hiện tại và sau 2028–2029",
+    "text": "Hiện nay đi phà Bình Khánh và đường Rừng Sác, gần 2 giờ từ trung tâm. Đường sắt tốc độ cao dự kiến 2028 rút còn khoảng 20 phút, cầu Cần Giờ dự kiến 2029 còn 40–50 phút. Anh/chị đi thử một chuyến cuối tuần bằng đường bộ trước khi quyết, vì đó là cách đi thật trong vài năm đầu."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ theo báo cáo số 3009/2025/CG-CTC ngày 30/9/2025 của Công ty Cổ phần Đô thị Du lịch Cần Giờ gửi UBND TP.HCM và Sở Xây dựng (đăng công khai trên Vinhomes Market):",
+  "items": [
+   "Quyết định 826/QĐ-TTg ngày 12/6/2020 của Thủ tướng: chấp thuận điều chỉnh chủ trương đầu tư, mở rộng từ 600 ha lên 2.870 ha, tổng mức đầu tư 217.054 tỷ đồng",
+   "Quyết định 3086/QĐ-UBND ngày 11/7/2007 giao đất phần 600 ha; Quyết định 1424/QĐ-UBND ngày 11/4/2025 điều chỉnh giao đất và giao bổ sung khu vực biển cho Công ty Cổ phần Đô thị Du lịch Cần Giờ",
+   "Quyết định 340/QĐ-UBND ngày 24/1/2025 duyệt quy hoạch chi tiết 1/500, 4 phân khu A, B, C, D-E",
+   "Giấy phép xây dựng 152/GPXD ngày 28/8/2007 (công trình lấn biển, hạ tầng kỹ thuật); giấy phép 08/GPXD ngày 15/4/2025 (san nền và kè); công văn 422/SXD-QLXDCT ngày 10/7/2025 về giấy phép hạ tầng kỹ thuật, giao thông",
+   "Thông báo 490/TB-TPHCM ngày 18/7/2025 của Cục Thuế TP.HCM xác nhận đã hoàn thành nghĩa vụ tài chính về đất",
+   "Quyết định 1868/QĐ-UBND ngày 30/9/2025 cho phép chuyển nhượng một phần dự án (48.491 m² đất ở cao tầng, 23.629 m² đất cao tầng hỗn hợp, 51.793 m² đất khách sạn, 1.380.636 m² đất ở thấp tầng) cho Công ty TNHH Capitaland Tower, tổng mức đầu tư phần chuyển nhượng 17.474 tỷ đồng",
+   "Bảng \"bất động sản đủ điều kiện đưa vào giao dịch\" trong báo cáo ngày 30/9/2025 còn để trống — chưa kê số căn",
+   "Hình thức sở hữu: lâu dài với người Việt Nam; tổ chức, cá nhân nước ngoài chỉ ký hợp đồng thuê (theo chính sách bán hàng tháng 8/2026)"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị yêu cầu xem 4 thứ cho đúng lô mình mua: văn bản của Sở Xây dựng xác nhận đủ điều kiện bán nhà ở hình thành trong tương lai, giấy phép xây dựng phần nhà ở của lô đó, chứng thư bảo lãnh ngân hàng, và nếu mua Vịnh Ngọc thì hợp đồng mua bán gốc của nhà đầu tư thứ cấp cùng văn bản chấp thuận chuyển nhượng. PaceLand đi cùng và đọc giúp."
+ },
+ "chuDauTu": {
+  "ten": "Vinhomes — pháp nhân dự án: Công ty Cổ phần Đô thị Du lịch Cần Giờ",
+  "text": "Công ty Cổ phần Vinhomes (mã VHM) là mảng bất động sản nhà ở của Vingroup, niêm yết HOSE năm 2018 với vốn điều lệ **28.365 tỷ đồng**; Vingroup nắm khoảng 66,6 %. Các đô thị đã vận hành: Royal City (2013, gần 5.000 căn), Riverside (2014, 183,5 ha), Times City (2015, hơn 12.000 căn), Central Park ở TP.HCM (2016, hơn 10.000 căn hộ, biệt thự, nhà phố, có Landmark 81 cao 461 m), Golden River (2017), Ocean Park ở Gia Lâm (420 ha, 66 toà, mở bán 2018), Smart City (2018), Grand Park ở Thủ Đức cũ (271 ha, công viên 36 ha, mở bán 2019). Pháp nhân ký hợp đồng ở Vinhomes Green Paradise là Công ty Cổ phần Đô thị Du lịch Cần Giờ — thành viên Vingroup, đăng ký kinh doanh từ 2004 và giữ dự án này từ khi còn 600 ha. Với khu Vịnh Ngọc, chủ đầu tư dự án thành phần là Công ty TNHH Capitaland Tower theo quyết định chuyển nhượng ngày 30/9/2025.",
+  "daBanGiao": [
+   "Vinhomes Grand Park (Thủ Đức cũ, 271 ha)",
+   "Vinhomes Ocean Park (Gia Lâm, 420 ha)",
+   "Vinhomes Ocean Park 2 (Hưng Yên)"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Vinhomes Green Paradise giá bao nhiêu?",
+   "a": "Tháng 9/2026, Vinhomes niêm yết liền kề Vịnh Ngọc 100 m² đất giá 17,65 tỷ và 270 m² đất giá 31,34 tỷ, đã gồm VAT và phí bảo trì sau chiết khấu; thấp tầng Vịnh Tiên dự kiến từ 12,8 tỷ/căn, liền kề giãn xây Vịnh Ngọc từ 15,9 tỷ, biệt thự song lập từ 100 triệu/m². Giá từng lô ở Vinhomes Green Paradise tuỳ khu, dãy và mặt nước; chúng chúng tôi gửi bảng giá gốc theo lô qua Zalo."
+  },
+  {
+   "q": "Mua Vinhomes Green Paradise cần bao nhiêu tiền ban đầu?",
+   "a": "Đặt cọc 300 triệu/căn. Khi ký hợp đồng mua bán đóng 10 % giá bán và ký quỹ 5 % đảm bảo hợp đồng (được trả lãi 9,5 %/năm), rồi 15 % mỗi đợt ở các mốc 15, 90, 180 và 255 ngày. Với căn liền kề Vinhomes Green Paradise giá 17,65 tỷ, số tiền khi ký hợp đồng khoảng 1,77 tỷ cộng 5 % ký quỹ; chọn gói vay 70 % lãi suất 0 % thì giá gốc được cộng thêm theo thời gian hỗ trợ."
+  },
+  {
+   "q": "Vinhomes Green Paradise khi nào bàn giao?",
+   "a": "Vinhomes công bố những căn nhà phố đầu tiên của Vinhomes Green Paradise đang hoàn thiện cuối và dự kiến bàn giao từ tháng 8/2026; quỹ căn đặc thù ghi bàn giao 130 ngày sau ngày đặt cọc. Với nhà ở hình thành trong tương lai, thời hạn bàn giao ghi trong hợp đồng mua bán của từng lô — anh/chị đọc điều khoản này cùng PaceLand trước khi ký."
+  },
+  {
+   "q": "Pháp lý Vinhomes Green Paradise đã đủ chưa?",
+   "a": "Vinhomes Green Paradise có quyết định chủ trương 826/QĐ-TTg (2020), quyết định giao đất 1424/QĐ-UBND (4/2025), quy hoạch 1/500 số 340/QĐ-UBND (1/2025), giấy phép xây dựng hạ tầng lấn biển 08/GPXD (4/2025) và xác nhận hoàn thành nghĩa vụ thuế đất (7/2025). Báo cáo ngày 30/9/2025 của chủ đầu tư chưa kê số căn đủ điều kiện giao dịch, nên với lô mình mua anh/chị yêu cầu văn bản đủ điều kiện bán của Sở Xây dựng và chứng thư bảo lãnh ngân hàng."
+  }
+ ]
+}

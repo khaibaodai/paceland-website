@@ -250,6 +250,121 @@ ${ctaBand("Muốn đi trước thị trường một bước?")}`;
 }
 
 /* ---------- 3. Trang tĩnh từng DỰ ÁN ---------- */
+/* Trang thông tin FULL: đọc assets/data/du-an-chi-tiet/<id>.json (nếu có) và
+   render ~12 section chuyên sâu (thông số, đợt mở bán, tiến độ, vị trí, giá,
+   mặt bằng, loại căn, pháp lý, CĐT, FAQ). Dữ liệu chuyển từ kho dự án của
+   anh Khải (vutrongkhai-website), đã đổi sang giọng PaceLand. */
+function loadDetail(id) {
+  const f = path.join(ROOT, "assets", "data", "du-an-chi-tiet", `${id}.json`);
+  if (!fs.existsSync(f)) return null;
+  try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; }
+}
+const mdB = (s) => esc(s).replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+const dSec = (title, cap) => `<h2 class="mt-4" style="font-size:1.35rem">${esc(title)}${cap ? ` <span class="pill" style="margin-left:.5rem;vertical-align:middle;font-size:.68rem">${esc(cap)}</span>` : ""}</h2>`;
+const dIntro = (s) => s ? `<p class="mt-2" style="max-width:78ch;line-height:1.8;color:var(--ink-soft)">${mdB(s)}</p>` : "";
+const dNote = (s) => s ? `<p class="mt-2" style="font-size:.88rem;color:var(--muted);max-width:78ch">${mdB(s)}</p>` : "";
+const dImg = (src, alt) => src ? `<figure class="mt-3" style="border-radius:12px;overflow:hidden;border:1px solid var(--line-soft)"><img src="/${esc(src)}" alt="${esc(alt)}" loading="lazy" style="width:100%"></figure>` : "";
+/* Bảng label/value(/note) — dùng cho thông số, khoảng cách, mốc tiến độ, chính sách */
+function dTable(rows) {
+  if (!(rows || []).length) return "";
+  return `<div class="mt-3" style="border:1px solid var(--line);border-radius:10px;overflow:hidden">${rows.map((r, i) =>
+    `<div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between;padding:.7rem 1rem;background:${i % 2 ? "var(--paper)" : "var(--white)"}">` +
+    `<div style="font-weight:600;font-family:var(--head);font-size:.92rem">${esc(r.label || "")}</div>` +
+    `<div style="text-align:right;font-size:.92rem">${mdB(r.value || "")}${r.note ? `<div style="font-size:.78rem;color:var(--muted)">${esc(r.note)}</div>` : ""}</div></div>`
+  ).join("")}</div>`;
+}
+const dCards = (items) => `<div class="mt-3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.8rem">${(items || []).map((it) =>
+  `<div style="background:var(--white);border:1px solid var(--line-soft);border-radius:12px;padding:1rem 1.1rem"><b style="font-family:var(--head)">${esc(it.title || "")}</b><p style="margin-top:.4rem;font-size:.9rem;line-height:1.7;color:var(--ink-soft)">${mdB(it.text || "")}</p></div>`).join("")}</div>`;
+const dGems = (items) => `<ul class="mt-3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.55rem 1.4rem;list-style:none">${(items || []).map((a) => `<li style="display:flex;gap:.55rem;align-items:baseline"><span class="gem gem--sm" style="flex:none"></span><span>${mdB(String(a))}</span></li>`).join("")}</ul>`;
+
+function renderProjectDetail(p, d) {
+  let h = "";
+  const tq = d.tongQuan || {};
+  if ((tq.thongSo || []).length || tq.intro) {
+    h += dSec("Thông số " + p.name, d.capNhat ? "Cập nhật " + d.capNhat.split("-").reverse().join("/") : "");
+    h += dIntro(tq.intro);
+    if ((tq.chiSo || []).length) h += `<div class="grid mt-3" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden">${tq.chiSo.map((c) => `<div style="background:var(--white);padding:1rem 1.15rem"><div style="font-size:.72rem;color:var(--muted)">${esc(c.label)}</div><div style="font-family:var(--head);font-weight:800;font-size:1.15rem;margin-top:2px">${esc(c.value)}</div>${c.note ? `<div style="font-size:.74rem;color:var(--muted);margin-top:2px">${esc(c.note)}</div>` : ""}</div>`).join("")}</div>`;
+    h += dTable(tq.thongSo);
+  }
+  const mb = d.dotMoBan;
+  if (mb && mb.title) {
+    h += dSec("Đợt mở bán hiện tại", mb.capNhat);
+    h += `<h3 class="mt-2" style="font-size:1.1rem">${esc(mb.title)}</h3>`;
+    h += dIntro(mb.subtitle);
+    if ((mb.gioHang || []).length) h += dGems(mb.gioHang);
+    if ((mb.lyDo || []).length) h += dCards(mb.lyDo);
+    if ((mb.chinhSach || []).length) h += dTable(mb.chinhSach);
+  }
+  const td = d.tienDo;
+  if (td && ((td.moc || []).length || td.intro)) {
+    h += dSec("Tiến độ xây dựng", td.capNhat);
+    h += dIntro(td.intro);
+    h += dTable(td.moc);
+    h += dImg(td.image, `Tiến độ ${p.name}`);
+    h += dNote(td.note);
+  }
+  const vt = d.viTri;
+  if (vt && (vt.intro || (vt.khoangCach || []).length)) {
+    h += dSec("Vị trí & kết nối");
+    h += dIntro(vt.intro);
+    h += dImg(vt.image, `Bản đồ vị trí ${p.name}`);
+    h += dTable(vt.khoangCach);
+    if ((vt.diem || []).length) h += dCards(vt.diem);
+  }
+  const ti = d.tienIch;
+  if (ti && (ti.items || []).length) {
+    h += dSec("Tiện ích theo công bố của chủ đầu tư");
+    h += dIntro(ti.intro);
+    h += dGems(ti.items);
+  }
+  const gb = d.giaBan;
+  if (gb && (gb.loai || []).length) {
+    h += dSec("Giá bán tham khảo", gb.capNhat);
+    h += dIntro(gb.intro);
+    h += `<div class="mt-3" style="overflow-x:auto;border:1px solid var(--line);border-radius:10px"><table style="width:100%;border-collapse:collapse;min-width:560px"><thead><tr>${["Loại căn", "Diện tích", "Giá tham khảo", "Thanh toán"].map((x) => `<th style="text-align:left;padding:.7rem 1rem;background:var(--paper);font-family:var(--head);font-size:.85rem">${x}</th>`).join("")}</tr></thead><tbody>${gb.loai.map((l) => `<tr>${[l.name, l.dienTich, l.gia, l.thanhToan].map((x) => `<td style="padding:.65rem 1rem;border-top:1px solid var(--line-soft);font-size:.92rem">${mdB(x || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    h += dNote(gb.note);
+  }
+  const mbg = d.matBang;
+  if (mbg && (mbg.intro || mbg.image)) {
+    h += dSec("Mặt bằng dự án");
+    h += dIntro(mbg.intro);
+    h += dImg(mbg.image, `Mặt bằng ${p.name}`);
+    if ((mbg.diem || []).length) h += dGems(mbg.diem);
+  }
+  if ((d.loaiCan || []).length) {
+    h += dSec("Các loại căn");
+    h += `<div class="mt-3" style="display:grid;gap:.8rem">${d.loaiCan.map((l) => `<div style="background:var(--white);border:1px solid var(--line-soft);border-radius:12px;padding:1rem 1.15rem"><div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap"><b style="font-family:var(--head)">${esc(l.name || "")}</b>${l.dienTich ? `<span class="pill">${esc(l.dienTich)}</span>` : ""}</div>${l.text ? `<p style="margin-top:.45rem;font-size:.92rem;line-height:1.7;color:var(--ink-soft)">${mdB(l.text)}</p>` : ""}</div>`).join("")}</div>`;
+  }
+  if (d.diemNoiBat && (d.diemNoiBat.items || []).length) {
+    h += dSec("Điểm đáng cân nhắc");
+    h += dIntro(d.diemNoiBat.intro);
+    h += dCards(d.diemNoiBat.items);
+  }
+  if (d.songODay && (d.songODay.items || []).length) {
+    h += dSec("Sống ở đây thế nào?");
+    h += dIntro(d.songODay.intro);
+    h += dCards(d.songODay.items);
+  }
+  const pl = d.phapLy;
+  if (pl && (pl.items || []).length) {
+    h += dSec("Pháp lý dự án");
+    h += dIntro(pl.intro);
+    h += `<ul class="mt-3" style="list-style:none;display:grid;gap:.5rem">${pl.items.map((x) => `<li style="display:flex;gap:.55rem;align-items:baseline"><span style="color:#1E7A3C;font-weight:800;flex:none">✓</span><span style="font-size:.94rem">${mdB(String(x))}</span></li>`).join("")}</ul>`;
+    h += pl.note ? `<div class="mt-3" style="border:1px solid rgba(199,0,24,.2);background:rgba(199,0,24,.04);border-radius:10px;padding:.85rem 1.05rem;font-size:.9rem;max-width:78ch">${mdB(pl.note)}</div>` : "";
+  }
+  const cdt = d.chuDauTu;
+  if (cdt && (cdt.text || cdt.ten)) {
+    h += dSec("Về chủ đầu tư");
+    if (cdt.ten) h += `<h3 class="mt-2" style="font-size:1.05rem">${esc(cdt.ten)}</h3>`;
+    h += dIntro(cdt.text);
+    if ((cdt.daBanGiao || []).length) h += `<div class="mt-2" style="display:flex;gap:.45rem;flex-wrap:wrap">${cdt.daBanGiao.map((x) => `<span class="pill">Đã bàn giao: ${esc(x)}</span>`).join("")}</div>`;
+  }
+  if ((d.faq || []).length) {
+    h += dSec("Hỏi nhanh về " + p.name);
+    h += `<div class="mt-3" style="display:grid;gap:.6rem;max-width:82ch">${d.faq.map((f) => `<details style="background:var(--white);border:1px solid var(--line-soft);border-radius:12px;padding:.85rem 1.1rem"><summary style="font-family:var(--head);font-weight:700;cursor:pointer">${esc(f.q)}</summary><p style="margin-top:.55rem;line-height:1.75;color:var(--ink-soft);font-size:.94rem">${mdB(f.a)}</p></details>`).join("")}</div>`;
+  }
+  return h;
+}
 fs.mkdirSync(path.join(ROOT, "du-an"), { recursive: true });
 let projectPages = 0;
 for (const p of PROJECTS) {
@@ -259,6 +374,12 @@ for (const p of PROJECTS) {
   const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Dự án", href: "/du-an.html" }, { label: p.name }];
   const related = PROJECTS.filter((x) => x.id !== p.id && x.area === p.area).slice(0, 3);
   const relatedFinal = related.length ? related : PROJECTS.filter((x) => x.id !== p.id).slice(0, 3);
+  const detail = loadDetail(p.id);
+  const detailHtml = detail ? renderProjectDetail(p, detail) : "";
+  const faqLd = detail && (detail.faq || []).length ? {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: detail.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })),
+  } : null;
 
   const productLd = {
     "@context": "https://schema.org",
@@ -296,10 +417,10 @@ for (const p of PROJECTS) {
       ${(p.description || []).map((d) => `<p style="margin-bottom:1rem">${esc(d)}</p>`).join("")}
     </div>
 
-    <h2 class="mt-4" style="font-size:1.3rem">Tiện ích nổi bật</h2>
+    ${!(detail && detail.tienIch) ? `<h2 class="mt-4" style="font-size:1.3rem">Tiện ích nổi bật</h2>
     <ul class="mt-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.6rem 1.4rem;list-style:none">
       ${(p.amenities || []).map((a) => `<li style="display:flex;gap:.55rem;align-items:center"><span class="gem gem--sm"></span>${esc(a)}</li>`).join("")}
-    </ul>
+    </ul>` : ""}
 
     ${(p.zones || []).length ? `<h2 class="mt-4" style="font-size:1.3rem">Các phân khu ${esc(p.name)}</h2>
     <div class="mt-2" style="display:grid;gap:.7rem">
@@ -310,6 +431,7 @@ for (const p of PROJECTS) {
     </div>` : ""}
 
     ${(p.gallery || []).length > 1 ? `<div class="grid cols-3 mt-4">${p.gallery.slice(0, 3).map((g) => `<img src="/${esc(resolveImg(g, 900))}" alt="${esc(p.name)}" loading="lazy" style="border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%">`).join("")}</div>` : ""}
+    ${detailHtml}
   </div>
 </article>
 ${ctaBand(`Quan tâm ${esc(p.name)}? Nhận giỏ hàng & chính sách hôm nay`)}
@@ -326,7 +448,7 @@ ${ctaBand(`Quan tâm ${esc(p.name)}? Nhận giỏ hàng & chính sách hôm nay`
     canonical,
     ogImage: cover,
     ogType: "website",
-    ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-product", productLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))],
+    ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-product", productLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs)), ...(faqLd ? [ldTag("pl-ld-faq", faqLd)] : [])],
     bodyMain,
   });
   fs.writeFileSync(path.join(ROOT, "du-an", `${p.id}.html`), html);
