@@ -652,6 +652,13 @@ fs.mkdirSync(path.join(ROOT, "tuyen-dung"), { recursive: true });
 let jobPages = 0;
 const jobValidThrough = (() => { const d = new Date(); d.setDate(d.getDate() + 90); return d.toISOString().slice(0, 10); })();
 const jobList = (items) => `<ul class="mt-2" style="list-style:none;display:grid;gap:.5rem;max-width:78ch">${(items || []).map((x) => `<li style="display:flex;gap:.55rem;align-items:baseline"><span class="gem gem--sm" style="flex:none"></span><span>${esc(x)}</span></li>`).join("")}</ul>`;
+const JOB_POSTERS = {
+  "agent-bat-dong-san": "assets/img/tuyen-dung/agent.jpg",
+  "giam-doc-kinh-doanh": "assets/img/tuyen-dung/giam-doc-kinh-doanh.jpg",
+  "admin-kinh-doanh": "assets/img/tuyen-dung/admin-kinh-doanh.jpg",
+  "digital-marketing": "assets/img/tuyen-dung/digital-marketing.jpg",
+  "media-marketing": "assets/img/tuyen-dung/media-marketing.jpg",
+};
 for (const j of JOBS) {
   const url = `/tuyen-dung/${j.id}.html`;
   const canonical = SITE_URL + url;
@@ -683,6 +690,7 @@ for (const j of JOBS) {
       <span class="pill">${esc(j.location)}</span>
       <span class="pill pill--gold">${esc(j.salary)}</span>
     </div>
+    ${JOB_POSTERS[j.id] ? `<figure class="mt-3" style="max-width:600px;border-radius:16px;overflow:hidden;border:1px solid var(--line-soft);box-shadow:var(--shadow)"><img src="/${JOB_POSTERS[j.id]}" alt="Poster tuyển dụng ${esc(j.title)} — PaceLand" style="width:100%;display:block" loading="lazy"></figure>` : ""}
     <h2 class="mt-4" style="font-size:1.3rem">Mô tả công việc</h2>
     ${jobList(j.duties)}
     <h2 class="mt-4" style="font-size:1.3rem">Yêu cầu</h2>
@@ -708,7 +716,7 @@ for (const j of JOBS) {
     title: `Tuyển ${j.count || ""} ${j.title} — Việc làm bất động sản Quận 2 | PaceLand`,
     desc: stripTags(j.desc) + ` ${j.salary}. ${j.location}. Ứng tuyển ngay tại PaceLand.`,
     canonical,
-    ogImage: absUrl("assets/img/og-image.jpg"),
+    ogImage: absUrl(JOB_POSTERS[j.id] || "assets/img/og-image.jpg"),
     ogType: "website",
     ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-job", jobLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))],
     bodyMain,
