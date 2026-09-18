@@ -431,6 +431,7 @@
 
   /* ---------- PROJECT LISTING ---------- */
   function priceBucket(v) {
+    if (!v) return ""; /* chưa công bố giá — không khớp bucket nào khi lọc */
     if (v < 10) return "Dưới 10 tỉ";
     if (v < 30) return "10 – 30 tỉ";
     if (v < 60) return "30 – 60 tỉ";

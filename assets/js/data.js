@@ -96,7 +96,7 @@ const PROJECTS = [
   {
     "id": "the-prive",
     "name": "The Privé",
-    "developer": "Tập đoàn Đất Xanh",
+    "developer": "Bluemarq Group (tiền thân Tập đoàn Đất Xanh)",
     "location": "Nam Rạch Chiếc, P. An Phú (cũ), TP. Thủ Đức",
     "area": "Khu Đông",
     "segment": "Hạng sang",
@@ -115,10 +115,10 @@ const PROJECTS = [
       "assets/img/media/the-prive-2.jpg",
       "assets/img/media/the-prive-3.jpg"
     ],
-    "short": "Tổ hợp căn hộ hạng sang 6,7 ha của Tập đoàn Đất Xanh tại Nam Rạch Chiếc — 12 tháp, 3.175 căn, hai mặt giáp sông Giồng Ông Tố, thiết kế chuẩn resort.",
+    "short": "Tổ hợp căn hộ hạng sang 6,7 ha của Bluemarq Group (Đất Xanh cũ) tại Nam Rạch Chiếc — 12 tháp, 3.175 căn, ba mặt giáp sông Giồng Ông Tố, thiết kế chuẩn resort.",
     "description": [
-      "The Privé là dự án căn hộ hạng sang quy mô 6,7 ha do Tập đoàn Đất Xanh phát triển tại khu Nam Rạch Chiếc, phường An Phú (cũ), TP. Thủ Đức — cạnh đường Song Hành cao tốc, hai mặt giáp sông Giồng Ông Tố. Dự án gồm 12 tháp cao 33–35 tầng với 3.175 căn hộ 1–3 phòng ngủ, duplex và penthouse, diện tích phổ biến 49,8–98,5 m², mật độ xây dựng chỉ 25%.",
-      "Đơn giá tham khảo từ khoảng 133 triệu/m² (chưa VAT, tính theo tim tường — 07/2026). Hệ tiện ích nội khu dày đặc theo phong cách resort: 3 hồ bơi, phòng gym & boxing, golf 3D, sân tennis và pickleball, rạp phim mini, khu co-working, trường mầm non và trạm sạc xe điện.",
+      "The Privé là dự án căn hộ hạng sang quy mô 6,7 ha do Bluemarq Group (tiền thân Tập đoàn Đất Xanh) phát triển tại khu Nam Rạch Chiếc, phường An Phú (cũ), TP. Thủ Đức — cạnh đường Song Hành cao tốc, ba mặt giáp sông Giồng Ông Tố. Dự án gồm 12 tháp cao 33–35 tầng với 3.175 căn hộ 1–3 phòng ngủ, duplex và penthouse, diện tích phổ biến 49,8–98,5 m², mật độ xây dựng chỉ 25%.",
+      "Đơn giá tham khảo từ khoảng 133 triệu/m² (chưa VAT, tính theo tim tường — 07/2026). Hệ tiện ích nội khu dày đặc theo phong cách resort: 3 hồ bơi, phòng gym & boxing, golf 3D, sân tennis và pickleball, rạp phim mini, khu co-working, trường mầm non và trạm sạc xe điện. Tiến độ thực tế tháng 8/2026: tháp 8 đã lên tầng 27, các tháp 5–7 hoàn thành sàn tầng 20.",
       "Với vị trí giữa tam giác Thủ Thiêm – An Phú – The Global City và nguồn cung căn hộ hạng sang khan hiếm tại Khu Đông, The Privé thuộc nhóm dự án được PaceLand theo sát giỏ hàng từng đợt mở bán — khách trong mạng lưới được ưu tiên căn tầng đẹp, view sông."
     ],
     "amenities": [
@@ -136,7 +136,7 @@ const PROJECTS = [
     "id": "eaton-park",
     "name": "Eaton Park",
     "developer": "Gamuda Land",
-    "location": "Mặt tiền Mai Chí Thọ, P. An Phú (cũ), TP. Thủ Đức",
+    "location": "63 Mai Chí Thọ, P. Bình Trưng (An Phú cũ), TP. Thủ Đức",
     "area": "Khu Đông",
     "segment": "Hạng sang",
     "type": "Căn hộ",
@@ -157,7 +157,7 @@ const PROJECTS = [
     "short": "Tổ hợp căn hộ hạng sang 3,76 ha của Gamuda Land (Malaysia) ngay mặt tiền Mai Chí Thọ — 6 tháp, 1.980 căn hộ, bàn giao từ Quý 2/2026.",
     "description": [
       "Eaton Park do Gamuda Land — nhà phát triển Malaysia hoạt động tại Việt Nam từ 2007 — xây dựng trên khu đất 3,76 ha mặt tiền đại lộ Mai Chí Thọ, phường An Phú (cũ), TP. Thủ Đức. Quy mô 6 tháp cao 29–39 tầng gồm 1.980 căn hộ cùng 72 shophouse; kết nối thẳng về Thủ Thiêm, Quận 1 và cao tốc đi sân bay Long Thành.",
-      "Cơ cấu căn: 1PN (51,9–55,8 m²), 2PN (71,7–79,5 m²), 3PN (103,7–104,8 m²) và penthouse. Giá tham khảo giai đoạn 3 (07/2026): 1PN từ 9,5–10,5 tỉ; 2PN 13,5–15 tỉ; 3PN 20,5–21,5 tỉ. Bàn giao dự kiến từ Quý 2/2026 — thuộc nhóm dự án hạng sang hiếm hoi tại Khu Đông nhận nhà ngay trong năm.",
+      "Cơ cấu căn: 1PN (51,9–55,8 m²), 2PN (71,7–79,5 m²), 3PN (103,7–104,8 m²) và penthouse. Giá tham khảo giai đoạn 3 (07/2026): 1PN từ 9,5–10,5 tỉ; 2PN 13,5–15 tỉ; 3PN 20,5–21,5 tỉ. Bàn giao dự kiến từ Quý 2/2026 — thuộc nhóm dự án hạng sang hiếm hoi tại Khu Đông nhận nhà ngay trong năm. Toàn bộ 6 tháp đã cất nóc ngày 12/8/2026.",
       "Hai phân khu với 6 tháp đặt tên theo cảnh quan (Alpine, Forest, Cove, Lagoon, Grove, Strait). Tệp khách thuê chuyên gia quanh trục Mai Chí Thọ giúp Eaton Park vừa phù hợp ở thực vừa cho dòng tiền cho thuê ổn định — PaceLand tư vấn chọn tháp, tầng và layout theo mục tiêu của từng khách hàng."
     ],
     "amenities": [
@@ -244,7 +244,7 @@ const PROJECTS = [
     "short": "Dự án căn hộ hợp tác Khang Điền × Keppel Land tại Võ Chí Công, TP. Thủ Đức — 3 tháp 15 tầng, 639 căn, ba mặt giáp sông Rạch Chiếc, bàn giao cuối 2027.",
     "description": [
       "Gladia Heights là dự án căn hộ cao cấp do liên danh Khang Điền (Việt Nam) và Keppel Land (Singapore) phát triển tại đường Võ Chí Công, phường Bình Trưng Đông (cũ), TP. Thủ Đức — kế cận Thủ Thiêm, ba mặt giáp sông Rạch Chiếc. Giai đoạn 1 quy mô 1,29 ha nằm trong cụm đô thị tích hợp khoảng 60 ha của hai chủ đầu tư.",
-      "Dự án gồm 3 tháp cao 15 tầng — mật độ thấp hiếm có ở phân khúc này — với 639 căn hộ và 26 shophouse. Cơ cấu căn: 1PN ~53,5 m², 2PN 71,4–85,1 m², 3PN 115–124,7 m², 4PN ~144,2 m². Bàn giao dự kiến cuối 2027, cấp giấy chứng nhận dự kiến 2028.",
+      "Dự án gồm 3 tháp cao 15 tầng — mật độ thấp hiếm có ở phân khúc này — với 639 căn hộ và 26 shophouse. Cơ cấu căn: 1PN ~53,5 m², 2PN 71,4–85,1 m², 3PN 115–124,7 m², 4PN ~144,2 m². Dự án chính thức mở bán ngày 1/8/2026; bàn giao dự kiến cuối 2027, cấp giấy chứng nhận dự kiến 2028.",
       "Uy tín pháp lý của Khang Điền cộng chuẩn phát triển Singapore của Keppel Land là lý do Gladia Heights nằm trong nhóm dự án PaceLand khuyến nghị theo dõi sớm — bảng giá công bố theo từng đợt, khách trong mạng lưới được ưu tiên giữ chỗ căn tầng đẹp."
     ],
     "amenities": [
@@ -408,24 +408,24 @@ const PROJECTS = [
     "area": "Khu Đông",
     "segment": "Hạng sang",
     "type": "Căn hộ",
-    "status": "Sắp ra mắt",
+    "status": "Đang mở bán",
     "offmarket": false,
     "badge": "2,7 km ven sông",
     "priceText": "GĐ mới: sắp công bố",
     "priceValue": 12,
     "beds": "Căn hộ & thấp tầng",
     "size": "30,2 ha · 4 phân khu",
-    "handover": "GĐ mới từ 2026",
+    "handover": "Palm River: quý I/2029",
     "cover": "assets/img/media/palm-river-1.jpg",
     "gallery": [
       "assets/img/media/palm-river-1.jpg",
       "assets/img/media/palm-river-2.jpg"
     ],
-    "short": "Khu đô thị ven sông 30,2 ha tại Nam Rạch Chiếc với 2,7 km bờ sông, trường và bệnh viện quốc tế Mỹ nội khu — giai đoạn mới Palm River (căn hộ hạng sang) triển khai từ 2026.",
+    "short": "Khu đô thị ven sông 30,2 ha tại Nam Rạch Chiếc với 2,7 km bờ sông, trường và bệnh viện quốc tế Mỹ nội khu — giai đoạn mới Palm River (căn hộ hạng sang) đã khởi công tháng 6/2026.",
     "description": [
       "Palm City là khu đô thị 30,2 ha do Công ty TNHH Nam Rạch Chiếc (liên doanh Tiến Phước – Trần Thái – Gateway Thủ Thiêm) phát triển bên đường Song Hành cao tốc, TP. Thủ Đức. Điểm hiếm có: 2,7 km đường ven sông Giồng Ông Tố – Mương Kinh, mật độ xây dựng toàn khu 33%, cùng Trường Quốc tế Mỹ (TAS) và Bệnh viện Quốc tế Mỹ (AIH) ngay trong nội khu.",
       "Các giai đoạn đã hình thành và có sổ hồng: Palm Residence (135 nhà phố – biệt thự), Palm Heights (3 tháp, 816 căn hộ) và Palm Garden. Cộng đồng cư dân hiện hữu đông đúc giúp Palm City là một trong những khu compound vận hành ổn định nhất Khu Đông.",
-      "Giai đoạn mới — Palm River — là quỹ đất cao tầng ven sông đẹp nhất còn lại của khu đô thị, định vị căn hộ hạng sang với tiêu chuẩn bàn giao nâng cấp, triển khai từ 2026. Pháp lý sở hữu lâu dài với người Việt. PaceLand là đơn vị tư vấn giỏ hàng Palm River — xem chi tiết tại trang riêng của phân khu."
+      "Giai đoạn mới — Palm River — là quỹ đất cao tầng ven sông đẹp nhất còn lại của khu đô thị, định vị căn hộ hạng sang với tiêu chuẩn bàn giao nâng cấp — đã khởi công ngày 16/6/2026, dự kiến bàn giao quý I/2029. Pháp lý sở hữu lâu dài với người Việt. PaceLand là đơn vị tư vấn giỏ hàng Palm River — xem chi tiết tại trang riêng của phân khu."
     ],
     "amenities": [
       "2,7 km đường dạo ven sông",
@@ -440,7 +440,7 @@ const PROJECTS = [
       { "name": "Palm Residence", "type": "Nhà phố & biệt thự — 135 căn", "status": "Đã bàn giao, có sổ hồng" },
       { "name": "Palm Heights", "type": "Căn hộ — 3 tháp, 816 căn", "status": "Đã bàn giao, có sổ hồng" },
       { "name": "Palm Garden", "type": "Căn hộ — hồ bơi tràn bờ 25 m", "status": "Đã bàn giao" },
-      { "name": "Palm River", "type": "Căn hộ hạng sang ven sông", "status": "Triển khai từ 2026", "note": "Quỹ đất cao tầng view sông trực diện — giai đoạn được chờ đợi nhất Palm City", "link": "https://palmriver.paceland.vn/" }
+      { "name": "Palm River", "type": "Căn hộ hạng sang ven sông — 4 tháp 36 tầng", "status": "Khởi công 16/6/2026", "note": "Hướng Việt Properties phát triển, dự kiến bàn giao quý I/2029 — quỹ đất cao tầng view sông trực diện", "link": "https://palmriver.paceland.vn/" }
     ]
   },
   {
@@ -453,23 +453,21 @@ const PROJECTS = [
     "type": "Căn hộ",
     "status": "Sắp ra mắt",
     "offmarket": false,
-    "badge": "Nguồn cung mới Khu Đông",
+    "badge": "Khởi công 6/8/2026",
     "priceText": "Từ 88 tr/m²",
     "priceValue": 5,
     "beds": "1–3 PN & thấp tầng",
     "size": "~4,9 ha · 922 căn hộ",
-    "handover": "Đang cập nhật",
-    "cover": "1545324418-cc1a3fa10c00",
+    "handover": "Dự kiến quý IV/2028",
+    "cover": "assets/img/media/imperia-sensa-park-1.jpg",
     "gallery": [
-      "1545324418-cc1a3fa10c00",
-      "1486406146926-c627a92ad1ab",
-      "1449824913935-59a10b8d2000"
+      "assets/img/media/imperia-sensa-park-1.jpg"
     ],
     "short": "Dự án mới của MIK Group tại Võ Chí Công, TP. Thủ Đức — 2 tháp 25 tầng với 922 căn hộ và 93 sản phẩm thấp tầng ven sông, đơn giá từ 88 triệu/m² (tham khảo 07/2026).",
     "description": [
-      "Imperia Sensa Park là dự án phức hợp của MIK Group trên khu đất 48.736 m² (~4,9 ha) tại đường Võ Chí Công, khu Phú Hữu, TP. Thủ Đức — liền kề cầu Phú Hữu, mật độ xây dựng chỉ 30,5%. Quy mô gồm 2 tháp căn hộ cao 25 tầng (922 căn, 1–3 phòng ngủ) cùng 93 sản phẩm thấp tầng: shophouse 1 trệt 2 lầu và biệt thự ven sông có sân vườn riêng.",
+      "Imperia Sensa Park là dự án phức hợp của MIK Group trên khu đất 48.736 m² (~4,9 ha) tại đường Võ Chí Công, khu Phú Hữu, TP. Thủ Đức — liền kề cầu Phú Hữu, hai mặt giáp sông Rạch Chiếc và kênh Một Tấn, mật độ xây dựng chỉ 30,5%. Quy mô gồm 2 tháp căn hộ cao 25 tầng (922 căn, 1–3 phòng ngủ) cùng 93 sản phẩm thấp tầng: shophouse 1 trệt 2 lầu và biệt thự ven sông có sân vườn riêng.",
       "Đơn giá tham khảo từ 88 triệu/m² (chưa VAT), chính sách chiết khấu từ chủ đầu tư lên tới 7,5% (07/2026) — mặt bằng giá dễ tiếp cận hơn đáng kể so với các dự án cùng trục Võ Chí Công về phía Thủ Thiêm, phù hợp cả gia đình trẻ lẫn nhà đầu tư dài hạn đón hạ tầng Khu Đông.",
-      "Hình ảnh hiển thị là ảnh minh hoạ — ảnh chính thức của dự án sẽ được PaceLand cập nhật theo tài liệu chủ đầu tư. Liên hệ PaceLand để nhận thông tin giỏ hàng, mặt bằng tầng và chính sách mới nhất ngay khi mở bán."
+      "Dự án đã khởi công ngày 6/8/2026, dự kiến bàn giao quý IV/2028. Liên hệ PaceLand để nhận giỏ hàng, mặt bằng tầng và chính sách mới nhất theo từng đợt mở bán."
     ],
     "amenities": [
       "Hồ bơi tràn bờ & clubhouse",
@@ -478,6 +476,298 @@ const PROJECTS = [
       "Đường chạy bộ nội khu",
       "Khu vui chơi trẻ em",
       "Mật độ xây dựng 30,5%"
+    ]
+  },
+  {
+    "id": "the-berkley",
+    "name": "The Berkley",
+    "developer": "SonKim Land",
+    "location": "177 Võ Nguyên Giáp, P. An Khánh (Thảo Điền cũ), TP.HCM",
+    "area": "Khu Đông",
+    "segment": "Hạng sang",
+    "type": "Căn hộ",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Bàn giao hoàn thiện",
+    "priceText": "≈250 tr/m² (tham khảo 09/2026)",
+    "priceValue": 15,
+    "beds": "Đang cập nhật",
+    "size": "85 căn · 21 tầng",
+    "handover": "Đã thi công hoàn thiện",
+    "cover": "assets/img/media/the-berkley.jpg",
+    "gallery": [
+      "assets/img/media/the-berkley.jpg"
+    ],
+    "short": "Tòa căn hộ hạng sang 21 tầng chỉ 85 căn của SonKim Land tại Thảo Điền — đã thi công hoàn thiện, cách ga An Phú tuyến Metro số 1 vài phút đi bộ, ra mắt 16/3/2026.",
+    "description": [
+      "The Berkley tọa lạc tại 177 Võ Nguyên Giáp, phường An Khánh (khu Thảo Điền cũ) — tòa tháp 21 tầng với vỏn vẹn 85 căn hộ, con số hiếm thấy ở phân khúc hạng sang vốn thường tính bằng nghìn căn. Dự án do SonKim Land phát triển, ra mắt ngày 16/3/2026 khi phần thi công đã hoàn thiện: khách xem căn thật, không mua trên giấy.",
+      "Vị trí nằm gần ga An Phú của tuyến Metro số 1, giữa cộng đồng cư dân quốc tế Thảo Điền với hệ trường quốc tế, nhà hàng và tiện ích ven sông dày đặc bậc nhất TP.HCM. Đơn giá tham khảo quanh 250 triệu/m² (09/2026).",
+      "Số căn giới hạn cộng uy tín của SonKim Land — đơn vị đứng sau The Metropole Thủ Thiêm — khiến The Berkley phù hợp khách mua ở ngay hoặc tích sản dài hạn tại Thảo Điền, nơi nguồn cung mới gần như cạn."
+    ],
+    "amenities": [
+      "Bàn giao hoàn thiện — xem căn thật",
+      "Gần ga An Phú Metro số 1",
+      "Cộng đồng quốc tế Thảo Điền",
+      "Chỉ 85 căn, riêng tư cao"
+    ]
+  },
+  {
+    "id": "the-megapolis-thu-thiem",
+    "name": "The Megapolis Thủ Thiêm",
+    "developer": "SonKim Land (đề xuất, hợp tác MTR)",
+    "location": "Khu ga Thủ Thiêm, TP. Thủ Đức",
+    "area": "Khu Đông",
+    "segment": "Hạng sang",
+    "type": "Căn hộ",
+    "status": "Sắp ra mắt",
+    "offmarket": false,
+    "badge": "Phức hợp TOD ga Thủ Thiêm",
+    "priceText": "Chưa công bố",
+    "priceValue": 0,
+    "beds": "Đang cập nhật",
+    "size": "Khu đất ga 17,2 ha",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/the-megapolis-thu-thiem.jpg",
+    "gallery": [
+      "assets/img/media/the-megapolis-thu-thiem.jpg"
+    ],
+    "short": "Đề xuất khu đô thị phức hợp TOD của SonKim Land quanh ga Thủ Thiêm — điểm gặp của Metro số 2, đường sắt tốc độ cao Bắc – Nam và tuyến Thủ Thiêm – Long Thành; đã ký MOU với MTR ngày 9/9/2026.",
+    "description": [
+      "The Megapolis Thủ Thiêm là đề xuất phát triển khu đô thị phức hợp theo mô hình TOD (đô thị gắn nhà ga) trên khu đất ga Thủ Thiêm rộng 17,2 ha — nơi hội tụ ba tuyến hạ tầng chiến lược: Metro số 2, đường sắt tốc độ cao Bắc – Nam và tuyến Thủ Thiêm – Long Thành đi sân bay quốc tế mới.",
+      "Ngày 9/9/2026, SonKim Land ký biên bản ghi nhớ hợp tác với MTR — nhà phát triển TOD vận hành hệ thống metro Hong Kong — với quy mô đề xuất khoảng 550.000 m² sàn thương mại, văn phòng và khách sạn. Dự án đang ở giai đoạn đề xuất: chưa mở bán, chưa có bảng giá.",
+      "PaceLand theo sát tiến trình pháp lý của dự án. Khách quan tâm mô hình TOD đầu tiên tại Thủ Thiêm nên đăng ký sớm để nhận thông tin ngay khi có cấu trúc sản phẩm chính thức."
+    ],
+    "amenities": [
+      "Điểm gặp 3 tuyến đường sắt",
+      "MOU SonKim Land × MTR (9/9/2026)",
+      "≈550.000 m² TMDV (đề xuất)",
+      "Mô hình TOD đầu tiên tại Thủ Thiêm"
+    ]
+  },
+  {
+    "id": "senturia-an-phu",
+    "name": "Senturia An Phú",
+    "developer": "Tiến Phước",
+    "location": "Nam Rạch Chiếc, P. Bình Trưng (An Phú cũ), TP. Thủ Đức",
+    "area": "Khu Đông",
+    "segment": "Cao cấp",
+    "type": "Nhà phố thương mại",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Cất nóc 12/2025",
+    "priceText": "Liên hệ bảng giá",
+    "priceValue": 0,
+    "beds": "Nhà phố · shophouse · biệt thự song lập",
+    "size": "8,6 ha · 355 căn",
+    "handover": "Từ quý IV/2026",
+    "cover": "assets/img/media/senturia-an-phu.jpg",
+    "gallery": [
+      "assets/img/media/senturia-an-phu.jpg"
+    ],
+    "short": "Khu compound thấp tầng 8,6 ha của Tiến Phước tại Nam Rạch Chiếc — 355 căn nhà phố, shophouse và biệt thự song lập mặt tiền đường Song Hành cao tốc; cất nóc 12/2025, bàn giao từ quý IV/2026.",
+    "description": [
+      "Senturia An Phú là khu nhà ở thấp tầng quy mô 8,6 ha do Tiến Phước phát triển tại Nam Rạch Chiếc, mặt tiền đường Song Hành cao tốc Long Thành. Dự án gồm 355 căn: 202 nhà phố liên kế, 91 nhà phố thương mại và 62 biệt thự song lập trong compound an ninh khép kín.",
+      "Toàn khu đã cất nóc ngày 29/12/2025, dự kiến bàn giao từ quý IV/2026 — khách mua giai đoạn này nhìn được sản phẩm thật và đo đếm chính xác tiến độ. Vị trí nằm giữa tam giác An Phú – The Global City – The Privé, hưởng trọn hạ tầng và tiện ích của cụm dự án Nam Rạch Chiếc.",
+      "Nhà phố xây sẵn trong compound tại Khu Đông là dòng sản phẩm khan hiếm; Senturia An Phú thuộc nhóm được khách tích sản hỏi nhiều nhất trong danh mục thấp tầng của PaceLand."
+    ],
+    "amenities": [
+      "Compound an ninh khép kín",
+      "Mặt tiền Song Hành cao tốc",
+      "Cất nóc 12/2025 — thấy nhà thật",
+      "Liền kề The Global City"
+    ]
+  },
+  {
+    "id": "blanca-city",
+    "name": "Blanca City",
+    "developer": "Sun Group",
+    "location": "Đường 3 Tháng 2, Bãi Sau (TP. Vũng Tàu cũ), TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Nghỉ dưỡng",
+    "type": "Căn hộ",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Đô thị biển Sun Group",
+    "priceText": "Liên hệ bảng giá",
+    "priceValue": 0,
+    "beds": "Căn hộ · nhà phố · biệt thự",
+    "size": "96,6 ha",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/blanca-city.jpg",
+    "gallery": [
+      "assets/img/media/blanca-city.jpg"
+    ],
+    "short": "Đô thị biển 96,6 ha của Sun Group tại Bãi Sau Vũng Tàu — 8 tháp căn hộ Beacon, 6 tháp Blanca và 939 căn thấp tầng; công viên nước Sun World 15 ha trong khu đã mở cửa từ 12/2/2026.",
+    "description": [
+      "Blanca City là khu đô thị biển quy mô 96,6 ha do Sun Group phát triển với hai mặt tiền đường 3 Tháng 2 và trục biển Bãi Sau — vị trí lõi du lịch của Vũng Tàu, nay thuộc TP.HCM sau sáp nhập. Cơ cấu sản phẩm gồm 8 tháp căn hộ Beacon, 6 tháp Blanca và 939 căn nhà phố, biệt thự sở hữu lâu dài.",
+      "Dự án khởi công ngày 16/5/2025. Điểm nhấn hiếm có: công viên nước Sun World Vũng Tàu 15 ha nằm ngay trong khu đã vận hành từ 12/2/2026 — tiện ích tầm đô thị đi trước nhịp bàn giao nhà, kéo dòng khách du lịch về ngay từ hôm nay.",
+      "Với năng lực vận hành du lịch của Sun Group và quỹ đất mặt biển sở hữu lâu dài, Blanca City phù hợp cả nhu cầu ngôi nhà thứ hai lẫn khai thác cho thuê lưu trú — PaceLand tư vấn theo từng dòng sản phẩm và mục tiêu dòng tiền."
+    ],
+    "amenities": [
+      "Sun World 15 ha đã mở cửa",
+      "Hai mặt tiền: 3 Tháng 2 & Bãi Sau",
+      "Sở hữu lâu dài",
+      "Hệ sinh thái du lịch Sun Group"
+    ]
+  },
+  {
+    "id": "five-star-odyssey",
+    "name": "Five Star Odyssey",
+    "developer": "Five Star Group",
+    "location": "165 Thùy Vân, Bãi Sau (TP. Vũng Tàu cũ), TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Nghỉ dưỡng",
+    "type": "Căn hộ",
+    "status": "Sắp ra mắt",
+    "offmarket": false,
+    "badge": "Tháp 199,5 m mặt biển",
+    "priceText": "Chưa công bố",
+    "priceValue": 0,
+    "beds": "Căn hộ du lịch · penthouse",
+    "size": "996 căn + 427 phòng KS",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/five-star-odyssey.jpg",
+    "gallery": [
+      "assets/img/media/five-star-odyssey.jpg"
+    ],
+    "short": "Tháp căn hộ du lịch – khách sạn 5 sao cao 199,5 m (50 tầng) của Five Star Group đối diện công viên biển Bãi Sau — 996 căn hộ du lịch và 427 phòng khách sạn chuẩn Mövenpick; thi công phần thân từ 13/7/2026.",
+    "description": [
+      "Five Star Odyssey là tổ hợp căn hộ du lịch và khách sạn 5 sao tại 165 Thùy Vân — một tháp 50 tầng nổi, 4 tầng hầm, cao 199,5 m trên khu đất 8.189 m² đối diện công viên biển Bãi Sau. Theo giấy phép xây dựng, dự án gồm 996 căn hộ du lịch và 427 phòng khách sạn vận hành chuẩn Mövenpick.",
+      "Dự án khởi công ngày 21/6/2025 và bước vào thi công kết cấu phần thân từ 13/7/2026. Sản phẩm thuộc loại hình sở hữu có thời hạn trên đất thương mại dịch vụ — thiên về khai thác dòng tiền lưu trú; PaceLand luôn tư vấn rõ cấu trúc pháp lý này trước khi khách quyết định."
+    ],
+    "amenities": [
+      "Cao 199,5 m — điểm nhấn Bãi Sau",
+      "Vận hành chuẩn Mövenpick",
+      "Đối diện công viên biển",
+      "Đang thi công phần thân"
+    ]
+  },
+  {
+    "id": "five-star-poseidon",
+    "name": "Five Star Poseidon",
+    "developer": "Agritour (Five Star Group)",
+    "location": "57–59 Thùy Vân, Bãi Sau (TP. Vũng Tàu cũ), TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Nghỉ dưỡng",
+    "type": "Căn hộ",
+    "status": "Sắp ra mắt",
+    "offmarket": false,
+    "badge": "Meliá vận hành (dự kiến)",
+    "priceText": "Chưa công bố",
+    "priceValue": 0,
+    "beds": "≈1.070 căn nghỉ dưỡng",
+    "size": "Tháp đôi 43 tầng · 8.730 m²",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/five-star-poseidon.jpg",
+    "gallery": [
+      "assets/img/media/five-star-poseidon.jpg"
+    ],
+    "short": "Tháp đôi 43 tầng của Agritour (Five Star Group) mặt tiền đường biển Thùy Vân — khoảng 1.070 căn hộ nghỉ dưỡng và 460 phòng khách sạn; Newtecons làm tổng thầu, dự kiến Meliá Hotels International vận hành.",
+    "description": [
+      "Five Star Poseidon là tổ hợp căn hộ du lịch và khách sạn 5 sao dạng tháp đôi 43 tầng nổi, 3 tầng hầm trên khu đất 8.730 m² tại 57–59 Thùy Vân — trục đường biển trung tâm Bãi Sau. Quy mô khoảng 1.070 căn hộ nghỉ dưỡng cùng 460 phòng khách sạn.",
+      "Dự án khởi công ngày 21/6/2025 với Newtecons làm tổng thầu xây dựng; phần khách sạn dự kiến do Meliá Hotels International vận hành. Đây là sản phẩm sở hữu có thời hạn, phù hợp nhà đầu tư dòng tiền lưu trú tại thị trường biển sát TP.HCM — PaceLand tư vấn rõ khung pháp lý trước khi xuống tiền."
+    ],
+    "amenities": [
+      "Tháp đôi 43 tầng mặt biển",
+      "Meliá vận hành (dự kiến)",
+      "Tổng thầu Newtecons",
+      "Cùng trục với Five Star Odyssey"
+    ]
+  },
+  {
+    "id": "solina-vung-tau",
+    "name": "Solina Vũng Tàu",
+    "developer": "C-Holdings",
+    "location": "Bãi Thủy Tiên, P. Rạch Dừa (TP. Vũng Tàu cũ), TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Nghỉ dưỡng",
+    "type": "Căn hộ",
+    "status": "Sắp ra mắt",
+    "offmarket": false,
+    "badge": "Sát biển Bãi Thủy Tiên",
+    "priceText": "Chưa công bố",
+    "priceValue": 0,
+    "beds": "≈914 phòng & căn hộ",
+    "size": "1,19 ha · tòa 26 + 37 tầng",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/solina-vung-tau.jpg",
+    "gallery": [
+      "assets/img/media/solina-vung-tau.jpg"
+    ],
+    "short": "Tổ hợp khách sạn 26 tầng và căn hộ du lịch 37 tầng của C-Holdings trên 11.893 m² sát Bãi Thủy Tiên — công bố tên tháng 9/2026, khoảng 914 phòng và căn hộ, chưa có bảng giá.",
+    "description": [
+      "Solina Vũng Tàu là tổ hợp nghỉ dưỡng của C-Holdings trên khu đất 11.893 m² sát biển Bãi Thủy Tiên, phường Rạch Dừa — gồm tòa khách sạn 26 tầng và tòa căn hộ du lịch 37 tầng, tổng khoảng 914 phòng và căn hộ.",
+      "Dự án vừa công bố tên thương mại tháng 9/2026, chưa có bảng giá; đất thương mại dịch vụ có thời hạn sử dụng đến tháng 12/2067. PaceLand sẽ cập nhật cấu trúc sản phẩm và chính sách bán hàng ngay khi chủ đầu tư công bố — đăng ký trước để nhận thông tin sớm."
+    ],
+    "amenities": [
+      "Sát biển Bãi Thủy Tiên",
+      "Khách sạn + căn hộ du lịch",
+      "Thời hạn đất đến 12/2067",
+      "Mới công bố tên 09/2026"
+    ]
+  },
+  {
+    "id": "vinhomes-green-paradise",
+    "name": "Vinhomes Green Paradise",
+    "developer": "Vinhomes",
+    "location": "Xã Cần Giờ, TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Cao cấp",
+    "type": "Biệt thự",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Lấn biển 2.870 ha",
+    "priceText": "Liên hệ bảng giá",
+    "priceValue": 0,
+    "beds": "Nhà phố · biệt thự · căn hộ",
+    "size": "2.870 ha · 12 km bờ biển",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/vinhomes-green-paradise.jpg",
+    "gallery": [
+      "assets/img/media/vinhomes-green-paradise.jpg"
+    ],
+    "short": "Khu đô thị du lịch lấn biển 2.870 ha của Vinhomes tại Cần Giờ với 12 km bờ biển — khởi công 19/4/2025, siêu dự án định hình cực phát triển hướng biển của TP.HCM.",
+    "description": [
+      "Vinhomes Green Paradise là khu đô thị du lịch lấn biển quy mô 2.870 ha tại Cần Giờ — thuộc nhóm dự án đô thị lớn nhất Việt Nam, sở hữu 12 km bờ biển. Dự án khởi công ngày 19/4/2025, cơ cấu sản phẩm trải từ nhà phố, biệt thự đến căn hộ với hình thức sở hữu lâu dài.",
+      "Định vị \"thành phố biển trong lòng TP.HCM\" cộng hệ tiện ích đô thị Vingroup khiến đây là quỹ hàng chiến lược cho khách tích sản đón chu kỳ hạ tầng hướng biển — cầu Cần Giờ và trục kết nối về trung tâm. PaceLand tư vấn chọn phân khu và dòng sản phẩm theo khẩu vị đầu tư của từng khách."
+    ],
+    "amenities": [
+      "12 km bờ biển",
+      "Sở hữu lâu dài",
+      "Hệ tiện ích đô thị Vingroup",
+      "Đón chu kỳ hạ tầng hướng biển"
+    ]
+  },
+  {
+    "id": "vinhomes-saigon-park",
+    "name": "Vinhomes Saigon Park",
+    "developer": "Vinhomes",
+    "location": "Xuân Thới Sơn (Hóc Môn cũ), TP.HCM",
+    "area": "Vùng ven & nghỉ dưỡng",
+    "segment": "Cao cấp",
+    "type": "Nhà phố thương mại",
+    "status": "Đang mở bán",
+    "offmarket": false,
+    "badge": "Đô thị đại học 1.080 ha",
+    "priceText": "Liên hệ bảng giá",
+    "priceValue": 0,
+    "beds": "Nhà phố · biệt thự · shophouse",
+    "size": "1.080 ha",
+    "handover": "Đang cập nhật",
+    "cover": "assets/img/media/vinhomes-saigon-park.jpg",
+    "gallery": [
+      "assets/img/media/vinhomes-saigon-park.jpg"
+    ],
+    "short": "Khu đô thị đại học 1.080 ha của Vinhomes tại Tây Bắc TP.HCM — sân golf 36 hố, quy hoạch cho 135.000 cư dân, khởi công 29/4/2026.",
+    "description": [
+      "Vinhomes Saigon Park là khu đô thị vệ tinh quy mô 1.080 ha tại Xuân Thới Sơn (Hóc Môn cũ), phía Tây Bắc TP.HCM — quy hoạch theo mô hình đô thị đại học cho khoảng 135.000 cư dân, tích hợp sân golf 36 hố. Dự án khởi công ngày 29/4/2026.",
+      "Đây là bước mở rộng chuỗi đại đô thị Vinhomes sang cực Tây Bắc, đón trục Vành đai 3 và cao tốc TP.HCM – Mộc Bài. Sản phẩm thấp tầng sở hữu lâu dài, phù hợp khách tích sản theo quy hoạch chuẩn với mặt bằng giá vùng ven — PaceLand cập nhật giỏ hàng theo từng đợt ra mắt."
+    ],
+    "amenities": [
+      "Sân golf 36 hố trong khu",
+      "Quy hoạch 135.000 cư dân",
+      "Đón Vành đai 3 & cao tốc Mộc Bài",
+      "Chuẩn vận hành Vinhomes"
     ]
   }
 ];
@@ -515,7 +805,7 @@ const POSTS = [
         "rows": [
           [
             "Chủ đầu tư",
-            "Tập đoàn Đất Xanh",
+            "Bluemarq Group (Đất Xanh cũ)",
             "Gamuda Land (Malaysia)"
           ],
           [
