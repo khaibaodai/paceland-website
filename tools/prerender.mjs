@@ -28,7 +28,7 @@ const sandbox = { window: {}, console };
 vm.createContext(sandbox);
 vm.runInContext(dataSrc + "\n" + compSrc, sandbox);
 const W = sandbox.window;
-const { SITE, NAV, PROJECTS, POSTS, FAQS, PARTNERS } = W;
+const { SITE, NAV, PROJECTS, POSTS, FAQS, PARTNERS, JOBS } = W;
 const renderProjectCard = W.renderProjectCard;
 const renderPostCard = W.renderPostCard;
 const renderPartnerCard = W.renderPartnerCard;
@@ -647,6 +647,87 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
   return h;
 });
 
+/* ---------- 3c. Trang tĩnh từng VỊ TRÍ TUYỂN DỤNG (JobPosting schema — Google Việc làm) ---------- */
+fs.mkdirSync(path.join(ROOT, "tuyen-dung"), { recursive: true });
+let jobPages = 0;
+const jobValidThrough = (() => { const d = new Date(); d.setDate(d.getDate() + 90); return d.toISOString().slice(0, 10); })();
+const jobList = (items) => `<ul class="mt-2" style="list-style:none;display:grid;gap:.5rem;max-width:78ch">${(items || []).map((x) => `<li style="display:flex;gap:.55rem;align-items:baseline"><span class="gem gem--sm" style="flex:none"></span><span>${esc(x)}</span></li>`).join("")}</ul>`;
+for (const j of JOBS) {
+  const url = `/tuyen-dung/${j.id}.html`;
+  const canonical = SITE_URL + url;
+  const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Tuyển dụng", href: "/tuyen-dung.html" }, { label: j.title }];
+  const jobLd = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: j.title,
+    description: `<p>${esc(j.desc)}</p><p><b>Mô tả công việc:</b></p><ul>${(j.duties || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p><b>Yêu cầu:</b></p><ul>${(j.reqs || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p><b>Quyền lợi:</b></p><ul>${(j.benefits || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`,
+    datePosted: today,
+    validThrough: jobValidThrough,
+    employmentType: "FULL_TIME",
+    hiringOrganization: { "@type": "Organization", name: "PaceLand", sameAs: SITE_URL + "/", logo: absUrl("assets/img/logo.png") },
+    jobLocation: { "@type": "Place", address: { "@type": "PostalAddress", streetAddress: "35 Đường số 36, Khu phố 2, P. Bình Trưng", addressLocality: "TP. Thủ Đức", addressRegion: "TP. Hồ Chí Minh", addressCountry: "VN" } },
+    totalJobOpenings: parseInt(j.count, 10) || 1,
+    directApply: true,
+    ...(j.id === "agent-bat-dong-san" ? { baseSalary: { "@type": "MonetaryAmount", currency: "VND", value: { "@type": "QuantitativeValue", value: 5000000, unitText: "MONTH" } } } : {}),
+  };
+  const others = JOBS.filter((x) => x.id !== j.id);
+  const bodyMain = `
+<article class="section section--ivory" style="padding-top:calc(var(--header-h) + clamp(24px,4vw,48px))">
+  <div class="container">
+    ${breadcrumbNav(crumbs)}
+    <span class="eyebrow">${esc(j.dept)} · Tuyển ${esc(j.count || "1")} vị trí</span>
+    <h1 class="mt-1" style="font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12">${esc(j.title)}</h1>
+    <p class="lead mt-2" style="max-width:70ch">${esc(j.desc)}</p>
+    <div class="flex mt-3" style="gap:.5rem;flex-wrap:wrap">
+      <span class="pill">${esc(j.type)}</span>
+      <span class="pill">${esc(j.location)}</span>
+      <span class="pill pill--gold">${esc(j.salary)}</span>
+    </div>
+    <h2 class="mt-4" style="font-size:1.3rem">Mô tả công việc</h2>
+    ${jobList(j.duties)}
+    <h2 class="mt-4" style="font-size:1.3rem">Yêu cầu</h2>
+    ${jobList(j.reqs)}
+    <h2 class="mt-4" style="font-size:1.3rem">Quyền lợi</h2>
+    ${jobList(j.benefits)}
+    <h2 class="mt-4" style="font-size:1.3rem">Lộ trình phát triển</h2>
+    <p class="mt-2" style="max-width:78ch;line-height:1.8;color:var(--ink-soft)">Tại PaceLand, mọi vị trí kinh doanh đều đi theo lộ trình <b>Sales → Leader → Đối tác sở hữu</b> với cơ chế lũy tiến theo năng lực và kết quả. Đội ngũ được cấp mã chứng nhận PL-xxxx, trang hồ sơ cá nhân trên paceland.vn và toàn bộ công cụ làm việc tại <a href="/salehub.html" style="color:var(--red);font-weight:600">SaleHub</a>.</p>
+    <div class="flex mt-4" style="gap:.8rem;flex-wrap:wrap">
+      <a class="btn btn--gold btn--lg" href="/tuyen-dung.html#ung-tuyen">Ứng tuyển vị trí này</a>
+      <a class="btn btn--lg" href="tel:0903983737">Gọi 0903 983 737</a>
+      <a class="btn btn--ghost btn--lg" href="https://zalo.me/0903983737" target="_blank" rel="noopener">Nhắn Zalo</a>
+    </div>
+  </div>
+</article>
+<section class="section section--tight section--paper">
+  <div class="container">
+    <div class="facet-rule" style="margin-bottom:clamp(20px,3vw,32px)">Vị trí khác đang tuyển</div>
+    <div class="grid" style="gap:12px">${others.map((o) => `<a class="job-card" href="/tuyen-dung/${o.id}.html" style="text-decoration:none;color:inherit"><div><h3>${o.count ? `<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">${esc(o.count)}</span>` : ""}${esc(o.title)}</h3><div class="job-meta"><span>${esc(o.dept)}</span><span>${esc(o.salary)}</span></div></div><span class="btn">Xem chi tiết</span></a>`).join("")}</div>
+  </div>
+</section>`;
+  const html = pageShell({
+    title: `Tuyển ${j.count || ""} ${j.title} — Việc làm bất động sản Quận 2 | PaceLand`,
+    desc: stripTags(j.desc) + ` ${j.salary}. ${j.location}. Ứng tuyển ngay tại PaceLand.`,
+    canonical,
+    ogImage: absUrl("assets/img/og-image.jpg"),
+    ogType: "website",
+    ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-job", jobLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))],
+    bodyMain,
+  });
+  fs.writeFileSync(path.join(ROOT, "tuyen-dung", `${j.id}.html`), html);
+  jobPages++;
+}
+
+patchFile("tuyen-dung.html", (h) => {
+  h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
+  h = inject(h, "jobs", '<div class="grid" style="gap:16px" id="jobList"></div>',
+    JOBS.map((j) =>
+      `<article class="job-card"><div><h3>${j.count ? `<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">${esc(j.count)} vị trí</span>` : ""}${esc(j.title)}</h3>` +
+      `<div class="job-meta"><span>${esc(j.dept)}</span><span>${esc(j.location)}</span><span>${esc(j.type)}</span><span>${esc(j.salary)}</span></div></div>` +
+      `<a class="btn" href="/tuyen-dung/${j.id}.html">Xem chi tiết &amp; ứng tuyển</a></article>`
+    ).join(""));
+  return h;
+});
+
 patchFile("salehub.html", (h) => {
   h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
   h = inject(h, "salehub", '<div class="card-grid" id="salehubGrid"></div>', absolutize(PROJECTS.map(renderProjectCard).join("")));
@@ -675,6 +756,7 @@ const urls = [
   ...PROJECTS.map((p) => ({ loc: `/du-an/${p.id}.html`, pri: "0.8", mod: today })),
   ...POSTS.map((p) => ({ loc: `/bai-viet/${p.id}.html`, pri: "0.7", mod: isoDate(p.date) })),
   ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
+  ...JOBS.map((j) => ({ loc: `/tuyen-dung/${j.id}.html`, pri: "0.6", mod: today })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

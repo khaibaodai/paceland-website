@@ -1451,79 +1451,151 @@ const VALUES = [
 
 const JOBS = [
   {
-    "id": "chuyen-vien-tu-van",
-    "title": "Chuyên viên Tư vấn Bất động sản",
+    "id": "giam-doc-kinh-doanh",
+    "title": "Giám đốc Kinh doanh",
+    "count": "02",
     "dept": "Kinh doanh",
     "type": "Toàn thời gian",
-    "location": "TP. Thủ Đức, TP.HCM",
-    "salary": "Thu nhập 30 – 100+ triệu/tháng",
-    "desc": "Tư vấn khách hàng cao cấp, khai thác quỹ hàng chọn lọc và giao dịch kín của PaceLand.",
+    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
+    "salary": "Thoả thuận + chia sẻ doanh thu đội nhóm",
+    "desc": "Dẫn dắt đội ngũ, chia sẻ thành quả: chủ động xây dựng và vận hành đội kinh doanh bất động sản cao cấp tại Khu Đông TP.HCM với cơ chế rõ ràng, nguồn lực marketing và vận hành đồng bộ.",
+    "duties": [
+      "Tuyển chọn và xây dựng đội ngũ agent theo định biên riêng của mình",
+      "Hoạch định mục tiêu doanh số, chiến lược bán theo từng dự án",
+      "Đào tạo, kèm cặp đội ngũ và duyệt phương án tư vấn quan trọng",
+      "Phối hợp Marketing khai thác nguồn khách, phát triển tệp khách riêng",
+      "Báo cáo kết quả trực tiếp với Ban lãnh đạo"
+    ],
     "reqs": [
-      "Đam mê bất động sản & tài chính",
-      "Kỹ năng giao tiếp tốt",
-      "Tinh thần học hỏi, chủ động"
+      "Kinh nghiệm quản lý đội nhóm kinh doanh bất động sản, ưu tiên phân khúc cao cấp",
+      "Thành tích bán hàng chứng minh được bằng con số",
+      "Kỹ năng tuyển dụng, đào tạo và tạo động lực đội ngũ",
+      "Tư duy dữ liệu, làm việc minh bạch theo cơ chế"
     ],
     "benefits": [
-      "Hoa hồng lũy tiến 55–65%",
-      "Nền tảng dữ liệu & nguồn khách hàng",
-      "Lộ trình lên Đối tác cổ phần"
+      "Quyền chủ động xây team theo cơ chế riêng",
+      "Chia sẻ doanh thu đội nhóm, cơ chế lũy tiến minh bạch",
+      "Hỗ trợ Marketing & vận hành toàn diện",
+      "Lộ trình phát triển lên Đối tác sở hữu",
+      "Văn phòng hiện đại tại Quận 2"
     ]
   },
   {
-    "id": "truong-nhom-kinh-doanh",
-    "title": "Trưởng nhóm Kinh doanh",
+    "id": "admin-kinh-doanh",
+    "title": "Admin Kinh doanh",
+    "count": "02",
     "dept": "Kinh doanh",
     "type": "Toàn thời gian",
-    "location": "TP. Thủ Đức, TP.HCM",
-    "salary": "Thu nhập 50 – 150+ triệu/tháng",
-    "desc": "Xây dựng và dẫn dắt đội ngũ tư vấn, phát triển tệp khách hàng tinh hoa.",
+    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
+    "salary": "Thoả thuận theo năng lực",
+    "desc": "Giữ nhịp vận hành, nâng tốc đội ngũ: đầu mối booking, hồ sơ, dữ liệu và báo cáo giúp bộ máy kinh doanh chạy gọn, rõ, chuyên nghiệp.",
+    "duties": [
+      "Quản lý booking giao dịch, lịch hẹn và hồ sơ khách hàng",
+      "Theo dõi dữ liệu giỏ hàng, cập nhật trạng thái căn theo từng dự án",
+      "Chuẩn bị hợp đồng, đối soát chứng từ với chủ đầu tư",
+      "Tổng hợp báo cáo kinh doanh định kỳ cho Ban lãnh đạo",
+      "Hỗ trợ vận hành văn phòng và các sự kiện bán hàng"
+    ],
     "reqs": [
-      "Kinh nghiệm quản lý đội nhóm bất động sản",
-      "Thành tích bán hàng tốt",
-      "Tư duy đối tác, cùng thắng"
+      "Cẩn thận, chi tiết, kỷ luật với số liệu",
+      "Thành thạo Excel / Google Sheets",
+      "Giao tiếp tốt, phối hợp nhịp nhàng nhiều bộ phận",
+      "Ưu tiên từng làm admin hoặc trợ lý kinh doanh bất động sản"
     ],
     "benefits": [
-      "Chính sách thưởng đội nhóm",
-      "Cơ hội nhận cổ phần ưu đãi",
-      "Đào tạo lãnh đạo"
+      "Môi trường làm việc gọn, rõ, chuyên nghiệp",
+      "Hệ thống dữ liệu và quy trình đồng bộ",
+      "Thu nhập ổn định, thưởng theo hiệu quả đội",
+      "Văn phòng hiện đại tại Quận 2"
+    ]
+  },
+  {
+    "id": "agent-bat-dong-san",
+    "title": "Agent — Chuyên viên Kinh doanh BĐS",
+    "count": "20",
+    "dept": "Kinh doanh",
+    "type": "Toàn thời gian",
+    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
+    "salary": "Lương cứng 5 triệu + hoa hồng lũy tiến đến 75%",
+    "desc": "Từ Sale đến Đối tác sở hữu: bán danh mục dự án cao cấp chọn lọc tại Khu Đông với nguồn khách từ Marketing, lương cứng và cơ chế chia sẻ doanh thu lũy tiến lên đến 75%.",
+    "duties": [
+      "Tư vấn khách mua căn hộ, nhà phố cao cấp theo danh mục chọn lọc",
+      "Chăm sóc nguồn khách từ Marketing và phát triển tệp khách riêng",
+      "Dẫn khách tham quan nhà mẫu, công trường; đàm phán và chốt giao dịch",
+      "Cập nhật giỏ hàng, chính sách bán hàng theo từng đợt mở bán",
+      "Xây dựng thương hiệu cá nhân với mã chứng nhận PaceLand riêng"
+    ],
+    "reqs": [
+      "Đam mê kinh doanh và bất động sản",
+      "Kỹ năng giao tiếp, tạo niềm tin với khách hàng",
+      "Chủ động, kỷ luật, ham học hỏi",
+      "Ưu tiên có kinh nghiệm sales (BĐS, bảo hiểm, ô tô, tài chính); chưa có kinh nghiệm được đào tạo từ đầu"
+    ],
+    "benefits": [
+      "Lương cứng 5 triệu + chia sẻ doanh thu lũy tiến lên đến 75%",
+      "Nguồn khách hàng từ Marketing toàn diện",
+      "Kho sản phẩm cao cấp, thanh khoản tốt",
+      "Hệ thống đào tạo, dữ liệu và cổng làm việc SaleHub",
+      "Lộ trình Sales → Leader → Đối tác sở hữu",
+      "Mã chứng nhận + trang hồ sơ cá nhân trên paceland.vn"
     ]
   },
   {
     "id": "digital-marketing",
     "title": "Digital Marketing",
+    "count": "01",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
-    "location": "TP. Thủ Đức, TP.HCM",
+    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
     "salary": "Thoả thuận theo năng lực",
-    "desc": "Triển khai tiếp thị số, nội dung và quảng cáo cho thương hiệu và các dự án.",
+    "desc": "Biến dữ liệu thành khách hàng: vận hành performance ads, landing page, CRM và automation cho toàn bộ phễu khách hàng bất động sản cao cấp của PaceLand.",
+    "duties": [
+      "Lên kế hoạch và chạy performance ads (Meta, Google) cho từng dự án",
+      "Xây dựng, tối ưu landing page và đo lường chuyển đổi",
+      "Quản trị CRM, automation nuôi dưỡng khách hàng tiềm năng",
+      "Phân tích số liệu, tối ưu chi phí trên mỗi khách hàng theo tuần",
+      "Phối hợp Media Marketing sản xuất nội dung quảng cáo"
+    ],
     "reqs": [
-      "Kinh nghiệm tiếp thị số",
-      "Thành thạo quảng cáo & nội dung",
-      "Ưu tiên hiểu bất động sản"
+      "Kinh nghiệm chạy performance ads có số liệu chứng minh",
+      "Hiểu landing page, tracking, CRM và automation",
+      "Tư duy phân tích, ra quyết định bằng dữ liệu",
+      "Ưu tiên từng làm bất động sản hoặc ngành giá trị cao"
     ],
     "benefits": [
-      "Môi trường sáng tạo",
-      "Công nghệ AI & dữ liệu",
-      "Lương thưởng cạnh tranh"
+      "Ngân sách và quyền chủ động thử nghiệm",
+      "Hệ công cụ AI & dữ liệu hiện đại",
+      "Lương thưởng cạnh tranh theo hiệu quả",
+      "Văn phòng hiện đại tại Quận 2"
     ]
   },
   {
-    "id": "chuyen-vien-du-lieu",
-    "title": "Chuyên viên Phân tích Dữ liệu",
+    "id": "media-marketing",
+    "title": "Media Marketing",
+    "count": "01",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
-    "location": "TP. Thủ Đức, TP.HCM",
+    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
     "salary": "Thoả thuận theo năng lực",
-    "desc": "Xây dựng và vận hành hệ dữ liệu thẩm định dự án, chu kỳ giá và khách hàng tiềm năng.",
+    "desc": "Biến dự án thành nội dung có sức nặng: sản xuất photo, video, reels và project content cho thương hiệu PaceLand cùng danh mục dự án cao cấp.",
+    "duties": [
+      "Quay, dựng video và reels dự án, hoạt động đội ngũ",
+      "Chụp và xử lý ảnh dự án, nhà mẫu, sự kiện",
+      "Xây kịch bản nội dung ngắn cho TikTok, Facebook, YouTube",
+      "Quản lý kho media, giữ đồng bộ nhận diện thương hiệu",
+      "Phối hợp Digital Marketing tối ưu nội dung theo số liệu"
+    ],
     "reqs": [
-      "Tư duy phân tích, làm việc với dữ liệu",
-      "Biết Excel/SQL/BI cơ bản",
-      "Cẩn thận, chủ động"
+      "Thành thạo quay dựng (Premiere, CapCut…) và chụp ảnh",
+      "Có portfolio sản phẩm thực tế",
+      "Thẩm mỹ tốt, bắt xu hướng nhanh",
+      "Ưu tiên hiểu bất động sản hoặc nội dung phân khúc cao cấp"
     ],
     "benefits": [
-      "Tham gia xây nền tảng AI & dữ liệu",
-      "Môi trường học hỏi",
-      "Lộ trình phát triển rõ ràng"
+      "Thiết bị và bối cảnh dự án cao cấp để sáng tạo",
+      "Kênh phân phối sẵn: website, TikTok, YouTube, Facebook",
+      "Lương thưởng cạnh tranh theo năng lực",
+      "Văn phòng hiện đại tại Quận 2"
     ]
   }
 ];

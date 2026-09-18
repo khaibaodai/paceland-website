@@ -599,14 +599,14 @@
     if (!grid || typeof JOBS === "undefined") return;
     grid.innerHTML = JOBS.map(function (j) {
       return '<article class="job-card reveal">' +
-        "<div><h3>" + j.title + "</h3>" +
+        "<div><h3>" + (j.count ? '<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">' + j.count + " vị trí</span>" : "") + j.title + "</h3>" +
         '<div class="job-meta">' +
           "<span>" + ICONS.building + j.dept + "</span>" +
           "<span>" + ICONS.pin + j.location + "</span>" +
           "<span>" + ICONS.clock + j.type + "</span>" +
           "<span>" + ICONS.chart + j.salary + "</span>" +
         "</div></div>" +
-        '<a class="btn" href="lien-he.html?vitri=' + encodeURIComponent(j.title) + '">Ứng tuyển ' + ICONS.arrow + "</a>" +
+        '<a class="btn" href="/tuyen-dung/' + j.id + '.html">Xem chi tiết & ứng tuyển ' + ICONS.arrow + "</a>" +
       "</article>";
     }).join("");
     scanReveal();

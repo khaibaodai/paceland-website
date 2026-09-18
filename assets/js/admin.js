@@ -349,11 +349,13 @@
       "</div>";
     if (tab === "jobs") return '<div class="fgrid">' +
       field("Tên vị trí", "f_title", it.title, { full: true }) +
+      field("Số lượng", "f_count", it.count, { ph: "VD: 02" }) +
       field("Phòng ban", "f_dept", it.dept) +
       field("Hình thức", "f_type", it.type, { ph: "VD: Toàn thời gian" }) +
       field("Địa điểm", "f_location", it.location) +
       field("Thu nhập", "f_salary", it.salary) +
       field("Mô tả", "f_desc", it.desc, { full: true, type: "textarea", rows: 80 }) +
+      field("Mô tả công việc", "f_duties", (it.duties || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
       field("Yêu cầu", "f_reqs", (it.reqs || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
       field("Quyền lợi", "f_benefits", (it.benefits || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
       "</div>";
@@ -406,7 +408,7 @@
       };
     }
     if (tab === "posts") return { id: slug(g("f_title")), title: g("f_title"), category: g("f_category"), date: g("f_date"), readtime: g("f_readtime"), cover: g("f_cover"), excerpt: g("f_excerpt"), body: textToBlocks(g("f_body")) };
-    if (tab === "jobs") return { id: slug(g("f_title")), title: g("f_title"), dept: g("f_dept"), type: g("f_type"), location: g("f_location"), salary: g("f_salary"), desc: g("f_desc"), reqs: lines(g("f_reqs")), benefits: lines(g("f_benefits")) };
+    if (tab === "jobs") return { id: slug(g("f_title")), title: g("f_title"), count: g("f_count"), dept: g("f_dept"), type: g("f_type"), location: g("f_location"), salary: g("f_salary"), desc: g("f_desc"), duties: lines(g("f_duties")), reqs: lines(g("f_reqs")), benefits: lines(g("f_benefits")) };
     if (tab === "partners") return {
       id: slug(g("f_name")), code: g("f_code") || nextPartnerCode(), name: g("f_name"), role: g("f_role"),
       level: g("f_level") || PARTNER_LEVELS[0],
