@@ -255,7 +255,7 @@
   ]
  },
  "giaBan": {
-  "intro": "Chủ đầu tư không đăng bảng giá trên website; giá từng căn nằm trong bảng giá có dấu gửi cho đơn vị phân phối. Các bảng chào phân phối tháng 9/2026 chúng chúng tôi có trong tay bắt đầu từ **khoảng 24 tỷ** cho nhà phố liên kế lô 5 × 15 m (75 m² đất) và khoảng 45 tỷ cho biệt thự song lập — tương đương trên 300 triệu/m² đất, tuỳ dãy, hướng và vị trí lô. Giá từ ghi ở từng loại là số của bảng chào phân phối; giá đúng căn PaceLand đối chiếu bảng giá gốc của chủ đầu tư rồi mới báo.",
+  "intro": "Chủ đầu tư không đăng bảng giá trên website; giá từng căn nằm trong bảng giá có dấu gửi cho đơn vị phân phối. Các bảng chào phân phối tháng 9/2026 chúng tôi có trong tay bắt đầu từ **khoảng 24 tỷ** cho nhà phố liên kế lô 5 × 15 m (75 m² đất) và khoảng 45 tỷ cho biệt thự song lập — tương đương trên 300 triệu/m² đất, tuỳ dãy, hướng và vị trí lô. Giá từ ghi ở từng loại là số của bảng chào phân phối; giá đúng căn PaceLand đối chiếu bảng giá gốc của chủ đầu tư rồi mới báo.",
   "capNhat": "Tháng 9/2026",
   "loai": [
    {
@@ -280,7 +280,7 @@
   "note": "Giá bán nhà ở trong lịch thanh toán của chủ đầu tư ghi là **đã gồm thuế GTGT**; chưa gồm phí quản lý. Chiết khấu 10 % (lịch theo tiến độ, không dùng hỗ trợ lãi) trừ thẳng vào giá. Bảng chào phân phối có thể lệch so với bảng giá gốc theo từng đợt — anh/chị chỉ ký khi cầm bảng giá có dấu của chủ đầu tư."
  },
  "matBang": {
-  "intro": "Mặt bằng phân lô: 2 dãy nhà phố thương mại SH1–SH3 bám đường Song Hành và đường số 1; bên trong là các dãy nhà phố liên kế TH1–TH4 xếp song song; biệt thự song lập SD1 ở dải giữa quanh công viên và dọc rạch Mương Kênh phía đường số 3. Mặt bằng từng mẫu nhà (SD1, SH1–SH3, TH1–TH4, có kích thước từng phòng) chúng chúng tôi gửi bản PDF khi anh/chị chọn dãy.",
+  "intro": "Mặt bằng phân lô: 2 dãy nhà phố thương mại SH1–SH3 bám đường Song Hành và đường số 1; bên trong là các dãy nhà phố liên kế TH1–TH4 xếp song song; biệt thự song lập SD1 ở dải giữa quanh công viên và dọc rạch Mương Kênh phía đường số 3. Mặt bằng từng mẫu nhà (SD1, SH1–SH3, TH1–TH4, có kích thước từng phòng) chúng tôi gửi bản PDF khi anh/chị chọn dãy.",
   "diem": [
    "Nhà phố liên kế TH1–TH4: 1 trệt, 2 lầu, sân thượng; lô nhỏ nhất 5 × 15 m",
    "Nhà phố thương mại SH1–SH3: 1 trệt, 3 lầu, mặt tiền đường Song Hành hoặc đường số 1",
@@ -307,7 +307,7 @@
   }
  ],
  "diemNoiBat": {
-  "intro": "Những điểm chúng chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
+  "intro": "Những điểm chúng tôi thấy đáng để anh/chị cân nhắc — toàn bộ là sự thật kiểm chứng được, không có dự đoán giá.",
   "items": [
    {
     "title": "Pháp lý đã đi hết các bước để bán",
@@ -328,7 +328,7 @@
   ]
  },
  "songODay": {
-  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng chúng tôi nhiều nhất về khu này:",
+  "intro": "Nếu mua để ở, 3 điều khách hỏi chúng tôi nhiều nhất về khu này:",
   "items": [
    {
     "title": "Vườn trước, vườn sau",

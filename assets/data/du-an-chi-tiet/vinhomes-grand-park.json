@@ -1,0 +1,401 @@
+{
+ "capNhat": "2026-09-19",
+ "tongQuan": {
+  "intro": "Vinhomes Grand Park là đại đô thị **271 ha** của Vinhomes ở cửa ngõ phía đông TP.HCM. Tên pháp lý là Khu dân cư và công viên Phước Thiện; đơn vị đứng tên chủ đầu tư là Công ty CP Phát triển Thành phố Xanh, công ty con mà Vinhomes sở hữu 99,88 %. Khu đất có hai mặt tiền là đường Nguyễn Xiển và đường Phước Thiện, hai mặt còn lại giáp sông Đồng Nai và sông Tắc; từ ngày 1/7/2025 thuộc phường Long Bình (trước đó nằm trên hai phường Long Bình và Long Thạnh Mỹ, TP Thủ Đức cũ). Phân khu đầu tiên The Rainbow mở bán giữa năm 2019, cư dân đầu tiên dọn về năm 2020, và đến năm 2026 chủ đầu tư công bố khu đô thị có **hơn 70.000 cư dân**. Phần cao tầng gồm The Rainbow, The Origami, The Beverly, The Beverly Solari, Glory Heights và The Opus One — phân khu cao tầng cuối cùng, cất nóc ngày 31/7/2025; phần thấp tầng là The Manhattan và The Manhattan Glory; trong khu còn có Masteri Centre Point và Lumière Boulevard do Masterise Homes phát triển. Đoạn Vành đai 3 trên cao dài hơn 3 km chạy xuyên khu đô thị, dự kiến cho xe chạy từ ngày 30/9/2026.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "Vinhomes Grand Park (tên pháp lý: Khu dân cư và công viên Phước Thiện)"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Công ty CP Phát triển Thành phố Xanh — công ty con của Công ty CP Vinhomes (tỷ lệ sở hữu 99,88 %)"
+   },
+   {
+    "label": "Pháp nhân các phân khu hợp tác",
+    "value": "The Origami: Công ty CP Kinh doanh BĐS MV Việt Nam · The Beverly Solari, Glory Heights: Công ty TNHH Kinh doanh BĐS MV1 Việt Nam · The Opus One: Công ty CP Kinh doanh BĐS S-Vin2 Việt Nam"
+   },
+   {
+    "label": "Đối tác Nhật Bản",
+    "value": "Mitsubishi Corporation và Nomura Real Estate (The Origami, The Beverly Solari, Glory Heights); Samty (The Opus One)"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Mặt tiền đường Nguyễn Xiển và Phước Thiện, phường Long Bình (Long Bình và Long Thạnh Mỹ, TP Thủ Đức cũ), TP.HCM; giáp sông Đồng Nai và sông Tắc"
+   },
+   {
+    "label": "Diện tích",
+    "value": "271 ha (một số tài liệu cũ của chủ đầu tư ghi 271,8 ha hoặc 272 ha)"
+   },
+   {
+    "label": "Mật độ xây dựng",
+    "value": "Khoảng 23 %"
+   },
+   {
+    "label": "Cây xanh, mặt nước",
+    "value": "76 ha, trong đó đại công viên trung tâm 36 ha"
+   },
+   {
+    "label": "Quy mô cao tầng",
+    "value": "71 tòa căn hộ; hơn 44.000 sản phẩm theo công bố năm 2021 của Vinhomes; tháp cao nhất đến 39 tầng (Glory Heights)"
+   },
+   {
+    "label": "Phân khu cao tầng",
+    "value": "The Rainbow · The Origami · The Beverly · The Beverly Solari · Glory Heights · The Opus One; Masteri Centre Point và Lumière Boulevard (Masterise Homes)"
+   },
+   {
+    "label": "Phân khu thấp tầng",
+    "value": "The Manhattan và The Manhattan Glory: biệt thự đơn lập, song lập, shop villa, shophouse; có 23 biệt thự ven sông bản giới hạn ra mắt ngày 3/11/2020"
+   },
+   {
+    "label": "Mở bán, đón cư dân",
+    "value": "Mở bán The Rainbow giữa năm 2019; đón những cư dân đầu tiên năm 2020"
+   },
+   {
+    "label": "Cư dân hiện hữu",
+    "value": "Hơn 70.000 người (chủ đầu tư công bố, năm 2026)"
+   },
+   {
+    "label": "Thi công, thiết kế",
+    "value": "Coteccons thi công, Artelia Group thiết kế — theo tổng quan dự án Vinhomes đăng năm 2021"
+   },
+   {
+    "label": "Sổ hồng",
+    "value": "Hơn 11.000 sổ đã trao đến 31/12/2024; chủ đầu tư đặt mục tiêu 20.000 sổ vào cuối năm 2025"
+   },
+   {
+    "label": "Hình thức sở hữu",
+    "value": "The Rainbow, The Origami: lâu dài · The Beverly, The Beverly Solari, Glory Heights, The Opus One: “lâu dài hoặc 50 năm” (theo Vinhomes Market)"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích",
+    "value": "271 ha",
+    "note": "giáp sông Đồng Nai và sông Tắc"
+   },
+   {
+    "label": "Đại công viên",
+    "value": "36 ha",
+    "note": "76 ha cây xanh – mặt nước toàn khu"
+   },
+   {
+    "label": "Cư dân",
+    "value": "70.000+",
+    "note": "theo chủ đầu tư, năm 2026"
+   },
+   {
+    "label": "Sổ hồng đã trao",
+    "value": "11.000+",
+    "note": "tính đến 31/12/2024"
+   }
+  ]
+ },
+ "dotMoBan": {
+  "title": "The Opus One, The Beverly và biệt thự Manhattan Glory — giỏ hàng chủ đầu tư còn chào năm 2026",
+  "subtitle": "Tháng 9/2026, Vinhomes Market — kênh bán của Vinhomes — đăng văn bản chính sách riêng cho 3 dòng sản phẩm: The Opus One tòa OS1, OS5 (tháng 8/2026), The Beverly (tháng 9/2026) và quỹ căn The Manhattan – The Manhattan Glory, gồm cả căn nhà đầu tư thứ cấp chuyển nhượng lại. Trước đó, đợt mở bán tháng 6/2026 có căn 2 phòng ngủ ở The Origami và The Opus One (VnExpress 26/8/2026). Giỏ hàng thay đổi theo tuần; PaceLand kiểm tra với chủ đầu tư đúng ngày anh/chị hỏi.",
+  "capNhat": "Chính sách nổi bật tháng 9/2026, áp dụng từ 11/9/2026 (Vinhomes Market)",
+  "gioHang": [
+   "The Opus One: chính sách riêng tháng 8/2026 cho tòa OS1, OS5; dự án có studio, 1PN+1, 2PN, 3PN, bàn giao nội thất liền tường, thiết bị Hafele, Kohler, Grohe",
+   "The Beverly: studio đến 3PN trong 10 tòa 32 tầng đã hoàn thiện; chương trình “Đặc quyền tinh hoa” giảm trừ đến 165 triệu",
+   "The Manhattan Glory: biệt thự, liền kề; kèm quỹ căn chuyển nhượng của nhà đầu tư thứ cấp tại The Manhattan – The Manhattan Glory",
+   "Đợt mở bán tháng 6/2026: căn 2PN khoảng 60 m² ở The Origami khoảng 3,2–3,3 tỷ; căn tương đương ở The Opus One từ khoảng 4 tỷ (VnExpress 26/8/2026)"
+  ],
+  "lyDo": [
+   {
+    "title": "Nhà đã xây xong, xem được tận nơi",
+    "text": "The Beverly đã bàn giao và có người ở; 4 tòa The Opus One cất nóc ngày 31/7/2025, sau 17 tháng thi công. Anh/chị đi xem căn thật, hành lang thật, hướng nhìn thật thay vì chọn trên phối cảnh."
+   },
+   {
+    "title": "Vành đai 3 sắp cho xe chạy",
+    "text": "Đoạn trên cao qua TP Thủ Đức cũ, trong đó hơn 3 km xuyên khu đô thị, dự kiến thông xe ngày 30/9/2026 (VnExpress 9/9/2026). TP.HCM còn dự kiến bổ sung nút giao 4 nhánh lên xuống tại đường Phước Thiện, ngay trong Vinhomes Grand Park."
+   },
+   {
+    "title": "Hồ sơ pháp lý đăng công khai theo từng phân khu",
+    "text": "Vinhomes Market đăng thư mục hồ sơ riêng cho The Opus One (pháp nhân S-Vin2 Việt Nam) và The Beverly (Công ty CP Phát triển Thành phố Xanh). PaceLand mở cùng anh/chị đúng thư mục của tòa định mua trước khi ký."
+   },
+   {
+    "title": "Mua vào khu đã có hơn 70.000 cư dân",
+    "text": "Nhu cầu thuê và dịch vụ ở đây dựa trên dân cư đang sống thật. Theo dữ liệu Batdongsan được VnExpress dẫn ngày 26/8/2026, studio được chào thuê khoảng **4,5–6,5 triệu/tháng**, căn 2 phòng ngủ 6–8,5 triệu/tháng."
+   }
+  ],
+  "chinhSach": [
+   {
+    "label": "Vay ngân hàng",
+    "value": "đến 70 %",
+    "note": "giá bán gồm VAT; lãi 0 % trong 18, 24, 30 hoặc 36 tháng tùy chọn"
+   },
+   {
+    "label": "Thanh toán sớm",
+    "value": "7,5 %",
+    "note": "không vay, trả đủ trong 15 ngày từ khi ký HĐMB; hoặc 11 %/năm trên số tiền trả trước hạn"
+   },
+   {
+    "label": "Ưu đãi VinClub",
+    "value": "đến 5,1 %",
+    "note": "11/9–31/10/2026, chỉ qua kênh VinClub"
+   },
+   {
+    "label": "Voucher Vinhomes",
+    "value": "đến 30 % giá trị nhà",
+    "note": "hiệu lực đến 31/12/2026; ghi chú của chủ đầu tư áp dụng cho biệt thự, liền kề Manhattan Glory"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Phần lớn Vinhomes Grand Park đã xây xong và có người ở. Theo Vinhomes Market (tháng 9/2026), The Rainbow, The Origami, The Beverly đã bàn giao, Glory Heights đã hoàn thành, The Beverly Solari đang bàn giao; khu thấp tầng The Manhattan bắt đầu bàn giao từ năm 2021. Phân khu cuối cùng The Opus One cất nóc 4 tòa ngày 31/7/2025 và được công bố kế hoạch bàn giao từ tháng 3/2026; đến ngày 19/9/2026 PaceLand chưa thấy nguồn báo chí xác nhận lễ bàn giao, còn trang Vinhomes Market vẫn ghi tiến độ “đang xây dựng”. Hạ tầng lớn nhất đang về đích là đoạn Vành đai 3 trên cao xuyên khu đô thị.",
+  "moc": [
+   {
+    "label": "The Rainbow",
+    "value": "Mở bán giữa 2019, đón cư dân từ 2020; hơn 1.000 sổ hồng trao từ 11 đến 24/3/2023"
+   },
+   {
+    "label": "The Origami",
+    "value": "Ra mắt 7/2020; Nomura Real Estate ghi hoàn thành năm 2022; đã bàn giao"
+   },
+   {
+    "label": "The Manhattan – The Manhattan Glory",
+    "value": "Ra mắt 2/6/2020 và 30/6/2020; The Manhattan đang bàn giao từ giữa năm 2021; tháng 9/2026 vẫn còn quỹ căn chào bán"
+   },
+   {
+    "label": "The Beverly",
+    "value": "Ra mắt 11/2021; có cư dân từ năm 2024; Vinhomes Market ghi đã bàn giao"
+   },
+   {
+    "label": "The Beverly Solari · Glory Heights",
+    "value": "Beverly Solari ra mắt 4/2022, đang bàn giao; Glory Heights mở bán 7/2023, đã hoàn thành"
+   },
+   {
+    "label": "The Opus One",
+    "value": "Ra mắt 11/2024; cất nóc 4 tòa ngày 31/7/2025; kế hoạch bàn giao từ 3/2026"
+   },
+   {
+    "label": "Masteri Centre Point · Lumière Boulevard",
+    "value": "Masterise Homes đã bàn giao; Lumière Boulevard hoàn thiện đầu 2024; Masteri Centre Point trao sổ hồng từ 16/5/2025"
+   },
+   {
+    "label": "Vành đai 3 trên cao",
+    "value": "Thông xe kỹ thuật 19/12/2025; dự kiến cho xe chạy từ 30/9/2026, đoạn nút giao Tân Vạn – cầu Nhơn Trạch"
+   }
+  ],
+  "note": "Anh/chị muốn xem thực tế, PaceLand sắp lịch đi trong một buổi: căn mẫu hoặc căn hoàn thiện ở The Opus One, The Beverly, đại công viên 36 ha và đoạn Vành đai 3 chạy qua khu đô thị; đi xem không mất phí.",
+  "image": null
+ },
+ "viTri": {
+  "intro": "Vinhomes Grand Park nằm ở phía đông TP Thủ Đức cũ (Quận 9 cũ): phía tây là đường Nguyễn Xiển, phía bắc là đường Phước Thiện, phía đông là sông Đồng Nai, phía nam là sông Tắc. Vành đai 3 trên cao chạy xuyên khu đô thị, một đầu nối nút giao cao tốc TP.HCM – Long Thành – Dầu Giây, đầu kia lên nút giao Tân Vạn. Thời gian dưới đây lấy theo công bố của chủ đầu tư, tính vào giờ thường; giờ cao điểm trên Nguyễn Xiển chậm hơn đáng kể.",
+  "khoangCach": [
+   {
+    "label": "Khu Công nghệ cao (Quận 9 cũ)",
+    "value": "Khoảng 5 phút"
+   },
+   {
+    "label": "Đại học Fulbright Việt Nam",
+    "value": "Khoảng 5 phút"
+   },
+   {
+    "label": "Bến xe Miền Đông mới",
+    "value": "Khoảng 8–10 phút"
+   },
+   {
+    "label": "Ga metro số 1 gần nhất",
+    "value": "Khoảng 10 phút"
+   },
+   {
+    "label": "Khu du lịch Suối Tiên",
+    "value": "Khoảng 15 phút"
+   },
+   {
+    "label": "Cao tốc TP.HCM – Long Thành – Dầu Giây · hầm Thủ Thiêm",
+    "value": "Khoảng 15 phút"
+   },
+   {
+    "label": "Trung tâm Quận 1 cũ · Vinhomes Central Park",
+    "value": "Khoảng 30 phút"
+   },
+   {
+    "label": "Sân bay Tân Sơn Nhất · sân bay Long Thành",
+    "value": "Khoảng 40 phút"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Vành đai 3 chạy xuyên khu đô thị",
+    "text": "Gói thầu XL3 dài hơn 3 km đi trên cao qua giữa Vinhomes Grand Park, là một phần của 14,7 km cầu cạn qua TP Thủ Đức cũ; đoạn này thông xe kỹ thuật ngày 19/12/2025 và dự kiến cho xe chạy từ **30/9/2026**. Phía nam tuyến nối nút giao Long Trường vào cao tốc TP.HCM – Long Thành; phía bắc là nút giao Tân Vạn, nơi nối xa lộ Hà Nội, đang thi công và dự kiến xong cuối năm 2026."
+   },
+   {
+    "title": "Metro số 1 và VinBus",
+    "text": "Tuyến metro Bến Thành – Suối Tiên khai thác thương mại từ ngày 22/12/2024; chủ đầu tư tính khoảng 10 phút từ khu đô thị ra ga. Trong khu có tuyến VinBus nội khu kết nối ra metro và tuyến buýt điện D4 đi bến xe buýt Sài Gòn (Quận 1 cũ)."
+   },
+   {
+    "title": "Hai mặt tiền đường, một điểm nghẽn",
+    "text": "Nguyễn Xiển là trục chính dẫn vào khu nhưng chỉ rộng khoảng 10 m; xe tải, container được chạy từ 22 giờ đến 6 giờ sáng và người dân đã phản ánh ùn ứ, tai nạn (Người Lao Động 7/2024). Tháng 9/2025, đoạn trước khu đô thị xuống cấp khiến tuyến buýt D4 phải đổi lộ trình. Phước Thiện và Vành đai 3 là hai lối ra còn lại."
+   }
+  ],
+  "image": null
+ },
+ "tienIch": {
+  "intro": "Phần lớn tiện ích ở Vinhomes Grand Park đã vận hành: đại công viên **36 ha**, công viên giải trí Grand Park mở ngày 6/12/2024, Vincom Mega Mall Grand Park đón khách từ 1/6/2024, phòng khám Vinmec khai trương 5/7/2025, 2 trường Vinschool và mạng VinBus. Bệnh viện đa khoa Vinmec, tháp văn phòng và bến du thuyền cao cấp được chủ đầu tư nêu là hạng mục sẽ có thêm (Dân Trí 2/2026). Hồ bơi và khu BBQ phân theo phân khu: khu BBQ công viên Zone 2 miễn phí cho cư dân The Origami, thấp tầng và Masteri nhưng thu phí với cư dân The Rainbow, The Beverly Solari.",
+  "items": [
+   "Đại công viên 36 ha (Công viên Ánh Sáng) và chuỗi công viên chủ đề",
+   "Công viên giải trí Grand Park — công viên nước và khu trò chơi, mở từ 6/12/2024",
+   "Vincom Mega Mall Grand Park — 50.000 m², 5 tầng nổi, 2 tầng hầm",
+   "Phòng khám Đa khoa Quốc tế Vinmec Grand Park (tầng L2 Vincom)",
+   "Vinschool Grand Park — 2 cơ sở, có hệ song ngữ Cambridge",
+   "Quảng trường Golden Eagle và đại lộ mua sắm Rodeo",
+   "Sân tập golf 2 tầng, 36 ô đánh",
+   "VinBus nội khu và tuyến D4 đi bến xe buýt Sài Gòn"
+  ]
+ },
+ "giaBan": {
+  "intro": "Vinhomes Grand Park có nhiều mặt bằng giá vì gồm cả căn dòng Sapphire mở bán từ 2019 lẫn căn cao cấp mới. Bảng dưới lấy từ các nguồn có ngày: đợt mở bán tháng 6/2026 và giá chào biệt thự thứ cấp theo VnExpress ngày 26/8/2026 (bài hợp tác nội dung, dẫn dữ liệu Batdongsan), giá The Beverly Solari theo Vinhomes Market tháng 12/2025. Cũng theo bài VnExpress, studio được chào thuê khoảng **4,5–6,5 triệu/tháng**, căn 2 phòng ngủ **6–8,5 triệu/tháng**. Đây là giá tham khảo, chưa phải bảng giá có dấu của chủ đầu tư.",
+  "capNhat": "Tháng 8/2026",
+  "loai": [
+   {
+    "name": "2 phòng ngủ — The Origami",
+    "dienTich": "khoảng 60 m²",
+    "gia": "khoảng 3,2–3,3 tỷ (đợt mở bán tháng 6/2026)",
+    "thanhToan": "—"
+   },
+   {
+    "name": "2 phòng ngủ — The Opus One",
+    "dienTich": "khoảng 60 m²",
+    "gia": "từ khoảng 4 tỷ (đợt mở bán tháng 6/2026)",
+    "thanhToan": "—"
+   },
+   {
+    "name": "Studio – 3 phòng ngủ — The Beverly Solari",
+    "dienTich": "studio đến 3PN",
+    "gia": "từ 2,1 tỷ (studio) đến hơn 4 tỷ (3PN), tham khảo 12/2025",
+    "thanhToan": "—"
+   },
+   {
+    "name": "Biệt thự đơn lập — khu thấp tầng Glory",
+    "dienTich": "320 m²",
+    "gia": "chào bán khoảng 125 triệu/m², hơn 40 tỷ (thứ cấp, tham khảo 8/2026)",
+    "thanhToan": "—"
+   }
+  ],
+  "note": "Giá căn hộ chênh nhau theo phân khu, tòa, tầng, hướng và tiêu chuẩn bàn giao — căn Sapphire ở The Rainbow, The Origami khác hẳn căn cao cấp ở The Opus One. Chính sách vay, chiết khấu tháng 9/2026 xem ở mục đợt mở bán phía trên. PaceLand đối chiếu bảng giá có dấu hoặc giá giao dịch thực tế của đúng căn anh/chị quan tâm trước khi anh/chị đặt cọc."
+ },
+ "matBang": {
+  "intro": "271 ha chia thành nhiều cụm quanh đại công viên 36 ha. The Rainbow là phân khu duy nhất giáp đường Nguyễn Xiển ở phía tây; The Origami nằm kế bên, có mặt tiền đường Phước Thiện và giáp Vành đai 3. Lõi trung tâm quanh công viên gồm The Beverly, The Beverly Solari, Glory Heights, The Opus One cùng Vincom Mega Mall và quảng trường Golden Eagle. Khu thấp tầng The Manhattan – The Manhattan Glory, tổng khoảng 84 ha, ôm công viên và trải ra bờ sông; Masteri Centre Point và Lumière Boulevard nằm trên đường D1.",
+  "diem": [
+   "The Rainbow: 17 tòa, mặt bằng chữ Z cao 26 tầng, chữ U và T cao 35 tầng; mỗi tòa 2 tầng hầm và shophouse khối đế",
+   "The Origami: 21 tòa trong 5 cụm S6–S10; mặt bằng chữ T và U 21 căn một sàn, chữ Z 19 căn một sàn",
+   "The Opus One: 4 tòa 32–34 tầng, tỷ lệ 2,5 căn một thang máy mỗi sàn, sảnh thông tầng cao hơn 7 m",
+   "Vành đai 3 trên cao đi qua khu đô thị hơn 3 km; TP.HCM dự kiến thêm nút giao 4 nhánh tại đường Phước Thiện"
+  ],
+  "image": null
+ },
+ "loaiCan": [
+  {
+   "name": "Studio",
+   "dienTich": "27–39 m²",
+   "text": "Có ở cả 6 phân khu cao tầng do Vinhomes bán; tại The Origami rộng 27–39 m², tại The Beverly Solari chào **từ 2,1 tỷ** theo Vinhomes Market tháng 12/2025. Hợp người độc thân hoặc mua cho thuê — giá chào thuê studio khoảng 4,5–6,5 triệu/tháng theo dữ liệu tháng 8/2026."
+  },
+  {
+   "name": "1 phòng ngủ, 1PN+1",
+   "dienTich": "36–59 m²",
+   "text": "Ở The Origami, căn 1PN rộng 36–41 m², căn 1PN+1 có thêm phòng làm việc rộng 46–51,8 m². Tại tòa OS2 The Opus One, dòng 1PN+ được làm rộng hơn, khoảng 58–59 m²."
+  },
+  {
+   "name": "2 phòng ngủ, 2PN+1",
+   "dienTich": "58–85 m²",
+   "text": "Loại căn phổ biến cho gia đình trẻ: The Origami 58–70 m², đợt mở bán tháng 6/2026 căn khoảng 60 m² ở đây giá **3,2–3,3 tỷ**. Tòa OS2 The Opus One có dòng 2PN rộng 83–85 m², bàn giao nội thất liền tường."
+  },
+  {
+   "name": "3 phòng ngủ, 3PN+1",
+   "dienTich": "81–108 m²",
+   "text": "The Origami có căn 3PN 81–103 m² và 3PN+1 103,6–108 m². Hợp gia đình đông người hoặc nhà cần thêm phòng làm việc; tại The Beverly Solari, căn 3PN được chào từ hơn 4 tỷ (Vinhomes Market 12/2025)."
+  },
+  {
+   "name": "Biệt thự, shop villa, shophouse",
+   "dienTich": "84–639 m² (Manhattan Glory)",
+   "text": "Nằm ở The Manhattan và The Manhattan Glory, quanh đại công viên và ven sông. 23 biệt thự bản giới hạn ra mắt ngày 3/11/2020 có quyền ưu tiên sở hữu chỗ đậu du thuyền định danh tại bến Manhattan Glory. Tháng 9/2026 chủ đầu tư vẫn chào biệt thự, liền kề Manhattan Glory."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Những điểm PaceLand thấy đáng để anh/chị cân nhắc — đều kiểm chứng được, không có dự đoán giá.",
+  "items": [
+   {
+    "title": "Tiện ích đã chạy, không còn trên phối cảnh",
+    "text": "Vincom Mega Mall Grand Park đón khách từ 1/6/2024, công viên giải trí Grand Park mở ngày 6/12/2024, phòng khám Vinmec khai trương 5/7/2025, 2 trường Vinschool và VinBus đang hoạt động. Anh/chị đến vào cuối tuần là thấy khu đô thị có người sống thật."
+   },
+   {
+    "title": "Mảng xanh lớn, mật độ xây dựng thấp",
+    "text": "Toàn khu có **76 ha** cây xanh và mặt nước, trong đó đại công viên 36 ha nằm giữa các phân khu; mật độ xây dựng khoảng 23 %. Hai mặt khu đất giáp sông Đồng Nai và sông Tắc."
+   },
+   {
+    "title": "Sổ hồng trao theo từng đợt",
+    "text": "Đợt lớn đầu tiên hơn 1.000 sổ cho The Rainbow trao từ 11 đến 24/3/2023; đến 31/12/2024 hơn **11.000 sổ** đã tới tay cư dân theo chủ đầu tư. Masteri Centre Point của Masterise Homes trao sổ từ 16/5/2025."
+   },
+   {
+    "title": "Vành đai 3 xuyên qua khu đô thị",
+    "text": "Hơn 3 km cầu cạn Vành đai 3 đi qua Vinhomes Grand Park, dự kiến cho xe chạy từ 30/9/2026, nối cao tốc TP.HCM – Long Thành – Dầu Giây và nút giao Tân Vạn. Đi kèm là tường chống ồn cao khoảng 4 m, hiện mới lắp một bên tuyến."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, đây là 4 điều khách hỏi PaceLand nhiều nhất về khu này:",
+  "items": [
+   {
+    "title": "Công viên, hồ bơi ngay dưới nhà",
+    "text": "Đại công viên 36 ha và công viên giải trí Grand Park nằm giữa khu; mỗi phân khu có hồ bơi riêng cho cư dân theo quy định (The Rainbow dùng hồ S1, CX5, S5; The Origami dùng hồ S6–S10). Một số tiện ích như khu BBQ Zone 2 miễn phí cho phân khu này nhưng thu phí với phân khu khác — anh/chị hỏi rõ theo đúng khu mình mua."
+   },
+   {
+    "title": "Đi làm: Nguyễn Xiển còn là điểm nghẽn",
+    "text": "Đường Nguyễn Xiển hẹp, xe tải và container được chạy ban đêm, đoạn trước khu đô thị từng xuống cấp năm 2025. Người đi làm ở trung tâm có thêm lựa chọn VinBus ra metro số 1 hoặc tuyến D4 đi bến xe buýt Sài Gòn; Vành đai 3 thông xe sẽ mở thêm lối ra cao tốc."
+   },
+   {
+    "title": "Căn nhìn ra Vành đai 3: kiểm tra tiếng ồn",
+    "text": "Cầu cạn chạy sát nhiều tòa chung cư. Khoảng 9 km tuyến qua khu dân cư đã lắp 9.130 tấm chống ồn cao khoảng 4 m nhưng mới ở một bên, phần còn lại làm khi tuyến mở rộng lên 8 làn giai đoạn 2026–2030. Anh/chị nên đứng thử trong căn định mua vào giờ cao điểm sau khi tuyến thông xe."
+   },
+   {
+    "title": "Học, khám bệnh, mua sắm trong khu",
+    "text": "Vinschool Grand Park có 2 cơ sở; phòng khám Vinmec Grand Park ở tầng L2 Vincom Mega Mall làm sàng lọc, khám, xét nghiệm và chẩn đoán hình ảnh; khi cần chuyển viện, khách được hỗ trợ đưa lên Bệnh viện Vinmec Central Park. Bệnh viện đa khoa Vinmec trong khu vẫn là kế hoạch của chủ đầu tư."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý đã công bố trên Công báo TP.HCM, báo chí và trang Vinhomes Market:",
+  "items": [
+   "Quyết định 5802/QĐ-UBND ngày 31/10/2017 của UBND TP.HCM duyệt nhiệm vụ điều chỉnh quy hoạch chi tiết 1/500 Khu dân cư và công viên Phước Thiện (khu B), phường Long Bình và Long Thạnh Mỹ, quận 9 cũ; đơn vị tổ chức lập: Công ty CP Phát triển Thành phố Xanh",
+   "Chủ đầu tư dự án: Công ty CP Phát triển Thành phố Xanh, công ty con Vinhomes sở hữu 99,88 % theo báo cáo tài chính được VnExpress dẫn ngày 25/10/2023",
+   "Pháp nhân các phân khu (mục pháp lý trên Vinhomes Market): The Origami — Công ty CP Kinh doanh BĐS MV Việt Nam; The Beverly Solari, Glory Heights — Công ty TNHH Kinh doanh BĐS MV1 Việt Nam; The Opus One — Công ty CP Kinh doanh BĐS S-Vin2 Việt Nam; The Beverly — Công ty CP Phát triển Thành phố Xanh",
+   "Tháng 1/2023, Sở Xây dựng TP.HCM xác nhận 3.620 căn hộ tại lô B1 (khu nhà ở cao tầng các lô B1, B2, B3 — tên thương mại The Beverly Solari) đủ điều kiện bán nhà ở hình thành trong tương lai; ngân hàng bảo lãnh là Techcombank",
+   "Sổ hồng: hơn 1.000 sổ cho cư dân The Rainbow trao từ 11 đến 24/3/2023; hơn 11.000 sổ đã trao đến 31/12/2024; chủ đầu tư đặt mục tiêu 20.000 sổ vào cuối năm 2025, phần tiếp theo cho The Beverly Solari và The Beverly",
+   "Masteri Centre Point: Masterise Homes trao sổ hồng cho chủ căn hộ từ ngày 16/5/2025",
+   "Hình thức sở hữu theo Vinhomes Market: The Rainbow, The Origami ghi “lâu dài”; The Beverly, The Beverly Solari, Glory Heights, The Opus One ghi “lâu dài hoặc 50 năm”"
+  ],
+  "note": "Trước khi đặt cọc, anh/chị kiểm tra tên bên bán trên hợp đồng — Thành phố Xanh, MV, MV1 hay S-Vin2 tùy phân khu — và giấy tờ của đúng căn: văn bản đủ điều kiện bán hoặc sổ hồng. Với căn mua lại, xem bản gốc sổ và tình trạng thế chấp tại ngân hàng. PaceLand đọc hồ sơ cùng anh/chị."
+ },
+ "chuDauTu": {
+  "ten": "Vinhomes (Công ty CP Vinhomes, Tập đoàn Vingroup) — chủ đầu tư dự án: Công ty CP Phát triển Thành phố Xanh",
+  "text": "Vinhomes là công ty bất động sản của Tập đoàn Vingroup, niêm yết mã VHM; theo tin tháng 12/2024, Vinhomes đang vận hành, quản lý 30 dự án đô thị trên cả nước. Ở Vinhomes Grand Park, dự án gốc do công ty con Công ty CP Phát triển Thành phố Xanh đứng tên. Một số phân khu được phát triển cùng đối tác Nhật qua pháp nhân riêng: The Origami (MV Việt Nam), The Beverly Solari và Glory Heights (MV1 Việt Nam — theo thông tin năm 2023, Drigp 2, đơn vị liên quan Mitsubishi, nắm 80 % vốn), The Opus One (S-Vin2 Việt Nam, hợp tác với Samty). Vì vậy **tên bên bán trên hợp đồng khác nhau theo phân khu**. Các khu đô thị Vinhomes đã bàn giao và vận hành nhiều năm anh/chị có thể đến xem:",
+  "daBanGiao": [
+   "Vinhomes Central Park (Bình Thạnh cũ, TP.HCM)",
+   "Vinhomes Golden River (Quận 1 cũ, TP.HCM)",
+   "Vinhomes Times City (Hà Nội)",
+   "Vinhomes Ocean Park (Hà Nội)"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Vinhomes Grand Park giá bao nhiêu năm 2026?",
+   "a": "Theo VnExpress ngày 26/8/2026, đợt mở bán tháng 6/2026 có căn 2 phòng ngủ khoảng 60 m² ở The Origami giá khoảng 3,2–3,3 tỷ đồng và căn cùng diện tích ở The Opus One từ khoảng 4 tỷ đồng. Cùng bài (dẫn dữ liệu Batdongsan), studio được chào thuê 4,5–6,5 triệu đồng/tháng, căn 2 phòng ngủ 6–8,5 triệu đồng/tháng, còn một biệt thự đơn lập 320 m² được chào khoảng 125 triệu đồng/m². Vinhomes Market tháng 12/2025 ghi căn The Beverly Solari từ 2,1 tỷ (studio) đến hơn 4 tỷ (3 phòng ngủ). Đây là giá tham khảo, chưa phải bảng giá có dấu của chủ đầu tư."
+  },
+  {
+   "q": "Vinhomes Grand Park thuộc phường nào sau sáp nhập?",
+   "a": "Từ ngày 1/7/2025, Vinhomes Grand Park thuộc phường Long Bình, TP.HCM, theo Nghị quyết 1685/NQ-UBTVQH15 ngày 16/6/2025; trước đó khu đô thị nằm trên hai phường Long Bình và Long Thạnh Mỹ của TP Thủ Đức. Phường Long Bình mới gồm toàn bộ phường Long Bình cũ và phần còn lại của Long Thạnh Mỹ (một phần Long Thạnh Mỹ nhập vào phường Tăng Nhơn Phú). Vinhomes ghi dự án “nay là phường Long Bình, TP.HCM”; Vinschool dùng địa chỉ 512 Nguyễn Xiển, phường Long Bình."
+  },
+  {
+   "q": "Căn hộ Vinhomes Grand Park đã có sổ hồng chưa?",
+   "a": "Có, với các phân khu đã bàn giao: theo chủ đầu tư, đến 31/12/2024 hơn 11.000 sổ hồng đã được trao cho cư dân Vinhomes Grand Park, và kế hoạch là 20.000 sổ vào cuối năm 2025 với phần tiếp theo cho The Beverly Solari, The Beverly. Đợt lớn đầu tiên là hơn 1.000 sổ cho The Rainbow trao từ 11 đến 24/3/2023; Masteri Centre Point (Masterise Homes) trao sổ từ 16/5/2025. Với The Opus One và các căn mua lại, anh/chị cần kiểm tra giấy tờ của đúng căn trước khi đặt cọc."
+  },
+  {
+   "q": "Vành đai 3 qua Vinhomes Grand Park khi nào thông xe?",
+   "a": "Đoạn Vành đai 3 trên cao qua TP Thủ Đức cũ — trong đó hơn 3 km xuyên qua Vinhomes Grand Park — dự kiến cho xe chạy ngày 30/9/2026 trên đoạn từ nút giao Tân Vạn đến cầu Nhơn Trạch (VnExpress 9/9/2026). Đoạn cầu cạn 14,7 km đã thông xe kỹ thuật ngày 19/12/2025 nhưng chưa khai thác chính thức; đường song hành 4 làn dự kiến xong đồng bộ trong năm 2026. TP.HCM còn dự kiến bổ sung nút giao 4 nhánh lên xuống tại đường Phước Thiện trong khu đô thị."
+  }
+ ]
+}

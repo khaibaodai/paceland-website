@@ -1,0 +1,317 @@
+{
+ "capNhat": "2026-09-19",
+ "tongQuan": {
+  "intro": "The Metropole Thủ Thiêm là tên thương mại của Khu phức hợp Sóng Việt, rộng khoảng **7,6 ha** trong khu chức năng số 1 của khu đô thị mới Thủ Thiêm, nay thuộc phường An Khánh, TP.HCM, sát chân cầu Ba Son và nhìn sang Quận 1 cũ. Chủ đầu tư pháp lý là Công ty CP Quốc Lộc Phát; SonKim Land làm nhà phát triển từ giữa năm 2018. Dự án chia 4 phân khu nhà ở trên 4 lô đất: The Galleria, The Crest và The Opera đã bàn giao trong giai đoạn 2021–2024; phân khu cuối The OpusK khởi công ngày 2/6/2025, dự kiến hoàn thành quý II/2027. Cộng theo số SonKim Land công bố cho từng phân khu, toàn dự án có **1.492 căn hộ**, xen với các tháp văn phòng như The Hallmark ở cửa ngõ khu.",
+  "thongSo": [
+   {
+    "label": "Tên thương mại",
+    "value": "The Metropole Thủ Thiêm (tên pháp lý: Khu phức hợp Sóng Việt)"
+   },
+   {
+    "label": "Chủ đầu tư",
+    "value": "Công ty CP Quốc Lộc Phát — thành lập năm 2014, vốn điều lệ 1.500 tỷ đồng"
+   },
+   {
+    "label": "Nhà phát triển",
+    "value": "Công ty CP Bất động sản Sơn Kim (SonKim Land), nhận vai trò từ giữa năm 2018 — cùng thời điểm Keppel Land (Singapore) thoái vốn khỏi Quốc Lộc Phát"
+   },
+   {
+    "label": "Vị trí",
+    "value": "Khu chức năng số 1, khu đô thị mới Thủ Thiêm — phường An Khánh, TP.HCM (phường An Khánh, Quận 2 – TP Thủ Đức cũ); sát chân cầu Ba Son"
+   },
+   {
+    "label": "Diện tích đất",
+    "value": "Khoảng 7,6 ha (75.965 m²) toàn khu; lô 1-16: 14.987 m² · lô 1-13: 13.168 m² · lô 1-17: 11.370 m² · lô 1-14: 8.518 m²"
+   },
+   {
+    "label": "Tổng vốn đầu tư",
+    "value": "Khoảng 7.300 tỷ đồng (kế hoạch lựa chọn nhà đầu tư ghi khoảng 7.273 tỷ); website dự án ghi gần 7.500 tỷ đồng"
+   },
+   {
+    "label": "Phân khu",
+    "value": "The Galleria (giai đoạn 1, lô 1-16) · The Crest (giai đoạn 2, lô 1-13) · The Opera (giai đoạn 3, lô 1-17) · The OpusK (giai đoạn 4 — phân khu cuối, lô 1-14)"
+   },
+   {
+    "label": "Số căn hộ",
+    "value": "1.492 căn, cộng theo số SonKim Land công bố: Galleria 456 · Crest 240 · Opera 646 · OpusK 150"
+   },
+   {
+    "label": "Số tháp, số tầng",
+    "value": "Galleria 3 tháp 12 tầng · Crest 1 tòa căn hộ và 2 tòa văn phòng · Opera 2 tháp Scala, Massimo trên khối đế 5 tầng, 3 tầng hầm · OpusK tháp phức hợp 36 tầng và tháp văn phòng hạng A 30 tầng"
+   },
+   {
+    "label": "Loại hình",
+    "value": "Căn hộ studio đến 4 phòng ngủ, duplex, loft, penthouse, Sky Villa; shophouse, khối đế thương mại và văn phòng"
+   },
+   {
+    "label": "Diện tích căn",
+    "value": "Từ 47,44 m² (studio The Crest) đến 380 m² (Sky Villa The Opera)"
+   },
+   {
+    "label": "Hình thức sở hữu",
+    "value": "Người Việt Nam sở hữu lâu dài; người nước ngoài 50 năm (theo SonKim Land)"
+   },
+   {
+    "label": "Bàn giao",
+    "value": "Galleria từ tháng 7/2021 · Crest đã bàn giao · Opera từ tháng 3/2024 · OpusK dự kiến quý II/2027"
+   },
+   {
+    "label": "Thiết kế kiến trúc",
+    "value": "DP Architects (Galleria; Opera cùng Công ty Võ Gia) · P&T Group (Crest) · Designcamp Moon Park, Hàn Quốc và Evocateurs, Singapore (OpusK)"
+   },
+   {
+    "label": "Tổng thầu",
+    "value": "Coteccons (Galleria, OpusK) · Tập đoàn Xây dựng Hòa Bình (Opera, gói thầu hơn 2.670 tỷ đồng)"
+   },
+   {
+    "label": "Giấy chứng nhận QSDĐ",
+    "value": "Lô 1-16, 1-13, 1-17 do Sở Tài nguyên và Môi trường TP.HCM cấp ngày 31/12/2019"
+   }
+  ],
+  "chiSo": [
+   {
+    "label": "Diện tích khu đất",
+    "value": "7,6 ha",
+    "note": "4 lô trong khu chức năng số 1"
+   },
+   {
+    "label": "Số căn hộ",
+    "value": "1.492",
+    "note": "4 phân khu, theo số chủ đầu tư công bố"
+   },
+   {
+    "label": "Đã bàn giao",
+    "value": "3/4 phân khu",
+    "note": "Galleria, Crest, Opera"
+   },
+   {
+    "label": "Giá thứ cấp",
+    "value": "330–500 triệu/m²",
+    "note": "tham khảo 5/2026, theo VnExpress"
+   }
+  ]
+ },
+ "tienDo": {
+  "capNhat": "Tháng 9/2026",
+  "intro": "Ba phân khu đầu đã có cư dân: The Galleria bàn giao từ tháng 7/2021, The Crest đã bàn giao và cư dân đã nhận sổ hồng theo VnExpress (12/2024), The Opera bàn giao từ tháng 3/2024. Phân khu cuối The OpusK ra mắt ngày 15/12/2024 và khởi công ngày 2/6/2025 với tổng thầu Coteccons; tháng 10/2025 công trường đang hoàn thiện phần hầm, mục tiêu hoàn thành và đưa vào sử dụng trong **quý II/2027**.",
+  "moc": [
+   {
+    "label": "Tháng 6/2018",
+    "value": "Quốc Lộc Phát, SonKim Land và Vietcombank ký hợp tác chiến lược; Vietcombank nhận tài trợ vốn, bảo lãnh dự án và cho vay người mua"
+   },
+   {
+    "label": "31/12/2019",
+    "value": "Sở Tài nguyên và Môi trường TP.HCM cấp giấy chứng nhận quyền sử dụng đất cho 3 lô 1-16, 1-13, 1-17"
+   },
+   {
+    "label": "The Galleria",
+    "value": "Cất nóc ngày 18/8/2020, phần kết cấu xong sớm 1,5 tháng so với kế hoạch; bàn giao từ tháng 7/2021"
+   },
+   {
+    "label": "The Crest",
+    "value": "Đã bàn giao; cư dân đã nhận sổ hồng (VnExpress, 5/12/2024)"
+   },
+   {
+    "label": "The Opera",
+    "value": "Ra mắt ngày 3/10/2020; Hòa Bình nhận thầu tháng 5/2021 với thời gian thi công 682 ngày; cất nóc đầu năm 2023; bàn giao từ tháng 3/2024"
+   },
+   {
+    "label": "The OpusK",
+    "value": "Ra mắt 15/12/2024 · khởi công 2/6/2025 · tháng 10/2025 hoàn thiện phần hầm · dự kiến hoàn thành quý II/2027"
+   }
+  ],
+  "note": "Tiến độ The OpusK sau tháng 10/2025 chưa có bài báo cập nhật trong các nguồn PaceLand rà soát. Trước khi đặt cọc căn OpusK, anh/chị nên đề nghị chủ đầu tư cho xem hiện trạng công trường và văn bản pháp lý mới nhất của lô 1-14; PaceLand đi cùng và đọc hồ sơ giúp.",
+  "image": null
+ },
+ "viTri": {
+  "intro": "Theo quy hoạch của Sasaki (Mỹ), khu chức năng số 1 là nửa phía bắc khu trung tâm bán đảo Thủ Thiêm, dành cho thương mại đa chức năng mật độ cao. The Metropole nằm sát chân cầu Ba Son; theo chủ đầu tư, từ đây sang Quận 1 cũ mất **2–3 phút** đi xe. Các vị trí dưới đây lấy theo mô tả của chủ đầu tư và báo chí, chưa phải số đo thực địa; công trình nào còn đang xây, chúng tôi ghi rõ.",
+  "khoangCach": [
+   {
+    "label": "Quận 1 cũ (qua cầu Ba Son)",
+    "value": "2–3 phút đi xe, theo chủ đầu tư"
+   },
+   {
+    "label": "Cầu Ba Son (thông xe 28/4/2022)",
+    "value": "Sát dự án"
+   },
+   {
+    "label": "Quảng trường trung tâm Thủ Thiêm",
+    "value": "Kế bên phân khu The OpusK"
+   },
+   {
+    "label": "Tháp văn phòng The Hallmark",
+    "value": "Cửa ngõ khu phức hợp, mặt tiền đường Trần Bạch Đằng"
+   }
+  ],
+  "diem": [
+   {
+    "title": "Cửa ngõ từ Quận 1 cũ sang Thủ Thiêm",
+    "text": "Cầu Ba Son thông xe ngày 28/4/2022 và được đổi tên từ cầu Thủ Thiêm 2 ngày 14/6/2023, nối khu đô thị mới Thủ Thiêm với Quận 1 và Bình Thạnh cũ. Tháp văn phòng The Hallmark của khu phức hợp có mặt tiền Trần Bạch Đằng ngay đầu cầu. Chủ đầu tư cho biết hơn 90% căn The Galleria nhìn ra sông, Quận 1 cũ hoặc cảnh quan nội khu."
+   },
+   {
+    "title": "Sát khu hành chính – quảng trường mới của thành phố",
+    "text": "Ngày 29/4/2026, TP.HCM khởi công Quảng trường trung tâm và Trung tâm hành chính trên gần 47 ha tại phường An Khánh, vốn dự kiến khoảng 29.600 tỷ đồng, gồm tòa hành chính khoảng 30 tầng, nhà hát kết hợp trung tâm hội nghị khoảng 2.000 chỗ và công viên có mặt hồ khoảng 12 ha. Metro số 2 đoạn Bến Thành – Thủ Thiêm khởi công cùng ngày, đặt cạnh khu này. Tất cả đều đang xây — anh/chị nên xem tiến độ thực tế khi quyết định."
+   },
+   {
+    "title": "Nhà hát đã đổi vị trí — lưu ý khi đọc tài liệu cũ",
+    "text": "Tài liệu giới thiệu The Opera Residence trước đây nhấn mạnh vị trí cạnh nhà hát giao hưởng tương lai gần cầu Ba Son. Ngày 18/4/2026, HĐND TP.HCM dừng dự án nhà hát theo hình thức đầu tư công và chuyển hạng mục nhà hát sang cụm Quảng trường trung tâm – Trung tâm hành chính. Cầu đi bộ Bạch Đằng – Thủ Thiêm, chân cầu phía Thủ Thiêm ở công viên bờ sông gần ngã ba Nguyễn Thiện Thành – N14, vẫn đang thi công; Thanh Niên (25/8/2026) cho biết cầu không kịp về đích dịp 2/9/2026."
+   }
+  ],
+  "image": null
+ },
+ "tienIch": {
+  "intro": "Tiện ích được bố trí theo từng phân khu; riêng The OpusK công bố hơn 2.000 m² tiện ích chỉ dành cho cư dân 150 căn. Danh mục dưới đây lấy theo công bố của chủ đầu tư trên báo chí:",
+  "items": [
+   "The Galleria: hồ bơi hướng sông, hồ Jacuzzi ngoài trời, chòi massage nổi, sàn tắm nắng, phòng gym cạnh hồ bơi",
+   "The Galleria: công viên nước thiếu nhi, khu giao lưu cho phụ huynh cạnh sân chơi, vườn BBQ, vườn điêu khắc",
+   "The Opera: hệ hồ bơi hơn 1.000 m², jacuzzi liền phòng sauna ngoài trời",
+   "The Opera: phòng gym, phòng yoga, phòng golf giả lập — chủ đầu tư công bố hơn 50 hạng mục tiện ích",
+   "The OpusK: hồ bơi vô cực có quầy bar, sauna ngoài trời, phòng yoga, golf mô phỏng, thư viện riêng",
+   "Khối đế thương mại ở các phân khu và tháp văn phòng The Hallmark do Savills quản lý vận hành"
+  ]
+ },
+ "giaBan": {
+  "intro": "Báo chí mới công bố giá theo m², chưa có bảng giá từng căn có dấu của chủ đầu tư. Theo VnExpress (29/5/2026), căn chuyển nhượng tại 3 phân khu đã bàn giao giao dịch khoảng **330–500 triệu/m²** tùy tầng và hướng; phân khu mới The OpusK được chào khoảng 250–450 triệu/m². Trước đó, dữ liệu Lịch sử giá của Batdongsan.com.vn (Dân trí dẫn ngày 18/12/2025) ghi mức phổ biến 360,8 triệu/m² vào tháng 10/2025, tăng 72,7% sau 12 tháng.",
+  "capNhat": "Tháng 5/2026",
+  "loai": [
+   {
+    "name": "The Galleria · The Crest · The Opera (chuyển nhượng)",
+    "dienTich": "Crest 47,44–151 m² · Opera 55–380 m²",
+    "gia": "khoảng 330–500 triệu/m² (tham khảo 5/2026)",
+    "thanhToan": "Giao dịch chuyển nhượng; Galleria và Crest đã có sổ hồng"
+   },
+   {
+    "name": "Căn ven sông, tầm nhìn đặc biệt (chuyển nhượng)",
+    "dienTich": "Tùy căn",
+    "gia": "chào bán tiệm cận 700–800 triệu/m² (tham khảo 5/2026)",
+    "thanhToan": "Giá chào của người bán, chưa phải giá chốt"
+   },
+   {
+    "name": "The OpusK (sơ cấp)",
+    "dienTich": "150 căn, trần cao 3,2 m",
+    "gia": "khoảng 250–450 triệu/m² (tham khảo 5/2026)",
+    "thanhToan": "Lịch thanh toán chưa được báo chí công bố"
+   },
+   {
+    "name": "Mức phổ biến toàn dự án",
+    "dienTich": "Toàn dự án",
+    "gia": "360,8 triệu/m² (tham khảo 10/2025)",
+    "thanhToan": "Dữ liệu tin đăng của Batdongsan.com.vn"
+   }
+  ],
+  "note": "Đây là mặt bằng báo chí ghi nhận, không phải bảng giá chính thức. Giá từng căn chênh lớn theo phân khu, tầng, hướng sông và tình trạng sổ; PaceLand đối chiếu giá giao dịch thực tế của đúng căn anh/chị quan tâm trước khi anh/chị trả giá."
+ },
+ "matBang": {
+  "intro": "Bốn lô đất của dự án nằm trong khu chức năng số 1. Theo văn bản Quốc Lộc Phát gửi báo chí tháng 7/2019, phương án của chủ đầu tư có **42%** diện tích sàn xây dựng là căn hộ và 58% là văn phòng, nên các tòa căn hộ đứng xen với tháp văn phòng và khối đế thương mại.",
+  "diem": [
+   "Lô 1-16 — The Galleria: 3 tháp Hermitage, Prado, Louvre cao 12 tầng; 456 căn hộ và 30 căn văn phòng – thương mại",
+   "Lô 1-13 — The Crest: 1 tòa căn hộ và 2 tòa văn phòng trên đại lộ Vòng Cung, một phía giáp sông",
+   "Lô 1-17 — The Opera: 2 tháp Scala và Massimo trên khối đế 5 tầng, 3 tầng hầm",
+   "Lô 1-14 — The OpusK: tháp phức hợp 36 tầng (150 căn), tháp văn phòng hạng A 30 tầng và khối đế thương mại, cao khoảng 144 m"
+  ],
+  "image": null
+ },
+ "loaiCan": [
+  {
+   "name": "Studio – 3 phòng ngủ (The Crest)",
+   "dienTich": "47,44–151 m²",
+   "text": "Phân khu **240 căn**, chung lô với 2 tòa văn phòng. SonKim Land giới thiệu The Crest là phân khu đưa công nghệ và trí tuệ nhân tạo vào tiện ích, không gian sống, hướng tới người mua trẻ. Cư dân đã nhận sổ hồng theo VnExpress (12/2024), nên giao dịch ở đây là chuyển nhượng căn đã có giấy tờ."
+  },
+  {
+   "name": "1–4 phòng ngủ và Sky Villa (The Opera)",
+   "dienTich": "55–380 m²",
+   "text": "**646 căn** trong 2 tháp Scala, Massimo — phân khu đông căn nhất dự án, bàn giao từ tháng 3/2024. Chủ đầu tư giới thiệu gần như toàn bộ căn tại đây nhìn ra sông Sài Gòn; Sky Villa là loại lớn nhất, tới 380 m² theo công bố năm 2024."
+  },
+  {
+   "name": "Căn hộ, duplex, loft, penthouse, shophouse (The Galleria)",
+   "dienTich": "Đang cập nhật",
+   "text": "456 căn hộ và 30 căn văn phòng – thương mại trong 3 tháp 12 tầng. Duplex, loft và shophouse có trần cao gấp đôi; căn 4 phòng ngủ và penthouse nối không gian trong nhà với sân ngoài. Đây là phân khu bàn giao sớm nhất (7/2021) và đã có sổ hồng."
+  },
+  {
+   "name": "Căn hộ The OpusK",
+   "dienTich": "150 căn, trần cao 3,2 m",
+   "text": "Phân khu cuối, đang xây. Căn có trần cao 3,2 m, kính từ sàn đến trần và ban công toàn cảnh rộng tới 7,5 m²; chủ đầu tư có căn mẫu 3 phòng ngủ. Cơ cấu diện tích từng loại căn chưa được báo chí công bố — anh/chị nên xin mặt bằng căn cụ thể từ chủ đầu tư, PaceLand hỗ trợ đọc bản vẽ."
+  }
+ ],
+ "diemNoiBat": {
+  "intro": "Bốn điểm PaceLand thấy đáng cân nhắc, đều kiểm chứng được qua hồ sơ và báo chí — không kèm dự báo giá.",
+  "items": [
+   {
+    "title": "Ba phân khu đã bàn giao, hai phân khu đã có sổ hồng",
+    "text": "The Galleria bàn giao từ tháng 7/2021, The Opera từ tháng 3/2024, The Crest cũng đã bàn giao; cư dân Galleria và Crest đã nhận sổ hồng theo VnExpress (5/12/2024). Ba lô 1-16, 1-13, 1-17 có giấy chứng nhận quyền sử dụng đất từ ngày 31/12/2019 — mua căn chuyển nhượng ở đây là mua tài sản đã hình thành."
+   },
+   {
+    "title": "Đầu cầu Ba Son, cạnh khu trung tâm mới",
+    "text": "Dự án nằm trong khu chức năng số 1, sát cầu Ba Son thông xe từ 28/4/2022. Ngày 29/4/2026, TP.HCM khởi công Quảng trường trung tâm, Trung tâm hành chính và metro số 2 đoạn Bến Thành – Thủ Thiêm ở khu vực này."
+   },
+   {
+    "title": "Đơn vị thiết kế, thi công có tên tuổi",
+    "text": "DP Architects thiết kế kiến trúc The Galleria và The Opera, P&T Group thiết kế The Crest, Designcamp Moon Park (Hàn Quốc) và Evocateurs (Singapore) thiết kế The OpusK. Coteccons làm tổng thầu The Galleria và The OpusK; Hòa Bình làm tổng thầu The Opera với gói thầu hơn 2.670 tỷ đồng."
+   },
+   {
+    "title": "Nguồn cung mới đã gần khép lại",
+    "text": "The OpusK là phân khu cuối cùng của dự án, chỉ **150 căn**. Khi OpusK bán hết, căn hộ The Metropole chỉ còn đến từ thị trường chuyển nhượng — hiện được VnExpress ghi nhận ở khoảng 330–500 triệu/m² (tháng 5/2026)."
+   }
+  ]
+ },
+ "songODay": {
+  "intro": "Nếu mua để ở, đây là 3 điều khách thường hỏi PaceLand về cuộc sống tại The Metropole:",
+  "items": [
+   {
+    "title": "Tiện ích riêng theo phân khu",
+    "text": "Galleria có hồ bơi hướng sông, jacuzzi, công viên nước cho trẻ em và vườn BBQ; Opera có hệ hồ bơi hơn 1.000 m², sauna ngoài trời, yoga, golf giả lập; OpusK dành hơn 2.000 m² tiện ích chỉ cho cư dân 150 căn. Khi chọn căn, anh/chị hỏi rõ mình được dùng tiện ích của phân khu nào."
+   },
+   {
+    "title": "Văn phòng ngay trong khu",
+    "text": "Khu phức hợp có khối văn phòng xen căn hộ: The Hallmark có 30 tầng nổi, đạt chứng nhận công trình xanh BCA Green Mark (Gold) và do Savills quản lý vận hành; The OpusK có thêm tháp văn phòng hạng A 30 tầng khi hoàn thành."
+   },
+   {
+    "title": "Khu vực vẫn là đại công trường",
+    "text": "Quảng trường – trung tâm hành chính, metro số 2, cầu đi bộ và The OpusK đều đang thi công quanh dự án. Anh/chị nên đến xem căn vào giờ làm việc để tự đánh giá bụi, tiếng ồn và giao thông trong thời gian các công trình này xây dựng."
+   }
+  ]
+ },
+ "phapLy": {
+  "intro": "Hồ sơ pháp lý của dự án được công bố qua thông cáo của SonKim Land và báo chí; PaceLand liệt kê các văn bản có số hoặc có ngày:",
+  "items": [
+   "Chủ trương: tháng 11/2015 Thủ tướng đồng ý cho TP.HCM chỉ định Công ty CP Quốc Lộc Phát làm nhà đầu tư; tháng 7/2016 UBND TP.HCM phê duyệt kết quả lựa chọn nhà đầu tư tại Quyết định 3652/QĐ-UBND",
+   "Giấy chứng nhận quyền sử dụng đất lô 1-16 (Galleria), 1-13 (Crest), 1-17 (Opera) do Sở Tài nguyên và Môi trường TP.HCM cấp ngày 31/12/2019",
+   "Văn bản số 2039/SXD-PTN&TTBĐS ngày 28/2/2020 của Sở Xây dựng TP.HCM: 456 căn hộ tại lô 1-16 đủ điều kiện bán nhà ở hình thành trong tương lai",
+   "Cư dân The Galleria và The Crest đã nhận sổ hồng (VnExpress, 5/12/2024); với The Opera, PaceLand chưa thấy nguồn báo chí xác nhận việc cấp sổ cho cư dân",
+   "Kết luận thanh tra 1041/TB-TTCP ngày 26/6/2019 của Thanh tra Chính phủ: dự án được chỉ định nhà đầu tư, không đấu giá quyền sử dụng đất; việc tính tiền sử dụng đất một số lô ở mức 26 triệu đồng/m² là không đúng quy định, cần xác định lại giá đất để truy thu",
+   "Quốc Lộc Phát phản hồi bằng văn bản 38/2019/CV-QLP ngày 4/7/2019: nghĩa vụ tiền sử dụng đất 1.750 tỷ đồng cho 48.150 m², đơn giá bình quân 42,5 triệu đồng/m², kèm đầu tư 3 tuyến đường chuyển giao cho thành phố ước 250–300 tỷ đồng",
+   "The OpusK (lô 1-14): khởi công 2/6/2025; PaceLand chưa tìm thấy văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của lô này được công bố trên báo chí"
+  ],
+  "note": "Với căn chuyển nhượng ở Galleria, Crest, Opera, anh/chị yêu cầu xem bản gốc sổ hồng của đúng căn, kiểm tra tình trạng thế chấp và thời hạn sở hữu (người nước ngoài 50 năm). Với căn OpusK, yêu cầu xem văn bản đủ điều kiện bán của Sở Xây dựng cho lô 1-14 và chứng thư bảo lãnh ngân hàng của căn mình trước khi đặt cọc. Về kiến nghị truy thu tiền sử dụng đất năm 2019, PaceLand chưa thấy thông tin công khai cho thấy ảnh hưởng đến sổ hồng đã cấp của cư dân. PaceLand đi cùng và đọc hồ sơ giúp."
+ },
+ "chuDauTu": {
+  "ten": "SonKim Land (Công ty CP Bất động sản Sơn Kim) — nhà phát triển; chủ đầu tư pháp lý: Công ty CP Quốc Lộc Phát",
+  "text": "SonKim Land thành lập năm 2007, thuộc hệ sinh thái Sơn Kim do doanh nhân Nguyễn Thị Sơn gây dựng; chủ tịch HĐQT hiện là ông Lau Hoong Chew (quốc tịch Malaysia). Công ty gọi chiến lược của mình là ‘Luxury Boutique’; trước The Metropole, SonKim Land phát triển Gateway Thảo Điền, The Nassim và Serenity Sky Villas, sau đó là The 9 Stellars ở khu Thủ Đức cũ và khu nghỉ dưỡng JW Marriott Cam Ranh Bay. Tháng 3/2026 SonKim Land ra mắt The Berkley — 85 căn đã xây xong gần ga metro An Phú. Tháng 5/2026 công ty đề xuất đô thị TOD 5.0 quanh ga Thủ Thiêm (khu ga quy hoạch 17,2 ha), và tại Hội nghị cấp cao Vành đai và Con đường ở Hong Kong (9–10/9/2026) ký thỏa thuận nguyên tắc với MTR Smart Mobility (thuộc MTR, Hong Kong) cùng Gamuda Land Việt Nam để nghiên cứu mô hình nhà ga tích hợp — đây là đề xuất, nghiên cứu riêng, không thuộc The Metropole. Các dự án đã hoàn thành anh/chị có thể đến xem:",
+  "daBanGiao": [
+   "The Galleria Residence — The Metropole Thủ Thiêm (bàn giao từ 7/2021)",
+   "The Crest Residence — The Metropole Thủ Thiêm (đã bàn giao, có sổ hồng)",
+   "The Opera Residence — The Metropole Thủ Thiêm (bàn giao từ 3/2024)",
+   "Gateway Thảo Điền (hoàn thành năm 2017)",
+   "Alta Villa — The 9 Stellars, 79 biệt thự (bàn giao từ 7/2025)",
+   "The Berkley, Thảo Điền — 85 căn (chào bán khi đã hoàn thiện, 3/2026)"
+  ]
+ },
+ "faq": [
+  {
+   "q": "The Metropole Thủ Thiêm giá bao nhiêu năm 2026?",
+   "a": "Theo VnExpress ngày 29/5/2026, căn chuyển nhượng tại The Galleria, The Crest và The Opera giao dịch khoảng 330–500 triệu đồng/m², một số căn ven sông được chào tiệm cận 700–800 triệu đồng/m²; phân khu mới The OpusK được chào khoảng 250–450 triệu đồng/m². Dữ liệu Batdongsan.com.vn (Dân trí dẫn ngày 18/12/2025) ghi mức phổ biến 360,8 triệu đồng/m² vào tháng 10/2025. Chủ đầu tư chưa công bố bảng giá từng căn trên báo chí; PaceLand đối chiếu giá thực tế cho đúng căn anh/chị hỏi."
+  },
+  {
+   "q": "The Metropole Thủ Thiêm đã có sổ hồng chưa?",
+   "a": "Đã có với 2 phân khu: cư dân The Galleria và The Crest đã nhận sổ hồng (VnExpress, 5/12/2024). Ba lô 1-16 (Galleria), 1-13 (Crest), 1-17 (Opera) được Sở Tài nguyên và Môi trường TP.HCM cấp giấy chứng nhận quyền sử dụng đất ngày 31/12/2019. The Opera bàn giao từ tháng 3/2024 nhưng PaceLand chưa thấy nguồn báo chí xác nhận việc cấp sổ cho cư dân; The OpusK đang xây. Khi mua lại, anh/chị yêu cầu xem bản gốc sổ của đúng căn."
+  },
+  {
+   "q": "The OpusK Thủ Thiêm khi nào hoàn thành?",
+   "a": "The OpusK khởi công ngày 2/6/2025 và dự kiến hoàn thành, đưa vào sử dụng trong quý II/2027 (VietnamBiz, 16/10/2025). Đây là phân khu cuối của The Metropole tại lô 1-14, gồm tháp phức hợp 36 tầng có 150 căn hộ hạng sang và tháp văn phòng hạng A 30 tầng, tổng thầu Coteccons. Tháng 10/2025 công trường đang hoàn thiện phần hầm; ngày bàn giao có hiệu lực với anh/chị là ngày ghi trong hợp đồng mua bán."
+  },
+  {
+   "q": "The Metropole Thủ Thiêm có bao nhiêu căn, gồm những phân khu nào?",
+   "a": "The Metropole Thủ Thiêm có 4 phân khu nhà ở với tổng 1.492 căn hộ, cộng theo số SonKim Land công bố: The Galleria 456 căn, The Crest 240 căn, The Opera 646 căn (đã bàn giao) và The OpusK 150 căn (đang xây, dự kiến quý II/2027). Toàn dự án rộng khoảng 7,6 ha ở phường An Khánh, TP.HCM (khu đô thị mới Thủ Thiêm, TP Thủ Đức cũ); chủ đầu tư là Công ty CP Quốc Lộc Phát, nhà phát triển là SonKim Land. Một số tài liệu cũ gọi giai đoạn 4 là The Amaris Residence; SonKim Land hiện công bố phân khu cuối là The OpusK."
+  }
+ ]
+}

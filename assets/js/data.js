@@ -185,8 +185,8 @@ const PROJECTS = [
     "status": "Đang mở bán",
     "offmarket": false,
     "badge": "Khu đô thị 117,4 ha",
-    "priceText": "Theo phân khu",
-    "priceValue": 15,
+    "priceText": "Căn hộ từ 6,7 tỉ (tham khảo 09/2026)",
+    "priceValue": 6.7,
     "beds": "Căn hộ · Nhà phố · Biệt thự",
     "size": "6 phân khu chính",
     "handover": "Theo phân khu",
@@ -230,21 +230,21 @@ const PROJECTS = [
     "status": "Đang mở bán",
     "offmarket": false,
     "badge": "Ba mặt sông Rạch Chiếc",
-    "priceText": "Liên hệ bảng giá",
-    "priceValue": 5.5,
+    "priceText": "Từ 4,4 tỉ (tham khảo 09/2026)",
+    "priceValue": 4.4,
     "beds": "1–4 PN",
-    "size": "53 – 144 m²",
-    "handover": "Cuối 2027",
+    "size": "50,3 – 144,2 m²",
+    "handover": "Dự kiến quý IV/2027",
     "cover": "assets/img/media/gladia-heights-1.jpg",
     "gallery": [
       "assets/img/media/gladia-heights-1.jpg",
       "assets/img/media/gladia-heights-2.jpg",
       "assets/img/media/gladia-heights-3.jpg"
     ],
-    "short": "Dự án căn hộ hợp tác Khang Điền × Keppel Land tại Võ Chí Công, TP. Thủ Đức — 3 tháp 15 tầng, 639 căn, ba mặt giáp sông Rạch Chiếc, bàn giao cuối 2027.",
+    "short": "Dự án căn hộ hợp tác Khang Điền × Keppel Land tại Võ Chí Công, TP. Thủ Đức — 3 tháp 15 tầng, 616 căn hộ, ba mặt giáp sông Rạch Chiếc, bàn giao dự kiến quý IV/2027.",
     "description": [
-      "Gladia Heights là dự án căn hộ cao cấp do liên danh Khang Điền (Việt Nam) và Keppel Land (Singapore) phát triển tại đường Võ Chí Công, phường Bình Trưng Đông (cũ), TP. Thủ Đức — kế cận Thủ Thiêm, ba mặt giáp sông Rạch Chiếc. Giai đoạn 1 quy mô 1,29 ha nằm trong cụm đô thị tích hợp khoảng 60 ha của hai chủ đầu tư.",
-      "Dự án gồm 3 tháp cao 15 tầng — mật độ thấp hiếm có ở phân khúc này — với 639 căn hộ và 26 shophouse. Cơ cấu căn: 1PN ~53,5 m², 2PN 71,4–85,1 m², 3PN 115–124,7 m², 4PN ~144,2 m². Dự án chính thức mở bán ngày 1/8/2026; bàn giao dự kiến cuối 2027, cấp giấy chứng nhận dự kiến 2028.",
+      "Gladia Heights là dự án căn hộ cao cấp do liên danh Khang Điền (Việt Nam) và Keppel Land (Singapore) phát triển tại đường Võ Chí Công, phường Bình Trưng Đông (cũ), TP. Thủ Đức — kế cận Thủ Thiêm, ba mặt giáp sông Rạch Chiếc. Giai đoạn 1 quy mô 1,26 ha nằm trong cụm đô thị tích hợp khoảng 60 ha của hai chủ đầu tư.",
+      "Dự án gồm 3 tháp cao 15 tầng — mật độ thấp hiếm có ở phân khúc này — với 616 căn hộ và 23 căn thương mại dịch vụ. Cơ cấu căn: 1PN 50,3–53,5 m², 2PN 71,4–85,1 m², 3PN 115–124,7 m², 4PN ~144,2 m². Dự án chính thức mở bán ngày 1/8/2026; bàn giao dự kiến quý IV/2027, cấp giấy chứng nhận dự kiến 2028.",
       "Uy tín pháp lý của Khang Điền cộng chuẩn phát triển Singapore của Keppel Land là lý do Gladia Heights nằm trong nhóm dự án PaceLand khuyến nghị theo dõi sớm — bảng giá công bố theo từng đợt, khách trong mạng lưới được ưu tiên giữ chỗ căn tầng đẹp."
     ],
     "amenities": [
@@ -259,145 +259,310 @@ const PROJECTS = [
   {
     "id": "one-central-saigon",
     "name": "One Central Saigon",
-    "developer": "Masterise Homes",
-    "location": "Trung tâm Quận 1",
+    "developer": "Masterise Homes (CĐT: Công ty TNHH Saigon Glory)",
+    "location": "Tứ giác Bến Thành, P. Bến Thành (Nguyễn Thái Bình, Q.1 cũ), TP.HCM",
     "area": "Trung tâm",
     "segment": "Siêu sang",
     "type": "Căn hộ",
     "status": "Giao dịch kín",
     "offmarket": true,
-    "badge": "Hiếm có",
+    "badge": "214 căn Ritz-Carlton Residences",
     "priceText": "Liên hệ",
-    "priceValue": 95,
-    "beds": "2–4 PN",
-    "size": "90 – 320 m²",
-    "handover": "2027",
+    "priceValue": 0,
+    "beds": "Đang cập nhật",
+    "size": "Đang cập nhật",
+    "handover": "Đang cập nhật",
     "cover": "assets/img/media/one-central-saigon-1.jpg",
     "gallery": [
       "assets/img/media/one-central-saigon-1.jpg",
       "assets/img/media/one-central-saigon-2.jpg",
       "assets/img/media/one-central-saigon-3.jpg"
     ],
-    "short": "Tài sản siêu sang ngay tứ giác vàng Quận 1 — một trong những quỹ căn khan hiếm nhất thị trường.",
+    "short": "Tháp đôi 55 và 48 tầng đối diện chợ Bến Thành do Masterise Homes phát triển — khách sạn Ritz-Carlton đầu tiên tại Việt Nam và 214 căn hộ hàng hiệu The Ritz-Carlton Residences, Saigon.",
     "description": [
-      "One Central Saigon là dự án phức hợp siêu sang nằm tại vị trí đắt giá bậc nhất trung tâm Quận 1, kề Bến Thành. Số lượng căn hộ giới hạn, hướng tới giới tinh hoa và nhà sưu tầm bất động sản.",
-      "Đây là nhóm sản phẩm 'private' đúng nghĩa — thông tin và mức giá chỉ chia sẻ trực tiếp cho khách hàng trong mạng lưới PaceLand."
+      "One Central Saigon là tổ hợp tháp đôi trên khu đất 8.537 m² có 4 mặt tiền Phạm Ngũ Lão – Calmette – Lê Thị Hồng Gấm – Phó Đức Chính, đối diện chợ Bến Thành, phường Bến Thành (Nguyễn Thái Bình, Quận 1 cũ). Chủ đầu tư là Công ty TNHH Saigon Glory; Masterise Homes phát triển và chính thức ra mắt dự án ngày 13/5/2026.",
+      "Hai tháp 55 và 48 tầng đứng trên khối đế 7 tầng nổi, 6 tầng hầm. Tháp Tây gồm văn phòng hạng A+ và khách sạn; tổ hợp có The Ritz-Carlton, Saigon 231 phòng — khách sạn Ritz-Carlton đầu tiên tại Việt Nam. Tháp Đông là 214 căn hộ The Ritz-Carlton Residences, Saigon; khối đế có 19.990 m² thương mại và tầng hầm nối thẳng ga metro Bến Thành.",
+      "Theo danh sách Sở Xây dựng TP.HCM công bố tháng 7/2026, 214 căn hộ đủ điều kiện bán nhà ở hình thành trong tương lai, Techcombank bảo lãnh. Công trình tái khởi công giữa tháng 3/2026, tổng thầu Newtecons dự kiến hoàn thành sau khoảng 30 tháng; giá bán, cơ cấu căn và ngày bàn giao chưa được công bố chính thức — PaceLand cập nhật ngay khi có văn bản của chủ đầu tư."
     ],
     "amenities": [
-      "Phòng chờ riêng",
-      "Hồ bơi trên cao",
-      "Hầm rượu",
-      "Dịch vụ quản gia",
-      "Khu để xe sang riêng",
-      "Tầm nhìn Bến Thành – sông Sài Gòn"
+      "Căn hộ hàng hiệu The Ritz-Carlton Residences",
+      "Khách sạn The Ritz-Carlton, Saigon 231 phòng",
+      "Trung tâm thương mại cao cấp 19.990 m²",
+      "Văn phòng hạng A+",
+      "Tầng hầm nối ga metro Bến Thành",
+      "Đối diện chợ Bến Thành"
+    ],
+    "zones": [
+      {
+        "name": "Tháp Đông (tháp B)",
+        "type": "48 tầng · 214 căn hộ The Ritz-Carlton Residences, Saigon",
+        "status": "Đang thi công",
+        "note": "Có tên trong danh sách đủ điều kiện bán Sở Xây dựng công bố tháng 7/2026, Techcombank bảo lãnh; tổng thầu ghi 47 tầng"
+      },
+      {
+        "name": "Tháp Tây (tháp A)",
+        "type": "55 tầng · văn phòng hạng A+ và khách sạn",
+        "status": "Đang thi công",
+        "note": "Tổng thầu Newtecons ghi 56 tầng"
+      },
+      {
+        "name": "Khối đế",
+        "type": "Trung tâm thương mại 19.990 m² · 7 tầng nổi, 6 tầng hầm",
+        "status": "Đang thi công",
+        "note": "6 tầng hầm nghiệm thu năm 2018; hầm B1 nối ga metro Bến Thành"
+      }
     ]
   },
   {
     "id": "vinhomes-grand-park",
     "name": "Vinhomes Grand Park",
     "developer": "Vinhomes",
-    "location": "TP. Thủ Đức",
+    "location": "Phường Long Bình, TP.HCM (Long Bình – Long Thạnh Mỹ, TP Thủ Đức cũ)",
     "area": "Khu Đông",
     "segment": "Cao cấp",
     "type": "Căn hộ",
     "status": "Đang mở bán",
     "offmarket": false,
-    "badge": "Dòng tiền ổn định",
-    "priceText": "Từ 8,0 tỉ",
-    "priceValue": 8,
-    "beds": "Studio – 3 PN",
-    "size": "30 – 95 m²",
-    "handover": "Bàn giao",
+    "badge": "271 ha · hơn 70.000 cư dân",
+    "priceText": "Từ 2,1 tỉ (tham khảo 12/2025)",
+    "priceValue": 2.1,
+    "beds": "Studio – 3PN",
+    "size": "27 – 108 m²",
+    "handover": "Phần lớn đã bàn giao; The Opus One theo kế hoạch từ 3/2026",
     "cover": "assets/img/media/vinhomes-grand-park-1.jpg",
     "gallery": [
       "assets/img/media/vinhomes-grand-park-1.jpg",
       "assets/img/media/vinhomes-grand-park-2.jpg",
       "assets/img/media/vinhomes-grand-park-3.jpg"
     ],
-    "short": "Đại đô thị công viên với cộng đồng cư dân lớn — lựa chọn an toàn cho dòng tiền cho thuê ổn định.",
+    "short": "Đại đô thị 271 ha của Vinhomes ở phường Long Bình, bao bởi sông Đồng Nai và sông Tắc, có đại công viên 36 ha và hơn 70.000 cư dân; Vành đai 3 trên cao chạy xuyên khu, dự kiến thông xe 30/9/2026.",
     "description": [
-      "Vinhomes Grand Park là đại đô thị quy mô lớn tại Khu Đông với hệ tiện ích hoàn chỉnh và cộng đồng cư dân đông đúc, đảm bảo tỉ lệ lấp đầy cho thuê tốt.",
-      "Phù hợp với nhà đầu tư ưu tiên dòng tiền an toàn và thanh khoản cao."
+      "Vinhomes Grand Park là đại đô thị 271 ha của Vinhomes ở phường Long Bình, TP.HCM — trước ngày 1/7/2025 thuộc hai phường Long Bình và Long Thạnh Mỹ, TP Thủ Đức. Khu đất có hai mặt tiền đường Nguyễn Xiển và Phước Thiện, hai mặt còn lại giáp sông Đồng Nai và sông Tắc; đơn vị đứng tên chủ đầu tư là Công ty CP Phát triển Thành phố Xanh, công ty con của Vinhomes. Mở bán từ giữa năm 2019, đến năm 2026 khu đô thị có hơn 70.000 cư dân theo chủ đầu tư.",
+      "Phần cao tầng gồm The Rainbow, The Origami (dòng Sapphire), The Beverly, The Beverly Solari, Glory Heights và The Opus One — phân khu cao tầng cuối cùng, do Vinhomes hợp tác Samty (Nhật Bản), cất nóc ngày 31/7/2025. Mitsubishi Corporation và Nomura Real Estate cùng phát triển The Origami, The Beverly Solari, Glory Heights; Masterise Homes làm Masteri Centre Point và Lumière Boulevard. Khu thấp tầng The Manhattan – The Manhattan Glory có biệt thự, shop villa và shophouse quanh đại công viên.",
+      "Tiện ích đang vận hành gồm đại công viên 36 ha, công viên giải trí Grand Park (từ 12/2024), Vincom Mega Mall Grand Park (từ 6/2024), phòng khám Vinmec (từ 7/2025), 2 trường Vinschool và VinBus. Hơn 11.000 sổ hồng đã trao đến cuối năm 2024. Tháng 9/2026, Vinhomes vẫn chào bán The Opus One, The Beverly và biệt thự Manhattan Glory; đoạn Vành đai 3 trên cao hơn 3 km xuyên khu đô thị dự kiến thông xe ngày 30/9/2026."
     ],
     "amenities": [
-      "Công viên 36 ha",
-      "Hồ thể thao",
-      "Vinschool – Vinmec",
-      "TTTM Vincom",
-      "Tuyến buýt nội khu",
-      "An ninh đa lớp"
+      "Đại công viên 36 ha",
+      "Công viên giải trí Grand Park",
+      "Vincom Mega Mall Grand Park 50.000 m²",
+      "Phòng khám Vinmec Grand Park",
+      "Vinschool Grand Park (2 cơ sở)",
+      "VinBus nội khu và tuyến D4",
+      "Sân tập golf 2 tầng 36 ô"
+    ],
+    "zones": [
+      {
+        "name": "The Rainbow",
+        "type": "Căn hộ (dòng Sapphire)",
+        "status": "Đã bàn giao",
+        "note": "17 tòa ở các cụm S1, S2, S3, S5, hơn 10.300 căn; phân khu mở bán đầu tiên (2019), duy nhất giáp đường Nguyễn Xiển; sổ hồng trao từ 3/2023"
+      },
+      {
+        "name": "The Origami",
+        "type": "Căn hộ (dòng Sapphire)",
+        "status": "Đã bàn giao",
+        "note": "21 tòa, cụm S6–S10, khoảng 26 ha, 10.926 căn theo Nomura Real Estate; ra mắt 7/2020, hoàn thành 2022; Vinhomes hợp tác Mitsubishi Corporation và Nomura"
+      },
+      {
+        "name": "The Manhattan",
+        "type": "Biệt thự, shop villa, shophouse",
+        "status": "Đã bàn giao",
+        "note": "Ra mắt 2/6/2020, khoảng 550 sản phẩm bao quanh đại công viên 36 ha; bàn giao từ giữa năm 2021"
+      },
+      {
+        "name": "The Manhattan Glory",
+        "type": "Biệt thự, liền kề, shophouse",
+        "status": "Đang chào bán quỹ căn còn lại (9/2026)",
+        "note": "Tiểu khu mở rộng 48 ha công bố 30/6/2020; 23 biệt thự ven sông bản giới hạn ra mắt 3/11/2020, kèm quyền ưu tiên chỗ đậu du thuyền"
+      },
+      {
+        "name": "The Beverly",
+        "type": "Căn hộ (tiêu chuẩn Ruby, Diamond)",
+        "status": "Đã bàn giao; còn giỏ hàng chủ đầu tư (9/2026)",
+        "note": "10 tòa 32 tầng, 2 hầm, chia khu The Resort (6 tòa) và The Star (4 tòa); ra mắt 11/2021, đối diện đại công viên 36 ha"
+      },
+      {
+        "name": "The Beverly Solari",
+        "type": "Căn hộ, shophouse khối đế",
+        "status": "Đang bàn giao",
+        "note": "Vinhomes và Mitsubishi Corporation ra mắt 4/2022; tiểu khu The Oasis, The Tropical; pháp nhân Công ty TNHH Kinh doanh BĐS MV1 Việt Nam"
+      },
+      {
+        "name": "Glory Heights",
+        "type": "Căn hộ",
+        "status": "Đã hoàn thành",
+        "note": "5 tòa 24–39 tầng trên đại lộ Rodeo, đối diện Vincom Mega Mall; mở bán 7/2023; cùng giai đoạn 3 với The Beverly Solari (Nomura Real Estate tham gia)"
+      },
+      {
+        "name": "The Opus One",
+        "type": "Căn hộ cao cấp",
+        "status": "Đang bán; bàn giao theo kế hoạch từ 3/2026",
+        "note": "Vinhomes và Samty (Nhật Bản); 4 tòa OS1, OS2, OS3, OS5 cao 32–34 tầng trên hơn 2,3 ha, 1.952 căn; ra mắt 11/2024, cất nóc 31/7/2025"
+      },
+      {
+        "name": "Masteri Centre Point",
+        "type": "Căn hộ (compound)",
+        "status": "Đã bàn giao",
+        "note": "Masterise Homes phát triển; hơn 7 ha, 10 tòa 22–39 tầng, hai khu Riviera và Gardenia; sổ hồng trao từ 16/5/2025"
+      },
+      {
+        "name": "Lumière Boulevard",
+        "type": "Căn hộ (compound)",
+        "status": "Đã bàn giao",
+        "note": "Masterise Homes phát triển; hoàn thiện và đón cư dân từ đầu năm 2024; 24 vườn treo trên mặt dựng; số 8 đường D1"
+      }
     ]
   },
   {
     "id": "eco-retreat",
     "name": "Eco Retreat",
-    "developer": "Ecopark",
-    "location": "Bến Lức, Long An",
+    "developer": "Liên danh DB – Tập đoàn Ecopark",
+    "location": "Xã Bến Lức (xã Thanh Phú, huyện Bến Lức, Long An cũ), Tây Ninh",
     "area": "Vùng ven & nghỉ dưỡng",
-    "segment": "Nghỉ dưỡng",
+    "segment": "Cao cấp",
     "type": "Biệt thự",
     "status": "Đang mở bán",
     "offmarket": false,
-    "badge": "Ngôi nhà thứ hai",
-    "priceText": "Từ 14 tỉ",
-    "priceValue": 14,
-    "beds": "Biệt thự đơn lập",
-    "size": "180 – 360 m²",
-    "handover": "2027",
+    "badge": "8 km đường tắm rừng",
+    "priceText": "Nhà phố từ 120 tr/m² (tham khảo 08/2025)",
+    "priceValue": 0,
+    "beds": "Nhà phố · Biệt thự · Căn hộ studio–3 PN",
+    "size": "219,5 ha · 7.427 căn",
+    "handover": "Dự kiến từ quý III/2026",
     "cover": "assets/img/media/eco-retreat-1.jpg",
     "gallery": [
       "assets/img/media/eco-retreat-1.jpg",
       "assets/img/media/eco-retreat-2.jpg",
       "assets/img/media/eco-retreat-3.jpg"
     ],
-    "short": "Đô thị xanh ven sông phong cách Ecopark, chỉ 30 phút về trung tâm — ngôi nhà thứ hai bên thiên nhiên.",
+    "short": "Đô thị 'rừng trị liệu' 219,5 ha của nhà sáng lập Ecopark ở xã Bến Lức, Tây Ninh (Long An cũ): nhà phố, biệt thự, căn hộ quanh hồ Thiên Nga, chủ đầu tư công bố khoảng 30 phút tới bến Bạch Đằng.",
     "description": [
-      "Eco Retreat mang triết lý đô thị xanh đặc trưng của Ecopark, mật độ cây xanh và mặt nước lớn, kết nối thuận tiện về TP.HCM qua cao tốc. Sản phẩm biệt thự phù hợp nhu cầu ngôi nhà thứ hai và tích sản.",
-      "Không gian sống trong lành, cộng đồng tinh hoa — giá trị bền vững theo thời gian."
+      "Eco Retreat là đô thị 219,5 ha do DB Group – nhà sáng lập Ecopark – phát triển tại xã Bến Lức, tỉnh Tây Ninh (xã Thanh Phú, huyện Bến Lức, tỉnh Long An cũ). Tên pháp lý là Khu đô thị sinh thái, thương mại du lịch tại xã Thanh Phú; chủ đầu tư là liên danh Công ty TNHH MTV Đầu tư và Phát triển DB – Công ty CP Tập đoàn Ecopark, tổng vốn khoảng 16.981 tỉ đồng. Quy hoạch 1/500 (Quyết định 148/QĐ-UBND ngày 8/1/2024) có 7.427 căn nhà: 1.742 lô liền kề, 2.185 lô biệt thự và 3.500 căn hộ.",
+      "Dự án ra mắt tháng 2/2025, khởi công ngày 19/4/2025 và chia thành nhiều phân khu: nhà thấp tầng Mùa Xuân – Mùa Hạ – Mùa Thu, tháp đôi Sky Retreat 41 tầng, biệt thự đảo Retreat Island 35 ha, biệt thự rừng Retreat Forest 56,2 ha và phân khu cửa ngõ Mùa Lễ Hội 71,5 ha (Rừng Mai, Forest Onsen, Rừng Phượng). Chủ đầu tư dành khoảng 55 % diện tích cho cảnh quan, với vòng Retreat Circle 50 ha và đường tắm rừng 8 km ven mặt nước.",
+      "Nhà thấp tầng đầu tiên ở phân khu Mùa Hạ được lên kế hoạch bàn giao từ giữa năm 2026; các bài báo tháng 7/2026 ghi dự kiến từ quý III/2026. Dự án nằm trên trục ĐT.830C, cách nút giao Mỹ Yên khoảng 4 km. Theo VnExpress (8/2025), căn hộ Sky Retreat được chào 55–60 triệu/m², nhà phố liền kề từ 120 triệu/m²."
     ],
     "amenities": [
-      "Công viên ven sông",
-      "Bến du thuyền",
-      "Khu thể thao nước",
-      "Vườn nhiệt đới",
-      "Nhà câu lạc bộ",
-      "Đường dạo bộ 5 km"
+      "Công viên Hồ Thiên Nga",
+      "Đường tắm rừng 8 km ven mặt nước",
+      "Retreat Circle 50 ha, 20 vườn chủ đề",
+      "Phố thương mại Eco Bazaar",
+      "Trường liên cấp Edison 22.000 m²",
+      "Clubhouse riêng từng phân khu",
+      "Onsen Clubhouse 1.800 m² (Forest Onsen)"
+    ],
+    "zones": [
+      {
+        "name": "Mùa Xuân · Mùa Hạ · Mùa Thu (Home Retreat)",
+        "type": "Nhà phố · town villa · biệt thự",
+        "status": "Mùa Hạ: bàn giao đợt đầu theo kế hoạch từ giữa năm 2026",
+        "note": "Ra mắt tháng 4/2025; Mùa Xuân có đại lộ 30 m, trường học 9.100 m² và Retreat Center 3.100 m² theo quy hoạch"
+      },
+      {
+        "name": "Sky Retreat",
+        "type": "Căn hộ · thấp tầng khối đế",
+        "status": "Ra mắt tháng 5/2025",
+        "note": "2 tháp 41 tầng (S1, S2), 1.170 căn hộ và 221 căn thấp tầng; Sky Clubhouse 2.500 m²"
+      },
+      {
+        "name": "Retreat Island",
+        "type": "Biệt thự đảo",
+        "status": "Ra mắt tháng 7/2025",
+        "note": "35 ha, 15 nhánh đảo, 483 biệt thự và dinh thự 190–697 m²"
+      },
+      {
+        "name": "Retreat Forest",
+        "type": "Biệt thự",
+        "status": "Ra mắt 29/10/2025; biệt thự mẫu đã mở cửa",
+        "note": "56,2 ha, 604 căn: 103 villa đại lộ và 501 villa rừng có tầng hầm"
+      },
+      {
+        "name": "Mùa Lễ Hội – Rừng Mai",
+        "type": "Nhà phố · shophouse · biệt thự",
+        "status": "Ra mắt 15/1/2026",
+        "note": "Phân khu cửa ngõ 71,5 ha; Rừng Mai 285 căn, park villa 162–180 m², Zen Clubhouse 2.600 m²"
+      },
+      {
+        "name": "Mùa Lễ Hội – Forest Onsen",
+        "type": "Căn hộ",
+        "status": "Ra mắt tháng 4/2026",
+        "note": "2 cặp tháp đôi trên 2,2 ha, căn 38–200 m², tầng tiện ích 5A rộng 5.000 m²"
+      },
+      {
+        "name": "Mùa Lễ Hội – Rừng Phượng",
+        "type": "Nhà phố · biệt thự",
+        "status": "Ra mắt tháng 7/2026",
+        "note": "325 sản phẩm 80–370 m² quanh trường Edison 22.000 m²"
+      }
     ]
   },
   {
     "id": "metropole-thu-thiem",
     "name": "The Metropole Thủ Thiêm",
-    "developer": "SonKim Land",
-    "location": "Khu đô thị Thủ Thiêm, TP. Thủ Đức",
+    "developer": "SonKim Land (chủ đầu tư: CTCP Quốc Lộc Phát)",
+    "location": "KĐT mới Thủ Thiêm, phường An Khánh (TP Thủ Đức cũ), TP.HCM",
     "area": "Khu Đông",
-    "segment": "Siêu sang",
+    "segment": "Hạng sang",
     "type": "Căn hộ",
     "status": "Giao dịch kín",
     "offmarket": true,
-    "badge": "Biên lợi nhuận cao",
-    "priceText": "Từ 18 tỉ",
-    "priceValue": 18,
-    "beds": "1–4 PN",
-    "size": "55 – 220 m²",
-    "handover": "Bàn giao",
+    "badge": "3 phân khu đã bàn giao",
+    "priceText": "330–500 tr/m² chuyển nhượng (tham khảo 05/2026)",
+    "priceValue": 0,
+    "beds": "Studio – 4 PN, duplex, Sky Villa",
+    "size": "47,44 – 380 m²",
+    "handover": "Đã bàn giao 3 phân khu; The OpusK dự kiến quý II/2027",
     "cover": "assets/img/media/metropole-1.jpg",
     "gallery": [
       "assets/img/media/metropole-1.jpg",
       "assets/img/media/metropole-2.jpg",
       "assets/img/media/metropole-3.jpg"
     ],
-    "short": "Chuẩn mực sống tinh hoa tại Thủ Thiêm — thiết kế tinh xảo, dịch vụ khách sạn, quỹ căn chuyển nhượng chọn lọc.",
+    "short": "Khu phức hợp 7,6 ha sát cầu Ba Son do SonKim Land phát triển: 3 phân khu căn hộ đã bàn giao, phân khu cuối The OpusK (150 căn) dự kiến xong quý II/2027.",
     "description": [
-      "The Metropole Thủ Thiêm là biểu tượng sống sang trọng do SonKim Land phát triển, nổi bật với thiết kế đẳng cấp và dịch vụ chuẩn khách sạn 5 sao.",
-      "PaceLand tư vấn các căn chuyển nhượng vị trí đẹp với mức giá hợp lý — cơ hội sở hữu tài sản biểu tượng."
+      "The Metropole Thủ Thiêm (tên pháp lý Khu phức hợp Sóng Việt) là khu phức hợp căn hộ – văn phòng – thương mại rộng khoảng 7,6 ha trong khu chức năng số 1 của khu đô thị mới Thủ Thiêm, nay thuộc phường An Khánh, TP.HCM. Chủ đầu tư là Công ty CP Quốc Lộc Phát, SonKim Land làm nhà phát triển từ giữa năm 2018; dự án nằm sát chân cầu Ba Son, nhìn sang Quận 1 cũ.",
+      "Dự án có 4 phân khu nhà ở với 1.492 căn theo số chủ đầu tư công bố. The Galleria (456 căn) bàn giao từ tháng 7/2021, The Crest (240 căn) đã bàn giao, cư dân hai phân khu này đã nhận sổ hồng; The Opera (646 căn, 2 tháp Scala – Massimo) bàn giao từ tháng 3/2024. Phân khu cuối The OpusK — tháp phức hợp 36 tầng với 150 căn hạng sang cạnh tháp văn phòng 30 tầng — khởi công ngày 2/6/2025, dự kiến hoàn thành quý II/2027.",
+      "Theo VnExpress (29/5/2026), căn chuyển nhượng ở ba phân khu đã bàn giao giao dịch khoảng 330–500 triệu/m², The OpusK được chào khoảng 250–450 triệu/m². PaceLand tư vấn cả căn chuyển nhượng lẫn căn OpusK, kiểm tra sổ hồng, tình trạng thế chấp và văn bản pháp lý của đúng căn trước khi anh/chị đặt cọc."
     ],
     "amenities": [
-      "Hồ bơi chân mây",
-      "Quản gia 5 sao",
-      "Trung tâm thương mại",
-      "Khu spa & gym",
-      "Sảnh nghệ thuật",
-      "An ninh tuyệt đối"
+      "Hồ bơi vô cực",
+      "Jacuzzi & sauna ngoài trời",
+      "Phòng gym",
+      "Phòng golf mô phỏng",
+      "Phòng yoga",
+      "Công viên nước thiếu nhi (The Galleria)",
+      "Khối đế thương mại"
+    ],
+    "zones": [
+      {
+        "name": "The Galleria Residence",
+        "type": "Căn hộ, duplex, loft, penthouse, shophouse",
+        "status": "Đã bàn giao từ 7/2021",
+        "note": "Lô 1-16; 3 tháp Hermitage, Prado, Louvre cao 12 tầng; 456 căn hộ và 30 căn văn phòng – thương mại; cư dân đã có sổ hồng"
+      },
+      {
+        "name": "The Crest Residence",
+        "type": "Căn hộ studio – 3 PN",
+        "status": "Đã bàn giao",
+        "note": "Lô 1-13; 240 căn, 47,44–151 m²; chung lô với 2 tòa văn phòng; cư dân đã có sổ hồng"
+      },
+      {
+        "name": "The Opera Residence",
+        "type": "Căn hộ 1–4 PN, Sky Villa",
+        "status": "Bàn giao từ 3/2024",
+        "note": "Lô 1-17; 2 tháp Scala, Massimo; 646 căn, 55–380 m²; tổng thầu Hòa Bình"
+      },
+      {
+        "name": "The OpusK",
+        "type": "Căn hộ hạng sang và văn phòng hạng A",
+        "status": "Đang xây, dự kiến hoàn thành quý II/2027",
+        "note": "Lô 1-14; tháp phức hợp 36 tầng (150 căn) và tháp văn phòng 30 tầng; khởi công 2/6/2025, tổng thầu Coteccons; chào khoảng 250–450 tr/m² (tham khảo 05/2026)"
+      },
+      {
+        "name": "The Hallmark",
+        "type": "Văn phòng hạng A+ cho thuê",
+        "status": "Đã hoàn thành",
+        "note": "Cửa ngõ khu phức hợp, mặt tiền Trần Bạch Đằng; 30 tầng nổi, chứng nhận BCA Green Mark (Gold); chủ đầu tư CTCP Gateway Thủ Thiêm, SonKim Land phát triển, Savills quản lý vận hành"
+      }
     ]
   },
   {
@@ -886,7 +1051,7 @@ const POSTS = [
     "cover": "assets/img/media/the-prive-1.jpg",
     "excerpt": "Bảng so sánh 7 dự án căn hộ cao cấp đáng chú ý nhất TP.HCM 2026 theo giá, diện tích, thời điểm bàn giao — kèm gợi ý chọn theo từng mục tiêu: ở, tích sản hay dòng tiền.",
     "body": [
-      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Nam Rạch Chiếc – An Phú, từ ~6,6 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,5 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> và <b>The Metropole Thủ Thiêm</b> là lựa chọn siêu sang lõi trung tâm; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào tầm giá tốt nhất cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
+      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Nam Rạch Chiếc – An Phú, từ ~6,6 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,5 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> (căn hộ hàng hiệu Ritz-Carlton đối diện chợ Bến Thành) và <b>The Metropole Thủ Thiêm</b> (chuyển nhượng 330–500 triệu/m²) là lựa chọn lõi trung tâm cho ngân sách lớn; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào hợp lý cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
       { "t": "p", "c": "Danh sách này dựa trên 4 tiêu chí PaceLand dùng khi thẩm định mọi dự án: vị trí và hạ tầng kết nối, năng lực chủ đầu tư, pháp lý, và dư địa chu kỳ giá. Phạm vi gồm các dự án PaceLand trực tiếp phân phối hoặc theo dõi dữ liệu giao dịch — cập nhật tháng 7/2026." },
       { "t": "h", "c": "Bảng so sánh nhanh 7 dự án tiêu biểu" },
       { "t": "table", "c": {
@@ -894,19 +1059,19 @@ const POSTS = [
         "rows": [
           ["<a href='/du-an/the-prive.html'>The Privé</a>", "Nam Rạch Chiếc, Khu Đông", "Hạng sang", "Từ ~6,6 tỉ", "49,8–98,5 m²", "Đang cập nhật"],
           ["<a href='/du-an/eaton-park.html'>Eaton Park</a>", "An Phú, Khu Đông", "Hạng sang", "Từ 9,5 tỉ", "51,9–104,8 m²", "Từ Q2/2026"],
-          ["<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>", "Quận 1", "Siêu sang", "Liên hệ", "90–320 m²", "2027"],
-          ["<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>", "Thủ Thiêm", "Siêu sang · chuyển nhượng", "Từ 18 tỉ", "55–220 m²", "Đã bàn giao"],
-          ["<a href='/du-an/the-global-city.html'>The Global City</a>", "An Phú, Khu Đông", "Siêu sang · nhà phố TM", "Từ 42 tỉ", "100–280 m²", "2026"],
-          ["<a href='/du-an/gladia-heights.html'>Gladia Heights</a>", "Cửa ngõ Đông Bắc", "Cao cấp", "Từ 4,4 tỉ", "48–110 m²", "2027"],
-          ["<a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>", "TP. Thủ Đức", "Cao cấp", "Từ 8,0 tỉ", "30–95 m²", "Đã bàn giao"]
+          ["<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>", "Bến Thành (Quận 1 cũ)", "Siêu sang · hàng hiệu", "Chưa công bố", "Chưa công bố", "Chưa công bố"],
+          ["<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>", "Thủ Thiêm", "Hạng sang · chuyển nhượng", "330–500 tr/m² (05/2026)", "47,44–380 m²", "3/4 phân khu đã bàn giao"],
+          ["<a href='/du-an/the-global-city.html'>The Global City</a>", "An Phú, Khu Đông", "Hạng sang · 6 phân khu", "Căn hộ từ 6,7 tỉ (09/2026)", "47–139 m² (căn hộ)", "Theo phân khu"],
+          ["<a href='/du-an/gladia-heights.html'>Gladia Heights</a>", "Võ Chí Công, Khu Đông", "Cao cấp", "Từ 4,4 tỉ (09/2026)", "50,3–144,2 m²", "Quý IV/2027"],
+          ["<a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>", "Long Bình (TP Thủ Đức cũ)", "Cao cấp", "Từ 2,1 tỉ (12/2025)", "27–108 m²", "Phần lớn đã bàn giao"]
         ]
       } },
       { "t": "h", "c": "Chọn theo mục tiêu của bạn" },
       { "t": "ul", "c": [
         "<b>Ở sang trọng, giữ giá bền:</b> The Privé hoặc Eaton Park — hai dự án hạng sang đang mở bán với chủ đầu tư mạnh và vị trí lõi Khu Đông",
-        "<b>Tích sản biểu tượng, ngân sách lớn:</b> One Central Saigon (Quận 1) hoặc quỹ căn chuyển nhượng The Metropole — nguồn cung hiếm, giá trị sưu tầm",
-        "<b>Ngân sách quanh 5 tỉ, đón hạ tầng:</b> Gladia Heights — giá vào thấp nhất danh sách, hưởng lợi trực tiếp Vành đai 3 và metro mở rộng",
-        "<b>Dòng tiền cho thuê ổn định:</b> Vinhomes Grand Park — cộng đồng cư dân đông, tỉ lệ lấp đầy thuê cao, đã bàn giao"
+        "<b>Tích sản lõi trung tâm, ngân sách lớn:</b> One Central Saigon (căn hộ Ritz-Carlton đối diện chợ Bến Thành, chờ công bố giá) hoặc căn chuyển nhượng The Metropole Thủ Thiêm, nơi nguồn cung mới gần như đã khép lại",
+        "<b>Ngân sách quanh 5 tỉ, đón hạ tầng:</b> Gladia Heights — 1PN từ 4,4 tỉ (09/2026), 3 tháp 15 tầng mật độ thấp trên trục Võ Chí Công",
+        "<b>Ngân sách dưới 4 tỉ, ưu tiên cho thuê:</b> Vinhomes Grand Park — hơn 70.000 cư dân, studio từ 2,1 tỉ (12/2025), giá thuê studio khoảng 4,5–6,5 triệu/tháng (08/2026)"
       ] },
       { "t": "h", "c": "Ba lưu ý trước khi chốt" },
       { "t": "ul", "c": [
@@ -976,7 +1141,7 @@ const POSTS = [
     "excerpt": "Quỹ đất Thủ Thiêm ngày càng khan hiếm trong khi các chủ đầu tư lớn đồng loạt ra hàng. Ai đang bán gì, và người mua nên đứng ở đâu trong cuộc đua này?",
     "body": [
       { "t": "p", "c": "Sau nhiều năm chờ đợi, Thủ Thiêm đang bước vào giai đoạn sôi động nhất kể từ khi quy hoạch bán đảo được phê duyệt. Hạ tầng kết nối về trung tâm đã hoàn thiện, các cây cầu và trục chính hoạt động ổn định, và quan trọng nhất: những chủ đầu tư uy tín nhất thị trường đều đã có mặt." },
-      { "t": "p", "c": "Đại Quang Minh tiếp tục hoàn thiện khu đô thị Sala và ra mắt The Privé — bộ sưu tập căn hộ nhìn thẳng lõi trung tâm. SonKim Land đã bàn giao The Metropole và quỹ căn chuyển nhượng tại đây trở thành hàng hiếm được săn đón. Các lô đất ven sông còn lại đều đã có chủ với kế hoạch triển khai trong 2–3 năm tới." },
+      { "t": "p", "c": "Đại Quang Minh tiếp tục hoàn thiện khu đô thị Sala. SonKim Land đã bàn giao ba phân khu The Galleria, The Crest, The Opera của The Metropole và đang xây phân khu cuối The OpusK (dự kiến quý II/2027), nên quỹ căn chuyển nhượng tại đây ngày càng hiếm. Các lô đất ven sông còn lại đều đã có chủ với kế hoạch triển khai trong 2–3 năm tới." },
       { "t": "h", "c": "Vì sao nguồn cung Thủ Thiêm luôn khan" },
       { "t": "p", "c": "Khác với phần lớn khu vực, Thủ Thiêm có ranh giới quy hoạch cứng: tổng quỹ đất ở là hữu hạn và không thể mở rộng. Mỗi dự án mới ra mắt đồng nghĩa quỹ đất còn lại ít đi — đây là nền tảng của câu chuyện tăng giá dài hạn, thứ mà rất ít khu vực tại Việt Nam có được." },
       { "t": "q", "c": "Ở Thủ Thiêm, thứ khan hiếm không phải là căn hộ — mà là đất để xây căn hộ." },
