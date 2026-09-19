@@ -241,7 +241,7 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
   font-family: var(--head); font-size: 0.82rem; font-weight: 600;
   letter-spacing: 0.02em; color: var(--ink-soft);
   padding: 0.55rem 0.95rem; border-radius: var(--radius);
-  position: relative; transition: color 0.3s;
+  position: relative; transition: color 0.3s; white-space: nowrap;
 }
 .nav a::after { content: ""; position: absolute; left: 0.95rem; right: 0.95rem; bottom: 0.3rem; height: 1.5px; background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease); }
 .nav a:hover, .nav a.active { color: var(--ink); }
@@ -256,6 +256,24 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .burger.open span:nth-child(2) { opacity: 0; }
 .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* 8 mục menu: thu gọn khoảng đệm để luôn nằm trên 1 dòng; hẹp hơn nữa thì ẩn số điện thoại
+   (vẫn có ở nút gọi nổi + footer), rồi chuyển sang menu burger */
+@media (max-width: 1500px) {
+  .nav { gap: 0.1rem; }
+  .nav a { padding-inline: 0.6rem; }
+  .nav a::after { left: 0.6rem; right: 0.6rem; }
+}
+@media (max-width: 1260px) { .header-phone { display: none; } }
+@media (max-width: 1120px) { .nav { display: none; } .burger { display: flex; } .header-cta { margin-left: auto; } }
+/* Điện thoại: thu gọn logo + nút CTA để nút mở menu (burger) không bị đẩy ra ngoài màn hình */
+@media (max-width: 560px) {
+  .site-header .container { gap: 0.6rem; }
+  .brand img { height: 40px; }
+  .header-cta .btn { min-height: 40px; padding: 0.6rem 0.85rem; font-size: 0.76rem; }
+  .header-cta .btn svg { display: none; }
+  .burger { margin-right: -10px; }
+}
 
 /* Mobile drawer */
 .mobile-nav {

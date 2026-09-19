@@ -4,6 +4,21 @@
 (function () {
   "use strict";
 
+  /* ---------- Alias router (chống soft-404 của hosting) ----------
+     Hosting trả nội dung trang chủ cho mọi URL không tồn tại. Nếu trang chủ đang hiển thị
+     ở một đường dẫn không đuôi (vd /tuyen-dung hoặc /du-an/the-prive/), chuyển sang bản .html. */
+  var REDIRECTING = (function () {
+    try {
+      var p = location.pathname;
+      var isHome = !!document.querySelector('link[rel="canonical"][href="https://paceland.vn/"]');
+      if (!isHome || p === "/" || /\.[a-z0-9]+$/i.test(p)) return false;
+      var target = p.replace(/\/+$/, "") + ".html";
+      if (target === "/.html") return false;
+      location.replace(target + location.search + location.hash);
+      return true;
+    } catch (e) { return false; }
+  })();
+
   /* ---------- Reveal on scroll ---------- */
   var revealObserver = null;
   function initReveal() {
@@ -224,23 +239,42 @@
 
   var PAGE_LOADED_AT = Date.now();
 
+  var ATTR_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid", "ttclid", "msclkid"];
+  /* name: "localStorage" | "sessionStorage" — truy cập trong try vì trình duyệt chặn cookie sẽ ném lỗi ngay khi đọc window.localStorage */
+  function readJSON(name, key) { try { return JSON.parse(window[name].getItem(key) || "null"); } catch (e) { return null; } }
+  function writeJSON(name, key, v) { try { window[name].setItem(key, JSON.stringify(v)); } catch (e) {} }
+  function hasKey(name, key) { try { return !!window[name].getItem(key); } catch (e) { return true; } }
   function captureUtm() {
     try {
       var qs = new URLSearchParams(location.search);
-      var keys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"];
       var found = {};
       var has = false;
-      keys.forEach(function (k) { var v = qs.get(k); if (v) { found[k] = v; has = true; } });
-      if (has && !localStorage.getItem("pl_utm")) {
-        found.landing = location.pathname;
-        found.ts = new Date().toISOString();
-        localStorage.setItem("pl_utm", JSON.stringify(found));
-      }
+      ATTR_KEYS.forEach(function (k) { var v = qs.get(k); if (v) { found[k] = String(v).slice(0, 150); has = true; } });
+      var ref = document.referrer || "";
+      var external = !!ref && ref.indexOf(location.host) === -1;
+      var stamp = { landing: location.pathname, ts: new Date().toISOString() };
+      if (external) stamp.referrer = ref.split("?")[0].slice(0, 200);
+      var careers = location.pathname.indexOf("/tuyen-dung") === 0;
+      /* pl_utm: first-touch có UTM cho lead mua nhà — KHÔNG ghi từ trang tuyển dụng
+         để chiến dịch tuyển dụng không bị tính nhầm cho lead mua nhà sau này */
+      if (has && !careers && !hasKey("localStorage", "pl_utm")) writeJSON("localStorage", "pl_utm", Object.assign({}, found, stamp));
+      /* pl_first: lần đầu vào site (kể cả truy cập trực tiếp) */
+      if (!hasKey("localStorage", "pl_first")) writeJSON("localStorage", "pl_first", Object.assign({}, found, stamp));
+      /* pl_last: nguồn của phiên hiện tại (last-touch) */
+      if (!hasKey("sessionStorage", "pl_last") || has) writeJSON("sessionStorage", "pl_last", Object.assign({}, found, stamp));
     } catch (e) {}
   }
   function getUtm() {
-    try { return JSON.parse(localStorage.getItem("pl_utm") || "null") || {}; } catch (e) { return {}; }
+    return readJSON("localStorage", "pl_utm") || {};
   }
+  /* Attribution đầy đủ cho form ứng tuyển: { first, last } — không chứa PII */
+  function getAttribution() {
+    var first = readJSON("localStorage", "pl_first") || {};
+    var utm = readJSON("localStorage", "pl_utm") || {};
+    if (!first.utm_source && utm.utm_source) first = Object.assign({}, first, utm);
+    return { first: first, last: readJSON("sessionStorage", "pl_last") || {} };
+  }
+  if (typeof window !== "undefined") window.__plAttribution = getAttribution;
 
   var TR = (SITE.tracking || {});
   function initTracking() {
@@ -270,12 +304,33 @@
       fbq("init", TR.metaPixel);
       fbq("track", "PageView");
     }
+    /* TikTok Pixel */
+    if (TR.tiktokPixel) {
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || [];
+        ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+        ttq.setAndDefer = function (o, m) { o[m] = function () { o.push([m].concat(Array.prototype.slice.call(arguments, 0))); }; };
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.load = function (id) {
+          var u = "https://analytics.tiktok.com/i18n/pixel/events.js";
+          ttq._i = ttq._i || {}; ttq._i[id] = []; ttq._i[id]._u = u; ttq._t = ttq._t || {}; ttq._t[id] = +new Date();
+          var s = d.createElement("script"); s.async = true; s.src = u + "?sdkid=" + id + "&lib=" + t;
+          var f = d.getElementsByTagName("script")[0]; f.parentNode.insertBefore(s, f);
+        };
+        ttq.load(TR.tiktokPixel); ttq.page();
+      })(window, document, "ttq");
+    }
   }
 
+  /* Sự kiện analytics — KHÔNG truyền tên/SĐT/email vào params.
+     Luôn đẩy vào dataLayer (sẵn cho GTM); gửi GA4 / Meta nếu đã cấu hình ID. */
   function track(evt, params) {
-    try { if (window.gtag) gtag("event", evt, params || {}); } catch (e) {}
-    try { if (window.fbq) fbq("trackCustom", evt, params || {}); } catch (e) {}
+    var p = Object.assign({}, params || {});
+    try { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: evt }, p)); } catch (e) {}
+    try { if (window.gtag) gtag("event", evt, p); } catch (e) {}
+    try { if (window.fbq) fbq("trackCustom", evt, p); } catch (e) {}
   }
+  if (typeof window !== "undefined") window.__plTrack = track;
 
   function trackLead(params) {
     try {
@@ -292,14 +347,17 @@
       var a = e.target.closest ? e.target.closest("a[href]") : null;
       if (!a) return;
       var href = a.getAttribute("href") || "";
-      if (href.indexOf("tel:") === 0) track("tel_click", { page: location.pathname });
-      else if (href.indexOf("zalo.me") !== -1) track("zalo_click", { page: location.pathname });
+      var ctx = Object.assign({ page: location.pathname }, window.__plTrackContext || {});
+      if (href.indexOf("tel:") === 0) track("phone_click", ctx);
+      else if (href.indexOf("zalo.me") !== -1) track("zalo_click", ctx);
     }, true);
   }
 
   /* Gửi lead về mọi kênh đã cấu hình. Trả Promise<boolean>. */
-  function submitLead(payload) {
+  function submitLead(payload, opts) {
     payload = payload || {};
+    var isApplication = !!(opts && opts.kind === "application") || payload.kind === "application";
+    var isNonBuyer = isApplication || !!(opts && opts.kind === "partner");
     payload.page = payload.page || location.pathname;
     payload.utm = getUtm();
     payload.sentAt = new Date().toISOString();
@@ -310,9 +368,14 @@
         method: "POST",
         headers: { "Content-Type": "text/plain;charset=utf-8" }, /* tránh preflight với Apps Script */
         body: JSON.stringify(payload)
-      }).then(function (r) { return r.ok; }).catch(function () { return false; }));
+      }).then(function (r) {
+        if (!r.ok) return false;
+        /* Apps Script trả 200 kèm {ok:false} khi lỗi — đọc JSON nếu có */
+        return r.json().then(function (j) { return !(j && j.ok === false); }, function () { return true; });
+      }).catch(function () { return false; }));
     }
-    var fep = SITE.formEndpoint || "";
+    /* Hồ sơ ứng tuyển dùng form Formspree riêng nếu đã cấu hình (tách quota khỏi lead mua nhà) */
+    var fep = (isApplication && SITE.careersEndpoint) ? SITE.careersEndpoint : (SITE.formEndpoint || "");
     if (fep && fep.indexOf("your-form-id") === -1) {
       var fd = new FormData();
       Object.keys(payload).forEach(function (k) {
@@ -321,7 +384,8 @@
       jobs.push(fetch(fep, { method: "POST", body: fd, headers: { Accept: "application/json" } })
         .then(function (r) { return r.ok; }).catch(function () { return false; }));
     }
-    trackLead({ source: payload.source || "form" });
+    if (!isNonBuyer) trackLead({ source: payload.source || "form" });
+    if (opts && opts.kind === "partner") track("partner_apply_submit", { page: location.pathname });
     if (!jobs.length) return Promise.resolve(true); /* demo mode — chưa cấu hình kênh nhận */
     return Promise.all(jobs).then(function (rs) {
       return rs.some(function (x) { return x; });
@@ -345,15 +409,33 @@
         if ((hpv && hpv.value) || Date.now() - PAGE_LOADED_AT < 3000) return; /* bot */
         var btn = form.querySelector("[type=submit]");
         var ok = form.querySelector(".form-success");
-        var done = function () {
-          if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
-          form.reset();
-          if (btn) { btn.disabled = false; btn.innerHTML = btn.getAttribute("data-label") || "Gửi"; }
+        var err = form.querySelector(".form-error");
+        if (err) err.hidden = true;
+        var reset = function () { if (btn) { btn.disabled = false; btn.innerHTML = btn.getAttribute("data-label") || "Gửi"; } };
+        var done = function (sent) {
+          reset();
+          if (sent) {
+            if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
+            form.reset();
+            return;
+          }
+          /* Gửi thất bại: giữ nguyên dữ liệu, chỉ đường gọi / Zalo */
+          if (!err) {
+            err = document.createElement("p");
+            err.className = "form-error";
+            err.setAttribute("role", "alert");
+            err.style.cssText = "margin-top:.8rem;padding:.75rem 1rem;border:1px solid rgba(176,0,22,.35);border-radius:4px;color:#B00016;font-weight:600;font-size:.92rem;background:rgba(176,0,22,.05)";
+            (btn && btn.parentNode ? btn.parentNode : form).appendChild(err);
+          }
+          err.innerHTML = 'Chưa gửi được thông tin. Vui lòng thử lại hoặc gọi <a href="tel:' + SITE.hotlineRaw + '" style="color:inherit;text-decoration:underline">' + SITE.hotline + '</a> / nhắn <a href="' + SITE.zalo + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Zalo</a>.';
+          err.hidden = false;
         };
         if (btn) { btn.setAttribute("data-label", btn.innerHTML); btn.disabled = true; btn.textContent = "Đang gửi…"; }
-        var payload = { source: "form" };
+        var payload = { source: form.getAttribute("data-lead-source") || "form" };
         new FormData(form).forEach(function (v, k) { if (k !== "website" && v) payload[k] = v; });
-        submitLead(payload).then(done);
+        var kind = form.getAttribute("data-lead-kind") || "";
+        try { submitLead(payload, kind ? { kind: kind } : null).then(done, function () { done(false); }); }
+        catch (x) { done(false); }
       });
     });
   }
@@ -594,24 +676,6 @@
   if (typeof window !== "undefined") window.__plRenderBlock = renderBlock;
 
   /* ---------- CAREERS ---------- */
-  function initCareers() {
-    var grid = document.getElementById("jobList");
-    if (!grid || typeof JOBS === "undefined") return;
-    grid.innerHTML = JOBS.map(function (j) {
-      return '<article class="job-card reveal">' +
-        "<div><h3>" + (j.count ? '<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">' + j.count + " vị trí</span>" : "") + j.title + "</h3>" +
-        '<div class="job-meta">' +
-          "<span>" + ICONS.building + j.dept + "</span>" +
-          "<span>" + ICONS.pin + j.location + "</span>" +
-          "<span>" + ICONS.clock + j.type + "</span>" +
-          "<span>" + ICONS.chart + j.salary + "</span>" +
-        "</div></div>" +
-        '<a class="btn" href="/tuyen-dung/' + j.id + '.html">Xem chi tiết & ứng tuyển ' + ICONS.arrow + "</a>" +
-      "</article>";
-    }).join("");
-    scanReveal();
-  }
-
   /* ---------- FAQ accordion ---------- */
   function initFAQ() {
     var root = document.getElementById("faqList");
@@ -648,7 +712,7 @@
   /* ---------- Apply editable page content (from CMS "Trang" tab) ---------- */
   function applyPageContent() {
     if (typeof PAGES === "undefined") return;
-    var map = { "index.html": "home", "gioi-thieu.html": "about", "doi-tac.html": "partner", "tuyen-dung.html": "careers", "faq.html": "faq", "lien-he.html": "contact" };
+    var map = { "index.html": "home", "gioi-thieu.html": "about", "doi-tac.html": "partner", "faq.html": "faq", "lien-he.html": "contact" };
     var file = location.pathname.split("/").pop() || "index.html";
     var pg = map[file]; if (!pg || !PAGES[pg]) return;
     var vals = {}; PAGES[pg].fields.forEach(function (f) { vals[f.k] = f.value; });
@@ -660,6 +724,7 @@
 
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
+    if (REDIRECTING) return; /* đang chuyển sang bản .html — không đo, không ghi UTM hai lần */
     if (typeof mountChrome === "function") mountChrome();
     captureUtm();
     initTracking();
@@ -681,7 +746,6 @@
     initProjectDetail();
     initPostListing();
     initPostDetail();
-    initCareers();
     initFAQ();
     initFloatTop();
     initLightbox();

@@ -1,6 +1,7 @@
 /**
- * PACELAND — Bộ nhận LEAD (Google Apps Script)
- * Lead từ website đổ vào Google Sheet + gửi email báo + (tuỳ chọn) Telegram.
+ * PACELAND — Bộ nhận LEAD + HỒ SƠ ỨNG TUYỂN (Google Apps Script)
+ * Lead khách mua đổ vào sheet đầu tiên; hồ sơ ứng tuyển (kind=application) vào sheet "Ứng viên"
+ * có cột Trạng thái (NEW → HIRED/REJECTED) làm pipeline tuyển dụng. Kèm email báo + (tuỳ chọn) Telegram.
  *
  * CÁCH CÀI (5 phút — làm 1 lần):
  * 1. Vào sheets.google.com → tạo Sheet mới, đặt tên "PaceLand Leads"
@@ -22,10 +23,66 @@ var CONFIG = {
 
 var HEADERS = ["Thời gian", "Họ tên", "SĐT", "Email", "Quan tâm", "Dự án", "Nội dung", "Nguồn", "Trang", "UTM/QC", "Thiết bị"];
 
+/* ---------- HỒ SƠ ỨNG TUYỂN (kind = "application") — ATS nhẹ trên Google Sheet ---------- */
+var APP_SHEET = "Ứng viên";
+var APP_STATUS = ["NEW", "CONTACTED", "SCREENING", "INTERVIEW", "OFFER", "HIRED", "REJECTED", "ARCHIVED"];
+var APP_HEADERS = ["Thời gian", "Mã hồ sơ", "Trạng thái", "Họ tên", "SĐT", "Email", "Vị trí", "Kinh nghiệm", "Link hồ sơ", "Lời nhắn",
+  "Trang nguồn", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid", "ttclid",
+  "Trang đích đầu", "Referrer", "Thiết bị", "Ghi chú tuyển dụng"];
+
+function cut(v, n) { return String(v == null ? "" : v).slice(0, n || 300); }
+/* Ô nhập từ người dùng: chặn "formula injection" — chuỗi bắt đầu bằng = + - @ sẽ được Sheet
+   hiểu là công thức, nên thêm dấu ' để luôn hiển thị như văn bản */
+function cell(v, n) { var s = cut(v, n); return /^[=+\-@\t\r]/.test(s) ? "'" + s : s; }
+
+function handleApplication(d, ss) {
+  var phone = String(d.phone || "").replace(/\D/g, "");
+  if (!d.full_name || !/^0\d{9}$/.test(phone)) return { ok: false, error: "invalid" };
+  /* Chống gửi trùng: cùng SĐT trong 10 phút chỉ nhận 1 lần (đánh dấu SAU khi đã ghi được vào Sheet) */
+  var cache = CacheService.getScriptCache();
+  if (cache.get("app_" + phone)) return { ok: true, duplicate: true };
+
+  var sh = ss.getSheetByName(APP_SHEET) || ss.insertSheet(APP_SHEET);
+  if (sh.getLastRow() === 0) {
+    sh.appendRow(APP_HEADERS);
+    sh.getRange(1, 1, 1, APP_HEADERS.length).setFontWeight("bold").setBackground("#0E0C0A").setFontColor("#fff");
+    sh.setFrozenRows(1);
+  }
+  sh.appendRow([
+    new Date(), cell(d.id, 40), "NEW", cell(d.full_name, 80), "'" + phone, cell(d.email, 120), cell(d.position, 120),
+    cell(d.experience, 80), cell(d.profile_url, 300), cell(d.message, 1000), cell(d.source_page, 200),
+    cell(d.utm_source, 150), cell(d.utm_medium, 150), cell(d.utm_campaign, 150), cell(d.utm_content, 150), cell(d.utm_term, 150),
+    cell(d.gclid, 150), cell(d.fbclid, 150), cell(d.ttclid, 150), cell(d.landing_page, 200), cell(d.referrer, 200), cell(d.device_type, 20),
+    d.spam_suspect ? "Gửi rất nhanh sau khi mở trang — kiểm tra trước khi gọi" : ""
+  ]);
+  cache.put("app_" + phone, "1", 600);
+  /* Cột Trạng thái: dropdown theo pipeline tuyển dụng */
+  var rule = SpreadsheetApp.newDataValidation().requireValueInList(APP_STATUS, true).build();
+  sh.getRange(sh.getLastRow(), 3).setDataValidation(rule);
+
+  var subject = "[ỨNG TUYỂN] " + cut(d.position, 80) + " — " + cut(d.full_name, 60);
+  var body =
+    "Mã hồ sơ:   " + (d.id || "—") + "\n" +
+    "Họ tên:     " + (d.full_name || "—") + "\n" +
+    "SĐT:        " + phone + "\n" +
+    "Email:      " + (d.email || "—") + "\n" +
+    "Vị trí:     " + (d.position || "—") + "\n" +
+    "Kinh nghiệm:" + " " + (d.experience || "—") + "\n" +
+    "Link hồ sơ: " + (d.profile_url || "—") + "\n" +
+    "Lời nhắn:   " + (d.message || "—") + "\n" +
+    "Nguồn:      " + (d.utm_source || "trực tiếp") + (d.utm_campaign ? " / " + d.utm_campaign : "") + " · trang " + (d.source_page || "—") + "\n" +
+    "\nCập nhật cột Trạng thái trong sheet: " + ss.getUrl();
+  if (CONFIG.EMAIL_TO) MailApp.sendEmail(CONFIG.EMAIL_TO, subject, body);
+  return { ok: true };
+}
+
 function doPost(e) {
   try {
     var d = JSON.parse(e.postData.contents || "{}");
     var ss = SpreadsheetApp.getActiveSpreadsheet();
+    if (d.kind === "application") {
+      return ContentService.createTextOutput(JSON.stringify(handleApplication(d, ss))).setMimeType(ContentService.MimeType.JSON);
+    }
     var sh = ss.getSheets()[0];
 
     if (sh.getLastRow() === 0) {
@@ -40,16 +97,16 @@ function doPost(e) {
 
     sh.appendRow([
       new Date(),
-      d.name || "",
-      "'" + (d.phone || ""),           // dấu ' giữ số 0 đầu
-      d.email || "",
-      d.loai_can || d.interest || "",
-      d.du_an || "",
-      d.message || d.need || "",
-      d.source || "form",
-      d.page || "",
-      utmText,
-      d.ua || ""
+      cell(d.name, 120),
+      "'" + cut(d.phone, 30),          // dấu ' giữ số 0 đầu
+      cell(d.email, 120),
+      cell(d.loai_can || d.interest, 200),
+      cell(d.du_an, 200),
+      cell(d.message || d.need, 1500),
+      cell(d.source || "form", 80),
+      cell(d.page, 300),
+      cell(utmText, 500),
+      cell(d.ua, 300)
     ]);
 
     var subject = "[LEAD MỚI] " + (d.name || "Khách") + " — " + (d.phone || "chưa có SĐT");

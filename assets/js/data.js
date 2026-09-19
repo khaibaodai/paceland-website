@@ -16,11 +16,13 @@ const SITE = {
   "tiktok": "https://www.tiktok.com/@paceland.vn",
   "formEndpoint": "https://formspree.io/f/mjgnvwqk",
   "leadEndpoint": "",
+  "careersEndpoint": "",
   "tracking": {
     "ga4": "",
     "adsId": "",
     "adsLabel": "",
-    "metaPixel": ""
+    "metaPixel": "",
+    "tiktokPixel": ""
   },
   "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7810.390221473243!2d106.74871418169498!3d10.793580615497275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752738634e8dbd%3A0x64048b0ca1ccaa18!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gxJDhuqZVIFTGryBQQUNFIExBTkQ!5e1!3m2!1svi!2s!4v1783093230682!5m2!1svi!2s"
 };
@@ -938,110 +940,110 @@ const PROJECTS = [
 ];
 
 const POSTS = [
-{
-  "id": "tam-8-ti-nen-mua-the-prive-hay-eaton-park",
-  "title": "Tầm 8 tỉ nên mua The Privé hay Eaton Park? So sánh chi tiết 09/2026",
-  "category": "So sánh dự án",
-  "date": "10/09/2026",
-  "readtime": "7 phút đọc",
-  "cover": "assets/img/media/eaton-park-2.jpg",
-  "excerpt": "Với ~8 tỉ: The Privé cho căn 1PN từ ~6,6 tỉ (đơn giá ~133 triệu/m²) và còn dư ngân sách; Eaton Park cần nhích lên ~9,5 tỉ nhưng nhận nhà ngay từ Quý 2/2026. Bảng so sánh 8 tiêu chí và gợi ý chọn theo từng mục tiêu.",
-  "body": [
-    {
-      "t": "p",
-      "c": "Trả lời nhanh: với đúng <b>8 tỉ</b>, <a href='/du-an/the-prive.html'>The Privé</a> là lựa chọn vừa vặn — căn 1PN từ ~6,6 tỉ (đơn giá tham khảo ~133 triệu/m² tim tường, chưa VAT — 07/2026), còn dư ngân sách cho nội thất và chi phí. <a href='/du-an/eaton-park.html'>Eaton Park</a> có 1PN từ ~9,5 tỉ — vượt tầm 8 tỉ khoảng 15–20%, đổi lại <b>nhận nhà ngay từ Quý 2/2026</b>."
-    },
-    {
-      "t": "p",
-      "c": "Điểm thú vị: cả hai dự án đều nằm tại phường An Phú (cũ), TP. Thủ Đức — cách nhau chỉ vài phút di chuyển, cùng phân khúc hạng sang, nên đây là cặp so sánh trực tiếp phổ biến nhất Khu Đông hiện nay."
-    },
-    {
-      "t": "h",
-      "c": "Bảng so sánh The Privé vs Eaton Park (09/2026)"
-    },
-    {
-      "t": "table",
-      "c": {
-        "head": [
-          "Tiêu chí",
-          "The Privé",
-          "Eaton Park"
-        ],
-        "rows": [
-          [
-            "Chủ đầu tư",
-            "Bluemarq Group (Đất Xanh cũ)",
-            "Gamuda Land (Malaysia)"
+  {
+    "id": "tam-8-ti-nen-mua-the-prive-hay-eaton-park",
+    "title": "Tầm 8 tỉ nên mua The Privé hay Eaton Park? So sánh chi tiết 09/2026",
+    "category": "So sánh dự án",
+    "date": "10/09/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/eaton-park-2.jpg",
+    "excerpt": "Với ~8 tỉ: The Privé cho căn 1PN từ ~6,6 tỉ (đơn giá ~133 triệu/m²) và còn dư ngân sách; Eaton Park cần nhích lên ~9,5 tỉ nhưng nhận nhà ngay từ Quý 2/2026. Bảng so sánh 8 tiêu chí và gợi ý chọn theo từng mục tiêu.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: với đúng <b>8 tỉ</b>, <a href='/du-an/the-prive.html'>The Privé</a> là lựa chọn vừa vặn — căn 1PN từ ~6,6 tỉ (đơn giá tham khảo ~133 triệu/m² tim tường, chưa VAT — 07/2026), còn dư ngân sách cho nội thất và chi phí. <a href='/du-an/eaton-park.html'>Eaton Park</a> có 1PN từ ~9,5 tỉ — vượt tầm 8 tỉ khoảng 15–20%, đổi lại <b>nhận nhà ngay từ Quý 2/2026</b>."
+      },
+      {
+        "t": "p",
+        "c": "Điểm thú vị: cả hai dự án đều nằm tại phường An Phú (cũ), TP. Thủ Đức — cách nhau chỉ vài phút di chuyển, cùng phân khúc hạng sang, nên đây là cặp so sánh trực tiếp phổ biến nhất Khu Đông hiện nay."
+      },
+      {
+        "t": "h",
+        "c": "Bảng so sánh The Privé vs Eaton Park (09/2026)"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Tiêu chí",
+            "The Privé",
+            "Eaton Park"
           ],
-          [
-            "Vị trí",
-            "Nam Rạch Chiếc — 2 mặt sông Giồng Ông Tố",
-            "Mặt tiền đại lộ Mai Chí Thọ"
-          ],
-          [
-            "Quy mô",
-            "6,7 ha · 12 tháp 33–35 tầng · 3.175 căn",
-            "3,76 ha · 6 tháp 29–39 tầng · 1.980 căn + 72 shophouse"
-          ],
-          [
-            "Giá 1PN (tham khảo 07/2026)",
-            "Từ ~6,6 tỉ (≈49,8 m²)",
-            "9,5–10,5 tỉ (51,9–55,8 m²)"
-          ],
-          [
-            "Giá 2–3PN",
-            "Theo giỏ hàng từng đợt, đơn giá ~133 tr/m²",
-            "2PN 13,5–15 tỉ · 3PN 20,5–21,5 tỉ"
-          ],
-          [
-            "Bàn giao",
-            "Đang cập nhật",
-            "Từ Quý 2/2026 (PK1 đang bàn giao)"
-          ],
-          [
-            "Mật độ & tiện ích",
-            "25% — 3 hồ bơi, boxing & golf 3D, tennis, pickleball, rạp phim mini",
-            "Golf 3D, sân thể thao đa năng, pet park, công viên ven sông, phố thương mại"
-          ],
-          [
-            "Thế mạnh nổi bật",
-            "Giá vào thấp hơn, quỹ căn lớn, 2 mặt sông",
-            "Nhận nhà ngay, chuẩn bàn giao Gamuda, tệp khách thuê chuyên gia"
+          "rows": [
+            [
+              "Chủ đầu tư",
+              "Bluemarq Group (Đất Xanh cũ)",
+              "Gamuda Land (Malaysia)"
+            ],
+            [
+              "Vị trí",
+              "Nam Rạch Chiếc — 2 mặt sông Giồng Ông Tố",
+              "Mặt tiền đại lộ Mai Chí Thọ"
+            ],
+            [
+              "Quy mô",
+              "6,7 ha · 12 tháp 33–35 tầng · 3.175 căn",
+              "3,76 ha · 6 tháp 29–39 tầng · 1.980 căn + 72 shophouse"
+            ],
+            [
+              "Giá 1PN (tham khảo 07/2026)",
+              "Từ ~6,6 tỉ (≈49,8 m²)",
+              "9,5–10,5 tỉ (51,9–55,8 m²)"
+            ],
+            [
+              "Giá 2–3PN",
+              "Theo giỏ hàng từng đợt, đơn giá ~133 tr/m²",
+              "2PN 13,5–15 tỉ · 3PN 20,5–21,5 tỉ"
+            ],
+            [
+              "Bàn giao",
+              "Đang cập nhật",
+              "Từ Quý 2/2026 (PK1 đang bàn giao)"
+            ],
+            [
+              "Mật độ & tiện ích",
+              "25% — 3 hồ bơi, boxing & golf 3D, tennis, pickleball, rạp phim mini",
+              "Golf 3D, sân thể thao đa năng, pet park, công viên ven sông, phố thương mại"
+            ],
+            [
+              "Thế mạnh nổi bật",
+              "Giá vào thấp hơn, quỹ căn lớn, 2 mặt sông",
+              "Nhận nhà ngay, chuẩn bàn giao Gamuda, tệp khách thuê chuyên gia"
+            ]
           ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Chọn theo mục tiêu của bạn"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Ngân sách đúng 8 tỉ, ưu tiên vừa túi:</b> The Privé — vào 1PN từ ~6,6 tỉ, còn dư 1–1,5 tỉ dự phòng nội thất, thuế phí.",
+          "<b>Cần ở ngay hoặc cho thuê ngay trong 2026:</b> Eaton Park — bàn giao từ Q2/2026, trục Mai Chí Thọ có sẵn tệp khách thuê chuyên gia nước ngoài.",
+          "<b>Đầu tư đón chu kỳ giá:</b> The Privé mở bán nhiều đợt theo 12 tháp — cơ hội vào sớm ở các đợt giá đầu; Eaton Park mặt bằng giá đã qua 3 giai đoạn.",
+          "<b>Dùng đòn bẩy ngân hàng:</b> tính thử lãi vay và dòng tiền tại <a href='/cong-cu.html'>Công cụ tài sản PaceLand</a> trước khi quyết định."
         ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>8 tỉ mua được căn nào ở Eaton Park?</b> — Rất khó: 1PN đã từ ~9,5 tỉ (07/2026). Cần nhích ngân sách, hoặc chọn The Privé.",
+          "<b>The Privé bao giờ bàn giao?</b> — Chủ đầu tư chưa công bố mốc chính thức; PaceLand cập nhật theo từng đợt mở bán.",
+          "<b>Giá trên đã gồm VAT chưa?</b> — Chưa: đơn giá The Privé ~133 tr/m² là giá tim tường chưa VAT; số Eaton Park là giá giỏ hàng GĐ3 tham khảo 07/2026."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Muốn xem bảng giá chi tiết, mặt bằng tầng và quỹ căn đẹp của cả hai dự án? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — Cố vấn PaceLand phản hồi trong ngày. Đọc thêm: <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>bảng giá căn hộ cao cấp TP.HCM theo khu vực</a>."
       }
-    },
-    {
-      "t": "h",
-      "c": "Chọn theo mục tiêu của bạn"
-    },
-    {
-      "t": "ul",
-      "c": [
-        "<b>Ngân sách đúng 8 tỉ, ưu tiên vừa túi:</b> The Privé — vào 1PN từ ~6,6 tỉ, còn dư 1–1,5 tỉ dự phòng nội thất, thuế phí.",
-        "<b>Cần ở ngay hoặc cho thuê ngay trong 2026:</b> Eaton Park — bàn giao từ Q2/2026, trục Mai Chí Thọ có sẵn tệp khách thuê chuyên gia nước ngoài.",
-        "<b>Đầu tư đón chu kỳ giá:</b> The Privé mở bán nhiều đợt theo 12 tháp — cơ hội vào sớm ở các đợt giá đầu; Eaton Park mặt bằng giá đã qua 3 giai đoạn.",
-        "<b>Dùng đòn bẩy ngân hàng:</b> tính thử lãi vay và dòng tiền tại <a href='/cong-cu.html'>Công cụ tài sản PaceLand</a> trước khi quyết định."
-      ]
-    },
-    {
-      "t": "h",
-      "c": "Hỏi nhanh"
-    },
-    {
-      "t": "ul",
-      "c": [
-        "<b>8 tỉ mua được căn nào ở Eaton Park?</b> — Rất khó: 1PN đã từ ~9,5 tỉ (07/2026). Cần nhích ngân sách, hoặc chọn The Privé.",
-        "<b>The Privé bao giờ bàn giao?</b> — Chủ đầu tư chưa công bố mốc chính thức; PaceLand cập nhật theo từng đợt mở bán.",
-        "<b>Giá trên đã gồm VAT chưa?</b> — Chưa: đơn giá The Privé ~133 tr/m² là giá tim tường chưa VAT; số Eaton Park là giá giỏ hàng GĐ3 tham khảo 07/2026."
-      ]
-    },
-    {
-      "t": "p",
-      "c": "Muốn xem bảng giá chi tiết, mặt bằng tầng và quỹ căn đẹp của cả hai dự án? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — Cố vấn PaceLand phản hồi trong ngày. Đọc thêm: <a href='/bai-viet/bang-gia-can-ho-cao-cap-tphcm-theo-khu-vuc.html'>bảng giá căn hộ cao cấp TP.HCM theo khu vực</a>."
-    }
-  ]
-},
+    ]
+  },
   {
     "id": "top-du-an-can-ho-cao-cap-tphcm-2026",
     "title": "Top dự án căn hộ cao cấp TP.HCM 2026: bảng so sánh theo khu vực",
@@ -1051,42 +1053,134 @@ const POSTS = [
     "cover": "assets/img/media/the-prive-1.jpg",
     "excerpt": "Bảng so sánh 7 dự án căn hộ cao cấp đáng chú ý nhất TP.HCM 2026 theo giá, diện tích, thời điểm bàn giao — kèm gợi ý chọn theo từng mục tiêu: ở, tích sản hay dòng tiền.",
     "body": [
-      { "t": "p", "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Nam Rạch Chiếc – An Phú, từ ~6,6 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,5 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> (căn hộ hàng hiệu Ritz-Carlton đối diện chợ Bến Thành) và <b>The Metropole Thủ Thiêm</b> (chuyển nhượng 330–500 triệu/m²) là lựa chọn lõi trung tâm cho ngân sách lớn; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào hợp lý cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới." },
-      { "t": "p", "c": "Danh sách này dựa trên 4 tiêu chí PaceLand dùng khi thẩm định mọi dự án: vị trí và hạ tầng kết nối, năng lực chủ đầu tư, pháp lý, và dư địa chu kỳ giá. Phạm vi gồm các dự án PaceLand trực tiếp phân phối hoặc theo dõi dữ liệu giao dịch — cập nhật tháng 7/2026." },
-      { "t": "h", "c": "Bảng so sánh nhanh 7 dự án tiêu biểu" },
-      { "t": "table", "c": {
-        "head": ["Dự án", "Khu vực", "Phân khúc", "Giá tham khảo", "Diện tích", "Bàn giao"],
-        "rows": [
-          ["<a href='/du-an/the-prive.html'>The Privé</a>", "Nam Rạch Chiếc, Khu Đông", "Hạng sang", "Từ ~6,6 tỉ", "49,8–98,5 m²", "Đang cập nhật"],
-          ["<a href='/du-an/eaton-park.html'>Eaton Park</a>", "An Phú, Khu Đông", "Hạng sang", "Từ 9,5 tỉ", "51,9–104,8 m²", "Từ Q2/2026"],
-          ["<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>", "Bến Thành (Quận 1 cũ)", "Siêu sang · hàng hiệu", "Chưa công bố", "Chưa công bố", "Chưa công bố"],
-          ["<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>", "Thủ Thiêm", "Hạng sang · chuyển nhượng", "330–500 tr/m² (05/2026)", "47,44–380 m²", "3/4 phân khu đã bàn giao"],
-          ["<a href='/du-an/the-global-city.html'>The Global City</a>", "An Phú, Khu Đông", "Hạng sang · 6 phân khu", "Căn hộ từ 6,7 tỉ (09/2026)", "47–139 m² (căn hộ)", "Theo phân khu"],
-          ["<a href='/du-an/gladia-heights.html'>Gladia Heights</a>", "Võ Chí Công, Khu Đông", "Cao cấp", "Từ 4,4 tỉ (09/2026)", "50,3–144,2 m²", "Quý IV/2027"],
-          ["<a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>", "Long Bình (TP Thủ Đức cũ)", "Cao cấp", "Từ 2,1 tỉ (12/2025)", "27–108 m²", "Phần lớn đã bàn giao"]
+      {
+        "t": "p",
+        "c": "Nếu bạn chỉ có 30 giây: <b>The Privé</b> (Nam Rạch Chiếc – An Phú, từ ~6,6 tỉ) và <b>Eaton Park</b> (An Phú, từ 9,5 tỉ) là hai dự án hạng sang đáng chú ý nhất đang mở bán; <b>One Central Saigon</b> (căn hộ hàng hiệu Ritz-Carlton đối diện chợ Bến Thành) và <b>The Metropole Thủ Thiêm</b> (chuyển nhượng 330–500 triệu/m²) là lựa chọn lõi trung tâm cho ngân sách lớn; còn <b>Gladia Heights</b> (từ 4,4 tỉ) là suất vào hợp lý cho người muốn đón hạ tầng Khu Đông. Bảng so sánh chi tiết bên dưới."
+      },
+      {
+        "t": "p",
+        "c": "Danh sách này dựa trên 4 tiêu chí PaceLand dùng khi thẩm định mọi dự án: vị trí và hạ tầng kết nối, năng lực chủ đầu tư, pháp lý, và dư địa chu kỳ giá. Phạm vi gồm các dự án PaceLand trực tiếp phân phối hoặc theo dõi dữ liệu giao dịch — cập nhật tháng 7/2026."
+      },
+      {
+        "t": "h",
+        "c": "Bảng so sánh nhanh 7 dự án tiêu biểu"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Dự án",
+            "Khu vực",
+            "Phân khúc",
+            "Giá tham khảo",
+            "Diện tích",
+            "Bàn giao"
+          ],
+          "rows": [
+            [
+              "<a href='/du-an/the-prive.html'>The Privé</a>",
+              "Nam Rạch Chiếc, Khu Đông",
+              "Hạng sang",
+              "Từ ~6,6 tỉ",
+              "49,8–98,5 m²",
+              "Đang cập nhật"
+            ],
+            [
+              "<a href='/du-an/eaton-park.html'>Eaton Park</a>",
+              "An Phú, Khu Đông",
+              "Hạng sang",
+              "Từ 9,5 tỉ",
+              "51,9–104,8 m²",
+              "Từ Q2/2026"
+            ],
+            [
+              "<a href='/du-an/one-central-saigon.html'>One Central Saigon</a>",
+              "Bến Thành (Quận 1 cũ)",
+              "Siêu sang · hàng hiệu",
+              "Chưa công bố",
+              "Chưa công bố",
+              "Chưa công bố"
+            ],
+            [
+              "<a href='/du-an/metropole-thu-thiem.html'>The Metropole Thủ Thiêm</a>",
+              "Thủ Thiêm",
+              "Hạng sang · chuyển nhượng",
+              "330–500 tr/m² (05/2026)",
+              "47,44–380 m²",
+              "3/4 phân khu đã bàn giao"
+            ],
+            [
+              "<a href='/du-an/the-global-city.html'>The Global City</a>",
+              "An Phú, Khu Đông",
+              "Hạng sang · 6 phân khu",
+              "Căn hộ từ 6,7 tỉ (09/2026)",
+              "47–139 m² (căn hộ)",
+              "Theo phân khu"
+            ],
+            [
+              "<a href='/du-an/gladia-heights.html'>Gladia Heights</a>",
+              "Võ Chí Công, Khu Đông",
+              "Cao cấp",
+              "Từ 4,4 tỉ (09/2026)",
+              "50,3–144,2 m²",
+              "Quý IV/2027"
+            ],
+            [
+              "<a href='/du-an/vinhomes-grand-park.html'>Vinhomes Grand Park</a>",
+              "Long Bình (TP Thủ Đức cũ)",
+              "Cao cấp",
+              "Từ 2,1 tỉ (12/2025)",
+              "27–108 m²",
+              "Phần lớn đã bàn giao"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Chọn theo mục tiêu của bạn"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Ở sang trọng, giữ giá bền:</b> The Privé hoặc Eaton Park — hai dự án hạng sang đang mở bán với chủ đầu tư mạnh và vị trí lõi Khu Đông",
+          "<b>Tích sản lõi trung tâm, ngân sách lớn:</b> One Central Saigon (căn hộ Ritz-Carlton đối diện chợ Bến Thành, chờ công bố giá) hoặc căn chuyển nhượng The Metropole Thủ Thiêm, nơi nguồn cung mới gần như đã khép lại",
+          "<b>Ngân sách quanh 5 tỉ, đón hạ tầng:</b> Gladia Heights — 1PN từ 4,4 tỉ (09/2026), 3 tháp 15 tầng mật độ thấp trên trục Võ Chí Công",
+          "<b>Ngân sách dưới 4 tỉ, ưu tiên cho thuê:</b> Vinhomes Grand Park — hơn 70.000 cư dân, studio từ 2,1 tỉ (12/2025), giá thuê studio khoảng 4,5–6,5 triệu/tháng (08/2026)"
         ]
-      } },
-      { "t": "h", "c": "Chọn theo mục tiêu của bạn" },
-      { "t": "ul", "c": [
-        "<b>Ở sang trọng, giữ giá bền:</b> The Privé hoặc Eaton Park — hai dự án hạng sang đang mở bán với chủ đầu tư mạnh và vị trí lõi Khu Đông",
-        "<b>Tích sản lõi trung tâm, ngân sách lớn:</b> One Central Saigon (căn hộ Ritz-Carlton đối diện chợ Bến Thành, chờ công bố giá) hoặc căn chuyển nhượng The Metropole Thủ Thiêm, nơi nguồn cung mới gần như đã khép lại",
-        "<b>Ngân sách quanh 5 tỉ, đón hạ tầng:</b> Gladia Heights — 1PN từ 4,4 tỉ (09/2026), 3 tháp 15 tầng mật độ thấp trên trục Võ Chí Công",
-        "<b>Ngân sách dưới 4 tỉ, ưu tiên cho thuê:</b> Vinhomes Grand Park — hơn 70.000 cư dân, studio từ 2,1 tỉ (12/2025), giá thuê studio khoảng 4,5–6,5 triệu/tháng (08/2026)"
-      ] },
-      { "t": "h", "c": "Ba lưu ý trước khi chốt" },
-      { "t": "ul", "c": [
-        "So sánh bằng đơn giá/m² giữa các dự án cùng khu vực, đừng so bằng tổng giá căn",
-        "Pháp lý xét theo từng đợt mở bán, không theo danh tiếng dự án — luôn kiểm tra văn bản đủ điều kiện bán mới nhất",
-        "Chính sách thanh toán và chiết khấu làm giá thực tế chênh nhau đáng kể giữa các đợt — hỏi giá thực thanh toán, không chỉ giá niêm yết"
-      ] },
-      { "t": "q", "c": "Dự án tốt nhất không phải dự án nổi tiếng nhất — mà là dự án đúng mục tiêu của bạn, mua ở mức giá đúng." },
-      { "t": "h", "c": "Hỏi nhanh" },
-      { "t": "ul", "c": [
-        "<b>Giá trên đã là giá cuối chưa?</b> — Chưa; giá thực còn phụ thuộc chính sách từng đợt và vị trí căn. Để lại thông tin để nhận bảng giá chính xác tại thời điểm hỏi.",
-        "<b>Mua trực tiếp chủ đầu tư có rẻ hơn qua PaceLand?</b> — Không; giá do chủ đầu tư niêm yết thống nhất, PaceLand không thu phí người mua và còn giữ suất ưu tiên giai đoạn sớm.",
-        "<b>Danh sách này có được trả tiền để xếp hạng?</b> — Không; đây là danh mục thẩm định của PaceLand, tiêu chí công khai ở đầu bài."
-      ] },
-      { "t": "p", "c": "Số liệu trong bài là khoảng tham khảo tại tháng 7/2026 và có thể thay đổi theo giỏ hàng từng đợt. Để nhận bảng giá và quỹ căn chính xác hôm nay, gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — tư vấn miễn phí, bảo mật." }
+      },
+      {
+        "t": "h",
+        "c": "Ba lưu ý trước khi chốt"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "So sánh bằng đơn giá/m² giữa các dự án cùng khu vực, đừng so bằng tổng giá căn",
+          "Pháp lý xét theo từng đợt mở bán, không theo danh tiếng dự án — luôn kiểm tra văn bản đủ điều kiện bán mới nhất",
+          "Chính sách thanh toán và chiết khấu làm giá thực tế chênh nhau đáng kể giữa các đợt — hỏi giá thực thanh toán, không chỉ giá niêm yết"
+        ]
+      },
+      {
+        "t": "q",
+        "c": "Dự án tốt nhất không phải dự án nổi tiếng nhất — mà là dự án đúng mục tiêu của bạn, mua ở mức giá đúng."
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Giá trên đã là giá cuối chưa?</b> — Chưa; giá thực còn phụ thuộc chính sách từng đợt và vị trí căn. Để lại thông tin để nhận bảng giá chính xác tại thời điểm hỏi.",
+          "<b>Mua trực tiếp chủ đầu tư có rẻ hơn qua PaceLand?</b> — Không; giá do chủ đầu tư niêm yết thống nhất, PaceLand không thu phí người mua và còn giữ suất ưu tiên giai đoạn sớm.",
+          "<b>Danh sách này có được trả tiền để xếp hạng?</b> — Không; đây là danh mục thẩm định của PaceLand, tiêu chí công khai ở đầu bài."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Số liệu trong bài là khoảng tham khảo tại tháng 7/2026 và có thể thay đổi theo giỏ hàng từng đợt. Để nhận bảng giá và quỹ căn chính xác hôm nay, gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — tư vấn miễn phí, bảo mật."
+      }
     ]
   },
   {
@@ -1098,37 +1192,110 @@ const POSTS = [
     "cover": "assets/img/media/one-central-saigon-1.jpg",
     "excerpt": "Đơn giá căn hộ cao cấp TP.HCM 2026 trải từ ~30 đến ~350 triệu/m² tuỳ khu vực. Bảng tổng hợp 7 khu vực chính kèm ước tính giá căn 2 phòng ngủ và cách đọc bảng cho đúng.",
     "body": [
-      { "t": "p", "c": "Câu trả lời ngắn: đơn giá căn hộ cao cấp TP.HCM năm 2026 nằm trong khoảng <b>30–350 triệu đồng/m²</b> tuỳ khu vực. Cao nhất là lõi Quận 1 (150–350 triệu/m²), kế đến Thủ Thiêm (120–220), Thảo Điền – An Phú (85–140); vùng giá dễ tiếp cận nhất của phân khúc cao cấp là Khu Đông mở rộng (55–90) và vùng ven (30–55)." },
-      { "t": "table", "c": {
-        "head": ["Khu vực", "Đơn giá (triệu/m²)", "Căn 2PN ~70m² ước tính", "Đặc điểm"],
-        "rows": [
-          ["Quận 1 (lõi trung tâm)", "150–350", "10,5 – 24,5 tỉ", "Siêu sang, nguồn cung rất hiếm"],
-          ["Thủ Thiêm", "120–220", "8,4 – 15,4 tỉ", "CBD mới, quỹ đất hữu hạn"],
-          ["Thảo Điền – An Phú", "85–140", "6,0 – 9,8 tỉ", "Cộng đồng quốc tế, cầu thuê mạnh"],
-          ["Trung tâm mở rộng (Bình Thạnh, Q3, Q10)", "75–130", "5,3 – 9,1 tỉ", "Gần lõi, nguồn cung đa dạng"],
-          ["Khu Nam (Q7, Nhà Bè)", "60–110", "4,2 – 7,7 tỉ", "Phú Mỹ Hưng và dải ven sông"],
-          ["Khu Đông khác (TP. Thủ Đức)", "55–90", "3,9 – 6,3 tỉ", "Đón metro và vành đai"],
-          ["Vùng ven & tỉnh lân cận", "30–55", "2,1 – 3,9 tỉ", "Đô thị vệ tinh, nghỉ dưỡng"]
+      {
+        "t": "p",
+        "c": "Câu trả lời ngắn: đơn giá căn hộ cao cấp TP.HCM năm 2026 nằm trong khoảng <b>30–350 triệu đồng/m²</b> tuỳ khu vực. Cao nhất là lõi Quận 1 (150–350 triệu/m²), kế đến Thủ Thiêm (120–220), Thảo Điền – An Phú (85–140); vùng giá dễ tiếp cận nhất của phân khúc cao cấp là Khu Đông mở rộng (55–90) và vùng ven (30–55)."
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Khu vực",
+            "Đơn giá (triệu/m²)",
+            "Căn 2PN ~70m² ước tính",
+            "Đặc điểm"
+          ],
+          "rows": [
+            [
+              "Quận 1 (lõi trung tâm)",
+              "150–350",
+              "10,5 – 24,5 tỉ",
+              "Siêu sang, nguồn cung rất hiếm"
+            ],
+            [
+              "Thủ Thiêm",
+              "120–220",
+              "8,4 – 15,4 tỉ",
+              "CBD mới, quỹ đất hữu hạn"
+            ],
+            [
+              "Thảo Điền – An Phú",
+              "85–140",
+              "6,0 – 9,8 tỉ",
+              "Cộng đồng quốc tế, cầu thuê mạnh"
+            ],
+            [
+              "Trung tâm mở rộng (Bình Thạnh, Q3, Q10)",
+              "75–130",
+              "5,3 – 9,1 tỉ",
+              "Gần lõi, nguồn cung đa dạng"
+            ],
+            [
+              "Khu Nam (Q7, Nhà Bè)",
+              "60–110",
+              "4,2 – 7,7 tỉ",
+              "Phú Mỹ Hưng và dải ven sông"
+            ],
+            [
+              "Khu Đông khác (TP. Thủ Đức)",
+              "55–90",
+              "3,9 – 6,3 tỉ",
+              "Đón metro và vành đai"
+            ],
+            [
+              "Vùng ven & tỉnh lân cận",
+              "30–55",
+              "2,1 – 3,9 tỉ",
+              "Đô thị vệ tinh, nghỉ dưỡng"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Cách đọc bảng giá cho đúng"
+      },
+      {
+        "t": "p",
+        "c": "Dải giá mỗi khu vực rộng vì ba lý do: vị trí lô đất trong khu (mặt sông, mặt công viên chênh hẳn phía trong), giai đoạn dự án (mở bán sớm rẻ hơn cận bàn giao), và chính sách bán từng đợt (chiết khấu thanh toán nhanh có thể tương đương giảm 5–10%). Vì vậy hãy dùng bảng này để định vị khu vực, còn quyết định mua bán cần con số của đúng toà, đúng căn."
+      },
+      {
+        "t": "h",
+        "c": "Yếu tố khiến căn của bạn lệch khỏi khoảng chung"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Tầng cao, view đẹp: cộng khoảng 5–10% so với căn cùng loại",
+          "Nội thất hoàn thiện đầy đủ: cộng khoảng 5%",
+          "Pháp lý mới ở dạng hợp đồng mua bán (chưa sổ): trừ khoảng 5–10%",
+          "Căn đã qua sử dụng: trừ khoảng 5–10% tuỳ hiện trạng"
         ]
-      } },
-      { "t": "h", "c": "Cách đọc bảng giá cho đúng" },
-      { "t": "p", "c": "Dải giá mỗi khu vực rộng vì ba lý do: vị trí lô đất trong khu (mặt sông, mặt công viên chênh hẳn phía trong), giai đoạn dự án (mở bán sớm rẻ hơn cận bàn giao), và chính sách bán từng đợt (chiết khấu thanh toán nhanh có thể tương đương giảm 5–10%). Vì vậy hãy dùng bảng này để định vị khu vực, còn quyết định mua bán cần con số của đúng toà, đúng căn." },
-      { "t": "h", "c": "Yếu tố khiến căn của bạn lệch khỏi khoảng chung" },
-      { "t": "ul", "c": [
-        "Tầng cao, view đẹp: cộng khoảng 5–10% so với căn cùng loại",
-        "Nội thất hoàn thiện đầy đủ: cộng khoảng 5%",
-        "Pháp lý mới ở dạng hợp đồng mua bán (chưa sổ): trừ khoảng 5–10%",
-        "Căn đã qua sử dụng: trừ khoảng 5–10% tuỳ hiện trạng"
-      ] },
-      { "t": "p", "c": "Bạn có thể tự ước tính giá trị một căn cụ thể theo đúng các hệ số trên bằng <a href='/cong-cu.html#dinh-gia'>công cụ định giá miễn phí</a> của PaceLand — chọn khu vực, loại hình, diện tích là có ngay khoảng giá." },
-      { "t": "q", "c": "Bảng giá cho bạn biết mình đang đứng ở đâu. Giao dịch thực tế cho bạn biết mình nên trả bao nhiêu." },
-      { "t": "h", "c": "Hỏi nhanh" },
-      { "t": "ul", "c": [
-        "<b>Số liệu này lấy từ đâu?</b> — Tổng hợp từ giỏ hàng các dự án PaceLand phân phối và dữ liệu giao dịch thị trường mà đội ngũ theo dõi; là khoảng tham khảo, không phải giá niêm yết của bất kỳ dự án cụ thể nào.",
-        "<b>Bao lâu cập nhật một lần?</b> — PaceLand xem lại định kỳ; bản này phản ánh mặt bằng năm 2026. Giá điểm của từng dự án thay đổi theo đợt mở bán.",
-        "<b>Muốn định giá chính xác căn đang có?</b> — Chuyên gia PaceLand thẩm định miễn phí dựa trên giao dịch thực tế cùng khu vực: gọi 0903 983 737."
-      ] },
-      { "t": "p", "c": "Cần bảng giá chi tiết của một dự án cụ thể? Để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> hoặc gọi <b>0903 983 737</b> — cố vấn PaceLand gửi giỏ hàng và chính sách mới nhất trong ngày." }
+      },
+      {
+        "t": "p",
+        "c": "Bạn có thể tự ước tính giá trị một căn cụ thể theo đúng các hệ số trên bằng <a href='/cong-cu.html#dinh-gia'>công cụ định giá miễn phí</a> của PaceLand — chọn khu vực, loại hình, diện tích là có ngay khoảng giá."
+      },
+      {
+        "t": "q",
+        "c": "Bảng giá cho bạn biết mình đang đứng ở đâu. Giao dịch thực tế cho bạn biết mình nên trả bao nhiêu."
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Số liệu này lấy từ đâu?</b> — Tổng hợp từ giỏ hàng các dự án PaceLand phân phối và dữ liệu giao dịch thị trường mà đội ngũ theo dõi; là khoảng tham khảo, không phải giá niêm yết của bất kỳ dự án cụ thể nào.",
+          "<b>Bao lâu cập nhật một lần?</b> — PaceLand xem lại định kỳ; bản này phản ánh mặt bằng năm 2026. Giá điểm của từng dự án thay đổi theo đợt mở bán.",
+          "<b>Muốn định giá chính xác căn đang có?</b> — Chuyên gia PaceLand thẩm định miễn phí dựa trên giao dịch thực tế cùng khu vực: gọi 0903 983 737."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Cần bảng giá chi tiết của một dự án cụ thể? Để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> hoặc gọi <b>0903 983 737</b> — cố vấn PaceLand gửi giỏ hàng và chính sách mới nhất trong ngày."
+      }
     ]
   },
   {
@@ -1140,19 +1307,46 @@ const POSTS = [
     "cover": "assets/img/media/metropole-2.jpg",
     "excerpt": "Quỹ đất Thủ Thiêm ngày càng khan hiếm trong khi các chủ đầu tư lớn đồng loạt ra hàng. Ai đang bán gì, và người mua nên đứng ở đâu trong cuộc đua này?",
     "body": [
-      { "t": "p", "c": "Sau nhiều năm chờ đợi, Thủ Thiêm đang bước vào giai đoạn sôi động nhất kể từ khi quy hoạch bán đảo được phê duyệt. Hạ tầng kết nối về trung tâm đã hoàn thiện, các cây cầu và trục chính hoạt động ổn định, và quan trọng nhất: những chủ đầu tư uy tín nhất thị trường đều đã có mặt." },
-      { "t": "p", "c": "Đại Quang Minh tiếp tục hoàn thiện khu đô thị Sala. SonKim Land đã bàn giao ba phân khu The Galleria, The Crest, The Opera của The Metropole và đang xây phân khu cuối The OpusK (dự kiến quý II/2027), nên quỹ căn chuyển nhượng tại đây ngày càng hiếm. Các lô đất ven sông còn lại đều đã có chủ với kế hoạch triển khai trong 2–3 năm tới." },
-      { "t": "h", "c": "Vì sao nguồn cung Thủ Thiêm luôn khan" },
-      { "t": "p", "c": "Khác với phần lớn khu vực, Thủ Thiêm có ranh giới quy hoạch cứng: tổng quỹ đất ở là hữu hạn và không thể mở rộng. Mỗi dự án mới ra mắt đồng nghĩa quỹ đất còn lại ít đi — đây là nền tảng của câu chuyện tăng giá dài hạn, thứ mà rất ít khu vực tại Việt Nam có được." },
-      { "t": "q", "c": "Ở Thủ Thiêm, thứ khan hiếm không phải là căn hộ — mà là đất để xây căn hộ." },
-      { "t": "p", "c": "Mặt bằng đơn giá căn hộ khu vực này hiện dao động quanh 120–220 triệu/m² tuỳ vị trí và giai đoạn bàn giao. Khoảng cách lớn giữa các dự án phản ánh đúng bản chất: vị trí lô đất, tầm nhìn và pháp lý từng dự án quyết định giá trị, không phải cái mác “Thủ Thiêm” chung chung." },
-      { "t": "h", "c": "Người mua nên đứng ở đâu" },
-      { "t": "ul", "c": [
-        "Mua để ở dài hạn: ưu tiên dự án đã bàn giao, cộng đồng hình thành, pháp lý sạch",
-        "Đầu tư tăng trưởng: theo dõi các đợt ra hàng sớm của dự án mới — biên lợi nhuận nằm ở quyền tiếp cận trước",
-        "Dòng tiền cho thuê: nhắm tệp chuyên gia nước ngoài làm việc tại trung tâm, ưu tiên căn 1–2 phòng ngủ"
-      ] },
-      { "t": "p", "c": "PaceLand đang giữ một số căn vị trí đẹp tại Thủ Thiêm trong quỹ hàng giao dịch kín — được chia sẻ trực tiếp cho khách hàng trong mạng lưới trước khi công bố rộng rãi." }
+      {
+        "t": "p",
+        "c": "Sau nhiều năm chờ đợi, Thủ Thiêm đang bước vào giai đoạn sôi động nhất kể từ khi quy hoạch bán đảo được phê duyệt. Hạ tầng kết nối về trung tâm đã hoàn thiện, các cây cầu và trục chính hoạt động ổn định, và quan trọng nhất: những chủ đầu tư uy tín nhất thị trường đều đã có mặt."
+      },
+      {
+        "t": "p",
+        "c": "Đại Quang Minh tiếp tục hoàn thiện khu đô thị Sala. SonKim Land đã bàn giao ba phân khu The Galleria, The Crest, The Opera của The Metropole và đang xây phân khu cuối The OpusK (dự kiến quý II/2027), nên quỹ căn chuyển nhượng tại đây ngày càng hiếm. Các lô đất ven sông còn lại đều đã có chủ với kế hoạch triển khai trong 2–3 năm tới."
+      },
+      {
+        "t": "h",
+        "c": "Vì sao nguồn cung Thủ Thiêm luôn khan"
+      },
+      {
+        "t": "p",
+        "c": "Khác với phần lớn khu vực, Thủ Thiêm có ranh giới quy hoạch cứng: tổng quỹ đất ở là hữu hạn và không thể mở rộng. Mỗi dự án mới ra mắt đồng nghĩa quỹ đất còn lại ít đi — đây là nền tảng của câu chuyện tăng giá dài hạn, thứ mà rất ít khu vực tại Việt Nam có được."
+      },
+      {
+        "t": "q",
+        "c": "Ở Thủ Thiêm, thứ khan hiếm không phải là căn hộ — mà là đất để xây căn hộ."
+      },
+      {
+        "t": "p",
+        "c": "Mặt bằng đơn giá căn hộ khu vực này hiện dao động quanh 120–220 triệu/m² tuỳ vị trí và giai đoạn bàn giao. Khoảng cách lớn giữa các dự án phản ánh đúng bản chất: vị trí lô đất, tầm nhìn và pháp lý từng dự án quyết định giá trị, không phải cái mác “Thủ Thiêm” chung chung."
+      },
+      {
+        "t": "h",
+        "c": "Người mua nên đứng ở đâu"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Mua để ở dài hạn: ưu tiên dự án đã bàn giao, cộng đồng hình thành, pháp lý sạch",
+          "Đầu tư tăng trưởng: theo dõi các đợt ra hàng sớm của dự án mới — biên lợi nhuận nằm ở quyền tiếp cận trước",
+          "Dòng tiền cho thuê: nhắm tệp chuyên gia nước ngoài làm việc tại trung tâm, ưu tiên căn 1–2 phòng ngủ"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "PaceLand đang giữ một số căn vị trí đẹp tại Thủ Thiêm trong quỹ hàng giao dịch kín — được chia sẻ trực tiếp cho khách hàng trong mạng lưới trước khi công bố rộng rãi."
+      }
     ]
   },
   {
@@ -1164,17 +1358,38 @@ const POSTS = [
     "cover": "assets/img/media/vinhomes-grand-park-2.jpg",
     "excerpt": "Tuyến Bến Thành – Suối Tiên đã chạy hơn một năm. Thói quen di chuyển thay đổi thật, nhưng không phải cứ gần ga là bất động sản tăng giá.",
     "body": [
-      { "t": "p", "c": "Từ khi vận hành thương mại cuối năm 2024, Metro số 1 đã làm được điều quan trọng nhất: thay đổi thói quen di chuyển của một bộ phận cư dân phía Đông. Tuyến đường sắt đô thị đầu tiên của thành phố kết nối Bến Thành với Suối Tiên, chạy dọc trục xương sống của TP. Thủ Đức." },
-      { "t": "p", "c": "Kinh nghiệm từ các đô thị châu Á cho thấy bất động sản trong bán kính đi bộ đến nhà ga thường thiết lập mặt bằng giá cao hơn khu vực lân cận từ 10–20% sau vài năm vận hành. TP.HCM đang đi đúng quỹ đạo đó, nhưng với một điều kiện quan trọng." },
-      { "t": "h", "c": "Bán kính 800 mét — thước đo thực tế" },
-      { "t": "p", "c": "Giá trị “gần metro” chỉ có nghĩa khi cư dân thực sự đi bộ được đến ga: khoảng 800 mét, tương đương 10 phút đi bộ. Xa hơn khoảng cách đó, metro chỉ còn là câu chuyện quảng cáo. Khi thẩm định một dự án “cạnh metro”, câu hỏi đầu tiên của PaceLand luôn là: từ sảnh toà nhà đến cửa soát vé mất bao nhiêu phút thật?" },
-      { "t": "ul", "c": [
-        "Cụm Thảo Điền – An Phú: hưởng lợi kép từ metro và cộng đồng quốc tế sẵn có",
-        "Cụm Rạch Chiếc – Bình Thái: quỹ đất chuyển mình, nhiều dự án mới bám các nhà ga giữa tuyến",
-        "Cụm Suối Tiên – khu Công nghệ cao: cầu thuê từ kỹ sư, chuyên gia và sinh viên Đại học Quốc gia"
-      ] },
-      { "t": "q", "c": "Metro không làm mọi dự án tăng giá — nó chỉ khuếch đại giá trị của những dự án vốn đã tốt." },
-      { "t": "p", "c": "Bài học sau hơn một năm: các dự án chất lượng gần ga giữ giá và cho thuê tốt hơn rõ rệt, trong khi các dự án trung bình dù gần ga vẫn ì ạch. Hạ tầng là chất xúc tác, không phải phép màu. Sản phẩm, pháp lý và cộng đồng cư dân vẫn là gốc rễ của giá trị." }
+      {
+        "t": "p",
+        "c": "Từ khi vận hành thương mại cuối năm 2024, Metro số 1 đã làm được điều quan trọng nhất: thay đổi thói quen di chuyển của một bộ phận cư dân phía Đông. Tuyến đường sắt đô thị đầu tiên của thành phố kết nối Bến Thành với Suối Tiên, chạy dọc trục xương sống của TP. Thủ Đức."
+      },
+      {
+        "t": "p",
+        "c": "Kinh nghiệm từ các đô thị châu Á cho thấy bất động sản trong bán kính đi bộ đến nhà ga thường thiết lập mặt bằng giá cao hơn khu vực lân cận từ 10–20% sau vài năm vận hành. TP.HCM đang đi đúng quỹ đạo đó, nhưng với một điều kiện quan trọng."
+      },
+      {
+        "t": "h",
+        "c": "Bán kính 800 mét — thước đo thực tế"
+      },
+      {
+        "t": "p",
+        "c": "Giá trị “gần metro” chỉ có nghĩa khi cư dân thực sự đi bộ được đến ga: khoảng 800 mét, tương đương 10 phút đi bộ. Xa hơn khoảng cách đó, metro chỉ còn là câu chuyện quảng cáo. Khi thẩm định một dự án “cạnh metro”, câu hỏi đầu tiên của PaceLand luôn là: từ sảnh toà nhà đến cửa soát vé mất bao nhiêu phút thật?"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Cụm Thảo Điền – An Phú: hưởng lợi kép từ metro và cộng đồng quốc tế sẵn có",
+          "Cụm Rạch Chiếc – Bình Thái: quỹ đất chuyển mình, nhiều dự án mới bám các nhà ga giữa tuyến",
+          "Cụm Suối Tiên – khu Công nghệ cao: cầu thuê từ kỹ sư, chuyên gia và sinh viên Đại học Quốc gia"
+        ]
+      },
+      {
+        "t": "q",
+        "c": "Metro không làm mọi dự án tăng giá — nó chỉ khuếch đại giá trị của những dự án vốn đã tốt."
+      },
+      {
+        "t": "p",
+        "c": "Bài học sau hơn một năm: các dự án chất lượng gần ga giữ giá và cho thuê tốt hơn rõ rệt, trong khi các dự án trung bình dù gần ga vẫn ì ạch. Hạ tầng là chất xúc tác, không phải phép màu. Sản phẩm, pháp lý và cộng đồng cư dân vẫn là gốc rễ của giá trị."
+      }
     ]
   },
   {
@@ -1186,19 +1401,58 @@ const POSTS = [
     "cover": "assets/img/media/the-global-city-1.jpg",
     "excerpt": "Khu Đông không phải một thị trường đồng nhất. Năm cực tăng trưởng với động lực khác nhau đòi hỏi chiến lược xuống tiền khác nhau.",
     "body": [
-      { "t": "p", "c": "“Khu Đông” là cách gọi tiện lợi nhưng dễ gây ngộ nhận: bên trong TP. Thủ Đức tồn tại ít nhất năm tiểu thị trường với động lực, mặt bằng giá và tệp khách khác hẳn nhau. Đặt sai sản phẩm vào sai cực, nhà đầu tư có thể chờ rất lâu mà không thấy thành quả." },
-      { "t": "h", "c": "1. Thủ Thiêm — cực tài chính, giá trị biểu tượng" },
-      { "t": "p", "c": "Quỹ đất hữu hạn, quy hoạch cứng, các chủ đầu tư hàng đầu. Đây là nơi dành cho tài sản tích luỹ dài hạn và những sản phẩm mang tính sưu tầm. Mặt bằng giá cao nhất Khu Đông và ít biến động theo sóng ngắn hạn." },
-      { "t": "h", "c": "2. An Phú – Thảo Điền — cực lifestyle quốc tế" },
-      { "t": "p", "c": "Cộng đồng nước ngoài, trường quốc tế, hệ sinh thái ẩm thực ven sông. The Global City đang định hình vai trò “downtown mới” với quảng trường và đại lộ thương mại. Cầu thuê bền là điểm mạnh nhất của cực này." },
-      { "t": "h", "c": "3. Rạch Chiếc – Bình Thái — cực chuyển mình giữa tuyến" },
-      { "t": "p", "c": "Bám metro và các trục mới mở, quỹ đất còn dư địa, nhiều dự án trung – cao cấp ra hàng. Phù hợp nhà đầu tư đi theo tiến độ hạ tầng với tầm nhìn 3–5 năm." },
-      { "t": "h", "c": "4. Trường Thọ — cực đô thị sáng tạo" },
-      { "t": "p", "c": "Khu cảng cũ được quy hoạch chuyển đổi thành đô thị mới ven sông. Câu chuyện dài hơi, biến số quy hoạch còn nhiều — biên an toàn nằm ở giá vốn thấp và sự kiên nhẫn." },
-      { "t": "h", "c": "5. Vành đai Grand Park – cửa ngõ Đông Bắc — cực đại đô thị vệ tinh" },
-      { "t": "p", "c": "Các đại đô thị như Vinhomes Grand Park đã tạo cộng đồng cư dân đông đúc thật; các dự án mới như Gladia Heights đón đầu vành đai và metro mở rộng với mức giá còn mềm. Đây là cực có mức giá vào thấp nhất và dư địa tăng theo hạ tầng rõ nhất." },
-      { "t": "q", "c": "Không có “giá Khu Đông” — chỉ có giá của từng cực, từng dự án, từng thời điểm." },
-      { "t": "p", "c": "Nguyên tắc của PaceLand: xác định cực phù hợp với mục tiêu (tích sản, dòng tiền hay tăng trưởng) trước, rồi mới chọn dự án. Đi ngược thứ tự đó là nguồn gốc của phần lớn quyết định sai." }
+      {
+        "t": "p",
+        "c": "“Khu Đông” là cách gọi tiện lợi nhưng dễ gây ngộ nhận: bên trong TP. Thủ Đức tồn tại ít nhất năm tiểu thị trường với động lực, mặt bằng giá và tệp khách khác hẳn nhau. Đặt sai sản phẩm vào sai cực, nhà đầu tư có thể chờ rất lâu mà không thấy thành quả."
+      },
+      {
+        "t": "h",
+        "c": "1. Thủ Thiêm — cực tài chính, giá trị biểu tượng"
+      },
+      {
+        "t": "p",
+        "c": "Quỹ đất hữu hạn, quy hoạch cứng, các chủ đầu tư hàng đầu. Đây là nơi dành cho tài sản tích luỹ dài hạn và những sản phẩm mang tính sưu tầm. Mặt bằng giá cao nhất Khu Đông và ít biến động theo sóng ngắn hạn."
+      },
+      {
+        "t": "h",
+        "c": "2. An Phú – Thảo Điền — cực lifestyle quốc tế"
+      },
+      {
+        "t": "p",
+        "c": "Cộng đồng nước ngoài, trường quốc tế, hệ sinh thái ẩm thực ven sông. The Global City đang định hình vai trò “downtown mới” với quảng trường và đại lộ thương mại. Cầu thuê bền là điểm mạnh nhất của cực này."
+      },
+      {
+        "t": "h",
+        "c": "3. Rạch Chiếc – Bình Thái — cực chuyển mình giữa tuyến"
+      },
+      {
+        "t": "p",
+        "c": "Bám metro và các trục mới mở, quỹ đất còn dư địa, nhiều dự án trung – cao cấp ra hàng. Phù hợp nhà đầu tư đi theo tiến độ hạ tầng với tầm nhìn 3–5 năm."
+      },
+      {
+        "t": "h",
+        "c": "4. Trường Thọ — cực đô thị sáng tạo"
+      },
+      {
+        "t": "p",
+        "c": "Khu cảng cũ được quy hoạch chuyển đổi thành đô thị mới ven sông. Câu chuyện dài hơi, biến số quy hoạch còn nhiều — biên an toàn nằm ở giá vốn thấp và sự kiên nhẫn."
+      },
+      {
+        "t": "h",
+        "c": "5. Vành đai Grand Park – cửa ngõ Đông Bắc — cực đại đô thị vệ tinh"
+      },
+      {
+        "t": "p",
+        "c": "Các đại đô thị như Vinhomes Grand Park đã tạo cộng đồng cư dân đông đúc thật; các dự án mới như Gladia Heights đón đầu vành đai và metro mở rộng với mức giá còn mềm. Đây là cực có mức giá vào thấp nhất và dư địa tăng theo hạ tầng rõ nhất."
+      },
+      {
+        "t": "q",
+        "c": "Không có “giá Khu Đông” — chỉ có giá của từng cực, từng dự án, từng thời điểm."
+      },
+      {
+        "t": "p",
+        "c": "Nguyên tắc của PaceLand: xác định cực phù hợp với mục tiêu (tích sản, dòng tiền hay tăng trưởng) trước, rồi mới chọn dự án. Đi ngược thứ tự đó là nguồn gốc của phần lớn quyết định sai."
+      }
     ]
   },
   {
@@ -1210,22 +1464,46 @@ const POSTS = [
     "cover": "assets/img/media/the-prive-2.jpg",
     "excerpt": "Giá bất động sản không đi theo đường thẳng mà theo nhịp của hạ tầng: công bố, khởi công, vận hành. Mua ở pha nào quyết định bạn lời hay kẹt.",
     "body": [
-      { "t": "p", "c": "Mỗi công trình hạ tầng lớn tạo ra ba đợt sóng giá: khi quy hoạch được công bố, khi công trường khởi công, và khi công trình đi vào vận hành. Điều ít người để ý: phần tăng giá lớn nhất thường diễn ra ở pha giữa — khi máy móc đang chạy ngoài công trường — chứ không phải khi cắt băng khánh thành." },
-      { "t": "h", "c": "Ba pha của một con sóng hạ tầng" },
-      { "t": "ul", "c": [
-        "Pha công bố: giá chạy theo tin, rủi ro cao nhất vì quy hoạch có thể điều chỉnh hoặc kéo dài",
-        "Pha thi công: kỳ vọng chuyển thành hiện thực nhìn thấy được — dòng tiền lớn bắt đầu vào, giá tăng bền hơn",
-        "Pha vận hành: mặt bằng giá mới được thiết lập; người mua cuối và người thuê trả tiền cho giá trị thật"
-      ] },
-      { "t": "p", "c": "Khu Đông hiện có đủ cả ba pha cùng lúc: metro số 1 đã vận hành (pha 3), Vành đai 3 đang thi công (pha 2), và các tuyến metro mở rộng còn ở giai đoạn quy hoạch (pha 1). Nghĩa là cùng một số tiền, bạn có thể chọn khẩu vị rủi ro rất khác nhau ngay trong một khu vực." },
-      { "t": "q", "c": "Mua khi công trường đang chạy. Chốt lời khi mặt bằng giá mới được cả thị trường công nhận." },
-      { "t": "h", "c": "Dấu hiệu một vùng giá đã nóng" },
-      { "t": "ul", "c": [
-        "Giao dịch thứ cấp chững lại nhưng giá chào vẫn tăng — người bán neo kỳ vọng, người mua không theo",
-        "Tiền chênh giữ chỗ cao bất thường so với giá trị hợp đồng",
-        "Câu chuyện tăng giá chỉ còn dựa vào một tin quy hoạch duy nhất"
-      ] },
-      { "t": "p", "c": "Khi cả ba dấu hiệu cùng xuất hiện, PaceLand thường khuyên khách dừng lại quan sát — cơ hội tốt tiếp theo luôn xuất hiện với người còn tiền trong tay. Kỷ luật với chu kỳ quan trọng hơn dự đoán chính xác đỉnh đáy." }
+      {
+        "t": "p",
+        "c": "Mỗi công trình hạ tầng lớn tạo ra ba đợt sóng giá: khi quy hoạch được công bố, khi công trường khởi công, và khi công trình đi vào vận hành. Điều ít người để ý: phần tăng giá lớn nhất thường diễn ra ở pha giữa — khi máy móc đang chạy ngoài công trường — chứ không phải khi cắt băng khánh thành."
+      },
+      {
+        "t": "h",
+        "c": "Ba pha của một con sóng hạ tầng"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Pha công bố: giá chạy theo tin, rủi ro cao nhất vì quy hoạch có thể điều chỉnh hoặc kéo dài",
+          "Pha thi công: kỳ vọng chuyển thành hiện thực nhìn thấy được — dòng tiền lớn bắt đầu vào, giá tăng bền hơn",
+          "Pha vận hành: mặt bằng giá mới được thiết lập; người mua cuối và người thuê trả tiền cho giá trị thật"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Khu Đông hiện có đủ cả ba pha cùng lúc: metro số 1 đã vận hành (pha 3), Vành đai 3 đang thi công (pha 2), và các tuyến metro mở rộng còn ở giai đoạn quy hoạch (pha 1). Nghĩa là cùng một số tiền, bạn có thể chọn khẩu vị rủi ro rất khác nhau ngay trong một khu vực."
+      },
+      {
+        "t": "q",
+        "c": "Mua khi công trường đang chạy. Chốt lời khi mặt bằng giá mới được cả thị trường công nhận."
+      },
+      {
+        "t": "h",
+        "c": "Dấu hiệu một vùng giá đã nóng"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Giao dịch thứ cấp chững lại nhưng giá chào vẫn tăng — người bán neo kỳ vọng, người mua không theo",
+          "Tiền chênh giữ chỗ cao bất thường so với giá trị hợp đồng",
+          "Câu chuyện tăng giá chỉ còn dựa vào một tin quy hoạch duy nhất"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Khi cả ba dấu hiệu cùng xuất hiện, PaceLand thường khuyên khách dừng lại quan sát — cơ hội tốt tiếp theo luôn xuất hiện với người còn tiền trong tay. Kỷ luật với chu kỳ quan trọng hơn dự đoán chính xác đỉnh đáy."
+      }
     ]
   },
   {
@@ -1237,14 +1515,38 @@ const POSTS = [
     "cover": "assets/img/media/eaton-park-3.jpg",
     "excerpt": "Không phải hạ tầng hay quy hoạch — thứ giữ giá cho Thảo Điền – An Phú là một cộng đồng không dễ rời đi và nguồn cầu thuê gần như không bao giờ cạn.",
     "body": [
-      { "t": "p", "c": "Trong các đợt thị trường điều chỉnh, Thảo Điền – An Phú luôn nằm trong nhóm giảm ít nhất và phục hồi sớm nhất Khu Đông. Lý do không nằm ở bản đồ quy hoạch, mà ở thứ khó sao chép hơn nhiều: một hệ sinh thái sống đã hoàn chỉnh." },
-      { "t": "h", "c": "Cộng đồng là hào kinh tế" },
-      { "t": "p", "c": "Trường quốc tế, phòng khám chuẩn quốc tế, chuỗi ẩm thực ven sông và một cộng đồng cư dân nước ngoài đông đảo tạo thành vòng xoáy tự củng cố: người nước ngoài mới đến chọn nơi có sẵn cộng đồng, dịch vụ mở thêm để phục vụ họ, và giá trị khu vực tiếp tục được bồi đắp. Vòng xoáy này cần cả thập kỷ để hình thành — đối thủ không thể xây bằng tiền trong vài năm." },
-      { "t": "p", "c": "Nguồn cầu thuê từ chuyên gia nước ngoài giúp căn hộ khu này duy trì tỷ lệ lấp đầy cao và giá thuê ổn định ngay cả khi thị trường mua bán trầm lắng — tấm đệm dòng tiền mà ít khu vực nào có." },
-      { "t": "h", "c": "Nguồn cung mới: ít và đắt" },
-      { "t": "p", "c": "Quỹ đất trống gần như cạn. Số dự án mới đếm trên đầu ngón tay — Eaton Park trên mặt tiền Mai Chí Thọ là một trong số hiếm hoi — và đều định vị ở phân khúc cao. Nguồn cung khan trong khi cầu ở thực bền là công thức giữ giá kinh điển." },
-      { "t": "q", "c": "Người ta có thể sao chép một toà nhà, nhưng không thể sao chép một cộng đồng." },
-      { "t": "p", "c": "Điểm cần thẩm định kỹ khi mua tại đây: hiện trạng ngập cục bộ ở một số tuyến nội khu, chất lượng vận hành từng toà và mức chênh giá giữa các dự án cùng vị trí. Trả đúng giá cho đúng toà — đó là lúc dữ liệu giao dịch thực tế của PaceLand phát huy tác dụng." }
+      {
+        "t": "p",
+        "c": "Trong các đợt thị trường điều chỉnh, Thảo Điền – An Phú luôn nằm trong nhóm giảm ít nhất và phục hồi sớm nhất Khu Đông. Lý do không nằm ở bản đồ quy hoạch, mà ở thứ khó sao chép hơn nhiều: một hệ sinh thái sống đã hoàn chỉnh."
+      },
+      {
+        "t": "h",
+        "c": "Cộng đồng là hào kinh tế"
+      },
+      {
+        "t": "p",
+        "c": "Trường quốc tế, phòng khám chuẩn quốc tế, chuỗi ẩm thực ven sông và một cộng đồng cư dân nước ngoài đông đảo tạo thành vòng xoáy tự củng cố: người nước ngoài mới đến chọn nơi có sẵn cộng đồng, dịch vụ mở thêm để phục vụ họ, và giá trị khu vực tiếp tục được bồi đắp. Vòng xoáy này cần cả thập kỷ để hình thành — đối thủ không thể xây bằng tiền trong vài năm."
+      },
+      {
+        "t": "p",
+        "c": "Nguồn cầu thuê từ chuyên gia nước ngoài giúp căn hộ khu này duy trì tỷ lệ lấp đầy cao và giá thuê ổn định ngay cả khi thị trường mua bán trầm lắng — tấm đệm dòng tiền mà ít khu vực nào có."
+      },
+      {
+        "t": "h",
+        "c": "Nguồn cung mới: ít và đắt"
+      },
+      {
+        "t": "p",
+        "c": "Quỹ đất trống gần như cạn. Số dự án mới đếm trên đầu ngón tay — Eaton Park trên mặt tiền Mai Chí Thọ là một trong số hiếm hoi — và đều định vị ở phân khúc cao. Nguồn cung khan trong khi cầu ở thực bền là công thức giữ giá kinh điển."
+      },
+      {
+        "t": "q",
+        "c": "Người ta có thể sao chép một toà nhà, nhưng không thể sao chép một cộng đồng."
+      },
+      {
+        "t": "p",
+        "c": "Điểm cần thẩm định kỹ khi mua tại đây: hiện trạng ngập cục bộ ở một số tuyến nội khu, chất lượng vận hành từng toà và mức chênh giá giữa các dự án cùng vị trí. Trả đúng giá cho đúng toà — đó là lúc dữ liệu giao dịch thực tế của PaceLand phát huy tác dụng."
+      }
     ]
   },
   {
@@ -1256,18 +1558,42 @@ const POSTS = [
     "cover": "assets/img/media/gladia-heights-1.jpg",
     "excerpt": "Khi Vành đai 3 dần thành hình, ranh giới “nội đô – vùng ven” đang được vẽ lại. Cửa ngõ Đông Bắc là nơi hưởng hiệu ứng này rõ nhất.",
     "body": [
-      { "t": "p", "c": "Vành đai 3 — khởi công giữa năm 2023 và đang dần hoàn thiện từng đoạn — không đơn thuần là một con đường. Nó là công cụ tái phân bố dân cư và việc làm của cả vùng TP.HCM mở rộng: kết nối Bình Dương, Đồng Nai, Long An vào một vòng tròn giao thương liền mạch." },
-      { "t": "h", "c": "Hiệu ứng kéo giãn" },
-      { "t": "p", "c": "Mỗi vành đai hoàn thành đều tạo ra một đợt “kéo giãn” đô thị: cư dân chấp nhận ở xa trung tâm hơn khi thời gian di chuyển giảm. Quỹ đất quanh các nút giao trở thành điểm rơi của dòng tiền — nơi đô thị mới, kho vận và thương mại dịch vụ mọc lên trước tiên." },
-      { "t": "p", "c": "Tại phía Đông, hành lang hưởng lợi trực tiếp là dải cửa ngõ Đông Bắc — nơi Vành đai 3 giao cắt các trục hướng tâm. Các dự án đón đầu như Gladia Heights nằm trong nhóm này: mặt bằng giá còn mềm so với lõi Khu Đông, trong khi khoảng cách thời gian về trung tâm đang được rút ngắn từng quý." },
-      { "t": "q", "c": "Hạ tầng không làm đất đẻ ra tiền — nó làm khoảng cách ngắn lại, và giá trị dịch chuyển theo." },
-      { "t": "h", "c": "Ba câu hỏi trước khi mua theo vành đai" },
-      { "t": "ul", "c": [
-        "Đoạn tuyến đi qua khu vực đã thi công đến đâu — kỳ vọng phải bám tiến độ thật, không bám bản vẽ",
-        "Pháp lý khu đất có sạch không, có nằm trong ranh dự án hạ tầng hay hành lang an toàn không",
-        "Nếu tiến độ chậm 2–3 năm, phương án của bạn là gì — cho thuê được không, dòng tiền chịu được không"
-      ] },
-      { "t": "p", "c": "Mua theo hạ tầng là chiến lược đúng — với điều kiện có biên an toàn. PaceLand thẩm định tiến độ thực địa và pháp lý từng khu đất trước khi khuyến nghị, vì bản đồ quy hoạch và công trường ngoài đời không phải lúc nào cũng trùng nhau." }
+      {
+        "t": "p",
+        "c": "Vành đai 3 — khởi công giữa năm 2023 và đang dần hoàn thiện từng đoạn — không đơn thuần là một con đường. Nó là công cụ tái phân bố dân cư và việc làm của cả vùng TP.HCM mở rộng: kết nối Bình Dương, Đồng Nai, Long An vào một vòng tròn giao thương liền mạch."
+      },
+      {
+        "t": "h",
+        "c": "Hiệu ứng kéo giãn"
+      },
+      {
+        "t": "p",
+        "c": "Mỗi vành đai hoàn thành đều tạo ra một đợt “kéo giãn” đô thị: cư dân chấp nhận ở xa trung tâm hơn khi thời gian di chuyển giảm. Quỹ đất quanh các nút giao trở thành điểm rơi của dòng tiền — nơi đô thị mới, kho vận và thương mại dịch vụ mọc lên trước tiên."
+      },
+      {
+        "t": "p",
+        "c": "Tại phía Đông, hành lang hưởng lợi trực tiếp là dải cửa ngõ Đông Bắc — nơi Vành đai 3 giao cắt các trục hướng tâm. Các dự án đón đầu như Gladia Heights nằm trong nhóm này: mặt bằng giá còn mềm so với lõi Khu Đông, trong khi khoảng cách thời gian về trung tâm đang được rút ngắn từng quý."
+      },
+      {
+        "t": "q",
+        "c": "Hạ tầng không làm đất đẻ ra tiền — nó làm khoảng cách ngắn lại, và giá trị dịch chuyển theo."
+      },
+      {
+        "t": "h",
+        "c": "Ba câu hỏi trước khi mua theo vành đai"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Đoạn tuyến đi qua khu vực đã thi công đến đâu — kỳ vọng phải bám tiến độ thật, không bám bản vẽ",
+          "Pháp lý khu đất có sạch không, có nằm trong ranh dự án hạ tầng hay hành lang an toàn không",
+          "Nếu tiến độ chậm 2–3 năm, phương án của bạn là gì — cho thuê được không, dòng tiền chịu được không"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Mua theo hạ tầng là chiến lược đúng — với điều kiện có biên an toàn. PaceLand thẩm định tiến độ thực địa và pháp lý từng khu đất trước khi khuyến nghị, vì bản đồ quy hoạch và công trường ngoài đời không phải lúc nào cũng trùng nhau."
+      }
     ]
   },
   {
@@ -1279,19 +1605,43 @@ const POSTS = [
     "cover": "assets/img/media/vinhomes-grand-park-1.jpg",
     "excerpt": "Lợi suất cho thuê căn hộ TP.HCM chỉ quanh 3–5%/năm. Vay càng nhiều, dòng tiền càng âm. Vậy nhà đầu tư dòng tiền nên chơi thế nào ở Khu Đông?",
     "body": [
-      { "t": "p", "c": "Hãy bắt đầu bằng sự thật ít người quảng cáo nói ra: với mặt bằng giá hiện tại, lợi suất cho thuê gộp của căn hộ TP.HCM phổ biến ở mức 3–5%/năm — thấp hơn lãi suất vay. Nghĩa là nếu vay quá nửa giá trị căn hộ, dòng tiền hằng tháng của bạn gần như chắc chắn âm." },
-      { "t": "p", "c": "Ví dụ minh hoạ: căn hộ 5 tỉ, cho thuê 25 triệu/tháng, vay 2,5 tỉ trong 20 năm — sau khi trừ tiền trả ngân hàng và chi phí vận hành, dòng tiền ròng âm khoảng vài triệu mỗi tháng. Bạn có thể tự kiểm tra con số của riêng mình bằng <a href='cong-cu.html#dong-tien'>công cụ dòng tiền cho thuê</a> của PaceLand." },
-      { "t": "h", "c": "Vậy tại sao người ta vẫn mua?" },
-      { "t": "p", "c": "Vì tổng lợi nhuận của bất động sản cho thuê = dòng tiền + tăng giá. Dòng tiền âm nhẹ có thể chấp nhận được nếu kỳ vọng tăng giá đủ lớn và chắc chắn. Vấn đề chỉ nảy sinh khi người mua nhầm một tài sản tăng trưởng thành tài sản dòng tiền — và vỡ kế hoạch tài chính vì khoản bù hằng tháng." },
-      { "t": "h", "c": "Lời giải thực tế ở Khu Đông" },
-      { "t": "ul", "c": [
-        "Chọn nơi có cầu thuê thật: quanh khu Công nghệ cao, Đại học Quốc gia và các đại đô thị đã đông dân như Vinhomes Grand Park",
-        "Giữ tỷ lệ vay dưới 40–50% nếu mục tiêu là dòng tiền dương",
-        "Ưu tiên căn 1–2 phòng ngủ, nội thất chuẩn cho thuê — tối ưu lợi suất trên mỗi đồng vốn",
-        "Tính đủ chi phí: phí quản lý, bảo trì, thời gian trống giữa hai đợt khách"
-      ] },
-      { "t": "q", "c": "Dòng tiền âm không phải sai lầm — không biết trước nó sẽ âm mới là sai lầm." },
-      { "t": "p", "c": "PaceLand đang giữ một số căn có sẵn hợp đồng thuê tại Khu Đông — dòng tiền chạy ngay từ ngày nhận nhà. Đó là điểm khởi đầu an toàn cho nhà đầu tư ưu tiên sự chắc chắn." }
+      {
+        "t": "p",
+        "c": "Hãy bắt đầu bằng sự thật ít người quảng cáo nói ra: với mặt bằng giá hiện tại, lợi suất cho thuê gộp của căn hộ TP.HCM phổ biến ở mức 3–5%/năm — thấp hơn lãi suất vay. Nghĩa là nếu vay quá nửa giá trị căn hộ, dòng tiền hằng tháng của bạn gần như chắc chắn âm."
+      },
+      {
+        "t": "p",
+        "c": "Ví dụ minh hoạ: căn hộ 5 tỉ, cho thuê 25 triệu/tháng, vay 2,5 tỉ trong 20 năm — sau khi trừ tiền trả ngân hàng và chi phí vận hành, dòng tiền ròng âm khoảng vài triệu mỗi tháng. Bạn có thể tự kiểm tra con số của riêng mình bằng <a href='cong-cu.html#dong-tien'>công cụ dòng tiền cho thuê</a> của PaceLand."
+      },
+      {
+        "t": "h",
+        "c": "Vậy tại sao người ta vẫn mua?"
+      },
+      {
+        "t": "p",
+        "c": "Vì tổng lợi nhuận của bất động sản cho thuê = dòng tiền + tăng giá. Dòng tiền âm nhẹ có thể chấp nhận được nếu kỳ vọng tăng giá đủ lớn và chắc chắn. Vấn đề chỉ nảy sinh khi người mua nhầm một tài sản tăng trưởng thành tài sản dòng tiền — và vỡ kế hoạch tài chính vì khoản bù hằng tháng."
+      },
+      {
+        "t": "h",
+        "c": "Lời giải thực tế ở Khu Đông"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Chọn nơi có cầu thuê thật: quanh khu Công nghệ cao, Đại học Quốc gia và các đại đô thị đã đông dân như Vinhomes Grand Park",
+          "Giữ tỷ lệ vay dưới 40–50% nếu mục tiêu là dòng tiền dương",
+          "Ưu tiên căn 1–2 phòng ngủ, nội thất chuẩn cho thuê — tối ưu lợi suất trên mỗi đồng vốn",
+          "Tính đủ chi phí: phí quản lý, bảo trì, thời gian trống giữa hai đợt khách"
+        ]
+      },
+      {
+        "t": "q",
+        "c": "Dòng tiền âm không phải sai lầm — không biết trước nó sẽ âm mới là sai lầm."
+      },
+      {
+        "t": "p",
+        "c": "PaceLand đang giữ một số căn có sẵn hợp đồng thuê tại Khu Đông — dòng tiền chạy ngay từ ngày nhận nhà. Đó là điểm khởi đầu an toàn cho nhà đầu tư ưu tiên sự chắc chắn."
+      }
     ]
   },
   {
@@ -1303,20 +1653,38 @@ const POSTS = [
     "cover": "assets/img/media/the-prive-3.jpg",
     "excerpt": "Giấy tờ nói thật hơn lời quảng cáo. Danh sách 7 điểm pháp lý PaceLand luôn kiểm tra thay khách hàng trước khi một đồng cọc được chuyển đi.",
     "body": [
-      { "t": "p", "c": "Phần lớn rủi ro khi mua căn hộ hình thành trong tương lai không nằm ở giá, mà nằm ở pháp lý. Tin tốt: gần như mọi rủi ro pháp lý đều kiểm tra được trước khi đặt cọc — nếu bạn biết phải hỏi đúng giấy tờ nào." },
-      { "t": "h", "c": "Danh sách kiểm tra của PaceLand" },
-      { "t": "ul", "c": [
-        "1. Quy hoạch chi tiết 1/500 và giấy phép xây dựng: dự án được duyệt xây đúng cái đang quảng cáo không",
-        "2. Văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của Sở Xây dựng: thiếu văn bản này, mọi “hợp đồng” chỉ là thoả thuận giữ chỗ",
-        "3. Bảo lãnh ngân hàng cho nghĩa vụ bàn giao: ngân hàng nào bảo lãnh, phạm vi đến đâu",
-        "4. Tiến độ thanh toán so với tiến độ xây dựng: tiền đi trước công trình quá xa là rủi ro của bạn",
-        "5. Điều khoản bàn giao và chế tài chậm bàn giao: mức phạt, thời hạn, quyền chấm dứt hợp đồng",
-        "6. Kinh phí bảo trì 2% và phí quản lý dự kiến: ai giữ, chuyển giao thế nào khi có ban quản trị",
-        "7. Lộ trình cấp sổ hồng: nghĩa vụ tài chính về đất của chủ đầu tư đã hoàn thành chưa"
-      ] },
-      { "t": "q", "c": "Chủ đầu tư uy tín không ngại đưa giấy tờ. Sự né tránh chính là câu trả lời." },
-      { "t": "p", "c": "Ở Khu Đông, mặt bằng pháp lý nhìn chung tốt hơn nhiều khu vực nhờ sự hiện diện của các chủ đầu tư lớn — nhưng “nhìn chung” không bảo vệ được giao dịch cụ thể của bạn. Từng dự án, từng đợt mở bán vẫn phải soi từng văn bản." },
-      { "t": "p", "c": "Toàn bộ 7 điểm trên nằm trong quy trình thẩm định tiêu chuẩn mà cố vấn PaceLand thực hiện thay khách hàng trước mọi khuyến nghị. Bạn không cần trở thành luật sư — bạn chỉ cần một đội ngũ coi việc đọc giấy tờ là công việc hằng ngày." }
+      {
+        "t": "p",
+        "c": "Phần lớn rủi ro khi mua căn hộ hình thành trong tương lai không nằm ở giá, mà nằm ở pháp lý. Tin tốt: gần như mọi rủi ro pháp lý đều kiểm tra được trước khi đặt cọc — nếu bạn biết phải hỏi đúng giấy tờ nào."
+      },
+      {
+        "t": "h",
+        "c": "Danh sách kiểm tra của PaceLand"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "1. Quy hoạch chi tiết 1/500 và giấy phép xây dựng: dự án được duyệt xây đúng cái đang quảng cáo không",
+          "2. Văn bản đủ điều kiện bán nhà ở hình thành trong tương lai của Sở Xây dựng: thiếu văn bản này, mọi “hợp đồng” chỉ là thoả thuận giữ chỗ",
+          "3. Bảo lãnh ngân hàng cho nghĩa vụ bàn giao: ngân hàng nào bảo lãnh, phạm vi đến đâu",
+          "4. Tiến độ thanh toán so với tiến độ xây dựng: tiền đi trước công trình quá xa là rủi ro của bạn",
+          "5. Điều khoản bàn giao và chế tài chậm bàn giao: mức phạt, thời hạn, quyền chấm dứt hợp đồng",
+          "6. Kinh phí bảo trì 2% và phí quản lý dự kiến: ai giữ, chuyển giao thế nào khi có ban quản trị",
+          "7. Lộ trình cấp sổ hồng: nghĩa vụ tài chính về đất của chủ đầu tư đã hoàn thành chưa"
+        ]
+      },
+      {
+        "t": "q",
+        "c": "Chủ đầu tư uy tín không ngại đưa giấy tờ. Sự né tránh chính là câu trả lời."
+      },
+      {
+        "t": "p",
+        "c": "Ở Khu Đông, mặt bằng pháp lý nhìn chung tốt hơn nhiều khu vực nhờ sự hiện diện của các chủ đầu tư lớn — nhưng “nhìn chung” không bảo vệ được giao dịch cụ thể của bạn. Từng dự án, từng đợt mở bán vẫn phải soi từng văn bản."
+      },
+      {
+        "t": "p",
+        "c": "Toàn bộ 7 điểm trên nằm trong quy trình thẩm định tiêu chuẩn mà cố vấn PaceLand thực hiện thay khách hàng trước mọi khuyến nghị. Bạn không cần trở thành luật sư — bạn chỉ cần một đội ngũ coi việc đọc giấy tờ là công việc hằng ngày."
+      }
     ]
   },
   {
@@ -1328,17 +1696,38 @@ const POSTS = [
     "cover": "assets/img/media/the-global-city-2.jpg",
     "excerpt": "Khi sân bay lớn nhất nước đi vào khai thác, dòng người và hàng hoá sẽ chảy qua đâu? Câu trả lời nằm ở trục cao tốc phía Đông — và Khu Đông đứng ngay đầu trục.",
     "body": [
-      { "t": "p", "c": "Sân bay quốc tế Long Thành giai đoạn 1 đang về đích với mục tiêu khai thác từ năm 2026. Với công suất thiết kế giai đoạn đầu 25 triệu lượt khách mỗi năm, đây là công trình hạ tầng có sức ảnh hưởng lớn nhất tới bản đồ bất động sản phía Nam trong thập kỷ này." },
-      { "t": "h", "c": "Giá trị nằm ở trục, không nằm ở cạnh hàng rào" },
-      { "t": "p", "c": "Ngộ nhận phổ biến nhất: “gần sân bay là tăng giá”. Thực tế các đô thị lớn cho thấy điều ngược lại — giá trị ở cạnh sân bay bị giới hạn bởi tiếng ồn và quy hoạch tĩnh không. Giá trị thật nằm dọc trục kết nối giữa sân bay và trung tâm kinh tế: nơi chuyên gia hàng không, logistics và dịch vụ chọn để sống." },
-      { "t": "p", "c": "Trục đó chính là hành lang cao tốc TP.HCM – Long Thành – Dầu Giây đang được mở rộng, cộng hưởng với Vành đai 3 và trong tương lai là tuyến đường sắt kết nối. Khu Đông TP.HCM đứng ở đầu trục: mọi chuyến đi từ trung tâm ra sân bay đều đi xuyên qua nó." },
-      { "t": "ul", "c": [
-        "Căn hộ dọc trục Mai Chí Thọ – cao tốc: tệp thuê mới từ chuyên gia làm việc tại sân bay và các khu công nghiệp vệ tinh",
-        "Khu Đông Bắc quanh nút giao vành đai: điểm rơi của kho vận, thương mại và nhà ở cho lực lượng lao động mới",
-        "Bất động sản nghỉ dưỡng ven đô: hưởng lợi từ khách quốc tế trung chuyển qua Long Thành"
-      ] },
-      { "t": "q", "c": "Sân bay là nhà máy tạo việc làm — và việc làm là thứ nuôi giá bất động sản." },
-      { "t": "p", "c": "Kịch bản đáng theo dõi nhất với nhà đầu tư Khu Đông không phải là ngày khánh thành, mà là nhịp tăng tần suất khai thác trong 2–3 năm sau đó. Dòng tiền thông minh đi trước dòng người — nhưng chỉ đi trước một bước, không đi trước một thập kỷ." }
+      {
+        "t": "p",
+        "c": "Sân bay quốc tế Long Thành giai đoạn 1 đang về đích với mục tiêu khai thác từ năm 2026. Với công suất thiết kế giai đoạn đầu 25 triệu lượt khách mỗi năm, đây là công trình hạ tầng có sức ảnh hưởng lớn nhất tới bản đồ bất động sản phía Nam trong thập kỷ này."
+      },
+      {
+        "t": "h",
+        "c": "Giá trị nằm ở trục, không nằm ở cạnh hàng rào"
+      },
+      {
+        "t": "p",
+        "c": "Ngộ nhận phổ biến nhất: “gần sân bay là tăng giá”. Thực tế các đô thị lớn cho thấy điều ngược lại — giá trị ở cạnh sân bay bị giới hạn bởi tiếng ồn và quy hoạch tĩnh không. Giá trị thật nằm dọc trục kết nối giữa sân bay và trung tâm kinh tế: nơi chuyên gia hàng không, logistics và dịch vụ chọn để sống."
+      },
+      {
+        "t": "p",
+        "c": "Trục đó chính là hành lang cao tốc TP.HCM – Long Thành – Dầu Giây đang được mở rộng, cộng hưởng với Vành đai 3 và trong tương lai là tuyến đường sắt kết nối. Khu Đông TP.HCM đứng ở đầu trục: mọi chuyến đi từ trung tâm ra sân bay đều đi xuyên qua nó."
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Căn hộ dọc trục Mai Chí Thọ – cao tốc: tệp thuê mới từ chuyên gia làm việc tại sân bay và các khu công nghiệp vệ tinh",
+          "Khu Đông Bắc quanh nút giao vành đai: điểm rơi của kho vận, thương mại và nhà ở cho lực lượng lao động mới",
+          "Bất động sản nghỉ dưỡng ven đô: hưởng lợi từ khách quốc tế trung chuyển qua Long Thành"
+        ]
+      },
+      {
+        "t": "q",
+        "c": "Sân bay là nhà máy tạo việc làm — và việc làm là thứ nuôi giá bất động sản."
+      },
+      {
+        "t": "p",
+        "c": "Kịch bản đáng theo dõi nhất với nhà đầu tư Khu Đông không phải là ngày khánh thành, mà là nhịp tăng tần suất khai thác trong 2–3 năm sau đó. Dòng tiền thông minh đi trước dòng người — nhưng chỉ đi trước một bước, không đi trước một thập kỷ."
+      }
     ]
   },
   {
@@ -1350,19 +1739,43 @@ const POSTS = [
     "cover": "assets/img/media/metropole-3.jpg",
     "excerpt": "Nửa thập kỷ sau ngày thành lập, “thành phố trong thành phố” đầu tiên của Việt Nam đã làm được gì — và bài học nào cho người cầm tiền hôm nay?",
     "body": [
-      { "t": "p", "c": "Đầu năm 2021, TP. Thủ Đức ra đời từ việc sáp nhập ba quận phía Đông với kỳ vọng trở thành “đô thị sáng tạo tương tác cao” — cực tăng trưởng đóng góp lớn cho kinh tế thành phố, dựa trên ba trụ: khu Công nghệ cao, Đại học Quốc gia và trung tâm tài chính Thủ Thiêm." },
-      { "t": "h", "c": "5 năm nhìn lại: cái gì chạy, cái gì chậm" },
-      { "t": "p", "c": "Phần “cứng” đã chuyển động thật sự: metro số 1 vận hành, Vành đai 3 thành hình, nút giao An Phú và các trục chính dần hoàn thiện, các đại đô thị đông dân lên từng năm. Bộ mặt đô thị phía Đông hôm nay khác hẳn năm 2021." },
-      { "t": "p", "c": "Phần “mềm” đi chậm hơn: bộ máy hành chính, phân cấp ngân sách và các cơ chế đặc thù cần nhiều thời gian hơn kỳ vọng ban đầu. Trung tâm tài chính Thủ Thiêm vẫn đang trong giai đoạn xây nền móng thể chế. Đây là điều bình thường — không đô thị lớn nào trên thế giới hoàn thiện trong 5 năm." },
-      { "t": "q", "c": "Đô thị lớn không được xây trong một nhiệm kỳ. Tài sản lớn cũng vậy." },
-      { "t": "h", "c": "Bài học cho người cầm tiền" },
-      { "t": "ul", "c": [
-        "Đặt cược vào cụm việc làm hiện hữu (khu Công nghệ cao, Đại học Quốc gia, Thủ Thiêm) thay vì lời hứa quy hoạch",
-        "Ưu tiên khu vực hạ tầng đã vận hành hoặc đang thi công — kỳ vọng xa hơn cần biên giá an toàn tương xứng",
-        "Chọn chủ đầu tư đủ sức đi đường dài: dự án dở dang là rủi ro lớn nhất ở các vùng đô thị hoá nhanh",
-        "Kiên nhẫn với chu kỳ 5–10 năm: phần thưởng của Thủ Đức dành cho người đi dài hạn"
-      ] },
-      { "t": "p", "c": "PaceLand tin rằng chương hay nhất của TP. Thủ Đức vẫn ở phía trước — và như mọi câu chuyện tăng trưởng, phần lợi nhuận tốt nhất thuộc về những người vào vị trí trước khi câu chuyện trở nên hiển nhiên với tất cả mọi người." }
+      {
+        "t": "p",
+        "c": "Đầu năm 2021, TP. Thủ Đức ra đời từ việc sáp nhập ba quận phía Đông với kỳ vọng trở thành “đô thị sáng tạo tương tác cao” — cực tăng trưởng đóng góp lớn cho kinh tế thành phố, dựa trên ba trụ: khu Công nghệ cao, Đại học Quốc gia và trung tâm tài chính Thủ Thiêm."
+      },
+      {
+        "t": "h",
+        "c": "5 năm nhìn lại: cái gì chạy, cái gì chậm"
+      },
+      {
+        "t": "p",
+        "c": "Phần “cứng” đã chuyển động thật sự: metro số 1 vận hành, Vành đai 3 thành hình, nút giao An Phú và các trục chính dần hoàn thiện, các đại đô thị đông dân lên từng năm. Bộ mặt đô thị phía Đông hôm nay khác hẳn năm 2021."
+      },
+      {
+        "t": "p",
+        "c": "Phần “mềm” đi chậm hơn: bộ máy hành chính, phân cấp ngân sách và các cơ chế đặc thù cần nhiều thời gian hơn kỳ vọng ban đầu. Trung tâm tài chính Thủ Thiêm vẫn đang trong giai đoạn xây nền móng thể chế. Đây là điều bình thường — không đô thị lớn nào trên thế giới hoàn thiện trong 5 năm."
+      },
+      {
+        "t": "q",
+        "c": "Đô thị lớn không được xây trong một nhiệm kỳ. Tài sản lớn cũng vậy."
+      },
+      {
+        "t": "h",
+        "c": "Bài học cho người cầm tiền"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Đặt cược vào cụm việc làm hiện hữu (khu Công nghệ cao, Đại học Quốc gia, Thủ Thiêm) thay vì lời hứa quy hoạch",
+          "Ưu tiên khu vực hạ tầng đã vận hành hoặc đang thi công — kỳ vọng xa hơn cần biên giá an toàn tương xứng",
+          "Chọn chủ đầu tư đủ sức đi đường dài: dự án dở dang là rủi ro lớn nhất ở các vùng đô thị hoá nhanh",
+          "Kiên nhẫn với chu kỳ 5–10 năm: phần thưởng của Thủ Đức dành cho người đi dài hạn"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "PaceLand tin rằng chương hay nhất của TP. Thủ Đức vẫn ở phía trước — và như mọi câu chuyện tăng trưởng, phần lợi nhuận tốt nhất thuộc về những người vào vị trí trước khi câu chuyện trở nên hiển nhiên với tất cả mọi người."
+      }
     ]
   },
   {
@@ -1511,6 +1924,10 @@ const POSTS = [
       {
         "t": "p",
         "c": "Nền tảng AI & Dữ liệu chuẩn hoá hồ sơ dự án, phân tích chu kỳ giá và cá nhân hoá đề xuất, giúp cố vấn dành thời gian cho điều quan trọng nhất: hiểu đúng nhu cầu khách hàng."
+      },
+      {
+        "t": "p",
+        "c": "Nếu anh/chị đang làm nghề và muốn chuyển từ bán giao dịch sang tư vấn tài sản, PaceLand đang mở các vị trí trong đội ngũ kinh doanh. Xem chi tiết tại <a href='/tuyen-dung.html'>trang tuyển dụng PaceLand</a>."
       }
     ]
   },
@@ -1546,6 +1963,10 @@ const POSTS = [
           "Văn hoá nói thật – làm thật",
           "Cùng thắng giữa công ty, đối tác và khách hàng"
         ]
+      },
+      {
+        "t": "p",
+        "c": "Đây cũng là lộ trình PaceLand đang tuyển người đi cùng: Sales → Leader → Đối tác sở hữu. Nếu anh/chị muốn bắt đầu, xem vị trí <a href='/tuyen-dung/agent-bat-dong-san.html'>Agent bất động sản</a> hoặc toàn bộ <a href='/tuyen-dung.html'>cơ hội nghề nghiệp tại PaceLand</a>."
       }
     ]
   },
@@ -1616,73 +2037,50 @@ const VALUES = [
 
 const JOBS = [
   {
-    "id": "giam-doc-kinh-doanh",
-    "title": "Giám đốc Kinh doanh",
-    "count": "02",
-    "dept": "Kinh doanh",
-    "type": "Toàn thời gian",
-    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
-    "salary": "Thoả thuận + chia sẻ doanh thu đội nhóm",
-    "desc": "Dẫn dắt đội ngũ, chia sẻ thành quả: chủ động xây dựng và vận hành đội kinh doanh bất động sản cao cấp tại Khu Đông TP.HCM với cơ chế rõ ràng, nguồn lực marketing và vận hành đồng bộ.",
-    "duties": [
-      "Tuyển chọn và xây dựng đội ngũ agent theo định biên riêng của mình",
-      "Hoạch định mục tiêu doanh số, chiến lược bán theo từng dự án",
-      "Đào tạo, kèm cặp đội ngũ và duyệt phương án tư vấn quan trọng",
-      "Phối hợp Marketing khai thác nguồn khách, phát triển tệp khách riêng",
-      "Báo cáo kết quả trực tiếp với Ban lãnh đạo"
-    ],
-    "reqs": [
-      "Kinh nghiệm quản lý đội nhóm kinh doanh bất động sản, ưu tiên phân khúc cao cấp",
-      "Thành tích bán hàng chứng minh được bằng con số",
-      "Kỹ năng tuyển dụng, đào tạo và tạo động lực đội ngũ",
-      "Tư duy dữ liệu, làm việc minh bạch theo cơ chế"
-    ],
-    "benefits": [
-      "Quyền chủ động xây team theo cơ chế riêng",
-      "Chia sẻ doanh thu đội nhóm, cơ chế lũy tiến minh bạch",
-      "Hỗ trợ Marketing & vận hành toàn diện",
-      "Lộ trình phát triển lên Đối tác sở hữu",
-      "Văn phòng hiện đại tại Quận 2"
-    ]
-  },
-  {
-    "id": "admin-kinh-doanh",
-    "title": "Admin Kinh doanh",
-    "count": "02",
-    "dept": "Kinh doanh",
-    "type": "Toàn thời gian",
-    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
-    "salary": "Thoả thuận theo năng lực",
-    "desc": "Giữ nhịp vận hành, nâng tốc đội ngũ: đầu mối booking, hồ sơ, dữ liệu và báo cáo giúp bộ máy kinh doanh chạy gọn, rõ, chuyên nghiệp.",
-    "duties": [
-      "Quản lý booking giao dịch, lịch hẹn và hồ sơ khách hàng",
-      "Theo dõi dữ liệu giỏ hàng, cập nhật trạng thái căn theo từng dự án",
-      "Chuẩn bị hợp đồng, đối soát chứng từ với chủ đầu tư",
-      "Tổng hợp báo cáo kinh doanh định kỳ cho Ban lãnh đạo",
-      "Hỗ trợ vận hành văn phòng và các sự kiện bán hàng"
-    ],
-    "reqs": [
-      "Cẩn thận, chi tiết, kỷ luật với số liệu",
-      "Thành thạo Excel / Google Sheets",
-      "Giao tiếp tốt, phối hợp nhịp nhàng nhiều bộ phận",
-      "Ưu tiên từng làm admin hoặc trợ lý kinh doanh bất động sản"
-    ],
-    "benefits": [
-      "Môi trường làm việc gọn, rõ, chuyên nghiệp",
-      "Hệ thống dữ liệu và quy trình đồng bộ",
-      "Thu nhập ổn định, thưởng theo hiệu quả đội",
-      "Văn phòng hiện đại tại Quận 2"
-    ]
-  },
-  {
     "id": "agent-bat-dong-san",
-    "title": "Agent — Chuyên viên Kinh doanh BĐS",
+    "status": "open",
+    "sortOrder": 10,
+    "featured": true,
+    "title": "Chuyên viên kinh doanh bất động sản (Agent)",
+    "shortTitle": "Agent",
     "count": "20",
+    "category": "kinh-doanh",
     "dept": "Kinh doanh",
     "type": "Toàn thời gian",
-    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
-    "salary": "Lương cứng 5 triệu + hoa hồng lũy tiến đến 75%",
+    "location": "Văn phòng Quận 2 (P. Bình Trưng), TP.HCM",
+    "salary": "Lương cứng 5 triệu + chia sẻ doanh thu lũy tiến đến 75%",
+    "baseSalary": {
+      "value": 5000000,
+      "currency": "VND",
+      "unit": "MONTH"
+    },
+    "experienceRequirements": "no requirements",
+    "datePosted": "2026-09-19",
+    "validThrough": "",
+    "summary": "Bán danh mục căn hộ, nhà phố cao cấp chọn lọc với nguồn khách từ Marketing, lộ trình từ Sales lên Leader và Đối tác sở hữu.",
     "desc": "Từ Sale đến Đối tác sở hữu: bán danh mục dự án cao cấp chọn lọc tại Khu Đông với nguồn khách từ Marketing, lương cứng và cơ chế chia sẻ doanh thu lũy tiến lên đến 75%.",
+    "hero": {
+      "title": "Bán bất động sản. Xây sự nghiệp của riêng bạn.",
+      "sub": "Marketing, dữ liệu dự án, SaleHub và danh mục sản phẩm đã được chuẩn hóa, để bạn dồn sức vào khách hàng và giao dịch."
+    },
+    "why": {
+      "title": "Không chỉ thêm một sàn để bạn bán hàng.",
+      "text": "Nhiều nơi tuyển sale bằng lời hứa hoa hồng. PaceLand xây hạ tầng bán hàng trước, rồi mới tìm người đi cùng.",
+      "points": [
+        {
+          "title": "Khách đến từ hệ thống",
+          "text": "Website paceland.vn, fanpage, TikTok, YouTube và các bài phân tích thị trường đưa khách hàng về. Bạn không bắt đầu từ con số không."
+        },
+        {
+          "title": "Sản phẩm chọn lọc, dữ liệu sẵn",
+          "text": "{{projects}} dự án có trang thông tin chuẩn hóa về pháp lý, tiến độ, giá tham khảo. Mở SaleHub là đủ dữ liệu để tư vấn."
+        },
+        {
+          "title": "Tên tuổi của bạn được xây công khai",
+          "text": "Mã chứng nhận PL-xxxx tra cứu công khai và trang hồ sơ riêng trên paceland.vn: khách kiểm chứng được bạn là ai trước khi gặp."
+        }
+      ]
+    },
     "duties": [
       "Tư vấn khách mua căn hộ, nhà phố cao cấp theo danh mục chọn lọc",
       "Chăm sóc nguồn khách từ Marketing và phát triển tệp khách riêng",
@@ -1690,11 +2088,43 @@ const JOBS = [
       "Cập nhật giỏ hàng, chính sách bán hàng theo từng đợt mở bán",
       "Xây dựng thương hiệu cá nhân với mã chứng nhận PaceLand riêng"
     ],
+    "profiles": [
+      {
+        "title": "Người mới vào nghề",
+        "text": "Chưa từng bán bất động sản? Bạn bắt đầu bằng đào tạo hội nhập, cùng dữ liệu dự án và công cụ tư vấn có sẵn. Kinh nghiệm sales ở ngành khác là lợi thế, không phải điều kiện."
+      },
+      {
+        "title": "Sale đang ở sàn khác",
+        "text": "Mang kinh nghiệm của bạn vào một hệ thống có nguồn khách từ Marketing, danh mục chọn lọc và chia sẻ doanh thu lũy tiến lên đến 75%."
+      },
+      {
+        "title": "Người đã có kết quả",
+        "text": "Bạn cần nhiều hơn một nơi trả hoa hồng: lộ trình lên Leader để xây đội của riêng mình, hồ sơ chứng nhận công khai và con đường tới Đối tác sở hữu."
+      }
+    ],
     "reqs": [
-      "Đam mê kinh doanh và bất động sản",
-      "Kỹ năng giao tiếp, tạo niềm tin với khách hàng",
-      "Chủ động, kỷ luật, ham học hỏi",
-      "Ưu tiên có kinh nghiệm sales (BĐS, bảo hiểm, ô tô, tài chính); chưa có kinh nghiệm được đào tạo từ đầu"
+      "Giao tiếp tốt, tạo được niềm tin với khách hàng",
+      "Chủ động, kỷ luật, cam kết với mục tiêu của chính mình",
+      "Sẵn sàng học sản phẩm, pháp lý và thị trường Khu Đông",
+      "Ưu tiên từng làm sales (BĐS, bảo hiểm, ô tô, tài chính); chưa có kinh nghiệm vẫn được xem xét"
+    ],
+    "kpis": [],
+    "compensation": [
+      {
+        "label": "Lương cứng",
+        "value": "5 triệu/tháng",
+        "note": ""
+      },
+      {
+        "label": "Chia sẻ doanh thu",
+        "value": "Lên đến 75%",
+        "note": "Cơ chế lũy tiến theo năng lực và kết quả"
+      },
+      {
+        "label": "Nguồn khách",
+        "value": "Từ Marketing",
+        "note": "Hỗ trợ khách hàng từ Marketing toàn diện"
+      }
     ],
     "benefits": [
       "Lương cứng 5 triệu + chia sẻ doanh thu lũy tiến lên đến 75%",
@@ -1703,17 +2133,212 @@ const JOBS = [
       "Hệ thống đào tạo, dữ liệu và cổng làm việc SaleHub",
       "Lộ trình Sales → Leader → Đối tác sở hữu",
       "Mã chứng nhận + trang hồ sơ cá nhân trên paceland.vn"
-    ]
+    ],
+    "system": [
+      "marketing",
+      "du-an",
+      "salehub",
+      "cong-cu",
+      "thuong-hieu",
+      "dao-tao"
+    ],
+    "pathStage": "sales",
+    "showProducts": true,
+    "environment": [
+      "Văn phòng: {{address}}",
+      "Gần các dự án Khu Đông PaceLand đang phân phối: Nam Rạch Chiếc, An Phú, Thủ Thiêm"
+    ],
+    "faq": [
+      {
+        "q": "Chưa có kinh nghiệm bất động sản, tôi có ứng tuyển Agent được không?",
+        "a": "Được. PaceLand có hệ thống đào tạo và dữ liệu để người mới bắt đầu. Ứng viên từng làm sales (bất động sản, bảo hiểm, ô tô, tài chính) được ưu tiên, nhưng đây không phải điều kiện bắt buộc."
+      },
+      {
+        "q": "Thu nhập của Agent PaceLand gồm những gì?",
+        "a": "Gồm lương cứng 5 triệu đồng/tháng và chia sẻ doanh thu theo cơ chế lũy tiến, tối đa đến 75%. Tỷ lệ cụ thể phụ thuộc năng lực và kết quả, được trao đổi rõ trong buổi phỏng vấn."
+      },
+      {
+        "q": "Agent có được hỗ trợ nguồn khách không?",
+        "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{projects}} trang dự án, {{posts}} bài phân tích thị trường cùng kênh Facebook, TikTok, YouTube. Agent vẫn được khuyến khích xây tệp khách riêng."
+      },
+      {
+        "q": "Agent PaceLand làm việc ở đâu?",
+        "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}, gần các dự án Khu Đông đang phân phối."
+      },
+      {
+        "q": "Lộ trình phát triển của Agent ra sao?",
+        "a": "Lộ trình gồm 3 bậc: Sales (Agent) → Leader → Đối tác sở hữu. Việc lên bậc dựa trên năng lực và kết quả theo cơ chế lũy tiến; điều kiện cụ thể của từng bậc được trao đổi trực tiếp khi phỏng vấn."
+      },
+      {
+        "q": "Ứng tuyển Agent cần chuẩn bị gì?",
+        "a": "Chỉ cần họ tên, số điện thoại và vị trí. CV không bắt buộc ở bước đầu; nếu có, anh/chị gửi kèm link CV hoặc LinkedIn."
+      }
+    ],
+    "finalCta": {
+      "title": "Bạn không cần chờ đến khi “đủ giỏi”.",
+      "sub": "Nếu muốn nghiêm túc xây sự nghiệp bất động sản, hãy bắt đầu bằng một cuộc trao đổi.",
+      "button": "Ứng tuyển Agent"
+    },
+    "poster": "assets/img/tuyen-dung/agent.jpg",
+    "ogImage": "assets/img/tuyen-dung/og-agent-bat-dong-san.jpg",
+    "seoTitle": "Tuyển 20 nhân viên kinh doanh BĐS (Agent) Quận 2 | PaceLand",
+    "seoDescription": "PaceLand tuyển 20 Agent kinh doanh bất động sản tại Quận 2: lương cứng 5 triệu/tháng, chia sẻ doanh thu đến 75%, khách từ Marketing, nhận cả người mới.",
+    "stories": []
+  },
+  {
+    "id": "giam-doc-kinh-doanh",
+    "status": "open",
+    "sortOrder": 20,
+    "featured": true,
+    "title": "Giám đốc Kinh doanh",
+    "shortTitle": "Giám đốc Kinh doanh",
+    "count": "02",
+    "category": "lanh-dao",
+    "dept": "Kinh doanh",
+    "type": "Toàn thời gian",
+    "location": "Văn phòng Quận 2 (P. Bình Trưng), TP.HCM",
+    "salary": "Thỏa thuận + chia sẻ doanh thu đội nhóm",
+    "datePosted": "2026-09-19",
+    "validThrough": "",
+    "summary": "Chủ động xây và dẫn dắt đội kinh doanh bất động sản cao cấp, với Marketing và vận hành hỗ trợ phía sau.",
+    "desc": "Dẫn dắt đội ngũ, chia sẻ thành quả: chủ động xây dựng và vận hành đội kinh doanh bất động sản cao cấp tại Khu Đông TP.HCM với cơ chế rõ ràng, nguồn lực marketing và vận hành đồng bộ.",
+    "hero": {
+      "title": "Dẫn dắt đội ngũ. Chia sẻ thành quả.",
+      "sub": "Quyền chủ động xây team, Marketing và vận hành hỗ trợ phía sau, cơ chế kinh doanh rõ ràng, để bạn tập trung vào con người và kết quả."
+    },
+    "why": {
+      "title": "Vì sao PaceLand cần vị trí này",
+      "text": "PaceLand đang mở rộng đội kinh doanh tại Khu Đông với {{agentCount}} vị trí Agent mới. Mỗi đội cần một người dẫn dắt có kết quả thật và muốn xây sự nghiệp quản lý của riêng mình.",
+      "points": [
+        {
+          "title": "Quyền chủ động xây team",
+          "text": "Bạn tuyển chọn và phát triển đội ngũ Agent theo định biên của mình."
+        },
+        {
+          "title": "Hỗ trợ Marketing & vận hành",
+          "text": "Nguồn khách, nội dung, dữ liệu dự án và admin kinh doanh đi cùng đội của bạn."
+        },
+        {
+          "title": "Cơ chế kinh doanh rõ ràng",
+          "text": "Chia sẻ doanh thu đội nhóm theo cơ chế lũy tiến, trao đổi minh bạch ngay từ buổi phỏng vấn."
+        }
+      ]
+    },
+    "duties": [
+      "Tuyển chọn và xây dựng đội ngũ Agent theo định biên riêng",
+      "Hoạch định mục tiêu doanh số, chiến lược bán theo từng dự án",
+      "Đào tạo, kèm cặp đội ngũ và duyệt phương án tư vấn quan trọng",
+      "Phối hợp Marketing khai thác nguồn khách, phát triển tệp khách riêng",
+      "Báo cáo kết quả trực tiếp với Ban lãnh đạo"
+    ],
+    "profiles": [],
+    "reqs": [
+      "Kinh nghiệm quản lý đội nhóm kinh doanh bất động sản, ưu tiên phân khúc cao cấp",
+      "Thành tích bán hàng chứng minh được bằng con số",
+      "Kỹ năng tuyển dụng, đào tạo và tạo động lực cho đội ngũ",
+      "Tư duy dữ liệu, làm việc minh bạch theo cơ chế"
+    ],
+    "kpis": [],
+    "compensation": [
+      {
+        "label": "Thu nhập",
+        "value": "Thỏa thuận",
+        "note": "Trao đổi cụ thể khi phỏng vấn"
+      },
+      {
+        "label": "Chia sẻ doanh thu",
+        "value": "Theo đội nhóm",
+        "note": "Cơ chế lũy tiến"
+      }
+    ],
+    "benefits": [
+      "Quyền chủ động xây team",
+      "Chia sẻ doanh thu đội nhóm, cơ chế lũy tiến minh bạch",
+      "Hỗ trợ Marketing & vận hành toàn diện",
+      "Lộ trình phát triển lên Đối tác sở hữu",
+      "Văn phòng hiện đại tại Quận 2"
+    ],
+    "system": [
+      "marketing",
+      "du-an",
+      "salehub",
+      "thuong-hieu",
+      "dao-tao"
+    ],
+    "pathStage": "leader",
+    "showProducts": true,
+    "environment": [
+      "Văn phòng: {{address}}",
+      "Làm việc trực tiếp với Ban lãnh đạo PaceLand"
+    ],
+    "faq": [
+      {
+        "q": "Vị trí Giám đốc Kinh doanh làm việc ở đâu?",
+        "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}. Đây là khu vực gần các dự án Khu Đông mà PaceLand đang phân phối."
+      },
+      {
+        "q": "Thu nhập Giám đốc Kinh doanh được tính thế nào?",
+        "a": "Gồm thu nhập thỏa thuận và chia sẻ doanh thu đội nhóm theo cơ chế lũy tiến. Con số cụ thể được trao đổi trực tiếp trong buổi phỏng vấn."
+      },
+      {
+        "q": "Giám đốc Kinh doanh có được tự xây đội không?",
+        "a": "Có. Vị trí này có quyền chủ động tuyển chọn và xây dựng đội ngũ Agent theo định biên riêng."
+      },
+      {
+        "q": "Ứng tuyển Giám đốc Kinh doanh cần chuẩn bị gì?",
+        "a": "Họ tên, số điện thoại và vị trí. Nên gửi kèm link hồ sơ (CV, LinkedIn) và kết quả kinh doanh gần nhất để buổi trao đổi đi vào thực chất."
+      }
+    ],
+    "finalCta": {
+      "title": "Sẵn sàng dẫn dắt một đội của riêng mình?",
+      "sub": "Gửi thông tin, Ban lãnh đạo PaceLand trao đổi trực tiếp với bạn về cơ chế và kế hoạch.",
+      "button": "Ứng tuyển Giám đốc Kinh doanh"
+    },
+    "poster": "assets/img/tuyen-dung/giam-doc-kinh-doanh.jpg",
+    "ogImage": "assets/img/tuyen-dung/og-giam-doc-kinh-doanh.jpg",
+    "seoTitle": "Tuyển Giám đốc Kinh doanh bất động sản Quận 2 | PaceLand",
+    "seoDescription": "PaceLand tuyển 02 Giám đốc Kinh doanh bất động sản cao cấp tại Quận 2: chủ động xây đội, có Marketing và vận hành hỗ trợ, chia sẻ doanh thu đội nhóm lũy tiến.",
+    "stories": []
   },
   {
     "id": "digital-marketing",
+    "status": "open",
+    "sortOrder": 30,
+    "featured": false,
     "title": "Digital Marketing",
+    "shortTitle": "Digital Marketing",
     "count": "01",
+    "category": "marketing",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
-    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
-    "salary": "Thoả thuận theo năng lực",
+    "location": "Văn phòng Quận 2 (P. Bình Trưng), TP.HCM",
+    "salary": "Thỏa thuận theo năng lực",
+    "datePosted": "2026-09-19",
+    "validThrough": "",
+    "summary": "Vận hành performance ads, landing page, CRM và analytics, biến dữ liệu thành khách hàng cho đội kinh doanh.",
     "desc": "Biến dữ liệu thành khách hàng: vận hành performance ads, landing page, CRM và automation cho toàn bộ phễu khách hàng bất động sản cao cấp của PaceLand.",
+    "hero": {
+      "title": "Biến dữ liệu thành khách hàng.",
+      "sub": "Performance Ads, landing page, CRM, automation và analytics cho phễu khách hàng bất động sản cao cấp của PaceLand."
+    },
+    "why": {
+      "title": "Vì sao PaceLand cần vị trí này",
+      "text": "Đội kinh doanh đang tuyển thêm {{agentCount}} Agent. Nguồn khách chất lượng, đo được đến từng kênh, là thứ giữ cho cả hệ thống chạy.",
+      "points": [
+        {
+          "title": "Hạ tầng đã có",
+          "text": "Website paceland.vn, landing page dự án và form thu lead gắn UTM đang chạy."
+        },
+        {
+          "title": "Kênh sẵn sàng",
+          "text": "Fanpage, TikTok, YouTube và kho {{posts}} bài phân tích thị trường."
+        },
+        {
+          "title": "Bài toán rõ ràng",
+          "text": "Chi phí trên mỗi khách hàng tiềm năng và chất lượng lead cho đội Agent."
+        }
+      ]
+    },
     "duties": [
       "Lên kế hoạch và chạy performance ads (Meta, Google) cho từng dự án",
       "Xây dựng, tối ưu landing page và đo lường chuyển đổi",
@@ -1721,49 +2346,557 @@ const JOBS = [
       "Phân tích số liệu, tối ưu chi phí trên mỗi khách hàng theo tuần",
       "Phối hợp Media Marketing sản xuất nội dung quảng cáo"
     ],
+    "profiles": [],
     "reqs": [
       "Kinh nghiệm chạy performance ads có số liệu chứng minh",
       "Hiểu landing page, tracking, CRM và automation",
       "Tư duy phân tích, ra quyết định bằng dữ liệu",
-      "Ưu tiên từng làm bất động sản hoặc ngành giá trị cao"
+      "Ưu tiên từng làm bất động sản hoặc ngành hàng giá trị cao"
+    ],
+    "kpis": [],
+    "compensation": [
+      {
+        "label": "Thu nhập",
+        "value": "Thỏa thuận",
+        "note": "Theo năng lực và kinh nghiệm"
+      }
     ],
     "benefits": [
-      "Ngân sách và quyền chủ động thử nghiệm",
-      "Hệ công cụ AI & dữ liệu hiện đại",
-      "Lương thưởng cạnh tranh theo hiệu quả",
+      "Làm việc trực tiếp trên website, landing page và dữ liệu lead của PaceLand",
+      "Làm việc cùng đội kinh doanh để đo chất lượng lead",
+      "Thu nhập thỏa thuận theo năng lực",
       "Văn phòng hiện đại tại Quận 2"
-    ]
+    ],
+    "system": [
+      "marketing",
+      "du-an",
+      "salehub"
+    ],
+    "pathStage": "",
+    "showProducts": false,
+    "environment": [
+      "Văn phòng: {{address}}",
+      "Làm việc cùng Media Marketing và đội kinh doanh"
+    ],
+    "faq": [
+      {
+        "q": "Vị trí Digital Marketing làm việc ở đâu?",
+        "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}. Đây là khu vực gần các dự án Khu Đông mà PaceLand đang phân phối."
+      },
+      {
+        "q": "Ứng tuyển Digital Marketing cần gửi gì?",
+        "a": "Họ tên, số điện thoại và vị trí. Nên gửi kèm link hồ sơ hoặc số liệu các chiến dịch bạn từng chạy."
+      },
+      {
+        "q": "Thu nhập Digital Marketing thế nào?",
+        "a": "Thỏa thuận theo năng lực và kinh nghiệm, trao đổi cụ thể khi phỏng vấn."
+      }
+    ],
+    "finalCta": {
+      "title": "Bạn thích nhìn số liệu biến thành khách hàng thật?",
+      "sub": "Gửi thông tin kèm vài con số bạn tự hào nhất, chúng ta bắt đầu từ đó.",
+      "button": "Ứng tuyển Digital Marketing"
+    },
+    "poster": "assets/img/tuyen-dung/digital-marketing.jpg",
+    "ogImage": "assets/img/tuyen-dung/og-digital-marketing.jpg",
+    "seoTitle": "Tuyển Digital Marketing bất động sản Quận 2 | PaceLand",
+    "seoDescription": "PaceLand tuyển 01 Digital Marketing bất động sản tại Quận 2: performance ads, landing page, CRM, automation, analytics. Thu nhập thỏa thuận theo năng lực.",
+    "stories": []
   },
   {
     "id": "media-marketing",
+    "status": "open",
+    "sortOrder": 40,
+    "featured": false,
     "title": "Media Marketing",
+    "shortTitle": "Media Marketing",
     "count": "01",
+    "category": "marketing",
     "dept": "Tiếp thị & Công nghệ",
     "type": "Toàn thời gian",
-    "location": "Văn phòng Quận 2 — P. Bình Trưng, TP. Thủ Đức",
-    "salary": "Thoả thuận theo năng lực",
+    "location": "Văn phòng Quận 2 (P. Bình Trưng), TP.HCM",
+    "salary": "Thỏa thuận theo năng lực",
+    "datePosted": "2026-09-19",
+    "validThrough": "",
+    "summary": "Sản xuất photo, video, reels và nội dung dự án, biến dự án cao cấp thành nội dung có sức nặng.",
     "desc": "Biến dự án thành nội dung có sức nặng: sản xuất photo, video, reels và project content cho thương hiệu PaceLand cùng danh mục dự án cao cấp.",
+    "hero": {
+      "title": "Biến dự án thành nội dung có sức nặng.",
+      "sub": "Photo, video, reels và project content cho thương hiệu PaceLand cùng danh mục {{projects}} dự án cao cấp."
+    },
+    "why": {
+      "title": "Vì sao PaceLand cần vị trí này",
+      "text": "Khách hàng cao cấp muốn tin trước khi gặp. Hình ảnh và video đủ chuẩn là điểm bắt đầu của cả phễu bán hàng.",
+      "points": [
+        {
+          "title": "Bối cảnh cao cấp",
+          "text": "Nhà mẫu, công trường và tiện ích của các dự án PaceLand đang phân phối."
+        },
+        {
+          "title": "Kênh phân phối sẵn",
+          "text": "Website, fanpage, TikTok và YouTube của PaceLand."
+        }
+      ]
+    },
     "duties": [
-      "Quay, dựng video và reels dự án, hoạt động đội ngũ",
+      "Quay, dựng video và reels về dự án và hoạt động đội ngũ",
       "Chụp và xử lý ảnh dự án, nhà mẫu, sự kiện",
       "Xây kịch bản nội dung ngắn cho TikTok, Facebook, YouTube",
       "Quản lý kho media, giữ đồng bộ nhận diện thương hiệu",
       "Phối hợp Digital Marketing tối ưu nội dung theo số liệu"
     ],
+    "profiles": [],
     "reqs": [
       "Thành thạo quay dựng (Premiere, CapCut…) và chụp ảnh",
       "Có portfolio sản phẩm thực tế",
       "Thẩm mỹ tốt, bắt xu hướng nhanh",
       "Ưu tiên hiểu bất động sản hoặc nội dung phân khúc cao cấp"
     ],
+    "kpis": [],
+    "compensation": [
+      {
+        "label": "Thu nhập",
+        "value": "Thỏa thuận",
+        "note": "Theo năng lực và portfolio"
+      }
+    ],
     "benefits": [
-      "Thiết bị và bối cảnh dự án cao cấp để sáng tạo",
+      "Bối cảnh là các dự án cao cấp PaceLand đang phân phối",
       "Kênh phân phối sẵn: website, TikTok, YouTube, Facebook",
-      "Lương thưởng cạnh tranh theo năng lực",
+      "Thu nhập thỏa thuận theo năng lực",
       "Văn phòng hiện đại tại Quận 2"
-    ]
+    ],
+    "system": [
+      "marketing",
+      "du-an"
+    ],
+    "pathStage": "",
+    "showProducts": true,
+    "environment": [
+      "Văn phòng: {{address}}",
+      "Làm việc cùng Digital Marketing và đội kinh doanh"
+    ],
+    "faq": [
+      {
+        "q": "Vị trí Media Marketing làm việc ở đâu?",
+        "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}. Đây là khu vực gần các dự án Khu Đông mà PaceLand đang phân phối."
+      },
+      {
+        "q": "Ứng tuyển Media Marketing có cần portfolio không?",
+        "a": "Nên có. Link portfolio (Drive, YouTube, TikTok…) giúp PaceLand đánh giá nhanh và công bằng hơn; CV không bắt buộc ở bước đầu."
+      },
+      {
+        "q": "Thu nhập Media Marketing thế nào?",
+        "a": "Thỏa thuận theo năng lực và portfolio, trao đổi cụ thể khi phỏng vấn."
+      }
+    ],
+    "finalCta": {
+      "title": "Portfolio của bạn là lời giới thiệu tốt nhất.",
+      "sub": "Gửi link sản phẩm bạn tự hào, chúng ta nói chuyện tiếp từ đó.",
+      "button": "Ứng tuyển Media Marketing"
+    },
+    "poster": "assets/img/tuyen-dung/media-marketing.jpg",
+    "ogImage": "assets/img/tuyen-dung/og-media-marketing.jpg",
+    "seoTitle": "Tuyển Media Marketing (video, ảnh) BĐS Quận 2 | PaceLand",
+    "seoDescription": "PaceLand tuyển 01 Media Marketing tại Quận 2: quay dựng video, reels, chụp ảnh và nội dung cho dự án bất động sản cao cấp. Thu nhập thỏa thuận theo năng lực.",
+    "stories": []
+  },
+  {
+    "id": "admin-kinh-doanh",
+    "status": "open",
+    "sortOrder": 50,
+    "featured": false,
+    "title": "Admin Kinh doanh",
+    "shortTitle": "Admin Kinh doanh",
+    "count": "02",
+    "category": "van-hanh",
+    "dept": "Kinh doanh",
+    "type": "Toàn thời gian",
+    "location": "Văn phòng Quận 2 (P. Bình Trưng), TP.HCM",
+    "salary": "Thỏa thuận theo năng lực",
+    "datePosted": "2026-09-19",
+    "validThrough": "",
+    "summary": "Đầu mối booking, hồ sơ, dữ liệu và báo cáo, giữ nhịp vận hành cho đội kinh doanh.",
+    "desc": "Giữ nhịp vận hành, nâng tốc đội ngũ: đầu mối booking, hồ sơ, dữ liệu và báo cáo giúp bộ máy kinh doanh chạy gọn, rõ, chuyên nghiệp.",
+    "hero": {
+      "title": "Giữ nhịp vận hành. Nâng tốc đội ngũ.",
+      "sub": "Booking, hồ sơ, dữ liệu, báo cáo: bạn là người giúp bộ máy kinh doanh chạy gọn, rõ và chuyên nghiệp."
+    },
+    "why": {
+      "title": "Vì sao PaceLand cần vị trí này",
+      "text": "Khi đội kinh doanh mở rộng thêm {{agentCount}} Agent, mỗi giao dịch cần hồ sơ đúng, dữ liệu sạch và báo cáo kịp thời. Admin kinh doanh là người giữ những điều đó.",
+      "points": [
+        {
+          "title": "Môi trường gọn, rõ",
+          "text": "Quy trình và dữ liệu dự án được chuẩn hóa tập trung."
+        },
+        {
+          "title": "Ở trung tâm đội kinh doanh",
+          "text": "Theo sát từng booking đến khi ký hợp đồng."
+        }
+      ]
+    },
+    "duties": [
+      "Quản lý booking giao dịch, lịch hẹn và hồ sơ khách hàng",
+      "Theo dõi dữ liệu giỏ hàng, cập nhật trạng thái căn theo từng dự án",
+      "Chuẩn bị hợp đồng, đối soát chứng từ với chủ đầu tư",
+      "Tổng hợp báo cáo kinh doanh định kỳ cho Ban lãnh đạo",
+      "Hỗ trợ vận hành văn phòng và các sự kiện bán hàng"
+    ],
+    "profiles": [],
+    "reqs": [
+      "Cẩn thận, chi tiết, kỷ luật với số liệu",
+      "Thành thạo Excel / Google Sheets",
+      "Giao tiếp tốt, phối hợp nhịp nhàng nhiều bộ phận",
+      "Ưu tiên từng làm admin hoặc trợ lý kinh doanh bất động sản"
+    ],
+    "kpis": [],
+    "compensation": [
+      {
+        "label": "Thu nhập",
+        "value": "Thỏa thuận",
+        "note": "Theo năng lực và kinh nghiệm"
+      }
+    ],
+    "benefits": [
+      "Môi trường làm việc gọn, rõ, chuyên nghiệp",
+      "Dữ liệu dự án và quy trình được chuẩn hóa tập trung",
+      "Thu nhập thỏa thuận theo năng lực",
+      "Văn phòng hiện đại tại Quận 2"
+    ],
+    "system": [
+      "du-an",
+      "salehub"
+    ],
+    "pathStage": "",
+    "showProducts": false,
+    "environment": [
+      "Văn phòng: {{address}}",
+      "Làm việc cùng đội kinh doanh và Ban lãnh đạo"
+    ],
+    "faq": [
+      {
+        "q": "Vị trí Admin Kinh doanh làm việc ở đâu?",
+        "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}. Đây là khu vực gần các dự án Khu Đông mà PaceLand đang phân phối."
+      },
+      {
+        "q": "Admin kinh doanh cần kỹ năng gì?",
+        "a": "Cẩn thận với số liệu, thành thạo Excel hoặc Google Sheets và phối hợp tốt với nhiều bộ phận. Từng làm admin hoặc trợ lý kinh doanh bất động sản là lợi thế."
+      },
+      {
+        "q": "Thu nhập Admin kinh doanh thế nào?",
+        "a": "Thỏa thuận theo năng lực và kinh nghiệm, trao đổi cụ thể khi phỏng vấn."
+      }
+    ],
+    "finalCta": {
+      "title": "Bạn là người giữ cho mọi thứ đúng chỗ?",
+      "sub": "Gửi thông tin, PaceLand trao đổi với bạn về công việc cụ thể.",
+      "button": "Ứng tuyển Admin Kinh doanh"
+    },
+    "poster": "assets/img/tuyen-dung/admin-kinh-doanh.jpg",
+    "ogImage": "assets/img/tuyen-dung/og-admin-kinh-doanh.jpg",
+    "seoTitle": "Tuyển Admin Kinh doanh bất động sản Quận 2 | PaceLand",
+    "seoDescription": "PaceLand tuyển 02 Admin Kinh doanh tại Quận 2: booking, hồ sơ, dữ liệu và báo cáo cho đội kinh doanh bất động sản cao cấp. Thu nhập thỏa thuận theo năng lực.",
+    "stories": []
   }
 ];
+
+const CAREERS = {
+  "locationShort": "Quận 2, TP.HCM",
+  "hero": {
+    "h1": "Tuyển dụng PaceLand: {{openings}} vị trí bất động sản tại {{locShort}}",
+    "eyebrow": "PaceLand Careers",
+    "title": "Xây sự nghiệp.",
+    "titleAccent": "Không chỉ tìm việc.",
+    "sub": "Đang tuyển {{jobsList}}. Agent nhận {{agentSalary}}, có nguồn khách từ Marketing và được đào tạo từ đầu.",
+    "primaryCta": "Ứng tuyển ngay",
+    "secondaryCta": "Xem vị trí đang tuyển"
+  },
+  "facts": [
+    {
+      "value": "{{openings}}",
+      "label": "vị trí đang tuyển",
+      "note": "{{roles}} vai trò"
+    },
+    {
+      "value": "{{agentBase}}",
+      "label": "lương cứng mỗi tháng",
+      "note": "Agent, cộng chia sẻ doanh thu"
+    },
+    {
+      "value": "75%",
+      "label": "chia sẻ doanh thu tối đa",
+      "note": "Agent, lũy tiến theo kết quả"
+    },
+    {
+      "value": "Quận 2",
+      "label": "văn phòng làm việc",
+      "note": "Khu Đông TP.HCM"
+    }
+  ],
+  "midCta": {
+    "title": "Thấy mình phù hợp?",
+    "jobTitle": "Vị trí này hợp với bạn?",
+    "sub": "Chỉ cần họ tên, số điện thoại và vị trí. Không cần CV ở bước đầu.",
+    "button": "Ứng tuyển ngay"
+  },
+  "story": {
+    "title": "Đừng chỉ tìm một sàn để bán hàng.",
+    "sub": "Hãy xây một sự nghiệp bất động sản thuộc về mình.",
+    "steps": [
+      {
+        "kicker": "Client base",
+        "title": "Xây tệp khách hàng",
+        "text": "Khách từ Marketing, khách giới thiệu và khách của chính bạn cộng dồn qua từng năm."
+      },
+      {
+        "kicker": "Personal brand",
+        "title": "Xây thương hiệu cá nhân",
+        "text": "Mã chứng nhận và trang hồ sơ trên paceland.vn giúp khách kiểm chứng bạn là ai."
+      },
+      {
+        "kicker": "Income",
+        "title": "Tăng thu nhập theo năng lực",
+        "text": "Chia sẻ doanh thu lũy tiến lên đến 75%: kết quả càng tốt, tỷ lệ càng cao."
+      },
+      {
+        "kicker": "Team",
+        "title": "Xây đội nhóm",
+        "text": "Đủ kết quả, bạn lên Leader và dẫn dắt đội của mình."
+      },
+      {
+        "kicker": "Ownership",
+        "title": "Tiến tới quyền sở hữu",
+        "text": "Đích đến của lộ trình là Đối tác sở hữu, theo chính sách của PaceLand."
+      }
+    ]
+  },
+  "ecosystem": {
+    "title": "Bạn không phải tự bơi.",
+    "sub": "Bạn tập trung vào khách hàng và giao dịch. Hệ thống phía sau lo phần còn lại.",
+    "modules": [
+      {
+        "id": "marketing",
+        "title": "Marketing & nội dung",
+        "text": "Website, fanpage, TikTok, YouTube và {{posts}} bài phân tích thị trường đưa khách hàng về.",
+        "href": "/goc-nhin.html",
+        "link": "Xem nội dung"
+      },
+      {
+        "id": "du-an",
+        "title": "Dữ liệu dự án",
+        "text": "{{projects}} dự án có trang thông tin chuẩn hóa: pháp lý, tiến độ, giá tham khảo, câu hỏi thường gặp.",
+        "href": "/du-an.html",
+        "link": "Xem dự án"
+      },
+      {
+        "id": "salehub",
+        "title": "SaleHub",
+        "text": "Cổng làm việc một trang: dự án, công cụ tính và bài gửi khách, mở trên điện thoại là dùng.",
+        "href": "/salehub.html",
+        "link": "Mở SaleHub"
+      },
+      {
+        "id": "cong-cu",
+        "title": "Công cụ tư vấn",
+        "text": "Tính lãi vay, dòng tiền cho thuê, định giá ngay trước mặt khách.",
+        "href": "/cong-cu.html",
+        "link": "Xem công cụ"
+      },
+      {
+        "id": "thuong-hieu",
+        "title": "Hồ sơ & mã chứng nhận",
+        "text": "Mã PL-xxxx tra cứu công khai và trang hồ sơ riêng cho từng thành viên.",
+        "href": "/chung-nhan-doi-tac.html",
+        "link": "Tra cứu chứng nhận"
+      },
+      {
+        "id": "dao-tao",
+        "title": "Đào tạo hội nhập",
+        "text": "Bắt đầu bằng chương trình đào tạo khi nhận việc, trên nền dữ liệu và quy trình chung.",
+        "href": "",
+        "link": ""
+      }
+    ],
+    "flow": [
+      "Khách hàng",
+      "Tư vấn",
+      "Giao dịch"
+    ]
+  },
+  "path": {
+    "title": "Từ Agent đến Leader. Từ người bán hàng đến người xây sự nghiệp.",
+    "sub": "Lộ trình 3 bậc, lũy tiến theo năng lực và kết quả. Điều kiện cụ thể của từng bậc được trao đổi minh bạch khi phỏng vấn.",
+    "stages": [
+      {
+        "id": "sales",
+        "title": "Sales / Agent",
+        "points": [
+          "Nhận khách từ Marketing",
+          "Đào tạo hội nhập, học sản phẩm",
+          "Lương cứng + chia sẻ doanh thu lũy tiến"
+        ],
+        "job": "agent-bat-dong-san"
+      },
+      {
+        "id": "leader",
+        "title": "Leader",
+        "points": [
+          "Chứng minh kết quả",
+          "Xây và dẫn dắt đội nhóm",
+          "Chia sẻ doanh thu đội nhóm"
+        ],
+        "job": "giam-doc-kinh-doanh"
+      },
+      {
+        "id": "partner",
+        "title": "Đối tác sở hữu",
+        "points": [
+          "Gắn bó dài hạn",
+          "Dẫn dắt mảng kinh doanh",
+          "Quyền lợi đồng sở hữu theo chính sách PaceLand"
+        ],
+        "job": ""
+      }
+    ]
+  },
+  "brand": {
+    "title": "Mỗi giao dịch xây thêm giá trị nghề nghiệp của bạn.",
+    "text": "Mỗi thành viên PaceLand có mã chứng nhận riêng, tra cứu công khai, cùng một trang hồ sơ trên paceland.vn. Khách hàng kiểm chứng được bạn trước khi gặp, và uy tín bạn tích lũy thuộc về chính bạn.",
+    "link": "Xem {{partners}} hồ sơ đang hoạt động",
+    "sampleProfile": "nguyen-trung-tin",
+    "sampleLink": "Xem một trang hồ sơ thật"
+  },
+  "income": {
+    "title": "Không chỉ là hoa hồng.",
+    "sub": "Thu nhập rõ theo từng vị trí. Quyền lợi đi cùng cả hệ thống.",
+    "benefits": [
+      "Chia sẻ doanh thu lên đến 75%, cơ chế lũy tiến theo năng lực và kết quả",
+      "Hỗ trợ khách hàng từ Marketing toàn diện",
+      "Hệ thống đào tạo, dữ liệu và vận hành đồng bộ",
+      "Danh mục sản phẩm cao cấp, thanh khoản tốt",
+      "Mã chứng nhận và trang hồ sơ cá nhân trên paceland.vn",
+      "Văn phòng hiện đại tại Quận 2"
+    ]
+  },
+  "products": {
+    "title": "Bán đúng phân khúc. Đi nhanh hơn.",
+    "sub": "Những dự án PaceLand đang tập trung, dữ liệu đã chuẩn hóa để tư vấn.",
+    "focus": [
+      "palm-city",
+      "imperia-sensa-park",
+      "the-global-city",
+      "the-prive",
+      "vinhomes-green-paradise"
+    ],
+    "labels": {
+      "palm-city": "Palm River (Palm City)",
+      "vinhomes-green-paradise": "Vinhomes Green Paradise (Cần Giờ)"
+    }
+  },
+  "process": {
+    "title": "Quy trình tuyển dụng",
+    "sub": "Bốn bước, gọn và rõ.",
+    "steps": [
+      {
+        "title": "Gửi hồ sơ",
+        "text": "Form trên trang, email, Zalo hoặc inbox fanpage PaceLand."
+      },
+      {
+        "title": "Sơ vấn",
+        "text": "Bộ phận tuyển dụng liên hệ trao đổi nhanh về kinh nghiệm, kỳ vọng và vị trí phù hợp."
+      },
+      {
+        "title": "Phỏng vấn tại văn phòng",
+        "text": "Gặp trực tiếp tại văn phòng Quận 2, trao đổi thẳng về công việc, cơ chế, mục tiêu và lộ trình."
+      },
+      {
+        "title": "Thống nhất & nhận việc",
+        "text": "Thống nhất cơ chế và hình thức làm việc, rồi bắt đầu đào tạo hội nhập. Vị trí kinh doanh được cấp mã chứng nhận PL-xxxx và quyền truy cập SaleHub."
+      }
+    ]
+  },
+  "form": {
+    "title": "Ứng tuyển",
+    "sub": "Chỉ cần họ tên, số điện thoại và vị trí. CV không bắt buộc ở bước đầu.",
+    "privacy": "Thông tin chỉ được sử dụng cho mục đích tuyển dụng của PaceLand.",
+    "experienceOptionsSales": [
+      "Chưa có kinh nghiệm bán hàng",
+      "Có kinh nghiệm sales ngoài BĐS",
+      "Dưới 2 năm kinh nghiệm BĐS",
+      "Từ 2 năm kinh nghiệm BĐS trở lên",
+      "Đã quản lý đội nhóm kinh doanh"
+    ],
+    "experienceOptions": [
+      "Mới ra trường hoặc dưới 1 năm",
+      "1–3 năm đúng chuyên môn",
+      "Trên 3 năm đúng chuyên môn",
+      "Đã làm trong ngành bất động sản",
+      "Đã quản lý đội nhóm"
+    ],
+    "successTitle": "Cảm ơn bạn. PaceLand đã nhận hồ sơ.",
+    "successText": "Bộ phận tuyển dụng sẽ xem hồ sơ và liên hệ qua số điện thoại bạn để lại khi phù hợp. Muốn trao đổi thêm, bạn nhắn Zalo PaceLand kèm mã hồ sơ bên dưới.",
+    "errorText": "Chưa gửi được hồ sơ. Anh/chị thử lại, hoặc gửi trực tiếp qua Zalo {{hotline}} hay email {{email}}."
+  },
+  "faq": [
+    {
+      "q": "PaceLand đang tuyển những vị trí nào?",
+      "a": "PaceLand đang tuyển {{openings}} vị trí cho {{roles}} vai trò: {{jobsList}}. Tất cả làm việc tại văn phòng Quận 2, TP.HCM."
+    },
+    {
+      "q": "Chưa có kinh nghiệm bất động sản có ứng tuyển Agent được không?",
+      "a": "Được. PaceLand có hệ thống đào tạo và dữ liệu để người mới bắt đầu. Ứng viên từng làm sales được ưu tiên, nhưng đây không phải điều kiện bắt buộc."
+    },
+    {
+      "q": "Thu nhập của Agent PaceLand gồm những gì?",
+      "a": "Gồm lương cứng 5 triệu đồng/tháng và chia sẻ doanh thu theo cơ chế lũy tiến, tối đa đến 75%. Tỷ lệ cụ thể phụ thuộc năng lực và kết quả, được trao đổi rõ khi phỏng vấn."
+    },
+    {
+      "q": "Agent có được hỗ trợ nguồn khách Marketing không?",
+      "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{projects}} trang dự án, {{posts}} bài phân tích thị trường cùng kênh Facebook, TikTok, YouTube."
+    },
+    {
+      "q": "PaceLand đang phân phối những dòng sản phẩm nào?",
+      "a": "Căn hộ, nhà phố, biệt thự cao cấp với danh mục {{projects}} dự án, tập trung vào {{focusList}}."
+    },
+    {
+      "q": "Lộ trình từ Agent lên Leader như thế nào?",
+      "a": "Lộ trình gồm 3 bậc: Sales (Agent) → Leader → Đối tác sở hữu, lũy tiến theo năng lực và kết quả. Điều kiện cụ thể của từng bậc được trao đổi trực tiếp khi phỏng vấn."
+    },
+    {
+      "q": "Làm việc tại PaceLand ở đâu?",
+      "a": "Tại văn phòng PaceLand ở Quận 2 cũ: {{address}}."
+    },
+    {
+      "q": "Quy trình tuyển dụng gồm những bước nào?",
+      "a": "Gồm 4 bước: gửi hồ sơ, sơ vấn, phỏng vấn trực tiếp tại văn phòng Quận 2, rồi thống nhất cơ chế, nhận việc và đào tạo hội nhập."
+    },
+    {
+      "q": "Mã chứng nhận PL-xxxx là gì?",
+      "a": "Mỗi thành viên PaceLand được cấp một mã chứng nhận riêng, tra cứu công khai tại trang Chứng nhận đối tác, kèm trang hồ sơ cá nhân trên paceland.vn."
+    },
+    {
+      "q": "Ứng tuyển bằng cách nào?",
+      "a": "Điền form trên trang này (chỉ cần họ tên, số điện thoại, vị trí), hoặc gửi CV qua email {{email}}, Zalo {{hotline}} hay inbox fanpage PaceLand."
+    }
+  ],
+  "finalCta": {
+    "title": "Bắt đầu bằng một cuộc trao đổi.",
+    "sub": "Không cần hồ sơ hoàn hảo. Để lại thông tin, PaceLand liên hệ khi phù hợp.",
+    "button": "Ứng tuyển ngay"
+  },
+  "seo": {
+    "title": "Tuyển dụng bất động sản Quận 2: {{openings}} vị trí | PaceLand",
+    "description": "Tuyển {{openings}} vị trí bất động sản tại Quận 2, TP.HCM: {{rolesList}}. Chia sẻ doanh thu đến 75%."
+  },
+  "posters": {
+    "hub": "assets/img/tuyen-dung/tong-hop.jpg",
+    "products": "assets/img/tuyen-dung/danh-muc.jpg",
+    "income": "assets/img/tuyen-dung/quyen-loi.jpg"
+  },
+  "ogImage": "assets/img/tuyen-dung/og-tuyen-dung.jpg",
+  "stories": []
+};
 
 /* Chứng nhận Đối tác — danh bạ cố vấn/đối tác chính thức để khách hàng tra cứu xác minh.
    Quản lý trong Admin → Chứng nhận Đối tác. status: "active" (đang hợp tác) | "inactive" (đã ngừng). */
@@ -2168,7 +3301,7 @@ const FAQS = [
       },
       {
         "q": "Chính sách hoa hồng ra sao?",
-        "a": "Hoa hồng lũy tiến thuộc nhóm cao nhất thị trường (55–70%), kèm cơ hội nhận cổ phần ưu đãi theo lộ trình 3 năm."
+        "a": "Nhân sự kinh doanh trực tiếp (Agent) nhận lương cứng 5 triệu/tháng và chia sẻ doanh thu lũy tiến lên đến 75% theo năng lực và kết quả; đối tác đại lý hưởng chính sách 50–70%. Lộ trình dài hạn có cơ hội nhận cổ phần ưu đãi (lộ trình 3 năm). Chi tiết xem trang Tuyển dụng và trang Đối tác."
       }
     ]
   }
@@ -2285,32 +3418,6 @@ const PAGES = {
       }
     ]
   },
-  "careers": {
-    "name": "Tuyển dụng",
-    "fields": [
-      {
-        "k": "hero_eyebrow",
-        "label": "Hero · nhãn trên",
-        "value": "Gia nhập PaceLand"
-      },
-      {
-        "k": "hero_t1",
-        "label": "Hero · tiêu đề dòng 1",
-        "value": "Chúng ta không tìm người làm thuê."
-      },
-      {
-        "k": "hero_t2",
-        "label": "Hero · tiêu đề dòng 2 (nghiêng đỏ)",
-        "value": "Chúng ta tìm người cùng kiến tạo."
-      },
-      {
-        "k": "hero_sub",
-        "label": "Hero · mô tả",
-        "type": "textarea",
-        "value": "Tại PaceLand, mỗi cá nhân đều có lộ trình rõ ràng để phát triển — từ cộng tác viên đến đồng sở hữu. Thu nhập xứng đáng, văn hoá nói thật làm thật, và một sứ mệnh đáng để theo đuổi."
-      }
-    ]
-  },
   "faq": {
     "name": "Câu hỏi (FAQ)",
     "fields": [
@@ -2392,7 +3499,7 @@ const HERO_SLIDES_REPO = "khaibaodai/paceland-website";
 const HERO_SLIDES_BRANCH = "main";
 
 if (typeof window !== "undefined") {
-  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
+  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.CAREERS = CAREERS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;
 }
 
 /* CMS override */
@@ -2424,7 +3531,12 @@ if (typeof window !== "undefined") {
         });
       }
     }
-    r(JOBS, cms.jobs);
+    /* Vị trí: gộp theo id — bản lưu cũ thiếu trường mới (faq, hero, …) vẫn giữ trường đó từ data.js */
+    if (Array.isArray(cms.jobs) && cms.jobs.length && cms.jobs.every(function (j) { return j && j.category && j.status; })) {
+      var seedJobs = {};
+      JOBS.forEach(function (sj) { seedJobs[sj.id] = sj; });
+      r(JOBS, cms.jobs.map(function (cj) { return Object.assign({}, seedJobs[cj.id] || {}, cj); }));
+    }
     r(PARTNERS, cms.partners);
     /* FAQ: gộp theo tên nhóm — nhóm mới trong data.js không bị bản lưu cũ đè */
     if (Array.isArray(cms.faqs)) {

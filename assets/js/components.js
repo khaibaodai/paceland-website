@@ -138,8 +138,10 @@ function currentPage() {
 
 function buildHeader() {
   var cur = currentPage();
+  /* Trang vị trí /tuyen-dung/<slug>.html vẫn sáng mục "Tuyển dụng" */
+  var inCareers = /^\/tuyen-dung(\/|\.html|$)/.test(location.pathname);
   var links = NAV.map(function (n) {
-    var active = n.href === cur ? " active" : "";
+    var active = (n.href === cur || (inCareers && n.href === "tuyen-dung.html")) ? " active" : "";
     return '<a class="' + active.trim() + '" href="/' + n.href + '">' + n.label + "</a>";
   }).join("");
   var mlinks = NAV.map(function (n) {
@@ -153,7 +155,7 @@ function buildHeader() {
       '<nav class="nav" aria-label="Điều hướng chính">' + links + "</nav>" +
       '<div class="header-cta">' +
         '<a class="header-phone" href="tel:' + SITE.hotlineRaw + '">' + ICONS.phone + SITE.hotline + "</a>" +
-        '<a class="btn" href="/lien-he.html">Tư vấn riêng ' + ICONS.arrow + "</a>" +
+        headerCta() +
       "</div>" +
       '<button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
     "</div>" +
@@ -161,6 +163,14 @@ function buildHeader() {
   '<div class="mobile-nav" id="mobileNav">' + mlinks +
     '<div class="m-foot"><a href="tel:' + SITE.hotlineRaw + '" style="color:var(--red);font-weight:700">' + SITE.hotline + "</a><br>" + SITE.email + "</div>" +
   "</div>";
+}
+
+/* Nút CTA header: trang tuyển dụng dẫn thẳng vào form ứng tuyển, các trang khác giữ "Tư vấn riêng" */
+function headerCta() {
+  var careers = document.body && document.body.classList.contains("careers");
+  if (!careers) return '<a class="btn" href="/lien-he.html">Tư vấn riêng ' + ICONS.arrow + "</a>";
+  var href = document.getElementById("form-ung-tuyen") ? "#form-ung-tuyen" : "/tuyen-dung.html#form-ung-tuyen";
+  return '<a class="btn" href="' + href + '" data-apply data-cta="header">Ứng tuyển ' + ICONS.arrow + "</a>";
 }
 
 function buildFooter() {

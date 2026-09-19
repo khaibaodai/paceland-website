@@ -1,0 +1,13 @@
+{
+  "name": "paceland-website",
+  "private": true,
+  "description": "PaceLand — site tĩnh + prerender SEO/GEO + Recruitment System",
+  "scripts": {
+    "build": "node tools/prerender.mjs",
+    "test": "node --test \"tools/tests/*.test.mjs\"",
+    "check": "node --check assets/js/data.js && node --check assets/js/main.js && node --check assets/js/careers.js && node --check assets/js/admin.js && node --check assets/js/components.js",
+    "og": "python tools/og_jobs.py",
+    "verify": "npm run check && npm run build && npm test"
+  },
+  "engines": { "node": ">=20" }
+}

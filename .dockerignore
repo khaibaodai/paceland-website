@@ -20,3 +20,7 @@ assets/img/media/hero-paceland.png
 *.md
 *.zip
 netlify.toml
+
+# Tooling phát triển (không phục vụ web)
+package.json
+package-lock.json

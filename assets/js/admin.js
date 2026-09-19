@@ -181,7 +181,7 @@
   function rowHTML(tab, it, i) {
     if (tab === "projects") return '<div class="admin-row">' + thumb(it.cover) + '<div class="info"><b>' + esc(it.name) + "</b><span>" + esc(it.location) + " · " + esc(it.priceText) + "</span></div><span class=\"tag\">" + esc(it.status) + "</span>" + ops(i) + "</div>";
     if (tab === "posts") return '<div class="admin-row">' + thumb(it.cover) + '<div class="info"><b>' + esc(it.title) + "</b><span>" + esc(it.category) + " · " + esc(it.date) + "</span></div>" + ops(i) + "</div>";
-    if (tab === "jobs") return '<div class="admin-row"><div class="info"><b>' + esc(it.title) + "</b><span>" + esc(it.dept) + " · " + esc(it.location) + "</span></div>" + ops(i) + "</div>";
+    if (tab === "jobs") return '<div class="admin-row"><div class="info"><b>' + esc(it.title) + "</b><span>" + esc(it.count || "") + " vị trí · " + esc(it.dept) + " · /tuyen-dung/" + esc(it.id) + '.html</span></div><span class="tag">' + esc(JOB_STATUS[it.status || "open"]) + "</span>" + ops(i) + "</div>";
     if (tab === "partners") return '<div class="admin-row">' + thumb(it.photo) + '<div class="info"><b>' + esc(it.name) + "</b><span>" + esc(it.role) + " · Mã " + esc(it.code) + "</span></div><span class=\"tag\">" + esc(PARTNER_STATUS_LABEL[it.status] || it.status) + "</span>" + ops(i) + "</div>";
     if (tab === "faqs") return '<div class="admin-row"><div class="info"><b>' + esc(it.q) + '</b><span>' + esc((it.a || "").slice(0, 70)) + "…</span></div><span class=\"tag\">" + esc(it.group) + "</span>" + ops(i) + "</div>";
     return "";
@@ -348,16 +348,41 @@
       field("Nội dung", "f_body", blocksToText(it.body), { full: true, type: "textarea", rows: 240, hint: 'Dòng thường = đoạn văn · "## " = tiêu đề · "> " = trích dẫn · "- " = gạch đầu dòng' }) +
       "</div>";
     if (tab === "jobs") return '<div class="fgrid">' +
+      '<div class="afield full" style="font-size:.84rem;color:var(--muted);line-height:1.5">Trang vị trí được tự sinh tại <b>/tuyen-dung/&lt;slug&gt;.html</b> sau khi Xuất bản. Chỉ ghi thông tin có thật — không hứa thu nhập, KPI hay chế độ chưa có trong chính sách.</div>' +
       field("Tên vị trí", "f_title", it.title, { full: true }) +
+      field("Tên ngắn (badge, ảnh chia sẻ)", "f_shortTitle", it.shortTitle, { ph: "VD: Agent" }) +
+      field("Slug URL", "f_id", it.id, { ph: "tu-sinh-tu-ten-neu-de-trong", hint: it.id ? "ĐỪNG đổi khi vị trí đã được Google index — đổi slug là đổi URL." : "Để trống sẽ tự tạo từ tên vị trí." }) +
+      field("Trạng thái", "f_status", JOB_STATUS[it.status || "open"], { type: "select", options: [JOB_STATUS.open, JOB_STATUS.closed], hint: "Đã đóng: trang vẫn còn (tránh lỗi 404) nhưng noindex, rời trang tổng và sitemap." }) +
+      field("Nhóm (bộ lọc)", "f_category", JOB_CATS[it.category] || JOB_CATS["kinh-doanh"], { type: "select", options: Object.keys(JOB_CATS).map(function (k) { return JOB_CATS[k]; }) }) +
       field("Số lượng", "f_count", it.count, { ph: "VD: 02" }) +
       field("Phòng ban", "f_dept", it.dept) +
-      field("Hình thức", "f_type", it.type, { ph: "VD: Toàn thời gian" }) +
+      field("Hình thức", "f_type", it.type, { ph: "Toàn thời gian / Bán thời gian / Cộng tác viên" }) +
       field("Địa điểm", "f_location", it.location) +
-      field("Thu nhập", "f_salary", it.salary) +
-      field("Mô tả", "f_desc", it.desc, { full: true, type: "textarea", rows: 80 }) +
+      field("Thu nhập (nhãn hiển thị)", "f_salary", it.salary, { full: true }) +
+      field("Lương cứng/tháng (VND, cho schema)", "f_baseSalary", it.baseSalary && it.baseSalary.value ? it.baseSalary.value : "", { ph: "VD: 5000000 — để trống nếu thỏa thuận" }) +
+      field("Ngày đăng", "f_datePosted", it.datePosted || new Date().toISOString().slice(0, 10), { type: "date" }) +
+      field("Hạn nhận hồ sơ", "f_validThrough", it.validThrough || "", { type: "date", hint: "Để trống nếu tuyển liên tục." }) +
+      field("Thứ tự hiển thị", "f_sortOrder", it.sortOrder != null ? it.sortOrder : 100, { type: "number" }) +
+      field("Tóm tắt 1 câu (thẻ vị trí)", "f_summary", it.summary, { full: true }) +
+      field("Mô tả (meta + JobPosting)", "f_desc", it.desc, { full: true, type: "textarea", rows: 80 }) +
+      field("Hero — tiêu đề (2 câu, câu sau tô đỏ)", "f_heroTitle", (it.hero || {}).title, { full: true }) +
+      field("Hero — dòng phụ", "f_heroSub", (it.hero || {}).sub, { full: true }) +
+      field("Vì sao vị trí này — tiêu đề", "f_whyTitle", (it.why || {}).title, { full: true }) +
+      field("Vì sao vị trí này — đoạn", "f_whyText", (it.why || {}).text, { full: true, type: "textarea", rows: 70 }) +
+      field("Vì sao — điểm nhấn", "f_whyPoints", ((it.why || {}).points || []).map(function (p) { return p.title + " | " + p.text; }).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi dòng: Tiêu đề | Nội dung" }) +
       field("Mô tả công việc", "f_duties", (it.duties || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
+      field("Chân dung ứng viên (persona)", "f_profiles", (it.profiles || []).map(function (p) { return p.title + " | " + p.text; }).join("\n"), { full: true, type: "textarea", rows: 80, hint: "Mỗi dòng: Tiêu đề | Nội dung. Để trống nếu không cần." }) +
       field("Yêu cầu", "f_reqs", (it.reqs || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
+      field("Kỳ vọng kết quả (KPI)", "f_kpis", (it.kpis || []).join("\n"), { full: true, type: "textarea", rows: 60, hint: "Chỉ điền khi có KPI thật. Mỗi ý 1 dòng." }) +
+      field("Thu nhập — thẻ", "f_compensation", (it.compensation || []).map(function (c) { return c.label + " | " + c.value + (c.note ? " | " + c.note : ""); }).join("\n"), { full: true, type: "textarea", rows: 70, hint: "Mỗi dòng: Nhãn | Giá trị | Ghi chú" }) +
       field("Quyền lợi", "f_benefits", (it.benefits || []).join("\n"), { full: true, type: "textarea", rows: 90, hint: "Mỗi ý 1 dòng" }) +
+      field("Môi trường làm việc", "f_environment", (it.environment || []).join("\n"), { full: true, type: "textarea", rows: 60, hint: "Mỗi ý 1 dòng. {{address}} = địa chỉ văn phòng." }) +
+      field("Hỏi nhanh (FAQ)", "f_faq", (it.faq || []).map(function (f) { return f.q + " | " + f.a; }).join("\n"), { full: true, type: "textarea", rows: 110, hint: "Mỗi dòng: Câu hỏi | Trả lời. Phải khớp chính sách thật." }) +
+      field("CTA cuối — tiêu đề", "f_ctaTitle", (it.finalCta || {}).title, { full: true }) +
+      field("CTA cuối — dòng phụ", "f_ctaSub", (it.finalCta || {}).sub, { full: true }) +
+      field("Poster (1080×1080)", "f_poster", it.poster, { ph: "assets/img/tuyen-dung/ten-vi-tri.jpg" }) +
+      field("SEO title", "f_seoTitle", it.seoTitle, { full: true }) +
+      field("SEO description", "f_seoDescription", it.seoDescription, { full: true, type: "textarea", rows: 60 }) +
       "</div>";
     if (tab === "partners") return '<div class="fgrid">' +
       field("Họ và tên", "f_name", it.name, { full: true, ph: "VD: Nguyễn Văn A" }) +
@@ -383,7 +408,7 @@
       "</div>";
     return "";
   }
-  function collect(tab) {
+  function collect(tab, base) {
     var g = function (id) { var el = $(id); return el ? el.value.trim() : ""; };
     if (tab === "projects") {
       var st = g("f_status");
@@ -408,7 +433,31 @@
       };
     }
     if (tab === "posts") return { id: slug(g("f_title")), title: g("f_title"), category: g("f_category"), date: g("f_date"), readtime: g("f_readtime"), cover: g("f_cover"), excerpt: g("f_excerpt"), body: textToBlocks(g("f_body")) };
-    if (tab === "jobs") return { id: slug(g("f_title")), title: g("f_title"), count: g("f_count"), dept: g("f_dept"), type: g("f_type"), location: g("f_location"), salary: g("f_salary"), desc: g("f_desc"), duties: lines(g("f_duties")), reqs: lines(g("f_reqs")), benefits: lines(g("f_benefits")) };
+    if (tab === "jobs") {
+      var pairs = function (txt, a, b) { return lines(txt).map(function (ln) { var p = ln.split("|"); var o = {}; o[a] = (p[0] || "").trim(); o[b] = p.slice(1).join("|").trim(); return o; }).filter(function (o) { return o[a]; }); };
+      var job = Object.assign({}, clone(base || {}), {
+        id: g("f_id") ? slug(g("f_id")) : ((base && base.id) || slug(g("f_title"))),
+        status: g("f_status") === JOB_STATUS.closed ? "closed" : "open",
+        category: Object.keys(JOB_CATS).filter(function (k) { return JOB_CATS[k] === g("f_category"); })[0] || "kinh-doanh",
+        title: g("f_title"), shortTitle: g("f_shortTitle") || g("f_title"), count: g("f_count"),
+        dept: g("f_dept"), type: g("f_type"), location: g("f_location"), salary: g("f_salary"),
+        datePosted: g("f_datePosted"), validThrough: g("f_validThrough"), sortOrder: parseInt(g("f_sortOrder"), 10) || 100,
+        summary: g("f_summary"), desc: g("f_desc"),
+        hero: { title: g("f_heroTitle"), sub: g("f_heroSub") },
+        why: { title: g("f_whyTitle"), text: g("f_whyText"), points: pairs(g("f_whyPoints"), "title", "text") },
+        duties: lines(g("f_duties")), profiles: pairs(g("f_profiles"), "title", "text"), reqs: lines(g("f_reqs")), kpis: lines(g("f_kpis")),
+        compensation: lines(g("f_compensation")).map(function (ln) { var p = ln.split("|"); return { label: (p[0] || "").trim(), value: (p[1] || "").trim(), note: (p[2] || "").trim() }; }).filter(function (c) { return c.label && c.value; }),
+        benefits: lines(g("f_benefits")), environment: lines(g("f_environment")),
+        faq: pairs(g("f_faq"), "q", "a").filter(function (f) { return f.a; }),
+        finalCta: Object.assign({}, (base && base.finalCta) || {}, { title: g("f_ctaTitle"), sub: g("f_ctaSub") }),
+        poster: g("f_poster"), seoTitle: g("f_seoTitle"), seoDescription: g("f_seoDescription")
+      });
+      var bs = parseInt(String(g("f_baseSalary")).replace(/\D/g, ""), 10);
+      if (bs) job.baseSalary = { value: bs, currency: "VND", unit: "MONTH" }; else delete job.baseSalary;
+      if (!job.ogImage) job.ogImage = "assets/img/tuyen-dung/og-" + job.id + ".jpg";
+      ["system", "stories"].forEach(function (k) { if (!job[k]) job[k] = []; });
+      return job;
+    }
     if (tab === "partners") return {
       id: slug(g("f_name")), code: g("f_code") || nextPartnerCode(), name: g("f_name"), role: g("f_role"),
       level: g("f_level") || PARTNER_LEVELS[0],
@@ -428,6 +477,8 @@
     });
     return "PL-" + String(max + 1).padStart(4, "0");
   }
+  var JOB_STATUS = { open: "Đang tuyển", closed: "Đã đóng" };
+  var JOB_CATS = { "kinh-doanh": "Kinh doanh", marketing: "Marketing", "van-hanh": "Vận hành", "lanh-dao": "Lãnh đạo" };
   function nameField(tab) { return tab === "projects" ? "name" : tab === "faqs" ? "q" : tab === "partners" ? "name" : "title"; }
 
   function openForm(tab, idx) {
@@ -444,8 +495,13 @@
     modal.onclick = function (e) { if (e.target === modal) close(); };
     bindImgFields(modal);
     $("mSave").onclick = function () {
-      var obj = collect(tab);
+      var obj = collect(tab, it);
       if (!obj[nameField(tab)]) { toast("Vui lòng nhập " + (tab === "faqs" ? "câu hỏi" : "tên/tiêu đề")); return; }
+      /* Vị trí tuyển dụng: slug là URL /tuyen-dung/<slug>.html — trùng slug sẽ ghi đè trang của vị trí khác */
+      if (tab === "jobs" && state.jobs.some(function (x, i) { return x && x.id === obj.id && i !== idx; })) {
+        toast("Slug “" + obj.id + "” đã dùng cho vị trí khác. Đặt slug khác để không ghi đè trang cũ.");
+        return;
+      }
       if (editing) state[tab][idx] = obj; else state[tab].unshift(obj);
       persist(); close(); render(); toast("Đã lưu “" + (obj[nameField(tab)] || "").slice(0, 30) + "”");
     };
@@ -571,6 +627,7 @@
       field("YouTube", "s_youtube", s.youtube) +
       field("TikTok", "s_tiktok", s.tiktok) +
       field("Form endpoint (Formspree)", "s_formEndpoint", s.formEndpoint, { full: true, hint: "VD: https://formspree.io/f/abcxyz" }) +
+      field("Form endpoint cho hồ sơ ứng tuyển (tuỳ chọn)", "s_careersEndpoint", s.careersEndpoint || "", { full: true, hint: "Tạo một form Formspree riêng cho tuyển dụng để hồ sơ ứng viên không dùng chung hạn mức với lead mua nhà. Để trống = dùng Form endpoint ở trên." }) +
       field("Mã nhúng bản đồ (src)", "s_mapEmbed", s.mapEmbed, { full: true }) +
       '</div><button class="btn mt-2" id="saveSettings" style="margin-top:1.2rem">Lưu cài đặt</button></div>' +
       (function () {
@@ -583,6 +640,7 @@
           field("Google Ads ID (AW-XXXX)", "s_tr_adsId", tr.adsId || "", { hint: "Chỉ cần khi chạy Google Ads" }) +
           field("Google Ads Conversion Label", "s_tr_adsLabel", tr.adsLabel || "", { hint: "Trong phần Chuyển đổi của Google Ads" }) +
           field("Meta Pixel ID", "s_tr_metaPixel", tr.metaPixel || "", { hint: "business.facebook.com → Trình quản lý sự kiện" }) +
+          field("TikTok Pixel ID", "s_tr_tiktokPixel", tr.tiktokPixel || "", { hint: "ads.tiktok.com → Tài sản → Sự kiện → Web" }) +
           field("Link nhận Lead (Apps Script)", "s_leadEndpoint", s.leadEndpoint || "", { full: true, hint: "Dán link /exec sau khi cài Google Sheet theo tools/google-apps-script-lead.gs — lead đổ vào Sheet + email báo" }) +
           '</div><button class="btn mt-2" id="saveTracking" style="margin-top:1.2rem">Lưu Tracking & Lead</button></div>';
       })() +
@@ -655,7 +713,7 @@
   }
   function bindSettings() {
     $("saveSettings").onclick = function () {
-      ["name", "legalName", "tagline", "hotline", "hotlineRaw", "email", "zalo", "address", "facebook", "youtube", "tiktok", "formEndpoint", "mapEmbed"].forEach(function (k) {
+      ["name", "legalName", "tagline", "hotline", "hotlineRaw", "email", "zalo", "address", "facebook", "youtube", "tiktok", "formEndpoint", "careersEndpoint", "mapEmbed"].forEach(function (k) {
         var el = $("s_" + k); if (el) state.site[k] = el.value.trim();
       });
       persist(); toast("Đã lưu cài đặt");
@@ -665,7 +723,8 @@
         ga4: ($("s_tr_ga4") || { value: "" }).value.trim(),
         adsId: ($("s_tr_adsId") || { value: "" }).value.trim(),
         adsLabel: ($("s_tr_adsLabel") || { value: "" }).value.trim(),
-        metaPixel: ($("s_tr_metaPixel") || { value: "" }).value.trim()
+        metaPixel: ($("s_tr_metaPixel") || { value: "" }).value.trim(),
+        tiktokPixel: ($("s_tr_tiktokPixel") || { value: "" }).value.trim()
       };
       state.site.leadEndpoint = ($("s_leadEndpoint") || { value: "" }).value.trim();
       persist(); toast("Đã lưu Tracking & Lead — nhớ Xuất bản để áp dụng lên website");
@@ -741,13 +800,14 @@
     out += "const POSTS = " + jslit(s.posts) + ";" + NL + NL;
     out += "const VALUES = " + jslit(window.VALUES) + ";" + NL + NL;
     out += "const JOBS = " + jslit(s.jobs) + ";" + NL + NL;
+    out += "const CAREERS = " + jslit(window.CAREERS || {}) + ";" + NL + NL;
     out += "const PARTNERS = " + jslit(s.partners) + ";" + NL + NL;
     out += "const FAQS = " + jslit(groupFaqs(s.faqs)) + ";" + NL + NL;
     out += "const PAGES = " + jslit(s.pages) + ";" + NL + NL;
     out += "const HERO_SLIDES = " + jslit(s.heroSlides) + ";" + NL + NL;
     out += 'const HERO_SLIDES_REPO = "' + (localStorage.getItem(GH_REPO_KEY) || "") + '";\n';
     out += 'const HERO_SLIDES_BRANCH = "' + (localStorage.getItem(GH_BRANCH_KEY) || "main") + '";\n\n';
-    out += 'if (typeof window !== "undefined") {' + NL + "  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;" + NL + "}" + NL + NL;
+    out += 'if (typeof window !== "undefined") {' + NL + "  window.SITE = SITE; window.NAV = NAV; window.PROJECTS = PROJECTS; window.POSTS = POSTS; window.FILTERS = FILTERS; window.VALUES = VALUES; window.JOBS = JOBS; window.CAREERS = CAREERS; window.PARTNERS = PARTNERS; window.FAQS = FAQS; window.PAGES = PAGES; window.HERO_SLIDES = HERO_SLIDES; window.HERO_SLIDES_REPO = HERO_SLIDES_REPO; window.HERO_SLIDES_BRANCH = HERO_SLIDES_BRANCH; window.ph = ph;" + NL + "}" + NL + NL;
     out += "/* CMS override */" + NL +
 "(function () {" + NL +
 "  if (typeof window === 'undefined') return;" + NL +
@@ -776,7 +836,12 @@
 "        });" + NL +
 "      }" + NL +
 "    }" + NL +
-"    r(JOBS, cms.jobs);" + NL +
+"    /* Vị trí: gộp theo id — bản lưu cũ thiếu trường mới (faq, hero, …) vẫn giữ trường đó từ data.js */" + NL +
+"    if (Array.isArray(cms.jobs) && cms.jobs.length && cms.jobs.every(function (j) { return j && j.category && j.status; })) {" + NL +
+"      var seedJobs = {};" + NL +
+"      JOBS.forEach(function (sj) { seedJobs[sj.id] = sj; });" + NL +
+"      r(JOBS, cms.jobs.map(function (cj) { return Object.assign({}, seedJobs[cj.id] || {}, cj); }));" + NL +
+"    }" + NL +
 "    r(PARTNERS, cms.partners);" + NL +
 "    if (Array.isArray(cms.faqs)) {" + NL +
 "      var seedFaqs = FAQS.slice();" + NL +

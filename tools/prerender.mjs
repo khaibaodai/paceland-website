@@ -17,6 +17,8 @@ import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
+import { buildContext, openJobs, renderCareersHub, renderJobPage, jobPostingLd, faqLd, itemListLd } from "./careers-render.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE_URL = "https://paceland.vn";
@@ -28,20 +30,21 @@ const sandbox = { window: {}, console };
 vm.createContext(sandbox);
 vm.runInContext(dataSrc + "\n" + compSrc, sandbox);
 const W = sandbox.window;
-const { SITE, NAV, PROJECTS, POSTS, FAQS, PARTNERS, JOBS } = W;
+const { SITE, NAV, PROJECTS, POSTS, FAQS, PARTNERS, JOBS, CAREERS } = W;
 const renderProjectCard = W.renderProjectCard;
 const renderPostCard = W.renderPostCard;
 const renderPartnerCard = W.renderPartnerCard;
 const resolveImg = W.resolveImg;
 
-/* ---------- Phiên bản script lấy từ index.html (tự đồng bộ) ---------- */
-const indexHtml = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
-const ver = (re, fb) => (indexHtml.match(re) || [, fb])[1];
+/* ---------- Phiên bản asset = băm nội dung (8 ký tự md5) ----------
+   Đổi nội dung file là đổi ?v= trên MỌI trang (bước cuối của script) — không còn phải tăng tay,
+   kể cả khi Admin xuất bản data.js qua GitHub (CI chạy lại prerender). */
+const assetHash = (rel) => createHash("md5").update(fs.readFileSync(path.join(ROOT, rel))).digest("hex").slice(0, 8);
 const V = {
-  data: ver(/data\.js\?v=(\d+)/, "1"),
-  comp: ver(/components\.js\?v=(\d+)/, "1"),
-  main: ver(/main\.js\?v=(\d+)/, "1"),
-  css: ver(/styles\.css\?v=(\d+)/, "1"),
+  data: assetHash("assets/js/data.js"),
+  comp: assetHash("assets/js/components.js"),
+  main: assetHash("assets/js/main.js"),
+  css: assetHash("assets/css/styles.css"),
 };
 
 /* ---------- Tiện ích ---------- */
@@ -107,6 +110,7 @@ const ORG_LD = {
   "@type": "RealEstateAgent",
   "@id": SITE_URL + "/#organization",
   name: SITE.name,
+  alternateName: "Pace Land",
   legalName: SITE.legalName,
   slogan: SITE.tagline,
   description: "Mạng lưới bất động sản kín tại TP.HCM — tư vấn căn hộ hạng sang, siêu sang tại Thủ Thiêm, Khu Đông, Quận 1 dựa trên dữ liệu. Tư vấn miễn phí cho người mua.",
@@ -123,7 +127,11 @@ const ORG_LD = {
 const WEBSITE_LD = { "@context": "https://schema.org", "@type": "WebSite", "@id": SITE_URL + "/#website", url: SITE_URL + "/", name: "PaceLand", inLanguage: "vi-VN", publisher: { "@id": SITE_URL + "/#organization" } };
 
 /* ---------- Khung trang con (bài viết / dự án) ---------- */
-function pageShell({ title, desc, canonical, ogImage, ogType, ldTags, bodyMain }) {
+/* Footer tĩnh: bot đọc được liên kết điều hướng mà không cần chạy JS; components.js vẫn dựng lại khi tải trang */
+const FOOTER_HTML = typeof sandbox.buildFooter === "function" ? sandbox.buildFooter() : "";
+const footerRoot = () => `<div id="footer-root"><!--pr:footer-->${FOOTER_HTML}<!--/pr:footer--></div>`;
+
+function pageShell({ title, desc, canonical, ogImage, ogType, ldTags, bodyMain, bodyClass = "", extraHead = "", extraScripts = "", robots = "index, follow", ogImageAlt = "", ogImageSize = null }) {
   return `<!doctype html>
 <html lang="vi">
 <head>
@@ -137,7 +145,7 @@ function pageShell({ title, desc, canonical, ogImage, ogType, ldTags, bodyMain }
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css?v=${V.css}">
 <link rel="canonical" href="${canonical}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${robots}">
 <meta name="theme-color" content="#C70018">
 <meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="PaceLand">
@@ -146,22 +154,25 @@ function pageShell({ title, desc, canonical, ogImage, ogType, ldTags, bodyMain }
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${ogImage}">
-<meta name="twitter:card" content="summary_large_image">
+${ogImageSize ? `<meta property="og:image:width" content="${ogImageSize[0]}">
+<meta property="og:image:height" content="${ogImageSize[1]}">
+` : ""}${ogImageAlt ? `<meta property="og:image:alt" content="${esc(ogImageAlt)}">
+` : ""}<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${ogImage}">
 ${ldTags.join("\n")}
-</head>
-<body>
+${extraHead}</head>
+<body${bodyClass ? ` class="${bodyClass}"` : ""}>
 <div id="header-root"></div>
 <main>
 ${bodyMain}
 </main>
-<div id="footer-root"></div>
+${footerRoot()}
 <script src="/assets/js/data.js?v=${V.data}"></script>
 <script src="/assets/js/components.js?v=${V.comp}"></script>
 <script src="/assets/js/main.js?v=${V.main}"></script>
-</body>
+${extraScripts}</body>
 </html>
 `;
 }
@@ -510,6 +521,7 @@ for (const cv of activePartners) {
           <a class="btn btn--ghost" href="/lien-he.html">Đặt lịch tư vấn</a>
         </div>
         <p class="mt-2" style="font-size:.82rem;color:var(--muted)">Xác minh người thật: nhập mã <b>${esc(cv.code)}</b> tại trang <a href="/chung-nhan-doi-tac.html" style="color:var(--red)">Chứng nhận Đối tác</a> — cơ chế chống mạo danh của PaceLand.</p>
+        <p class="mt-1" style="font-size:.82rem;color:var(--muted)">Muốn trở thành chuyên viên được chứng nhận? <a href="/tuyen-dung.html" style="color:var(--red)">Xem vị trí PaceLand đang tuyển</a>.</p>
       </div>
     </div>
   </div>
@@ -647,94 +659,89 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
   return h;
 });
 
-/* ---------- 3c. Trang tĩnh từng VỊ TRÍ TUYỂN DỤNG (JobPosting schema — Google Việc làm) ---------- */
+/* ---------- 3c. RECRUITMENT SYSTEM: /tuyen-dung.html + /tuyen-dung/<slug>.html ----------
+   Nội dung: JOBS + CAREERS (data.js) · Component: tools/careers-render.mjs
+   Vị trí status "closed": vẫn sinh trang (tránh soft-404) nhưng noindex, bỏ JobPosting, rời sitemap. */
 fs.mkdirSync(path.join(ROOT, "tuyen-dung"), { recursive: true });
+const CR_HEAD = `<link rel="stylesheet" href="/assets/css/careers.css?v=${assetHash("assets/css/careers.css")}">\n`;
+const CR_JS = `<script src="/assets/js/careers.js?v=${assetHash("assets/js/careers.js")}"></script>\n`;
+const crCtx = buildContext({ SITE, PROJECTS, POSTS, PARTNERS, JOBS, CAREERS });
+const crOpen = openJobs(JOBS);
 let jobPages = 0;
-const jobValidThrough = (() => { const d = new Date(); d.setDate(d.getDate() + 90); return d.toISOString().slice(0, 10); })();
-const jobList = (items) => `<ul class="mt-2" style="list-style:none;display:grid;gap:.5rem;max-width:78ch">${(items || []).map((x) => `<li style="display:flex;gap:.55rem;align-items:baseline"><span class="gem gem--sm" style="flex:none"></span><span>${esc(x)}</span></li>`).join("")}</ul>`;
-const JOB_POSTERS = {
-  "agent-bat-dong-san": "assets/img/tuyen-dung/agent.jpg",
-  "giam-doc-kinh-doanh": "assets/img/tuyen-dung/giam-doc-kinh-doanh.jpg",
-  "admin-kinh-doanh": "assets/img/tuyen-dung/admin-kinh-doanh.jpg",
-  "digital-marketing": "assets/img/tuyen-dung/digital-marketing.jpg",
-  "media-marketing": "assets/img/tuyen-dung/media-marketing.jpg",
-};
-for (const j of JOBS) {
-  const url = `/tuyen-dung/${j.id}.html`;
-  const canonical = SITE_URL + url;
-  const crumbs = [{ label: "Trang chủ", href: "/index.html" }, { label: "Tuyển dụng", href: "/tuyen-dung.html" }, { label: j.title }];
-  const jobLd = {
-    "@context": "https://schema.org",
-    "@type": "JobPosting",
-    title: j.title,
-    description: `<p>${esc(j.desc)}</p><p><b>Mô tả công việc:</b></p><ul>${(j.duties || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p><b>Yêu cầu:</b></p><ul>${(j.reqs || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p><b>Quyền lợi:</b></p><ul>${(j.benefits || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`,
-    datePosted: today,
-    validThrough: jobValidThrough,
-    employmentType: "FULL_TIME",
-    hiringOrganization: { "@type": "Organization", name: "PaceLand", sameAs: SITE_URL + "/", logo: absUrl("assets/img/logo.png") },
-    jobLocation: { "@type": "Place", address: { "@type": "PostalAddress", streetAddress: "35 Đường số 36, Khu phố 2, P. Bình Trưng", addressLocality: "TP. Thủ Đức", addressRegion: "TP. Hồ Chí Minh", addressCountry: "VN" } },
-    totalJobOpenings: parseInt(j.count, 10) || 1,
-    directApply: true,
-    ...(j.id === "agent-bat-dong-san" ? { baseSalary: { "@type": "MonetaryAmount", currency: "VND", value: { "@type": "QuantitativeValue", value: 5000000, unitText: "MONTH" } } } : {}),
-  };
-  const others = JOBS.filter((x) => x.id !== j.id);
-  const bodyMain = `
-<article class="section section--ivory" style="padding-top:calc(var(--header-h) + clamp(24px,4vw,48px))">
-  <div class="container">
-    ${breadcrumbNav(crumbs)}
-    <span class="eyebrow">${esc(j.dept)} · Tuyển ${esc(j.count || "1")} vị trí</span>
-    <h1 class="mt-1" style="font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12">${esc(j.title)}</h1>
-    <p class="lead mt-2" style="max-width:70ch">${esc(j.desc)}</p>
-    <div class="flex mt-3" style="gap:.5rem;flex-wrap:wrap">
-      <span class="pill">${esc(j.type)}</span>
-      <span class="pill">${esc(j.location)}</span>
-      <span class="pill pill--gold">${esc(j.salary)}</span>
-    </div>
-    ${JOB_POSTERS[j.id] ? `<figure class="mt-3" style="max-width:600px;border-radius:16px;overflow:hidden;border:1px solid var(--line-soft);box-shadow:var(--shadow)"><img src="/${JOB_POSTERS[j.id]}" alt="Poster tuyển dụng ${esc(j.title)} — PaceLand" style="width:100%;display:block" loading="lazy"></figure>` : ""}
-    <h2 class="mt-4" style="font-size:1.3rem">Mô tả công việc</h2>
-    ${jobList(j.duties)}
-    <h2 class="mt-4" style="font-size:1.3rem">Yêu cầu</h2>
-    ${jobList(j.reqs)}
-    <h2 class="mt-4" style="font-size:1.3rem">Quyền lợi</h2>
-    ${jobList(j.benefits)}
-    <h2 class="mt-4" style="font-size:1.3rem">Lộ trình phát triển</h2>
-    <p class="mt-2" style="max-width:78ch;line-height:1.8;color:var(--ink-soft)">Tại PaceLand, mọi vị trí kinh doanh đều đi theo lộ trình <b>Sales → Leader → Đối tác sở hữu</b> với cơ chế lũy tiến theo năng lực và kết quả. Đội ngũ được cấp mã chứng nhận PL-xxxx, trang hồ sơ cá nhân trên paceland.vn và toàn bộ công cụ làm việc tại <a href="/salehub.html" style="color:var(--red);font-weight:600">SaleHub</a>.</p>
-    <div class="flex mt-4" style="gap:.8rem;flex-wrap:wrap">
-      <a class="btn btn--gold btn--lg" href="/tuyen-dung.html#ung-tuyen">Ứng tuyển vị trí này</a>
-      <a class="btn btn--lg" href="tel:0903983737">Gọi 0903 983 737</a>
-      <a class="btn btn--ghost btn--lg" href="https://zalo.me/0903983737" target="_blank" rel="noopener">Nhắn Zalo</a>
-    </div>
-  </div>
-</article>
-<section class="section section--tight section--paper">
-  <div class="container">
-    <div class="facet-rule" style="margin-bottom:clamp(20px,3vw,32px)">Vị trí khác đang tuyển</div>
-    <div class="grid" style="gap:12px">${others.map((o) => `<a class="job-card" href="/tuyen-dung/${o.id}.html" style="text-decoration:none;color:inherit"><div><h3>${o.count ? `<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">${esc(o.count)}</span>` : ""}${esc(o.title)}</h3><div class="job-meta"><span>${esc(o.dept)}</span><span>${esc(o.salary)}</span></div></div><span class="btn">Xem chi tiết</span></a>`).join("")}</div>
-  </div>
-</section>`;
+/* Trang mồ côi: file còn trong /tuyen-dung/ nhưng vị trí đã bị xoá khỏi JOBS -> sinh lại dạng "đã ngừng tuyển"
+   (giữ URL, noindex, bỏ JobPosting) thay vì để nguyên bản cũ còn schema tuyển dụng */
+const crIds = new Set(JOBS.map((j) => j.id));
+const crOrphans = fs.readdirSync(path.join(ROOT, "tuyen-dung"))
+  .filter((f) => f.endsWith(".html") && f !== "index.html" && !crIds.has(f.slice(0, -5)))
+  .map((f) => {
+    const old = fs.readFileSync(path.join(ROOT, "tuyen-dung", f), "utf8");
+    const t = (/data-job-title="([^"]+)"/.exec(old) || [])[1] || f.slice(0, -5).replace(/-/g, " ");
+    const title = t.replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+    return { id: f.slice(0, -5), title, shortTitle: title, status: "closed" };
+  });
+for (const j of [...JOBS, ...crOrphans]) {
+  const page = renderJobPage({ j, C: CAREERS, ctx: crCtx, JOBS, PROJECTS, SITE_URL, root: ROOT });
+  const crumbs = [{ label: "Trang chủ", href: "/" }, { label: "Tuyển dụng", href: "/tuyen-dung.html" }, { label: j.shortTitle || j.title }];
+  const ld = [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))];
+  if (!page.closed) {
+    ld.push(ldTag("pl-ld-job", jobPostingLd(j, { SITE_URL, ORG_LD, ctx: crCtx })));
+    if ((j.faq || []).length) ld.push(ldTag("pl-ld-faq", faqLd(j.faq, crCtx)));
+  }
+  const hasOg = !!(j.ogImage && fs.existsSync(path.join(ROOT, j.ogImage)));
   const html = pageShell({
-    title: `Tuyển ${j.count || ""} ${j.title} — Việc làm bất động sản Quận 2 | PaceLand`,
-    desc: stripTags(j.desc) + ` ${j.salary}. ${j.location}. Ứng tuyển ngay tại PaceLand.`,
-    canonical,
-    ogImage: absUrl(JOB_POSTERS[j.id] || "assets/img/og-image.jpg"),
-    ogType: "website",
-    ldTags: [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-job", jobLd), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))],
-    bodyMain,
+    title: page.title, desc: page.desc, canonical: page.url,
+    ogImage: absUrl(hasOg ? j.ogImage : (j.poster || "assets/img/og-image.jpg")),
+    ogImageSize: hasOg ? [1200, 630] : null,
+    ogImageAlt: page.closed ? `PaceLand Careers — ${j.title}` : `PaceLand Careers — tuyển ${j.count} ${j.title}, ${j.location}`,
+    ogType: "website", ldTags: ld, bodyMain: page.body,
+    bodyClass: "careers no-chat", extraHead: CR_HEAD, extraScripts: CR_JS,
+    robots: page.closed ? "noindex, follow" : "index, follow",
   });
   fs.writeFileSync(path.join(ROOT, "tuyen-dung", `${j.id}.html`), html);
   jobPages++;
 }
-
-patchFile("tuyen-dung.html", (h) => {
-  h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
-  h = inject(h, "jobs", '<div class="grid" style="gap:16px" id="jobList"></div>',
-    JOBS.map((j) =>
-      `<article class="job-card"><div><h3>${j.count ? `<span class="pill pill--red" style="margin-right:.5rem;vertical-align:middle">${esc(j.count)} vị trí</span>` : ""}${esc(j.title)}</h3>` +
-      `<div class="job-meta"><span>${esc(j.dept)}</span><span>${esc(j.location)}</span><span>${esc(j.type)}</span><span>${esc(j.salary)}</span></div></div>` +
-      `<a class="btn" href="/tuyen-dung/${j.id}.html">Xem chi tiết &amp; ứng tuyển</a></article>`
-    ).join(""));
-  return h;
-});
+{
+  const hub = renderCareersHub({ C: CAREERS, ctx: crCtx, JOBS, PROJECTS, root: ROOT });
+  const crumbs = [{ label: "Trang chủ", href: "/" }, { label: "Tuyển dụng" }];
+  const ld = [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))];
+  if (crOpen.length) ld.push(ldTag("pl-ld-jobs", itemListLd(crOpen, SITE_URL)));
+  if ((CAREERS.faq || []).length) ld.push(ldTag("pl-ld-faq", faqLd(CAREERS.faq, crCtx)));
+  const hubOg = !!(CAREERS.ogImage && fs.existsSync(path.join(ROOT, CAREERS.ogImage)));
+  const og = hubOg ? CAREERS.ogImage : "assets/img/tuyen-dung/tong-hop.jpg";
+  fs.writeFileSync(path.join(ROOT, "tuyen-dung.html"), pageShell({
+    title: hub.title, desc: hub.desc, canonical: SITE_URL + "/tuyen-dung.html",
+    ogImage: absUrl(og), ogImageSize: hubOg ? [1200, 630] : null, ogImageAlt: "PaceLand Careers — Xây sự nghiệp. Không chỉ tìm việc.",
+    ogType: "website", ldTags: ld, bodyMain: hub.body,
+    bodyClass: "careers no-chat", extraHead: CR_HEAD, extraScripts: CR_JS,
+  }));
+  console.log(`  ✓ tuyen-dung.html (hub) + ${jobPages} trang vị trí${crOrphans.length ? ` (${crOrphans.length} trang mồ côi -> "đã ngừng tuyển")` : ""}`);
+}
+/* llms.txt: khối "Tuyển dụng" sinh từ JOBS để AI luôn đọc đúng số liệu tuyển dụng hiện hành */
+{
+  const f = path.join(ROOT, "llms.txt");
+  const txt = fs.readFileSync(f, "utf8");
+  const a = txt.indexOf("## Tuyển dụng (PaceLand Careers)");
+  const b = a >= 0 ? txt.indexOf("\n## ", a + 5) : -1;
+  if (a >= 0 && b > a) {
+    const agent = crOpen.find((j) => j.pathStage === "sales");
+    const others = crOpen.filter((j) => j !== agent).map((j) => `${j.shortTitle || j.title}: ${j.salary}`).join("; ");
+    const block = [
+      "## Tuyển dụng (PaceLand Careers)",
+      "",
+      `- PaceLand tuyển ${crCtx.openings} vị trí cho ${crCtx.roles} vai trò, làm việc tại văn phòng Quận 2 cũ (P. Bình Trưng, TP.HCM): ${crOpen.map((j) => `${j.count} ${j.title}`).join(", ")}`,
+      agent ? `- Thu nhập ${agent.shortTitle}: ${agent.salary}; ${others}` : `- Thu nhập: ${others}`,
+      `- Lộ trình nghề nghiệp ${(CAREERS.path.stages || []).length} bậc: ${(CAREERS.path.stages || []).map((s) => s.title).join(" → ")}, lũy tiến theo năng lực và kết quả`,
+      `- Hệ thống hỗ trợ: ${(CAREERS.ecosystem.modules || []).map((m) => m.title).join(", ")}; mỗi thành viên có mã chứng nhận PL-xxxx tra cứu công khai và trang hồ sơ riêng`,
+      "- Người chưa có kinh nghiệm bất động sản vẫn ứng tuyển Agent được (ưu tiên người từng làm sales)",
+      `- Quy trình: ${(CAREERS.process.steps || []).map((s) => s.title.toLowerCase()).join(" → ")}`,
+      `- Ứng tuyển: form trên trang (họ tên, số điện thoại, vị trí), email ${SITE.email}, Zalo ${SITE.hotline} hoặc inbox fanpage PaceLand`,
+      `- Trang từng vị trí: ${crOpen.map((j) => `[${j.shortTitle || j.title}](${SITE_URL}/tuyen-dung/${j.id}.html)`).join(" · ")}`,
+      "",
+    ].join("\n");
+    fs.writeFileSync(f, txt.slice(0, a) + block + txt.slice(b));
+    console.log("  ✓ llms.txt (khối Tuyển dụng đồng bộ JOBS)");
+  }
+}
 
 patchFile("salehub.html", (h) => {
   h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
@@ -743,7 +750,7 @@ patchFile("salehub.html", (h) => {
 });
 
 /* Org schema cho các trang còn lại */
-for (const page of ["gioi-thieu.html", "doi-tac.html", "tuyen-dung.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
+for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
 }
 
@@ -758,20 +765,42 @@ const urls = [
   { loc: "/chung-nhan-doi-tac.html", pri: "0.8", mod: today },
   { loc: "/gioi-thieu.html", pri: "0.7", mod: today },
   { loc: "/doi-tac.html", pri: "0.7", mod: today },
-  { loc: "/tuyen-dung.html", pri: "0.6", mod: today },
+  { loc: "/tuyen-dung.html", pri: "0.6", mod: crOpen.map((j) => j.updated || j.datePosted || "").sort().pop() || today },
   { loc: "/lien-he.html", pri: "0.8", mod: today },
   { loc: "/salehub.html", pri: "0.6", mod: today },
   ...PROJECTS.map((p) => ({ loc: `/du-an/${p.id}.html`, pri: "0.8", mod: today })),
   ...POSTS.map((p) => ({ loc: `/bai-viet/${p.id}.html`, pri: "0.7", mod: isoDate(p.date) })),
   ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
-  ...JOBS.map((j) => ({ loc: `/tuyen-dung/${j.id}.html`, pri: "0.6", mod: today })),
+  ...crOpen.map((j) => ({ loc: `/tuyen-dung/${j.id}.html`, pri: "0.7", mod: j.updated || j.datePosted || today })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${SITE_URL}${u.loc}</loc><lastmod>${u.mod}</lastmod><changefreq>weekly</changefreq><priority>${u.pri}</priority></url>`).join("\n")}
+${urls.map((u) => `  <url><loc>${SITE_URL}${encodeURI(u.loc)}</loc><lastmod>${u.mod}</lastmod><changefreq>weekly</changefreq><priority>${u.pri}</priority></url>`).join("\n")}
 </urlset>
 `;
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
+
+/* ---------- 6. Footer tĩnh + ?v= theo băm nội dung trên MỌI trang HTML ---------- */
+{
+  const hashCache = {};
+  const hashOf = (rel) => (hashCache[rel] = hashCache[rel] || (fs.existsSync(path.join(ROOT, rel)) ? assetHash(rel) : null));
+  const reAsset = /((?:src|href)=")(\/?)(assets\/(?:js|css)\/[A-Za-z0-9_.-]+\.(?:js|css))\?v=[^"]*"/g;
+  const dirs = ["", "bai-viet", "du-an", "chuyen-vien", "tuyen-dung"];
+  let touched = 0;
+  for (const d of dirs) {
+    const dir = path.join(ROOT, d);
+    if (!fs.existsSync(dir)) continue;
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".html")) continue;
+      const file = path.join(dir, f);
+      const before = fs.readFileSync(file, "utf8");
+      let h = before.replace(reAsset, (m, attr, slash, rel) => { const v = hashOf(rel); return v ? `${attr}${slash}${rel}?v=${v}"` : m; });
+      if (d === "" && f !== "admin.html" && FOOTER_HTML && h.includes('id="footer-root"')) h = inject(h, "footer", '<div id="footer-root"></div>', FOOTER_HTML);
+      if (h !== before) { fs.writeFileSync(file, h); touched++; }
+    }
+  }
+  console.log(`  ✓ footer tĩnh + băm asset (${touched} file cập nhật)`);
+}
 
 console.log(`\nHoàn tất:
   • ${postPages} trang bài viết  -> /bai-viet/
