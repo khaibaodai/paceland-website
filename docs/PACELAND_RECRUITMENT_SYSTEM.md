@@ -316,7 +316,9 @@ Hiện: **42/42 pass**. GitHub Action `prerender.yml` (chạy khi đổi bất k
 1. `npm run verify`: check + build + test đều pass.
 2. Có vị trí mới → `python tools/og_jobs.py` để sinh OG và bản 540px.
 3. **Không cần tăng `?v=` bằng tay nữa**: prerender gắn `?v=<md5 8 ký tự>` theo nội dung file cho mọi JS/CSS trên mọi trang (kể cả `careers.css/js`).
-4. Đồng bộ vào clone, commit, push. Tinh Gọn tự deploy trong 20–40 giây. Nếu webhook bỏ lỡ lần push, đẩy một commit rỗng để kích lại.
+4. Đồng bộ vào clone (`robocopy /MIR`, loại `.git .claude node_modules` và **`/XF package.json`**), commit, push. Tinh Gọn tự deploy trong 20–40 giây. Nếu webhook bỏ lỡ lần push, đẩy một commit rỗng để kích lại.
+   - ⚠️ **KHÔNG đưa `package.json` lên repo**: Tinh Gọn không dùng Dockerfile mà tự nhận diện loại dự án — thấy `package.json` ở gốc repo sẽ build kiểu Node và lỗi (19/09: 4 lần build trượt cho tới khi gỡ file này). `package.json` chỉ để chạy `npm run verify` trên máy; CI gọi thẳng `node`.
+   - Giữ gói deploy (không tính phần `.dockerignore` loại) dưới ~21MB; ảnh mới nên nén trước (≤ 1280px, q80).
 5. Kiểm tra live **bằng `<title>`**, không bằng status code, vì hosting trả soft-404.
 6. Google Search Console:
    - Request Indexing cho trang tổng và các trang vị trí mới.
