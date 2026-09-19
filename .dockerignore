@@ -16,6 +16,8 @@ node_modules
 
 # Ảnh nặng không được trang nào dùng — không đưa vào image
 assets/img/media/hero-paceland.png
+# Dữ liệu trang full dự án: chỉ prerender đọc lúc build, trình duyệt không tải
+assets/data/du-an-chi-tiet
 
 *.md
 *.zip
