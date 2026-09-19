@@ -25,7 +25,7 @@ Phía trình duyệt, chỉ trên trang tuyển dụng:
   - CORE thuần: validate, SĐT, dựng hồ sơ, lọc PII, rate-limit, gửi có timeout.
   - DOM: lọc vị trí, form, sticky CTA, analytics, chia sẻ.
 - `assets/js/main.js` (dùng chung toàn site):
-  - **Alias router** chống soft-404: hosting trả trang chủ cho mọi URL sai. Nếu trang chủ hiện ở đường dẫn không đuôi (vd `/tuyen-dung`, `/tuyen-dung/agent-bat-dong-san`), script chuyển sang bản `.html` (giữ query + hash, không đo, không ghi UTM ở lượt chuyển).
+  - **Alias router** chống soft-404: hosting trả nội dung `index.html` cho mọi URL sai. Nếu trang chủ hiện ở đường dẫn không đuôi (vd `/tuyen-dung`, `/tuyen-dung/agent-bat-dong-san`), script chuyển sang bản `.html` (giữ query + hash, không đo, không ghi UTM ở lượt chuyển). Bản chính là script inline đầu `<head>` của `index.html` (tài nguyên trang chủ dùng đường dẫn tuyệt đối `/assets/…` để vẫn tải đúng ở đường dẫn lồng); `main.js` giữ bản dự phòng.
   - Attribution: `pl_first`, `pl_last`, `pl_utm` (đọc/ghi storage trong `try` — Safari chặn cookie không làm hỏng trang).
   - `track()` đẩy sự kiện vào dataLayer, và gửi GA4/Meta khi đã có ID.
   - `submitLead(payload, {kind})` gửi tới Formspree và Google Sheet. `kind: "application"` dùng `SITE.careersEndpoint` nếu có; `kind: "partner"` (form trang Đối tác) không bị tính là lead mua nhà.
