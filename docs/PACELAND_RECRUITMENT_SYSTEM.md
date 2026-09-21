@@ -309,7 +309,7 @@ npm run verify   # cả ba
 | `careers-core.test.mjs` | SĐT (mọi định dạng), validate, Application record + attribution, chặn PII, rate-limit, gửi thành công / lỗi / timeout |
 | `links.test.mjs` | Mọi link và ảnh nội bộ trên trang tuyển dụng trỏ tới file có thật |
 
-Hiện: **42/42 pass**. GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
+Hiện: **49/49 pass** (thêm `zone-pages.test.mjs`). GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
 
 ## 13. Deployment checklist
 
@@ -319,6 +319,8 @@ Hiện: **42/42 pass**. GitHub Action `prerender.yml` (chạy khi đổi bất k
 4. Đồng bộ vào clone (`robocopy /MIR`, loại `.git .claude node_modules` và **`/XF "<src>\package.json"`** — phải ghi đủ đường dẫn, nếu chỉ ghi `package.json` robocopy sẽ xoá luôn `tools/mcp/package.json`), commit, push. Tinh Gọn tự deploy trong 20–40 giây. Nếu webhook bỏ lỡ lần push, đẩy một commit rỗng để kích lại.
    - ⚠️ **KHÔNG đưa `package.json` lên repo**: Tinh Gọn không dùng Dockerfile mà tự nhận diện loại dự án — thấy `package.json` ở gốc repo sẽ build kiểu Node và lỗi (19/09: 4 lần build trượt cho tới khi gỡ file này). `package.json` chỉ để chạy `npm run verify` trên máy; CI gọi thẳng `node`.
    - Giữ gói deploy (không tính phần `.dockerignore` loại) dưới ~21MB; ảnh mới nên nén trước (≤ 1280px, q80).
+     Đo bằng cách cộng kích thước mọi file KHÔNG bị `.dockerignore` loại. 21/09: gói lên 22,38MB, build trượt 2 lần; hạ về 19,79MB thì lên ngay.
+   - **Định dạng ảnh:** ảnh trong `assets/img/du-an/` và các thư mục ảnh mới dùng `.webp` (q74–80); ảnh trong `assets/img/media/` **giữ nguyên tên `.jpg`** vì Admin quản lý thư viện ảnh theo tên file — nén tại chỗ (q70) thay vì đổi đuôi. Đổi đuôi ảnh `du-an` thì phải sửa tham chiếu trong cả `assets/data/du-an-chi-tiet/*.json` **và** `assets/data/phan-khu/*.json`.
 5. Kiểm tra live **bằng `<title>`**, không bằng status code, vì hosting trả soft-404.
 6. Google Search Console:
    - Request Indexing cho trang tổng và các trang vị trí mới.
