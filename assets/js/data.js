@@ -771,16 +771,71 @@ const PROJECTS = [
     "gallery": [
       "assets/img/media/blanca-city.jpg"
     ],
-    "short": "Đô thị biển 96,6 ha của Sun Group tại Bãi Sau Vũng Tàu — 8 tháp căn hộ Beacon, 6 tháp Blanca và 939 căn thấp tầng; công viên nước Sun World 15 ha trong khu đã mở cửa từ 12/2/2026.",
+    "short": "Đô thị biển 96,6 ha của Sun Group tại Bãi Sau Vũng Tàu — các tháp căn hộ Blanca, Beacon, Beachtro và phân khu thấp tầng Casa; công viên nước Sun World 15 ha trong khu đã mở cửa từ 12/2/2026.",
     "description": [
-      "Blanca City là khu đô thị biển quy mô 96,6 ha do Sun Group phát triển với hai mặt tiền đường 3 Tháng 2 và trục biển Bãi Sau — vị trí lõi du lịch của Vũng Tàu, nay thuộc TP.HCM sau sáp nhập. Cơ cấu sản phẩm gồm 8 tháp căn hộ Beacon, 6 tháp Blanca và 939 căn nhà phố, biệt thự sở hữu lâu dài.",
+      "Blanca City là khu đô thị biển quy mô 96,6 ha do Sun Group phát triển với hai mặt tiền đường 3 Tháng 2 và trục biển Bãi Sau — vị trí lõi du lịch của Vũng Tàu, nay thuộc TP.HCM sau sáp nhập. Cơ cấu sản phẩm gồm các tháp căn hộ Blanca, Beacon và Beachtro, cùng phân khu thấp tầng Casa với biệt thự Casa Villa, Casa Grand Villa và nhà phố Casa Townhouse.",
       "Dự án khởi công ngày 16/5/2025. Điểm nhấn hiếm có: công viên nước Sun World Vũng Tàu 15 ha nằm ngay trong khu đã vận hành từ 12/2/2026 — tiện ích tầm đô thị đi trước nhịp bàn giao nhà, kéo dòng khách du lịch về ngay từ hôm nay.",
       "Với năng lực vận hành du lịch của Sun Group và quỹ đất mặt biển sở hữu lâu dài, Blanca City phù hợp cả nhu cầu ngôi nhà thứ hai lẫn khai thác cho thuê lưu trú — PaceLand tư vấn theo từng dòng sản phẩm và mục tiêu dòng tiền.",
       "Đang mở bán: tháp Beachtro Tower gồm 4 tòa E6, E7, E8, E9 với 1.785 căn hộ và 3 tầng hầm, liền kề công viên Whale Park 2,3 ha. Theo công bố của chủ đầu tư tại sự kiện Kick-off ngày 30/07/2026, đây là tháp căn hộ sở hữu lâu dài cuối cùng của Blanca City; bàn giao dự kiến tháng 8/2028."
     ],
+    "zonesNote": "Quỹ căn của từng phân khu thay đổi theo tuần. Diện tích và giá là thông tin tham khảo tháng 9/2026, tổng hợp từ tài liệu bán hàng của chủ đầu tư và các đại lý phân phối; bảng giá chính thức áp dụng theo từng đợt mở bán. PaceLand xác nhận bảng hàng và chính sách đang có hiệu lực trước khi anh/chị đặt chỗ.",
     "zones": [
-      { "name": "Beachtro Tower", "status": "Đang mở bán", "type": "4 tòa E6 – E9 · 1.785 căn hộ · Studio đến 2PN+", "note": "Tiện ích riêng Tro Collection; E6 bàn giao hoàn thiện, E7–E9 bàn giao không gian sáng tạo (DyHome)", "link": "/beachtro-blanca-city.html" },
-      { "name": "Beacon Tower", "status": "Đã mở bán", "type": "Tháp căn hộ trong cùng đại đô thị", "note": "Tòa \"anh em\" của Beachtro Tower theo giới thiệu của chủ đầu tư" }
+      {
+        "name": "Beachtro Tower",
+        "status": "Đang mở bán",
+        "type": "Căn hộ · sở hữu lâu dài",
+        "size": "Studio – 2PN+ · 35,7 – 82,3 m²",
+        "price": "2,53 – 7,16 tỉ (9/2026)",
+        "note": "4 tòa E6 – E9 với 1.785 căn, liền kề công viên Whale Park. E6 bàn giao hoàn thiện, E7 – E9 bàn giao không gian sáng tạo (DyHome). Bàn giao dự kiến 8/2028.",
+        "image": "assets/img/beachtro/hero.webp",
+        "link": "/beachtro-blanca-city.html",
+        "linkLabel": "Xem trang phân khu"
+      },
+      {
+        "name": "Beacon Tower",
+        "status": "Đã mở bán",
+        "type": "Căn hộ · sở hữu lâu dài",
+        "size": "Studio · 1PN · 2PN · 32 – 75 m²",
+        "price": "3 – 7 tỉ (9/2026)",
+        "note": "Tháp căn hộ sở hữu lâu dài nằm mặt tiền đường 3 Tháng 2, kiến trúc lấy cảm hứng từ ngọn hải đăng Vũng Tàu, ra mắt tháng 4/2026. Cùng nhóm tháp sở hữu lâu dài với Beachtro.",
+        "image": "assets/img/blanca/beacon-tower.webp"
+      },
+      {
+        "name": "Căn hộ Blanca",
+        "status": "Đã mở bán",
+        "type": "Căn hộ nghỉ dưỡng · sở hữu có thời hạn",
+        "size": "Studio – 2PN · 30 – 75 m²",
+        "price": "2,8 – 6,5 tỉ (9/2026)",
+        "note": "6 tòa tháp cao 34 – 40 tầng với 4.448 căn, hướng biển Bãi Sau và Mũi Nghinh Phong, khai thác lưu trú theo tiêu chuẩn khách sạn quốc tế.",
+        "image": "assets/img/blanca/blanca-tower.webp"
+      },
+      {
+        "name": "Biệt thự Casa Villa",
+        "status": "Đã mở bán",
+        "type": "Biệt thự song lập & đơn lập · sở hữu lâu dài",
+        "size": "Đất 131 – 280 m² · 3 tầng + 1 hầm",
+        "price": "25 – 42 tỉ (9/2026)",
+        "note": "Phân khu thấp tầng Casa, kiến trúc cảm hứng Iberia do Aedas thiết kế. Riêng dòng đơn lập có 176 căn, diện tích đất 266 – 280 m².",
+        "image": "assets/img/blanca/casa-villa.webp"
+      },
+      {
+        "name": "Casa Grand Villa",
+        "status": "Đã mở bán",
+        "type": "Biệt thự lớn · sở hữu lâu dài",
+        "size": "Đất 308 – 319 m² · 4 tầng + 1 hầm",
+        "price": "30 – 50 tỉ (9/2026)",
+        "note": "Dòng biệt thự lớn nhất phân khu Casa, mặt tiền 16 m, có tầng hầm đa năng cho gara, phòng chiếu phim hoặc phòng tập tại gia.",
+        "image": "assets/img/blanca/casa-grand-villa.webp"
+      },
+      {
+        "name": "Casa Townhouse",
+        "status": "Đã mở bán",
+        "type": "Nhà phố thương mại · sở hữu lâu dài",
+        "size": "Đất 131 – 150 m² · 4 tầng + 1 hầm",
+        "price": "12 – 30 tỉ (9/2026)",
+        "note": "171 căn nhà phố kinh doanh trong phân khu Casa, đón dòng khách từ Sun World, trung tâm thương mại mặt biển và cư dân các tháp căn hộ. Tháng 9/2026, phần lớn nhà phố Casa đã lên mái.",
+        "image": "assets/img/blanca/casa-townhouse.webp"
+      }
     ],
     "amenities": [
       "Sun World 15 ha đã mở cửa",

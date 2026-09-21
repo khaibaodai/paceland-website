@@ -1035,3 +1035,25 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .partner-slider > p { flex: 0 0 100%; }
 
 .pill--level { background: var(--red-tint); color: var(--red); border-color: var(--red-line); }
+
+/* ---------- Phân khu dự án (zone cards) ---------- */
+.zone-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: clamp(14px, 2vw, 22px); }
+.zone-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line-soft); border-radius: 12px; overflow: hidden; transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease), border-color 0.45s; }
+.zone-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line); }
+.zc-media { margin: 0; }
+.zc-media img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--cloud); }
+.zc-body { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.1rem 1.15rem 1.25rem; flex: 1; }
+.zc-head { display: flex; align-items: center; flex-wrap: wrap; gap: 0.55rem; }
+.zc-head h3 { font-family: var(--head); font-weight: 800; font-size: 1.08rem; line-height: 1.25; }
+.zc-specs { display: grid; gap: 0.4rem; }
+.zc-specs > div { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 0.7rem; font-size: 0.88rem; }
+.zc-specs dt { color: var(--muted); }
+.zc-specs dd { font-family: var(--head); font-weight: 600; color: var(--ink); }
+.zc-specs dd.is-price { color: var(--red); }
+.zc-note { margin: 0; font-size: 0.9rem; line-height: 1.6; color: var(--ink-soft); }
+.zc-link { margin-top: auto; padding-top: 0.2rem; font-family: var(--head); font-weight: 700; font-size: 0.88rem; color: var(--red); }
+.zone-note { margin-top: 1rem; max-width: 90ch; font-size: 0.82rem; line-height: 1.65; color: var(--muted); }
+@media (max-width: 600px) {
+  .zc-specs > div { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .zc-specs dt { font-size: 0.78rem; }
+}

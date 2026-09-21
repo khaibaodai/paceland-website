@@ -177,6 +177,21 @@ ${extraScripts}</body>
 `;
 }
 
+/* Card phân khu: ảnh + trạng thái + thông số + ghi chú. Phân khu không có ảnh vẫn hiển thị gọn. */
+function zoneCard(z, projectName) {
+  const specs = [["Loại hình", z.type], ["Quy mô", z.size], ["Giá tham khảo", z.price]].filter(([, v]) => v);
+  const ext = z.link && /^https?:/.test(z.link);
+  return `<article class="zone-card">
+${z.image ? `<figure class="zc-media"><img src="/${esc(resolveImg(z.image, 900))}" alt="${esc(z.name)} — ${esc(projectName)}" loading="lazy" decoding="async"></figure>` : ""}
+<div class="zc-body">
+  <div class="zc-head"><h3>${esc(z.name)}</h3>${z.status ? `<span class="pill">${esc(z.status)}</span>` : ""}</div>
+  ${specs.length ? `<dl class="zc-specs">${specs.map(([l, v]) => `<div><dt>${esc(l)}</dt><dd${l === "Giá tham khảo" ? ' class="is-price"' : ""}>${esc(v)}</dd></div>`).join("")}</dl>` : ""}
+  ${z.note ? `<p class="zc-note">${esc(z.note)}</p>` : ""}
+  ${z.link ? `<a class="zc-link" href="${esc(z.link)}"${ext ? ' target="_blank" rel="noopener"' : ""}>${esc(z.linkLabel || "Xem chi tiết")} \u2192</a>` : ""}
+</div>
+</article>`;
+}
+
 const breadcrumbNav = (items) =>
   `<nav class="breadcrumb" aria-label="breadcrumb">` +
   items.map((it, i) => (it.href ? `<a href="${it.href}">${esc(it.label)}</a>` : `<span>${esc(it.label)}</span>`) + (i < items.length - 1 ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;opacity:.6"><polyline points="9 18 15 12 9 6"/></svg>' : "")).join("") +
@@ -434,12 +449,8 @@ for (const p of PROJECTS) {
     </ul>` : ""}
 
     ${(p.zones || []).length ? `<h2 class="mt-4" style="font-size:1.3rem">Các phân khu ${esc(p.name)}</h2>
-    <div class="mt-2" style="display:grid;gap:.7rem">
-      ${p.zones.map((z) => `<div style="border:1px solid var(--line-soft);border-radius:10px;padding:.85rem 1rem;background:var(--white)">
-        <div><strong style="font-family:var(--head)">${esc(z.name)}</strong>${z.status ? ` <span class="pill" style="margin-left:.4rem">${esc(z.status)}</span>` : ""}</div>
-        ${z.type || z.note || z.link ? `<div style="margin-top:.3rem;color:var(--ink-soft);font-size:.92rem">${esc(z.type || "")}${z.note ? `${z.type ? " — " : ""}${esc(z.note)}` : ""}${z.link ? ` <a href="${esc(z.link)}"${z.link.startsWith("http") ? ' target="_blank" rel="noopener"' : ""} style="color:var(--red);font-weight:600;white-space:nowrap">Xem chi tiết →</a>` : ""}</div>` : ""}
-      </div>`).join("")}
-    </div>` : ""}
+    <div class="zone-grid mt-2">${p.zones.map((z) => zoneCard(z, p.name)).join("")}</div>
+    ${p.zonesNote ? `<p class="zone-note">${esc(p.zonesNote)}</p>` : ""}` : ""}
 
     ${(p.gallery || []).length > 1 ? `<div class="grid cols-3 mt-4">${p.gallery.slice(0, 3).map((g) => `<img src="/${esc(resolveImg(g, 900))}" alt="${esc(p.name)}" loading="lazy" style="border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%">`).join("")}</div>` : ""}
     ${detailHtml}
