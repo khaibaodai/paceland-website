@@ -10,7 +10,7 @@ Trang đầu tiên: **Beachtro Tower — Blanca City** (`/gio-hang/beachtro-blan
 
 | File | Vai trò |
 |---|---|
-| `assets/data/gio-hang/<slug>.json` | Toàn bộ nội dung một giỏ hàng. Chỉ prerender đọc (đã loại khỏi Docker qua `.dockerignore`) |
+| `assets/data/gio-hang/<slug>.json` | Toàn bộ nội dung một giỏ hàng. Chỉ prerender đọc, nhưng **vẫn nằm trong image** (xem mục 7) |
 | `tools/gio-hang-render.mjs` | Hàm thuần sinh HTML: hero, thẻ khối, bảng hàng, dòng sản phẩm, chính sách, FAQ, hộp thoại |
 | `tools/prerender.mjs` khối `3b-ter` | Duyệt mọi file JSON, ghi ra `/gio-hang/<slug>.html`, sinh schema và thêm vào sitemap |
 | `assets/css/gio-hang.css` | Style, prefix `gh-` |
@@ -80,3 +80,18 @@ node tools/prerender.mjs && node --test "tools/tests/*.test.mjs"
 
 Khi QA form trên trang thật, **không gửi lead thật**: chặn bằng
 `window.fetch = () => Promise.resolve(new Response('{"ok":true}'))` trước khi bấm gửi.
+
+## 7. Cảnh báo deploy: đừng thêm dòng vào `.dockerignore`
+
+21/09/2026: thêm một dòng `assets/data/gio-hang` vào `.dockerignore` làm build Tinh Gọn
+**trượt im lặng hai lần liên tiếp** (webhook vẫn trả 200 OK, site giữ nguyên bản cũ, CI GitHub
+vẫn xanh). Gói deploy khi đó 19,86 MB, thấp hơn ngưỡng ~21 MB nên không phải do dung lượng.
+Trả `.dockerignore` về đúng bản đã build được thì deploy chạy lại ngay ở lần push kế tiếp.
+
+Đây là quan sát trên ba lần push (hai lần hỏng khi có dòng mới, một lần chạy khi bỏ dòng đó),
+chưa đọc được log build nên chưa khẳng định chắc chắn nguyên nhân. Nguyên tắc làm việc rút ra:
+
+- Coi `.dockerignore` là file **đóng băng**. Cần sửa thì sửa một mình nó trong một commit riêng,
+  push, chờ xác minh live rồi mới push tiếp nội dung khác — để biết ngay thủ phạm.
+- File dữ liệu nhỏ (JSON vài KB) thì cứ để vào image, đừng đánh đổi rủi ro deploy lấy vài KB.
+- Chỉ cân nhắc thêm vào `.dockerignore` khi thứ cần loại là ảnh hoặc thư mục nặng hàng MB.
