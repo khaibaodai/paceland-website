@@ -1,0 +1,96 @@
+{
+  "slug": "beachtro-blanca-city",
+  "ten": "Beachtro Tower",
+  "duAn": "Blanca City",
+  "duAnId": "blanca-city",
+  "cdt": "Sun Group",
+  "trangThai": "Đang mở bán",
+  "capNhat": "2026-09-21",
+  "nguon": "Công bố tại sự kiện Kick-off ngày 30/07/2026",
+  "trangDuAn": "/beachtro-blanca-city.html",
+  "anh": "assets/img/beachtro/hero.webp",
+  "anhKhoi": "assets/img/beachtro/4-toa.webp",
+  "tomTat": "Tháp căn hộ sở hữu lâu dài cuối cùng của Blanca City: 4 khối E6 – E9, 1.785 căn, 3 tầng hầm, bàn giao dự kiến tháng 8/2028. Giỏ hàng dưới đây là các căn mẫu PaceLand nắm được từ đợt công bố đầu tiên.",
+  "thongSo": [
+    { "label": "Tổng số căn", "value": "1.785 căn" },
+    { "label": "Số khối", "value": "4 khối E6 – E9" },
+    { "label": "Tầng hầm", "value": "3 tầng" },
+    { "label": "Pháp lý", "value": "Căn hộ sở hữu lâu dài" },
+    { "label": "Booking", "value": "50 triệu/căn" },
+    { "label": "Bàn giao", "value": "Tháng 8/2028" }
+  ],
+  "khoi": [
+    { "ma": "E6", "soCan": 506, "soTang": 34, "banGiao": "Hoàn thiện", "ghiChu": "Khối duy nhất bàn giao hoàn thiện, nhận nhà là ở được." },
+    { "ma": "E7", "soCan": 379, "soTang": 38, "banGiao": "DyHome (thô)", "ghiChu": "Bàn giao không gian sáng tạo, chủ nhà tự hoàn thiện hoặc mua thêm gói của chủ đầu tư." },
+    { "ma": "E8", "soCan": 363, "soTang": 40, "banGiao": "DyHome (thô)", "ghiChu": "Khối cao nhất cụm Beachtro." },
+    { "ma": "E9", "soCan": 537, "soTang": 36, "banGiao": "DyHome (thô)", "ghiChu": "Khối nhiều căn nhất cụm Beachtro." }
+  ],
+  "dongSanPham": [
+    { "ma": "studio", "ten": "Studio", "dtMin": 35.7, "dtMax": 37.9, "goiHoanThien": 10700000 },
+    { "ma": "1br", "ten": "1BR+", "dtMin": 55.0, "dtMax": 56.1, "goiHoanThien": 10000000 },
+    { "ma": "2br", "ten": "2BR+", "dtMin": 81.3, "dtMax": 82.3, "goiHoanThien": 11200000 },
+    { "ma": "3br", "ten": "3BR / 3BR+", "goiHoanThien": 10600000, "chuaCongBo": true }
+  ],
+  "huongView": [
+    "Đông Nam — công viên Sunworld và bãi sau",
+    "Tây Bắc — nội khu và bãi trước",
+    "Whale Park — công viên lớn nhất dự án",
+    "Trung tâm thành phố — Vũng Tàu Skyline",
+    "Tây Nam — hướng tháp Beacon Tower"
+  ],
+  "mucGia": [
+    { "ma": "NY", "ten": "Giá niêm yết", "moTa": "Trước VAT, chưa trừ ưu đãi." },
+    { "ma": "CV", "ten": "Giá có vay", "moTa": "Sau chiết khấu Early Bird, trước VAT, dành cho khách dùng gói vay ngân hàng." },
+    { "ma": "TTTĐ", "ten": "Thanh toán theo tiến độ", "moTa": "Sau Early Bird, trước VAT, trả theo đợt xây dựng." },
+    { "ma": "TTS", "ten": "Thanh toán sớm", "moTa": "Sau Early Bird, trước VAT, mức thấp nhất trong bốn định mức." }
+  ],
+  "can": [
+    { "ma": "E82510", "khoi": "E8", "loai": "Studio", "loaiMa": "studio", "dt": 37.9, "tang": 25, "huong": "Nội khu – biển bãi trước", "huongMa": "tay-bac", "ny": 2.53, "banGiao": "DyHome (thô)" },
+    { "ma": "E82505", "khoi": "E8", "loai": "Studio", "loaiMa": "studio", "dt": 35.7, "tang": 25, "huong": "Sunworld – bãi sau", "huongMa": "dong-nam", "ny": 3.42, "banGiao": "DyHome (thô)" },
+    { "ma": "E82502", "khoi": "E8", "loai": "1BR+", "loaiMa": "1br", "dt": 56.1, "tang": 25, "huong": "Nội khu – biển bãi trước", "huongMa": "tay-bac", "ny": 3.71, "banGiao": "DyHome (thô)" },
+    { "ma": "E92501", "khoi": "E9", "loai": "1BR+", "loaiMa": "1br", "dt": 55.0, "tang": 25, "huong": "Sân golf Paradise – nội khu", "huongMa": "noi-khu", "ny": 3.95, "banGiao": "DyHome (thô)" },
+    { "ma": "E82501", "khoi": "E8", "loai": "2BR+", "loaiMa": "2br", "dt": 81.3, "tang": 25, "huong": "Nội khu – biển bãi trước (Tây Bắc)", "huongMa": "tay-bac", "ny": 4.92, "banGiao": "DyHome (thô)" },
+    { "ma": "E82506", "khoi": "E8", "loai": "1BR+", "loaiMa": "1br", "dt": 55.8, "tang": 25, "huong": "Sunworld – bãi sau", "huongMa": "dong-nam", "ny": 5.14, "banGiao": "DyHome (thô)" },
+    { "ma": "E92511", "khoi": "E9", "loai": "2BR+", "loaiMa": "2br", "dt": 82.3, "tang": 25, "huong": "Sunworld – bãi sau", "huongMa": "dong-nam", "ny": 7.16, "banGiao": "DyHome (thô)" }
+  ],
+  "chinhSach": {
+    "ten": "Ưu đãi Early Bird",
+    "capNhat": "Công bố tại Kick-off 30/07/2026, áp dụng từ tháng 8/2026",
+    "items": [
+      { "label": "Chiết khấu Early Bird", "value": "5 %" },
+      { "label": "Hỗ trợ lãi suất", "value": "30 tháng" },
+      { "label": "Giãn tiến độ thanh toán", "value": "Đến 48 tháng" },
+      { "label": "Miễn phí quản lý", "value": "2 năm" },
+      { "label": "Booking", "value": "50 triệu đồng / căn" },
+      { "label": "Chương trình Sun Early", "value": "Thanh toán 70 % — nhận nhà" }
+    ],
+    "note": "Đây là các mốc công bố tại Kick-off. Điều khoản áp dụng nằm trong hợp đồng mua bán chính thức và có thể kèm thêm điều kiện, nên PaceLand xác nhận lại bản chính sách đang hiệu lực trước khi anh/chị xuống tiền booking."
+  },
+  "luuY": "Bảy căn trong bảng là các căn mẫu tầng 25 được chủ đầu tư công bố tại Kick-off 30/07/2026, KHÔNG phải toàn bộ rổ hàng 1.785 căn. Giá là mức niêm yết trước VAT ở thời điểm công bố, mang tính tham khảo. Bảng hàng chi tiết theo từng tầng và từng căn sẽ được cập nhật khi chủ đầu tư phát hành chính sách bán hàng chính thức. Trạng thái còn hay hết thay đổi theo ngày, nên anh/chị bấm \"Check căn còn không?\" để PaceLand kiểm tra trực tiếp trên hệ thống của chủ đầu tư.",
+  "faq": [
+    {
+      "q": "Giỏ hàng này có phải toàn bộ rổ hàng Beachtro không?",
+      "a": "Không. Beachtro có 1.785 căn ở bốn khối E6 – E9, trong khi bảng trên là bảy căn mẫu tầng 25 được chủ đầu tư công bố tại Kick-off ngày 30/07/2026. Bảng hàng đầy đủ theo từng tầng sẽ có khi chủ đầu tư phát hành chính sách bán hàng chính thức; PaceLand cập nhật vào đây ngay khi nhận được."
+    },
+    {
+      "q": "Giá trong bảng đã gồm VAT chưa?",
+      "a": "Chưa. Cột giá là mức niêm yết trước VAT và trước chiết khấu. Chủ đầu tư dùng bốn định mức xuyên suốt chính sách: NY (niêm yết), CV (có vay), TTTĐ (thanh toán theo tiến độ) và TTS (thanh toán sớm). Ba mức sau đều đã trừ Early Bird. Con số cuối cùng phụ thuộc vào phương án thanh toán anh/chị chọn."
+    },
+    {
+      "q": "Làm sao biết căn mình thích còn hay hết?",
+      "a": "Bấm \"Check căn còn không?\" ở dòng căn đó và để lại số điện thoại. Cố vấn PaceLand tra trên hệ thống của chủ đầu tư rồi báo lại tình trạng thật, kèm các căn tương đương cùng tầm giá nếu căn đó đã có người giữ chỗ."
+    },
+    {
+      "q": "Khối nào bàn giao hoàn thiện?",
+      "a": "Chỉ khối E6 với 506 căn bàn giao hoàn thiện. Ba khối E7, E8, E9 áp dụng dòng DyHome, bàn giao dạng không gian sáng tạo để chủ nhà tự bố trí. Nếu mua DyHome mà vẫn muốn chủ đầu tư hoàn thiện, có gói tuỳ chọn tính theo mét vuông thông thuỷ, đăng ký muộn nhất ngày 31/08/2027."
+    },
+    {
+      "q": "Đặt chỗ Beachtro cần bao nhiêu tiền?",
+      "a": "Mức booking công bố là 50 triệu đồng cho một căn. Chính sách tháng 8/2026 kèm chiết khấu Early Bird 5 %, hỗ trợ lãi suất 30 tháng, giãn tiến độ đến 48 tháng và miễn phí quản lý 2 năm."
+    }
+  ],
+  "seo": {
+    "title": "Giỏ hàng Beachtro Tower — bảng hàng & giá căn | PaceLand",
+    "description": "Giỏ hàng Beachtro Tower (Blanca City, Sun Group): bảng hàng căn mẫu tầng 25 theo khối E6 – E9, diện tích 35,7 – 82,3 m², giá niêm yết 2,53 – 7,16 tỉ, chính sách Early Bird 5 %."
+  }
+}

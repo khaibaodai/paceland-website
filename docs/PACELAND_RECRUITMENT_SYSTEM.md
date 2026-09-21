@@ -309,7 +309,7 @@ npm run verify   # cả ba
 | `careers-core.test.mjs` | SĐT (mọi định dạng), validate, Application record + attribution, chặn PII, rate-limit, gửi thành công / lỗi / timeout |
 | `links.test.mjs` | Mọi link và ảnh nội bộ trên trang tuyển dụng trỏ tới file có thật |
 
-Hiện: **49/49 pass** (thêm `zone-pages.test.mjs`). GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
+Hiện: **78/78 pass** (thêm `zone-pages.test.mjs`, `gio-hang.test.mjs`). GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
 
 ## 13. Deployment checklist
 

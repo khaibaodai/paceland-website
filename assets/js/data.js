@@ -24,6 +24,7 @@ const SITE = {
     "metaPixel": "1801986410923640",
     "metaPixelScope": [
       "/beachtro-blanca-city",
+      "/gio-hang/beachtro-blanca-city",
       "/du-an/blanca-city",
       "/du-an/five-star-odyssey",
       "/du-an/five-star-poseidon",

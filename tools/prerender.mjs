@@ -19,6 +19,7 @@ import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { buildContext, openJobs, renderCareersHub, renderJobPage, jobPostingLd, faqLd, itemListLd } from "./careers-render.mjs";
+import { loadInventories, renderInventoryBody, inventoryHubCards, khoangGia, khoangDt, fmtTy } from "./gio-hang-render.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE_URL = "https://paceland.vn";
@@ -830,6 +831,63 @@ for (const p of PROJECTS) {
 }
 console.log(`  ✓ ${zonePages} trang phân khu -> /du-an/<dự án>/`);
 
+/* ---------- 3b-ter. GIỎ HÀNG DỰ ÁN: /gio-hang/<slug>.html ----------
+   Nội dung lấy từ assets/data/gio-hang/<slug>.json (chỉ prerender đọc — rổ căn được
+   nhúng thẳng vào trang dưới dạng <script type="application/json"> nên trình duyệt
+   không phải tải thêm file nào). */
+const INVENTORIES = loadInventories(ROOT);
+/* Dự án sẽ mở bảng hàng sau — hiện dạng thẻ mờ trên SaleHub để đội ngũ biết lộ trình */
+const GH_SOON = ["Beacon Tower — Blanca City", "Căn hộ Blanca — Blanca City"];
+const GH_HEAD = `<link rel="stylesheet" href="/assets/css/gio-hang.css?v=${assetHash("assets/css/gio-hang.css")}">
+`;
+const GH_JS = `<script src="/assets/js/gio-hang.js?v=${assetHash("assets/js/gio-hang.js")}"></script>
+`;
+if (INVENTORIES.length) fs.mkdirSync(path.join(ROOT, "gio-hang"), { recursive: true });
+for (const gh of INVENTORIES) {
+  const url = `${SITE_URL}/gio-hang/${gh.slug}.html`;
+  const ogImg = absUrl(resolveImg(gh.ogImage || gh.anh, 1200));
+  const gia = khoangGia(gh.can);
+  const dt = khoangDt(gh.can);
+  const crumbs = [{ label: "Trang chủ", href: "/" }, { label: "SaleHub", href: "/salehub.html" }, { label: `Giỏ hàng ${gh.ten}` }];
+  const ld = [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs))];
+  /* ItemList các căn đã công bố — giúp AI search trích đúng mã căn, diện tích, giá */
+  if ((gh.can || []).length) {
+    ld.push(ldTag("pl-ld-units", {
+      "@context": "https://schema.org", "@type": "ItemList",
+      name: `Bảng hàng ${gh.ten}`, numberOfItems: gh.can.length, itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: gh.can.map((c, i) => ({
+        "@type": "ListItem", position: i + 1,
+        item: {
+          "@type": "Apartment", name: `${gh.ten} — căn ${c.ma}`, identifier: c.ma,
+          floorSize: { "@type": "QuantitativeValue", value: c.dt, unitCode: "MTK" },
+          numberOfRooms: /studio/i.test(c.loai || "") ? 0 : parseInt(c.loai, 10) || undefined,
+          containedInPlace: { "@type": "ApartmentComplex", name: gh.duAn || gh.ten },
+        },
+      })),
+    }));
+  }
+  if (gia) {
+    ld.push(ldTag("pl-ld-offer", {
+      "@context": "https://schema.org", "@type": "AggregateOffer", url,
+      priceCurrency: "VND", lowPrice: Math.round(gia.min * 1e9), highPrice: Math.round(gia.max * 1e9),
+      offerCount: (gh.can || []).length,
+      itemOffered: { "@type": "ApartmentComplex", name: `${gh.ten} — ${gh.duAn || ""}`.trim(), url: absUrl(gh.trangDuAn || "/") },
+      seller: { "@type": "RealEstateAgent", "@id": SITE_URL + "/#organization" },
+    }));
+  }
+  if ((gh.faq || []).length) {
+    ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: gh.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })) }));
+  }
+  const desc = (gh.seo && gh.seo.description) || stripTags(gh.tomTat);
+  fs.writeFileSync(path.join(ROOT, "gio-hang", `${gh.slug}.html`), pageShell({
+    title: (gh.seo && gh.seo.title) || `Giỏ hàng ${gh.ten} — bảng hàng & giá căn | PaceLand`,
+    desc, canonical: url, ogImage: ogImg, ogImageAlt: `Giỏ hàng ${gh.ten}`, ogType: "website", ldTags: ld,
+    extraHead: GH_HEAD, extraScripts: GH_JS, bodyClass: "gio-hang",
+    bodyMain: renderInventoryBody(gh, { resolveImg, breadcrumbNav, ctaBand }),
+  }));
+}
+console.log(`  ✓ ${INVENTORIES.length} trang giỏ hàng -> /gio-hang/`);
+
 /* ---------- 3c. RECRUITMENT SYSTEM: /tuyen-dung.html + /tuyen-dung/<slug>.html ----------
    Nội dung: JOBS + CAREERS (data.js) · Component: tools/careers-render.mjs
    Vị trí status "closed": vẫn sinh trang (tránh soft-404) nhưng noindex, bỏ JobPosting, rời sitemap. */
@@ -917,6 +975,7 @@ for (const j of [...JOBS, ...crOrphans]) {
 patchFile("salehub.html", (h) => {
   h = upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD));
   h = inject(h, "salehub", '<div class="card-grid" id="salehubGrid"></div>', absolutize(PROJECTS.map(renderProjectCard).join("")));
+  h = inject(h, "giohang", '<div id="giohangRoot"></div>', inventoryHubCards(INVENTORIES, { resolveImg, soon: GH_SOON }));
   return h;
 });
 
@@ -945,6 +1004,7 @@ const urls = [
   ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
   ...crOpen.map((j) => ({ loc: `/tuyen-dung/${j.id}.html`, pri: "0.7", mod: j.updated || j.datePosted || today })),
   ...PROJECTS.flatMap((p) => (p.zones || []).filter((z) => z.slug && fs.existsSync(path.join(ROOT, "du-an", p.id, z.slug + ".html"))).map((z) => ({ loc: `/du-an/${p.id}/${z.slug}.html`, pri: "0.8", mod: today }))),
+  ...INVENTORIES.map((gh) => ({ loc: `/gio-hang/${gh.slug}.html`, pri: "0.8", mod: gh.capNhat || today })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -958,7 +1018,7 @@ fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
   const hashCache = {};
   const hashOf = (rel) => (hashCache[rel] = hashCache[rel] || (fs.existsSync(path.join(ROOT, rel)) ? assetHash(rel) : null));
   const reAsset = /((?:src|href)=")(\/?)(assets\/(?:js|css)\/[A-Za-z0-9_.-]+\.(?:js|css))\?v=[^"]*"/g;
-  const dirs = ["", "bai-viet", "du-an", "chuyen-vien", "tuyen-dung", ...PROJECTS.filter((p) => (p.zones || []).some((z) => z.slug)).map((p) => "du-an/" + p.id)];
+  const dirs = ["", "bai-viet", "du-an", "chuyen-vien", "tuyen-dung", "gio-hang", ...PROJECTS.filter((p) => (p.zones || []).some((z) => z.slug)).map((p) => "du-an/" + p.id)];
   let touched = 0;
   for (const d of dirs) {
     const dir = path.join(ROOT, d);
