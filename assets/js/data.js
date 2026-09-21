@@ -793,6 +793,7 @@ const PROJECTS = [
       },
       {
         "name": "Beacon Tower",
+        "slug": "beacon-tower",
         "status": "Đã mở bán",
         "type": "Căn hộ · sở hữu lâu dài",
         "size": "Studio · 1PN · 2PN · 32 – 75 m²",
@@ -802,6 +803,7 @@ const PROJECTS = [
       },
       {
         "name": "Căn hộ Blanca",
+        "slug": "can-ho-blanca",
         "status": "Đã mở bán",
         "type": "Căn hộ nghỉ dưỡng · sở hữu có thời hạn",
         "size": "Studio – 2PN · 30 – 75 m²",
@@ -811,6 +813,7 @@ const PROJECTS = [
       },
       {
         "name": "Biệt thự Casa Villa",
+        "slug": "casa-villa",
         "status": "Đã mở bán",
         "type": "Biệt thự song lập & đơn lập · sở hữu lâu dài",
         "size": "Đất 131 – 280 m² · 3 tầng + 1 hầm",
@@ -820,6 +823,7 @@ const PROJECTS = [
       },
       {
         "name": "Casa Grand Villa",
+        "slug": "casa-grand-villa",
         "status": "Đã mở bán",
         "type": "Biệt thự lớn · sở hữu lâu dài",
         "size": "Đất 308 – 319 m² · 4 tầng + 1 hầm",
@@ -829,6 +833,7 @@ const PROJECTS = [
       },
       {
         "name": "Casa Townhouse",
+        "slug": "casa-townhouse",
         "status": "Đã mở bán",
         "type": "Nhà phố thương mại · sở hữu lâu dài",
         "size": "Đất 131 – 150 m² · 4 tầng + 1 hầm",

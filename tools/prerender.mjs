@@ -178,16 +178,17 @@ ${extraScripts}</body>
 }
 
 /* Card phân khu: ảnh + trạng thái + thông số + ghi chú. Phân khu không có ảnh vẫn hiển thị gọn. */
-function zoneCard(z, projectName) {
+function zoneCard(z, projectName, projectId) {
   const specs = [["Loại hình", z.type], ["Quy mô", z.size], ["Giá tham khảo", z.price]].filter(([, v]) => v);
-  const ext = z.link && /^https?:/.test(z.link);
+  const href = z.link || (z.slug && projectId ? `/du-an/${projectId}/${z.slug}.html` : "");
+  const ext = href && /^https?:/.test(href);
   return `<article class="zone-card">
 ${z.image ? `<figure class="zc-media"><img src="/${esc(resolveImg(z.image, 900))}" alt="${esc(z.name)} — ${esc(projectName)}" loading="lazy" decoding="async"></figure>` : ""}
 <div class="zc-body">
   <div class="zc-head"><h3>${esc(z.name)}</h3>${z.status ? `<span class="pill">${esc(z.status)}</span>` : ""}</div>
   ${specs.length ? `<dl class="zc-specs">${specs.map(([l, v]) => `<div><dt>${esc(l)}</dt><dd${l === "Giá tham khảo" ? ' class="is-price"' : ""}>${esc(v)}</dd></div>`).join("")}</dl>` : ""}
   ${z.note ? `<p class="zc-note">${esc(z.note)}</p>` : ""}
-  ${z.link ? `<a class="zc-link" href="${esc(z.link)}"${ext ? ' target="_blank" rel="noopener"' : ""}>${esc(z.linkLabel || "Xem chi tiết")} \u2192</a>` : ""}
+  ${href ? `<a class="zc-link" href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ""}>${esc(z.linkLabel || "Xem chi tiết")} \u2192</a>` : ""}
 </div>
 </article>`;
 }
@@ -449,7 +450,7 @@ for (const p of PROJECTS) {
     </ul>` : ""}
 
     ${(p.zones || []).length ? `<h2 class="mt-4" style="font-size:1.3rem">Các phân khu ${esc(p.name)}</h2>
-    <div class="zone-grid mt-2">${p.zones.map((z) => zoneCard(z, p.name)).join("")}</div>
+    <div class="zone-grid mt-2">${p.zones.map((z) => zoneCard(z, p.name, p.id)).join("")}</div>
     ${p.zonesNote ? `<p class="zone-note">${esc(p.zonesNote)}</p>` : ""}` : ""}
 
     ${(p.gallery || []).length > 1 ? `<div class="grid cols-3 mt-4">${p.gallery.slice(0, 3).map((g) => `<img src="/${esc(resolveImg(g, 900))}" alt="${esc(p.name)}" loading="lazy" style="border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%">`).join("")}</div>` : ""}
@@ -670,6 +671,165 @@ patchFile("chung-nhan-doi-tac.html", (h) => {
   return h;
 });
 
+/* ---------- 3b-bis. TRANG PHÂN KHU: /du-an/<projectId>/<zoneSlug>.html ----------
+   Nội dung lấy từ assets/data/phan-khu/<slug>.json (chỉ prerender đọc, không tải về trình duyệt). */
+const loadZoneData = (slug) => {
+  const f = path.join(ROOT, "assets/data/phan-khu", slug + ".json");
+  if (!fs.existsSync(f)) return null;
+  try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) { console.warn("  ! JSON phân khu lỗi:", slug, e.message); return null; }
+};
+
+function zoneForm(p, z) {
+  return `<section class="section section--tight section--paper" id="dang-ky" style="margin-top:clamp(28px,4vw,48px);border-radius:14px">
+  <div class="container" style="padding-inline:0">
+    <div style="max-width:640px;margin-inline:auto;background:var(--white);border:1px solid var(--line-soft);border-radius:14px;padding:clamp(1.4rem,3vw,2.2rem)">
+      <span class="eyebrow">Nhận thông tin ${esc(z.name)}</span>
+      <h2 class="mt-1" style="font-size:clamp(1.3rem,2.6vw,1.8rem);line-height:1.25">Bảng hàng, giá theo căn và chính sách đang áp dụng</h2>
+      <p class="mt-2" style="color:var(--ink-soft);font-size:.95rem">Cố vấn PaceLand gửi bảng hàng cập nhật của ${esc(z.name)} kèm sơ đồ vị trí căn, và đọc cùng anh/chị điều khoản trong hợp đồng trước khi đặt cọc.</p>
+      <form data-pace-form data-lead-source="phan-khu-${esc(z.slug || "")}" class="mt-3">
+        <input type="hidden" name="du_an" value="${esc(p.name + " — " + z.name)}">
+        <div class="field-row two">
+          <div class="form-field"><label>Họ và tên *</label><input name="name" required placeholder="Nguyễn Văn A"></div>
+          <div class="form-field"><label>Số điện thoại *</label><input name="phone" type="tel" required placeholder="09xx xxx xxx"></div>
+        </div>
+        <div class="field-row" style="margin-top:.9rem">
+          <div class="form-field"><label>Nhu cầu</label>
+            <div class="select-wrap"><select name="nhu_cau" style="width:100%;height:50px;border:1px solid var(--line);border-radius:6px;padding:0 1rem;background:var(--white)">
+              <option>Mua để ở / nghỉ dưỡng</option>
+              <option>Đầu tư khai thác cho thuê</option>
+              <option>Đầu tư chờ tăng giá</option>
+              <option>Chưa xác định</option>
+            </select></div>
+          </div>
+        </div>
+        <button class="btn btn--block mt-2" type="submit">Nhận bảng hàng &amp; giá
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-success mt-2">Cảm ơn anh/chị! Cố vấn PaceLand sẽ gửi bảng hàng và gọi lại. Cần ngay? Gọi <strong>${esc(SITE.hotline)}</strong>.</div>
+      </form>
+    </div>
+  </div>
+</section>`;
+}
+
+function zoneFaq(items) {
+  if (!(items || []).length) return "";
+  return dSec("Câu hỏi thường gặp") + `<div class="pl-faq mt-2">${items.map((f) => `<details><summary>${esc(f.q)}</summary><div>${mdB(f.a)}</div></details>`).join("")}</div>`;
+}
+
+function renderZoneBody(p, z, zd, others) {
+  const crumbs = [{ label: "Trang chủ", href: "/" }, { label: "Dự án", href: "/du-an.html" }, { label: p.name, href: `/du-an/${p.id}.html` }, { label: z.name }];
+  const hero = zd.hero || {};
+  const heroImg = hero.image || z.image || p.cover;
+  const specs = (zd.specs || []).length ? zd.specs : [
+    { label: "Loại hình", value: z.type }, { label: "Quy mô", value: z.size }, { label: "Giá tham khảo", value: z.price },
+  ].filter((x) => x.value);
+  let h = "";
+  const tq = zd.tongQuan;
+  if (tq && (tq.intro || (tq.diem || []).length)) {
+    h += dSec("Tổng quan " + z.name, zd.capNhat ? "Cập nhật " + String(zd.capNhat).split("-").reverse().join("/") : "");
+    h += dIntro(tq.intro);
+    if ((tq.diem || []).length) h += dGems(tq.diem);
+  }
+  const tk = zd.thietKe;
+  if (tk && (tk.intro || (tk.items || []).length)) {
+    h += dSec(tk.title || "Thiết kế & bàn giao");
+    h += dIntro(tk.intro);
+    if ((tk.items || []).length) h += dCards(tk.items);
+    h += dImg(tk.image, `${z.name} — ${p.name}`);
+  }
+  const vt = zd.viTri;
+  if (vt && (vt.intro || vt.image || (vt.diem || []).length)) {
+    h += dSec("Vị trí trong " + p.name);
+    h += dIntro(vt.intro);
+    h += dImg(vt.image, `Vị trí ${z.name} trong ${p.name}`);
+    if ((vt.diem || []).length) h += dGems(vt.diem);
+  }
+  const ti = zd.tienIch;
+  if (ti && (ti.items || []).length) {
+    h += dSec(ti.title || "Tiện ích");
+    h += dIntro(ti.intro);
+    h += dGems(ti.items);
+    h += dImg(ti.image, `Tiện ích ${z.name}`);
+  }
+  const gb = zd.bangGia;
+  if (gb && (gb.loai || []).length) {
+    h += dSec("Giá tham khảo", gb.capNhat);
+    h += dIntro(gb.intro);
+    h += `<div class="mt-3" style="overflow-x:auto;border:1px solid var(--line);border-radius:10px"><table style="width:100%;border-collapse:collapse;min-width:560px"><thead><tr>${["Loại sản phẩm", "Diện tích", "Giá tham khảo", "Ghi chú"].map((x) => `<th style="text-align:left;padding:.7rem 1rem;background:var(--paper);font-family:var(--head);font-size:.85rem">${x}</th>`).join("")}</tr></thead><tbody>${gb.loai.map((l) => `<tr>${[l.name, l.dienTich, l.gia, l.thanhToan].map((x) => `<td style="padding:.65rem 1rem;border-top:1px solid var(--line-soft);font-size:.92rem">${mdB(x || "—")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    h += dNote(gb.note);
+  }
+  const cs = zd.chinhSach;
+  if (cs && (cs.items || []).length) {
+    h += dSec("Chính sách bán hàng công bố", cs.capNhat);
+    h += dIntro(cs.intro);
+    h += dTable(cs.items);
+    h += dNote(cs.note);
+  }
+  const td = zd.tienDo;
+  if (td && (td.intro || (td.moc || []).length)) {
+    h += dSec("Tiến độ", td.capNhat);
+    h += dIntro(td.intro);
+    h += dTable(td.moc);
+    h += dNote(td.note);
+  }
+  if ((zd.gallery || []).length) {
+    h += `<div class="grid cols-3 mt-4">${zd.gallery.map((g) => `<img src="/${esc(resolveImg(g, 900))}" alt="${esc(z.name)} — ${esc(p.name)}" loading="lazy" style="border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%">`).join("")}</div>`;
+  }
+  h += zoneFaq(zd.faq);
+  h += dNote(zd.luuY);
+
+  return `<article class="section section--ivory" style="padding-top:calc(var(--header-h) + clamp(24px,4vw,48px))">
+  <div class="container">
+    ${breadcrumbNav(crumbs)}
+    <span class="eyebrow">Phân khu ${esc(p.name)}${z.status ? " · " + esc(z.status) : ""}</span>
+    <h1 class="mt-1" style="font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.12">${esc(hero.title || z.name)}</h1>
+    <p class="lead mt-2" style="max-width:66ch">${esc(hero.sub || z.note || "")}</p>
+    ${heroImg ? `<figure class="mt-3" style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow)"><img src="/${esc(resolveImg(heroImg, 1600))}" alt="${esc(z.name)} — ${esc(p.name)}" style="width:100%" fetchpriority="high"></figure>` : ""}
+    ${specs.length ? `<div class="grid mt-4" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden">${specs.map((sp) => `<div style="background:var(--paper);padding:1rem 1.15rem"><div style="font-size:.72rem;color:var(--muted)">${esc(sp.label)}</div><div style="font-family:var(--head);font-weight:700;margin-top:2px">${esc(sp.value)}</div></div>`).join("")}</div>` : ""}
+    ${h}
+    ${zoneForm(p, z)}
+    ${others.length ? `<h2 class="mt-4" style="font-size:1.3rem">Phân khu khác tại ${esc(p.name)}</h2>
+    <div class="zone-grid mt-2">${others.map((o) => zoneCard(o, p.name, p.id)).join("")}</div>` : ""}
+    <p class="mt-3"><a href="/du-an/${esc(p.id)}.html" style="color:var(--red);font-weight:700">\u2190 Về tổng quan ${esc(p.name)}</a></p>
+  </div>
+</article>
+${ctaBand(`Quan tâm ${esc(z.name)}? Nhận bảng hàng &amp; chính sách hôm nay`)}`;
+}
+
+let zonePages = 0;
+for (const p of PROJECTS) {
+  const zones = (p.zones || []).filter((z) => z.slug);
+  if (!zones.length) continue;
+  fs.mkdirSync(path.join(ROOT, "du-an", p.id), { recursive: true });
+  for (const z of zones) {
+    const zd = loadZoneData(z.slug);
+    if (!zd) { console.warn(`  ! Thiếu dữ liệu phân khu: assets/data/phan-khu/${z.slug}.json`); continue; }
+    const url = `${SITE_URL}/du-an/${p.id}/${z.slug}.html`;
+    const others = (p.zones || []).filter((x) => x !== z);
+    const ogImg = zd.ogImage || (zd.hero && zd.hero.image) || z.image || p.cover;
+    const title = (zd.seo && zd.seo.title) || `${z.name} — ${p.name} | PaceLand`;
+    const desc = (zd.seo && zd.seo.description) || stripTags(z.note || p.short);
+    const crumbs = [{ label: "Trang chủ", href: "/" }, { label: "Dự án", href: "/du-an.html" }, { label: p.name, href: `/du-an/${p.id}.html` }, { label: z.name }];
+    const ld = [ldTag("pl-ld-org", ORG_LD), ldTag("pl-ld-breadcrumb", breadcrumbLd(crumbs)), ldTag("pl-ld-zone", {
+      "@context": "https://schema.org", "@type": "ApartmentComplex",
+      name: `${z.name} — ${p.name}`, url, image: absUrl(resolveImg(ogImg, 1200)),
+      description: stripTags(desc),
+      address: { "@type": "PostalAddress", streetAddress: p.location, addressRegion: "TP. Hồ Chí Minh", addressCountry: "VN" },
+      containedInPlace: { "@type": "Place", name: p.name, url: `${SITE_URL}/du-an/${p.id}.html` },
+      broker: { "@type": "RealEstateAgent", "@id": SITE_URL + "/#organization" },
+    })];
+    if ((zd.faq || []).length) ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: zd.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })) }));
+    fs.writeFileSync(path.join(ROOT, "du-an", p.id, `${z.slug}.html`), pageShell({
+      title, desc, canonical: url, ogImage: absUrl(resolveImg(ogImg, 1200)),
+      ogImageAlt: `${z.name} — ${p.name}`, ogType: "website", ldTags: ld,
+      bodyMain: renderZoneBody(p, z, zd, others),
+    }));
+    zonePages++;
+  }
+}
+console.log(`  ✓ ${zonePages} trang phân khu -> /du-an/<dự án>/`);
+
 /* ---------- 3c. RECRUITMENT SYSTEM: /tuyen-dung.html + /tuyen-dung/<slug>.html ----------
    Nội dung: JOBS + CAREERS (data.js) · Component: tools/careers-render.mjs
    Vị trí status "closed": vẫn sinh trang (tránh soft-404) nhưng noindex, bỏ JobPosting, rời sitemap. */
@@ -784,6 +944,7 @@ const urls = [
   ...POSTS.map((p) => ({ loc: `/bai-viet/${p.id}.html`, pri: "0.7", mod: isoDate(p.date) })),
   ...activePartners.map((cv) => ({ loc: `/chuyen-vien/${cv.id}.html`, pri: "0.6", mod: today })),
   ...crOpen.map((j) => ({ loc: `/tuyen-dung/${j.id}.html`, pri: "0.7", mod: j.updated || j.datePosted || today })),
+  ...PROJECTS.flatMap((p) => (p.zones || []).filter((z) => z.slug && fs.existsSync(path.join(ROOT, "du-an", p.id, z.slug + ".html"))).map((z) => ({ loc: `/du-an/${p.id}/${z.slug}.html`, pri: "0.8", mod: today }))),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -797,7 +958,7 @@ fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
   const hashCache = {};
   const hashOf = (rel) => (hashCache[rel] = hashCache[rel] || (fs.existsSync(path.join(ROOT, rel)) ? assetHash(rel) : null));
   const reAsset = /((?:src|href)=")(\/?)(assets\/(?:js|css)\/[A-Za-z0-9_.-]+\.(?:js|css))\?v=[^"]*"/g;
-  const dirs = ["", "bai-viet", "du-an", "chuyen-vien", "tuyen-dung"];
+  const dirs = ["", "bai-viet", "du-an", "chuyen-vien", "tuyen-dung", ...PROJECTS.filter((p) => (p.zones || []).some((z) => z.slug)).map((p) => "du-an/" + p.id)];
   let touched = 0;
   for (const d of dirs) {
     const dir = path.join(ROOT, d);

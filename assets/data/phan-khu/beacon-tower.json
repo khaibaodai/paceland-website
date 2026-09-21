@@ -1,0 +1,126 @@
+{
+  "capNhat": "2026-09-21",
+  "hero": {
+    "title": "Căn hộ Beacon Tower — Blanca City",
+    "sub": "Nhóm tháp căn hộ sở hữu lâu dài đứng ở mặt tiền đường 3 Tháng 2, kiến trúc Aedas lấy cảm hứng từ ngọn hải đăng Vũng Tàu. Ra mắt tháng 4/2026, bàn giao hoàn thiện nội thất liền tường, dự kiến giao nhà tháng 5/2028 theo đơn vị phân phối.",
+    "image": "assets/img/blanca/beacon-tower.webp"
+  },
+  "specs": [
+    { "label": "Loại hình", "value": "Căn hộ, đất ở sở hữu lâu dài" },
+    { "label": "Loại căn", "value": "Studio, 1 – 3 phòng ngủ, duplex tầng đỉnh" },
+    { "label": "Chiều cao trần", "value": "3,6 m" },
+    { "label": "Bàn giao", "value": "Hoàn thiện nội thất liền tường" },
+    { "label": "Giá tham khảo", "value": "Từ 2,88 tỉ, chưa VAT (8/2026)" },
+    { "label": "Dự kiến giao nhà", "value": "Tháng 5/2028" }
+  ],
+  "tongQuan": {
+    "intro": "Beacon là nhóm tháp căn hộ **sở hữu lâu dài** của Blanca City, nằm trên phần đất ở của dự án, sát trục đường 3 Tháng 2. Đây là điểm khác biệt lớn nhất so với các toà Blanca phía trong: Blanca là căn hộ nghỉ dưỡng trên đất thương mại dịch vụ, sở hữu có thời hạn. Hai dòng sản phẩm có giấy tờ khác nhau nên không so đơn giá trực tiếp với nhau được.",
+    "diem": [
+      "Ra mắt tháng 4/2026; Báo Đầu tư ghi hơn 2.000 căn đã bán",
+      "Cùng nhóm sở hữu lâu dài với cụm Beachtro E6–E9 ra mắt tháng 9/2026",
+      "Hai toà Beacon E1–E2 nằm sát đường 3 Tháng 2, nối thẳng sang công viên nước Sun World 15 ha đã vận hành",
+      "Tháng 9/2026: theo chủ đầu tư, Beacon và Beachtro dự kiến xong 100 % đài móng và sàn hầm B3"
+    ]
+  },
+  "thietKe": {
+    "title": "Thiết kế & bàn giao",
+    "intro": "Aedas là đơn vị thiết kế kiến trúc cho Blanca City, nội thất do Ong&Ong (Singapore) đảm nhiệm.",
+    "items": [
+      {
+        "title": "Hình ngọn hải đăng làm điểm tựa",
+        "text": "Aedas lấy hình ngọn hải đăng Vũng Tàu dựng năm 1862 làm cảm hứng cho khối tháp. Công trình đứng ở mặt tiền đường 3 Tháng 2 nên phần lớn căn có tầm nhìn kép: một hướng ra biển Bãi Sau, một hướng về thành phố."
+      },
+      {
+        "title": "Bàn giao hoàn thiện, nhận nhà là ở được",
+        "text": "Theo công bố khi ra mắt, Beacon bàn giao hoàn thiện nội thất liền tường. Khác với cụm Beachtro E7–E9 bàn giao thô theo gói DyHome, người mua Beacon không phải tính thêm chi phí và thời gian hoàn thiện."
+      },
+      {
+        "title": "Trần 3,6 m và 3 tầng hầm",
+        "text": "Chiều cao trần 3,6 m theo công bố của chủ đầu tư, cao hơn mặt bằng căn hộ thông thường. Khối đế có 3 tầng hầm đỗ xe, phù hợp với lượng khách ra vào của một đô thị du lịch."
+      }
+    ]
+  },
+  "tienIch": {
+    "title": "Tiện ích riêng của toà và tiện ích chung",
+    "intro": "Theo tài liệu Sun Property, tiện ích trong toà Beacon gồm:",
+    "items": [
+      "Hồ bơi 50 m, hồ dành cho trẻ em và jacuzzi",
+      "Vườn trên cao và đài ngắm cảnh",
+      "3 tầng hầm đỗ xe",
+      "Kết nối thẳng sang công viên nước Sun World Vũng Tàu 15 ha, đã mở cửa từ 12/2/2026",
+      "Bãi biển Bãi Sau dài 1 km trước dự án và chuỗi 8 công viên chủ đề: Coastal Park, Whale Park 2,3 ha, Sea Soul Park, Central Park, Sport Park, Green Park 1–3",
+      "Trung tâm thương mại mặt biển 5 ha và khách sạn Marriott trong khu, còn đang xây"
+    ],
+    "image": "assets/img/blanca/beacon-bien.webp"
+  },
+  "viTri": {
+    "intro": "Tổng mặt bằng Blanca City xếp theo lớp từ đường 3 Tháng 2 ra biển. Hai toà Beacon E1–E2 và các dãy Casa Villa song lập nằm sát trục đường lớn; Sun World 15 ha ở chính giữa khu; sát biển là 6 toà Blanca cùng tổ hợp khách sạn và trung tâm thương mại mặt biển. Cụm Beachtro E6–E9 đặt ở mặt tiền đường 3 Tháng 2, kề Sun World.",
+    "image": "assets/img/du-an/blanca-city-mat-bang.jpg",
+    "diem": [
+      "Cổng chính mở ra đường 3 Tháng 2, trục nối Bãi Trước với Bãi Sau",
+      "TP.HCM đi Vũng Tàu khoảng 70 phút qua cao tốc Biên Hoà – Vũng Tàu, thông xe toàn tuyến 18/5/2026",
+      "Sân bay quốc tế Long Thành cách khoảng 60 – 70 km, khai thác thử nghiệm từ tháng 9/2026",
+      "Trung tâm TP Vũng Tàu cũ và Bãi Trước cách 3 – 5 km"
+    ]
+  },
+  "bangGia": {
+    "capNhat": "Tháng 8/2026 (bảng giá lưu hành qua đơn vị phân phối)",
+    "intro": "Sun Property chưa đăng bảng giá công khai. Con số dưới đây là mức tham chiếu, các trang phân phối đang ghi lệch nhau vài trăm triệu mỗi căn. Giá đúng theo từng căn, PaceLand gửi bản có dấu kèm sơ đồ vị trí căn.",
+    "loai": [
+      { "name": "Căn hộ Beacon", "dienTich": "Studio, 1 – 3 phòng ngủ, duplex tầng đỉnh", "gia": "Từ 2,88 tỉ, chưa VAT", "thanhToan": "Vay tới 70 %, hỗ trợ lãi suất 30 tháng" }
+    ],
+    "note": "Giá chưa gồm VAT và phí bảo trì. Chiết khấu Early Bird và chiết khấu thanh toán sớm trừ thẳng vào giá nên số cuối cùng thấp hơn mức niêm yết nếu anh/chị trả nhanh."
+  },
+  "chinhSach": {
+    "capNhat": "Công bố khi ra mắt Beacon, tháng 4/2026",
+    "intro": "Các mốc chính sách được công bố tại lễ ra mắt Beacon tháng 4/2026:",
+    "items": [
+      { "label": "Chiết khấu Early Bird", "value": "3 %" },
+      { "label": "Vay ngân hàng", "value": "Tới 70 % giá trị căn", "note": "hỗ trợ lãi suất 30 tháng" },
+      { "label": "Phương án thanh toán", "value": "Trả 70 % khi nhận nhà", "note": "lịch giãn 48 tháng" },
+      { "label": "Chiết khấu thanh toán sớm", "value": "6 – 9,5 %", "note": "theo bảng giá qua đơn vị phân phối 8/2026" },
+      { "label": "Dự kiến bàn giao", "value": "Tháng 5/2028", "note": "theo đơn vị phân phối" }
+    ],
+    "note": "Chính sách áp dụng theo từng đợt mở bán và có thể đã thay đổi so với tháng 4/2026. Trước khi đặt chỗ, PaceLand xác nhận lại bản chính sách đang có hiệu lực và đọc cùng anh/chị điều kiện áp dụng trong hợp đồng mua bán."
+  },
+  "tienDo": {
+    "capNhat": "Tháng 9/2026",
+    "moc": [
+      { "label": "Khởi công dự án", "value": "16/5/2025" },
+      { "label": "Ra mắt Beacon", "value": "Tháng 4/2026" },
+      { "label": "Sun World Vũng Tàu", "value": "Mở cửa 12/2/2026, hơn 20 trò chơi nước" },
+      { "label": "Phần ngầm Beacon và Beachtro", "value": "Dự kiến xong 100 % đài móng và sàn hầm B3 trong tháng 9/2026" },
+      { "label": "Dự kiến bàn giao", "value": "Tháng 5/2028 (theo đơn vị phân phối)" }
+    ],
+    "note": "Anh/chị muốn xem công trường và Sun World, PaceLand hẹn lịch và đi cùng từ TP.HCM, khoảng 70 – 90 phút theo cao tốc. Đi xem không mất phí."
+  },
+  "gallery": [
+    "assets/img/blanca/tong-the.webp",
+    "assets/img/blanca/khach-san.webp",
+    "assets/img/du-an/blanca-city-tien-do.jpg"
+  ],
+  "faq": [
+    {
+      "q": "Căn hộ Beacon sở hữu lâu dài hay có thời hạn?",
+      "a": "Beacon nằm trên phần đất ở của dự án và được Sun Property công bố là căn hộ sở hữu lâu dài, cùng nhóm với cụm Beachtro E6–E9 và nhà phố, biệt thự Casa. Các toà Blanca phía trong là căn hộ nghỉ dưỡng trên đất thương mại dịch vụ nên sở hữu có thời hạn. Anh/chị đọc điều khoản sở hữu ngay trong hợp đồng của đúng toà mình mua."
+    },
+    {
+      "q": "Beacon khác Beachtro ở điểm nào?",
+      "a": "Cả hai đều là căn hộ sở hữu lâu dài trong Blanca City. Beacon ra mắt tháng 4/2026, bàn giao hoàn thiện nội thất liền tường, dự kiến giao nhà tháng 5/2028. Beachtro là cụm 4 toà E6–E9 ra mắt tháng 9/2026, có bộ tiện ích riêng Tro Collection, trong đó E6 bàn giao hoàn thiện còn E7–E9 bàn giao thô theo gói DyHome, dự kiến giao nhà tháng 8/2028."
+    },
+    {
+      "q": "Giá căn hộ Beacon bao nhiêu?",
+      "a": "Theo bảng giá lưu hành qua đơn vị phân phối tháng 8/2026, Beacon chào từ 2,88 tỉ một căn chưa VAT. Sun Property chưa công bố bảng giá công khai nên các trang phân phối ghi lệch nhau; giá theo từng căn PaceLand gửi bản có dấu kèm sơ đồ vị trí."
+    },
+    {
+      "q": "Mua Beacon cần bao nhiêu vốn ban đầu?",
+      "a": "Chính sách công bố tháng 4/2026 cho phép vay tới 70 % giá trị căn với hỗ trợ lãi suất 30 tháng, hoặc trả 70 % khi nhận nhà theo lịch giãn 48 tháng. Với một căn khoảng 2,9 tỉ, phần vốn tự có trong thời gian xây rơi vào khoảng 30 %, tức chừng 870 triệu. PaceLand tính lại theo đúng căn và phương án thanh toán anh/chị chọn."
+    }
+  ],
+  "luuY": "Trước khi đặt cọc, anh/chị yêu cầu xem bản gốc bốn giấy tờ cho đúng toà mình mua: giấy phép xây dựng phần nhà ở của toà đó, văn bản của Sở Xây dựng xác nhận đủ điều kiện bán nhà ở hình thành trong tương lai, chứng thư bảo lãnh ngân hàng và điều khoản sở hữu trong hợp đồng. PaceLand đi cùng và đọc giúp.",
+  "seo": {
+    "title": "Căn hộ Beacon Blanca City — giá và chính sách | PaceLand",
+    "description": "Căn hộ Beacon tại Blanca City (Sun Group), Bãi Sau Vũng Tàu: sở hữu lâu dài, studio đến 3 phòng ngủ, trần 3,6 m, bàn giao hoàn thiện, tham chiếu từ 2,88 tỉ."
+  },
+  "ogImage": "assets/img/blanca/beacon-tower.webp"
+}

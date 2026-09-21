@@ -1,0 +1,111 @@
+{
+  "capNhat": "2026-09-21",
+  "hero": {
+    "title": "Casa Grand Villa — dòng biệt thự lớn nhất phân khu Casa",
+    "sub": "Các dãy biệt thự lớn nằm hai bên công viên nước Sun World, đất từ 308 m², bốn tầng nổi cùng một tầng hầm đa năng. Cùng ngôn ngữ kiến trúc Iberia của phân khu Casa nhưng mặt tiền rộng hơn và sân vườn lớn hơn.",
+    "image": "assets/img/blanca/casa-grand-villa.webp"
+  },
+  "specs": [
+    { "label": "Loại hình", "value": "Biệt thự lớn (grand villa)" },
+    { "label": "Pháp lý", "value": "Đất ở, sở hữu lâu dài" },
+    { "label": "Diện tích đất", "value": "308 – 319 m² (16 × 22 m)" },
+    { "label": "Kết cấu", "value": "4 tầng nổi + 1 tầng hầm" },
+    { "label": "Vị trí", "value": "Hai bên công viên nước Sun World" },
+    { "label": "Giá tham khảo", "value": "Khoảng 30 – 50 tỉ (9/2026)" }
+  ],
+  "tongQuan": {
+    "intro": "Casa Grand Villa là dòng sản phẩm lớn nhất trong phân khu thấp tầng Casa của Blanca City. Theo tổng mặt bằng, các dãy grand villa nằm hai bên công viên nước Sun World, giữa lớp biệt thự song lập phía đường 3 Tháng 2 và lớp tháp căn hộ sát biển. Tài liệu dự án nêu dòng biệt thự lớn có diện tích đất tới 600 m², trong khi thông tin lưu hành qua đơn vị phân phối ghi rổ hàng hiện tại ở mức 308 – 319 m².",
+    "diem": [
+      "Đất ở sở hữu lâu dài, cùng nhóm pháp lý với nhà phố và biệt thự Casa còn lại",
+      "Mặt tiền điển hình 16 m, chiều sâu 22 m theo thông tin phân phối",
+      "Bốn tầng nổi cộng tầng hầm, nhiều công năng hơn dòng song lập và đơn lập ba tầng",
+      "Nằm trong nhóm 939 căn thấp tầng của phân khu Casa, khoảng 200 mẫu thiết kế khác nhau"
+    ]
+  },
+  "thietKe": {
+    "title": "Kiến trúc & công năng",
+    "intro": "Aedas thiết kế toàn bộ phân khu Casa theo kiến trúc bán đảo Iberia pha chi tiết Nam Bộ: tường trắng, mái ngói, đường nét uốn mềm.",
+    "items": [
+      {
+        "title": "Bốn tầng nổi cho gia đình nhiều thế hệ",
+        "text": "Kết cấu bốn tầng cho phép tách tầng sinh hoạt chung, tầng phòng ngủ và tầng phụ trợ. Với gia đình ba thế hệ hoặc nhu cầu vừa ở vừa đón khách vào cuối tuần, đây là dòng rộng rãi nhất trong phân khu Casa."
+      },
+      {
+        "title": "Tầng hầm đa năng",
+        "text": "Tầng hầm được thiết kế thông gió và lấy sáng, dùng làm gara nhiều xe, phòng chiếu phim, phòng tập hoặc khu phụ trợ khi khai thác lưu trú."
+      },
+      {
+        "title": "Vị trí kẹp giữa công viên nước và lõi biển",
+        "text": "Các dãy grand villa nằm hai bên Sun World, đi bộ ra bãi biển và trung tâm thương mại mặt biển. Đổi lại, khu vực này sôi động vào cuối tuần và mùa lễ hội; ai cần yên tĩnh nên xem thêm các dãy phía đường 3 Tháng 2."
+      }
+    ],
+    "image": "assets/img/blanca/casa-grand-villa-2.webp"
+  },
+  "tienIch": {
+    "title": "Tiện ích quanh dãy grand villa",
+    "items": [
+      "Công viên nước Sun World Vũng Tàu 15 ha, đã mở cửa từ 12/2/2026, sức chứa 25.000 khách mỗi ngày",
+      "Bãi biển Bãi Sau dài 1 km và Coastal Park",
+      "Trung tâm thương mại mặt biển 5 ha, đang xây",
+      "Whale Park 2,3 ha, Sea Soul Park, Central Park, Sport Park, Green Park 1–3",
+      "Tổ hợp trường học, công trình y tế và trung tâm văn hoá thể thao theo quy hoạch, ở góc đông bắc khu"
+    ]
+  },
+  "viTri": {
+    "intro": "Tổng mặt bằng xếp theo lớp từ đường 3 Tháng 2 ra biển: biệt thự song lập và hai toà Beacon sát trục đường, Casa Townhouse ở góc đông, Sun World ở chính giữa với các dãy Casa Grand Villa hai bên, sát biển là sáu toà Blanca cùng tổ hợp khách sạn và trung tâm thương mại.",
+    "image": "assets/img/du-an/blanca-city-mat-bang.jpg",
+    "diem": [
+      "Ba đại lộ hoa An Nam, Gaulois và Lusitano chạy từ cổng chính xuống biển",
+      "Bãi xe bố trí ở hai đầu tuyến biển",
+      "TP.HCM đi Vũng Tàu khoảng 70 phút qua cao tốc Biên Hoà – Vũng Tàu",
+      "Sân bay quốc tế Long Thành cách khoảng 60 – 70 km"
+    ]
+  },
+  "bangGia": {
+    "capNhat": "Tháng 9/2026 (tổng hợp từ đơn vị phân phối)",
+    "intro": "Giá dòng grand villa phụ thuộc nhiều vào vị trí dãy và hướng nhìn. Các trang phân phối đang ghi khoảng giá lệch nhau, nên con số dưới đây chỉ dùng để hình dung mặt bằng chung.",
+    "loai": [
+      { "name": "Casa Grand Villa", "dienTich": "Đất 308 – 319 m² · 4 tầng + 1 hầm", "gia": "Khoảng 30 – 50 tỉ", "thanhToan": "Hỏi PaceLand lịch thanh toán thấp tầng" }
+    ],
+    "note": "Giá chưa gồm VAT và phí bảo trì. Tài liệu dự án còn nêu dòng biệt thự lớn tới 600 m² đất; nếu anh/chị cần lô lớn hơn rổ hàng hiện tại, PaceLand hỏi lại chủ đầu tư và báo cụ thể."
+  },
+  "tienDo": {
+    "capNhat": "Tháng 9/2026",
+    "moc": [
+      { "label": "Khởi công dự án", "value": "16/5/2025" },
+      { "label": "Biệt thự song lập, đơn lập", "value": "Dự kiến hơn 85 % mái và 100 % tường trong tháng 9/2026" },
+      { "label": "Nhà phố Casa", "value": "Hơn 96 % số căn đã lên mái (9/2026)" },
+      { "label": "Dự kiến bàn giao Casa", "value": "Từ quý IV/2026 (theo đơn vị phân phối)" }
+    ],
+    "note": "PaceLand đi cùng anh/chị xem công trường và nhà mẫu để đối chiếu chất lượng hoàn thiện thực tế với tài liệu bán hàng."
+  },
+  "gallery": [
+    "assets/img/blanca/casa-villa.webp",
+    "assets/img/blanca/casa-song-lap.webp",
+    "assets/img/blanca/tong-the.webp"
+  ],
+  "faq": [
+    {
+      "q": "Casa Grand Villa rộng bao nhiêu?",
+      "a": "Thông tin lưu hành qua đơn vị phân phối tháng 9/2026 ghi diện tích đất 308 – 319 m², kích thước điển hình 16 × 22 m, kết cấu bốn tầng nổi cộng một tầng hầm. Tài liệu dự án còn nêu dòng biệt thự lớn tới 600 m² đất."
+    },
+    {
+      "q": "Grand Villa khác gì biệt thự đơn lập Casa Villa?",
+      "a": "Đơn lập Casa Villa có 176 căn, đất 266 – 280 m², ba tầng nổi cộng hầm. Grand Villa có đất rộng hơn, mặt tiền 16 m và bốn tầng nổi, nằm ở các dãy hai bên công viên nước Sun World."
+    },
+    {
+      "q": "Pháp lý của Casa Grand Villa thế nào?",
+      "a": "Nhà phố và biệt thự Casa nằm trên đất ở của dự án, được công bố là sở hữu lâu dài. Anh/chị yêu cầu xem giấy phép xây dựng phần thấp tầng và văn bản xác nhận đủ điều kiện bán của Sở Xây dựng cho đúng dãy mình mua trước khi đặt cọc."
+    },
+    {
+      "q": "Còn hàng không và giá bao nhiêu?",
+      "a": "Rổ hàng thấp tầng thay đổi theo tuần. Mức tham chiếu tháng 9/2026 khoảng 30 – 50 tỉ mỗi căn tuỳ vị trí. PaceLand gửi danh sách lô còn trống kèm vị trí trên tổng mặt bằng để anh/chị chọn."
+    }
+  ],
+  "luuY": "Số liệu diện tích, số lượng căn và giá của dòng grand villa hiện chỉ có từ tài liệu lưu hành qua đơn vị phân phối, chưa có bảng công bố chính thức từ chủ đầu tư. PaceLand ghi rõ nguồn để anh/chị biết mức độ chắc chắn của từng con số.",
+  "seo": {
+    "title": "Casa Grand Villa Blanca City — diện tích, giá | PaceLand",
+    "description": "Casa Grand Villa tại Blanca City (Sun Group), Vũng Tàu: đất 308 – 319 m², 4 tầng + hầm, kiến trúc Iberia, đất ở sở hữu lâu dài, giá tham khảo 30 – 50 tỉ (9/2026)."
+  },
+  "ogImage": "assets/img/blanca/casa-grand-villa.webp"
+}

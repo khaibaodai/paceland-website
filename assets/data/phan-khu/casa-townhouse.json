@@ -1,0 +1,112 @@
+{
+  "capNhat": "2026-09-21",
+  "hero": {
+    "title": "Casa Townhouse — nhà phố kinh doanh trong đô thị biển",
+    "sub": "171 căn nhà phố nằm dọc các trục đường lớn của phân khu Casa, đất 131 – 150 m², bốn tầng nổi cùng một tầng hầm đa năng. Tháng 9/2026, hơn 96 % số căn đã lên mái và hơn nửa đã xong mặt ngoài.",
+    "image": "assets/img/blanca/casa-townhouse.webp"
+  },
+  "specs": [
+    { "label": "Loại hình", "value": "Nhà phố thương mại (shophouse)" },
+    { "label": "Pháp lý", "value": "Đất ở, sở hữu lâu dài" },
+    { "label": "Số lượng", "value": "171 căn" },
+    { "label": "Diện tích đất", "value": "131 – 150 m² (7,5 × 20 m)" },
+    { "label": "Kết cấu", "value": "4 tầng nổi + 1 tầng hầm" },
+    { "label": "Giá tham khảo", "value": "Từ 12 tỉ (9/2026)" }
+  ],
+  "tongQuan": {
+    "intro": "Casa Townhouse là dòng nhà phố kinh doanh của phân khu thấp tầng Casa, đặt ở góc đông của đô thị, dọc các trục đường lớn dẫn từ cổng chính vào trong. Đây là nhóm sản phẩm có tiến độ nhanh nhất dự án: theo chủ đầu tư, tháng 9/2026 hơn **96 %** số căn đã lên mái, hơn một nửa xong mặt ngoài, dự kiến bàn giao từ quý IV/2026.",
+    "diem": [
+      "Đất ở sở hữu lâu dài, cùng nhóm pháp lý với biệt thự Casa và căn hộ Beacon, Beachtro",
+      "Nguồn khách tại chỗ: cư dân các tháp căn hộ, khách lưu trú khách sạn và khách tới công viên nước Sun World",
+      "Tầng hầm đa năng cho kho, bếp hoặc khu phụ trợ khi kinh doanh",
+      "Kiến trúc Iberia pha chi tiết Nam Bộ, cùng ngôn ngữ với biệt thự Casa"
+    ]
+  },
+  "thietKe": {
+    "title": "Công năng kinh doanh",
+    "intro": "Bốn tầng nổi cho phép tách rõ phần kinh doanh và phần ở hoặc cho thuê.",
+    "items": [
+      {
+        "title": "Tầng trệt mặt đường, tầng trên linh hoạt",
+        "text": "Nhà nằm dọc trục đường lớn nên tầng trệt hợp với cửa hàng, quán ăn hoặc dịch vụ du lịch. Các tầng trên có thể dùng để ở, làm phòng cho thuê ngắn ngày hoặc văn phòng, tuỳ nhu cầu khai thác của chủ nhà."
+      },
+      {
+        "title": "Tầng hầm đa năng",
+        "text": "Tầng hầm được thiết kế thông gió và lấy sáng, dùng làm kho, bếp phụ, chỗ để xe hoặc khu vực phụ trợ cho hoạt động kinh doanh phía trên."
+      },
+      {
+        "title": "Nhà đã hiện hữu, xem được chất lượng thật",
+        "text": "Khác với các toà căn hộ còn đang làm phần ngầm, nhà phố Casa đã lên mái gần như toàn bộ. Anh/chị đến xem là thấy nhà thật, đối chiếu được chất lượng hoàn thiện với tài liệu bán hàng."
+      }
+    ],
+    "image": "assets/img/blanca/casa-townhouse-2.webp"
+  },
+  "tienIch": {
+    "title": "Nguồn khách và tiện ích quanh dãy nhà phố",
+    "items": [
+      "Công viên nước Sun World Vũng Tàu 15 ha, đã mở cửa từ 12/2/2026, sức chứa 25.000 khách mỗi ngày",
+      "Bãi biển Bãi Sau dài 1 km trước dự án, khách du lịch qua lại quanh năm",
+      "Trung tâm thương mại mặt biển 5 ha và khách sạn Marriott trong khu, đang xây",
+      "Dân cư tại chỗ từ các tháp căn hộ Beacon, Beachtro và Blanca cùng 939 căn thấp tầng Casa",
+      "Tổ hợp trường học, công trình y tế và trung tâm văn hoá thể thao ở góc đông bắc khu, cạnh dãy nhà phố"
+    ]
+  },
+  "viTri": {
+    "intro": "Casa Townhouse nằm ở góc đông của tổng mặt bằng, gần cụm trường học và công trình y tế theo quy hoạch, kết nối ra đường 3 Tháng 2 qua các trục nội khu.",
+    "image": "assets/img/du-an/blanca-city-mat-bang.jpg",
+    "diem": [
+      "Dọc trục đường lớn nên thuận tiện cho khách vãng lai dừng xe",
+      "Cách bãi biển và Sun World vài phút đi bộ trong nội khu",
+      "TP.HCM đi Vũng Tàu khoảng 70 phút qua cao tốc Biên Hoà – Vũng Tàu",
+      "Trung tâm TP Vũng Tàu cũ cách 3 – 5 km"
+    ]
+  },
+  "bangGia": {
+    "capNhat": "Tháng 9/2026 (tổng hợp từ đơn vị phân phối)",
+    "intro": "Khoảng giá nhà phố chênh nhau lớn giữa các trang phân phối: có nơi ghi từ 12 tỉ, có nơi ghi 19,5 – 27 tỉ tuỳ vị trí lô. Chủ đầu tư chưa đăng bảng giá công khai.",
+    "loai": [
+      { "name": "Casa Townhouse", "dienTich": "Đất 131 – 150 m² · 4 tầng + 1 hầm", "gia": "Từ khoảng 12 tỉ, tuỳ lô", "thanhToan": "Hỏi PaceLand lịch thanh toán thấp tầng" }
+    ],
+    "note": "Giá chưa gồm VAT và phí bảo trì. Với nhà phố, vị trí lô quyết định phần lớn giá trị khai thác, nên anh/chị so bảng hàng theo từng lô cụ thể thay vì so mức giá chung."
+  },
+  "tienDo": {
+    "capNhat": "Tháng 9/2026",
+    "moc": [
+      { "label": "Khởi công dự án", "value": "16/5/2025" },
+      { "label": "Nhà phố Casa Townhouse", "value": "Hơn 96 % số căn đã lên mái, hơn nửa xong mặt ngoài" },
+      { "label": "Hạ tầng", "value": "Đường Hàng Điều mở rộng đạt 95 %, thoát nước gần xong" },
+      { "label": "Sun World Vũng Tàu", "value": "Đã mở cửa từ 12/2/2026" },
+      { "label": "Dự kiến bàn giao", "value": "Từ quý IV/2026 (theo đơn vị phân phối)" }
+    ],
+    "note": "Mốc bàn giao ràng buộc là mốc ghi trong hợp đồng mua bán, không phải mốc trong tài liệu giới thiệu. PaceLand đọc cùng anh/chị phần tiến độ và điều khoản phạt chậm bàn giao."
+  },
+  "gallery": [
+    "assets/img/blanca/casa-villa.webp",
+    "assets/img/blanca/tong-the.webp",
+    "assets/img/du-an/blanca-city-tien-do.jpg"
+  ],
+  "faq": [
+    {
+      "q": "Casa Townhouse có bao nhiêu căn và rộng bao nhiêu?",
+      "a": "Phân khu có 171 căn nhà phố, diện tích đất 131 – 150 m² với kích thước điển hình 7,5 × 20 m, kết cấu bốn tầng nổi cộng một tầng hầm đa năng."
+    },
+    {
+      "q": "Mua nhà phố ở đây cho thuê được không?",
+      "a": "Nguồn khách đến từ ba hướng: cư dân các tháp căn hộ trong khu, khách lưu trú tại khách sạn và khách du lịch tới công viên nước Sun World cùng bãi biển Bãi Sau. Trung tâm thương mại mặt biển và khách sạn Marriott vẫn đang xây, nên dòng khách trong 1 – 2 năm đầu chủ yếu dựa vào Sun World và bãi biển."
+    },
+    {
+      "q": "Giá nhà phố Casa bao nhiêu?",
+      "a": "Mức tham chiếu tháng 9/2026 bắt đầu từ khoảng 12 tỉ, trong khi một số trang phân phối ghi 19,5 – 27 tỉ tuỳ vị trí lô. Chênh lệch này đến từ vị trí và hướng lô, nên PaceLand gửi bảng hàng theo từng lô để anh/chị so trực tiếp."
+    },
+    {
+      "q": "Khi nào bàn giao?",
+      "a": "Theo đơn vị phân phối, thấp tầng Casa dự kiến bàn giao từ quý IV/2026. Tháng 9/2026, hơn 96 % số căn nhà phố đã lên mái và hơn một nửa đã xong mặt ngoài."
+    }
+  ],
+  "luuY": "Trước khi đặt cọc, anh/chị yêu cầu xem giấy phép xây dựng phần nhà ở thấp tầng, văn bản của Sở Xây dựng xác nhận đủ điều kiện bán nhà ở hình thành trong tương lai và chứng thư bảo lãnh ngân hàng cho đúng dãy mình mua.",
+  "seo": {
+    "title": "Casa Townhouse Blanca City — nhà phố 171 căn | PaceLand",
+    "description": "Nhà phố Casa Townhouse tại Blanca City (Sun Group), Vũng Tàu: 171 căn, đất 131 – 150 m², 4 tầng + hầm, sở hữu lâu dài, hơn 96 % đã lên mái (9/2026), tham khảo từ 12 tỉ."
+  },
+  "ogImage": "assets/img/blanca/casa-townhouse.webp"
+}

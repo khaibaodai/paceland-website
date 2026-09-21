@@ -18,6 +18,7 @@ node_modules
 assets/img/media/hero-paceland.png
 # Dữ liệu trang full dự án: chỉ prerender đọc lúc build, trình duyệt không tải
 assets/data/du-an-chi-tiet
+assets/data/phan-khu
 
 *.md
 *.zip

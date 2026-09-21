@@ -1,0 +1,114 @@
+{
+  "capNhat": "2026-09-21",
+  "hero": {
+    "title": "Biệt thự Casa Villa — song lập & đơn lập",
+    "sub": "Phân khu thấp tầng Casa nằm giữa đường 3 Tháng 2 và công viên nước Sun World, kiến trúc bán đảo Iberia pha chi tiết Nam Bộ do Aedas thiết kế. Đất ở sở hữu lâu dài, mỗi căn 3 tầng nổi cùng một tầng hầm đa năng.",
+    "image": "assets/img/blanca/casa-villa.webp"
+  },
+  "specs": [
+    { "label": "Loại hình", "value": "Biệt thự song lập và đơn lập" },
+    { "label": "Pháp lý", "value": "Đất ở, sở hữu lâu dài" },
+    { "label": "Biệt thự song lập", "value": "460 căn · đất 160 – 200 m²" },
+    { "label": "Biệt thự đơn lập", "value": "176 căn · đất 266 – 280 m²" },
+    { "label": "Kết cấu", "value": "3 tầng nổi + 1 tầng hầm" },
+    { "label": "Giá tham khảo", "value": "Từ 24 tỉ (9/2026)" }
+  ],
+  "tongQuan": {
+    "intro": "Casa là phân khu thấp tầng của Blanca City với **939 căn** nhà phố và biệt thự, trong đó Casa Villa gồm 460 căn song lập và 176 căn đơn lập. Các dãy biệt thự chia thành ba dải quanh công viên nước Sun World; dãy sát biển là Beachfront Boutique Villa. Toàn phân khu có khoảng 200 mẫu thiết kế khác nhau nên mặt đứng không lặp lại theo dãy.",
+    "diem": [
+      "Đất ở sở hữu lâu dài, cùng nhóm pháp lý với căn hộ Beacon và Beachtro",
+      "Aedas thiết kế theo kiến trúc bán đảo Iberia, pha chi tiết Nam Bộ; mặt ngoài phủ nhiều lớp sơn chịu khí hậu biển theo công bố của chủ đầu tư",
+      "Tầng hầm đa năng dùng làm gara, phòng sinh hoạt hoặc khu cho thuê",
+      "Tháng 9/2026: biệt thự song lập và đơn lập dự kiến phủ hơn 85 % mái và xong 100 % tường trong tháng"
+    ]
+  },
+  "thietKe": {
+    "title": "Hai dòng sản phẩm, hai mục đích",
+    "intro": "Song lập và đơn lập khác nhau ở diện tích đất và mức độ riêng tư, còn kết cấu và phong cách kiến trúc là chung.",
+    "items": [
+      {
+        "title": "Song lập: 160 – 200 m² đất",
+        "text": "460 căn, hai căn chung một bức tường, ba tầng nổi và một tầng hầm. Suất đầu tư thấp hơn đơn lập trong khi vẫn có sân vườn riêng, hợp gia đình mua để ở hoặc làm nhà nghỉ cuối tuần cho nhiều thế hệ."
+      },
+      {
+        "title": "Đơn lập: 266 – 280 m² đất",
+        "text": "176 căn, bốn mặt thoáng, kích thước đất điển hình 14 × 20 m. Đây là dòng riêng tư nhất trong nhóm Casa Villa, phù hợp người mua cần không gian rộng hoặc muốn khai thác lưu trú nguyên căn."
+      },
+      {
+        "title": "Tầng hầm đa năng",
+        "text": "Mỗi căn có một tầng hầm được thiết kế thông gió và lấy sáng. Chủ nhà dùng làm gara, phòng chiếu phim, phòng tập hoặc tách thành khu cho thuê riêng, tuỳ nhu cầu khai thác."
+      }
+    ],
+    "image": "assets/img/blanca/casa-song-lap.webp"
+  },
+  "tienIch": {
+    "title": "Tiện ích quanh phân khu Casa",
+    "intro": "Các dãy biệt thự bao quanh lõi tiện ích của đô thị:",
+    "items": [
+      "Công viên nước Sun World Vũng Tàu 15 ha, đã mở cửa từ 12/2/2026",
+      "Bãi biển Bãi Sau dài 1 km và Coastal Park chạy dọc mặt biển",
+      "Chuỗi công viên chủ đề: Whale Park 2,3 ha, Sea Soul Park, Central Park, Sport Park, Green Park 1–3",
+      "Ba đại lộ hoa An Nam, Gaulois và Lusitano chạy từ cổng chính xuống biển",
+      "Tổ hợp trường học, công trình y tế và trung tâm văn hoá thể thao ở góc đông bắc khu, theo quy hoạch"
+    ]
+  },
+  "viTri": {
+    "intro": "Các dãy Casa Villa song lập nằm sát trục đường 3 Tháng 2, cùng lớp với hai toà Beacon E1 – E2. Biệt thự đơn lập và Casa Grand Villa trải quanh Sun World, còn dãy Beachfront Boutique Villa nằm sát mặt biển.",
+    "image": "assets/img/du-an/blanca-city-mat-bang.jpg",
+    "diem": [
+      "Dãy sát đường 3 Tháng 2 tiện ra vào, dãy quanh công viên yên hơn",
+      "Nhà nằm gần Sun World nghe tiếng công viên nước và lễ hội cuối tuần, anh/chị cân nhắc khi chọn lô",
+      "TP.HCM đi Vũng Tàu khoảng 70 phút qua cao tốc Biên Hoà – Vũng Tàu",
+      "Trung tâm TP Vũng Tàu cũ cách 3 – 5 km"
+    ]
+  },
+  "bangGia": {
+    "capNhat": "Tháng 9/2026 (tổng hợp từ đơn vị phân phối)",
+    "intro": "Giá thấp tầng chênh nhau nhiều theo vị trí lô: mặt đại lộ, gần công viên hay sát biển đều khác nhau. Các trang phân phối đang ghi khoảng giá lệch nhau đáng kể, nên con số dưới đây chỉ để hình dung mặt bằng.",
+    "loai": [
+      { "name": "Biệt thự song lập", "dienTich": "Đất 160 – 200 m² · 3 tầng + 1 hầm", "gia": "Từ khoảng 24 tỉ", "thanhToan": "Hỏi PaceLand lịch thanh toán thấp tầng" },
+      { "name": "Biệt thự đơn lập", "dienTich": "Đất 266 – 280 m² · 3 tầng + 1 hầm", "gia": "Khoảng 25 – 42 tỉ", "thanhToan": "Hỏi PaceLand lịch thanh toán thấp tầng" }
+    ],
+    "note": "Giá chưa gồm VAT và phí bảo trì. Bảng hàng thấp tầng thay đổi theo tuần vì số căn còn lại ít; PaceLand gửi danh sách lô còn trống kèm vị trí trên tổng mặt bằng."
+  },
+  "tienDo": {
+    "capNhat": "Tháng 9/2026",
+    "moc": [
+      { "label": "Khởi công dự án", "value": "16/5/2025" },
+      { "label": "Biệt thự song lập, đơn lập", "value": "Dự kiến hơn 85 % mái và 100 % tường trong tháng 9/2026" },
+      { "label": "Beachfront Boutique Villa", "value": "Gần nửa phần móng (9/2026)" },
+      { "label": "Hạ tầng", "value": "Đường Hàng Điều mở rộng đạt 95 %, thoát nước gần xong" },
+      { "label": "Dự kiến bàn giao Casa", "value": "Từ quý IV/2026 (theo đơn vị phân phối)" }
+    ],
+    "note": "Khác với các toà căn hộ còn đang làm móng, phần thấp tầng đã thành hình. Anh/chị đi xem là thấy nhà thật chứ không chỉ phối cảnh; PaceLand hẹn lịch và đi cùng."
+  },
+  "gallery": [
+    "assets/img/blanca/casa-grand-villa.webp",
+    "assets/img/blanca/casa-townhouse.webp",
+    "assets/img/blanca/tong-the.webp"
+  ],
+  "faq": [
+    {
+      "q": "Casa Villa có sổ lâu dài không?",
+      "a": "Nhà phố và biệt thự Casa nằm trên phần đất ở của dự án và được Sun Property công bố là sở hữu lâu dài. Trước khi đặt cọc, anh/chị yêu cầu xem giấy phép xây dựng phần thấp tầng và văn bản xác nhận đủ điều kiện bán của Sở Xây dựng cho đúng dãy mình mua."
+    },
+    {
+      "q": "Song lập và đơn lập khác nhau thế nào?",
+      "a": "Song lập có 460 căn, đất 160 – 200 m², hai căn chung một bức tường. Đơn lập có 176 căn, đất 266 – 280 m² với kích thước điển hình 14 × 20 m, bốn mặt thoáng. Cả hai đều ba tầng nổi cộng một tầng hầm đa năng."
+    },
+    {
+      "q": "Giá biệt thự Casa Villa bao nhiêu?",
+      "a": "Mức tham chiếu tháng 9/2026 là từ khoảng 24 tỉ cho song lập và 25 – 42 tỉ cho đơn lập, tuỳ vị trí lô. Giá chênh nhau nhiều giữa lô mặt đại lộ, lô nhìn công viên và lô sát biển, nên PaceLand gửi bảng hàng kèm sơ đồ lô để anh/chị so trực tiếp."
+    },
+    {
+      "q": "Khi nào nhận nhà?",
+      "a": "Theo đơn vị phân phối, phần thấp tầng Casa dự kiến bàn giao từ quý IV/2026. Tháng 9/2026 nhà phố đã lên mái hơn 96 % số căn, biệt thự dự kiến phủ hơn 85 % mái. Mốc bàn giao ràng buộc là mốc ghi trong hợp đồng mua bán."
+    }
+  ],
+  "luuY": "Số liệu diện tích và số căn lấy từ hồ sơ dự án cùng thông tin từ các đơn vị phân phối tháng 9/2026. Một số trang ghi kích thước lô khác nhau, nên khi chọn lô, anh/chị đối chiếu với bản vẽ lô kèm hợp đồng thay vì tin bài giới thiệu.",
+  "seo": {
+    "title": "Biệt thự Casa Villa Blanca City — giá, diện tích | PaceLand",
+    "description": "Biệt thự Casa Villa tại Blanca City (Sun Group), Vũng Tàu: 460 căn song lập 160 – 200 m², 176 căn đơn lập 266 – 280 m², 3 tầng + hầm, sở hữu lâu dài, tham khảo từ 24 tỉ."
+  },
+  "ogImage": "assets/img/blanca/casa-villa.webp"
+}
