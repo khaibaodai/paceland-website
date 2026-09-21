@@ -21,7 +21,14 @@ const SITE = {
     "ga4": "",
     "adsId": "",
     "adsLabel": "",
-    "metaPixel": "",
+    "metaPixel": "1801986410923640",
+    "metaPixelScope": [
+      "/beachtro-blanca-city",
+      "/du-an/blanca-city",
+      "/du-an/five-star-odyssey",
+      "/du-an/five-star-poseidon",
+      "/du-an/solina-vung-tau"
+    ],
     "tiktokPixel": ""
   },
   "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7810.390221473243!2d106.74871418169498!3d10.793580615497275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752738634e8dbd%3A0x64048b0ca1ccaa18!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gxJDhuqZVIFTGryBQQUNFIExBTkQ!5e1!3m2!1svi!2s!4v1783093230682!5m2!1svi!2s"

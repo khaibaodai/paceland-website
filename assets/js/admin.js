@@ -640,6 +640,7 @@
           field("Google Ads ID (AW-XXXX)", "s_tr_adsId", tr.adsId || "", { hint: "Chỉ cần khi chạy Google Ads" }) +
           field("Google Ads Conversion Label", "s_tr_adsLabel", tr.adsLabel || "", { hint: "Trong phần Chuyển đổi của Google Ads" }) +
           field("Meta Pixel ID", "s_tr_metaPixel", tr.metaPixel || "", { hint: "business.facebook.com → Trình quản lý sự kiện" }) +
+          field("Meta Pixel — trang áp dụng", "s_tr_metaPixelScope", (tr.metaPixelScope || []).join("\n"), { type: "textarea", rows: 90, full: true, hint: "Mỗi dòng một đường dẫn, vd /du-an/blanca-city. Để TRỐNG = gắn pixel cho toàn bộ website." }) +
           field("TikTok Pixel ID", "s_tr_tiktokPixel", tr.tiktokPixel || "", { hint: "ads.tiktok.com → Tài sản → Sự kiện → Web" }) +
           field("Link nhận Lead (Apps Script)", "s_leadEndpoint", s.leadEndpoint || "", { full: true, hint: "Dán link /exec sau khi cài Google Sheet theo tools/google-apps-script-lead.gs — lead đổ vào Sheet + email báo" }) +
           '</div><button class="btn mt-2" id="saveTracking" style="margin-top:1.2rem">Lưu Tracking & Lead</button></div>';
@@ -724,6 +725,7 @@
         adsId: ($("s_tr_adsId") || { value: "" }).value.trim(),
         adsLabel: ($("s_tr_adsLabel") || { value: "" }).value.trim(),
         metaPixel: ($("s_tr_metaPixel") || { value: "" }).value.trim(),
+        metaPixelScope: ($("s_tr_metaPixelScope") || { value: "" }).value.split(/\r?\n/).map(function (x) { return x.trim(); }).filter(Boolean),
         tiktokPixel: ($("s_tr_tiktokPixel") || { value: "" }).value.trim()
       };
       state.site.leadEndpoint = ($("s_leadEndpoint") || { value: "" }).value.trim();

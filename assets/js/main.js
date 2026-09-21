@@ -277,6 +277,15 @@
   if (typeof window !== "undefined") window.__plAttribution = getAttribution;
 
   var TR = (SITE.tracking || {});
+  function pixelInScope(list) {
+    if (!list || !list.length) return true;
+    var p = String(location.pathname || "").replace(/\.html$/i, "").replace(/\/index$/i, "/");
+    for (var i = 0; i < list.length; i++) {
+      var s = String(list[i] || "").trim().replace(/\.html$/i, "");
+      if (s && p.indexOf(s) === 0) return true;
+    }
+    return false;
+  }
   function initTracking() {
     /* Google Analytics 4 + Google Ads (chung gtag.js) */
     var gid = TR.ga4 || TR.adsId;
@@ -291,8 +300,9 @@
       if (TR.ga4) gtag("config", TR.ga4);
       if (TR.adsId) gtag("config", TR.adsId);
     }
-    /* Meta Pixel */
-    if (TR.metaPixel) {
+    /* Meta Pixel — chỉ nạp trên nhóm trang được chọn (tracking.metaPixelScope).
+       Danh sách rỗng = gắn cho toàn site. So khớp theo tiền tố đường dẫn, bỏ đuôi .html. */
+    if (TR.metaPixel && pixelInScope(TR.metaPixelScope)) {
       !(function (f, b, e, v, n, t) {
         if (f.fbq) return;
         n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
