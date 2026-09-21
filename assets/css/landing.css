@@ -242,3 +242,38 @@
   .lp-units .row.head { display: none; }
   .lp-units .row .t { grid-column: 1 / -1; }
 }
+
+/* ---------- Thẻ tiện ích có ảnh (Tro Collection) ---------- */
+.lp-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 2vw, 22px); }
+.lp-cards .it { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.lp-cards img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.lp-cards figcaption { padding: 1.05rem 1.15rem 1.25rem; }
+.lp-cards figcaption b { display: block; font-family: var(--head); font-weight: 800; font-size: 1rem; margin-bottom: 0.35rem; }
+.lp-cards figcaption span { display: block; font-size: 0.88rem; line-height: 1.6; color: var(--ink-soft); }
+
+/* ---------- Khối chính sách ---------- */
+.lp-policy { border: 1px solid var(--line); border-radius: 12px; background: var(--paper); padding: clamp(1.3rem, 2.4vw, 1.9rem); }
+.lp-policy h3 { font-family: var(--head); font-weight: 800; font-size: 1.05rem; margin-bottom: 1rem; }
+.lp-policy .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: 8px; overflow: hidden; }
+.lp-policy .it { background: var(--white); padding: 1rem 1.1rem; }
+.lp-policy .v { font-family: var(--head); font-weight: 800; font-size: clamp(1.15rem, 2vw, 1.5rem); color: var(--red); line-height: 1.1; }
+.lp-policy .l { margin-top: 0.3rem; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.45; }
+
+/* ---------- FAQ ---------- */
+.lp-faq { border-top: 1px solid var(--line); }
+.lp-faq details { border-bottom: 1px solid var(--line); }
+.lp-faq summary { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.2rem; padding: 1.1rem 0; cursor: pointer; list-style: none; font-family: var(--head); font-weight: 700; font-size: 1.02rem; color: var(--ink); }
+.lp-faq summary::-webkit-details-marker { display: none; }
+.lp-faq summary::after { content: "+"; flex: none; font-weight: 400; font-size: 1.5rem; line-height: 1; color: var(--red); transition: transform 0.25s var(--ease); }
+.lp-faq details[open] summary::after { transform: rotate(45deg); }
+.lp-faq p { margin: 0 2.4rem 1.2rem 0; font-size: 0.95rem; line-height: 1.75; color: var(--ink-soft); }
+
+/* ---------- Ghi chú nguồn ---------- */
+.lp-note { margin-top: 1rem; font-size: 0.82rem; line-height: 1.65; color: var(--muted); max-width: 90ch; }
+
+@media (max-width: 960px) {
+  .lp-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .lp-cards { grid-template-columns: 1fr; }
+}

@@ -333,6 +333,8 @@
   if (typeof window !== "undefined") window.__plTrack = track;
 
   function trackLead(params) {
+    /* Đẩy vào dataLayer để GTM/GA4 đo được ngay cả khi chưa gắn gtag trực tiếp */
+    try { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: "generate_lead" }, params || {})); } catch (e) {}
     try {
       if (window.gtag) {
         gtag("event", "generate_lead", params || {});

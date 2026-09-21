@@ -768,7 +768,12 @@ const PROJECTS = [
     "description": [
       "Blanca City là khu đô thị biển quy mô 96,6 ha do Sun Group phát triển với hai mặt tiền đường 3 Tháng 2 và trục biển Bãi Sau — vị trí lõi du lịch của Vũng Tàu, nay thuộc TP.HCM sau sáp nhập. Cơ cấu sản phẩm gồm 8 tháp căn hộ Beacon, 6 tháp Blanca và 939 căn nhà phố, biệt thự sở hữu lâu dài.",
       "Dự án khởi công ngày 16/5/2025. Điểm nhấn hiếm có: công viên nước Sun World Vũng Tàu 15 ha nằm ngay trong khu đã vận hành từ 12/2/2026 — tiện ích tầm đô thị đi trước nhịp bàn giao nhà, kéo dòng khách du lịch về ngay từ hôm nay.",
-      "Với năng lực vận hành du lịch của Sun Group và quỹ đất mặt biển sở hữu lâu dài, Blanca City phù hợp cả nhu cầu ngôi nhà thứ hai lẫn khai thác cho thuê lưu trú — PaceLand tư vấn theo từng dòng sản phẩm và mục tiêu dòng tiền."
+      "Với năng lực vận hành du lịch của Sun Group và quỹ đất mặt biển sở hữu lâu dài, Blanca City phù hợp cả nhu cầu ngôi nhà thứ hai lẫn khai thác cho thuê lưu trú — PaceLand tư vấn theo từng dòng sản phẩm và mục tiêu dòng tiền.",
+      "Đang mở bán: tháp Beachtro Tower gồm 4 tòa E6, E7, E8, E9 với 1.785 căn hộ và 3 tầng hầm, liền kề công viên Whale Park 2,3 ha. Theo công bố của chủ đầu tư tại sự kiện Kick-off ngày 30/07/2026, đây là tháp căn hộ sở hữu lâu dài cuối cùng của Blanca City; bàn giao dự kiến tháng 8/2028."
+    ],
+    "zones": [
+      { "name": "Beachtro Tower", "status": "Đang mở bán", "type": "4 tòa E6 – E9 · 1.785 căn hộ · Studio đến 2PN+", "note": "Tiện ích riêng Tro Collection; E6 bàn giao hoàn thiện, E7–E9 bàn giao không gian sáng tạo (DyHome)", "link": "/beachtro-blanca-city.html" },
+      { "name": "Beacon Tower", "status": "Đã mở bán", "type": "Tháp căn hộ trong cùng đại đô thị", "note": "Tòa \"anh em\" của Beachtro Tower theo giới thiệu của chủ đầu tư" }
     ],
     "amenities": [
       "Sun World 15 ha đã mở cửa",

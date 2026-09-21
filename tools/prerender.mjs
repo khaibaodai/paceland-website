@@ -750,7 +750,7 @@ patchFile("salehub.html", (h) => {
 });
 
 /* Org schema cho các trang còn lại */
-for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
+for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "beachtro-blanca-city.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
 }
 
@@ -762,6 +762,7 @@ const urls = [
   { loc: "/faq.html", pri: "0.9", mod: today },
   { loc: "/cong-cu.html", pri: "0.9", mod: today },
   { loc: "/gladia-heights.html", pri: "0.9", mod: today },
+  { loc: "/beachtro-blanca-city.html", pri: "0.9", mod: today },
   { loc: "/chung-nhan-doi-tac.html", pri: "0.8", mod: today },
   { loc: "/gioi-thieu.html", pri: "0.7", mod: today },
   { loc: "/doi-tac.html", pri: "0.7", mod: today },
