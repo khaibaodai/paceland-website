@@ -457,7 +457,7 @@
       for (var n = el; n && n !== root; n = n.parentElement) n.hidden = false;
     };
     if (d) {
-      if (d.ten) set("[data-ty-ten]", "Cảm ơn anh/chị " + d.ten + ".");  /* chèn vào đầu câu dẫn */
+      if (d.ten) set("[data-ty-ten]", "Cảm ơn anh/chị " + d.ten + ". "); /* dấu cách cuối để đọc liền câu dẫn */
       /* Nhãn căn đã gồm tên toà nên không ghép thêm tên dự án, tránh lặp chữ */
       var ve = d.can || d.du_an || "";
       if (ve) set("[data-ty-ve]", ve);
@@ -500,7 +500,7 @@
         var done = function (sent) {
           reset();
           if (sent) {
-            if (goTy) { rememberLead(payload); location.href = goTy; return; }
+            if (goTy) { rememberLead(payload); location.replace(goTy); return; } /* replace: bấm Back không quay lại form vừa gửi */
             if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
             form.reset();
             return;

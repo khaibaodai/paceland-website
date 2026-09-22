@@ -51,7 +51,7 @@ test("Mọi link nội bộ trên trang cảm ơn đều tồn tại", () => {
 const MAIN = read("assets/js/main.js");
 
 test("Chỉ chuyển hướng khi gửi thành công, không chuyển khi lỗi mạng", () => {
-  assert.match(MAIN, /if \(sent\) \{\s*\n\s*if \(goTy\) \{ rememberLead\(payload\); location\.href = goTy; return; \}/);
+  assert.match(MAIN, /if \(sent\) \{\s*\n\s*if \(goTy\) \{ rememberLead\(payload\); location\.replace\(goTy\); return; \}/);
 });
 
 test("Sự kiện lead được hoãn sang trang cảm ơn để không đếm hai lần", () => {
