@@ -93,3 +93,45 @@ test("Meta Pixel phủ trang cảm ơn để đo được chuyển đổi", () =
   const scope = (SITE.tracking && SITE.tracking.metaPixelScope) || [];
   assert.ok(scope.includes("/cam-on"), "thiếu /cam-on trong metaPixelScope");
 });
+
+/* ---------- Zalo OA ---------- */
+test("Zalo OA có trong cấu hình và tách bạch với Zalo chat của cố vấn", () => {
+  assert.match(SITE.zaloOA || "", /^https:\/\/zalo\.me\/\d{6,}$/, "zaloOA phải là link OA dạng số");
+  assert.notEqual(SITE.zaloOA, SITE.zalo, "OA và Zalo chat là hai kênh khác nhau");
+  assert.match(SITE.zalo || "", /zalo\.me\/0\d{9}/, "Zalo chat vẫn là số cố vấn");
+});
+
+test("Icon Zalo ở chân trang trỏ về OA, nút Chat Zalo nổi vẫn là số cố vấn", () => {
+  const comp = read("assets/js/components.js");
+  assert.match(comp, /SITE\.zaloOA \|\| SITE\.zalo\) \+ '" target="_blank" rel="noopener" aria-label="Zalo OA PaceLand"/);
+  assert.match(comp, /fc-zalo pulse" href="' \+ SITE\.zalo/, "nút nổi phải giữ Zalo chat");
+  /* Trang đã sinh phải mang đúng link, không chỉ đúng ở mã nguồn */
+  for (const f of ["index.html", "lien-he.html", "cam-on.html", "gio-hang/beachtro-blanca-city.html"]) {
+    assert.ok(read(f).includes(`aria-label="Zalo OA PaceLand"`), `${f}: chân trang thiếu icon Zalo OA`);
+  }
+});
+
+test("Trang Liên hệ và trang Cảm ơn đều có lối vào Zalo OA", () => {
+  for (const f of ["lien-he.html", "cam-on.html"]) {
+    const h = read(f);
+    assert.ok(h.includes(SITE.zaloOA), `${f}: thiếu link Zalo OA`);
+    /* Mở tab mới thì bắt buộc có rel="noopener" */
+    const links = [...h.matchAll(/<a[^>]*href="[^"]*zalo\.me\/\d{6,}"[^>]*>/g)].map((m) => m[0]);
+    for (const a of links) {
+      if (a.includes('target="_blank"')) assert.ok(a.includes("noopener"), `${f}: link OA mở tab mới mà thiếu noopener`);
+    }
+  }
+  assert.match(read("cam-on.html"), /class="btn btn--zalo"/, "nút OA phải dùng kiểu nút Zalo");
+});
+
+test("Zalo OA nằm trong schema sameAs và llms.txt", () => {
+  const ld = JSON.parse(read("index.html").match(/id="pl-ld-org">([\s\S]*?)<\/script>/)[1]);
+  assert.ok(ld.sameAs.includes(SITE.zaloOA), "schema sameAs thiếu Zalo OA");
+  assert.ok(read("llms.txt").includes(SITE.zaloOA), "llms.txt thiếu Zalo OA");
+});
+
+test("Admin sửa được link OA", () => {
+  const admin = read("assets/js/admin.js");
+  assert.match(admin, /field\("Zalo OA \(kênh chính thức\)", "s_zaloOA"/, "thiếu ô nhập trong Cài đặt");
+  assert.match(admin, /"zalo", "zaloOA",/, "không lưu zaloOA khi bấm Lưu cài đặt");
+});

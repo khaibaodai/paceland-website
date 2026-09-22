@@ -11,6 +11,7 @@ const SITE = {
   "email": "contact@paceland.vn",
   "address": "35 Đường số 36, Khu phố 2, P. Bình Trưng, TP. Thủ Đức, TP. Hồ Chí Minh",
   "zalo": "https://zalo.me/0903983737",
+  "zaloOA": "https://zalo.me/3109488145387221549",
   "facebook": "https://www.facebook.com/paceland.vn/",
   "youtube": "https://www.youtube.com/@paceland-vn",
   "tiktok": "https://www.tiktok.com/@paceland.vn",

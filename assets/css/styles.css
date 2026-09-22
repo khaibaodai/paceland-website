@@ -172,6 +172,10 @@ h1, h2, h3, h4 { font-family: var(--head); font-weight: 700; line-height: 1.12; 
 .btn--ghost:hover { box-shadow: none; border-color: var(--ink); background: var(--ink); --fg: #fff; }
 .btn--gold { --bg: transparent; --fg: var(--gold); border: 1px solid var(--line-gold); }
 .btn--gold:hover { box-shadow: 0 14px 30px var(--gold-tint); background: var(--gold); --fg: #fff; border-color: var(--gold); }
+/* Nút Zalo: giữ đúng xanh thương hiệu Zalo để khách nhận ra ngay */
+.btn--zalo { --bg: #0068FF; --fg: #fff; border: 1px solid #0068FF; }
+.btn--zalo:hover { --bg: #0055D4; border-color: #0055D4; box-shadow: 0 14px 30px rgba(0, 104, 255, 0.28); }
+.btn--zalo svg { width: 19px; height: 19px; }
 .btn--light { --bg: var(--paper); --fg: var(--ink); }
 .btn--light:hover { box-shadow: 0 16px 34px rgba(0,0,0,0.25); }
 .btn--lg { padding: 1.15rem 2rem; font-size: 0.86rem; }

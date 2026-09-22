@@ -621,7 +621,8 @@
       field("Hotline (hiển thị)", "s_hotline", s.hotline) +
       field("Hotline (số gọi)", "s_hotlineRaw", s.hotlineRaw, { hint: "Không khoảng trắng, VD: 0903983737" }) +
       field("Email", "s_email", s.email) +
-      field("Zalo", "s_zalo", s.zalo) +
+      field("Zalo (chat với cố vấn)", "s_zalo", s.zalo) +
+      field("Zalo OA (kênh chính thức)", "s_zaloOA", s.zaloOA || "", { hint: "Link OA dạng https://zalo.me/<mã OA>" }) +
       field("Địa chỉ", "s_address", s.address, { full: true }) +
       field("Facebook", "s_facebook", s.facebook) +
       field("YouTube", "s_youtube", s.youtube) +
@@ -714,7 +715,7 @@
   }
   function bindSettings() {
     $("saveSettings").onclick = function () {
-      ["name", "legalName", "tagline", "hotline", "hotlineRaw", "email", "zalo", "address", "facebook", "youtube", "tiktok", "formEndpoint", "careersEndpoint", "mapEmbed"].forEach(function (k) {
+      ["name", "legalName", "tagline", "hotline", "hotlineRaw", "email", "zalo", "zaloOA", "address", "facebook", "youtube", "tiktok", "formEndpoint", "careersEndpoint", "mapEmbed"].forEach(function (k) {
         var el = $("s_" + k); if (el) state.site[k] = el.value.trim();
       });
       persist(); toast("Đã lưu cài đặt");

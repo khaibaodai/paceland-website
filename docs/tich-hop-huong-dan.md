@@ -78,6 +78,19 @@ ngữ cảnh quá 30 phút thì bỏ, khách vào thẳng sẽ thấy bản chun
 **Trang này `noindex` và không vào sitemap** — để không lọt vào kết quả tìm kiếm và không làm
 nhiễu số liệu chuyển đổi.
 
+## 4c. Hai kênh Zalo, dùng cho hai việc khác nhau
+
+| Cấu hình | Link | Xuất hiện ở |
+|---|---|---|
+| `SITE.zalo` | `zalo.me/0903983737` | Nút "Chat Zalo" nổi, chatbot, thông báo khi form gửi lỗi, nút "Nhắn Zalo" ở trang Cảm ơn, mục Zalo ở trang Liên hệ |
+| `SITE.zaloOA` | `zalo.me/3109488145387221549` | Icon Zalo ở chân trang (mọi trang), mục "Zalo OA" ở trang Liên hệ, khối mời quan tâm ở trang Cảm ơn, `sameAs` trong schema, llms.txt |
+
+Chia như vậy vì hai kênh phục vụ hai mục đích: số cố vấn để khách nhắn hỏi ngay, OA để khách quan
+tâm rồi nhận tin dự án về sau. Hàng icon ở chân trang nằm cùng Facebook, YouTube, TikTok nên là
+hàng **kênh chính thức**, vì vậy trỏ về OA.
+
+Đổi link: Admin › Cài đặt có hai ô riêng "Zalo (chat với cố vấn)" và "Zalo OA (kênh chính thức)".
+
 ## 5. Chatbot (đã chạy sẵn — không cần cài gì)
 
 Nút **"Hỏi PaceLand"** góc trái dưới mọi trang: trả lời từ kho 35 câu Hỏi-Đáp, dẫn khách 3 bước (nhu cầu → ngân sách → SĐT) rồi đổ lead về Sheet như form. Muốn sửa câu trả lời nhanh: sửa FAQ trong Admin (chatbot đọc chung kho); các câu trả lời "lối tắt" nằm trong `assets/js/components.js` mục `CHAT_SHORTCUTS` — nhắn Claude sửa hộ.

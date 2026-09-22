@@ -186,7 +186,9 @@ function buildFooter() {
             '<a href="' + SITE.facebook + '" aria-label="Facebook">' + ICONS.facebook + "</a>" +
             '<a href="' + SITE.youtube + '" aria-label="YouTube">' + ICONS.youtube + "</a>" +
             '<a href="' + SITE.tiktok + '" aria-label="TikTok">' + ICONS.tiktok + "</a>" +
-            '<a href="' + SITE.zalo + '" aria-label="Zalo">' + ICONS.zalo + "</a>" +
+            /* Hàng này là các kênh chính thức của công ty nên trỏ về Zalo OA,
+               còn nút "Chat Zalo" nổi vẫn là số cố vấn 0903 983 737 */
+            '<a href="' + (SITE.zaloOA || SITE.zalo) + '" target="_blank" rel="noopener" aria-label="Zalo OA PaceLand">' + ICONS.zalo + "</a>" +
           "</div>" +
         "</div>" +
         '<div class="footer-col"><h4>Khám phá</h4><ul>' + nav + '<li><a href="/faq.html">Câu hỏi thường gặp</a></li><li><a href="/chung-nhan-doi-tac.html">Chứng nhận Đối tác</a></li></ul></div>' +
