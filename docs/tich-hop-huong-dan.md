@@ -46,6 +46,38 @@ Web tự gắn sự kiện sẵn: `generate_lead` (gửi form/chat), `tel_click`
 3. Dán vào Admin → Lưu → Xuất bản
 → Web tự bắn sự kiện `PageView` + `Lead` — dùng để tối ưu và tạo tệp đối tượng giống khách đã để lại SĐT.
 
+## 4b. Trang cảm ơn `/cam-on.html` (đích đo chuyển đổi)
+
+Form tư vấn gửi xong sẽ **chuyển sang `/cam-on.html`** thay vì chỉ hiện dòng báo tại chỗ. Có URL
+riêng nên GA4, Google Ads và Meta đều đo chuyển đổi theo trang đích được, không phải dựng sự kiện
+tuỳ biến.
+
+**Bật / tắt:** `SITE.thankYouPage` trong `assets/js/data.js`. Để rỗng là tắt, form quay lại báo
+thành công ngay tại chỗ như trước.
+
+**Form nào chuyển, form nào ở lại** (tự nhận diện, không phải khai báo từng form):
+
+| Loại form | Hành vi | Vì sao |
+|---|---|---|
+| Form tư vấn có ô điện thoại | Chuyển sang trang cảm ơn | Đây là lead mua nhà |
+| Form có `data-lead-kind` (đối tác, ứng tuyển) | Ở lại trang | Luồng khác, lời cảm ơn khác |
+| Form chỉ có email (đăng ký nhận tin) | Ở lại trang | Không phải yêu cầu tư vấn |
+| Form gắn `data-thankyou="off"` | Ở lại trang | Lối tắt thủ công khi cần |
+
+Chỉ chuyển trang khi **gửi thành công**. Gửi hỏng thì giữ nguyên dữ liệu khách đã nhập và hiện
+hotline như cũ.
+
+**Chống đếm hai lần:** sự kiện `generate_lead` (và `Lead` của Meta) không bắn ở trang gửi nữa mà
+bắn một lần ở trang cảm ơn, có cờ chặn nếu khách tải lại trang. Trang cảm ơn đã nằm trong
+`metaPixelScope` để pixel chạy ở đó.
+
+**Cá nhân hoá:** trang đọc `sessionStorage.pl_ty` để xưng tên, hiện dự án hoặc mã căn khách vừa
+hỏi, và cho nút quay lại đúng trang cũ. Chỉ lưu **tên gọi**, không lưu số điện thoại hay email;
+ngữ cảnh quá 30 phút thì bỏ, khách vào thẳng sẽ thấy bản chung.
+
+**Trang này `noindex` và không vào sitemap** — để không lọt vào kết quả tìm kiếm và không làm
+nhiễu số liệu chuyển đổi.
+
 ## 5. Chatbot (đã chạy sẵn — không cần cài gì)
 
 Nút **"Hỏi PaceLand"** góc trái dưới mọi trang: trả lời từ kho 35 câu Hỏi-Đáp, dẫn khách 3 bước (nhu cầu → ngân sách → SĐT) rồi đổ lead về Sheet như form. Muốn sửa câu trả lời nhanh: sửa FAQ trong Admin (chatbot đọc chung kho); các câu trả lời "lối tắt" nằm trong `assets/js/components.js` mục `CHAT_SHORTCUTS` — nhắn Claude sửa hộ.

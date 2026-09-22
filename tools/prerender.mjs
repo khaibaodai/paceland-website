@@ -980,7 +980,7 @@ patchFile("salehub.html", (h) => {
 });
 
 /* Org schema cho các trang còn lại */
-for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "beachtro-blanca-city.html", "bai-viet.html", "du-an-chi-tiet.html"]) {
+for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "beachtro-blanca-city.html", "bai-viet.html", "du-an-chi-tiet.html", "cam-on.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
 }
 

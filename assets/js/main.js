@@ -396,7 +396,8 @@
       jobs.push(fetch(fep, { method: "POST", body: fd, headers: { Accept: "application/json" } })
         .then(function (r) { return r.ok; }).catch(function () { return false; }));
     }
-    if (!isNonBuyer) trackLead({ source: payload.source || "form" });
+    /* deferTrack: form se chuyen sang trang cam on, de trang do ban su kien -> khong dem hai lan */
+    if (!isNonBuyer && !(opts && opts.deferTrack)) trackLead({ source: payload.source || "form" });
     if (opts && opts.kind === "partner") track("partner_apply_submit", { page: location.pathname });
     if (!jobs.length) return Promise.resolve(true); /* demo mode — chưa cấu hình kênh nhận */
     return Promise.all(jobs).then(function (rs) {
@@ -404,6 +405,77 @@
     });
   }
   if (typeof window !== "undefined") window.__plSubmitLead = submitLead;
+
+  /* ---------- Trang cảm ơn sau khi gửi form ----------
+     SITE.thankYouPage rỗng = tắt, form gửi xong vẫn báo thành công ngay tại chỗ.
+     Form không muốn rời trang thì đặt data-thankyou="off". */
+  var TY_KEY = "pl_ty";
+  var TY_TTL = 30 * 60 * 1000; /* ngữ cảnh cũ hơn 30 phút coi như khách vào thẳng */
+
+  function thankYouUrl(form) {
+    var page = String(SITE.thankYouPage || "").trim();
+    if (!page || page.charAt(0) !== "/") return "";
+    if (!form) return page;
+    if (form.getAttribute("data-thankyou") === "off") return "";
+    /* Hồ sơ đối tác và hồ sơ ứng tuyển có luồng riêng, lời cảm ơn khác hẳn lead mua nhà */
+    if (form.getAttribute("data-lead-kind")) return "";
+    /* Đăng ký nhận tin (chỉ có email) không phải yêu cầu tư vấn, giữ nguyên tại chỗ */
+    if (!form.querySelector("[name=phone]")) return "";
+    var here = location.pathname.replace(/\.html$/i, "");
+    if (here === page.replace(/\.html$/i, "")) return ""; /* đang ở chính trang cảm ơn */
+    return page;
+  }
+
+  /* Ghi ngữ cảnh để trang cảm ơn xưng hô đúng và dẫn khách quay lại chỗ cũ.
+     Chỉ giữ tên gọi để hiển thị; KHÔNG lưu số điện thoại, KHÔNG gửi vào analytics. */
+  function rememberLead(payload) {
+    try {
+      var ten = String(payload.name || "").trim().split(/\s+/).pop() || "";
+      sessionStorage.setItem(TY_KEY, JSON.stringify({
+        source: payload.source || "form",
+        du_an: payload.du_an || "",
+        can: payload.can || "",
+        ten: ten,
+        from: location.pathname + location.search,
+        t: Date.now()
+      }));
+    } catch (e) {}
+  }
+
+  function initThankYou() {
+    var root = document.querySelector("[data-thank-you]");
+    if (!root) return;
+    var d = null;
+    try { d = JSON.parse(sessionStorage.getItem(TY_KEY) || "null"); } catch (e) {}
+    if (d && (!d.t || Date.now() - d.t > TY_TTL)) d = null;
+
+    /* Bỏ ẩn cả phần bao ngoài, vì chỗ gắn data-* có thể nằm trong một khối đang hidden */
+    var set = function (sel, txt) {
+      var el = root.querySelector(sel);
+      if (!el || !txt) return;
+      el.textContent = txt;
+      for (var n = el; n && n !== root; n = n.parentElement) n.hidden = false;
+    };
+    if (d) {
+      if (d.ten) set("[data-ty-ten]", "Cảm ơn anh/chị " + d.ten + ".");  /* chèn vào đầu câu dẫn */
+      /* Nhãn căn đã gồm tên toà nên không ghép thêm tên dự án, tránh lặp chữ */
+      var ve = d.can || d.du_an || "";
+      if (ve) set("[data-ty-ve]", ve);
+      /* Nút quay lại: chỉ nhận đường dẫn nội bộ do chính site ghi ra */
+      var back = root.querySelector("[data-ty-back]");
+      if (back && /^\/[^\/]/.test(String(d.from || ""))) {
+        back.setAttribute("href", d.from);
+        back.hidden = false;
+      }
+      /* Đo chuyển đổi tại đây thay vì ở trang gửi, để đếm đúng một lần dù khách tải lại trang */
+      if (!d.done) {
+        trackLead({ source: d.source || "form" });
+        d.done = 1;
+        try { sessionStorage.setItem(TY_KEY, JSON.stringify(d)); } catch (e) {}
+      }
+    }
+    track("thank_you_view", { source: (d && d.source) || "truc-tiep" });
+  }
 
   function initForms() {
     document.querySelectorAll("form[data-pace-form]").forEach(function (form) {
@@ -424,9 +496,11 @@
         var err = form.querySelector(".form-error");
         if (err) err.hidden = true;
         var reset = function () { if (btn) { btn.disabled = false; btn.innerHTML = btn.getAttribute("data-label") || "Gửi"; } };
+        var goTy = thankYouUrl(form);
         var done = function (sent) {
           reset();
           if (sent) {
+            if (goTy) { rememberLead(payload); location.href = goTy; return; }
             if (ok) { ok.classList.add("show"); ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
             form.reset();
             return;
@@ -446,7 +520,9 @@
         var payload = { source: form.getAttribute("data-lead-source") || "form" };
         new FormData(form).forEach(function (v, k) { if (k !== "website" && v) payload[k] = v; });
         var kind = form.getAttribute("data-lead-kind") || "";
-        try { submitLead(payload, kind ? { kind: kind } : null).then(done, function () { done(false); }); }
+        var sendOpts = { deferTrack: !!goTy };
+        if (kind) sendOpts.kind = kind;
+        try { submitLead(payload, sendOpts).then(done, function () { done(false); }); }
         catch (x) { done(false); }
       });
     });
@@ -750,6 +826,7 @@
     initParallax();
     initFavorites();
     initForms();
+    initThankYou();
     initCounters();
     renderFeatured();
     renderLatestPosts();

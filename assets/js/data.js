@@ -17,12 +17,14 @@ const SITE = {
   "formEndpoint": "https://formspree.io/f/mjgnvwqk",
   "leadEndpoint": "",
   "careersEndpoint": "",
+  "thankYouPage": "/cam-on.html",
   "tracking": {
     "ga4": "",
     "adsId": "",
     "adsLabel": "",
     "metaPixel": "1801986410923640",
     "metaPixelScope": [
+      "/cam-on",
       "/beachtro-blanca-city",
       "/gio-hang/beachtro-blanca-city",
       "/du-an/blanca-city",
