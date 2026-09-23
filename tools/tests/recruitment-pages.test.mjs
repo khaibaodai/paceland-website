@@ -94,7 +94,7 @@ test("Form: POST được khi không có JS, honeypot _gotcha ẩn, CTA nhảy t
     assert.match(h, /name="_gotcha"/, `${rel}: thiếu honeypot _gotcha`);
     assert.match(h, /id="form-ung-tuyen"/, `${rel}: thiếu neo #form-ung-tuyen`);
     assert.ok(!/href="#ung-tuyen"/.test(h), `${rel}: còn CTA trỏ #ung-tuyen (phần chữ) thay vì khung form`);
-    assert.match(h, /data-submit>Gửi thông tin ứng tuyển</);
+    assert.match(h, /data-submit>[^<]{8,60}</);
   }
 });
 

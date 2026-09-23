@@ -2249,7 +2249,7 @@ const JOBS = [
       },
       {
         "q": "Agent có được hỗ trợ nguồn khách không?",
-        "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{projects}} trang dự án, {{posts}} bài phân tích thị trường cùng kênh Facebook, TikTok, YouTube. Agent vẫn được khuyến khích xây tệp khách riêng."
+        "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{posts}} bài phân tích thị trường và trang thông tin chuẩn hoá cho toàn bộ {{projects}} dự án cùng kênh Facebook, TikTok, YouTube. Agent vẫn được khuyến khích xây tệp khách riêng."
       },
       {
         "q": "Agent PaceLand làm việc ở đâu?",
@@ -3047,7 +3047,7 @@ const CAREERS = {
     },
     {
       "q": "Agent có được hỗ trợ nguồn khách Marketing không?",
-      "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{projects}} trang dự án, {{posts}} bài phân tích thị trường cùng kênh Facebook, TikTok, YouTube."
+      "a": "Có. Theo chính sách tuyển dụng, PaceLand hỗ trợ khách hàng từ Marketing: website paceland.vn với {{posts}} bài phân tích thị trường và trang thông tin chuẩn hoá cho toàn bộ {{projects}} dự án cùng kênh Facebook, TikTok, YouTube."
     },
     {
       "q": "PaceLand đang phân phối những dòng sản phẩm nào?",

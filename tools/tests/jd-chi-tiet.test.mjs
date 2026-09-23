@@ -95,10 +95,14 @@ test("Mức chia sẻ doanh thu 75% và lương cứng hiện đúng trên trang
 test("Ba mục mới hiện trên cả năm trang vị trí", () => {
   for (const j of OPEN) {
     const h = page(j);
-    for (const m of ["Chỉ số theo dõi kết quả", "Quyền lợi của bạn", "Nghĩa vụ của bạn"]) {
+    for (const m of ["Chỉ số theo dõi kết quả", "Quyền lợi của bạn", "Cam kết khi làm việc tại PaceLand"]) {
       assert.ok(h.includes(m), `${j.id}: trang thiếu mục "${m}"`);
     }
     assert.ok(h.includes('class="cr-duty-list"'), `${j.id}: danh sách nghĩa vụ chưa render`);
+    /* Nghĩa vụ gập lại để không chắn đường ứng viên tới nút ứng tuyển, nhưng vẫn phải đọc được */
+    assert.ok(h.includes('<details class="cr-oblig">'), `${j.id}: nghĩa vụ phải nằm trong khối gập`);
+    /* Chỉ số không được dùng dấu tích như quyền lợi — khác nghĩa */
+    assert.ok(h.includes('<ul class="cr-kpis">'), `${j.id}: chỉ số phải dùng ký hiệu riêng, không dùng dấu tích`);
     assert.ok(h.includes('class="cr-kpinote"'), `${j.id}: ghi chú chỉ số chưa render`);
   }
 });

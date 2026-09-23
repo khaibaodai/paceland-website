@@ -268,7 +268,8 @@
 .cr-work .cr-head, .cr-env .cr-head { margin-bottom: 1.6rem; }
 .cr-work .cr-head h2, .cr-env .cr-head h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
 
-.cr-compcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); border-top: 2px solid var(--cr-ink); }
+/* Gioi han be ngang moi the: vi tri chi co mot muc thu nhap thi the khong gian het trang */
+.cr-compcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 320px)); justify-content: start; border-top: 2px solid var(--cr-ink); }
 .cr-compcards div { padding: 1.4rem 1.4rem 0 0; }
 .cr-compcards div + div { padding-left: 1.4rem; border-left: 1px solid var(--cr-line); }
 .cr-compcards dt { font: 700 0.74rem var(--head); letter-spacing: 0.12em; text-transform: uppercase; color: var(--cr-muted); }
@@ -354,7 +355,9 @@
   .cr-jobhero { grid-template-columns: minmax(0, 1fr); }
   .cr-jobhero__poster { display: none; }
   .cr-sticky { display: flex; }
-  body.careers { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  /* Chua cho ho cho thanh dinh o chan footer, khong o body: padding cua body to mau nen sang
+     nen khi thanh dinh an di se lo mot dai sang duoi footer toi */
+  body.careers .footer-bottom { padding-bottom: calc(1.8rem + 76px + env(safe-area-inset-bottom)); }
   body.careers .float-contact { display: none; }
 }
 @media (max-width: 767px) {
@@ -400,13 +403,57 @@
 }
 
 /* ---------- JD chi tiết: chỉ số theo dõi, quyền lợi & nghĩa vụ ---------- */
-.cr-subhead--top { margin-top: 0; }
-.cr-kpinote { margin-top: .8rem; font-size: .88rem; line-height: 1.6; color: var(--cr-muted); }
-/* Hai cột cố định thay cho auto-fit: auto-fit sinh thêm track rỗng và một khe thừa bên phải */
+.cr-subhead--top { margin-top: 0; padding-top: 0; border-top: 0; }
+.cr-kpinote { margin-top: .8rem; max-width: 52ch; font-size: .88rem; line-height: 1.6; color: var(--cr-muted); }
+
+/* Cột phải có ba loại nội dung nối nhau (chân dung → yêu cầu → chỉ số). Khoảng cách giữa
+   hai loại phải lớn hơn hẳn khoảng cách giữa hai mục cùng loại, nếu không mắt đọc thành một khối. */
+.cr-work .cr-subhead { margin-top: 2.6rem; padding-top: 1.1rem; border-top: 2px solid var(--cr-ink); font-size: 1.22rem; letter-spacing: -0.015em; }
+
+/* Chỉ số KHÔNG dùng dấu tích: dấu tích đọc là "bạn đã có / bạn được nhận",
+   trong khi chỉ số là thứ sẽ được đo. Dùng ô vuông rỗng cho đúng nghĩa. */
+.cr-kpis { list-style: none; display: grid; gap: .7rem; }
+.cr-kpis li { position: relative; padding-left: 1.6rem; max-width: 58ch; font-size: .98rem; line-height: 1.55; color: var(--cr-ink-2); }
+.cr-kpis li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 8px; height: 8px; border: 1.5px solid var(--cr-red); }
+
+/* Hai cột cố định thay cho auto-fit: auto-fit sinh thêm track rỗng và một khe thừa bên phải.
+   Mốc 768px cho khớp hệ mốc chung của site (1023 / 899 / 767 / 599). */
 .cr-duo { display: grid; gap: clamp(20px, 3.5vw, 48px); margin-top: clamp(1.4rem, 3vw, 2.2rem); }
-@media (min-width: 760px) { .cr-duo { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 768px) { .cr-duo { grid-template-columns: 1fr 1fr; } }
+
+/* Nghĩa vụ gập lại: đọc được khi cần, không chắn đường ứng viên tới nút ứng tuyển */
+.cr-oblig { margin-top: clamp(1.6rem, 3vw, 2.4rem); border-top: 1px solid var(--cr-line); }
+.cr-oblig > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; padding: 1.1rem 0; font-family: var(--head); font-weight: 700; font-size: 1.1rem; color: var(--cr-ink); }
+.cr-oblig > summary::-webkit-details-marker { display: none; }
+.cr-oblig > summary span { font-family: var(--body); font-weight: 400; font-size: .92rem; color: var(--cr-muted); }
+.cr-oblig > summary::after { content: "+"; margin-left: auto; font-size: 1.4rem; line-height: 1; color: var(--cr-red); }
+.cr-oblig[open] > summary::after { content: "–"; }
+.cr-oblig > div { padding-bottom: 1.4rem; }
 /* Nghĩa vụ dùng dấu gạch trung tính, không dùng dấu tích như quyền lợi */
 .cr-duty-list { list-style: none; display: grid; gap: .7rem; }
-.cr-duty-list li { position: relative; padding-left: 1.6rem; font-size: 0.98rem; line-height: 1.55; color: var(--cr-ink-2); }
-.cr-duty-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 2px; background: var(--cr-ink-2); opacity: .5; }
-.cr-duties li strong { display: block; margin-bottom: .25rem; font-family: var(--head); }
+.cr-duty-list li { position: relative; padding-left: 1.6rem; max-width: 58ch; font-size: 0.98rem; line-height: 1.55; color: var(--cr-ink-2); }
+.cr-duty-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 11px; height: 2px; background: var(--cr-muted); }
+
+/* Tiêu đề đầu việc phải nổi hơn phần giải thích, nếu không cả khối là một mảng chữ đều nhau */
+.cr-duties li { color: var(--cr-ink-2); padding: 1.2rem 0; }
+.cr-duties li strong, .cr-duty-list li strong { display: block; margin-bottom: .3rem; font-family: var(--head); font-size: 1.06rem; line-height: 1.3; letter-spacing: -0.012em; color: var(--cr-ink); }
+.cr-duty-list li strong { font-size: 1rem; }
+
+/* Chặn độ dài dòng chữ. Ở dải 768–1023px hai cột sập làm một, dòng dài tới hơn 100 ký tự.
+   Dùng 58ch chứ không phải 68ch: đơn vị ch đo theo bề rộng chữ số 0, mà chữ thường tiếng Việt
+   hẹp hơn nên 68ch rơi vào khoảng 88 ký tự thật — vẫn quá ngưỡng dễ đọc 75. */
+.cr-duties li > div, .cr-checks li, .cr-profile p { max-width: 58ch; }
+@media (max-width: 1023px) {
+  .cr-work .cr-split > div, .cr-env .cr-split > div { max-width: 70ch; }
+}
+
+/* Thanh nhảy mục: trang vị trí dài hơn 20 màn hình, không có mục lục thì chỉ còn cách cuộn hết */
+.cr-jump { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.cr-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem; border: 1px solid var(--cr-line); border-radius: 999px; font-size: .9rem; font-weight: 600; color: var(--cr-ink-2); text-decoration: none; transition: border-color .18s ease, color .18s ease; }
+.cr-jump a:hover { border-color: var(--cr-red); color: var(--cr-red); }
+@media (max-width: 599px) {
+  .cr-jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+  .cr-jump::-webkit-scrollbar { display: none; }
+  .cr-jump a { flex: none; }
+}
+@media (prefers-reduced-motion: reduce) { .cr-jump a { transition: none; } }

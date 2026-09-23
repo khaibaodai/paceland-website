@@ -303,7 +303,7 @@ ${head("Hỏi nhanh", title, sub, ctx, "crFaqTitle")}
 /* Form ứng tuyển — careers.js (data-career-form) xử lý khi có JS; không có JS thì
    form vẫn POST thẳng tới Formspree với kiểm tra bắt buộc gốc của trình duyệt.
    group: "sales" | "general" | "" (trang tổng: hiện cả hai nhóm câu kinh nghiệm) */
-export function ApplicationForm(C, ctx, jobs, { selected = "", group = "" } = {}) {
+export function ApplicationForm(C, ctx, jobs, { selected = "", group = "", submitLabel = "" } = {}) {
   const f = C.form || {};
   const S = ctx.SITE || {};
   const action = S.careersEndpoint || S.formEndpoint || "";
@@ -326,7 +326,7 @@ export function ApplicationForm(C, ctx, jobs, { selected = "", group = "" } = {}
 </div></details>
 <div class="cr-hp" aria-hidden="true"><label for="cfHp">Để trống ô này</label><input id="cfHp" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
 <input type="hidden" name="_subject" value="${esc(`Ứng tuyển PaceLand${sel ? ` · ${sel.title}` : ""}`)}"><input type="hidden" name="kind" value="application"><input type="hidden" name="job_slug" value="${esc(selected)}">
-<button class="cr-btn cr-btn--red cr-btn--block" type="submit" data-submit>Gửi thông tin ứng tuyển</button>
+<button class="cr-btn cr-btn--red cr-btn--block" type="submit" data-submit>${F(submitLabel || "Gửi thông tin ứng tuyển", ctx)}</button>
 <p class="cr-form__note">${F(f.privacy, ctx)}</p>
 <p class="cr-form__status" role="alert" data-status hidden></p>
 </form>
@@ -338,7 +338,7 @@ export function ApplicationForm(C, ctx, jobs, { selected = "", group = "" } = {}
 }
 
 /* Khối ứng tuyển cuối trang (nền đen) — khung form có id="form-ung-tuyen" để mọi CTA nhảy thẳng vào form */
-export function ApplySection(C, ctx, jobs, { title, sub, selected = "", eyebrow = "Ứng tuyển", group = "" } = {}) {
+export function ApplySection(C, ctx, jobs, { title, sub, selected = "", eyebrow = "Ứng tuyển", group = "", submitLabel = "" } = {}) {
   const S = ctx.SITE;
   return `<section class="cr-sec cr-dark cr-apply" id="ung-tuyen" aria-labelledby="crApplyTitle"><div class="container cr-apply__grid">
 <div class="cr-apply__copy">
@@ -350,7 +350,7 @@ export function ApplySection(C, ctx, jobs, { title, sub, selected = "", eyebrow 
 <li><span>Fanpage</span><a href="${esc(S.facebook)}" target="_blank" rel="noopener">facebook.com/paceland.vn</a></li>
 </ul>
 </div>
-<div class="cr-apply__panel" id="form-ung-tuyen">${ApplicationForm(C, ctx, jobs, { selected, group })}</div>
+<div class="cr-apply__panel" id="form-ung-tuyen">${ApplicationForm(C, ctx, jobs, { selected, group, submitLabel })}</div>
 </div></section>`;
 }
 
@@ -461,6 +461,7 @@ ${Breadcrumb([{ label: "Trang chủ", href: "/" }, { label: "Tuyển dụng", hr
 <p class="cr-hero__sub">${F((j.hero || {}).sub || j.desc, ctx)}</p>
 <div class="cr-actions"><a class="cr-btn cr-btn--red" href="${APPLY_HREF}" data-apply data-cta="job_hero">Ứng tuyển vị trí này ${ICON_ARROW}</a><a class="cr-btn cr-btn--line" href="${esc(ctx.SITE.zalo)}" target="_blank" rel="noopener" data-cta="job_hero_zalo">Nhắn Zalo</a></div>
 <dl class="cr-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>
+<nav class="cr-jump" aria-label="Nội dung trang">${[["#cong-viec", "Công việc"], ["#thu-nhap", "Thu nhập & quyền lợi"], ...(j.pathStage ? [["#lo-trinh", "Lộ trình"]] : []), ["#he-thong", "Hệ thống hỗ trợ"], ["#quy-trinh", "Quy trình tuyển"]].map(([h, t]) => `<a href="${h}">${esc(t)}</a>`).join("")}</nav>
 ${posted ? `<p class="cr-posted">Đăng ngày <time datetime="${esc(j.datePosted)}">${posted}</time>${updated ? ` · Cập nhật <time datetime="${esc(j.updated)}">${updated}</time>` : ""}</p>` : ""}
 </div>
 ${j.poster ? `<figure class="cr-poster cr-jobhero__poster">${imgTag(root, j.poster, `Poster tuyển dụng ${j.title} — PaceLand`, { width: 1080, height: 1080, eager: true, sizes: "420px", hideBelow: 899 })}</figure>` : ""}
@@ -479,12 +480,12 @@ ${(w.points || []).length ? `<ul class="cr-points cr-points--${Math.min((w.point
 /* Mô tả (desc) hiển thị làm đoạn mở đầu — khớp nội dung JobPosting description */
 function JobWork(j, ctx) {
   const profiles = j.profiles || [];
-  return `<section class="cr-sec cr-work" aria-labelledby="crWorkTitle"><div class="container cr-split cr-split--even">
+  return `<section class="cr-sec cr-work" id="cong-viec" aria-labelledby="crWorkTitle"><div class="container cr-split cr-split--even">
 <div>${head("Công việc", "Bạn sẽ làm gì", j.desc, ctx, "crWorkTitle")}<ol class="cr-duties">${(j.duties || []).map((d) => `<li><div>${FB(d, ctx)}</div></li>`).join("")}</ol></div>
-<div>${head("Chân dung ứng viên", profiles.length ? "Bạn là ai cũng có chỗ bắt đầu" : "PaceLand tìm ở bạn", "", ctx, "")}
+<div role="region" aria-labelledby="crWhoTitle">${head(profiles.length ? "Chân dung ứng viên" : "Yêu cầu & chỉ số", profiles.length ? "Bạn là ai cũng có chỗ bắt đầu" : "PaceLand tìm ở bạn", "", ctx, "crWhoTitle")}
 ${profiles.length ? `<div class="cr-profiles">${profiles.map((p) => `<article class="cr-profile"><h3>${F(p.title, ctx)}</h3><p>${F(p.text, ctx)}</p></article>`).join("")}</div>` : ""}
-${(j.reqs || []).length ? `${profiles.length ? '<h3 class="cr-subhead">Điều PaceLand cần ở bạn</h3>' : ""}<ul class="cr-checks">${j.reqs.map((r) => `<li>${F(r, ctx)}</li>`).join("")}</ul>` : ""}
-${(j.kpis || []).length ? `<h3 class="cr-subhead">Chỉ số theo dõi kết quả</h3><ul class="cr-checks">${j.kpis.map((r) => `<li>${FB(r, ctx)}</li>`).join("")}</ul>${j.kpiNote ? `<p class="cr-kpinote">${F(j.kpiNote, ctx)}</p>` : ""}` : ""}
+${(j.reqs || []).length ? `<h3 class="cr-subhead${profiles.length ? "" : " cr-subhead--top"}">${profiles.length ? "Điều PaceLand cần ở bạn" : "Yêu cầu với vị trí này"}</h3><ul class="cr-checks">${j.reqs.map((r) => `<li>${F(r, ctx)}</li>`).join("")}</ul>` : ""}
+${(j.kpis || []).length ? `<h3 class="cr-subhead">Chỉ số theo dõi kết quả</h3><ul class="cr-kpis">${j.kpis.map((r) => `<li>${FB(r, ctx)}</li>`).join("")}</ul>${j.kpiNote ? `<p class="cr-kpinote">${F(j.kpiNote, ctx)}</p>` : ""}` : ""}
 </div></div></section>`;
 }
 
@@ -493,10 +494,8 @@ function JobIncome(j, ctx) {
   return `<section class="cr-sec cr-soft cr-jobincome" id="thu-nhap" aria-labelledby="crJIncTitle"><div class="container">
 ${head("Thu nhập & quyền lợi", "Rõ ràng từ đầu", "Chỉ những gì đã có trong chính sách tuyển dụng của PaceLand. Chi tiết được trao đổi minh bạch khi phỏng vấn.", ctx, "crJIncTitle")}
 ${comp.length ? `<dl class="cr-compcards">${comp.map((c) => `<div><dt>${F(c.label, ctx)}</dt><dd class="v">${F(c.value, ctx)}</dd>${c.note ? `<dd class="n">${F(c.note, ctx)}</dd>` : ""}</div>`).join("")}</dl>` : ""}
-${(j.benefits || []).length || (j.obligations || []).length ? `<div class="cr-duo">
-${(j.benefits || []).length ? `<div><h3 class="cr-subhead cr-subhead--top">Quyền lợi của bạn</h3><ul class="cr-checks">${j.benefits.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul></div>` : ""}
-${(j.obligations || []).length ? `<div><h3 class="cr-subhead cr-subhead--top">Nghĩa vụ của bạn</h3><ul class="cr-duty-list">${j.obligations.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul>${j.obligationNote ? `<p class="cr-kpinote">${F(j.obligationNote, ctx)}</p>` : ""}</div>` : ""}
-</div>` : ""}
+${(j.benefits || []).length ? `<div class="cr-duo"><div><h3 class="cr-subhead cr-subhead--top">Quyền lợi của bạn</h3><ul class="cr-checks">${j.benefits.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul></div></div>` : ""}
+${(j.obligations || []).length ? `<details class="cr-oblig"><summary>Cam kết khi làm việc tại PaceLand <span>(${j.obligations.length} điều)</span></summary><div><ul class="cr-duty-list">${j.obligations.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul>${j.obligationNote ? `<p class="cr-kpinote">${F(j.obligationNote, ctx)}</p>` : ""}</div></details>` : ""}
 </div></section>`;
 }
 
@@ -556,7 +555,7 @@ ${JobEnvironment(j, ctx)}
 ${CareerLeaders(ctx)}
 ${RecruitmentProcess(C, ctx)}
 ${CareerFAQ(j.faq, ctx, { title: `Hỏi nhanh về vị trí ${name}` })}
-${ApplySection(C, ctx, jobs, { title: fc.title || "Bắt đầu bằng một cuộc trao đổi.", sub: fc.sub || "", selected: j.id, eyebrow: `Ứng tuyển · ${name}`, group: SALES_CATEGORIES.includes(j.category) ? "sales" : "general" })}
+${ApplySection(C, ctx, jobs, { title: fc.title || "Bắt đầu bằng một cuộc trao đổi.", sub: fc.sub || "", selected: j.id, eyebrow: `Ứng tuyển · ${name}`, group: SALES_CATEGORIES.includes(j.category) ? "sales" : "general", submitLabel: fc.button || "" })}
 ${OtherJobs(j, jobs, url)}
 ${StickyApplyBar(ctx, { label: "Ứng tuyển vị trí này" })}
 </div>`;
