@@ -480,7 +480,7 @@ ${(w.points || []).length ? `<ul class="cr-points cr-points--${Math.min((w.point
 function JobWork(j, ctx) {
   const profiles = j.profiles || [];
   return `<section class="cr-sec cr-work" aria-labelledby="crWorkTitle"><div class="container cr-split cr-split--even">
-<div>${head("Công việc", "Bạn sẽ làm gì", j.desc, ctx, "crWorkTitle")}<ol class="cr-duties">${(j.duties || []).map((d) => `<li>${FB(d, ctx)}</li>`).join("")}</ol></div>
+<div>${head("Công việc", "Bạn sẽ làm gì", j.desc, ctx, "crWorkTitle")}<ol class="cr-duties">${(j.duties || []).map((d) => `<li><div>${FB(d, ctx)}</div></li>`).join("")}</ol></div>
 <div>${head("Chân dung ứng viên", profiles.length ? "Bạn là ai cũng có chỗ bắt đầu" : "PaceLand tìm ở bạn", "", ctx, "")}
 ${profiles.length ? `<div class="cr-profiles">${profiles.map((p) => `<article class="cr-profile"><h3>${F(p.title, ctx)}</h3><p>${F(p.text, ctx)}</p></article>`).join("")}</div>` : ""}
 ${(j.reqs || []).length ? `${profiles.length ? '<h3 class="cr-subhead">Điều PaceLand cần ở bạn</h3>' : ""}<ul class="cr-checks">${j.reqs.map((r) => `<li>${F(r, ctx)}</li>`).join("")}</ul>` : ""}

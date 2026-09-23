@@ -126,3 +126,28 @@ test("JobPosting mang đủ JD cho Google Jobs", () => {
     assert.ok(!/\{\{[a-zA-Z]+\}\}/.test(ld.description), `${j.id}: schema còn placeholder chưa thay`);
   }
 });
+
+/* 23/09: thêm <strong> vào đầu việc làm vỡ bố cục. `.cr-duties li` là lưới hai ô
+   (số thứ tự | nội dung); để chữ trần cạnh thẻ thì lưới coi mỗi thứ là một ô, phần chữ
+   rơi xuống hàng mới trong cột rộng 44px và ngắt dòng từng chữ — mỗi đầu việc cao
+   hơn 600px. Test này canh đúng cái đã vỡ: ô nội dung phải là MỘT phần tử bọc. */
+test("Mỗi đầu việc chỉ có một phần tử bọc, không để chữ trần trong ô lưới", () => {
+  for (const j of OPEN) {
+    const h = page(j);
+    const ol = h.slice(h.indexOf('<ol class="cr-duties">'), h.indexOf("</ol>", h.indexOf('<ol class="cr-duties">')));
+    const items = [...ol.matchAll(/<li>([\s\S]*?)<\/li>/g)].map((m) => m[1]);
+    assert.ok(items.length >= 6, `${j.id}: không đọc được danh sách đầu việc`);
+    for (const it of items) {
+      assert.match(it, /^<div>[\s\S]*<\/div>$/, `${j.id}: đầu việc phải bọc trong <div>, đang là: ${it.slice(0, 50)}`);
+    }
+  }
+});
+
+/* Cùng lỗi có thể tái diễn ở các danh sách khác nếu sau này ai đó đổi chúng sang lưới */
+test("Danh sách chỉ số và nghĩa vụ không dùng lưới nhiều ô cho nội dung", () => {
+  const css = read("assets/css/careers.css");
+  for (const cls of [".cr-checks li", ".cr-duty-list li"]) {
+    const rule = css.split("\n").find((l) => l.trim().startsWith(cls + " {")) || "";
+    assert.ok(!/display:\s*grid/.test(rule), `${cls} chuyển sang lưới sẽ vỡ khi nội dung có thẻ in đậm`);
+  }
+});

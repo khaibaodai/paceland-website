@@ -257,6 +257,9 @@
 .cr-duties { list-style: none; counter-reset: cr-d; border-top: 2px solid var(--cr-ink); }
 .cr-duties li { counter-increment: cr-d; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 0.8rem; padding: 1rem 0; border-bottom: 1px solid var(--cr-line); font-size: 1rem; line-height: 1.55; color: var(--cr-ink); }
 .cr-duties li::before { content: counter(cr-d, decimal-leading-zero); padding-top: 0.15rem; font: 800 0.82rem var(--head); letter-spacing: 0.1em; color: var(--cr-red); }
+/* Ô nội dung PHẢI là một phần tử bọc duy nhất. Để chữ trần cạnh <strong> thì lưới
+   coi mỗi thứ là một ô, phần chữ rơi xuống hàng mới trong cột số rộng 44px. */
+.cr-duties li > div { min-width: 0; }
 .cr-profiles { display: grid; gap: 1rem; }
 .cr-profile { padding-top: 1.1rem; border-top: 2px solid var(--cr-ink); }
 .cr-profile + .cr-profile { margin-top: 0.6rem; }
@@ -406,4 +409,4 @@
 .cr-duty-list { list-style: none; display: grid; gap: .7rem; }
 .cr-duty-list li { position: relative; padding-left: 1.6rem; font-size: 0.98rem; line-height: 1.55; color: var(--cr-ink-2); }
 .cr-duty-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 2px; background: var(--cr-ink-2); opacity: .5; }
-.cr-duties li strong { display: block; margin-bottom: .2rem; font-family: var(--head); }
+.cr-duties li strong { display: block; margin-bottom: .25rem; font-family: var(--head); }
