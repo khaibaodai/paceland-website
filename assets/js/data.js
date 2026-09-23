@@ -2158,11 +2158,15 @@ const JOBS = [
       ]
     },
     "duties": [
-      "Tư vấn khách mua căn hộ, nhà phố cao cấp theo danh mục chọn lọc",
-      "Chăm sóc nguồn khách từ Marketing và phát triển tệp khách riêng",
-      "Dẫn khách tham quan nhà mẫu, công trường; đàm phán và chốt giao dịch",
-      "Cập nhật giỏ hàng, chính sách bán hàng theo từng đợt mở bán",
-      "Xây dựng thương hiệu cá nhân với mã chứng nhận PaceLand riêng"
+      "**Nắm sản phẩm trước khi gặp khách** — Học pháp lý, tiến độ, giá theo loại căn và chính sách thanh toán của từng dự án trong danh mục. Lấy dữ liệu từ SaleHub và trang dự án trên paceland.vn làm nguồn chuẩn, không nói khác con số công ty đã công bố.",
+      "**Xử lý khách Marketing chuyển sang** — Gọi lại khách được phân, hỏi rõ ngân sách, mục đích mua và thời điểm dự kiến xuống tiền, rồi ghi vào hệ thống ngay sau cuộc gọi.",
+      "**Phát triển tệp khách của riêng mình** — Khai thác quan hệ cá nhân, khách cũ giới thiệu và kênh nội dung cá nhân, không chỉ trông vào nguồn khách công ty.",
+      "**Tư vấn bằng số, không bằng cảm tính** — Dùng bộ công cụ trên paceland.vn tính khoản vay, dòng tiền cho thuê và điểm hoà vốn ngay trước mặt khách; so sánh các dự án bằng dữ liệu đã chuẩn hoá.",
+      "**Dẫn khách đi thực tế** — Sắp lịch và đi cùng khách xem nhà mẫu, căn hộ mẫu, công trường; chuẩn bị trước những câu khách hay hỏi ở từng dự án.",
+      "**Chốt giao dịch và hoàn thiện hồ sơ** — Hướng dẫn khách đặt chỗ, ký thoả thuận và chuẩn bị hồ sơ mua bán; phối hợp Admin Kinh doanh đối soát chứng từ với chủ đầu tư.",
+      "**Đọc hợp đồng cùng khách trước khi khách xuống tiền** — Chỉ rõ điều khoản tiến độ bàn giao, mức phạt chậm, chứng thư bảo lãnh ngân hàng và thời hạn sở hữu.",
+      "**Chăm sóc sau giao dịch** — Theo dõi lịch thanh toán từng đợt của khách, cập nhật tiến độ dự án và giữ liên hệ để có nguồn khách giới thiệu.",
+      "**Giữ dữ liệu sạch và xây hồ sơ cá nhân** — Cập nhật trạng thái khách sau mỗi lần tương tác; hoàn thiện trang hồ sơ và mã chứng nhận PL-xxxx trên paceland.vn."
     ],
     "profiles": [
       {
@@ -2184,7 +2188,15 @@ const JOBS = [
       "Sẵn sàng học sản phẩm, pháp lý và thị trường Khu Đông",
       "Ưu tiên từng làm sales (BĐS, bảo hiểm, ô tô, tài chính); chưa có kinh nghiệm vẫn được xem xét"
     ],
-    "kpis": [],
+    "kpis": [
+      "Số khách mới tiếp cận và số khách đang theo dõi trong kỳ",
+      "Tỷ lệ khách được phân chuyển thành cuộc hẹn tư vấn trực tiếp",
+      "Số buổi dẫn khách đi xem nhà mẫu và công trường",
+      "Tỷ lệ khách đã đi xem chuyển thành đặt chỗ hoặc giữ chỗ",
+      "Số giao dịch thành công và giá trị hợp đồng đã ký trong kỳ",
+      "Số khách cũ mua tiếp hoặc giới thiệu khách mới",
+      "Mức độ đầy đủ và kịp thời của dữ liệu khách trên hệ thống"
+    ],
     "compensation": [
       {
         "label": "Lương cứng",
@@ -2203,12 +2215,14 @@ const JOBS = [
       }
     ],
     "benefits": [
-      "Lương cứng 5 triệu + chia sẻ doanh thu lũy tiến lên đến 75%",
-      "Nguồn khách hàng từ Marketing toàn diện",
-      "Kho sản phẩm cao cấp, thanh khoản tốt",
-      "Hệ thống đào tạo, dữ liệu và cổng làm việc SaleHub",
-      "Lộ trình Sales → Leader → Đối tác sở hữu",
-      "Mã chứng nhận + trang hồ sơ cá nhân trên paceland.vn"
+      "Lương cứng {{agentBase}} mỗi tháng",
+      "Chia sẻ doanh thu lũy tiến lên đến 75% theo năng lực và kết quả",
+      "Nguồn khách từ Marketing: website, fanpage, TikTok, YouTube và {{posts}} bài phân tích thị trường",
+      "Danh mục {{projects}} dự án đã chuẩn hoá pháp lý, tiến độ và giá tham khảo",
+      "SaleHub và bộ công cụ tính mở trên điện thoại, dùng ngay trước mặt khách",
+      "Đào tạo hội nhập về sản phẩm, pháp lý và quy trình tư vấn",
+      "Mã chứng nhận PL-xxxx và trang hồ sơ cá nhân công khai trên paceland.vn",
+      "Lộ trình ba bậc Sales → Leader → Đối tác sở hữu, điều kiện từng bậc trao đổi minh bạch"
     ],
     "system": [
       "marketing",
@@ -2259,7 +2273,18 @@ const JOBS = [
     "ogImage": "assets/img/tuyen-dung/og-agent-bat-dong-san.jpg",
     "seoTitle": "Tuyển 20 nhân viên kinh doanh BĐS (Agent) Quận 2 | PaceLand",
     "seoDescription": "PaceLand tuyển 20 Agent kinh doanh bất động sản tại Quận 2: lương cứng 5 triệu/tháng, chia sẻ doanh thu đến 75%, khách từ Marketing, nhận cả người mới.",
-    "stories": []
+    "stories": [],
+    "kpiNote": "Đây là các chỉ số PaceLand theo dõi để biết nên hỗ trợ bạn ở khâu nào, không phải để đếm đầu việc. Ngưỡng cụ thể của từng chỉ số được thống nhất khi bạn nhận việc và điều chỉnh theo từng đợt mở bán.",
+    "obligations": [
+      "**Nói đúng dữ liệu đã công bố** — Không hứa mức lợi nhuận, không cam kết tiến độ hay pháp lý ngoài những gì chủ đầu tư đã phát hành bằng văn bản.",
+      "**Bảo mật thông tin khách hàng** — Không mang danh sách khách, dữ liệu giỏ hàng hay tài liệu nội bộ ra ngoài, không chuyển cho bên thứ ba.",
+      "**Ghi nhận trung thực vào hệ thống** — Cập nhật đúng thông tin và trạng thái khách, không giữ khách ngoài sổ.",
+      "**Dùng đúng nhận diện PaceLand** — Làm việc với khách bằng mã chứng nhận được cấp; không tự tạo bảng giá hay tài liệu bán hàng khác với bản công ty phát hành.",
+      "**Tuân thủ pháp luật kinh doanh bất động sản** — Gồm quy định về môi giới, quảng cáo và hợp đồng.",
+      "**Không nhận khoản chi ngoài** — Từ khách hàng, chủ đầu tư hay bất kỳ bên nào liên quan tới giao dịch.",
+      "**Bàn giao đầy đủ khi kết thúc công việc** — Hồ sơ, dữ liệu khách và các giao dịch đang dở dang."
+    ],
+    "obligationNote": "Các nội dung này nằm trong thoả thuận làm việc và được đọc cùng bạn khi ký hợp đồng."
   },
   {
     "id": "giam-doc-kinh-doanh",
@@ -2301,11 +2326,14 @@ const JOBS = [
       ]
     },
     "duties": [
-      "Tuyển chọn và xây dựng đội ngũ Agent theo định biên riêng",
-      "Hoạch định mục tiêu doanh số, chiến lược bán theo từng dự án",
-      "Đào tạo, kèm cặp đội ngũ và duyệt phương án tư vấn quan trọng",
-      "Phối hợp Marketing khai thác nguồn khách, phát triển tệp khách riêng",
-      "Báo cáo kết quả trực tiếp với Ban lãnh đạo"
+      "**Xây đội theo định biên riêng** — Tuyển chọn, phỏng vấn và quyết định nhận Agent cho đội của mình, chịu trách nhiệm về chất lượng người mình chọn.",
+      "**Đặt mục tiêu và phân bổ theo dự án** — Hoạch định doanh số của đội theo từng đợt mở bán, chia mục tiêu xuống từng Agent và theo dõi tiến độ hằng tuần.",
+      "**Đào tạo và kèm cặp trực tiếp** — Huấn luyện sản phẩm, kỹ năng tư vấn và cách xử lý từ chối; đi cùng Agent trong các buổi gặp khách quan trọng.",
+      "**Duyệt phương án tư vấn và đàm phán khó** — Xử lý các trường hợp vượt thẩm quyền Agent: điều kiện thanh toán, chính sách áp dụng, thương lượng cuối trước khi chốt.",
+      "**Phối hợp Marketing khai thác nguồn khách** — Đặt hàng nội dung và chiến dịch theo dự án, phản hồi chất lượng lead để Marketing chỉnh lại tệp khách.",
+      "**Giữ nhịp làm việc và dữ liệu của đội** — Duy trì họp đội định kỳ, soát dữ liệu khách trên hệ thống, phát hiện sớm giao dịch có nguy cơ tuột.",
+      "**Giữ và phát triển người giỏi** — Nhận diện Agent có kết quả tốt, đề xuất lộ trình lên bậc và giữ chân bằng cơ chế minh bạch.",
+      "**Báo cáo trực tiếp Ban lãnh đạo** — Kết quả, dự báo kỳ tới và đề xuất về sản phẩm, chính sách hoặc nguồn lực cần thêm."
     ],
     "profiles": [],
     "reqs": [
@@ -2314,7 +2342,15 @@ const JOBS = [
       "Kỹ năng tuyển dụng, đào tạo và tạo động lực cho đội ngũ",
       "Tư duy dữ liệu, làm việc minh bạch theo cơ chế"
     ],
-    "kpis": [],
+    "kpis": [
+      "Doanh số và số giao dịch của toàn đội trong kỳ",
+      "Tỷ lệ Agent trong đội đạt mục tiêu cá nhân",
+      "Số Agent tuyển mới và tỷ lệ trụ lại sau giai đoạn đầu",
+      "Thời gian trung bình từ khi Agent nhận việc đến giao dịch đầu tiên",
+      "Tỷ lệ chuyển đổi của đội qua từng bước: khách mới → hẹn gặp → đi xem → đặt chỗ → ký hợp đồng",
+      "Chất lượng dữ liệu khách của đội trên hệ thống",
+      "Số Agent được đề bạt lên bậc cao hơn"
+    ],
     "compensation": [
       {
         "label": "Thu nhập",
@@ -2328,11 +2364,14 @@ const JOBS = [
       }
     ],
     "benefits": [
-      "Quyền chủ động xây team",
-      "Chia sẻ doanh thu đội nhóm, cơ chế lũy tiến minh bạch",
-      "Hỗ trợ Marketing & vận hành toàn diện",
+      "Quyền chủ động tuyển và xây đội theo định biên riêng",
+      "Chia sẻ doanh thu đội nhóm theo cơ chế lũy tiến minh bạch",
+      "Nguồn khách và nội dung từ hệ thống Marketing dùng chung",
+      "Danh mục {{projects}} dự án đã chuẩn hoá để đội bán ngay, không mất thời gian dựng tài liệu",
+      "Hệ thống dữ liệu, SaleHub và quy trình vận hành có sẵn",
       "Lộ trình phát triển lên Đối tác sở hữu",
-      "Văn phòng hiện đại tại Quận 2"
+      "Làm việc trực tiếp với Ban lãnh đạo, đề xuất được phản hồi nhanh",
+      "Văn phòng tại {{locShort}}"
     ],
     "system": [
       "marketing",
@@ -2374,7 +2413,18 @@ const JOBS = [
     "ogImage": "assets/img/tuyen-dung/og-giam-doc-kinh-doanh.jpg",
     "seoTitle": "Tuyển Giám đốc Kinh doanh bất động sản Quận 2 | PaceLand",
     "seoDescription": "PaceLand tuyển 02 Giám đốc Kinh doanh bất động sản cao cấp tại Quận 2: chủ động xây đội, có Marketing và vận hành hỗ trợ, chia sẻ doanh thu đội nhóm lũy tiến.",
-    "stories": []
+    "stories": [],
+    "kpiNote": "Chỉ số của Giám đốc Kinh doanh đo sức khoẻ của cả đội chứ không chỉ doanh số cá nhân. Ngưỡng cụ thể gắn với định biên và danh mục dự án được giao, thống nhất khi nhận việc.",
+    "obligations": [
+      "**Chịu trách nhiệm về phát ngôn của đội** — Bảo đảm Agent trong đội không cam kết lợi nhuận, tiến độ hay pháp lý ngoài dữ liệu chủ đầu tư đã phát hành.",
+      "**Phân khách và chia doanh thu minh bạch** — Áp dụng đúng cơ chế công ty, không ưu ái ngoài quy định.",
+      "**Bảo mật thông tin khách hàng, chính sách giá và dữ liệu đội ngũ** — Không mang ra ngoài, không chuyển cho bên thứ ba.",
+      "**Không lôi kéo nhân sự và khách hàng** — Trong thời gian làm việc và sau khi nghỉ, theo thoả thuận đã ký.",
+      "**Tuân thủ pháp luật kinh doanh bất động sản và quy chế nội bộ**",
+      "**Không nhận khoản chi ngoài** — Từ khách hàng, chủ đầu tư hay nhân sự trong đội.",
+      "**Bàn giao đầy đủ khi kết thúc công việc** — Đội ngũ, dữ liệu khách, giao dịch dở dang và tài liệu được giao."
+    ],
+    "obligationNote": "Các nội dung này nằm trong thoả thuận làm việc và được đọc cùng bạn khi ký hợp đồng."
   },
   {
     "id": "digital-marketing",
@@ -2416,11 +2466,15 @@ const JOBS = [
       ]
     },
     "duties": [
-      "Lên kế hoạch và chạy performance ads (Meta, Google) cho từng dự án",
-      "Xây dựng, tối ưu landing page và đo lường chuyển đổi",
-      "Quản trị CRM, automation nuôi dưỡng khách hàng tiềm năng",
-      "Phân tích số liệu, tối ưu chi phí trên mỗi khách hàng theo tuần",
-      "Phối hợp Media Marketing sản xuất nội dung quảng cáo"
+      "**Lập kế hoạch chiến dịch theo từng dự án** — Xác định tệp khách, thông điệp, ngân sách và chỉ số mục tiêu trước khi chạy; thống nhất với đội kinh doanh về loại khách cần có.",
+      "**Vận hành quảng cáo Meta và Google** — Dựng cấu trúc chiến dịch, viết nội dung quảng cáo, theo dõi hằng ngày và điều chỉnh ngân sách theo hiệu quả thực tế.",
+      "**Dựng và tối ưu landing page** — Làm trực tiếp trên hệ thống trang của paceland.vn: bố cục, thông điệp, biểu mẫu và tốc độ tải; thử các phương án để tăng tỷ lệ điền form.",
+      "**Giữ hệ thống đo lường chạy đúng** — GA4, Meta Pixel, Google Ads, sự kiện chuyển đổi và trang cảm ơn; phát hiện sớm khi số liệu sai lệch hoặc đếm trùng.",
+      "**Quản trị dòng lead và nuôi dưỡng tự động** — Phân lead về đúng người, dựng kịch bản nhắn tin và email cho khách chưa sẵn sàng mua.",
+      "**Đọc số và ra quyết định hằng tuần** — Báo cáo chi phí trên mỗi lead theo kênh và theo dự án, cắt phần không hiệu quả, dồn ngân sách vào phần đang chạy tốt.",
+      "**Đóng vòng phản hồi với đội kinh doanh** — Lấy đánh giá chất lượng lead từ Agent để chỉnh lại tệp khách và nội dung, không chỉ nhìn số lead thô.",
+      "**Phối hợp Media Marketing** — Đặt hàng nội dung quảng cáo dựa trên hiệu quả đo được của các định dạng đã chạy.",
+      "**Giữ website được tìm thấy** — Cập nhật dữ liệu dự án, bài phân tích và các trang chuẩn hoá để paceland.vn được tìm thấy qua tìm kiếm và được công cụ AI trích dẫn."
     ],
     "profiles": [],
     "reqs": [
@@ -2429,7 +2483,15 @@ const JOBS = [
       "Tư duy phân tích, ra quyết định bằng dữ liệu",
       "Ưu tiên từng làm bất động sản hoặc ngành hàng giá trị cao"
     ],
-    "kpis": [],
+    "kpis": [
+      "Số lead hợp lệ theo tuần, tách theo kênh và theo dự án",
+      "Chi phí trên mỗi lead (CPL) và xu hướng theo thời gian",
+      "Tỷ lệ lead được đội kinh doanh xác nhận là đúng nhu cầu",
+      "Tỷ lệ điền biểu mẫu trên từng landing page",
+      "Chi phí trên mỗi giao dịch thành công",
+      "Lưu lượng tự nhiên vào website và số trang được tìm thấy qua tìm kiếm",
+      "Độ chính xác của hệ thống đo lường: chuyển đổi không sai lệch, không đếm trùng"
+    ],
     "compensation": [
       {
         "label": "Thu nhập",
@@ -2438,10 +2500,12 @@ const JOBS = [
       }
     ],
     "benefits": [
-      "Làm việc trực tiếp trên website, landing page và dữ liệu lead của PaceLand",
-      "Làm việc cùng đội kinh doanh để đo chất lượng lead",
-      "Thu nhập thỏa thuận theo năng lực",
-      "Văn phòng hiện đại tại Quận 2"
+      "Làm trực tiếp trên website, landing page và dữ liệu lead thật của PaceLand, không qua trung gian",
+      "Được quyền đề xuất và triển khai thay đổi trên hệ thống trang, thấy kết quả trong tuần",
+      "Ngồi cùng đội kinh doanh nên đo được chất lượng lead tới tận giao dịch, không dừng ở số lead",
+      "Hệ thống đo lường và dữ liệu dự án đã chuẩn hoá sẵn",
+      "Thu nhập thoả thuận theo năng lực và kinh nghiệm",
+      "Văn phòng tại {{locShort}}"
     ],
     "system": [
       "marketing",
@@ -2477,7 +2541,17 @@ const JOBS = [
     "ogImage": "assets/img/tuyen-dung/og-digital-marketing.jpg",
     "seoTitle": "Tuyển Digital Marketing bất động sản Quận 2 | PaceLand",
     "seoDescription": "PaceLand tuyển 01 Digital Marketing bất động sản tại Quận 2: performance ads, landing page, CRM, automation, analytics. Thu nhập thỏa thuận theo năng lực.",
-    "stories": []
+    "stories": [],
+    "kpiNote": "Chỉ số chất lượng lead quan trọng hơn số lead thô: một tháng nhiều lead mà đội kinh doanh không gọi được ai thì tính là chưa đạt. Ngưỡng cụ thể gắn với ngân sách và dự án được giao.",
+    "obligations": [
+      "**Quảng cáo đúng dữ liệu đã công bố** — Không chạy nội dung hứa lợi nhuận, không đăng giá hay chính sách khác với bản chủ đầu tư đã phát hành.",
+      "**Bảo vệ dữ liệu khách hàng** — Không đưa tên, số điện thoại hay email vào các nền tảng đo lường; không chia sẻ danh sách lead ra ngoài.",
+      "**Giữ tài khoản quảng cáo và ngân sách minh bạch** — Chi tiêu đúng hạn mức được duyệt, báo cáo trung thực kết quả kể cả khi chiến dịch lỗ.",
+      "**Tuân thủ chính sách quảng cáo của nền tảng** — Không dùng thủ thuật lách kiểm duyệt có thể làm khoá tài khoản của công ty.",
+      "**Không dùng tài sản số của công ty cho mục đích cá nhân** — Tài khoản quảng cáo, tên miền, dữ liệu, kho nội dung.",
+      "**Bàn giao đầy đủ khi kết thúc công việc** — Quyền quản trị tài khoản, tài liệu cấu hình, mật khẩu và các chiến dịch đang chạy."
+    ],
+    "obligationNote": "Các nội dung này nằm trong thoả thuận làm việc và được đọc cùng bạn khi ký hợp đồng."
   },
   {
     "id": "media-marketing",
@@ -2515,11 +2589,14 @@ const JOBS = [
       ]
     },
     "duties": [
-      "Quay, dựng video và reels về dự án và hoạt động đội ngũ",
-      "Chụp và xử lý ảnh dự án, nhà mẫu, sự kiện",
-      "Xây kịch bản nội dung ngắn cho TikTok, Facebook, YouTube",
-      "Quản lý kho media, giữ đồng bộ nhận diện thương hiệu",
-      "Phối hợp Digital Marketing tối ưu nội dung theo số liệu"
+      "**Sản xuất video dự án** — Quay và dựng video giới thiệu dự án, nhà mẫu, tiến độ công trường và hoạt động đội ngũ.",
+      "**Nội dung ngắn cho mạng xã hội** — Lên kịch bản và sản xuất reels, short cho TikTok, Facebook, YouTube theo lịch đăng đã thống nhất.",
+      "**Ảnh dự án và sự kiện** — Chụp, chọn và hậu kỳ ảnh nhà mẫu, công trường, sự kiện bán hàng và chân dung đội ngũ.",
+      "**Nội dung phục vụ bán hàng** — Làm bộ hình ảnh và video để Agent gửi thẳng cho khách: giới thiệu căn, so sánh loại căn, cập nhật tiến độ.",
+      "**Quản lý kho media** — Đặt tên, phân loại và lưu trữ để đội ngũ tìm được trong vài giây; giữ file gốc để tái sử dụng.",
+      "**Giữ nhận diện thương hiệu đồng nhất** — Màu, chữ, logo và cách xử lý hình theo bộ nhận diện PaceLand trên mọi kênh.",
+      "**Bám số liệu để chỉnh nội dung** — Cùng Digital Marketing xem chỉ số từng video, rút ra cái gì giữ chân người xem và cái gì nên bỏ.",
+      "**Xử lý bản quyền và quyền hình ảnh** — Dùng nhạc, hình và tư liệu có quyền sử dụng; xin phép trước khi quay khách hàng hoặc người khác."
     ],
     "profiles": [],
     "reqs": [
@@ -2528,7 +2605,14 @@ const JOBS = [
       "Thẩm mỹ tốt, bắt xu hướng nhanh",
       "Ưu tiên hiểu bất động sản hoặc nội dung phân khúc cao cấp"
     ],
-    "kpis": [],
+    "kpis": [
+      "Số video, reels và bộ ảnh hoàn thành đúng lịch",
+      "Thời gian từ lúc nhận yêu cầu đến khi giao nội dung",
+      "Lượt xem, thời lượng xem trung bình và tỷ lệ xem hết của video",
+      "Tương tác và lượt chia sẻ trên từng kênh",
+      "Số nội dung được đội kinh doanh dùng lại khi gửi khách",
+      "Mức độ đầy đủ và dễ tìm của kho media"
+    ],
     "compensation": [
       {
         "label": "Thu nhập",
@@ -2537,10 +2621,12 @@ const JOBS = [
       }
     ],
     "benefits": [
-      "Bối cảnh là các dự án cao cấp PaceLand đang phân phối",
-      "Kênh phân phối sẵn: website, TikTok, YouTube, Facebook",
-      "Thu nhập thỏa thuận theo năng lực",
-      "Văn phòng hiện đại tại Quận 2"
+      "Bối cảnh là các dự án cao cấp PaceLand đang phân phối, không phải dựng cảnh giả",
+      "Kênh phân phối sẵn: website, TikTok, YouTube, Facebook và Zalo OA",
+      "Nội dung được dùng thật trong quảng cáo và trong tay Agent, thấy được hiệu quả",
+      "Làm việc cùng Digital Marketing nên có số liệu để chỉnh, không làm theo cảm tính",
+      "Thu nhập thoả thuận theo năng lực và portfolio",
+      "Văn phòng tại {{locShort}}"
     ],
     "system": [
       "marketing",
@@ -2575,7 +2661,18 @@ const JOBS = [
     "ogImage": "assets/img/tuyen-dung/og-media-marketing.jpg",
     "seoTitle": "Tuyển Media Marketing (video, ảnh) BĐS Quận 2 | PaceLand",
     "seoDescription": "PaceLand tuyển 01 Media Marketing tại Quận 2: quay dựng video, reels, chụp ảnh và nội dung cho dự án bất động sản cao cấp. Thu nhập thỏa thuận theo năng lực.",
-    "stories": []
+    "stories": [],
+    "kpiNote": "Nội dung được Agent chủ động lấy đi gửi khách là chỉ số đáng tin hơn lượt xem, vì nó cho thấy nội dung dùng được thật. Ngưỡng cụ thể gắn với lịch sản xuất từng tháng.",
+    "obligations": [
+      "**Nội dung đúng dữ liệu đã công bố** — Không dựng video hay ảnh nêu giá, tiến độ, pháp lý khác với bản chủ đầu tư đã phát hành.",
+      "**Bảo mật tư liệu chưa công bố** — Không đăng hay chia sẻ hình ảnh, video dự án, nhà mẫu và tài liệu nội bộ trước thời điểm công ty cho phép phát hành.",
+      "**Tôn trọng bản quyền** — Chỉ dùng nhạc, phông chữ, hình và tư liệu có quyền sử dụng hợp lệ cho mục đích thương mại.",
+      "**Xin phép trước khi ghi hình người khác** — Khách hàng, cư dân, đồng nghiệp; gỡ nội dung khi được yêu cầu.",
+      "**Không chỉnh sửa hình ảnh gây hiểu sai về sản phẩm** — Không ghép thêm tiện ích chưa có, không xoá chi tiết bất lợi của công trình thật.",
+      "**Giữ và bàn giao kho file gốc** — File thô, dự án dựng và tài khoản lưu trữ thuộc về công ty.",
+      "**Không dùng tư liệu của công ty cho công việc bên ngoài** — Trừ khi được đồng ý bằng văn bản."
+    ],
+    "obligationNote": "Các nội dung này nằm trong thoả thuận làm việc và được đọc cùng bạn khi ký hợp đồng."
   },
   {
     "id": "admin-kinh-doanh",
@@ -2613,11 +2710,14 @@ const JOBS = [
       ]
     },
     "duties": [
-      "Quản lý booking giao dịch, lịch hẹn và hồ sơ khách hàng",
-      "Theo dõi dữ liệu giỏ hàng, cập nhật trạng thái căn theo từng dự án",
-      "Chuẩn bị hợp đồng, đối soát chứng từ với chủ đầu tư",
-      "Tổng hợp báo cáo kinh doanh định kỳ cho Ban lãnh đạo",
-      "Hỗ trợ vận hành văn phòng và các sự kiện bán hàng"
+      "**Đầu mối booking và giữ chỗ** — Nhận yêu cầu từ Agent, kiểm tra căn còn trống, lập phiếu booking và theo dõi thời hạn giữ chỗ.",
+      "**Giữ giỏ hàng luôn đúng** — Cập nhật trạng thái từng căn theo từng dự án và từng đợt mở bán, đối chiếu với bảng hàng của chủ đầu tư.",
+      "**Hồ sơ giao dịch** — Chuẩn bị thoả thuận đặt cọc, hợp đồng mua bán và các biểu mẫu; kiểm tra đủ và đúng trước khi trình ký.",
+      "**Đối soát với chủ đầu tư** — Theo dõi chứng từ, tiến độ thanh toán của khách và công nợ hoa hồng; phát hiện sai lệch và xử lý sớm.",
+      "**Quản lý lịch và điều phối** — Sắp lịch hẹn khách, lịch đi dự án, lịch họp đội và nhắc các mốc quan trọng.",
+      "**Dữ liệu khách hàng** — Nhập, chuẩn hoá và giữ sạch dữ liệu trên hệ thống; hỗ trợ Agent tra cứu nhanh khi cần.",
+      "**Báo cáo định kỳ** — Tổng hợp số liệu bán hàng, tiến độ thu tiền và công nợ cho Ban lãnh đạo theo tuần và tháng.",
+      "**Vận hành văn phòng và sự kiện bán hàng** — Chuẩn bị tài liệu, vật dụng và hậu cần cho các buổi mở bán và sự kiện khách hàng."
     ],
     "profiles": [],
     "reqs": [
@@ -2626,7 +2726,14 @@ const JOBS = [
       "Giao tiếp tốt, phối hợp nhịp nhàng nhiều bộ phận",
       "Ưu tiên từng làm admin hoặc trợ lý kinh doanh bất động sản"
     ],
-    "kpis": [],
+    "kpis": [
+      "Độ chính xác của dữ liệu giỏ hàng khi đối chiếu với chủ đầu tư",
+      "Thời gian xử lý một yêu cầu booking từ khi Agent gửi",
+      "Tỷ lệ hồ sơ giao dịch đủ và đúng ngay từ lần trình đầu tiên",
+      "Số sai lệch phát hiện được khi đối soát chứng từ và công nợ",
+      "Báo cáo định kỳ nộp đúng hạn",
+      "Tỷ lệ mốc thanh toán của khách được nhắc trước hạn"
+    ],
     "compensation": [
       {
         "label": "Thu nhập",
@@ -2635,10 +2742,12 @@ const JOBS = [
       }
     ],
     "benefits": [
-      "Môi trường làm việc gọn, rõ, chuyên nghiệp",
-      "Dữ liệu dự án và quy trình được chuẩn hóa tập trung",
-      "Thu nhập thỏa thuận theo năng lực",
-      "Văn phòng hiện đại tại Quận 2"
+      "Quy trình và dữ liệu dự án đã chuẩn hoá tập trung, không phải tự dựng từ đầu",
+      "Hệ thống giỏ hàng và SaleHub hỗ trợ tra cứu nhanh",
+      "Vị trí nhìn được toàn bộ bức tranh kinh doanh, nền tốt để lên quản lý vận hành",
+      "Làm việc trực tiếp với Ban lãnh đạo qua báo cáo định kỳ",
+      "Thu nhập thoả thuận theo năng lực và kinh nghiệm",
+      "Văn phòng tại {{locShort}}"
     ],
     "system": [
       "du-an",
@@ -2673,10 +2782,19 @@ const JOBS = [
     "ogImage": "assets/img/tuyen-dung/og-admin-kinh-doanh.jpg",
     "seoTitle": "Tuyển Admin Kinh doanh bất động sản Quận 2 | PaceLand",
     "seoDescription": "PaceLand tuyển 02 Admin Kinh doanh tại Quận 2: booking, hồ sơ, dữ liệu và báo cáo cho đội kinh doanh bất động sản cao cấp. Thu nhập thỏa thuận theo năng lực.",
-    "stories": []
+    "stories": [],
+    "kpiNote": "Vị trí này được đo bằng độ chính xác và tốc độ xử lý chứ không bằng doanh số. Ngưỡng cụ thể gắn với số dự án và số giao dịch đang chạy trong kỳ.",
+    "obligations": [
+      "**Giữ số liệu trung thực** — Không sửa, không làm tròn và không bỏ sót dữ liệu giao dịch, công nợ hay tiến độ thanh toán trong báo cáo.",
+      "**Bảo mật hồ sơ và thông tin cá nhân của khách** — Chỉ chia sẻ cho người có trách nhiệm trong giao dịch đó.",
+      "**Bảo mật chính sách giá và bảng hàng** — Không chuyển cho bên ngoài công ty dưới mọi hình thức.",
+      "**Báo sai lệch ngay khi phát hiện** — Kể cả khi sai lệch đến từ nội bộ hoặc từ cấp trên.",
+      "**Không tự ý xác nhận giữ chỗ hay cam kết với khách** — Mọi xác nhận phải theo đúng quy trình và thẩm quyền được giao.",
+      "**Bàn giao đầy đủ khi kết thúc công việc** — Hồ sơ, sổ sách, dữ liệu và các việc đang xử lý dở."
+    ],
+    "obligationNote": "Các nội dung này nằm trong thoả thuận làm việc và được đọc cùng bạn khi ký hợp đồng."
   }
 ];
-
 const CAREERS = {
   "locationShort": "Quận 2, TP.HCM",
   "hero": {

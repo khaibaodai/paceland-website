@@ -75,6 +75,9 @@ export function fill(str, ctx) {
   return String(str == null ? "" : str).replace(/\{\{(\w+)\}\}/g, (m, k) => (ctx && ctx[k] != null && typeof ctx[k] !== "object" ? String(ctx[k]) : m));
 }
 const F = (s, ctx) => esc(fill(s, ctx));
+/* Như F nhưng cho phép **in đậm** — dùng cho danh sách dài cần tiêu đề dẫn ở đầu dòng.
+   Escape trước rồi mới đổi dấu **, nên nội dung vẫn an toàn. */
+const FB = (s, ctx) => F(s, ctx).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 
 /* Ảnh: dùng biến thể -540 nếu đã sinh (tools/og_jobs.py) cho màn nhỏ.
    hideBelow: khi CSS ẩn ảnh dưới bề rộng này, <picture> trả GIF 1px để không tải ảnh thật. */
@@ -368,11 +371,17 @@ export function SocialShare(url, title) {
 /* ---------- Structured data ---------- */
 export function jobPostingLd(j, { SITE_URL, ORG_LD, ctx }) {
   const url = `${SITE_URL}/tuyen-dung/${j.id}.html`;
-  const li = (arr) => (arr || []).map((x) => `<li>${esc(fill(x, ctx))}</li>`).join("");
+  /* Dấu ** trong dữ liệu là in đậm — đổi sang <strong> để Google Jobs hiển thị đúng,
+     không để lọt hai dấu sao thô vào mô tả tin tuyển dụng. */
+  const md = (x) => esc(fill(x, ctx)).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  const li = (arr) => (arr || []).map((x) => `<li>${md(x)}</li>`).join("");
+  const plain = (arr) => (arr || []).map((x) => fill(x, ctx).replace(/\*\*/g, "")).join(" ");
   const description = `<p>${esc(fill(j.desc, ctx))}</p>` +
     ((j.duties || []).length ? `<p><strong>Mô tả công việc</strong></p><ul>${li(j.duties)}</ul>` : "") +
     ((j.reqs || []).length ? `<p><strong>Yêu cầu</strong></p><ul>${li(j.reqs)}</ul>` : "") +
-    ((j.benefits || []).length ? `<p><strong>Quyền lợi</strong></p><ul>${li(j.benefits)}</ul>` : "");
+    ((j.kpis || []).length ? `<p><strong>Chỉ số theo dõi kết quả</strong></p><ul>${li(j.kpis)}</ul>${j.kpiNote ? `<p>${esc(fill(j.kpiNote, ctx))}</p>` : ""}` : "") +
+    ((j.benefits || []).length ? `<p><strong>Quyền lợi</strong></p><ul>${li(j.benefits)}</ul>` : "") +
+    ((j.obligations || []).length ? `<p><strong>Nghĩa vụ</strong></p><ul>${li(j.obligations)}</ul>` : "");
   const ld = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
@@ -388,6 +397,8 @@ export function jobPostingLd(j, { SITE_URL, ORG_LD, ctx }) {
     ...(j.baseSalary && j.baseSalary.value ? { baseSalary: { "@type": "MonetaryAmount", currency: j.baseSalary.currency || "VND", value: { "@type": "QuantitativeValue", value: j.baseSalary.value, unitText: j.baseSalary.unit || "MONTH" } } } : {}),
     ...(j.experienceRequirements ? { experienceRequirements: j.experienceRequirements } : {}),
     ...(j.educationRequirements ? { educationRequirements: j.educationRequirements } : {}),
+    ...((j.duties || []).length ? { responsibilities: plain(j.duties) } : {}),
+    ...((j.benefits || []).length ? { jobBenefits: plain(j.benefits) } : {}),
     industry: "Bất động sản",
     directApply: true,
     url,
@@ -469,11 +480,11 @@ ${(w.points || []).length ? `<ul class="cr-points cr-points--${Math.min((w.point
 function JobWork(j, ctx) {
   const profiles = j.profiles || [];
   return `<section class="cr-sec cr-work" aria-labelledby="crWorkTitle"><div class="container cr-split cr-split--even">
-<div>${head("Công việc", "Bạn sẽ làm gì", j.desc, ctx, "crWorkTitle")}<ol class="cr-duties">${(j.duties || []).map((d) => `<li>${F(d, ctx)}</li>`).join("")}</ol></div>
+<div>${head("Công việc", "Bạn sẽ làm gì", j.desc, ctx, "crWorkTitle")}<ol class="cr-duties">${(j.duties || []).map((d) => `<li>${FB(d, ctx)}</li>`).join("")}</ol></div>
 <div>${head("Chân dung ứng viên", profiles.length ? "Bạn là ai cũng có chỗ bắt đầu" : "PaceLand tìm ở bạn", "", ctx, "")}
 ${profiles.length ? `<div class="cr-profiles">${profiles.map((p) => `<article class="cr-profile"><h3>${F(p.title, ctx)}</h3><p>${F(p.text, ctx)}</p></article>`).join("")}</div>` : ""}
 ${(j.reqs || []).length ? `${profiles.length ? '<h3 class="cr-subhead">Điều PaceLand cần ở bạn</h3>' : ""}<ul class="cr-checks">${j.reqs.map((r) => `<li>${F(r, ctx)}</li>`).join("")}</ul>` : ""}
-${(j.kpis || []).length ? `<h3 class="cr-subhead">Kỳ vọng kết quả</h3><ul class="cr-checks">${j.kpis.map((r) => `<li>${F(r, ctx)}</li>`).join("")}</ul>` : ""}
+${(j.kpis || []).length ? `<h3 class="cr-subhead">Chỉ số theo dõi kết quả</h3><ul class="cr-checks">${j.kpis.map((r) => `<li>${FB(r, ctx)}</li>`).join("")}</ul>${j.kpiNote ? `<p class="cr-kpinote">${F(j.kpiNote, ctx)}</p>` : ""}` : ""}
 </div></div></section>`;
 }
 
@@ -482,7 +493,10 @@ function JobIncome(j, ctx) {
   return `<section class="cr-sec cr-soft cr-jobincome" id="thu-nhap" aria-labelledby="crJIncTitle"><div class="container">
 ${head("Thu nhập & quyền lợi", "Rõ ràng từ đầu", "Chỉ những gì đã có trong chính sách tuyển dụng của PaceLand. Chi tiết được trao đổi minh bạch khi phỏng vấn.", ctx, "crJIncTitle")}
 ${comp.length ? `<dl class="cr-compcards">${comp.map((c) => `<div><dt>${F(c.label, ctx)}</dt><dd class="v">${F(c.value, ctx)}</dd>${c.note ? `<dd class="n">${F(c.note, ctx)}</dd>` : ""}</div>`).join("")}</dl>` : ""}
-${(j.benefits || []).length ? `<ul class="cr-bullets cr-bullets--2">${j.benefits.map((x) => `<li>${F(x, ctx)}</li>`).join("")}</ul>` : ""}
+${(j.benefits || []).length || (j.obligations || []).length ? `<div class="cr-duo">
+${(j.benefits || []).length ? `<div><h3 class="cr-subhead cr-subhead--top">Quyền lợi của bạn</h3><ul class="cr-checks">${j.benefits.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul></div>` : ""}
+${(j.obligations || []).length ? `<div><h3 class="cr-subhead cr-subhead--top">Nghĩa vụ của bạn</h3><ul class="cr-duty-list">${j.obligations.map((x) => `<li>${FB(x, ctx)}</li>`).join("")}</ul>${j.obligationNote ? `<p class="cr-kpinote">${F(j.obligationNote, ctx)}</p>` : ""}</div>` : ""}
+</div>` : ""}
 </div></section>`;
 }
 

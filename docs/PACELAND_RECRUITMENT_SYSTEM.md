@@ -309,7 +309,36 @@ npm run verify   # cả ba
 | `careers-core.test.mjs` | SĐT (mọi định dạng), validate, Application record + attribution, chặn PII, rate-limit, gửi thành công / lỗi / timeout |
 | `links.test.mjs` | Mọi link và ảnh nội bộ trên trang tuyển dụng trỏ tới file có thật |
 
-Hiện: **78/78 pass** (thêm `zone-pages.test.mjs`, `gio-hang.test.mjs`). GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
+Hiện: **107/107 pass** (thêm `zone-pages.test.mjs`, `gio-hang.test.mjs`, `thank-you.test.mjs`, `jd-chi-tiet.test.mjs`). GitHub Action `prerender.yml` (chạy khi đổi bất kỳ file trong `assets/js`, `assets/css`, prerender, test) chạy test sau prerender. Bước test đặt sau commit, nên không chặn nội dung xuất bản từ Admin.
+
+## 12b. JD chi tiết: việc, chỉ số, quyền lợi, nghĩa vụ
+
+Mỗi vị trí trong `JOBS` có bốn phần nội dung bắt buộc, test `jd-chi-tiet.test.mjs` canh:
+
+| Trường | Nội dung | Khuôn viết |
+|---|---|---|
+| `duties[]` | Công việc chi tiết, tối thiểu 6 mục | `**Tiêu đề việc** — phần giải thích cụ thể` |
+| `kpis[]` | Chỉ số được theo dõi, tối thiểu 4 mục | Câu ngắn, **không kèm ngưỡng con số** |
+| `kpiNote` | Một câu nói rõ ngưỡng được thống nhất khi nào | bắt buộc |
+| `benefits[]` | Quyền lợi, tối thiểu 4 mục | Chỉ ghi thứ đã có chính sách thật |
+| `obligations[]` | Nghĩa vụ, tối thiểu 4 mục | `**Tiêu đề** — phần giải thích` |
+| `obligationNote` | Một câu dẫn về thoả thuận làm việc | bắt buộc |
+
+Dấu `**...**` được đổi thành `<strong>` khi render (hàm `FB` trong `careers-render.mjs`) và cả trong
+mô tả JobPosting, nên không bao giờ lọt dấu sao thô ra trang.
+
+**Quy tắc không được phá:**
+
+- **KPI chỉ nêu cái được đo, không nêu ngưỡng.** PaceLand chưa ban hành định mức chính thức; đăng số
+  chưa có thật lên tin tuyển dụng là cam kết sai với ứng viên. Bảng ngưỡng đề xuất chờ duyệt nằm ở
+  `docs/PACELAND_KPI_DE_XUAT.md`. Khi anh Khải chốt số thì mới đưa lên và nới test tương ứng.
+- **Quyền lợi chỉ ghi thứ đã xác nhận.** Test chặn các cụm bảo hiểm, thưởng tháng 13, du lịch hằng năm,
+  nghỉ phép số ngày, cổ phần — vì chưa có chính sách công bố.
+- **Mọi vị trí phải có nghĩa vụ bảo mật và nghĩa vụ bàn giao.** Vị trí tiếp xúc khách hoặc làm nội dung
+  phải thêm ràng buộc nói đúng dữ liệu chủ đầu tư đã phát hành.
+
+Bốn phần này cũng vào `JobPosting`: `description` có đủ năm mục (việc, yêu cầu, chỉ số, quyền lợi,
+nghĩa vụ), cộng hai trường riêng `responsibilities` và `jobBenefits` cho Google Jobs.
 
 ## 13. Deployment checklist
 

@@ -395,3 +395,15 @@
   .cr *, .cr *::before, .cr *::after { transition: none !important; animation: none !important; }
   .cr-step::before { transform: none; }
 }
+
+/* ---------- JD chi tiết: chỉ số theo dõi, quyền lợi & nghĩa vụ ---------- */
+.cr-subhead--top { margin-top: 0; }
+.cr-kpinote { margin-top: .8rem; font-size: .88rem; line-height: 1.6; color: var(--cr-muted); }
+/* Hai cột cố định thay cho auto-fit: auto-fit sinh thêm track rỗng và một khe thừa bên phải */
+.cr-duo { display: grid; gap: clamp(20px, 3.5vw, 48px); margin-top: clamp(1.4rem, 3vw, 2.2rem); }
+@media (min-width: 760px) { .cr-duo { grid-template-columns: 1fr 1fr; } }
+/* Nghĩa vụ dùng dấu gạch trung tính, không dùng dấu tích như quyền lợi */
+.cr-duty-list { list-style: none; display: grid; gap: .7rem; }
+.cr-duty-list li { position: relative; padding-left: 1.6rem; font-size: 0.98rem; line-height: 1.55; color: var(--cr-ink-2); }
+.cr-duty-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 2px; background: var(--cr-ink-2); opacity: .5; }
+.cr-duties li strong { display: block; margin-bottom: .2rem; font-family: var(--head); }
