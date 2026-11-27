@@ -1021,6 +1021,305 @@ const PROJECTS = [
 
 const POSTS = [
   {
+    "id": "thuong-hieu-khach-san-van-hanh-condotel",
+    "title": "Wyndham vận hành nghĩa là gì? Thương hiệu khách sạn mang lại gì cho người mua condotel",
+    "category": "Góc nhìn PaceLand",
+    "date": "27/11/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/five-star-poseidon.jpg",
+    "excerpt": "Thương hiệu khách sạn vận hành toà nhà, nhưng tiền cam kết trả cho anh/chị lại là nghĩa vụ của chủ đầu tư chứ không phải của thương hiệu. Phân biệt hai thứ này trước khi ký, kèm đối chiếu bốn dự án biển Vũng Tàu và bốn câu phải hỏi.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: thương hiệu khách sạn như Wyndham, Accor hay Meliá <b>vận hành toà nhà</b> — đặt phòng, tiêu chuẩn dịch vụ, bán phòng ra hệ thống quốc tế. Nhưng <b>khoản tiền cam kết trả cho anh/chị là nghĩa vụ của chủ đầu tư</b>, không phải của thương hiệu. Đây là hai hợp đồng khác nhau, và lẫn hai thứ này là chỗ người mua condotel hay vỡ mộng nhất."
+      },
+      {
+        "t": "p",
+        "c": "Hợp đồng quản lý khách sạn ký giữa <i>chủ đầu tư và thương hiệu</i>. Hợp đồng mua bán và hợp đồng cho thuê lại ký giữa <i>anh/chị và chủ đầu tư</i>. Thương hiệu không đứng tên trong hợp đồng của anh/chị, nên khi chủ đầu tư không trả được tiền cam kết, thương hiệu không có nghĩa vụ trả thay. Họ có thể rút đi và toà nhà vẫn đứng đó."
+      },
+      {
+        "t": "h",
+        "c": "Bốn dự án biển Vũng Tàu, bốn thương hiệu, bốn trạng thái"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Dự án",
+            "Thương hiệu",
+            "Trạng thái công bố",
+            "Cam kết với người mua"
+          ],
+          "rows": [
+            [
+              "<a href='/du-an/solina-vung-tau.html'>Solina Signature</a>",
+              "Wyndham",
+              "Công bố trong tài liệu bán hàng 27/11/2026",
+              "Service Apartment cam kết 8%/năm trong 5 năm; Condotel chia sẻ lợi nhuận 80–20"
+            ],
+            [
+              "<a href='/du-an/blanca-city.html'>Blanca City</a>",
+              "Marriott International",
+              "Công bố 4/2026 — phát triển <b>khách sạn trong khu</b>, không phải vận hành căn hộ Beacon hay Beachtro",
+              "Beacon và Beachtro là căn hộ sở hữu lâu dài, không gắn cam kết thuê"
+            ],
+            [
+              "<a href='/du-an/five-star-odyssey.html'>Five Star Odyssey</a>",
+              "Mövenpick (tập đoàn Accor)",
+              "Theo công bố của chủ đầu tư",
+              "Chưa công bố chính sách bán hàng"
+            ],
+            [
+              "<a href='/du-an/five-star-poseidon.html'>Five Star Poseidon</a>",
+              "Meliá Hotels International",
+              "<b>Dự kiến</b> — chưa công bố hợp đồng đã ký",
+              "Chưa công bố chính sách bán hàng"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "p",
+        "c": "Bảng này cho thấy ba điều mà quảng cáo thường gộp làm một: thương hiệu có mặt trong dự án <b>không</b> đồng nghĩa với thương hiệu vận hành căn của anh/chị, chữ <i>dự kiến</i> <b>không</b> đồng nghĩa với đã ký, và có thương hiệu <b>không</b> đồng nghĩa với có cam kết tiền."
+      },
+      {
+        "t": "h",
+        "c": "Trường hợp Blanca City: có Marriott, nhưng không phải cho căn của anh/chị"
+      },
+      {
+        "t": "p",
+        "c": "Marriott được công bố tháng 4/2026 là phát triển khách sạn <b>trong khu</b> Blanca City. Còn Beacon và Beachtro là căn hộ sở hữu lâu dài trên đất ở — anh/chị mua để ở hoặc tự cho thuê, không nằm trong chương trình vận hành khách sạn và cũng không có cam kết lợi nhuận đi kèm."
+      },
+      {
+        "t": "p",
+        "c": "Đây không phải điểm trừ. Không cam kết nghĩa là không phụ thuộc vào ai trả tiền cho mình: anh/chị tự quyết cho thuê hay không, giá bao nhiêu, qua kênh nào. Đổi lại là tự lo lấp phòng. Hai mô hình khác nhau về bản chất, chọn theo việc anh/chị muốn rảnh tay hay muốn cầm quyền."
+      },
+      {
+        "t": "h",
+        "c": "Ba kiểu cam kết đang có trên thị trường"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Cam kết cố định theo phần trăm</b> — ví dụ 8%/năm trong 5 năm như dòng Service Apartment của Solina. Dễ hiểu nhất, nhưng phải hỏi: tính trên giá trước hay sau VAT, bắt đầu từ ngày bàn giao hay ngày đưa vào vận hành, và điều gì xảy ra sau năm thứ 5.",
+          "<b>Chia sẻ doanh thu hoặc lợi nhuận</b> — ví dụ 80–20 của dòng Condotel Solina. Công bằng hơn khi khách đông, nhưng phải hỏi rõ chia trên <i>doanh thu</i> hay trên <i>lợi nhuận sau chi phí</i>, và chi phí nào được trừ trước khi chia.",
+          "<b>Không cam kết</b> — như Beacon và Beachtro. Anh/chị tự khai thác, tự chịu rủi ro lấp phòng, nhưng cũng không ai được cầm tiền của mình."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Vì sao cam kết cao lại là điều phải hỏi kỹ hơn, chứ không phải mừng hơn"
+      },
+      {
+        "t": "p",
+        "c": "Khoản cam kết không tự sinh ra từ việc kinh doanh phòng. Nó được trả từ dòng tiền của chủ đầu tư, và thường đã được tính sẵn vào giá bán. Cam kết càng cao và càng dài thì phần tính sẵn trong giá càng lớn, và nghĩa vụ trả càng kéo dài qua những năm mà không ai đoán trước được thị trường du lịch."
+      },
+      {
+        "t": "p",
+        "c": "Nên câu hỏi đúng không phải &quot;cam kết bao nhiêu phần trăm&quot;, mà là <b>&quot;ai trả, trả từ nguồn nào, và nếu không trả được thì sao&quot;</b>. Điều khoản xử lý khi chủ đầu tư chậm trả là phần đáng đọc nhất trong cả tập hợp đồng, và cũng là phần ít người đọc nhất."
+      },
+      {
+        "t": "h",
+        "c": "Bốn câu phải hỏi trước khi ký"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "Hợp đồng quản lý khách sạn giữa chủ đầu tư và thương hiệu <b>đã ký chưa</b>, thời hạn bao nhiêu năm?",
+          "Căn tôi mua có <b>nằm trong</b> chương trình do thương hiệu đó vận hành không, hay thương hiệu chỉ quản lý khối khách sạn riêng?",
+          "Khoản cam kết tính trên giá nào, <b>bắt đầu từ ngày nào</b>, trừ những chi phí gì?",
+          "Nếu chủ đầu tư chậm trả hoặc ngừng trả, <b>điều khoản nào bảo vệ tôi</b>, và thương hiệu có nghĩa vụ gì không?"
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Wyndham vận hành Solina nghĩa là gì?</b> — Nghĩa là Wyndham quản lý vận hành tổ hợp theo tiêu chuẩn thương hiệu của họ. Khoản cam kết 8%/năm với dòng Service Apartment là nghĩa vụ của chủ đầu tư C-Holdings, theo chính sách công bố 27/11/2026.",
+          "<b>Thương hiệu quốc tế có làm căn hộ giữ giá hơn không?</b> — Thường giúp lấp phòng và nhận diện tốt hơn, nhưng giá bán lại vẫn phụ thuộc chủ yếu vào thời hạn sở hữu còn lại, vị trí và tiến độ. Thương hiệu không bù được một cuốn sổ ngắn hạn.",
+          "<b>Cam kết 8%/năm có chắc chắn không?</b> — Chắc chắn đúng bằng khả năng chi trả của chủ đầu tư và đúng bằng những gì ghi trong hợp đồng anh/chị ký. Lời hứa miệng của người bán hàng không phải cam kết."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Cần người đọc cùng phần phụ lục cho thuê và điều khoản chậm trả trước khi anh/chị ký? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a>. Đọc thêm: <a href='/bai-viet/can-ho-bien-vung-tau-du-an-nao.html'>bốn dự án căn hộ biển Vũng Tàu khác nhau ở đâu</a> và <a href='/bai-viet/co-nen-mua-solina-signature-vung-tau.html'>5 điều phải hỏi trước khi đặt chỗ Solina</a>."
+      }
+    ]
+  },
+  {
+    "id": "can-ho-bien-vung-tau-du-an-nao",
+    "title": "Căn hộ biển Vũng Tàu 2027: bốn dự án đang bán khác nhau ở đâu?",
+    "category": "So sánh dự án",
+    "date": "27/11/2026",
+    "readtime": "9 phút đọc",
+    "cover": "assets/img/media/five-star-odyssey.jpg",
+    "excerpt": "Bốn dự án căn hộ biển đang bán tại Vũng Tàu: Solina Signature, Blanca City, Five Star Odyssey và Five Star Poseidon. Chỉ một trong bốn có sổ lâu dài, ba đã khởi công còn một chưa, và hai dự án vẫn chưa công bố giá. Bảng đối chiếu 8 tiêu chí tính đến 11/2026.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: tính đến tháng 11/2026 có <b>bốn dự án căn hộ biển đang bán ở Vũng Tàu</b> — <a href='/du-an/solina-vung-tau.html'>Solina Signature by Wyndham</a>, <a href='/du-an/blanca-city.html'>Blanca City</a>, <a href='/du-an/five-star-odyssey.html'>Five Star Odyssey</a> và <a href='/du-an/five-star-poseidon.html'>Five Star Poseidon</a>. Chỉ <b>Beacon và Beachtro thuộc Blanca City có sổ lâu dài</b>; ba dự án còn lại đều là sở hữu có thời hạn. Ba đã khởi công, riêng Solina chưa công bố ngày khởi công."
+      },
+      {
+        "t": "p",
+        "c": "Ba trong bốn nằm ở Bãi Sau, cách nhau vài phút chạy xe. Nghĩa là khi anh/chị hỏi một sàn về &quot;căn hộ biển Vũng Tàu&quot;, họ thường chỉ kể dự án họ đang bán. Bảng dưới đây xếp cả bốn cạnh nhau theo những tiêu chí đã có văn bản hoặc công bố chính thức, tính đến 11/2026."
+      },
+      {
+        "t": "h",
+        "c": "Bảng đối chiếu bốn dự án căn hộ biển Vũng Tàu (11/2026)"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Tiêu chí",
+            "Solina Signature",
+            "Blanca City",
+            "Five Star Odyssey",
+            "Five Star Poseidon"
+          ],
+          "rows": [
+            [
+              "Chủ đầu tư",
+              "C-Holdings",
+              "Sun Group",
+              "Five Star Group",
+              "Agritour (Five Star)"
+            ],
+            [
+              "Bãi biển",
+              "Bãi Thủy Tiên",
+              "Bãi Sau",
+              "Bãi Sau",
+              "Bãi Sau"
+            ],
+            [
+              "<b>Sở hữu</b>",
+              "Có thời hạn<br>đến 12/12/2067",
+              "<b>Lâu dài</b><br>(Beacon, Beachtro)",
+              "Có thời hạn<br>đến 15/6/2066",
+              "Có thời hạn<br>chưa công bố văn bản"
+            ],
+            [
+              "Quy mô",
+              "1.181 căn<br>2 tháp 37 và 26 tầng",
+              "96,6 ha<br>8 toà Beacon, 6 toà Blanca, 939 căn Casa",
+              "996 căn + 427 phòng<br>50 tầng",
+              "1.072 căn + 460 phòng<br>tháp đôi 43 tầng"
+            ],
+            [
+              "Vận hành",
+              "Wyndham",
+              "Marriott<br>(khách sạn trong khu)",
+              "Mövenpick – Accor",
+              "Meliá<br>(dự kiến)"
+            ],
+            [
+              "Khởi công",
+              "<b>Chưa công bố</b>",
+              "16/5/2025",
+              "21/6/2025",
+              "21/6/2025"
+            ],
+            [
+              "Xong dự kiến",
+              "12/2029",
+              "2028<br>(theo đơn vị phân phối)",
+              "Cuối 2027 – giữa 2028",
+              "Cuối 2027 – giữa 2028"
+            ],
+            [
+              "Giá khởi điểm",
+              "Từ 2,5 tỷ<br><i>(CĐT 27/11/2026)</i>",
+              "Beacon từ 2,88 tỷ<br>studio Beachtro 2,0–3,4 tỷ<br><i>(phân phối 8/2026)</i>",
+              "Chưa công bố",
+              "Chưa công bố"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Chỉ một trong bốn có sổ lâu dài"
+      },
+      {
+        "t": "p",
+        "c": "Đây là chỗ khác nhau lớn nhất và cũng là chỗ người mua hay bỏ qua nhất, vì tất cả đều được gọi chung là &quot;căn hộ biển&quot;."
+      },
+      {
+        "t": "p",
+        "c": "Beacon và Beachtro của Blanca City nằm trên <b>đất ở</b>, nên sở hữu lâu dài. Ba dự án còn lại đều nằm trên <b>đất thương mại dịch vụ</b>: Solina Signature thuê đến 12/12/2067, Five Star Odyssey đến 15/6/2066 sau quyết định gia hạn tháng 4/2026 của UBND TP.HCM. Riêng Five Star Poseidon thì các đơn vị phân phối đang ghi 50 năm nhưng chủ đầu tư chưa công bố văn bản — đây là con số anh/chị nên yêu cầu xem giấy trước khi tin."
+      },
+      {
+        "t": "p",
+        "c": "Sở hữu có thời hạn không phải là xấu. Nhưng nó kéo theo ba thứ: giá bán lại giảm dần theo thời hạn còn lại, ngân hàng thường cho vay kỳ hạn ngắn hơn, và luật <b>không bắt buộc</b> chủ đầu tư có bảo lãnh ngân hàng vì căn hộ du lịch là công trình xây dựng chứ không phải nhà ở hình thành trong tương lai."
+      },
+      {
+        "t": "h",
+        "c": "Ba đã khởi công, một chưa"
+      },
+      {
+        "t": "p",
+        "c": "Blanca City khởi công 16/5/2025; đến tháng 9/2026 nhà phố Casa đã lên mái hơn 96% số căn, hai cụm Beachtro và Beacon xong đài móng, công viên nước Sun World 15 ha đón khách từ 12/2/2026. Five Star Odyssey và Five Star Poseidon cùng khởi công 21/6/2025, chủ đầu tư công bố thời gian thi công 30–36 tháng."
+      },
+      {
+        "t": "p",
+        "c": "Solina Signature đến 27/11/2026 đã có tên thương mại chính thức, cấu trúc sản phẩm, giá khởi điểm và chính sách bán hàng, nhưng <b>ngày khởi công chưa được công bố</b> và chưa có thông tin công khai về giấy phép xây dựng. Đây cũng là dự án bàn giao muộn nhất trong bốn, dự kiến 12/2029."
+      },
+      {
+        "t": "h",
+        "c": "Hai dự án chưa công bố giá, nên đừng vội so giá"
+      },
+      {
+        "t": "p",
+        "c": "Five Star Odyssey và Five Star Poseidon đang ở trạng thái sắp ra mắt, chưa có bảng giá chính thức. Con số nào anh/chị nghe được lúc này đều là giá truyền miệng qua sàn, không có phiếu tính giá kèm theo."
+      },
+      {
+        "t": "p",
+        "c": "Với hai dự án đã có giá, điểm cần nhớ là <b>giá khởi điểm không so sánh trực tiếp được</b>: giá Solina từ 2,5 tỷ đã gồm bàn giao full nội thất nhưng chưa gồm VAT và phí bảo trì, còn Beacon từ 2,88 tỷ là giá chưa VAT theo bảng lưu hành qua đơn vị phân phối tháng 8/2026. Muốn biết số tiền thật phải rút ra từng đợt, bấm thử tại <a href='/solina-signature.html#dong-tien'>trang giá và phương thức thanh toán Solina</a>."
+      },
+      {
+        "t": "h",
+        "c": "Bốn thương hiệu vận hành, bốn kiểu cam kết khác nhau"
+      },
+      {
+        "t": "p",
+        "c": "Solina do Wyndham vận hành, Odyssey công bố Mövenpick thuộc Accor, Poseidon dự kiến Meliá, còn trong khu Blanca City thì Marriott phát triển khách sạn. Chữ <i>dự kiến</i> ở Poseidon đáng chú ý: thương hiệu chỉ chắc chắn khi hợp đồng quản lý đã ký, và đó là văn bản người mua nên hỏi."
+      },
+      {
+        "t": "h",
+        "c": "Chọn theo mục tiêu"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Muốn sổ lâu dài</b> — Beacon hoặc Beachtro thuộc Blanca City. Là lựa chọn duy nhất trong bốn.",
+          "<b>Muốn nhận nhà sớm nhất</b> — Five Star Odyssey hoặc Poseidon, dự kiến cuối 2027 đến giữa 2028, nhưng phải chờ bảng giá chính thức.",
+          "<b>Muốn mặt biển trực diện và giao full nội thất</b> — Solina Signature, đổi lại là bàn giao muộn nhất và chưa khởi công.",
+          "<b>Ngân sách dưới 2,5 tỷ</b> — studio Beachtro có mức từ 2,0 tỷ, thấp nhất trong các mức giá đã công bố."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Căn hộ biển Vũng Tàu có sổ lâu dài không?</b> — Phần lớn là không. Trong bốn dự án đang bán, chỉ Beacon và Beachtro thuộc Blanca City nằm trên đất ở nên sở hữu lâu dài.",
+          "<b>Dự án nào bàn giao sớm nhất?</b> — Five Star Odyssey và Poseidon, dự kiến cuối 2027 đến giữa 2028 theo thời gian thi công 30–36 tháng chủ đầu tư công bố. Cả hai đều là mốc dự kiến.",
+          "<b>Mua lúc chưa khởi công có rủi ro gì?</b> — Giá thường tốt hơn, nhưng tiến độ phụ thuộc hoàn toàn vào chủ đầu tư và không có bảo lãnh ngân hàng bắt buộc với căn hộ du lịch. Nên yêu cầu xem giấy phép xây dựng trước khi đặt chỗ."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Cần bảng giá thật, phiếu tính giá có dấu và quỹ căn còn lại của cả bốn dự án? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a>. Đọc thêm: <a href='/bai-viet/solina-signature-hay-blanca-city.html'>so sánh chi tiết Solina và Blanca City</a> và <a href='/bai-viet/co-nen-mua-solina-signature-vung-tau.html'>5 điều phải hỏi trước khi đặt chỗ Solina</a>."
+      }
+    ]
+  },
+  {
     "id": "co-nen-mua-solina-signature-vung-tau",
     "title": "Có nên mua Solina Signature Vũng Tàu? 5 điều phải hỏi rõ trước khi đặt chỗ",
     "category": "Góc nhìn PaceLand",
