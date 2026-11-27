@@ -51,6 +51,10 @@ const V = {
 /* ---------- Tiện ích ---------- */
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const stripTags = (s) => String(s == null ? "" : s).replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+/* Bỏ cú pháp markdown (**đậm**, [chữ](link)) để đưa vào schema JSON-LD dạng chữ trơn */
+const mdPlain = (s) => stripTags(String(s == null ? "" : s)
+  .replace(/\*\*/g, "")
+  .replace(/\[([^\]]+)\]\((?:\/|#|https:\/\/)[^\s)]*\)/g, "$1"));
 const absUrl = (u) => {
   u = String(u || "");
   if (/^(data:|https?:|\/\/)/.test(u)) return u;
@@ -287,7 +291,12 @@ function loadDetail(id) {
   if (!fs.existsSync(f)) return null;
   try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; }
 }
-const mdB = (s) => esc(s).replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+/* **đậm** và [chữ](link). Chỉ nhận link nội bộ (/ hoặc #) và https:// để
+   không cho javascript: lọt qua; chuỗi đã escape trước nên href an toàn. */
+const mdB = (s) => esc(s)
+  .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+  .replace(/\[([^\]]+)\]\(((?:\/|#|https:\/\/)[^\s)]*)\)/g, (m, text, href) =>
+    `<a href="${href}" style="color:var(--red);font-weight:600">${text}</a>`);
 const dSec = (title, cap) => `<h2 class="mt-4" style="font-size:1.35rem">${esc(title)}${cap ? ` <span class="pill" style="margin-left:.5rem;vertical-align:middle;font-size:.68rem">${esc(cap)}</span>` : ""}</h2>`;
 const dIntro = (s) => s ? `<p class="mt-2" style="max-width:78ch;line-height:1.8;color:var(--ink-soft)">${mdB(s)}</p>` : "";
 const dNote = (s) => s ? `<p class="mt-2" style="font-size:.88rem;color:var(--muted);max-width:78ch">${mdB(s)}</p>` : "";
@@ -406,7 +415,7 @@ for (const p of PROJECTS) {
   const detailHtml = detail ? renderProjectDetail(p, detail) : "";
   const faqLd = detail && (detail.faq || []).length ? {
     "@context": "https://schema.org", "@type": "FAQPage",
-    mainEntity: detail.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })),
+    mainEntity: detail.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: mdPlain(f.a) } })),
   } : null;
 
   const productLd = {
@@ -820,7 +829,7 @@ for (const p of PROJECTS) {
       containedInPlace: { "@type": "Place", name: p.name, url: `${SITE_URL}/du-an/${p.id}.html` },
       broker: { "@type": "RealEstateAgent", "@id": SITE_URL + "/#organization" },
     })];
-    if ((zd.faq || []).length) ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: zd.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })) }));
+    if ((zd.faq || []).length) ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: zd.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: mdPlain(f.a) } })) }));
     fs.writeFileSync(path.join(ROOT, "du-an", p.id, `${z.slug}.html`), pageShell({
       title, desc, canonical: url, ogImage: absUrl(resolveImg(ogImg, 1200)),
       ogImageAlt: `${z.name} — ${p.name}`, ogType: "website", ldTags: ld,
@@ -876,7 +885,7 @@ for (const gh of INVENTORIES) {
     }));
   }
   if ((gh.faq || []).length) {
-    ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: gh.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: stripTags(String(f.a).replace(/\*\*/g, "")) } })) }));
+    ld.push(ldTag("pl-ld-faq", { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: gh.faq.map((f) => ({ "@type": "Question", name: stripTags(f.q), acceptedAnswer: { "@type": "Answer", text: mdPlain(f.a) } })) }));
   }
   const desc = (gh.seo && gh.seo.description) || stripTags(gh.tomTat);
   fs.writeFileSync(path.join(ROOT, "gio-hang", `${gh.slug}.html`), pageShell({
@@ -980,7 +989,7 @@ patchFile("salehub.html", (h) => {
 });
 
 /* Org schema cho các trang còn lại */
-for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "beachtro-blanca-city.html", "bai-viet.html", "du-an-chi-tiet.html", "cam-on.html"]) {
+for (const page of ["gioi-thieu.html", "doi-tac.html", "lien-he.html", "cong-cu.html", "gladia-heights.html", "beachtro-blanca-city.html", "solina-signature.html", "bai-viet.html", "du-an-chi-tiet.html", "cam-on.html"]) {
   patchFile(page, (h) => upsertLd(h, "pl-ld-org", ldTag("pl-ld-org", ORG_LD)));
 }
 
@@ -993,6 +1002,7 @@ const urls = [
   { loc: "/cong-cu.html", pri: "0.9", mod: today },
   { loc: "/gladia-heights.html", pri: "0.9", mod: today },
   { loc: "/beachtro-blanca-city.html", pri: "0.9", mod: today },
+  { loc: "/solina-signature.html", pri: "0.9", mod: today },
   { loc: "/chung-nhan-doi-tac.html", pri: "0.8", mod: today },
   { loc: "/gioi-thieu.html", pri: "0.7", mod: today },
   { loc: "/doi-tac.html", pri: "0.7", mod: today },

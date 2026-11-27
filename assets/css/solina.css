@@ -1,0 +1,393 @@
+/* ============================================================
+   solina.css — máy tính dòng tiền Solina Signature (.sc-*)
+   + khối riêng của trang salekit nội bộ (.sk-*)
+   Dùng chung cho /solina-signature.html và /salekit-solina-signature.html
+   Thẻ máy tính luôn là một khối nền ink để giống nhau trên mọi nền trang.
+   ============================================================ */
+
+/* ---------- 1. Khung máy tính ---------- */
+.sc {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: clamp(18px, 2.4vw, 30px);
+  background: linear-gradient(158deg, #2A2017 0%, #1B1510 100%);
+  border: 1px solid rgba(203, 169, 104, 0.26);
+  border-radius: 18px;
+  padding: clamp(18px, 2.4vw, 30px);
+  color: #F4EFE6;
+  box-shadow: var(--shadow);
+}
+.sc * { min-width: 0; }
+
+/* ---------- 2. Cột nhập ---------- */
+.sc-panel {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: clamp(14px, 1.6vw, 20px);
+  align-self: start;
+}
+.sc-field { margin-top: 0.95rem; }
+.sc-field:first-child { margin-top: 0; }
+.sc-field > label,
+.sc-field > legend {
+  display: block;
+  font-family: var(--head);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #E2D2BC;
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+.sc-field fieldset { border: 0; margin: 0; padding: 0; }
+.sc select,
+.sc input[type="number"],
+.sc input[type="date"] {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.75rem;
+  font-family: var(--body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 9px;
+  appearance: none;
+}
+.sc select { background-image: none; }
+.sc :is(select, input, button):focus-visible {
+  outline: 3px solid var(--gold-soft);
+  outline-offset: 2px;
+}
+.sc-seg {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.sc-seg button {
+  min-height: 44px;
+  padding: 0.4rem 0.3rem;
+  font-family: var(--head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #F4EFE6;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.18s var(--ease), color 0.18s var(--ease);
+}
+.sc-seg button:hover { border-color: var(--gold-soft); }
+.sc-seg button[aria-pressed="true"] {
+  background: var(--gold-soft);
+  border-color: var(--gold-soft);
+  color: #231A12;
+}
+.sc-chk {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #EADCC8;
+  cursor: pointer;
+}
+.sc-chk input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0;
+  accent-color: var(--gold-soft);
+}
+
+/* ---------- 3. Cột kết quả ---------- */
+.sc-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5em, 1fr));
+  gap: clamp(10px, 1.4vw, 18px);
+}
+.sc-top .num {
+  font-family: var(--head);
+  font-weight: 800;
+  font-size: clamp(1.55rem, 3.1vw, 2.3rem);
+  line-height: 1.05;
+  color: #fff;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.sc-top .lbl {
+  margin-top: 0.25rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: #C9B69D;
+}
+/* Thanh một tổng chia phần: cao 28px, khe 2px lộ nền, chữ ở đầu khối */
+.sc-bar {
+  display: flex;
+  gap: 2px;
+  height: 28px;
+  margin: clamp(14px, 1.8vw, 22px) 0 0.7rem;
+}
+.sc-bar span {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 0.45rem;
+  border-radius: 4px;
+  font-family: var(--head);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #1B1510;
+  white-space: nowrap;
+  transition: flex-basis 0.4s var(--ease);
+}
+.sc-bar span:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.sc-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  font-size: 0.78rem;
+  color: #D9C7AF;
+}
+.sc-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.4rem;
+  border-radius: 3px;
+  vertical-align: -1px;
+}
+.sc-legend b { color: #F4EFE6; font-weight: 600; }
+.sc-sched {
+  margin-top: clamp(14px, 1.8vw, 20px);
+  background: #fff;
+  border-radius: 12px;
+  overflow: auto;
+  max-height: 460px;
+}
+.sc-sched table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  color: var(--ink);
+  font-size: 0.86rem;
+}
+.sc-sched th,
+.sc-sched td {
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line-soft);
+}
+.sc-sched th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--ivory);
+  font-family: var(--head);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.sc-sched td:first-child { white-space: nowrap; font-weight: 600; }
+.sc-sched .n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sc-sched .n small { color: var(--muted); font-size: 0.76rem; }
+.sc-sched tr.hl td { background: var(--gold-tint); font-weight: 700; }
+.sc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+.sc-copy {
+  min-height: 44px;
+  padding: 0 1.1rem;
+  font-family: var(--head);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #231A12;
+  background: var(--gold-soft);
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.sc-copy:hover { background: #D9BA80; }
+.sc-flash { font-size: 0.8rem; color: var(--gold-soft); }
+.sc-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: #BFAD95;
+}
+.sc-note a { color: var(--gold-soft); }
+
+/* ---------- 4. Bảng so sánh phương thức ---------- */
+.sc-cmp {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+}
+.sc-cmp table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.sc-cmp th,
+.sc-cmp td {
+  padding: 0.65rem 0.95rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--line-soft);
+}
+.sc-cmp thead th {
+  background: var(--ivory);
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+.sc-cmp tbody th {
+  font-family: var(--head);
+  font-weight: 600;
+  color: var(--ink-soft);
+  width: 10.5rem;
+  background: var(--paper);
+}
+.sc-cmp tbody tr:last-child :is(th, td) { border-bottom: 0; }
+
+/* ---------- 5. Trang salekit nội bộ ---------- */
+.sk-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: var(--red-tint);
+  border: 1px solid var(--red-line);
+  font-family: var(--head);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.sk-warn {
+  margin-top: 1.1rem;
+  padding: 0.95rem 1.15rem;
+  border: 1px solid var(--red-line);
+  border-radius: 12px;
+  background: var(--red-tint);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.sk-warn b { color: var(--red-deep); }
+.sk-warn > b:first-child {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-family: var(--head);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.sk-qa { display: grid; gap: 0.9rem; }
+.sk-qa details {
+  background: var(--white);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  padding: 0.9rem 1.15rem;
+}
+.sk-qa summary {
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--ink);
+}
+.sk-qa .say {
+  margin: 0.8rem 0 0;
+  padding: 0.8rem 1rem;
+  background: var(--gold-tint);
+  border: 1px solid var(--line-gold);
+  border-radius: 10px;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.sk-qa .say::before {
+  content: "Nói với khách";
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.sk-dos { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.sk-dos > div {
+  background: var(--white);
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+}
+.sk-dos h3 { font-size: 1rem; margin: 0 0 0.6rem; }
+.sk-dos ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.sk-dos li { font-size: 0.9rem; line-height: 1.65; color: var(--ink-soft); }
+.sk-do h3 { color: #1F6B4C; }
+.sk-dont h3 { color: var(--red); }
+.sk-tl { list-style: none; margin: 0; padding: 0; }
+.sk-tl li {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.1rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid var(--line);
+}
+.sk-tl b {
+  font-family: var(--head);
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+.sk-tl p { margin: 0; font-size: 0.92rem; line-height: 1.65; color: var(--ink-soft); }
+.sk-tl .past b, .sk-tl .past p { color: var(--muted); }
+.sk-links { display: grid; gap: 0.5rem; margin-top: 1.1rem; }
+.sk-links a {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 0.7rem 0.95rem;
+  background: var(--white);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.sk-links a:hover { border-color: var(--gold-soft); transform: translateX(3px); }
+.sk-links b { font-size: 0.92rem; }
+.sk-links span { font-size: 0.82rem; color: var(--muted); }
+
+/* ---------- 6. Mốc đáp ứng ---------- */
+@media (max-width: 1000px) {
+  .sc { grid-template-columns: minmax(0, 1fr); }
+  .sc-result { order: -1; }
+}
+@media (max-width: 600px) {
+  .sc-bar span { font-size: 0.7rem; padding: 0 0.3rem; }
+  .sc-sched table { font-size: 0.8rem; }
+  .sc-sched th, .sc-sched td { padding: 0.45rem 0.5rem; }
+  .sk-tl li { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sc-bar span, .sk-links a { transition: none; }
+}

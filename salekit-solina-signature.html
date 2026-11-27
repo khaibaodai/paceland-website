@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salekit Solina Signature — nội bộ đội ngũ | PaceLand</title>
+<meta name="description" content="Trang nội bộ cho chuyên viên PaceLand: máy tính lịch thanh toán Solina Signature, bảng so sánh ba phương thức, cách trả lời câu hỏi khó và quy trình tư vấn Private Access.">
+<link rel="icon" href="/assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css?v=9e29bee2">
+<link rel="stylesheet" href="/assets/css/solina.css?v=3127166b">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="PaceLand">
+<meta name="theme-color" content="#C70018">
+<link rel="apple-touch-icon" href="/assets/img/icon.png">
+</head>
+<body>
+<div id="header-root"></div>
+
+<main>
+  <section class="page-hero section--ivory">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="breadcrumb">
+        <a href="/index.html">Trang chủ</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="/salehub.html">SaleHub</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Salekit Solina Signature</span>
+      </nav>
+      <span class="sk-flag reveal">Nội bộ đội ngũ · không index</span>
+      <h1 class="reveal mt-2" data-d="1">Salekit Solina Signature <span class="display">by Wyndham.</span></h1>
+      <p class="lead mt-2 reveal" data-d="2" style="max-width:62ch">Bộ chốt nhanh cho buổi tư vấn: ra lịch tiền cho khách tại chỗ, so ba phương thức, trả lời câu hỏi khó đúng tài liệu. Nguồn số: tài liệu thuyết trình bán hàng của chủ đầu tư ngày 27/11/2026.</p>
+      <div class="flex mt-3 reveal" data-d="3" style="gap:.8rem;flex-wrap:wrap">
+        <a class="btn btn--lg" href="#dong-tien">Mở máy tính dòng tiền
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </a>
+        <a class="btn btn--gold btn--lg" href="#tu-choi">Xử lý câu hỏi khó</a>
+        <a class="btn btn--ghost btn--lg" href="/solina-signature.html">Trang gửi khách</a>
+      </div>
+
+      <div class="sk-warn reveal" data-d="4" style="max-width:76ch">
+        <b>Phải đối chiếu trước khi gửi khách</b>
+        Tài liệu 27/11/2026 lệch nhau ở phương thức <b>Giãn 2 năm</b>: bảng so sánh ghi phần sau bàn giao là <b>40% chia 8 đợt</b>, nhưng lịch chi tiết cộng ra <b>45%</b> (7 đợt 5% cộng một đợt 10%) và chỉ cách này mới đủ 100% giá căn. Máy tính dưới đây dùng lịch chi tiết. Trước khi gửi bất kỳ lịch nào cho khách, lấy phiếu tính giá chính thức của chủ đầu tư để xác nhận con số này, và xác nhận luôn việc đặt chỗ 50 triệu có được trừ vào đợt 1 hay không.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÁY TÍNH DÒNG TIỀN ============ -->
+  <section class="section section--ink" id="dong-tien">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Chốt tại bàn</span>
+        <h2 class="section-title mt-1" style="color:#fff">Ra lịch tiền cho khách trong một phút</h2>
+        <p class="lead mt-2" style="color:#D9C7AF;max-width:64ch">Nhập căn khách đang nhắm, chọn phương thức, bấm sao chép là có đoạn text gửi Zalo. Chiết khấu 5% tính trên giá niêm yết, voucher trừ sau.</p>
+      </div>
+
+      <div class="sc reveal">
+        <form class="sc-panel" id="scForm" autocomplete="off">
+          <div class="sc-field">
+            <label for="scTower">Tháp và hướng view</label>
+            <select id="scTower">
+              <option data-price="2.5">Lumia · view thành phố &amp; Bãi Trước · từ 2,5 tỷ</option>
+              <option data-price="3.4" selected>Lumia · view biển · từ 3,4 tỷ</option>
+              <option data-price="2.5">The Sol · view thành phố &amp; Bãi Trước · từ 2,5 tỷ</option>
+              <option data-price="3">The Sol · view biển · từ 3 tỷ</option>
+            </select>
+          </div>
+          <div class="sc-field">
+            <label for="scPrice">Giá niêm yết căn (tỷ đồng, chưa VAT và phí bảo trì)</label>
+            <input id="scPrice" type="number" step="0.01" min="0.5" value="3.4" inputmode="decimal">
+          </div>
+          <div class="sc-field">
+            <fieldset>
+              <legend>Phương thức thanh toán</legend>
+              <div class="sc-seg" id="scMethod">
+                <button type="button" data-method="std" aria-pressed="true">Chuẩn</button>
+                <button type="button" data-method="loan" aria-pressed="false">Vay</button>
+                <button type="button" data-method="ext" aria-pressed="false">Giãn 2 năm</button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="sc-field">
+            <label for="scVoucher">Voucher booking</label>
+            <select id="scVoucher">
+              <option value="15">15 triệu · booking thứ 1 – 300</option>
+              <option value="10">10 triệu · booking thứ 301 – 500</option>
+              <option value="0">Không áp dụng</option>
+            </select>
+          </div>
+          <label class="sc-chk"><input type="checkbox" id="scCk"> Khách đang sở hữu sản phẩm C-Holdings (C-Sky View, The Felix, The Maison): chiết khấu 5%</label>
+          <div class="sc-field">
+            <label for="scStart">Ngày đặt chỗ</label>
+            <input id="scStart" type="date">
+          </div>
+        </form>
+
+        <div class="sc-result" aria-live="polite">
+          <div class="sc-top">
+            <div><div class="num" id="scNet">—</div><div class="lbl">Giá sau ưu đãi, tạm tính</div></div>
+            <div><div class="num" id="scPre">—</div><div class="lbl" id="scPreCap">Khách trả trước thời điểm nhận nhà</div></div>
+            <div><div class="num" id="scMo">—</div><div class="lbl" id="scMoCap">Mỗi đợt 30 ngày giai đoạn xây dựng</div></div>
+          </div>
+          <div class="sc-bar" id="scBar" role="group"></div>
+          <div class="sc-legend" id="scLegend"></div>
+          <div class="sc-sched">
+            <table>
+              <caption class="sr-only">Lịch thanh toán tạm tính theo từng đợt</caption>
+              <thead><tr><th scope="col">Đợt</th><th scope="col">Thời điểm</th><th scope="col" class="n">Tỷ lệ</th><th scope="col" class="n">Số tiền</th><th scope="col">Ghi chú</th></tr></thead>
+              <tbody id="scRows"></tbody>
+            </table>
+          </div>
+          <div class="sc-tools">
+            <button class="sc-copy" type="button" id="scCopy">Sao chép lịch gửi Zalo</button>
+            <span class="sc-flash" id="scCopied" role="status"></span>
+          </div>
+          <p class="sc-note">Mốc ngày trong bảng là tạm tính 30 ngày mỗi đợt tính từ ngày đặt chỗ, dùng để khách hình dung nhịp tiền. Ngày thực tế theo thông báo thanh toán của chủ đầu tư. Đừng gửi bảng này như lịch cam kết.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SO SÁNH PHƯƠNG THỨC ============ -->
+  <section class="section section--ivory" id="pttt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">So nhanh</span>
+        <h2 class="section-title mt-1">Ba phương thức, chọn theo dòng tiền của khách</h2>
+      </div>
+      <div class="sc-cmp reveal">
+        <table>
+          <thead><tr><th scope="col">Tiêu chí</th><th scope="col">Chuẩn</th><th scope="col">Vay</th><th scope="col">Giãn 2 năm</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Đặt chỗ</th><td>50 triệu</td><td>50 triệu</td><td>50 triệu</td></tr>
+            <tr><th scope="row">Ký VBTT (≤10 ngày)</th><td>10%</td><td>10%</td><td>10%</td></tr>
+            <tr><th scope="row">Ký HĐMB</th><td>Đợt 3, lũy kế 20%</td><td>Đợt 2, lũy kế 15%</td><td>Đợt 3, lũy kế 20%</td></tr>
+            <tr><th scope="row">Giai đoạn xây dựng</th><td>Đợt 6–20 và 22–36: 0,5%/đợt</td><td>Ngân hàng giải ngân 50%</td><td>Đợt 6–35: 0,5%/đợt</td></tr>
+            <tr><th scope="row">Khách trả trước khi nhận nhà</th><td>50%</td><td>15%</td><td>45%</td></tr>
+            <tr><th scope="row">Khi bàn giao (dự kiến 12/2029)</th><td>45%</td><td>Khách 20% + ngân hàng 10%</td><td>5%</td></tr>
+            <tr><th scope="row">Sau bàn giao</th><td>Không</td><td>Không</td><td>8 đợt, 90 ngày/đợt trong 2 năm <b style="color:var(--red)">(40% hay 45%: phải xác nhận)</b></td></tr>
+            <tr><th scope="row">Thông báo GCN</th><td>5%</td><td>5%</td><td>5%</td></tr>
+            <tr><th scope="row">Điểm nhấn khi nói</th><td>Sở hữu với 10%</td><td>Hỗ trợ lãi suất 0% trong 30 tháng</td><td>Nhận nhà, khai thác ngay với 50%, số lượng giới hạn</td></tr>
+            <tr><th scope="row">Hợp với khách nào</th><td>Có sẵn vốn, muốn giá tốt</td><td>Vốn mỏng, thu nhập đều</td><td>Muốn dùng tiền cho thuê trả phần sau</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note mt-2" style="color:var(--muted);font-size:.84rem">Trang gửi khách không đăng con số 40%/45% đang lệch, chỉ ghi "phần còn lại chia 8 đợt". Khi khách hỏi cụ thể, trả lời theo phiếu tính giá chứ không theo bảng này.</p>
+    </div>
+  </section>
+
+  <!-- ============ XỬ LÝ TỪ CHỐI ============ -->
+  <section class="section section--paper" id="tu-choi">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Khi khách cản</span>
+        <h2 class="section-title mt-1">Sáu câu hỏi khó và cách trả lời</h2>
+        <p class="lead mt-2" style="max-width:62ch">Trả lời bằng thứ kiểm chứng được. Câu nào vượt tài liệu thì nói thẳng là sẽ gửi văn bản của chủ đầu tư, đừng đoán.</p>
+      </div>
+      <div class="sk-qa reveal">
+        <details>
+          <summary>"Vũng Tàu xa, mua rồi ít đi"</summary>
+          <p class="say">Từ trung tâm TP.HCM khoảng 70 phút, cao tốc Biên Hòa – Vũng Tàu đã thông xe toàn tuyến tháng 5/2026. Khi Long Thành chạy, Vũng Tàu thành nơi nghỉ ngắn ngay trong tuần chứ không phải đợi lễ. Căn anh/chị không dùng thì Wyndham khai thác.</p>
+        </details>
+        <details>
+          <summary>"Giá cao hơn chỗ khác"</summary>
+          <p class="say">So bằng thứ không thể làm thêm: 185 m mặt biển chạm cát, không bị đường xe cắt ngang, khoảng 90% căn hướng biển, giao full nội thất. Vốn ban đầu chỉ 10% giá căn, và có lựa chọn giãn 2 năm sau khi nhận nhà.</p>
+        </details>
+        <details>
+          <summary>"Chưa có đủ tiền"</summary>
+          <p class="say">Phương thức vay: anh/chị chỉ trả 15% đến khi nhận nhà, ngân hàng giải ngân phần còn lại, lãi suất được hỗ trợ trong 30 tháng. Mở máy tính dòng tiền ngay tại bàn để khách thấy số cụ thể của chính căn đang xem.</p>
+        </details>
+        <details>
+          <summary>"Khai thác cho thuê ra sao"</summary>
+          <p class="say">Service Apartment có cam kết thuê 8%/năm trong 5 năm, Condotel chia sẻ lợi nhuận 80–20, tổ hợp do Wyndham vận hành. Đưa khách số liệu thị trường lưu trú Vũng Tàu, tuyệt đối không hứa con số nào ngoài chính sách bằng văn bản.</p>
+        </details>
+        <details>
+          <summary>"Chủ đầu tư là ai"</summary>
+          <p class="say">C-Holdings, đã làm C-Sky View, The Felix, The Maison theo hướng chất lượng cao nhưng vừa túi tiền. Pháp nhân dự án là Công ty CP Thủy Tiên Bà Rịa – Vũng Tàu. Khách đã sở hữu sản phẩm C-Holdings được chiết khấu 5%.</p>
+        </details>
+        <details>
+          <summary>"Pháp lý thế nào"</summary>
+          <p class="say">Nói rõ ngay: đất thương mại dịch vụ, thuê trả tiền một lần, thời hạn đến 12/12/2067, nên đây là sở hữu có thời hạn. Căn hộ du lịch là công trình xây dựng chứ không phải nhà ở, nên bảo lãnh ngân hàng không bắt buộc theo luật. Gửi bộ hồ sơ chính thức của chủ đầu tư, không tự trả lời ngoài tài liệu.</p>
+        </details>
+      </div>
+      <div class="sk-warn reveal" style="max-width:76ch">
+        <b>Ba điều không được nói</b>
+        Không hứa lợi nhuận ngoài chính sách bằng văn bản. Không gọi đây là sở hữu lâu dài. Không nói chương trình bốc thăm Lamborghini như quà chắc chắn: điều kiện là dự án bán được 90% tổng số căn, luôn nói kèm điều kiện này.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUY TRÌNH ============ -->
+  <section class="section section--ivory" id="quy-trinh">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Tinh thần Private Access</span>
+        <h2 class="section-title mt-1">Tư vấn theo năm bước</h2>
+      </div>
+      <ol class="steps reveal">
+        <li><div><b>Kể câu chuyện và triết lý sống trước.</b> Riêng tư, tự do, được là chính mình. Thông số kỹ thuật để sau.</div></li>
+        <li><div><b>Cá nhân hoá thư mời và hành trình đón tiếp</b> theo sở thích của từng khách.</div></li>
+        <li><div><b>Tư vấn ở không gian riêng, nghe nhu cầu trước:</b> nghỉ dưỡng, đầu tư hay cả hai.</div></li>
+        <li><div><b>Đưa đủ pháp lý, giá, chính sách, điều kiện giao dịch,</b> rồi mở bảng dòng tiền chạy cùng khách.</div></li>
+        <li><div><b>Mời khách vào cộng đồng cư dân cùng gu sống,</b> không chỉ bán một căn hộ.</div></li>
+      </ol>
+      <div class="sk-dos mt-3 reveal">
+        <div class="sk-do">
+          <h3>Nên</h3>
+          <ul>
+            <li>Hé lộ có chủ đích, theo nhịp của khách</li>
+            <li>Dành quyền ưu tiên và trải nghiệm trước như một đặc quyền thật</li>
+            <li>Chọn đúng khách hợp giá trị dự án, không rải đại trà</li>
+            <li>Mời khách tra cứu mã chứng nhận PL của mình ngay buổi đầu</li>
+          </ul>
+        </div>
+        <div class="sk-dont">
+          <h3>Không</h3>
+          <ul>
+            <li>Dùng khan hiếm giả để ép quyết định</li>
+            <li>Chạy theo số lượt đăng ký thay vì chất lượng khách</li>
+            <li>Cạnh tranh bằng khuyến mãi tự nghĩ ra</li>
+            <li>Tung toàn bộ thông tin một lúc trong buổi đầu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section section--paper" id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Lịch triển khai</span>
+        <h2 class="section-title mt-1">Mốc bán hàng của dự án</h2>
+      </div>
+      <ul class="sk-tl reveal">
+        <li class="past"><b>29/10/2026</b><p>The House of Selection. Đã diễn ra.</p></li>
+        <li><b>19/12/2026</b><p>Khai trương văn phòng bán hàng và nhà mẫu.</p></li>
+        <li><b>09/01/2027</b><p>Lễ mở bán chính thức, tuỳ tình hình booking.</p></li>
+        <li><b>16/01 – 20/02/2027</b><p>Event hàng tuần, kéo dài đến 20/02/2027.</p></li>
+      </ul>
+      <p class="note mt-2" style="color:var(--muted);font-size:.84rem">Mốc theo tài liệu nội bộ ngày 27/11/2026, có thể đổi. Không đăng lịch này lên kênh cá nhân trước khi chủ đầu tư công bố.</p>
+    </div>
+  </section>
+
+  <!-- ============ LIÊN KẾT ============ -->
+  <section class="section section--ivory">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Gửi khách cái gì</span>
+        <h2 class="section-title mt-1">Liên kết dùng trong buổi tư vấn</h2>
+      </div>
+      <div class="sk-links reveal" style="max-width:72ch">
+        <a href="/solina-signature.html"><b>Trang bán hàng Solina Signature →</b><span>giá, chính sách, máy tính dòng tiền: link gửi khách tự xem</span></a>
+        <a href="/du-an/solina-vung-tau.html"><b>Hồ sơ dự án Solina →</b><span>pháp lý, tiến độ, vị trí, chủ đầu tư: dùng khi khách hỏi sâu</span></a>
+        <a href="/cong-cu.html#lai-vay"><b>Công cụ tính lãi vay →</b><span>ghép với phương thức Vay để ra số tiền trả hằng tháng</span></a>
+        <a href="/cong-cu.html#dong-tien"><b>Công cụ dòng tiền cho thuê →</b><span>đối chiếu với cam kết 8%/năm và chia sẻ 80–20</span></a>
+        <a href="/chung-nhan-doi-tac.html"><b>Tra cứu chứng nhận chuyên viên →</b><span>gửi khách xác minh bạn ngay buổi gặp đầu</span></a>
+        <a href="/salehub.html"><b>Về SaleHub →</b><span>hub 19 dự án, giỏ hàng và toàn bộ bộ công cụ</span></a>
+      </div>
+      <p class="note mt-3" style="color:var(--muted);font-size:.84rem">Trang này là tài liệu nội bộ, đặt noindex và không có trong sitemap. Đừng đăng link ra kênh công khai: gửi khách thì dùng <a href="/solina-signature.html" style="color:var(--red);font-weight:700">trang bán hàng</a>.</p>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"><!--pr:footer--><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand"><img src="/assets/img/logo-white.png" alt="PaceLand"><p>Công Ty Cổ Phần Đầu Tư Pace Land — mạng lưới bất động sản kín, kết nối khách hàng tinh hoa với những cơ hội tài sản tốt nhất bằng dữ liệu và tốc độ.</p><div class="footer-soc"><a href="https://www.facebook.com/paceland.vn/" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a href="https://www.youtube.com/@paceland-vn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></a><a href="https://www.tiktok.com/@paceland.vn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3.3v13.4a2.4 2.4 0 1 1-2.4-2.4c.25 0 .5.04.73.11V8.7a5.7 5.7 0 1 0 4.97 5.65V8.9a7.6 7.6 0 0 0 4.4 1.4V7a4.3 4.3 0 0 1-3.4-1.2z"/></svg></a><a href="https://zalo.me/3109488145387221549" target="_blank" rel="noopener" aria-label="Zalo OA PaceLand"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.94 2 10.8c0 2.78 1.46 5.25 3.74 6.86-.13.94-.5 2.2-1.32 3.06-.2.21-.06.55.23.5 1.74-.27 3.2-1.02 4.04-1.56.74.16 1.52.24 2.31.24 5.52 0 10-3.94 10-8.8S17.52 2 12 2z"/></svg></a></div></div><div class="footer-col"><h4>Khám phá</h4><ul><li><a href="/index.html">Trang chủ</a></li><li><a href="/du-an.html">Dự án</a></li><li><a href="/gioi-thieu.html">Giới thiệu</a></li><li><a href="/doi-tac.html">Đối tác</a></li><li><a href="/goc-nhin.html">Góc nhìn</a></li><li><a href="/cong-cu.html">Công cụ</a></li><li><a href="/tuyen-dung.html">Tuyển dụng</a></li><li><a href="/lien-he.html">Liên hệ</a></li><li><a href="/faq.html">Câu hỏi thường gặp</a></li><li><a href="/chung-nhan-doi-tac.html">Chứng nhận Đối tác</a></li></ul></div><div class="footer-col"><h4>Phân khúc</h4><ul><li><a href="/du-an.html">Căn hộ hạng sang</a></li><li><a href="/du-an.html">Biệt thự &amp; nhà phố</a></li><li><a href="/du-an.html">Bất động sản nghỉ dưỡng</a></li><li><a href="/du-an.html">Sản phẩm giao dịch kín</a></li></ul></div><div class="footer-col footer-contact"><h4>Liên hệ</h4><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>35 Đường số 36, Khu phố 2, P. Bình Trưng, TP. Thủ Đức, TP. Hồ Chí Minh</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:0903983737">0903 983 737</a></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:contact@paceland.vn">contact@paceland.vn</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Công Ty Cổ Phần Đầu Tư Pace Land. Bảo lưu mọi quyền.</span><span>Kiến tạo giá trị thịnh vượng · <a href="/admin.html" style="opacity:.65">Quản trị</a></span></div></div></footer><!--/pr:footer--></div>
+
+<script src="/assets/js/data.js?v=f5c1c7bd"></script>
+<script src="/assets/js/components.js?v=9fe7ad68"></script>
+<script src="/assets/js/main.js?v=ccf40836"></script>
+<script src="/assets/js/solina-thanh-toan.js?v=071f1406"></script>
+</body>
+</html>

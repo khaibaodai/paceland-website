@@ -27,6 +27,7 @@ const SITE = {
     "metaPixelScope": [
       "/cam-on",
       "/beachtro-blanca-city",
+      "/solina-signature",
       "/gio-hang/beachtro-blanca-city",
       "/du-an/blanca-city",
       "/du-an/five-star-odyssey",
@@ -919,34 +920,37 @@ const PROJECTS = [
   },
   {
     "id": "solina-vung-tau",
-    "name": "Solina Vũng Tàu",
+    "name": "Solina Signature by Wyndham",
     "developer": "C-Holdings",
     "location": "Bãi Thủy Tiên, P. Rạch Dừa (TP. Vũng Tàu cũ), TP.HCM",
     "area": "Vùng ven & nghỉ dưỡng",
     "segment": "Nghỉ dưỡng",
     "type": "Căn hộ",
-    "status": "Sắp ra mắt",
+    "status": "Nhận booking, mở bán 01/2027",
     "offmarket": false,
-    "badge": "Sát biển Bãi Thủy Tiên",
-    "priceText": "Chưa công bố",
-    "priceValue": 0,
-    "beds": "≈914 phòng & căn hộ",
-    "size": "1,19 ha · tòa 26 + 37 tầng",
-    "handover": "Đang cập nhật",
+    "badge": "185 m mặt biển chạm cát",
+    "priceText": "Từ 2,5 tỉ (tài liệu CĐT 27/11/2026)",
+    "priceValue": 2.5,
+    "beds": "1.181 căn · Studio – 2PN+",
+    "size": "1,19 ha · Lumia 37 tầng + The Sol 26 tầng",
+    "handover": "Dự kiến 12/2029",
     "cover": "assets/img/media/solina-vung-tau.jpg",
     "gallery": [
       "assets/img/media/solina-vung-tau.jpg"
     ],
-    "short": "Tổ hợp khách sạn 26 tầng và căn hộ du lịch 37 tầng của C-Holdings trên 11.893 m² sát Bãi Thủy Tiên — công bố tên tháng 9/2026, khoảng 914 phòng và căn hộ, chưa có bảng giá.",
+    "short": "Tổ hợp Condotel và Service Apartment của C-Holdings trên 11.893 m² sát Bãi Thủy Tiên, Vũng Tàu: 1.181 căn trong hai tháp Lumia và The Sol, 185 m mặt biển, giao full nội thất, Wyndham vận hành, bàn giao dự kiến 12/2029.",
     "description": [
-      "Solina Vũng Tàu là tổ hợp nghỉ dưỡng của C-Holdings trên khu đất 11.893 m² sát biển Bãi Thủy Tiên, phường Rạch Dừa — gồm tòa khách sạn 26 tầng và tòa căn hộ du lịch 37 tầng, tổng khoảng 914 phòng và căn hộ.",
-      "Dự án vừa công bố tên thương mại tháng 9/2026, chưa có bảng giá; đất thương mại dịch vụ có thời hạn sử dụng đến tháng 12/2067. PaceLand sẽ cập nhật cấu trúc sản phẩm và chính sách bán hàng ngay khi chủ đầu tư công bố — đăng ký trước để nhận thông tin sớm."
+      "Solina Signature by Wyndham, trước đây gọi là Solina Vũng Tàu, là tổ hợp nghỉ dưỡng của C-Holdings trên khu đất 11.893,3 m² sát biển Bãi Thủy Tiên, phường Rạch Dừa. Dự án gồm hai tháp Lumia 37 tầng và The Sol 26 tầng dùng chung 2 tầng hầm, tổng 1.181 căn với 826 Condotel và 355 Service Apartment, mật độ xây dựng khoảng 25%.",
+      "Điểm hiếm của khu đất là 185 m mặt tiền biển trực diện, bước ra là cát và không bị làn xe cắt ngang như mặt đường Thùy Vân; thiết kế giật cấp giúp khoảng 90% căn có hướng biển. Căn giao full nội thất, bàn giao dự kiến tháng 12/2029, thương hiệu Wyndham quản lý vận hành.",
+      "Theo tài liệu bán hàng chủ đầu tư công bố ngày 27/11/2026, giá khởi điểm từ 2,5 tỉ đồng (chưa VAT và phí bảo trì) với ba phương thức thanh toán, trong đó có phương thức cho nhận nhà và khai thác khi đã trả 50% rồi giãn phần còn lại thành 8 đợt trong 2 năm. Đất thương mại dịch vụ, thuê trả tiền một lần, thời hạn đến 12/12/2067, nên đây là sản phẩm sở hữu có thời hạn."
     ],
     "amenities": [
-      "Sát biển Bãi Thủy Tiên",
-      "Khách sạn + căn hộ du lịch",
+      "185 m mặt biển trực diện",
+      "90% căn hướng biển",
+      "Wyndham vận hành",
+      "Giao full nội thất",
       "Thời hạn đất đến 12/2067",
-      "Mới công bố tên 09/2026"
+      "Bàn giao dự kiến 12/2029"
     ]
   },
   {
