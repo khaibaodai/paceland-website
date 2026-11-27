@@ -1021,6 +1021,301 @@ const PROJECTS = [
 
 const POSTS = [
   {
+    "id": "co-nen-mua-solina-signature-vung-tau",
+    "title": "Có nên mua Solina Signature Vũng Tàu? 5 điều phải hỏi rõ trước khi đặt chỗ",
+    "category": "Góc nhìn PaceLand",
+    "date": "27/11/2026",
+    "readtime": "7 phút đọc",
+    "cover": "assets/img/media/solina-vung-tau.jpg",
+    "excerpt": "Đáng cân nhắc nếu mua để khai thác cho thuê và chấp nhận sở hữu có thời hạn đến 12/12/2067. Nhưng trước khi chuyển 50 triệu đặt chỗ, có 5 điều phải hỏi cho ra giấy — kèm tên đúng của từng văn bản cần yêu cầu.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: <a href='/du-an/solina-vung-tau.html'>Solina Signature by Wyndham</a> đáng cân nhắc nếu anh/chị mua để <b>khai thác cho thuê</b> và chấp nhận <b>sở hữu có thời hạn đến 12/12/2067</b>. Nếu mục tiêu là giữ tài sản truyền đời bằng sổ lâu dài thì đây không phải sản phẩm hợp. Trước khi chuyển 50 triệu đặt chỗ, có 5 điều nên hỏi cho ra giấy."
+      },
+      {
+        "t": "p",
+        "c": "Bài này không nhằm can anh/chị mua hay không mua. Chúng tôi phân phối dự án này. Nhưng một căn vài tỷ thì đáng để hỏi kỹ, và những câu dưới đây là câu chúng tôi tự hỏi khi rà hồ sơ cho khách."
+      },
+      {
+        "t": "h",
+        "c": "5 điều và văn bản phải yêu cầu xem"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Điều phải làm rõ",
+            "Vì sao quan trọng",
+            "Văn bản cần xem"
+          ],
+          "rows": [
+            [
+              "Thời hạn sở hữu còn lại",
+              "Đất thuê đến 12/12/2067. Bàn giao dự kiến 12/2029, nên phần còn lại chỉ khoảng 38 năm",
+              "Quyết định 4826/QĐ-UBND ngày 3/8/2026 và điều khoản thời hạn trong hợp đồng mua bán"
+            ],
+            [
+              "Có bảo lãnh ngân hàng không",
+              "Căn hộ du lịch là công trình xây dựng, không phải nhà ở, nên luật <b>không bắt buộc</b> bảo lãnh. Tiến độ chậm thì không có ngân hàng hoàn tiền thay chủ đầu tư",
+              "Thư bảo lãnh của ngân hàng, hoặc văn bản chủ đầu tư xác nhận không có"
+            ],
+            [
+              "Đã khởi công chưa",
+              "Tính đến 27/11/2026, ngày khởi công chưa được công bố và chưa có thông tin công khai về giấy phép xây dựng",
+              "Giấy phép xây dựng và biên bản nghiệm thu móng"
+            ],
+            [
+              "Điều kiện cam kết thuê 8%/năm",
+              "Chính sách công bố 27/11/2026 nêu Service Apartment cam kết 8%/năm trong 5 năm. Điều đáng hỏi là tính trên giá nào, bắt đầu từ lúc nào, trừ chi phí gì",
+              "Phụ lục hợp đồng cho thuê và điều khoản chấm dứt"
+            ],
+            [
+              "Đặt chỗ 50 triệu có trừ và có hoàn không",
+              "Khoản này ký bằng biên nhận riêng, không phải hợp đồng. Có trừ vào đợt 1 hay không là điều phải ghi rõ",
+              "Biên nhận đặt chỗ và phiếu tính giá có dấu"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "1. Sở hữu đến 2067 nghĩa là gì với túi tiền"
+      },
+      {
+        "t": "p",
+        "c": "Toàn bộ dự án nằm trên đất thương mại dịch vụ, Nhà nước cho thuê trả tiền một lần, thời hạn đến <b>12/12/2067</b>. Đây là sở hữu có thời hạn, không phải lâu dài như căn hộ để ở."
+      },
+      {
+        "t": "p",
+        "c": "Điều này ảnh hưởng tới ba thứ: giá bán lại về sau sẽ giảm dần theo thời hạn còn lại, ngân hàng thường cho vay kỳ hạn ngắn hơn và tỷ lệ thấp hơn so với căn hộ sở hữu lâu dài, và người mua lại sau này cũng tính đúng bài toán đó với anh/chị. Nếu muốn so với một sản phẩm sổ lâu dài cùng khu vực, xem <a href='/bai-viet/solina-signature-hay-blanca-city.html'>bài so sánh Solina và Blanca City</a>."
+      },
+      {
+        "t": "h",
+        "c": "2. Không có bảo lãnh ngân hàng là chuyện bình thường, nhưng phải biết"
+      },
+      {
+        "t": "p",
+        "c": "Nhiều người quen mua căn hộ để ở nên mặc định dự án nào cũng có bảo lãnh. Với căn hộ du lịch thì không: đây là công trình xây dựng chứ không phải nhà ở hình thành trong tương lai, nên luật không bắt buộc. Tài liệu bán hàng công bố ngày 27/11/2026 không nêu bảo lãnh ngân hàng."
+      },
+      {
+        "t": "p",
+        "c": "Không sai luật. Nhưng nghĩa là nếu dự án chậm hoặc dừng, anh/chị không có ngân hàng đứng ra trả lại tiền thay chủ đầu tư — chỉ còn quyền khởi kiện. Hỏi thẳng câu này bằng văn bản trước khi ký, và giữ lại câu trả lời."
+      },
+      {
+        "t": "h",
+        "c": "3. Chưa công bố ngày khởi công"
+      },
+      {
+        "t": "p",
+        "c": "Tính đến 27/11/2026, chủ đầu tư đã phát hành tên thương mại chính thức, cấu trúc sản phẩm, giá khởi điểm và chính sách bán hàng. Mốc pháp lý gần nhất là quyết định chuyển mục đích sử dụng đất ngày 3/8/2026. Nhưng ngày khởi công chưa được công bố, và chưa có thông tin công khai về giấy phép xây dựng hay nghiệm thu móng."
+      },
+      {
+        "t": "p",
+        "c": "Mua ở giai đoạn này là mua sớm. Đổi lại anh/chị được giá khởi điểm và quyền chọn căn đẹp trước. Đó là một đánh đổi hợp lý, miễn là biết mình đang đánh đổi cái gì."
+      },
+      {
+        "t": "h",
+        "c": "4. Cam kết 8%/năm: hỏi cho hết ba câu"
+      },
+      {
+        "t": "p",
+        "c": "Chính sách công bố 27/11/2026 nêu dòng Service Apartment có cam kết cho thuê 8%/năm trong 5 năm, còn dòng Condotel áp dụng chia sẻ lợi nhuận 80–20 khi tham gia khai thác. Ba câu cần hỏi: tính trên giá trước hay sau VAT, bắt đầu tính từ ngày bàn giao hay từ ngày đưa vào vận hành, và chi phí vận hành nào bị trừ trước khi chia."
+      },
+      {
+        "t": "p",
+        "c": "Cam kết chỉ có giá trị bằng đúng tờ hợp đồng ký với chủ đầu tư. Lời hứa của người bán hàng không phải là cam kết."
+      },
+      {
+        "t": "h",
+        "c": "5. 50 triệu đặt chỗ là tiền thật"
+      },
+      {
+        "t": "p",
+        "c": "Cả ba phương thức thanh toán đều bắt đầu bằng đặt chỗ 50 triệu đồng và ký văn bản thoả thuận trong 10 ngày với 10% giá trị căn. Khoản đặt chỗ ký bằng biên nhận riêng, không phải hợp đồng mua bán. Việc nó có được trừ vào đợt thanh toán đầu tiên hay không, và điều kiện hoàn lại ra sao, phải theo đúng biên nhận và phiếu tính giá có dấu. Yêu cầu xem văn bản trước khi chuyển tiền, đừng chuyển rồi mới hỏi."
+      },
+      {
+        "t": "p",
+        "c": "Muốn biết với căn đang nhắm thì mỗi đợt phải rút ra bao nhiêu và vào lúc nào, bấm thử cả ba phương thức tại <a href='/solina-signature.html#dong-tien'>trang giá và phương thức thanh toán Solina</a>."
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Solina Signature có sổ không?</b> — Có giấy chứng nhận, nhưng gắn với thời hạn sử dụng đất đến 12/12/2067 chứ không phải lâu dài. Thời hạn còn lại ghi ngay trên giấy.",
+          "<b>Người nước ngoài mua được không?</b> — Đây là câu phải hỏi trực tiếp chủ đầu tư theo từng thời điểm, vì phụ thuộc loại hình sản phẩm và hạn mức từng dự án. Chúng tôi không trả lời thay bằng phỏng đoán.",
+          "<b>Giá từ 2,5 tỷ đã gồm gì?</b> — Theo công bố 27/11/2026: chưa gồm VAT và phí bảo trì, đã gồm bàn giao full nội thất. Đây là giá khởi điểm, không phải bảng giá từng căn."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Cần người rà giúp hợp đồng và phiếu tính giá trước khi đặt chỗ? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — cố vấn PaceLand đọc cùng anh/chị từng điều khoản, kể cả khi cuối cùng anh/chị quyết định không mua."
+      }
+    ]
+  },
+  {
+    "id": "solina-signature-hay-blanca-city",
+    "title": "Solina Signature hay Blanca City? So sánh hai dự án biển Vũng Tàu 11/2026",
+    "category": "So sánh dự án",
+    "date": "27/11/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/blanca-city.jpg",
+    "excerpt": "Khác biệt lớn nhất không phải giá, mà là sổ: Beacon và Beachtro thuộc Blanca City là sở hữu lâu dài trên đất ở, còn Solina Signature là sở hữu có thời hạn đến 12/12/2067. Bảng so sánh 11 tiêu chí, kèm tiến độ thật của từng bên tính đến tháng 11/2026.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: cần <b>sổ lâu dài</b> và muốn thấy công trình đang chạy thật thì chọn <b>Beacon hoặc Beachtro</b> thuộc <a href='/du-an/blanca-city.html'>Blanca City</a> của Sun Group — từ 2,88 tỷ, đã xong đài móng, dự kiến bàn giao 2028. Ưu tiên <b>mặt biển trực diện và giao full nội thất</b> thì chọn <a href='/du-an/solina-vung-tau.html'>Solina Signature by Wyndham</a> của C-Holdings — từ 2,5 tỷ, nhưng là <b>sở hữu có thời hạn đến 12/12/2067</b> và bàn giao xa hơn, dự kiến 12/2029."
+      },
+      {
+        "t": "p",
+        "c": "Hai dự án này cách nhau chừng mười phút chạy xe, cùng ở TP. Vũng Tàu cũ, cùng cách trung tâm TP.HCM khoảng 70 phút qua cao tốc Biên Hòa – Vũng Tàu. Cùng tầm tiền 2,5–3,5 tỷ cho căn nhỏ. Nên đây là cặp phải đặt cạnh nhau trước khi xuống tiền, và chúng tôi phân phối cả hai nên không có lý do gì để bênh bên nào."
+      },
+      {
+        "t": "h",
+        "c": "Bảng so sánh Solina Signature và Blanca City (11/2026)"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Tiêu chí",
+            "Solina Signature by Wyndham",
+            "Blanca City — Beacon &amp; Beachtro"
+          ],
+          "rows": [
+            [
+              "Chủ đầu tư",
+              "C-Holdings",
+              "Sun Property (Sun Group); pháp nhân ký hợp đồng là Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu"
+            ],
+            [
+              "Bãi biển",
+              "Bãi Thủy Tiên — 185 m mặt biển trực diện, bước ra là cát",
+              "Bãi Sau — bãi biển riêng gần 1 km"
+            ],
+            [
+              "Quy mô khu đất",
+              "1,19 ha (11.893,3 m²)",
+              "96,6 ha (966.393,2 m²)"
+            ],
+            [
+              "Sản phẩm",
+              "1.181 căn trong 2 tháp: Lumia 37 tầng và The Sol 26 tầng",
+              "8 toà Beacon (trong đó cụm Beachtro 4 toà) + 6 toà Blanca + 939 căn Casa thấp tầng"
+            ],
+            [
+              "<b>Sở hữu</b>",
+              "<b>Có thời hạn</b> — toàn bộ là đất thương mại dịch vụ, Nhà nước cho thuê trả tiền một lần, hạn đến 12/12/2067",
+              "<b>Beacon và Beachtro: lâu dài</b> (đất ở). Riêng 6 toà Blanca là có thời hạn theo đất thương mại dịch vụ"
+            ],
+            [
+              "Giá khởi điểm",
+              "Từ 2,5 tỷ căn view thành phố; view biển từ 3 tỷ (The Sol) và 3,4 tỷ (Lumia). Chưa VAT và phí bảo trì, đã gồm bàn giao full nội thất <i>(tài liệu chủ đầu tư 27/11/2026)</i>",
+              "Beacon từ 2,88 tỷ chưa VAT; studio Beachtro 2,0–3,4 tỷ <i>(bảng giá qua đơn vị phân phối, tham khảo 8/2026)</i>"
+            ],
+            [
+              "Diện tích căn",
+              "31,56–92,36 m²; căn sân vườn 120–300 m²",
+              "Beachtro: studio 35,7–37,9 m², 1PN 55–56 m², 2PN 81–82 m²"
+            ],
+            [
+              "Đơn vị vận hành",
+              "Wyndham",
+              "Marriott International phát triển khách sạn trong khu (công bố 4/2026)"
+            ],
+            [
+              "Ngày khởi công",
+              "Chưa được công bố tính đến 27/11/2026",
+              "16/5/2025"
+            ],
+            [
+              "Tiến độ thực tế",
+              "Chưa có thông tin công khai về giấy phép xây dựng, nghiệm thu móng hay bảo lãnh ngân hàng",
+              "Casa hơn 96% số căn đã lên mái; Beachtro và Beacon xong đài móng; Sun World 15 ha đã đón khách từ 12/2/2026"
+            ],
+            [
+              "Bàn giao dự kiến",
+              "Tháng 12/2029",
+              "2028 (theo đơn vị phân phối — chủ đầu tư chưa công bố mốc)"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Khác biệt lớn nhất là cuốn sổ, không phải cái giá"
+      },
+      {
+        "t": "p",
+        "c": "Chênh lệch giá khởi điểm giữa hai bên chỉ khoảng 380 triệu. Nhưng thứ anh/chị cầm về sau cùng thì khác hẳn nhau."
+      },
+      {
+        "t": "p",
+        "c": "Solina Signature nằm trọn trên <b>đất thương mại dịch vụ</b>, Nhà nước cho thuê trả tiền một lần, thời hạn đến <b>12/12/2067</b> theo quyết định 4826/QĐ-UBND ngày 3/8/2026 của UBND TP.HCM. Nghĩa là tính từ lúc bàn giao dự kiến cuối 2029, phần thời hạn còn lại chỉ khoảng 38 năm. Đây là sở hữu có thời hạn, không phải sở hữu lâu dài như căn hộ để ở."
+      },
+      {
+        "t": "p",
+        "c": "Beacon và Beachtro của Blanca City thì nằm trên <b>đất ở</b> nên sở hữu lâu dài. Điều này kéo theo một hệ quả pháp lý nữa mà ít người để ý: căn hộ trên đất ở là nhà ở hình thành trong tương lai, nên luật <b>bắt buộc</b> chủ đầu tư phải có bảo lãnh ngân hàng trước khi bán. Căn hộ du lịch thì không — vì là công trình xây dựng chứ không phải nhà ở. Dù mua bên nào, anh/chị cũng nên yêu cầu xem văn bản bảo lãnh hoặc nghe chủ đầu tư nói rõ là không có."
+      },
+      {
+        "t": "h",
+        "c": "Tiến độ: một bên đã lên mái, một bên chưa công bố ngày khởi công"
+      },
+      {
+        "t": "p",
+        "c": "Đây là chỗ chênh lệch rõ nhất và cũng dễ kiểm chứng nhất, vì anh/chị chạy xuống Vũng Tàu là nhìn thấy."
+      },
+      {
+        "t": "p",
+        "c": "Blanca City khởi công 16/5/2025. Đến tháng 9/2026, nhà phố Casa đã lên mái hơn 96% số căn, hai cụm Beachtro và Beacon xong đài móng và sàn hầm, công viên nước Sun World 15 ha đã đón khách từ 12/2/2026. Hồ sơ pháp lý có số hiệu đầy đủ: quyết định giao đất 1295/QĐ-UBND ngày 12/5/2025, giấy phép xây dựng 30/GPXD ngày 15/5/2025 và các giấy phép 54, 64, 65/GPXD."
+      },
+      {
+        "t": "p",
+        "c": "Solina Signature đến 27/11/2026 đã có tên thương mại chính thức, cấu trúc sản phẩm, giá khởi điểm và chính sách bán hàng. Mốc pháp lý gần nhất là quyết định chuyển mục đích sử dụng đất ngày 3/8/2026. Nhưng <b>ngày khởi công vẫn chưa được công bố</b>, và chưa có thông tin công khai về giấy phép xây dựng hay nghiệm thu móng. Mua ở giai đoạn này là mua sớm — giá tốt hơn, và rủi ro tiến độ cũng cao hơn."
+      },
+      {
+        "t": "h",
+        "c": "Vào tiền: rẻ hơn chưa chắc nhẹ hơn"
+      },
+      {
+        "t": "p",
+        "c": "Cả hai đều có phương án vay hỗ trợ lãi suất 30 tháng, nên số tiền thật sự phải rút ra mỗi đợt mới là thứ đáng so, chứ không phải giá niêm yết. Solina có ba phương thức, trong đó phương thức giãn cho phép nhận nhà và khai thác khi đã trả 50%, phần còn lại chia 8 đợt mỗi 90 ngày trong 2 năm sau bàn giao. Anh/chị bấm thử từng phương thức theo đúng căn đang nhắm tại <a href='/solina-signature.html#dong-tien'>trang giá và phương thức thanh toán Solina</a>, hoặc xem chính sách Beachtro tại <a href='/beachtro-blanca-city.html'>trang Beachtro Tower</a>."
+      },
+      {
+        "t": "h",
+        "c": "Chọn theo mục tiêu"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Mua để giữ tài sản, muốn sổ lâu dài</b> — Beacon hoặc Beachtro. Đất ở, sở hữu lâu dài, và pháp lý đã có số hiệu đầy đủ.",
+          "<b>Mua để khai thác cho thuê, chấp nhận sở hữu có thời hạn</b> — Solina Signature. Mặt biển trực diện 185 m, giao full nội thất, Wyndham vận hành, dòng Service Apartment có cam kết thuê 8%/năm trong 5 năm theo chính sách công bố 27/11/2026.",
+          "<b>Cần nhận nhà sớm</b> — Beacon và Beachtro dự kiến 2028, sớm hơn Solina khoảng một năm.",
+          "<b>Ngân sách dưới 2,5 tỷ</b> — studio Beachtro có mức từ 2,0 tỷ, thấp hơn giá khởi điểm của Solina."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Solina Signature có sổ hồng lâu dài không?</b> — Không. Đất thương mại dịch vụ thuê đến 12/12/2067, là sở hữu có thời hạn. Thời hạn còn lại ghi trên giấy chứng nhận là điều phải đọc kỹ trong hợp đồng.",
+          "<b>Dự án nào bàn giao trước?</b> — Beacon và Beachtro dự kiến 2028 theo đơn vị phân phối, Solina dự kiến 12/2029 theo công bố của chủ đầu tư. Cả hai mốc đều là dự kiến.",
+          "<b>Giá trong bài đã gồm VAT chưa?</b> — Chưa. Giá Solina chưa gồm VAT và phí bảo trì nhưng đã gồm full nội thất; giá Beacon là giá chưa VAT theo bảng lưu hành qua đơn vị phân phối tháng 8/2026."
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Muốn xem bảng giá theo tầng, hướng và quỹ căn thật của cả hai dự án? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a> — cố vấn PaceLand phản hồi trong ngày và gửi kèm phiếu tính giá có dấu. Đọc thêm: <a href='/du-an/solina-vung-tau.html'>hồ sơ đầy đủ Solina Signature</a> và <a href='/du-an/blanca-city.html'>hồ sơ đầy đủ Blanca City</a>."
+      }
+    ]
+  },
+  {
     "id": "tam-8-ti-nen-mua-the-prive-hay-eaton-park",
     "title": "Tầm 8 tỉ nên mua The Privé hay Eaton Park? So sánh chi tiết 09/2026",
     "category": "So sánh dự án",
