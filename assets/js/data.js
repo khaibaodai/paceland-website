@@ -1021,6 +1021,306 @@ const PROJECTS = [
 
 const POSTS = [
   {
+    "id": "c-holdings-la-chu-dau-tu-nao",
+    "title": "C-Holdings là chủ đầu tư nào? Hồ sơ chủ đầu tư Solina Signature",
+    "category": "Góc nhìn PaceLand",
+    "date": "27/11/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/gioi-thieu-visual.jpg",
+    "excerpt": "Công ty Cổ phần C-Holdings thành lập 2018, mã số doanh nghiệp 3702704796, trước Solina đã làm ba dự án căn hộ ở Bình Dương và đã ra sổ hồng cho cư dân C-Sky View từ 7/2023. Solina Signature là dự án nghỉ dưỡng ven biển đầu tiên của họ — điều người mua nên biết.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: <b>Công ty Cổ phần C-Holdings</b> thành lập năm 2018, mã số doanh nghiệp <b>3702704796</b>, trụ sở tại Thủ Dầu Một. Trước <a href='/du-an/solina-vung-tau.html'>Solina Signature</a>, họ đã làm ba dự án căn hộ tại Bình Dương cũ — C-Sky View, The Maison và The Felix — và đã bàn giao sổ hồng cho cư dân C-Sky View từ tháng 7/2023. <b>Solina là dự án nghỉ dưỡng ven biển đầu tiên</b> của họ."
+      },
+      {
+        "t": "p",
+        "c": "Bài này chỉ dùng thông tin có nguồn công khai dẫn được: hồ sơ công ty trên trang chính thức của chủ đầu tư và bài báo của cơ quan báo chí. Chúng tôi không đưa nhận xét cảm tính về uy tín, vì đó là thứ anh/chị nên tự kết luận sau khi xem giấy tờ. Nguồn dẫn ở cuối bài."
+      },
+      {
+        "t": "h",
+        "c": "Hồ sơ công ty"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Mục",
+            "Nội dung"
+          ],
+          "rows": [
+            [
+              "Tên đầy đủ",
+              "Công ty Cổ phần C-Holdings"
+            ],
+            [
+              "Mã số doanh nghiệp",
+              "<b>3702704796</b>"
+            ],
+            [
+              "Năm thành lập",
+              "2018 (theo thông điệp Chủ tịch HĐQT trên trang chính thức)"
+            ],
+            [
+              "Trụ sở",
+              "Số 9, Đường D5, Khu dân cư Chánh Nghĩa, Khu phố 12, phường Thủ Dầu Một, TP.HCM"
+            ],
+            [
+              "Quy mô nhân sự",
+              "50–200 người (công ty tự công bố)"
+            ],
+            [
+              "Người điều hành",
+              "Ông Trần Hưng, Tổng Giám đốc (theo bài Thời báo Tài chính Việt Nam 7/2023)"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "h",
+        "c": "Ba dự án trước Solina đều ở Bình Dương và đều là căn hộ để ở"
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Dự án",
+            "Vị trí",
+            "Quy mô theo công bố"
+          ],
+          "rows": [
+            [
+              "C-Sky View",
+              "Phường Chánh Nghĩa, TP. Thủ Dầu Một",
+              "Đã bàn giao và có cư dân ở; chủ đầu tư nêu con số hơn 1.000 khách hàng đã nhận nhà"
+            ],
+            [
+              "The Maison",
+              "Mặt tiền Phan Bội Châu, TP. Thủ Dầu Một",
+              "Block A cao 29 tầng, khối đế 5 tầng thương mại dịch vụ và tiện ích"
+            ],
+            [
+              "The Felix",
+              "Đường Nguyễn Du, phường Bình Hòa, TP. Thuận An",
+              "40 tầng, 1 hầm; 1.147 căn hộ ở ổn định, 59 căn lưu trú, 10 căn thương mại dịch vụ; căn 45–85 m²"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "p",
+        "c": "Ba dự án, một địa bàn, một loại hình: căn hộ để ở tầm trung tại Bình Dương cũ. Đây là điểm quan trọng nhất của cả bài, và chúng tôi nói rõ ở mục ngay dưới."
+      },
+      {
+        "t": "h",
+        "c": "Điểm cộng kiểm chứng được: họ đã ra sổ hồng"
+      },
+      {
+        "t": "p",
+        "c": "Ngày 22/7/2023, C-Holdings bàn giao giấy chứng nhận quyền sử dụng đất và quyền sở hữu nhà ở cho những cư dân đầu tiên của C-Sky View. Đợt đó trao 21 sổ, và công ty công bố kế hoạch 1.000 căn nhận sổ trong năm 2023. Tin này do Thời báo Tài chính Việt Nam đưa, không phải thông cáo tự đăng."
+      },
+      {
+        "t": "p",
+        "c": "Trong thị trường mà nhiều dự án chậm sổ nhiều năm sau khi bàn giao, việc một chủ đầu tư đưa được sổ về tay cư dân là dữ kiện đáng cân nhắc. Nhưng xin lưu ý đúng phạm vi: đó là <b>căn hộ để ở trên đất ở tại Bình Dương</b>. Solina là căn hộ du lịch trên đất thương mại dịch vụ ở Vũng Tàu — loại giấy tờ, cơ quan cấp và thời hạn đều khác. Thành tích ở dự án này không tự động chuyển sang dự án kia."
+      },
+      {
+        "t": "h",
+        "c": "Solina là dự án nghỉ dưỡng ven biển đầu tiên của họ"
+      },
+      {
+        "t": "p",
+        "c": "Đây là thứ không trang bán hàng nào nói, nhưng người bỏ vài tỷ nên biết. Từ căn hộ để ở tại Bình Dương sang tổ hợp condotel và căn hộ dịch vụ vận hành theo chuẩn khách sạn quốc tế ở Vũng Tàu là một bước nhảy về <b>ba thứ cùng lúc</b>: loại hình sản phẩm, địa bàn, và mô hình kinh doanh."
+      },
+      {
+        "t": "p",
+        "c": "Bán căn hộ để ở là bán xong rồi bàn giao. Bán condotel có cam kết khai thác là cam kết một dòng tiền kéo dài nhiều năm sau bàn giao — nghĩa vụ hoàn toàn khác. Không có nghĩa là họ không làm được. Nhưng nghĩa là anh/chị không có tiền lệ của chính chủ đầu tư này để đối chiếu, và nên bù lại bằng cách đọc kỹ hợp đồng hơn, chứ không phải bằng niềm tin."
+      },
+      {
+        "t": "h",
+        "c": "Tên thương hiệu và pháp nhân ký hợp đồng thường không trùng nhau"
+      },
+      {
+        "t": "p",
+        "c": "Đây là chỗ người mua hay bỏ qua. Hợp đồng của anh/chị ký với một pháp nhân cụ thể, và pháp nhân đó có thể không mang tên thương hiệu in trên tờ rơi."
+      },
+      {
+        "t": "p",
+        "c": "Với Solina, giấy chứng nhận quyền sử dụng đất phần đất đã có đứng tên <b>Công ty CP Thủy Tiên Bà Rịa – Vũng Tàu</b>. Với <a href='/du-an/blanca-city.html'>Blanca City</a> cũng vậy: thương hiệu là Sun Group, nhưng pháp nhân ký hợp đồng là Công ty TNHH Đầu tư và Phát triển Đô thị Vũng Tàu. Cả hai đều bình thường trong ngành. Việc của anh/chị là <b>đọc đúng tên pháp nhân trên hợp đồng</b> rồi tra mã số doanh nghiệp của chính pháp nhân đó, chứ không tra tên thương hiệu."
+      },
+      {
+        "t": "h",
+        "c": "Cách anh/chị tự kiểm tra trong 30 phút"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Tra mã số doanh nghiệp</b> trên Cổng thông tin quốc gia về đăng ký doanh nghiệp — xem ngày thành lập, vốn điều lệ, người đại diện pháp luật và tình trạng hoạt động.",
+          "<b>Đi xem sản phẩm đã bàn giao.</b> C-Sky View và The Maison đều ở Thủ Dầu Một, cách nhau khoảng 2 km. Đến xem thực tế chất lượng bàn giao, cách vận hành toà nhà và hỏi vài cư dân.",
+          "<b>Đọc tên pháp nhân trên hợp đồng</b> rồi tra riêng pháp nhân đó, đừng tra tên thương hiệu.",
+          "<b>Hỏi giấy phép xây dựng và nghiệm thu móng</b> của chính dự án Solina — tính đến 27/11/2026 chưa có thông tin công khai về hai văn bản này."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>C-Holdings đã bàn giao dự án nào chưa?</b> — Rồi. C-Sky View tại Thủ Dầu Một đã bàn giao và có cư dân ở; sổ hồng bắt đầu trao từ 22/7/2023.",
+          "<b>C-Holdings đã làm dự án nghỉ dưỡng nào chưa?</b> — Chưa. Ba dự án trước đều là căn hộ để ở tại Bình Dương cũ. Solina Signature là dự án nghỉ dưỡng ven biển đầu tiên.",
+          "<b>Ai là người điều hành C-Holdings?</b> — Theo bài báo tháng 7/2023, Tổng Giám đốc là ông Trần Hưng. Thông tin người đại diện pháp luật mới nhất nên tra trực tiếp theo mã số doanh nghiệp 3702704796."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Nguồn"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<a href='https://c-holdings.vn/' rel='nofollow'>Trang chính thức Công ty Cổ phần C-Holdings</a> — thông tin công ty, mã số doanh nghiệp, danh mục dự án (truy cập 27/11/2026)",
+          "<a href='https://thoibaotaichinhvietnam.vn/c-holdings-chinh-thuc-ban-giao-so-hong-cho-cu-dan-c-sky-view-132470.html' rel='nofollow'>Thời báo Tài chính Việt Nam, 22/7/2023</a> — C-Holdings bàn giao sổ hồng cho cư dân C-Sky View",
+          "Hồ sơ pháp lý Solina Signature trong <a href='/du-an/solina-vung-tau.html'>trang dự án của PaceLand</a> — quyết định 4826/QĐ-UBND ngày 3/8/2026 và giấy chứng nhận quyền sử dụng đất số BK 622398"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Cần người rà hồ sơ pháp lý và hợp đồng trước khi anh/chị đặt chỗ? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a>. Đọc thêm: <a href='/bai-viet/co-nen-mua-solina-signature-vung-tau.html'>5 điều phải hỏi trước khi đặt chỗ Solina</a>."
+      }
+    ]
+  },
+  {
+    "id": "condotel-vung-tau-cho-thue-loi-bao-nhieu",
+    "title": "Condotel Vũng Tàu cho thuê lời bao nhiêu một năm?",
+    "category": "Thị trường",
+    "date": "27/11/2026",
+    "readtime": "8 phút đọc",
+    "cover": "assets/img/media/quote-thi-truong.jpg",
+    "excerpt": "Không ai hứa được con số thật, và cam kết 8%/năm là nghĩa vụ hợp đồng của chủ đầu tư chứ không phải lợi suất thị trường. Bài này đưa số liệu thật về mùa cao điểm Vũng Tàu, lượng phòng sắp đổ vào thị trường 2027–2032, và công thức để anh/chị tự tính.",
+    "body": [
+      {
+        "t": "p",
+        "c": "Trả lời nhanh: <b>không ai trả lời được con số chắc chắn</b>, kể cả người bán hàng. Mức &quot;cam kết 8%/năm&quot; mà một số dự án đưa ra là <b>nghĩa vụ hợp đồng của chủ đầu tư</b>, không phải lợi suất do thị trường tạo ra. Lợi suất thật phụ thuộc giá phòng, công suất lấp đầy và chi phí vận hành — ba thứ sẽ chịu áp lực lớn khi gần 6.000 phòng và căn lưu trú mới đổ vào khu vực này trong giai đoạn 2027–2032."
+      },
+      {
+        "t": "p",
+        "c": "Bài này không đưa một con số lợi suất duy nhất, vì bất kỳ ai đưa con số đó cho anh/chị lúc này đều đang đoán. Thay vào đó là số liệu có nguồn và công thức để anh/chị tự tính theo căn mình nhắm."
+      },
+      {
+        "t": "h",
+        "c": "Mùa cao điểm rất tốt — nhưng đó là đỉnh, không phải trung bình"
+      },
+      {
+        "t": "p",
+        "c": "Dịp Tết Nguyên đán 2026, phân khúc cao cấp ở Vũng Tàu đạt công suất phòng <b>trên 90% vào mùng 2</b> và kín phòng tiếp mùng 3, mùng 4. Nhiều khách sạn 3–4 sao hết sạch phòng những ngày cao điểm. Riêng mùng 4 Tết, bãi biển phường Vũng Tàu ghi nhận khoảng <b>66.000 lượt người tắm biển</b>, mức cao nhất cả kỳ nghỉ."
+      },
+      {
+        "t": "p",
+        "c": "Những con số đó có thật và rất đẹp. Nhưng một năm chỉ có vài chục ngày như vậy. Bài toán dòng tiền của anh/chị chạy trên <b>365 ngày</b>, trong đó phần lớn là ngày thường giữa tuần ngoài mùa cao điểm. Khi người bán hàng đưa công suất dịp lễ ra để minh hoạ lợi suất cả năm, đó là so sánh sai đơn vị."
+      },
+      {
+        "t": "h",
+        "c": "Nguồn cung sắp tăng mạnh, đúng lúc các dự án này bàn giao"
+      },
+      {
+        "t": "p",
+        "c": "Đây là phần ít được nhắc nhất khi bán condotel, mà lại ảnh hưởng trực tiếp nhất tới giá phòng và công suất về sau."
+      },
+      {
+        "t": "table",
+        "c": {
+          "head": [
+            "Nguồn cung sắp vào",
+            "Quy mô",
+            "Thời gian",
+            "Nguồn"
+          ],
+          "rows": [
+            [
+              "Dự án nghỉ dưỡng ở Cần Giờ, Vũng Tàu và Hồ Tràm",
+              "Gần <b>6.000</b> phòng và căn lưu trú",
+              "2027–2032",
+              "Avison Young, báo cáo quý 3/2026"
+            ],
+            [
+              "Riêng Cần Giờ",
+              "Gần 1.900 phòng khách sạn",
+              "Đang lên kế hoạch",
+              "Avison Young, báo cáo quý 3/2026"
+            ],
+            [
+              "Marriott ký với Sun Group",
+              "10 khách sạn, khoảng <b>4.500</b> phòng tại Phú Quốc và Vũng Tàu",
+              "2026–2030",
+              "Dân trí, 13/11/2026"
+            ]
+          ]
+        }
+      },
+      {
+        "t": "p",
+        "c": "Đặt cạnh nhau sẽ thấy vấn đề: <a href='/du-an/five-star-odyssey.html'>Five Star Odyssey</a> và <a href='/du-an/five-star-poseidon.html'>Five Star Poseidon</a> dự kiến xong cuối 2027 đến giữa 2028, Beacon và Beachtro của <a href='/du-an/blanca-city.html'>Blanca City</a> dự kiến 2028, còn <a href='/du-an/solina-vung-tau.html'>Solina Signature</a> dự kiến 12/2029. Tất cả đều rơi vào đúng giai đoạn nguồn cung tăng mạnh nhất."
+      },
+      {
+        "t": "p",
+        "c": "Mặt tích cực: lượng khách cũng đang tăng thật. Theo Cục Du lịch Quốc gia Việt Nam, 10 tháng đầu năm 2026 cả nước đón <b>19,5 triệu lượt khách quốc tế</b>, tăng 13,8% so với cùng kỳ. Câu hỏi còn để ngỏ là khách tăng có kịp tốc độ phòng tăng hay không — và không ai biết chắc câu trả lời cho năm 2029."
+      },
+      {
+        "t": "h",
+        "c": "Công thức tự tính, thay vì tin một con số"
+      },
+      {
+        "t": "p",
+        "c": "Lợi suất thật trên vốn anh/chị bỏ ra tính thế này: <b>(giá phòng trung bình × công suất cả năm × 365 × tỷ lệ chia cho chủ sở hữu − chi phí phải chịu) ÷ tổng tiền đã bỏ ra</b>. Bốn biến đó mới là bài toán, không phải con số phần trăm in trên tờ rơi."
+      },
+      {
+        "t": "p",
+        "c": "Lưu ý &quot;tổng tiền đã bỏ ra&quot; gồm cả VAT, phí bảo trì, nội thất bổ sung nếu có và lãi vay trong thời gian xây dựng — chứ không phải chỉ giá niêm yết. Mẫu số lớn hơn anh/chị tưởng, nên lợi suất thực luôn thấp hơn con số quảng cáo. Anh/chị tính thử phần tiền phải rút ra từng đợt tại <a href='/solina-signature.html#dong-tien'>trang giá và phương thức thanh toán Solina</a>."
+      },
+      {
+        "t": "h",
+        "c": "Ba câu quyết định con số cuối cùng"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Chia trên doanh thu hay trên lợi nhuận sau chi phí?</b> Hai cách này cho ra kết quả chênh nhau rất xa. Phải ghi rõ chi phí nào được trừ trước khi chia.",
+          "<b>Cam kết bắt đầu tính từ ngày nào?</b> Từ ngày bàn giao, hay từ ngày toà nhà được đưa vào vận hành? Khoảng trống giữa hai mốc này có thể dài nhiều tháng và không ai trả tiền cho anh/chị.",
+          "<b>Sau khi hết thời hạn cam kết thì sao?</b> Với cam kết 5 năm, năm thứ sáu trở đi anh/chị sống bằng công suất thật của thị trường — đúng lúc nguồn cung mới đã vào hết."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Hỏi nhanh"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<b>Cam kết 8%/năm có phải lợi suất thật không?</b> — Không. Đó là nghĩa vụ chi trả của chủ đầu tư theo hợp đồng, chắc chắn đúng bằng khả năng chi trả của họ. Lợi suất thật do giá phòng và công suất quyết định.",
+          "<b>Mua condotel Vũng Tàu lúc này có sớm quá không?</b> — Mua sớm thường được giá tốt hơn. Rủi ro là bàn giao rơi vào giai đoạn nguồn cung tăng mạnh, nên nên tính bài toán dòng tiền ở kịch bản công suất thấp chứ đừng chỉ tính kịch bản đẹp.",
+          "<b>Nên hỏi gì trước khi tin một con số lợi suất?</b> — Hỏi con số đó dựa trên giá phòng bao nhiêu và công suất bao nhiêu phần trăm cả năm. Không trả lời được hai biến đó thì con số lợi suất không có cơ sở."
+        ]
+      },
+      {
+        "t": "h",
+        "c": "Nguồn"
+      },
+      {
+        "t": "ul",
+        "c": [
+          "<a href='https://vietstock.vn/2026/10/can-gio-vung-tau-ho-tram-ruc-rich-them-hang-ngan-phong-khach-san-4220-1501962.htm' rel='nofollow'>Vietstock, 14/10/2026</a> — dẫn báo cáo quý 3/2026 của Avison Young về nguồn cung phòng và căn lưu trú tại Cần Giờ, Vũng Tàu, Hồ Tràm",
+          "<a href='https://dantri.com.vn/kinh-doanh/bat-ngo-lan-song-dau-tu-khach-san-cao-cap-them-hang-chuc-nghin-phong-20261112222120271.htm' rel='nofollow'>Dân trí, 13/11/2026</a> — thoả thuận Marriott và Sun Group, số liệu khách quốc tế của Cục Du lịch Quốc gia",
+          "<a href='https://nld.com.vn/du-khach-den-vung-tau-dong-nghit-khach-san-kin-phong-19626022015081428.htm' rel='nofollow'>Người Lao Động, 20/2/2026</a> — công suất phòng và lượng khách Vũng Tàu dịp Tết 2026"
+        ]
+      },
+      {
+        "t": "p",
+        "c": "Muốn tính bài toán dòng tiền cho đúng căn anh/chị đang nhắm, ở cả kịch bản tốt lẫn kịch bản xấu? Gọi <b>0903 983 737</b> hoặc để lại thông tin tại <a href='/lien-he.html'>trang liên hệ</a>. Đọc thêm: <a href='/bai-viet/thuong-hieu-khach-san-van-hanh-condotel.html'>thương hiệu khách sạn vận hành mang lại gì cho người mua</a>."
+      }
+    ]
+  },
+  {
     "id": "thuong-hieu-khach-san-van-hanh-condotel",
     "title": "Wyndham vận hành nghĩa là gì? Thương hiệu khách sạn mang lại gì cho người mua condotel",
     "category": "Góc nhìn PaceLand",
