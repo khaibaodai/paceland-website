@@ -351,7 +351,12 @@ nghĩa vụ), cộng hai trường riêng `responsibilities` và `jobBenefits` c
      Đo bằng cách cộng kích thước mọi file KHÔNG bị `.dockerignore` loại. 21/09: gói lên 22,38MB, build trượt 2 lần; hạ về 19,79MB thì lên ngay.
    - **Định dạng ảnh:** ảnh trong `assets/img/du-an/` và các thư mục ảnh mới dùng `.webp` (q74–80); ảnh trong `assets/img/media/` **giữ nguyên tên `.jpg`** vì Admin quản lý thư viện ảnh theo tên file — nén tại chỗ (q70) thay vì đổi đuôi. Đổi đuôi ảnh `du-an` thì phải sửa tham chiếu trong cả `assets/data/du-an-chi-tiet/*.json` **và** `assets/data/phan-khu/*.json`.
 5. Kiểm tra live **bằng `<title>`**, không bằng status code, vì hosting trả soft-404.
-6. Google Search Console:
+6. **Báo IndexNow** (sau khi đã xác minh trang live): `node tools/indexnow.mjs`
+   - Đẩy URL thẳng vào hàng đợi của Bing — **không cần tài khoản Bing Webmaster**. ChatGPT tìm kiếm trên nền chỉ mục Bing, nên bước này là thứ quyết định bài mới có được AI trích dẫn hay không.
+   - `--dry` để xem trước danh sách, `--all` để đẩy toàn bộ sitemap, hoặc truyền thẳng URL.
+   - Khoá nằm ở file `<khoá>.txt` ngay gốc dự án; đổi khoá thì đổi cả tên file lẫn nội dung (hai thứ phải bằng nhau).
+   - Mã trả về 200 hoặc 202 là đã nhận. 403 nghĩa là Bing chưa đọc được file khoá — kiểm tra file đã live chưa.
+7. Google Search Console:
    - Request Indexing cho trang tổng và các trang vị trí mới.
    - Theo dõi báo cáo "Job postings" trong mục Enhancements.
 
