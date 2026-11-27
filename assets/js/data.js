@@ -20,7 +20,7 @@ const SITE = {
   "careersEndpoint": "",
   "thankYouPage": "/cam-on.html",
   "tracking": {
-    "ga4": "",
+    "ga4": "G-HD404YWH17",
     "adsId": "",
     "adsLabel": "",
     "metaPixel": "1801986410923640",
